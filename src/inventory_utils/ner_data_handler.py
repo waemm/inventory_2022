@@ -14,7 +14,9 @@ from functools import partial
 from typing import List, NamedTuple, Optional, cast
 
 from datasets import load_dataset
-from datasets.arrow_dataset import Batch
+# Batch type is just dict in datasets 2.14.0
+from typing import Dict, Any
+Batch = Dict[str, Any]
 from datasets.dataset_dict import DatasetDict
 from torch.utils.data import DataLoader
 from transformers import (AutoTokenizer, DataCollatorForTokenClassification,

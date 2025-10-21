@@ -1,0 +1,36 @@
+# Test Configuration for Modern Training Environment
+# Based on train_predict.yml but with test datasets and reduced epochs
+
+# Environments
+project_env: './biodata_modern_env'
+
+# Directories
+## Classification
+classif_splits_dir: 'data/classif_splits_test'
+classif_train_outdir: 'out/classif_train_test'
+classif_benchmark_dir: 'out/benchmarks/classif_test'
+classif_log_dir: 'out/logs/classif_test'
+
+## NER
+ner_splits_dir: 'data/ner_splits_test'
+ner_train_outdir: 'out/ner_train_test'
+ner_benchmark_dir: 'out/benchmarks/ner_test'
+ner_log_dir: 'out/logs/ner_test'
+
+# Input files (test versions)
+classif_data: 'data/manual_classifications_test.csv'
+ner_data: 'data/manual_ner_extraction_test.csv'
+
+# File with configuration settings for the models (single model only)
+models: 'config/models_test.tsv'
+
+# Ratios used for data splitting
+split_ratios: '0.7 0.15 0.15'
+
+# Metrics used for choosing best model/epoch
+class_criteria_metric: 'precision'
+ner_criteria_metric: 'f1'
+
+# Number of epochs (reduced for testing)
+classif_epochs: 2
+ner_epochs: 2

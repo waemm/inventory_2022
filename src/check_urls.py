@@ -51,6 +51,7 @@ class Args(NamedTuple):
     chunk_size: Optional[int]
     num_tries: int
     backoff: float
+    skip_wayback: bool
 
 
 # ---------------------------------------------------------------------------
@@ -159,6 +160,9 @@ def get_args() -> Args:
                               type=float,
                               default=0.5,
                               help='Back-off Factor for retries')
+    url_checking.add_argument('--skip-wayback',
+                              action='store_true',
+                              help='Skip Wayback Machine archival checks')
 
     args = parser.parse_args()
 
@@ -170,7 +174,8 @@ def get_args() -> Args:
         parser.error(f'--num-tries ({args.num_tries}) must be at least 1')
 
     return Args(args.file, args.partial, args.out_dir, args.verbose,
-                args.cores, args.chunk_size, args.num_tries, args.backoff)
+                args.cores, args.chunk_size, args.num_tries, args.backoff,
+                args.skip_wayback)
 
 
 # ---------------------------------------------------------------------------
@@ -698,7 +703,7 @@ def test_check_wayback() -> None:
 
 # ---------------------------------------------------------------------------
 def check_urls(df: pd.DataFrame, cores: Optional[int],
-               session: requests.Session) -> pd.DataFrame:
+               session: requests.Session, skip_wayback: bool = False) -> pd.DataFrame:
     """
     Check all URLs in extracted_url column of dataframe
 
@@ -706,6 +711,7 @@ def check_urls(df: pd.DataFrame, cores: Optional[int],
     `df`: Dataframe with extracted_url column
     `cores`: (optional) number of cores to use
     `session`: requests `Session`
+    `skip_wayback`: if True, skip Wayback Machine checks
 
     Return: Dataframe with extracted_url_status
     and wayback_url columns added
@@ -732,12 +738,15 @@ def check_urls(df: pd.DataFrame, cores: Optional[int],
     out_df = merge_url_statuses(out_df, url_statuses)
 
     logging.debug('Finished checking extracted URLs.')
-    logging.debug('Checking for snapshots of extracted URLs '
-                  'on WayBack Machine.')
-
-    out_df['wayback_url'] = out_df['extracted_url'].map(check_wayback)
-
-    logging.debug('Finished checking WayBack Machine.')
+    
+    if skip_wayback:
+        logging.debug('Skipping WayBack Machine checks.')
+        out_df['wayback_url'] = 'skipped'
+    else:
+        logging.debug('Checking for snapshots of extracted URLs '
+                      'on WayBack Machine.')
+        out_df['wayback_url'] = out_df['extracted_url'].map(check_wayback)
+        logging.debug('Finished checking WayBack Machine.')
 
     return out_df
 
@@ -757,7 +766,7 @@ def test_check_urls(testing_session: requests.Session) -> None:
     # cores == None -> threading
     # cores == 0 or -1 -> multiprocessing
     for cores in [None, 0, -1]:
-        returned_df = check_urls(in_df, cores, testing_session)
+        returned_df = check_urls(in_df, cores, testing_session, skip_wayback=True)
 
         # Correct number of rows
         assert len(returned_df) == 3
@@ -881,7 +890,7 @@ def main() -> None:
     for i, chunk in enumerate(chunk_rows(df, args.chunk_size)):
         logging.debug('Processing chunk %d (%d articles).', i + 1, len(chunk))
         df = expand_url_col(chunk)
-        df = check_urls(df, args.cores, session)
+        df = check_urls(df, args.cores, session, args.skip_wayback)
         df = regroup_df(df)
 
         logging.debug('Writing intermediate output to %s.', outfile)

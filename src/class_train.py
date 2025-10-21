@@ -13,7 +13,8 @@ import pandas as pd
 import torch
 from torch.utils.data.dataloader import DataLoader
 from tqdm.auto import tqdm
-from transformers import (AdamW, AutoModelForSequenceClassification,
+from torch.optim import AdamW
+from transformers import (AutoModelForSequenceClassification,
                           get_scheduler)
 
 from inventory_utils.class_data_handler import (DataFields, RunParams,

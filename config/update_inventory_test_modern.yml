@@ -1,0 +1,71 @@
+# Test Configuration for Modern Environment Integration
+# Uses newly trained models with modern prediction pipeline
+
+# Environments
+project_env: './biodata_modern_env'
+
+# Directories
+
+## Querying
+query_out_dir: 'out/test_modern_integration'
+last_date_dir: 'out/last_query_date'
+
+## Classification (point to our newly trained models)
+classif_train_outdir: 'out/classif_train_test'
+classif_out_dir: 'out/test_modern_integration/classification'
+
+## NER (point to our newly trained models)
+ner_train_outdir: 'out/ner_train_test'
+ner_out_dir: 'out/test_modern_integration/ner'
+
+## URL Extraction
+extract_url_dir: 'out/test_modern_integration/url_extraction'
+
+## Name processing
+processed_names_dir: 'out/test_modern_integration/processed_names'
+
+## Initial deduplication
+initial_dedupe_dir: 'out/test_modern_integration/initial_deduplication'
+
+## For manual review
+for_manual_review_dir: 'out/test_modern_integration/for_manual_review'
+
+## Manually reviewed
+manually_reviewed_dir: 'out/test_modern_integration/manually_reviewed'
+
+## Processed manual review
+processed_manual_review: 'out/test_modern_integration/processed_manual_review'
+
+## URL Checking
+check_url_dir: 'out/test_modern_integration/url_checking'
+
+## Additional metadata from EuropePMC
+epmc_meta_dir: 'out/test_modern_integration/epmc_meta'
+
+## Processed country codes
+processed_countries: 'out/test_modern_integration/processed_countries'
+
+# Parameters
+
+## Europe PMC query (test with recent dates)
+query_from_date: 2024
+query_to_date: 2024
+query_string: 'config/query.txt'
+
+# Previous inventory to be merged
+previous_inventory: 'data/final_inventory_2022.csv'
+
+## Filtering and marking for manual review
+max_urls: 2
+min_best_name_prob: 0.978
+
+## URL checking (reduced for testing)
+chunk_size: 10
+num_tries: 2
+backoff: 0.5
+
+## Getting metadata from EuropePMC (reduced for testing)
+epmc_chunk_size: 5
+
+## Processing country names
+country_format: 'full'

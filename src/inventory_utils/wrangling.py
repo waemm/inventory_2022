@@ -298,11 +298,11 @@ def convert_to_tags(
     """
 
     true_labels = [[
-        ID2NER_TAG[token_label] for token_label in seq_labels
+        ID2NER_TAG[int(token_label)] for token_label in seq_labels
         if token_label != -100
     ] for seq_labels in batch_labels]
     pred_labels = [[
-        ID2NER_TAG[token_pred]
+        ID2NER_TAG[int(token_pred)]
         for (token_pred, token_label) in zip(seq_preds, seq_labels)
         if token_label != -100
     ] for seq_preds, seq_labels in zip(batch_predictions, batch_labels)]

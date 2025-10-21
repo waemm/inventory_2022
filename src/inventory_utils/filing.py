@@ -39,7 +39,13 @@ def get_classif_model(checkpoint_fh: BinaryIO,
     checkpoint = torch.load(checkpoint_fh, map_location=device)
     model_name = checkpoint['model_name']
     model = classifier.from_pretrained(model_name, num_labels=2)
-    model.load_state_dict(checkpoint['model_state_dict'])
+    
+    # Remove incompatible keys for newer transformers versions
+    state_dict = checkpoint['model_state_dict']
+    if 'roberta.embeddings.position_ids' in state_dict:
+        del state_dict['roberta.embeddings.position_ids']
+    
+    model.load_state_dict(state_dict)
     model.to(device)
     model.eval()
 
@@ -66,7 +72,13 @@ def get_ner_model(
     model = ner_classifier.from_pretrained(model_name,
                                            id2label=ID2NER_TAG,
                                            label2id=NER_TAG2ID)
-    model.load_state_dict(checkpoint['model_state_dict'])
+    
+    # Remove incompatible keys for newer transformers versions
+    state_dict = checkpoint['model_state_dict']
+    if 'roberta.embeddings.position_ids' in state_dict:
+        del state_dict['roberta.embeddings.position_ids']
+    
+    model.load_state_dict(state_dict)
     model.to(device)
     model.eval()
 

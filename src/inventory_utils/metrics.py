@@ -10,9 +10,9 @@ Authors: Ana-Maria Istrate and Kenneth Schackart
 import sys
 from typing import Any, List, Optional, cast
 
+import evaluate
 import numpy as np
 import torch
-from datasets import load_metric
 from torch.functional import Tensor
 from torch.utils.data.dataloader import DataLoader
 
@@ -35,9 +35,9 @@ def get_classif_metrics(model: Any, dataloader: DataLoader,
     Return:
     A `Metrics` NamedTuple
     """
-    calc_precision = load_metric('precision')
-    calc_recall = load_metric('recall')
-    calc_f1 = load_metric('f1')
+    calc_precision = evaluate.load('precision')
+    calc_recall = evaluate.load('recall')
+    calc_f1 = evaluate.load('f1')
     total_loss = 0.
     num_seen_datapoints = 0
     for batch in dataloader:
@@ -78,7 +78,7 @@ def get_ner_metrics(model: Any, dataloader: DataLoader,
     A `Metrics` NamedTuple
     """
     # pylint: disable=too-many-locals
-    calc_seq_metrics = load_metric('seqeval')
+    calc_seq_metrics = evaluate.load('seqeval')
     total_loss = 0.
     num_seen_datapoints = 0
     for batch in dataloader:

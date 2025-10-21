@@ -1,0 +1,2 @@
+model	hf_name	batch_size	learning_rate	weight_decay	scheduler
+biomed_roberta_rct500	allenai/dsp_roberta_base_dapt_biomed_tapt_rct_500	16	2e-5	0	

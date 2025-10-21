@@ -14,7 +14,7 @@ from typing import Any, NamedTuple
 import pandas as pd
 import torch
 from torch.utils.data.dataloader import DataLoader
-from transformers import AdamW
+from torch.optim import AdamW
 
 
 # ---------------------------------------------------------------------------

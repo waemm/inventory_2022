@@ -1,0 +1,54 @@
+# Core ML/Data Science packages
+torch
+transformers
+datasets
+numpy
+pandas
+scikit-learn
+seqeval
+
+# HuggingFace ecosystem
+tokenizers
+huggingface-hub
+
+# Data processing
+pyyaml
+tqdm
+plotly
+kaleido
+
+# Text processing
+nltk
+
+# Geographic and country data
+pycountry
+
+# Web and networking
+requests
+urllib3
+
+# Data formats
+pyarrow
+fsspec
+
+# Development and testing tools
+pytest
+black
+flake8
+mypy
+pytest-flake8
+
+# Modern development tools
+ruff
+pip-tools
+
+# Performance and profiling
+pytest-benchmark
+memory-profiler
+
+# Enhanced output
+rich
+
+# Jupyter support
+jupyter
+ipykernel

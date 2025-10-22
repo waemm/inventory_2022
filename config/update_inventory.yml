@@ -45,8 +45,8 @@ processed_countries: 'out/new_query/processed_countries'
 # Parameters
 
 ## Europe PMC query
-query_from_date: 2022
-query_to_date: 2022
+query_from_date: 2025
+query_to_date: 2025
 query_string: 'config/query.txt'
 
 # Previous inventory to be merged

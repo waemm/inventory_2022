@@ -1,0 +1,38 @@
+2025-10-22 12:29:32 [HEADER] 2022 INVENTORY RERUN - LATEST MODELS
+2025-10-22 12:29:32 [INFO] Start time: 2025-10-22 12:29:32
+2025-10-22 12:29:32 [INFO] Input data: data/epmc_query_results_2022.csv
+2025-10-22 12:29:32 [INFO] Output directory: inventory_classification_results/2025-10-22_2022_rerun
+2025-10-22 12:29:32 [INFO] Log file: inventory_classification_results/2025-10-22_2022_rerun/logs/processing_log_2025-10-22_12-29-32.txt
+2025-10-22 12:29:33 [INFO] Checking prerequisites...
+2025-10-22 12:29:33 [INFO] Input data: data/epmc_query_results_2022.csv
+2025-10-22 12:29:33 [INFO] Papers to process: 21677
+2025-10-22 12:29:33 [INFO] Model verification:
+2025-10-22 12:29:33 [INFO]   Classification model: 481MB
+2025-10-22 12:29:33 [INFO]   NER model: 474MB
+2025-10-22 12:29:33 [SUCCESS] Prerequisites check passed
+2025-10-22 12:29:33 [INFO] Setting up environment and directories...
+2025-10-22 12:29:33 [INFO] Environment activated: biodata_modern_env
+2025-10-22 12:29:33 [INFO] Output directory: inventory_classification_results/2025-10-22_2022_rerun
+2025-10-22 12:29:33 [INFO] Verifying environment setup...
+PyTorch: 2.2.2
+Transformers: 4.35.0
+Datasets: 2.19.0
+Evaluate: 0.4.6
+2025-10-22 12:29:37 [SUCCESS] Environment setup complete
+2025-10-22 12:29:37 [INFO] Estimating processing time...
+2025-10-22 12:29:37 [INFO] Processing estimates:
+2025-10-22 12:29:37 [INFO]   Papers to process: 21677
+2025-10-22 12:29:37 [INFO]   Classification: ~54 minutes
+2025-10-22 12:29:37 [INFO]   NER (estimated): ~21 minutes
+2025-10-22 12:29:37 [INFO]   Additional processing: ~10 minutes
+2025-10-22 12:29:38 [INFO]   Total estimated: ~1h 25m
+2025-10-22 12:29:38 [INFO]   Estimated completion: 2025-10-22 13:54:38
+2025-10-22 12:29:38 [INFO] 
+2025-10-22 12:29:38 [WARNING] This will process 21677 papers and take approximately 1h 25m
+2025-10-22 12:29:38 [INFO] 
+2025-10-22 12:29:38 [WARNING] Starting processing pipeline...
+2025-10-22 12:29:38 [INFO] 
+2025-10-22 12:29:38 [PROGRESS] Step 1/5: Running classification on all papers...
+2025-10-22 12:29:38 [INFO] Input: data/epmc_query_results_2022.csv
+2025-10-22 12:29:38 [INFO] Model: out/classif_train_out/article_classifier.pt
+2025-10-22 12:29:38 [INFO] Output: inventory_classification_results/2025-10-22_2022_rerun/classification/predictions.csv

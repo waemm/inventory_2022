@@ -1,0 +1,18 @@
+Metric Category,Metric,Value
+Article-Level,Total Articles (Rerun),29
+Article-Level,Total Articles (Final),2362
+Article-Level,Overlapping Articles,0
+Article-Level,Unique to Rerun,29
+Article-Level,Unique to Final,2362
+Article-Level,Overlap Percentage,0.00%
+Resource-Level,Total Resources (Rerun),29
+Resource-Level,Total Resources (Final),2362
+Resource-Level,Overlapping Resources,15
+Resource-Level,Unique to Rerun,14
+Resource-Level,Unique to Final,2347
+Resource-Level,Overlap Percentage,0.64%
+Probability Statistics,Rerun Avg best_name_prob,0.9837
+Probability Statistics,Final Avg best_name_prob,0.9933
+Probability Statistics,Rerun Avg best_common_prob,0.9837
+Probability Statistics,Final Avg best_common_prob,0.9931
+Probability Statistics,Resources Needing Review,0

@@ -1,0 +1,2377 @@
+ID,best_name,in_rerun,in_final,rerun_best_name_prob,final_best_name_prob,rerun_best_common_prob,final_best_common_prob,difference_score,status
+32111231,NoncoRNA,True,True,0.981035,0.997252762,0.981035,0.997252762,,both_high_conf
+25336621,DBTMEE,True,True,0.9888513,0.997862458,0.9888513,0.997862458,,both_high_conf
+32360910,CancerEnD,True,True,0.9863432,0.998435497,0.9863432,0.998435497,,both_high_conf
+23868908,CREDO,True,True,0.98975474,0.997011185,0.98975474,0.997011185,,both_high_conf
+23185043,DoBISCUIT,True,True,0.98049337,0.998316765,0.98049337,0.998316765,,both_high_conf
+30247677,AmtDB,True,True,0.9847453,0.998366475,0.9847453,0.998366475,,both_high_conf
+25392422,tRFdb,True,True,0.9827922,0.998105168,0.9827922,0.998105168,,both_high_conf
+22847935,GlycoCD,True,True,0.9830626,0.997937024,0.9830626,0.997937024,,both_high_conf
+21735248,ORchestra,True,True,0.9814988,0.99726969,0.9814988,0.99726969,,both_high_conf
+24143056,MAGICdb,True,True,0.9786458,0.998173594,0.9786458,0.998173594,,both_high_conf
+31504765,GMrepo,True,True,0.97899055,0.998026729,0.97899055,0.998026729,,both_high_conf
+33125055,HbVar,True,True,0.9809412,0.997882962,0.9809412,0.997882962,,both_high_conf
+26578693,TENOR,True,True,0.9819167,0.997442484,0.9819167,0.997442484,,both_high_conf
+25149689,FusoBase,True,True,0.97979414,0.997971714,0.97979414,0.997971714,,both_high_conf
+28759605,THPdb,True,True,0.9818473,0.998677254,0.9818473,0.998677254,,both_high_conf
+22804825,HuPho,False,True,,0.995498061,,0.995498061,,unique_to_final
+25632108,CyanOmics,False,True,,0.996836007,,0.996836007,,unique_to_final
+28608363,MiSynPat,False,True,,0.997369468,,0.997369468,,unique_to_final
+33219670,MolluscDB,False,True,,0.998527646,,0.998527646,,unique_to_final
+26708988,HitPredict,False,True,,0.99754715,,0.99754715,,unique_to_final
+24997141,ChiloDB,False,True,,0.997956932,,0.997956932,,unique_to_final
+30094004,SuperbaSE,False,True,,0.992503345,,0.992503345,,unique_to_final
+"26602694, 25555720",APD3,False,True,,0.988607168,,0.988607168,,unique_to_final
+32119071,ProCaff,False,True,,0.978805065,,0.978805065,,unique_to_final
+32512488,TTRMDB,False,True,,0.990589499,,0.990589499,,unique_to_final
+29509874,CarbonylDB,False,True,,0.994347632,,0.994347632,,unique_to_final
+25378322,UniPROBE,False,True,,0.997834285,,0.997834285,,unique_to_final
+27037912,GAMDB,False,True,,0.99449718,,0.99449718,,unique_to_final
+22424087,PupDB,False,True,,0.998188615,,0.998188615,,unique_to_final
+22547615,MBLED,False,True,,0.99639684,,0.99639684,,unique_to_final
+24244913,BioNames,False,True,,0.997415423,,0.997415423,,unique_to_final
+23203890,OrysPSSP,False,True,,0.995186687,,0.995186687,,unique_to_final
+24304901,GPCRDB,False,True,,0.998344004,,0.998344004,,unique_to_final
+34332522,PACHIN,False,True,,0.991595972,,0.991595972,,unique_to_final
+"22135302, 27899673",DiseaseMeth,False,True,,0.993306458,,0.993306458,,unique_to_final
+"23734660, 33772585, 22681406",IEDB,False,True,,0.993056357,,0.993056357,,unique_to_final
+22139928,SpliceDisease,False,True,,0.996948481,,0.996948481,,unique_to_final
+23696878,PEpiD,False,True,,0.998079658,,0.998079658,,unique_to_final
+33237299,GreenPhylDB,False,True,,0.997109532,,0.997109532,,unique_to_final
+"27987169, 23161680",TropGeneDB,False,True,,0.997986138,,0.997986138,,unique_to_final
+24885079,fPoxDB,False,True,,0.997609806,,0.997609806,,unique_to_final
+23095257,IBDsite,False,True,,0.995800972,,0.995800972,,unique_to_final
+34362451,MPDB,False,True,,0.990668297,,0.990668297,,unique_to_final
+24178989,HypoxiaDB,False,True,,0.996842146,,0.996842146,,unique_to_final
+23661693,CMAP,False,True,,0.981967479,,0.981967479,,unique_to_final
+"22948725, 24077912, 28349240",HGMD,False,True,,0.993344128,,0.993344128,,unique_to_final
+"23197659, 25414356, 27899674, 31777944, 31851420",CDD,False,True,,0.996487617,,0.996487617,,unique_to_final
+27451428,SZDB,False,True,,0.994548321,,0.994548321,,unique_to_final
+"25414323, 29858801, 33755549",AFND,False,True,,0.989334464,,0.989334464,,unique_to_final
+27618709,DenHunt,False,True,,0.991763353,,0.991763353,,unique_to_final
+22292669,TranscriptomeBrowser,False,True,,0.988476872,,0.988476872,,unique_to_final
+25187689,TRIPATH,False,True,,0.990485728,,0.990485728,,unique_to_final
+28984188,ScaPD,False,True,,0.998022795,,0.998022795,,unique_to_final
+31588509,MutEx,False,True,,0.993316352,,0.993316352,,unique_to_final
+24092884,PODB,False,True,,0.986917019,,0.986917019,,unique_to_final
+33423696,COCONUT,False,True,,0.993007143,,0.993007143,,unique_to_final
+31811943,GliomaDB,False,True,,0.996975422,,0.996975422,,unique_to_final
+22116062,GeneDB,False,True,,0.993148148,,0.993148148,,unique_to_final
+30380106,OrthoInspector,False,True,,0.992683411,,0.992683411,,unique_to_final
+29485625,Datasets2Tools,False,True,,0.979977262,,0.979977262,,unique_to_final
+23180797,Quorumpeps,False,True,,0.993253469,,0.993253469,,unique_to_final
+29432422,TopicalPdb,False,True,,0.998002231,,0.998002231,,unique_to_final
+23104376,SwissSidechain,False,True,,0.996189356,,0.996189356,,unique_to_final
+26699919,ECGene,False,True,,0.994564354,,0.994564354,,unique_to_final
+22053087,MimoDB,False,True,,0.995547354,,0.995547354,,unique_to_final
+25332403,i5k,False,True,,0.991027579,,0.991027579,,unique_to_final
+28358052,HIVed,False,True,,0.991903603,,0.991903603,,unique_to_final
+23935057,metabolicMine,False,True,,0.990483761,,0.990483761,,unique_to_final
+31642469,PhenoModifier,False,True,,0.996493459,,0.996493459,,unique_to_final
+33382884,HeartBioPortal,False,True,,0.983459532,,0.983459532,,unique_to_final
+28383342,CHEAR,False,True,,0.995191038,,0.995191038,,unique_to_final
+29905762,LeptoDB,False,True,,0.995939851,,0.995939851,,unique_to_final
+"22135296, 25510499",VectorBase,False,True,,0.996112347,,0.996112347,,unique_to_final
+33247932,BarleyVarDB,False,True,,0.997781932,,0.997781932,,unique_to_final
+23325619,miRCancer,False,True,,0.985522926,,0.985522926,,unique_to_final
+29860480,dbCRSR,False,True,,0.995114565,,0.995114565,,unique_to_final
+34648133,SMART,False,True,,0.978860319,,0.978860319,,unique_to_final
+30053238,mutTCPdb,False,True,,0.996738315,,0.996738315,,unique_to_final
+33459764,SWITCHES,False,True,,0.99647893,,0.99647893,,unique_to_final
+22545773,MASiVEdb,False,True,,0.994499087,,0.994499087,,unique_to_final
+"26578586, 30945200",GreeNC,False,True,,0.990412146,,0.990412146,,unique_to_final
+24213601,EPITRANS,False,True,,0.996830702,,0.996830702,,unique_to_final
+30066211,HAMdb,False,True,,0.991403401,,0.991403401,,unique_to_final
+26456067,FLAD,False,True,,0.979612629,,0.979612629,,unique_to_final
+32502232,LabxDB,False,True,,0.991126418,,0.991126418,,unique_to_final
+23369322,HDAM,False,True,,0.990325689,,0.990325689,,unique_to_final
+26582922,SureChEMBL,False,True,,0.998425841,,0.998425841,,unique_to_final
+22070882,COD,False,True,,0.984296083,,0.984296083,,unique_to_final
+27813701,UNcleProt,False,True,,0.993122756,,0.993122756,,unique_to_final
+25324316,EzCatDB,False,True,,0.997173011,,0.997173011,,unique_to_final
+24275491,PhylomeDB,False,True,,0.996954501,,0.996954501,,unique_to_final
+34485275,MeiosisOnline,False,True,,0.993370068,,0.993370068,,unique_to_final
+29040681,SMART,False,True,,0.996265411,,0.996265411,,unique_to_final
+23774715,Autism Brain Imaging Data Exchange,False,True,,0.98496213,,0.968805671,,unique_to_final
+27789686,GenomeCRISPR,False,True,,0.993304312,,0.993304312,,unique_to_final
+22067443,PINA,False,True,,0.992636144,,0.992636144,,unique_to_final
+28077569,RAIN,False,True,,0.991763949,,0.991763949,,unique_to_final
+25378341,diArk,False,True,,0.992710948,,0.992710948,,unique_to_final
+31942977,ChIPSummitDB,False,True,,0.995177627,,0.995177627,,unique_to_final
+26980516,DemaDb,False,True,,0.9967255,,0.9967255,,unique_to_final
+34514416,SCISSORÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬ÃÂÃÂÃÂÃÂ¢,False,True,,0.996242762,,0.996242762,,unique_to_final
+26800861,EchinoDB,False,True,,0.992635667,,0.992635667,,unique_to_final
+21781326,PromBase,False,True,,0.990113139,,0.990113139,,unique_to_final
+23193279,KIDFamMap,False,True,,0.99645108,,0.99645108,,unique_to_final
+31586405,MatrisomeDB,False,True,,0.997006476,,0.997006476,,unique_to_final
+26746174,Pleurochrysome,False,True,,0.995230675,,0.995230675,,unique_to_final
+22080563,CADRE,False,True,,0.994582891,,0.994582891,,unique_to_final
+31086734,OsteoporosAtlas,False,True,,0.993293166,,0.993293166,,unique_to_final
+26503249,BDB,False,True,,0.991443157,,0.991443157,,unique_to_final
+"29059334, 22102576",MetaCyc,False,True,,0.994340897,,0.994340897,,unique_to_final
+"25378301, 31504780",miRDB,False,True,,0.996351361,,0.996351361,,unique_to_final
+23547943,TRACER,False,True,,0.993061364,,0.993061364,,unique_to_final
+24150944,HRaP,False,True,,0.996109843,,0.996109843,,unique_to_final
+29145823,dbMDEGA,False,True,,0.986826241,,0.986826241,,unique_to_final
+22058132,PlantNATsDB,False,True,,0.995334884,,0.995334884,,unique_to_final
+23193296,LUCApedia,False,True,,0.997837782,,0.997837782,,unique_to_final
+33308175,ILDGDB,False,True,,0.998209894,,0.998209894,,unique_to_final
+29045713,SCPortalen,False,True,,0.995376956,,0.995376956,,unique_to_final
+31665454,ChlamDB,False,True,,0.998569787,,0.998569787,,unique_to_final
+23688397,PLANEX,False,True,,0.997026294,,0.997026294,,unique_to_final
+29774137,SACPD,False,True,,0.991069496,,0.991069496,,unique_to_final
+33104790,PhycoCosm,False,True,,0.996997952,,0.996997952,,unique_to_final
+"29077884, 28025347",HEDD,False,True,,0.985895932,,0.985895932,,unique_to_final
+21317139,eGOB,False,True,,0.991934419,,0.991934419,,unique_to_final
+23504933,Human Proteinpedia,False,True,,0.979407251,,0.979407251,,unique_to_final
+25326331,ImmuCo,False,True,,0.996915221,,0.996915221,,unique_to_final
+32122231,ncRPheno,False,True,,0.996450782,,0.996450782,,unique_to_final
+21930248,HCVpro,False,True,,0.997242883,,0.997242883,,unique_to_final
+30365027,gcMeta,False,True,,0.99671793,,0.99671793,,unique_to_final
+25347823,MitProNet,False,True,,0.994459689,,0.994459689,,unique_to_final
+27173524,DPTEdb,False,True,,0.989185214,,0.989185214,,unique_to_final
+"32728249, 31713622, 29126249, 23193274",ENCODE,False,True,,0.986879021,,0.986879021,,unique_to_final
+32990749,TCRdb,False,True,,0.997715533,,0.997715533,,unique_to_final
+27472917,CicerTransDB,False,True,,0.995746732,,0.995746732,,unique_to_final
+"22782549, 25399423",dbSNO,False,True,,0.99643296,,0.99643296,,unique_to_final
+24923822,MorusDB,False,True,,0.993190169,,0.993190169,,unique_to_final
+27081154,3CDB,False,True,,0.995992641,,0.995992641,,unique_to_final
+25336619,PAIDB,False,True,,0.989453137,,0.989453137,,unique_to_final
+27504011,MODEM,False,True,,0.9967134,,0.9967134,,unique_to_final
+30295851,jPOST,False,True,,0.991378427,,0.991378427,,unique_to_final
+24705206,FixPred,False,True,,0.988829434,,0.988829434,,unique_to_final
+23772554,PRIMOS,False,True,,0.99499613,,0.99499613,,unique_to_final
+23468181,EsPal,False,True,,0.998021126,,0.998021126,,unique_to_final
+26251998,PhenomeCentral,False,True,,0.995991707,,0.995991707,,unique_to_final
+28539606,SesameFG,False,True,,0.989373446,,0.989373446,,unique_to_final
+32345346,REPIC,False,True,,0.998654127,,0.998654127,,unique_to_final
+33010154,CRISP-view,False,True,,0.996309042,,0.996309042,,unique_to_final
+32345779,PSCRIdb,False,True,,0.996715069,,0.996715069,,unique_to_final
+31701131,CancerTracer,False,True,,0.997136056,,0.997136056,,unique_to_final
+26342387,DENdb,False,True,,0.997271538,,0.997271538,,unique_to_final
+23846747,CoDNaS,False,True,,0.99604851,,0.99604851,,unique_to_final
+25324314,TTSMI,False,True,,0.997173548,,0.997173548,,unique_to_final
+33084905,MeDAS,False,True,,0.996930599,,0.996930599,,unique_to_final
+26647370,SBMDb,False,True,,0.995680153,,0.995680153,,unique_to_final
+29892516,SEVENS,False,True,,0.997551143,,0.997551143,,unique_to_final
+31950190,PCaLiStDB,False,True,,0.995350957,,0.995350957,,unique_to_final
+28083826,HICL,False,True,,0.993846953,,0.993846953,,unique_to_final
+33965348,GGVD,False,True,,0.992996335,,0.992996335,,unique_to_final
+25505034,PODC,False,True,,0.992418885,,0.992418885,,unique_to_final
+25204646,Isotopo,False,True,,0.985290567,,0.985290567,,unique_to_final
+26013919,NIG_MoG,False,True,,0.989151716,,0.989151716,,unique_to_final
+27276067,DREMECELS,False,True,,0.997764349,,0.997764349,,unique_to_final
+24122843,HTS-DB,False,True,,0.993688151,,0.993688151,,unique_to_final
+34559210,QSDB,False,True,,0.994050586,,0.994050586,,unique_to_final
+30486838,CHESS,False,True,,0.993582785,,0.993582785,,unique_to_final
+33074314,TransCirc,False,True,,0.997567892,,0.997567892,,unique_to_final
+25392406,VirHostNet,False,True,,0.99125731,,0.99125731,,unique_to_final
+23193288,CFGP,False,True,,0.979907155,,0.979907155,,unique_to_final
+32193291,LncSpA,False,True,,0.997582436,,0.997582436,,unique_to_final
+24739306,RetrogeneDB,False,True,,0.99268949,,0.99268949,,unique_to_final
+25465051,A-WINGS,False,True,,0.987336159,,0.987336159,,unique_to_final
+25518738,CGWR,False,True,,0.983098507,,0.983098507,,unique_to_final
+29077946,ARED-Plus,False,True,,0.983083916,,0.983083916,,unique_to_final
+23019048,CRCgene,False,True,,0.993980265,,0.993980265,,unique_to_final
+22829745,CyanoEXpress,False,True,,0.994646311,,0.994646311,,unique_to_final
+27127885,GCGene,False,True,,0.995825529,,0.995825529,,unique_to_final
+28832569,SweGen,False,True,,0.992595315,,0.992595315,,unique_to_final
+29112749,PGG.Population,False,True,,0.989457592,,0.989457592,,unique_to_final
+22701464,pep2pro,False,True,,0.995340317,,0.995340317,,unique_to_final
+"30020414, 22859501",SKEMPI,False,True,,0.998165965,,0.998165965,,unique_to_final
+26438539,CRISPRz,False,True,,0.997380316,,0.997380316,,unique_to_final
+22369658,DetoxiProt,False,True,,0.993119836,,0.993119836,,unique_to_final
+33010177,SC2disease,False,True,,0.997551847,,0.997551847,,unique_to_final
+30357370,liqDB,False,True,,0.997288704,,0.997288704,,unique_to_final
+24174536,GeneProf,False,True,,0.996735215,,0.996735215,,unique_to_final
+25627341,SynBioLGDB,False,True,,0.994347095,,0.994347095,,unique_to_final
+34269889,B3Pdb,False,True,,0.996475801,,0.996475801,,unique_to_final
+22649282,Florabank1,False,True,,0.991928935,,0.991928935,,unique_to_final
+31240309,TCR3d,False,True,,0.996341427,,0.996341427,,unique_to_final
+22645600,RiceRBP,False,True,,0.996419489,,0.996419489,,unique_to_final
+27465544,IGDD,False,True,,0.995845596,,0.995845596,,unique_to_final
+"25348407, 31733063",Genome3D,False,True,,0.994092405,,0.994092405,,unique_to_final
+33035346,tRFtarget,False,True,,0.997647464,,0.997647464,,unique_to_final
+"24163255, 29059374",PED,False,True,,0.995105187,,0.995105187,,unique_to_final
+29657279,oncoNcRNA,False,True,,0.992065489,,0.992065489,,unique_to_final
+21821666,NeuroPedia,False,True,,0.996082842,,0.996082842,,unique_to_final
+32487016,ncRI,False,True,,0.994199097,,0.994199097,,unique_to_final
+32367112,MACSNVdb,False,True,,0.99785769,,0.99785769,,unique_to_final
+34656056,SuperTCM,False,True,,0.990243733,,0.990243733,,unique_to_final
+29028885,HoTResDB,False,True,,0.99197798,,0.99197798,,unique_to_final
+24227675,PhosphoNetworks,False,True,,0.997868598,,0.997868598,,unique_to_final
+32693783,ORDER,False,True,,0.97873052,,0.97873052,,unique_to_final
+"22139938, 24270792, 26578585, 29112716",Gene3D,False,True,,0.990353435,,0.990353435,,unique_to_final
+25377257,BactPepDB,False,True,,0.998118401,,0.998118401,,unique_to_final
+24007337,GRASP,False,True,,0.996128678,,0.996128678,,unique_to_final
+31231773,MepmiRDB,False,True,,0.99640429,,0.99640429,,unique_to_final
+"33112702, 25233092",LncRBase,False,True,,0.9981637,,0.9981637,,unique_to_final
+23667450,LipidHome,False,True,,0.980949104,,0.980949104,,unique_to_final
+31906602,LLPSDB,False,True,,0.997212887,,0.997212887,,unique_to_final
+27193158,ASL-LEX,False,True,,0.995315278,,0.995315278,,unique_to_final
+31640808,PGG.SNV,False,True,,0.993890333,,0.993890333,,unique_to_final
+"30423142, 24275495",miRBase,False,True,,0.997651339,,0.997651339,,unique_to_final
+31887789,ETph,False,True,,0.99349612,,0.99349612,,unique_to_final
+22080560,MIPModDB,False,True,,0.992227316,,0.992227316,,unique_to_final
+33238004,MetaTropismDB,False,True,,0.996033907,,0.996033907,,unique_to_final
+33079988,DKK,False,True,,0.987769703,,0.987769703,,unique_to_final
+27789704,KERIS,False,True,,0.998085916,,0.998085916,,unique_to_final
+32026396,BSM-Arc,False,True,,0.996515274,,0.996515274,,unique_to_final
+24428872,GuavaH,False,True,,0.995271742,,0.995271742,,unique_to_final
+"22102583, 29136208, 31696236",MPD,False,True,,0.996881326,,0.996881326,,unique_to_final
+21507258,PheMaDB,False,True,,0.986041546,,0.986041546,,unique_to_final
+26005672,SPECTRA,False,True,,0.996715844,,0.996715844,,unique_to_final
+30184150,TRCirc,False,True,,0.998382151,,0.998382151,,unique_to_final
+23993619,aFiSh,False,True,,0.991861537,,0.991861537,,unique_to_final
+30614601,UVEOGENE,False,True,,0.992076588,,0.992076588,,unique_to_final
+34164644,HFBD,False,True,,0.994234284,,0.994234284,,unique_to_final
+23378291,PhenoDB,False,True,,0.997127712,,0.997127712,,unique_to_final
+28708831,biochem4j,False,True,,0.994090736,,0.994090736,,unique_to_final
+31512145,ZIKAVID,False,True,,0.995752037,,0.995752037,,unique_to_final
+27493549,LigandBox,False,True,,0.997803092,,0.997803092,,unique_to_final
+30445567,OncoBase,False,True,,0.998138845,,0.998138845,,unique_to_final
+32190163,PLSD,False,True,,0.991903663,,0.991903663,,unique_to_final
+30985146,ProteinExplorer,False,True,,0.992175162,,0.992175162,,unique_to_final
+"29036351, 23094086",miRandola,False,True,,0.990178049,,0.990178049,,unique_to_final
+27553277,Cysteinome,False,True,,0.994982839,,0.994982839,,unique_to_final
+33221926,HumanMetagenomeDB,False,True,,0.983011484,,0.983011484,,unique_to_final
+26656948,MG-RAST,False,True,,0.996288791,,0.996288791,,unique_to_final
+23951158,FmMDb,False,True,,0.998117232,,0.998117232,,unique_to_final
+"23093600, 25326323, 27651457, 29846728, 30247620, 33068428, 29351546",CTD,False,True,,0.997465014,,0.997465014,,unique_to_final
+34927675,CRPMKB,False,True,,0.995024562,,0.995024562,,unique_to_final
+22084200,AH-DB,False,True,,0.99563925,,0.99563925,,unique_to_final
+28529078,HCSGD,False,True,,0.997187793,,0.997187793,,unique_to_final
+30057343,MCENet,False,True,,0.991767049,,0.991767049,,unique_to_final
+27148975,SpinachDB,False,True,,0.997738004,,0.997738004,,unique_to_final
+"30380072, 25399422",LncRNA2Target,False,True,,0.983380377,,0.983380377,,unique_to_final
+25414355,rrnDB,False,True,,0.994640529,,0.994640529,,unique_to_final
+22833525,RedoxDB,False,True,,0.996839046,,0.996839046,,unique_to_final
+27789702,Cistrome,False,True,,0.987228572,,0.987228572,,unique_to_final
+33685383,MAPslnc,False,True,,0.99292849,,0.99292849,,unique_to_final
+34025933,AddictGene,False,True,,0.997377753,,0.997377753,,unique_to_final
+27436239,GlycoGAIT,False,True,,0.980752434,,0.980752434,,unique_to_final
+28888135,STRSeq,False,True,,0.99774313,,0.99774313,,unique_to_final
+31598702,VISDB,False,True,,0.994756818,,0.994756818,,unique_to_final
+24081580,3did,False,True,,0.997478525,,0.997478525,,unique_to_final
+22621612,C-GATE,False,True,,0.988704075,,0.988704075,,unique_to_final
+25262355,NrichD,False,True,,0.996541321,,0.996541321,,unique_to_final
+21624162,KUPKB,False,True,,0.995265484,,0.995265484,,unique_to_final
+22075996,SNPeffect,False,True,,0.994509757,,0.994509757,,unique_to_final
+34729303,MCDB,False,True,,0.984939098,,0.984939098,,unique_to_final
+"31696235, 26582919",MGnify,False,True,,0.997318149,,0.997318149,,unique_to_final
+26631432,HDI,False,True,,0.979960263,,0.979960263,,unique_to_final
+29106599,ASpedia,False,True,,0.996890545,,0.996890545,,unique_to_final
+28203705,Pln24NT,False,True,,0.996295124,,0.996295124,,unique_to_final
+27616775,PGD,False,True,,0.98055391,,0.98055391,,unique_to_final
+23220571,SM2miR,False,True,,0.988238767,,0.988238767,,unique_to_final
+"31642470, 22067452, 24194605, 29069413",WormBase,False,True,,0.99719429,,0.99719429,,unique_to_final
+25489177,RiceQTLPro,False,True,,0.997575998,,0.997575998,,unique_to_final
+23203877,NPACT,False,True,,0.997277677,,0.997277677,,unique_to_final
+30858555,MorCVD,False,True,,0.99740231,,0.99740231,,unique_to_final
+29216377,PeachVar-DB,False,True,,0.993295565,,0.993295565,,unique_to_final
+23161695,eProS,False,True,,0.996275544,,0.996275544,,unique_to_final
+26519912,eHALOPH,False,True,,0.997677743,,0.997677743,,unique_to_final
+"27987179, 24194597",PPDB,False,True,,0.988334405,,0.988334405,,unique_to_final
+27515824,Ricebase,False,True,,0.991965771,,0.991965771,,unique_to_final
+"26673716, 30357350, 33125078, 24288371",Pfam,False,True,,0.990840673,,0.990840673,,unique_to_final
+33984507,HisPhosSite,False,True,,0.988221288,,0.988221288,,unique_to_final
+23798489,eFG,False,True,,0.989360213,,0.989360213,,unique_to_final
+29989091,RicyerDB,False,True,,0.99671818,,0.99671818,,unique_to_final
+25404132,DoGSD,False,True,,0.996389866,,0.996389866,,unique_to_final
+33211851,WikiPathways,False,True,,0.994370461,,0.994370461,,unique_to_final
+23071556,MK4MDD,False,True,,0.993700966,,0.993700966,,unique_to_final
+"24885522, 27924020, 33219661",LincSNP,False,True,,0.997198164,,0.997198164,,unique_to_final
+33554247,PMI-DB,False,True,,0.978619933,,0.978619933,,unique_to_final
+"32472030, 25841437",dbPSP,False,True,,0.99289383,,0.99289383,,unique_to_final
+26946289,dbPEC,False,True,,0.996957302,,0.996957302,,unique_to_final
+31094220,AmyCo,False,True,,0.988337398,,0.988337398,,unique_to_final
+25224438,Tea Metabolome database,False,True,,0.978793991,,0.973765627,,unique_to_final
+24525374,lncRNAMap,False,True,,0.98099345,,0.98099345,,unique_to_final
+27010073,dbPAF,False,True,,0.997537851,,0.997537851,,unique_to_final
+33045751,LncExpDB,False,True,,0.998109341,,0.998109341,,unique_to_final
+29531263,IMPPAT,False,True,,0.988455057,,0.988455057,,unique_to_final
+29648583,LipidPedia,False,True,,0.990220785,,0.990220785,,unique_to_final
+31733064,PathDIP,False,True,,0.994651794,,0.994651794,,unique_to_final
+31617559,PolyASite,False,True,,0.985653996,,0.985653996,,unique_to_final
+28069893,Alga-PrAS,False,True,,0.994979988,,0.994979988,,unique_to_final
+34774049,DREAM,False,True,,0.993100206,,0.993100206,,unique_to_final
+23196988,NURBS,False,True,,0.996146083,,0.996146083,,unique_to_final
+26602695,CRN,False,True,,0.987320423,,0.987320423,,unique_to_final
+24569397,PCMdb,False,True,,0.994843006,,0.994843006,,unique_to_final
+22096227,MINT,False,True,,0.995954633,,0.995954633,,unique_to_final
+30407583,FusionGDB,False,True,,0.992917299,,0.992917299,,unique_to_final
+30266409,PlaD,False,True,,0.996840239,,0.996840239,,unique_to_final
+29401218,MutHTP,False,True,,0.994622827,,0.994622827,,unique_to_final
+"22661982, 28499913",Soybean Proteome Database,False,True,,0.979806413,,0.971009135,,unique_to_final
+33581334,OGP,False,True,,0.993771553,,0.993771553,,unique_to_final
+34022814,Rhododendron Plant Genome Database,False,True,,0.988815002,,0.988055825,,unique_to_final
+23281827,Helminth Secretome Database,False,True,,0.980656524,,0.909700066,,unique_to_final
+27907889,denovo-db,False,True,,0.997356877,,0.997356877,,unique_to_final
+29059379,CirGRDB,False,True,,0.997688591,,0.997688591,,unique_to_final
+33507270,InSexBase,False,True,,0.984699667,,0.984699667,,unique_to_final
+31799597,RNAactDrug,False,True,,0.996623337,,0.996623337,,unique_to_final
+32597311,OncotRF,False,True,,0.998194695,,0.998194695,,unique_to_final
+34464437,lncExplore,False,True,,0.996928811,,0.996928811,,unique_to_final
+28158179,TrypsNetDB,False,True,,0.998068571,,0.998068571,,unique_to_final
+34144671,BCGene,False,True,,0.99187088,,0.99187088,,unique_to_final
+25931458,NeuroPep,False,True,,0.99364078,,0.99364078,,unique_to_final
+24243844,FireDB,False,True,,0.992642879,,0.992642879,,unique_to_final
+25125445,PlantCAZyme,False,True,,0.998365402,,0.998365402,,unique_to_final
+31160594,PathoPhenoDB,False,True,,0.995027721,,0.995027721,,unique_to_final
+"31161214, 25348404",WDSPdb,False,True,,0.994846165,,0.994846165,,unique_to_final
+25166490,isoMETLIN,False,True,,0.988883018,,0.988883018,,unique_to_final
+22807998,SyStemCell,False,True,,0.995095372,,0.995095372,,unique_to_final
+25792605,TeloPIN,False,True,,0.992713809,,0.992713809,,unique_to_final
+"29662024, 32679723",PKIDB,False,True,,0.987339139,,0.987339139,,unique_to_final
+31410491,ABCD,False,True,,0.981157601,,0.981157601,,unique_to_final
+28187413,DaTo,False,True,,0.992877007,,0.992877007,,unique_to_final
+29036653,miRCarta,False,True,,0.995174766,,0.995174766,,unique_to_final
+26602692,AREsite2,False,True,,0.991525769,,0.991525769,,unique_to_final
+"23203875, 29106634",TCMID,False,True,,0.992202723,,0.992202723,,unique_to_final
+"23180796, 26602686, 30407520",QTLdb,False,True,,0.998483792,,0.998483792,,unique_to_final
+24526713,3DGD,False,True,,0.996886671,,0.996886671,,unique_to_final
+25502817,HGV&TB,False,True,,0.993074507,,0.993074507,,unique_to_final
+24170808,MitoBreak,False,True,,0.998078406,,0.998078406,,unique_to_final
+30864352,GenCoNet,False,True,,0.993595004,,0.993595004,,unique_to_final
+28234924,DNApod,False,True,,0.990965605,,0.990965605,,unique_to_final
+27580923,SkeletonGenetics,False,True,,0.990358194,,0.990358194,,unique_to_final
+29228298,SeedStor,False,True,,0.993587971,,0.993587971,,unique_to_final
+27899676,TransportDB,False,True,,0.979824901,,0.979824901,,unique_to_final
+25392421,MiCroKiTS,False,True,,0.991478801,,0.991478801,,unique_to_final
+33417691,HGFDB,False,True,,0.996328712,,0.996328712,,unique_to_final
+23696792,ExtremeDB,False,True,,0.997353792,,0.997353792,,unique_to_final
+28981707,EPD,False,True,,0.979538023,,0.979538023,,unique_to_final
+29218589,StimulStat,False,True,,0.99712956,,0.99712956,,unique_to_final
+25414353,EHFPI,False,True,,0.998098135,,0.998098135,,unique_to_final
+22238269,GROMACS,False,True,,0.992195368,,0.992195368,,unique_to_final
+31598693,EuRBPDB,False,True,,0.998039126,,0.998039126,,unique_to_final
+31157825,MENDA,False,True,,0.996490777,,0.996490777,,unique_to_final
+30335161,EVmiRNA,False,True,,0.996470809,,0.996470809,,unique_to_final
+22363733,PrionHome,False,True,,0.987491906,,0.987491906,,unique_to_final
+28724888,CrossCheck,False,True,,0.990276933,,0.990276933,,unique_to_final
+23842462,DBATE,False,True,,0.993781567,,0.993781567,,unique_to_final
+"33326073, 32406920",AnnoLnc,False,True,,0.998637438,,0.998637438,,unique_to_final
+"34344425, 34344425, 34344425, 34344425, 34344425, 34344425, 34344425, 34344425, 34344425, 34344425, 34344425, 34344425, 26744602",SorGSD,False,True,,0.9974702,,0.9974702,,unique_to_final
+24223973,SWEETLEAD,False,True,,0.981075227,,0.981075227,,unique_to_final
+24136999,RiceWiki,False,True,,0.996466279,,0.996466279,,unique_to_final
+23193256,ESTHER,False,True,,0.996905684,,0.996905684,,unique_to_final
+21936021,dbHCCvar,False,True,,0.986464977,,0.986464977,,unique_to_final
+29136207,LinkedOmics,False,True,,0.990786731,,0.990786731,,unique_to_final
+30127348,PPInS,False,True,,0.995528519,,0.995528519,,unique_to_final
+22411954,RNAimmuno,False,True,,0.986062527,,0.986062527,,unique_to_final
+33929018,IBDDB,False,True,,0.994403943,,0.994403943,,unique_to_final
+28365729,HIVoligoDB,False,True,,0.98352025,,0.98352025,,unique_to_final
+34048547,emiRIT,False,True,,0.994740963,,0.994740963,,unique_to_final
+30598077,CNVdigest,False,True,,0.993451834,,0.993451834,,unique_to_final
+26400163,PlantDHS,False,True,,0.996344864,,0.996344864,,unique_to_final
+23129220,SNObase,False,True,,0.997782171,,0.997782171,,unique_to_final
+30357342,CoevDB,False,True,,0.997794569,,0.997794569,,unique_to_final
+21383924,TAMI,False,True,,0.986702323,,0.986702323,,unique_to_final
+22120664,CPGR,False,True,,0.99133648,,0.99133648,,unique_to_final
+34154536,TeaAS,False,True,,0.994054417,,0.994054417,,unique_to_final
+31629694,PerMemDB,False,True,,0.997093499,,0.997093499,,unique_to_final
+27189556,RiboDB,False,True,,0.997285545,,0.997285545,,unique_to_final
+"21605702, 25055920",miRWalk,False,True,,0.998156488,,0.998156488,,unique_to_final
+22139942,RecountDB,False,True,,0.995889306,,0.995889306,,unique_to_final
+30874795,MirtronDB,False,True,,0.997429311,,0.997429311,,unique_to_final
+26215638,FusionCancer,False,True,,0.993119001,,0.993119001,,unique_to_final
+"22674824, 27613420",PCDDB,False,True,,0.998229384,,0.998229384,,unique_to_final
+26211629,PLNlncRbase,False,True,,0.997170389,,0.997170389,,unique_to_final
+22171328,seeQTL,False,True,,0.995602727,,0.995602727,,unique_to_final
+33219686,LnCeCell,False,True,,0.997025967,,0.997025967,,unique_to_final
+26424082,RegNetwork,False,True,,0.983025074,,0.983025074,,unique_to_final
+"31647100, 26481361",BGD,False,True,,0.996976018,,0.996976018,,unique_to_final
+"31740966, 27515742",EnhancerAtlas,False,True,,0.995407641,,0.995407641,,unique_to_final
+23292601,PRIMe,False,True,,0.993307292,,0.993307292,,unique_to_final
+34042771,ReMeDy,False,True,,0.99511075,,0.99511075,,unique_to_final
+29069510,Lnc2Meth,False,True,,0.998092294,,0.998092294,,unique_to_final
+30092360,MPDSDM,False,True,,0.995594293,,0.995594293,,unique_to_final
+25220766,LabeledIn,False,True,,0.984398663,,0.984398663,,unique_to_final
+30335169,PopHumanScan,False,True,,0.995905161,,0.995905161,,unique_to_final
+28182744,OMDB,False,True,,0.992427528,,0.992427528,,unique_to_final
+23143105,MonarchBase,False,True,,0.996606827,,0.996606827,,unique_to_final
+21389154,16SpathDB,False,True,,0.996311396,,0.996311396,,unique_to_final
+22209237,MTCID,False,True,,0.993752122,,0.993752122,,unique_to_final
+30357353,piRTarBase,False,True,,0.99358052,,0.99358052,,unique_to_final
+27899579,SNP2TFBS,False,True,,0.997906208,,0.997906208,,unique_to_final
+26322998,CTDB,False,True,,0.979035616,,0.979035616,,unique_to_final
+"22121219, 26432830, 30398659",MitoMiner,False,True,,0.994106472,,0.994106472,,unique_to_final
+29617941,SCRIPT-MAP,False,True,,0.988087222,,0.988087222,,unique_to_final
+26208906,TANRIC,False,True,,0.997347057,,0.997347057,,unique_to_final
+34900127,MIKB,False,True,,0.997301161,,0.997301161,,unique_to_final
+27630202,KDD,False,True,,0.99066178,,0.99066178,,unique_to_final
+23228284,CBS,False,True,,0.998403251,,0.998403251,,unique_to_final
+28025342,RiceATM,False,True,,0.990825713,,0.990825713,,unique_to_final
+24194593,SelenoDB,False,True,,0.994665325,,0.994665325,,unique_to_final
+30380109,iEKPD,False,True,,0.997320652,,0.997320652,,unique_to_final
+26806463,FiloBase,False,True,,0.992046833,,0.992046833,,unique_to_final
+29106651,Target-Pathogen,False,True,,0.984828025,,0.984828025,,unique_to_final
+22067445,SCRIPDB,False,True,,0.997730494,,0.997730494,,unique_to_final
+22916227,CLEARPOND,False,True,,0.993278623,,0.993278623,,unique_to_final
+34244700,2DProts,False,True,,0.990597233,,0.990597233,,unique_to_final
+26578589,ORegAnno,False,True,,0.998606801,,0.998606801,,unique_to_final
+32183712,CuAS,False,True,,0.986856222,,0.986856222,,unique_to_final
+26573482,WIDDE,False,True,,0.997149587,,0.997149587,,unique_to_final
+26657893,HRGRN,False,True,,0.979772747,,0.979772747,,unique_to_final
+29194536,circlncRNAnet,False,True,,0.996753991,,0.996753991,,unique_to_final
+24163250,RADAR--a,False,True,,0.97970136,,0.97970136,,unique_to_final
+"23180789, 26467479",ChEBI,False,True,,0.998489141,,0.998489141,,unique_to_final
+33136065,HPREP,False,True,,0.984554529,,0.984554529,,unique_to_final
+33897975,FGDB,False,True,,0.979747037,,0.979747037,,unique_to_final
+33147626,CellTalkDB,False,True,,0.99723649,,0.99723649,,unique_to_final
+31016417,DNAmod,False,True,,0.983683288,,0.983683288,,unique_to_final
+29533231,wwPDB,False,True,,0.983193755,,0.983193755,,unique_to_final
+24651967,oncomiRDB,False,True,,0.994694889,,0.994694889,,unique_to_final
+26450948,CRCDA,False,True,,0.995928064,,0.995928064,,unique_to_final
+27701074,CeNDR,False,True,,0.993216455,,0.993216455,,unique_to_final
+30534948,atSNP,False,True,,0.982023239,,0.982023239,,unique_to_final
+34762703,CicerSpTEdb,False,True,,0.994646966,,0.994646966,,unique_to_final
+24816183,TuberQ,False,True,,0.99642241,,0.99642241,,unique_to_final
+24217911,AgeFactDB,False,True,,0.997452736,,0.997452736,,unique_to_final
+30967549,iFISH,False,True,,0.997145891,,0.997145891,,unique_to_final
+28334239,coexpressMAP,False,True,,0.980166078,,0.980166078,,unique_to_final
+21450710,hmChIP,False,True,,0.998008847,,0.998008847,,unique_to_final
+"26141515, 22013167",mirEX,False,True,,0.982228279,,0.982228279,,unique_to_final
+25885062,CmMDb,False,True,,0.993868947,,0.993868947,,unique_to_final
+32294195,ASFVdb,False,True,,0.996319771,,0.996319771,,unique_to_final
+22140100,HGPD,False,True,,0.996275783,,0.996275783,,unique_to_final
+23500449,DEER,False,True,,0.993173659,,0.993173659,,unique_to_final
+27530928,NLDB,False,True,,0.996441364,,0.996441364,,unique_to_final
+31642488,ExonSkipDB,False,True,,0.997633815,,0.997633815,,unique_to_final
+21177655,COMBREX,False,True,,0.983597279,,0.983597279,,unique_to_final
+27478368,PIMADb,False,True,,0.994888186,,0.994888186,,unique_to_final
+33181826,WGVD,False,True,,0.993578374,,0.993578374,,unique_to_final
+25309735,SkateBase,False,True,,0.982891858,,0.982891858,,unique_to_final
+34736471,BDdb,False,True,,0.995132804,,0.995132804,,unique_to_final
+"30371849, 23042674, 25378313",LNCipedia,False,True,,0.997421205,,0.997421205,,unique_to_final
+"31599330, 27987180, 24185698",LSD,False,True,,0.993650754,,0.993650754,,unique_to_final
+23846594,DoSA,False,True,,0.991789222,,0.991789222,,unique_to_final
+24682734,EpimiR,False,True,,0.989621162,,0.989621162,,unique_to_final
+34245304,MtExpress,False,True,,0.993226945,,0.993226945,,unique_to_final
+29939244,PtRFdb,False,True,,0.996222079,,0.996222079,,unique_to_final
+31665429,DrugCombDB,False,True,,0.996946216,,0.996946216,,unique_to_final
+21668943,MeRy-B,False,True,,0.987240215,,0.987240215,,unique_to_final
+23904744,ASRDb,False,True,,0.997044563,,0.997044563,,unique_to_final
+"22067451, 24178034",Intrinsically Disordered proteins with Extensive Annotations and Literature,False,True,,0.993429282,,0.991460741,,unique_to_final
+"22674159, 23087376",IUPHAR-DB,False,True,,0.994823694,,0.994823694,,unique_to_final
+30418591,HumanNet,False,True,,0.986103296,,0.986103296,,unique_to_final
+27742821,HieranoiDB,False,True,,0.9942801,,0.9942801,,unique_to_final
+25592564,CELLX,False,True,,0.997325838,,0.997325838,,unique_to_final
+"33084889, 26496949",KLIFS,False,True,,0.998473823,,0.998473823,,unique_to_final
+"24225323, 31667520, 25273106",PATRIC,False,True,,0.997595549,,0.997595549,,unique_to_final
+"23172289, 23494302",dictyBase,False,True,,0.994000256,,0.994000256,,unique_to_final
+24101916,FunGene,False,True,,0.989818652,,0.989818652,,unique_to_final
+25656309,BtoxDB,False,True,,0.996941984,,0.996941984,,unique_to_final
+27161011,BC5CDR,False,True,,0.981737942,,0.981737942,,unique_to_final
+28588237,TCM-Mesh,False,True,,0.989953801,,0.989953801,,unique_to_final
+27899672,SMR,False,True,,0.991144598,,0.991144598,,unique_to_final
+29220485,funRiceGenes,False,True,,0.978388309,,0.978388309,,unique_to_final
+26503253,rVarBase,False,True,,0.998465121,,0.998465121,,unique_to_final
+"25425034, 30371818",piRBase,False,True,,0.997035384,,0.997035384,,unique_to_final
+24344970,CVDHD,False,True,,0.995064616,,0.995064616,,unique_to_final
+"26586805, 24214998",COLOMBOS,False,True,,0.998174131,,0.998174131,,unique_to_final
+"34965192, 24997126",piRNAQuest,False,True,,0.996235311,,0.996235311,,unique_to_final
+22139933,IGDB.NSCLC,False,True,,0.982541544,,0.982541544,,unique_to_final
+21738316,CytReD,False,True,,0.998036659,,0.998036659,,unique_to_final
+31210272,GrainGenes,False,True,,0.994854987,,0.994854987,,unique_to_final
+23486613,CGOB,False,True,,0.997058729,,0.997058729,,unique_to_final
+23203982,SINEBase,False,True,,0.997263968,,0.997263968,,unique_to_final
+33502860,InterMetalDB,False,True,,0.997499466,,0.997499466,,unique_to_final
+32103267,PDIR,False,True,,0.982636213,,0.982636213,,unique_to_final
+29931156,RBPMetaDB,False,True,,0.994099975,,0.994099975,,unique_to_final
+31733062,ParameciumDB,False,True,,0.996724844,,0.996724844,,unique_to_final
+33238002,RecipeDB,False,True,,0.99755621,,0.99755621,,unique_to_final
+25301850,PDBbind,False,True,,0.995774388,,0.995774388,,unique_to_final
+27084938,DeepBlue,False,True,,0.988800287,,0.988800287,,unique_to_final
+29106642,MSDD,False,True,,0.997410993,,0.997410993,,unique_to_final
+21486466,OryzaPG,False,True,,0.995268643,,0.995268643,,unique_to_final
+"25753703, 26286194, 24680503",CSDB,False,True,,0.980909228,,0.980909228,,unique_to_final
+26160459,CGMD,False,True,,0.992433429,,0.992433429,,unique_to_final
+26818131,siRNAmod,False,True,,0.993242323,,0.993242323,,unique_to_final
+31197322,MetOSite,False,True,,0.994946599,,0.994946599,,unique_to_final
+29036667,DISNOR,False,True,,0.998069823,,0.998069823,,unique_to_final
+"32055857, 26607947",SymGenDB,False,True,,0.998103142,,0.998103142,,unique_to_final
+27509041,MMpI,False,True,,0.985122144,,0.985122144,,unique_to_final
+30611878,FisOmics,False,True,,0.993046761,,0.993046761,,unique_to_final
+31624839,T-psi-C,False,True,,0.996630514,,0.996630514,,unique_to_final
+24214966,DOOR,False,True,,0.986369848,,0.986369848,,unique_to_final
+26099468,dbEMT,False,True,,0.992519438,,0.992519438,,unique_to_final
+33275967,ncRNAVar,False,True,,0.998307347,,0.998307347,,unique_to_final
+25905099,Metabolonote,False,True,,0.994843602,,0.994843602,,unique_to_final
+27402678,dbSNP,False,True,,0.988259852,,0.988259852,,unique_to_final
+22110026,Phytozome,False,True,,0.998088956,,0.998088956,,unique_to_final
+27635320,CardioTF,False,True,,0.989912987,,0.989912987,,unique_to_final
+31680137,ANISEED,False,True,,0.995582819,,0.995582819,,unique_to_final
+23161677,G4LDB,False,True,,0.997929025,,0.997929025,,unique_to_final
+33045741,LncSEA,False,True,,0.996705592,,0.996705592,,unique_to_final
+30365026,Victors,False,True,,0.988581896,,0.988581896,,unique_to_final
+31494246,SliceIt,False,True,,0.996555865,,0.996555865,,unique_to_final
+24030781,IQdb,False,True,,0.993846714,,0.993846714,,unique_to_final
+33174598,UniLectin,False,True,,0.981569886,,0.981569886,,unique_to_final
+33109630,CKTTD,False,True,,0.997114658,,0.997114658,,unique_to_final
+30395323,pATLAS,False,True,,0.996197641,,0.996197641,,unique_to_final
+21472436,SBKB,False,True,,0.985803445,,0.985803445,,unique_to_final
+28595571,CottonFGD,False,True,,0.992367327,,0.992367327,,unique_to_final
+28124611,ImmunemiR,False,True,,0.989842415,,0.989842415,,unique_to_final
+29913065,OptoBase,False,True,,0.9975577,,0.9975577,,unique_to_final
+26567549,GEneSTATION,False,True,,0.995596051,,0.995596051,,unique_to_final
+27899679,AtPID,False,True,,0.997839749,,0.997839749,,unique_to_final
+21495663,TIN,False,True,,0.984829128,,0.984829128,,unique_to_final
+26527721,PlantsDB,False,True,,0.988374114,,0.988374114,,unique_to_final
+23547897,RegTransBase,False,True,,0.996879399,,0.996879399,,unique_to_final
+32556221,OMEGA-NET,False,True,,0.988661706,,0.988661706,,unique_to_final
+27733502,SZGR,False,True,,0.997519851,,0.997519851,,unique_to_final
+31274965,vMS-Share,False,True,,0.993173659,,0.993173659,,unique_to_final
+30134653,PADFrag,False,True,,0.997416735,,0.997416735,,unique_to_final
+22276777,miRdSNP,False,True,,0.998023212,,0.998023212,,unique_to_final
+23193263,PrePPI,False,True,,0.997049689,,0.997049689,,unique_to_final
+"21398668, 25300483",sc-PDB,False,True,,0.996898383,,0.996898383,,unique_to_final
+25398897,DDMGD,False,True,,0.992112517,,0.992112517,,unique_to_final
+27907895,mutLBSgeneDB,False,True,,0.983370721,,0.983370721,,unique_to_final
+21769196,VPDB,False,True,,0.997562647,,0.997562647,,unique_to_final
+"31647101, 26590260, 29126174, 24304892",miRTarBase,False,True,,0.9938097,,0.9938097,,unique_to_final
+27543790,TSCD,False,True,,0.990743339,,0.990743339,,unique_to_final
+28191780,CSCTT,False,True,,0.99582231,,0.99582231,,unique_to_final
+"32345360, 32345360",CircAtlas,False,True,,0.997903705,,0.997903705,,unique_to_final
+24288368,RDP,False,True,,0.996806602,,0.996806602,,unique_to_final
+33471060,Cellinker,False,True,,0.993874848,,0.993874848,,unique_to_final
+26444974,ListeriaBase,False,True,,0.993109643,,0.993109643,,unique_to_final
+30354114,NR-DBIND,False,True,,0.99506779,,0.99506779,,unique_to_final
+22102591,IBIS,False,True,,0.99052155,,0.99052155,,unique_to_final
+29106588,NLSdb,False,True,,0.997089744,,0.997089744,,unique_to_final
+22843230,CYP-nsSNP,False,True,,0.985920737,,0.985920737,,unique_to_final
+31404401,miRDRN,False,True,,0.996445715,,0.996445715,,unique_to_final
+32754757,CerealsDB,False,True,,0.996999264,,0.996999264,,unique_to_final
+25604238,ocsESTdb,False,True,,0.997286081,,0.997286081,,unique_to_final
+29069402,SEECancer,False,True,,0.996404111,,0.996404111,,unique_to_final
+25025376,tropiTree,False,True,,0.987223446,,0.987223446,,unique_to_final
+24434032,DBM-DB,False,True,,0.997007683,,0.997007683,,unique_to_final
+34976872,B-AMP,False,True,,0.991384625,,0.991384625,,unique_to_final
+23660286,RiceSRTFDB,False,True,,0.988805354,,0.988805354,,unique_to_final
+29036655,MFIB,False,True,,0.981060028,,0.981060028,,unique_to_final
+23197658,DGA,False,True,,0.992823601,,0.992823601,,unique_to_final
+21890895,OPM,False,True,,0.993578792,,0.993578792,,unique_to_final
+29739837,NvERTx,False,True,,0.99687469,,0.99687469,,unique_to_final
+34389843,Nabe,False,True,,0.985496402,,0.985496402,,unique_to_final
+25048123,AgAbDb,False,True,,0.995833278,,0.995833278,,unique_to_final
+24628857,AlgaePath,False,True,,0.996096075,,0.996096075,,unique_to_final
+33426407,DSSTox,False,True,,0.9958359,,0.9958359,,unique_to_final
+33724838,UniProtKB,False,True,,0.99742651,,0.99742651,,unique_to_final
+21880546,MtbSD,False,True,,0.997164249,,0.997164249,,unique_to_final
+25392416,PubAngioGen,False,True,,0.991985381,,0.991985381,,unique_to_final
+23074185,DARNED,False,True,,0.997423947,,0.997423947,,unique_to_final
+31713636,DisProt,False,True,,0.995845914,,0.995845914,,unique_to_final
+"33237313, 24311564, 27899671",RepeatsDB,False,True,,0.994790673,,0.994790673,,unique_to_final
+"22080559, 24194595",AspGD,False,True,,0.997273564,,0.997273564,,unique_to_final
+23219992,MENT,False,True,,0.987894893,,0.987894893,,unique_to_final
+26144527,dasHPPboard,False,True,,0.991571605,,0.991571605,,unique_to_final
+"29126295, 33245761, 25324305",MoonProt,False,True,,0.995451093,,0.995451093,,unique_to_final
+24727366,PathoPlant,False,True,,0.994976938,,0.994976938,,unique_to_final
+25388589,iPathCons,False,True,,0.982198,,0.982198,,unique_to_final
+24580755,CDSbank,False,True,,0.99717778,,0.99717778,,unique_to_final
+29961819,dbLGL,False,True,,0.99372381,,0.99372381,,unique_to_final
+31599923,BiomeNet,False,True,,0.979145229,,0.979145229,,unique_to_final
+30004104,CIPEMAB,False,True,,0.996844947,,0.996844947,,unique_to_final
+23709164,ESCOLEX,False,True,,0.997294307,,0.997294307,,unique_to_final
+"23203881, 25378310, 33211880",BRENDA,False,True,,0.997791767,,0.997791767,,unique_to_final
+"23180794, 29087517",TFClass,False,True,,0.997942924,,0.997942924,,unique_to_final
+27899620,MRPrimerV,False,True,,0.993523359,,0.993523359,,unique_to_final
+24771658,RegPhos,False,True,,0.992758036,,0.992758036,,unique_to_final
+25361970,PomBase,False,True,,0.994939148,,0.994939148,,unique_to_final
+30289549,CellMarker,False,True,,0.992818952,,0.992818952,,unique_to_final
+"24259432, 26553804, 29112715, 33270901, 24316578, 25510495, 22121212",RefSeq,False,True,,0.988386571,,0.988386571,,unique_to_final
+34285772,Yeast Phosphoinositide-Binding Proteins,False,True,,0.98663541,,0.980853081,,unique_to_final
+29041922,iCAN,False,True,,0.989729762,,0.989729762,,unique_to_final
+26450962,MEPD,False,True,,0.996673008,,0.996673008,,unique_to_final
+30065744,miRVIT,False,True,,0.992824743,,0.992824743,,unique_to_final
+29036324,PancanQTL,False,True,,0.996932268,,0.996932268,,unique_to_final
+"22828716, 28437484",ECG-ViEW,False,True,,0.982872033,,0.982872033,,unique_to_final
+23219434,VirmugenDB,False,True,,0.994162917,,0.994162917,,unique_to_final
+22102771,EuDBase,False,True,,0.996863604,,0.996863604,,unique_to_final
+31307376,PhenPath,False,True,,0.98982805,,0.98982805,,unique_to_final
+28184254,NPCARE,False,True,,0.992175639,,0.992175639,,unique_to_final
+25932650,TMREC,False,True,,0.997089624,,0.997089624,,unique_to_final
+23390356,BIRS,False,True,,0.993844032,,0.993844032,,unique_to_final
+29992323,CeleryDB,False,True,,0.992402375,,0.992402375,,unique_to_final
+28605773,BioM2MetDisease,False,True,,0.99300829,,0.99300829,,unique_to_final
+33084893,crisprSQL,False,True,,0.997429252,,0.997429252,,unique_to_final
+"22110040, 24214962, 26615199, 31680160",ELM,False,True,,0.994939625,,0.994939625,,unique_to_final
+22053089,InterEvol,False,True,,0.992820978,,0.992820978,,unique_to_final
+33125076,ATACdb,False,True,,0.997429222,,0.997429222,,unique_to_final
+"29069475, 23161672",APPRIS,False,True,,0.998272896,,0.998272896,,unique_to_final
+32780568,OpenProt,False,True,,0.995658994,,0.995658994,,unique_to_final
+25228593,RADB,False,True,,0.987689435,,0.987689435,,unique_to_final
+25392409,CATdb,False,True,,0.994086862,,0.994086862,,unique_to_final
+23203887,ZiFDB,False,True,,0.996439636,,0.996439636,,unique_to_final
+30217145,PPGD,False,True,,0.992584169,,0.992584169,,unique_to_final
+29069336,ArachnoServer,False,True,,0.996285319,,0.996285319,,unique_to_final
+25260589,FOAM,False,True,,0.983061552,,0.983061552,,unique_to_final
+23415072,DESMSCI,False,True,,0.997198522,,0.997198522,,unique_to_final
+23619930,MRIdb,False,True,,0.995113969,,0.995113969,,unique_to_final
+29385404,TOXsIgN,False,True,,0.996063232,,0.996063232,,unique_to_final
+33245774,PAGER-CoV,False,True,,0.984723121,,0.984723121,,unique_to_final
+25125444,LeishMicrosatDB,False,True,,0.997771621,,0.997771621,,unique_to_final
+29106626,PAMBD,False,True,,0.997342527,,0.997342527,,unique_to_final
+29455297,PEP725,False,True,,0.994008164,,0.994008164,,unique_to_final
+24234003,footprintDB,False,True,,0.995756149,,0.995756149,,unique_to_final
+26980519,PhyloPro,False,True,,0.998065591,,0.998065591,,unique_to_final
+27081555,iJGVD,False,True,,0.988222253,,0.988222253,,unique_to_final
+"23118485, 25398900, 30462302",MBGD,False,True,,0.990653872,,0.990653872,,unique_to_final
+21593080,ParkDB,False,True,,0.997004271,,0.997004271,,unique_to_final
+32123502,FrogID,False,True,,0.994272232,,0.994272232,,unique_to_final
+32442307,SYNERGxDB,False,True,,0.997662961,,0.997662961,,unique_to_final
+27507885,ADPriboDB,False,True,,0.997497678,,0.997497678,,unique_to_final
+33985427,TarDB,False,True,,0.990120292,,0.990120292,,unique_to_final
+32436932,miRactDB,False,True,,0.998288214,,0.998288214,,unique_to_final
+29234333,TaSSRDb,False,True,,0.996534109,,0.996534109,,unique_to_final
+33247934,OGDA,False,True,,0.98520869,,0.98520869,,unique_to_final
+33599246,Gemma,False,True,,0.981963456,,0.981963456,,unique_to_final
+33693668,CMBD,False,True,,0.997389793,,0.997389793,,unique_to_final
+25084271,GMEnzy,False,True,,0.996969402,,0.996969402,,unique_to_final
+26656885,KIR,False,True,,0.991020302,,0.991020302,,unique_to_final
+33103271,NanDeSyn,False,True,,0.989316845,,0.989316845,,unique_to_final
+30576486,PhytoTypeDB,False,True,,0.998071671,,0.998071671,,unique_to_final
+23203867,NetwoRx,False,True,,0.998048842,,0.998048842,,unique_to_final
+26225242,PhIN,False,True,,0.994730279,,0.994730279,,unique_to_final
+"29092055, 22102587",SABIO-RK,False,True,,0.997967561,,0.997967561,,unique_to_final
+31649674,cAb-Rep,False,True,,0.99714224,,0.99714224,,unique_to_final
+32882008,TBDB,False,True,,0.995206952,,0.995206952,,unique_to_final
+"30419167, 33759118, 24451008",ZINClick,False,True,,0.996718585,,0.996718585,,unique_to_final
+33822911,MENSAdb,False,True,,0.992488444,,0.992488444,,unique_to_final
+"25392415, 30407596",Cancer3D,False,True,,0.993081719,,0.993081719,,unique_to_final
+33382885,CorkOakDB,False,True,,0.994003475,,0.994003475,,unique_to_final
+29036693,ICG,False,True,,0.994124234,,0.994124234,,unique_to_final
+22419780,SEQanswers,False,True,,0.993383706,,0.993383706,,unique_to_final
+32849839,RIGD,False,True,,0.99081533,,0.99081533,,unique_to_final
+"27794042, 23193259, 25428375",RCSB PDB,False,True,,0.994570589,,0.994570589,,unique_to_final
+25098325,MediaDB,False,True,,0.991332531,,0.991332531,,unique_to_final
+32090261,NipahVR,False,True,,0.995369494,,0.995369494,,unique_to_final
+32221380,WeiBI,False,True,,0.996359855,,0.996359855,,unique_to_final
+"27742820, 23180792",PIECE,False,True,,0.997208118,,0.997208118,,unique_to_final
+23299411,RAP-DB,False,True,,0.992282307,,0.992282307,,unique_to_final
+26131021,TaxKB,False,True,,0.994036555,,0.994036555,,unique_to_final
+33003203,QSIdb,False,True,,0.99794662,,0.99794662,,unique_to_final
+23286825,NeuroDNet,False,True,,0.995239019,,0.995239019,,unique_to_final
+26062809,CMRegNet,False,True,,0.995652676,,0.995652676,,unique_to_final
+26590264,MutationAligner,False,True,,0.997395098,,0.997395098,,unique_to_final
+34521345,PathFams,False,True,,0.991846502,,0.991846502,,unique_to_final
+27980519,ContaMiner,False,True,,0.980479717,,0.980479717,,unique_to_final
+26200753,Pre_GI,False,True,,0.997470955,,0.997470955,,unique_to_final
+"25414345, 30445555",SUPERFAMILY,False,True,,0.993269384,,0.993269384,,unique_to_final
+"24243849, 28150236",P(3)DB,False,True,,0.997485409,,0.997485409,,unique_to_final
+23585031,HORDE,False,True,,0.991316095,,0.991316095,,unique_to_final
+25527833,mirPub,False,True,,0.996326447,,0.996326447,,unique_to_final
+30380102,qPhos,False,True,,0.993786156,,0.993786156,,unique_to_final
+33176685,AVIMM,False,True,,0.990362942,,0.990362942,,unique_to_final
+33685493,riboCIRC,False,True,,0.996479809,,0.996479809,,unique_to_final
+28966675,POGD,False,True,,0.997819841,,0.997819841,,unique_to_final
+27924038,FARNA,False,True,,0.99584657,,0.99584657,,unique_to_final
+32986829,CMNPD,False,True,,0.998440802,,0.998440802,,unique_to_final
+30380113,MethMotif,False,True,,0.995933473,,0.995933473,,unique_to_final
+"22135287, 24243848",miRNEST,False,True,,0.990006804,,0.990006804,,unique_to_final
+30357418,EDK,False,True,,0.992027998,,0.992027998,,unique_to_final
+"33206959, 24234451, 22121220",IntAct,False,True,,0.997128367,,0.997128367,,unique_to_final
+33655207,TMSNP,False,True,,0.996496975,,0.996496975,,unique_to_final
+25404137,SuperFly,False,True,,0.996205926,,0.996205926,,unique_to_final
+32990755,CSVS,False,True,,0.992008924,,0.992008924,,unique_to_final
+33084904,DualSeqDB,False,True,,0.997340143,,0.997340143,,unique_to_final
+22592381,IRView,False,True,,0.997845531,,0.997845531,,unique_to_final
+"22140110, 24198245, 26400175, 27899599, 30371825, 33151290, 28346087",PubChem,False,True,,0.990066409,,0.990066409,,unique_to_final
+34517763,TnCentral,False,True,,0.997506559,,0.997506559,,unique_to_final
+31349169,DEDuCT,False,True,,0.989132156,,0.989132156,,unique_to_final
+25398898,CMPD,False,True,,0.993044734,,0.993044734,,unique_to_final
+23044550,SemMedDB,False,True,,0.998119652,,0.998119652,,unique_to_final
+29688353,FSD,False,True,,0.992719412,,0.992719412,,unique_to_final
+24146757,SIDD,False,True,,0.992121279,,0.992121279,,unique_to_final
+22086956,SEQwiki,False,True,,0.989065051,,0.989065051,,unique_to_final
+29308007,VirusDB,False,True,,0.994696617,,0.994696617,,unique_to_final
+26376976,KGCAK,False,True,,0.998066127,,0.998066127,,unique_to_final
+"24203342, 33125652",iRefWeb,False,True,,0.995616853,,0.995616853,,unique_to_final
+30115014,PdumBase,False,True,,0.998220384,,0.998220384,,unique_to_final
+23087378,BioLiP,False,True,,0.991326213,,0.991326213,,unique_to_final
+24548788,DR-GAS,False,True,,0.991618946,,0.991618946,,unique_to_final
+22523575,TumorHoPe,False,True,,0.990183711,,0.990183711,,unique_to_final
+30245835,PGD,False,True,,0.995591462,,0.995591462,,unique_to_final
+34976312,LCMD,False,True,,0.993581444,,0.993581444,,unique_to_final
+21536137,Proteopedia,False,True,,0.995484591,,0.995484591,,unique_to_final
+"30335166, 26433228",RPFdb,False,True,,0.996379256,,0.996379256,,unique_to_final
+32707486,hPSCreg,False,True,,0.988741887,,0.988741887,,unique_to_final
+25010047,GBM-BioDP,False,True,,0.991873372,,0.991873372,,unique_to_final
+22383735,GENI-DB,False,True,,0.995142937,,0.995142937,,unique_to_final
+34907423,iCAV,False,True,,0.99172157,,0.99172157,,unique_to_final
+23426257,Planform,False,True,,0.994146824,,0.994146824,,unique_to_final
+25534749,EssOilDB,False,True,,0.99728632,,0.99728632,,unique_to_final
+24663501,DrugPath,False,True,,0.983626783,,0.983626783,,unique_to_final
+"22962312, 24150940",DECIPHER,False,True,,0.995207131,,0.995207131,,unique_to_final
+31640730,NARD,False,True,,0.994531229,,0.994531229,,unique_to_final
+"32558264, 28296894, 27450113",PDB,False,True,,0.993884663,,0.993884663,,unique_to_final
+30364969,EWAS Atlas,False,True,,0.979906976,,0.979906976,,unique_to_final
+24150937,LoQAtE,False,True,,0.994121492,,0.994121492,,unique_to_final
+34127402,Immu-Mela,False,True,,0.990034401,,0.990034401,,unique_to_final
+24194596,MP:PD,False,True,,0.98293969,,0.98293969,,unique_to_final
+26317619,FMiR,False,True,,0.989025816,,0.989025816,,unique_to_final
+34626475,FEDA,False,True,,0.989463806,,0.989463806,,unique_to_final
+22120663,INOH,False,True,,0.981793324,,0.981793324,,unique_to_final
+25378329,MatrixDB,False,True,,0.997984529,,0.997984529,,unique_to_final
+23674503,PhosphoGRID,False,True,,0.998093545,,0.998093545,,unique_to_final
+26314736,GlycoMob,False,True,,0.989852786,,0.989852786,,unique_to_final
+30239928,UniLectin3D,False,True,,0.978693748,,0.978693748,,unique_to_final
+31432762,tRic,False,True,,0.994563282,,0.994563282,,unique_to_final
+22559261,AlliumMap,False,True,,0.986065328,,0.986065328,,unique_to_final
+22058133,ConoServer,False,True,,0.996880889,,0.996880889,,unique_to_final
+33174597,GlycoPOST,False,True,,0.993143857,,0.993143857,,unique_to_final
+25468931,AromaDeg,False,True,,0.997393668,,0.997393668,,unique_to_final
+34052284,miREV,False,True,,0.99435091,,0.99435091,,unique_to_final
+34738791,AroCageDB,False,True,,0.994719088,,0.994719088,,unique_to_final
+34016708,CoronaCentral,False,True,,0.994874954,,0.994874954,,unique_to_final
+30805645,PKAD,False,True,,0.989784598,,0.989784598,,unique_to_final
+30321383,CuGenDB,False,True,,0.997316897,,0.997316897,,unique_to_final
+29097748,KIXBASE,False,True,,0.981071115,,0.981071115,,unique_to_final
+"30963485, 28049134",miRandb,False,True,,0.993180573,,0.993180573,,unique_to_final
+30684219,NeuroMuscleDB,False,True,,0.997726917,,0.997726917,,unique_to_final
+22701460,SPWP,False,True,,0.99272126,,0.99272126,,unique_to_final
+27832200,Cancertope,False,True,,0.991436124,,0.991436124,,unique_to_final
+25352549,euL1db,False,True,,0.994982398,,0.994982398,,unique_to_final
+33749993,OmniPath,False,True,,0.994131088,,0.994131088,,unique_to_final
+"30084000, 21996254, 27139435, 21959865",NetPath,False,True,,0.996446371,,0.996446371,,unique_to_final
+27484196,iLIR,False,True,,0.989266038,,0.989266038,,unique_to_final
+24174537,DGV,False,True,,0.99448659,,0.99448659,,unique_to_final
+31581093,DORMAN,False,True,,0.996239364,,0.996239364,,unique_to_final
+27899654,jPOSTrepo,False,True,,0.978089273,,0.978089273,,unique_to_final
+33320930,CyanoPATH,False,True,,0.997585058,,0.997585058,,unique_to_final
+"23175615, 25388105, 27903906, 29761457",EuPathDB,False,True,,0.998307586,,0.998307586,,unique_to_final
+"33849445, 28280852",TANTIGEN,False,True,,0.998069942,,0.998069942,,unique_to_final
+27733501,HipSci,False,True,,0.994878662,,0.994878662,,unique_to_final
+29088455,HCMDB,False,True,,0.996219456,,0.996219456,,unique_to_final
+"28150246, 29145615",iPTMnet,False,True,,0.997314811,,0.997314811,,unique_to_final
+22900683,HTRIdb,False,True,,0.992245674,,0.992245674,,unique_to_final
+30365033,AlloMAPS,False,True,,0.996572554,,0.996572554,,unique_to_final
+26705106,WheatExp,False,True,,0.978051126,,0.978051126,,unique_to_final
+30008982,EMDB,False,True,,0.995346447,,0.995346447,,unique_to_final
+25361966,ADReCS,False,True,,0.995718002,,0.995718002,,unique_to_final
+24928188,FreeSolv,False,True,,0.989120781,,0.989120781,,unique_to_final
+21993301,Polbase,False,True,,0.996193171,,0.996193171,,unique_to_final
+32608478,RNAWRE,False,True,,0.990312815,,0.990312815,,unique_to_final
+33068436,tsRBase,False,True,,0.994211316,,0.994211316,,unique_to_final
+28708269,HemeOxDB,False,True,,0.994890809,,0.994890809,,unique_to_final
+26272709,GenomewidePDB,False,True,,0.987685204,,0.987685204,,unique_to_final
+23193253,LAMP,False,True,,0.989832759,,0.989832759,,unique_to_final
+33641184,DbStRiPs,False,True,,0.990017354,,0.990017354,,unique_to_final
+26989147,HistoneDB,False,True,,0.99104923,,0.99104923,,unique_to_final
+22146221,MnM,False,True,,0.994092762,,0.994092762,,unique_to_final
+"22135297, 29156006, 25416803",TarBase,False,True,,0.995145559,,0.995145559,,unique_to_final
+34147352,MPSBase,False,True,,0.996857762,,0.996857762,,unique_to_final
+24185696,BloodChIP,False,True,,0.998485148,,0.998485148,,unique_to_final
+23497177,SymbioGBR,False,True,,0.994127393,,0.994127393,,unique_to_final
+23825543,LAMP,False,True,,0.990910769,,0.990910769,,unique_to_final
+"21296746, 21321022, 21478484, 23255149, 23603846, 23794737, 23881287, 25355511, 27602200, 27736745, 29761460, 31713623, 34741192, 27009807",RGD,False,True,,0.984376073,,0.984376073,,unique_to_final
+26836976,dbAARD,False,True,,0.983507156,,0.983507156,,unique_to_final
+30117424,CZRC,False,True,,0.992718458,,0.992718458,,unique_to_final
+27242836,VESPUCCI,False,True,,0.992614388,,0.992614388,,unique_to_final
+32862462,ExED,False,True,,0.984499017,,0.984499017,,unique_to_final
+22608002,RCDB,False,True,,0.995647073,,0.995647073,,unique_to_final
+"22075990, 23175610, 24285300, 25348401, 26578600, 27899570, 29092072, 30407599, 33231642",MGD,False,True,,0.99467206,,0.99467206,,unique_to_final
+22786849,Transcriptomine,False,True,,0.981516123,,0.981516123,,unique_to_final
+33868597,GPCards,False,True,,0.997809052,,0.997809052,,unique_to_final
+30598113,CRlncRNA,False,True,,0.995219409,,0.995219409,,unique_to_final
+"25425035, 22439011",microPIR,False,True,,0.981774867,,0.981774867,,unique_to_final
+26322066,ReprOlive,False,True,,0.997865617,,0.997865617,,unique_to_final
+29040563,CAZypedia,False,True,,0.9983778,,0.9983778,,unique_to_final
+31021279,UVGD,False,True,,0.993201971,,0.993201971,,unique_to_final
+26868053,CLD,False,True,,0.986547867,,0.986547867,,unique_to_final
+22917656,dbDiarrhea,False,True,,0.997005939,,0.997005939,,unique_to_final
+"21063943, 23203882, 30395289, 26527722",PRIDE,False,True,,0.993364791,,0.993364791,,unique_to_final
+27242038,GESDB,False,True,,0.99487108,,0.99487108,,unique_to_final
+24122041,DGIdb,False,True,,0.997908175,,0.997908175,,unique_to_final
+22846459,HINT,False,True,,0.995340347,,0.995340347,,unique_to_final
+32821400,Kiwifruit Genome Database,False,True,,0.988579522,,0.986381908,,unique_to_final
+28748223,PhenoPlasm,False,True,,0.98693198,,0.98693198,,unique_to_final
+29776332,TelNet,False,True,,0.987919092,,0.987919092,,unique_to_final
+34531327,T1TAdb,False,True,,0.98944664,,0.98944664,,unique_to_final
+29619235,iMETHYL,False,True,,0.997811019,,0.997811019,,unique_to_final
+23952586,MycoSec,False,True,,0.997377336,,0.997377336,,unique_to_final
+27905517,G4IPDB,False,True,,0.99755083,,0.99755083,,unique_to_final
+27189610,BioSharing,False,True,,0.98941499,,0.98941499,,unique_to_final
+30395310,Vesiclepedia,False,True,,0.996926308,,0.996926308,,unique_to_final
+"28943872, 28077565",MAHMI,False,True,,0.988386333,,0.988386333,,unique_to_final
+25534750,dbPPT,False,True,,0.996150672,,0.996150672,,unique_to_final
+30788500,EnDisease,False,True,,0.997681141,,0.997681141,,unique_to_final
+26644461,ALCOdb,False,True,,0.997920737,,0.997920737,,unique_to_final
+32813752,SVAD,False,True,,0.986849755,,0.986849755,,unique_to_final
+24243842,LPSN,False,True,,0.997364774,,0.997364774,,unique_to_final
+23178820,MicrobPad MD,False,True,,0.995625615,,0.995625615,,unique_to_final
+23093603,TOPPR,False,True,,0.997798244,,0.997798244,,unique_to_final
+23118488,HEXEvent,False,True,,0.995822012,,0.995822012,,unique_to_final
+33119734,DescribePROT,False,True,,0.997794986,,0.997794986,,unique_to_final
+24225322,Progenetix,False,True,,0.996031821,,0.996031821,,unique_to_final
+31598709,DNMIVD,False,True,,0.995371461,,0.995371461,,unique_to_final
+31728519,SyntDB,False,True,,0.997279763,,0.997279763,,unique_to_final
+25484339,DISEASES,False,True,,0.994236827,,0.994236827,,unique_to_final
+33287903,KVarPredDB,False,True,,0.997992098,,0.997992098,,unique_to_final
+25361973,KnotProt,False,True,,0.995327413,,0.995327413,,unique_to_final
+"30265627, 33313778",VIPERdb,False,True,,0.994908571,,0.994908571,,unique_to_final
+21760913,HelmCoP,False,True,,0.995496631,,0.995496631,,unique_to_final
+29112736,VarCards,False,True,,0.997416556,,0.997416556,,unique_to_final
+27465131,PvTFDB,False,True,,0.984973252,,0.984973252,,unique_to_final
+30252093,iProX,False,True,,0.984180152,,0.984180152,,unique_to_final
+34556150,AprGPD,False,True,,0.988473594,,0.988473594,,unique_to_final
+33588073,ASDB,False,True,,0.989679317,,0.989679317,,unique_to_final
+31598699,QTLbase,False,True,,0.997860312,,0.997860312,,unique_to_final
+33045745,SilencerDB,False,True,,0.997530401,,0.997530401,,unique_to_final
+"27606777, 23143270",ConsensusPathDB,False,True,,0.997402191,,0.997402191,,unique_to_final
+23452239,LjGEA,False,True,,0.995089054,,0.995089054,,unique_to_final
+"29652620, 33080015, 30329036",GeneLab,False,True,,0.978558898,,0.978558898,,unique_to_final
+32047897,TRlnc,False,True,,0.99749732,,0.99749732,,unique_to_final
+"33237329, 22661649, 25361972, 32696355",MobiDB,False,True,,0.997653842,,0.997653842,,unique_to_final
+33137192,Plant-ImputeDB,False,True,,0.997689724,,0.997689724,,unique_to_final
+23875173,MelanomaDB,False,True,,0.994151652,,0.994151652,,unique_to_final
+28293068,MMDB,False,True,,0.978604794,,0.978604794,,unique_to_final
+32833025,MNDR,False,True,,0.994394898,,0.994394898,,unique_to_final
+27899675,JET2,False,True,,0.992096901,,0.992096901,,unique_to_final
+28095775,ARA-PEPs,False,True,,0.987573981,,0.987573981,,unique_to_final
+"26516188, 30407591",IID,False,True,,0.992068827,,0.992068827,,unique_to_final
+24285306,PortEco,False,True,,0.997819364,,0.997819364,,unique_to_final
+26673694,GtRNAdb,False,True,,0.991023004,,0.991023004,,unique_to_final
+26989155,dbWGFP,False,True,,0.997119367,,0.997119367,,unique_to_final
+32597467,DrugSimDB,False,True,,0.995589495,,0.995589495,,unique_to_final
+26362267,ImmuNet,False,True,,0.993981779,,0.993981779,,unique_to_final
+31029701,Codon and Codon-Pair Usage Tables,False,True,,0.987904727,,0.973919183,,unique_to_final
+30335176,NucMap,False,True,,0.996892318,,0.996892318,,unique_to_final
+23493402,CathaCyc,False,True,,0.995314121,,0.995314121,,unique_to_final
+24907201,SeaBase,False,True,,0.991243899,,0.991243899,,unique_to_final
+23185330,CyanoPhyChe,False,True,,0.996099055,,0.996099055,,unique_to_final
+28481982,McPAS-TCR,False,True,,0.978659749,,0.978659749,,unique_to_final
+27899583,XTalkDB,False,True,,0.99725914,,0.99725914,,unique_to_final
+"23203874, 23203874",CIL-CCDB,False,True,,0.996889138,,0.996889138,,unique_to_final
+34534667,TExAs,False,True,,0.994255507,,0.994255507,,unique_to_final
+28779078,A2MDB,False,True,,0.993841752,,0.993841752,,unique_to_final
+25269378,SPGDB,False,True,,0.997126877,,0.997126877,,unique_to_final
+32499815,LuluDB,False,True,,0.996738493,,0.996738493,,unique_to_final
+30397019,iProteinDB,False,True,,0.996118069,,0.996118069,,unique_to_final
+"33835460, 25378335",MeT-DB,False,True,,0.995145404,,0.995145404,,unique_to_final
+29997612,CDG,False,True,,0.988353372,,0.988353372,,unique_to_final
+28771471,GeOMe,False,True,,0.991666436,,0.991666436,,unique_to_final
+27097230,SignaFish,False,True,,0.99351877,,0.99351877,,unique_to_final
+24371150,tasiRNAdb,False,True,,0.994892418,,0.994892418,,unique_to_final
+28977518,qPrimerDB,False,True,,0.992642581,,0.992642581,,unique_to_final
+32286817,TeroKit,False,True,,0.997192562,,0.997192562,,unique_to_final
+33306801,CamRegBase,False,True,,0.996998787,,0.996998787,,unique_to_final
+26989148,Wikidata,False,True,,0.992722154,,0.992722154,,unique_to_final
+22275896,COINS,False,True,,0.97806251,,0.97806251,,unique_to_final
+30329095,CancerSplicingQTL,False,True,,0.997213602,,0.997213602,,unique_to_final
+26476447,FLOR-ID,False,True,,0.993054897,,0.993054897,,unique_to_final
+22397686,SpiroESTdb,False,True,,0.997175336,,0.997175336,,unique_to_final
+29186576,AutDB,False,True,,0.997044206,,0.997044206,,unique_to_final
+25024350,OMICtools,False,True,,0.998182535,,0.998182535,,unique_to_final
+30380119,SAGD,False,True,,0.992830694,,0.992830694,,unique_to_final
+32964659,EANPDB,False,True,,0.993993628,,0.993993628,,unique_to_final
+22250003,BFGR,False,True,,0.983292729,,0.983292729,,unique_to_final
+22702248,WikiCell,False,True,,0.997400999,,0.997400999,,unique_to_final
+34097004,DevOmics,False,True,,0.997623146,,0.997623146,,unique_to_final
+30203047,Pancan-meQTL,False,True,,0.99280415,,0.99280415,,unique_to_final
+30669929,AutophagySMDB,False,True,,0.995587846,,0.995587846,,unique_to_final
+"33306787, 23521697",MetaADEDB,False,True,,0.991302609,,0.991302609,,unique_to_final
+25877638,miRNASNP,False,True,,0.998172939,,0.998172939,,unique_to_final
+23601403,FCDB,False,True,,0.992240489,,0.992240489,,unique_to_final
+27543076,RNALocate,False,True,,0.997115135,,0.997115135,,unique_to_final
+22102573,DBETH,False,True,,0.990900735,,0.990900735,,unique_to_final
+34244719,TIDB,False,True,,0.992214262,,0.992214262,,unique_to_final
+25405079,Splooce,False,True,,0.992536426,,0.992536426,,unique_to_final
+32163115,GRALL,False,True,,0.987117052,,0.987117052,,unique_to_final
+"27899596, 31747015, 23143107, 25414346",ChiTaRS,False,True,,0.9914096,,0.9914096,,unique_to_final
+31598675,KnockTF,False,True,,0.989506125,,0.989506125,,unique_to_final
+33515030,HVIDB,False,True,,0.997510344,,0.997510344,,unique_to_final
+27167218,MiasDB,False,True,,0.997192025,,0.997192025,,unique_to_final
+28376796,AHCODA-DB,False,True,,0.993691454,,0.993691454,,unique_to_final
+26586809,probeBase,False,True,,0.996019483,,0.996019483,,unique_to_final
+33193550,MaizeMine,False,True,,0.995152235,,0.995152235,,unique_to_final
+30053266,TC3A,False,True,,0.990756714,,0.990756714,,unique_to_final
+27242032,URSDB,False,True,,0.997525334,,0.997525334,,unique_to_final
+25466819,WATRefNet,False,True,,0.994038701,,0.994038701,,unique_to_final
+28387841,TimeTree,False,True,,0.989791155,,0.989791155,,unique_to_final
+23813641,GoSynthetic,False,True,,0.995571911,,0.995571911,,unique_to_final
+30247654,HACER,False,True,,0.997927487,,0.997927487,,unique_to_final
+31588507,VDJdb,False,True,,0.996914685,,0.996914685,,unique_to_final
+"24225317, 26546518",TCDB,False,True,,0.996765494,,0.996765494,,unique_to_final
+24850854,MetaImprint,False,True,,0.993931651,,0.993931651,,unique_to_final
+26452372,WaspAtlas,False,True,,0.996073008,,0.996073008,,unique_to_final
+24705204,SysPTM,False,True,,0.994190574,,0.994190574,,unique_to_final
+24618044,SoyFN,False,True,,0.997227907,,0.997227907,,unique_to_final
+29106630,TranslatomeDB,False,True,,0.996909559,,0.996909559,,unique_to_final
+33892308,SAPdb,False,True,,0.994092166,,0.994092166,,unique_to_final
+31725858,PlantCircNet,False,True,,0.997203588,,0.997203588,,unique_to_final
+22110027,DNAtraffic,False,True,,0.997660697,,0.997660697,,unique_to_final
+27903894,dbSAP,False,True,,0.994454622,,0.994454622,,unique_to_final
+26787663,LnCaNet,False,True,,0.995760918,,0.995760918,,unique_to_final
+29529902,BioPepDB,False,True,,0.996458948,,0.996458948,,unique_to_final
+24406170,PeptiSite,False,True,,0.997222483,,0.997222483,,unique_to_final
+23193276,KEGG OC,False,True,,0.981904417,,0.981904417,,unique_to_final
+21520333,LOVD,False,True,,0.994573355,,0.994573355,,unique_to_final
+"27694206, 24137012",GGBN,False,True,,0.978382245,,0.978382245,,unique_to_final
+"24304899, 27914894",SCOPe,False,True,,0.985311985,,0.985311985,,unique_to_final
+24839966,PCD,False,True,,0.993127882,,0.993127882,,unique_to_final
+22682155,AFFINOMICS,False,True,,0.97896564,,0.97896564,,unique_to_final
+28651001,PpTFDB,False,True,,0.990379,,0.990379,,unique_to_final
+33037820,Bgee,False,True,,0.995789826,,0.995789826,,unique_to_final
+25228099,DruGeVar,False,True,,0.996403813,,0.996403813,,unique_to_final
+29178828,CrusTF,False,True,,0.992500782,,0.992500782,,unique_to_final
+23584834,KDDB,False,True,,0.99216032,,0.99216032,,unique_to_final
+33002111,PyDISH,False,True,,0.98944056,,0.98944056,,unique_to_final
+"31642487, 27924043",AraPheno,False,True,,0.992314994,,0.992314994,,unique_to_final
+"22135294, 33196801, 24285305, 26586799, 29140524",NONCODE,False,True,,0.997087181,,0.997087181,,unique_to_final
+26289427,CicArVarDB,False,True,,0.995038033,,0.995038033,,unique_to_final
+30548723,CropSNPdb,False,True,,0.997403085,,0.997403085,,unique_to_final
+25361969,VaDE,False,True,,0.989877224,,0.989877224,,unique_to_final
+31725860,HisgAtlas,False,True,,0.997663379,,0.997663379,,unique_to_final
+23894186,BGDB,False,True,,0.981280982,,0.981280982,,unique_to_final
+24214996,Negatome,False,True,,0.987791359,,0.987791359,,unique_to_final
+"22075997, 24293645, 26590256",STITCH,False,True,,0.979809999,,0.979809999,,unique_to_final
+28423831,BioTop,False,True,,0.992148519,,0.992148519,,unique_to_final
+26822098,MTD,False,True,,0.986400823,,0.986400823,,unique_to_final
+24163100,uORFdb,False,True,,0.997731447,,0.997731447,,unique_to_final
+"29155944, 29155944, 29155944, 29155944",MIST,False,True,,0.989567836,,0.989567836,,unique_to_final
+27698587,Flora-On,False,True,,0.985483035,,0.985483035,,unique_to_final
+27392072,YCRD,False,True,,0.992400229,,0.992400229,,unique_to_final
+31949184,PulmonDB,False,True,,0.997862995,,0.997862995,,unique_to_final
+21210251,BTECH,False,True,,0.996129572,,0.996129572,,unique_to_final
+28387199,GSA,False,True,,0.994967302,,0.994967302,,unique_to_final
+21541042,FurinDB,False,True,,0.997923672,,0.997923672,,unique_to_final
+22096233,MINAS,False,True,,0.994471371,,0.994471371,,unique_to_final
+"23093593, 28053164",PaVE,False,True,,0.990848164,,0.990848164,,unique_to_final
+24918550,dbCerEx,False,True,,0.99592483,,0.99592483,,unique_to_final
+23203866,FlyAtlas,False,True,,0.997430265,,0.997430265,,unique_to_final
+33002112,EnzyMine,False,True,,0.996929705,,0.996929705,,unique_to_final
+33095866,VARAdb,False,True,,0.997256637,,0.997256637,,unique_to_final
+23019219,METscout,False,True,,0.998384833,,0.998384833,,unique_to_final
+22768977,OTD,False,True,,0.98326385,,0.98326385,,unique_to_final
+34405389,DoWLS-MAN,False,True,,0.988136002,,0.988136002,,unique_to_final
+23161688,SwissBioisostere,False,True,,0.985951066,,0.985951066,,unique_to_final
+22570419,LAHEDES,False,True,,0.989177001,,0.989177001,,unique_to_final
+34992626,CottonGVD,False,True,,0.994645226,,0.994645226,,unique_to_final
+26581408,VetBioBase,False,True,,0.985843897,,0.985843897,,unique_to_final
+27017950,NeisseriaBase,False,True,,0.990827322,,0.990827322,,unique_to_final
+34158935,GEMI,False,True,,0.990873575,,0.990873575,,unique_to_final
+30674925,Smooth Muscle Transcriptome Browser,False,True,,0.98817302,,0.983972132,,unique_to_final
+29788225,LnChrom,False,True,,0.996899307,,0.996899307,,unique_to_final
+33094321,VPTMdb,False,True,,0.996834993,,0.996834993,,unique_to_final
+28592293,Plasmobase,False,True,,0.995240629,,0.995240629,,unique_to_final
+31405382,bio.tools,False,True,,0.987343351,,0.987343351,,unique_to_final
+34954426,FertilityOnline,False,True,,0.993602693,,0.993602693,,unique_to_final
+32090260,HSPMdb,False,True,,0.998334646,,0.998334646,,unique_to_final
+21177659,TMPad,False,True,,0.989770174,,0.989770174,,unique_to_final
+22024348,HNOCDB,False,True,,0.997382939,,0.997382939,,unique_to_final
+21880703,AluHunter,False,True,,0.993216336,,0.993216336,,unique_to_final
+29688375,CITGeneDB,False,True,,0.997810602,,0.997810602,,unique_to_final
+29370821,PhenoDis,False,True,,0.995657861,,0.995657861,,unique_to_final
+33095860,CNCDatabase,False,True,,0.997600734,,0.997600734,,unique_to_final
+24265221,ArchDB,False,True,,0.988814056,,0.988814056,,unique_to_final
+"29069473, 33170268",GVM,False,True,,0.997632504,,0.997632504,,unique_to_final
+26527720,MetaNetX,False,True,,0.997939885,,0.997939885,,unique_to_final
+30048518,YARG,False,True,,0.993278623,,0.993278623,,unique_to_final
+27794552,LinkProt,False,True,,0.987855673,,0.987855673,,unique_to_final
+26582925,Start2Fold,False,True,,0.996267363,,0.996267363,,unique_to_final
+28962356,CPCat,False,True,,0.98875711,,0.98875711,,unique_to_final
+26555441,PharmDB-K,False,True,,0.986358921,,0.986358921,,unique_to_final
+29512401,GENIPAC,False,True,,0.994062304,,0.994062304,,unique_to_final
+33973408,hu.MAP,False,True,,0.995122343,,0.995122343,,unique_to_final
+23139595,CIBMAN,False,True,,0.99584347,,0.99584347,,unique_to_final
+22232598,Channelpedia,False,True,,0.995265245,,0.995265245,,unique_to_final
+31598695,MirGeneDB,False,True,,0.99370259,,0.99370259,,unique_to_final
+31774482,FluReassort,False,True,,0.980082214,,0.980082214,,unique_to_final
+26578565,PCOSKB,False,True,,0.997247696,,0.997247696,,unique_to_final
+33780471,MCPdb,False,True,,0.99681139,,0.99681139,,unique_to_final
+23092397,admetSAR,False,True,,0.990115881,,0.990115881,,unique_to_final
+28365733,miRnalyze,False,True,,0.994418919,,0.994418919,,unique_to_final
+33942873,CANNUSE,False,True,,0.991508305,,0.991508305,,unique_to_final
+22428748,ZeBase,False,True,,0.995802045,,0.995802045,,unique_to_final
+"33186582, 26586798",CPPsite,False,True,,0.992566049,,0.992566049,,unique_to_final
+"26586801, 23175603",HOCOMOCO,False,True,,0.995230079,,0.995230079,,unique_to_final
+28415075,HopBase,False,True,,0.980602145,,0.980602145,,unique_to_final
+23396301,CrossTope,False,True,,0.991143823,,0.991143823,,unique_to_final
+26199991,UCDB,False,True,,0.994101167,,0.994101167,,unique_to_final
+33119759,gcType,False,True,,0.995411217,,0.995411217,,unique_to_final
+22647208,AlzPathway,False,True,,0.996937859,,0.996937859,,unique_to_final
+"23193293, 29121237",HAGR,False,True,,0.996995687,,0.996995687,,unique_to_final
+"33219685, 26481356, 30407549",Lnc2Cancer,False,True,,0.99007107,,0.99007107,,unique_to_final
+31231774,Mr.Vc,False,True,,0.98936215,,0.98936215,,unique_to_final
+"23109553, 26481353",ECMDB,False,True,,0.995682538,,0.995682538,,unique_to_final
+32265943,TOAST,False,True,,0.984416008,,0.984416008,,unique_to_final
+32454857,UNaProd,False,True,,0.996470153,,0.996470153,,unique_to_final
+23180786,WormQTL,False,True,,0.998097301,,0.998097301,,unique_to_final
+34497528,ACNPD,False,True,,0.9954561,,0.9954561,,unique_to_final
+30624648,AtFusionDB,False,True,,0.996401966,,0.996401966,,unique_to_final
+23251048,CellLineMiner,False,True,,0.992360115,,0.992360115,,unique_to_final
+25267795,CarrotDB,False,True,,0.99532944,,0.99532944,,unique_to_final
+"24271399, 25501940",SFLD,False,True,,0.998137712,,0.998137712,,unique_to_final
+25943471,SwissLipids,False,True,,0.992622912,,0.992622912,,unique_to_final
+34175476,GWH,False,True,,0.995265027,,0.995265027,,unique_to_final
+25551368,PD_NGSAtlas,False,True,,0.995458275,,0.995458275,,unique_to_final
+24185695,NDB,False,True,,0.992138386,,0.992138386,,unique_to_final
+"22110037, 23487186, 24265222, 27252399, 29140510, 32128557, 26631132",SGD,False,True,,0.98170195,,0.98170195,,unique_to_final
+26503244,sRNATarBase,False,True,,0.988428116,,0.988428116,,unique_to_final
+28245064,FRED,False,True,,0.980674982,,0.980674982,,unique_to_final
+33010176,CancerImmunityQTL,False,True,,0.99584347,,0.99584347,,unique_to_final
+23110448,YeastIP,False,True,,0.997585833,,0.997585833,,unique_to_final
+32754758,ConoMode,False,True,,0.997492313,,0.997492313,,unique_to_final
+32248093,TE141K1,False,True,,0.987350821,,0.987350821,,unique_to_final
+34716373,PPMdb,False,True,,0.994303644,,0.994303644,,unique_to_final
+28498885,PROXiMATE,False,True,,0.997301996,,0.997301996,,unique_to_final
+29126202,ActiveDriverDB,False,True,,0.994272113,,0.994272113,,unique_to_final
+34349127,MiREDiBase,False,True,,0.997606039,,0.997606039,,unique_to_final
+26855883,CressInt,False,True,,0.996792436,,0.996792436,,unique_to_final
+33399824,BnaGVD,False,True,,0.99503864,,0.99503864,,unique_to_final
+23584836,hLGDB,False,True,,0.994743705,,0.994743705,,unique_to_final
+"22610854, 31114900",IEDB-AR,False,True,,0.986699712,,0.986699712,,unique_to_final
+23411719,YY1TargetDB,False,True,,0.982896606,,0.982896606,,unique_to_final
+25640659,SecReT6,False,True,,0.997667551,,0.997667551,,unique_to_final
+22134927,hUbiquitome,False,True,,0.99319154,,0.99319154,,unique_to_final
+"32550548, 34530999",VitiVar,False,True,,0.99736613,,0.99736613,,unique_to_final
+33051688,dbGuide,False,True,,0.996610284,,0.996610284,,unique_to_final
+26450965,CircNet,False,True,,0.982483149,,0.982483149,,unique_to_final
+29220464,KiPho,False,True,,0.995313227,,0.995313227,,unique_to_final
+25392424,TOPDB,False,True,,0.997721473,,0.997721473,,unique_to_final
+34111777,PID,False,True,,0.98083353,,0.98083353,,unique_to_final
+"24350770, 25404128, 24910945",Model Organism Protein Expression Database,False,True,,0.981790811,,0.971850872,,unique_to_final
+28651291,GenomeTrakrCP,False,True,,0.995048881,,0.995048881,,unique_to_final
+31164042,EmExplorer,False,True,,0.986415982,,0.986415982,,unique_to_final
+24536078,MICdb,False,True,,0.989687264,,0.989687264,,unique_to_final
+"22155609, 27048349",GeneCards,False,True,,0.995489895,,0.995489895,,unique_to_final
+30357367,CORUM,False,True,,0.997224689,,0.997224689,,unique_to_final
+31603498,dbInDel,False,True,,0.994747579,,0.994747579,,unique_to_final
+35424258,MeFSAT,False,True,,0.988593876,,0.988593876,,unique_to_final
+30481257,SkeletalVis,False,True,,0.980601847,,0.980601847,,unique_to_final
+25432975,GenomicusPlants,False,True,,0.995462537,,0.995462537,,unique_to_final
+30841849,mGAP,False,True,,0.988449275,,0.988449275,,unique_to_final
+23958730,HippDB,False,True,,0.994108021,,0.994108021,,unique_to_final
+"26097510, 33952332",SANCDB,False,True,,0.994873464,,0.994873464,,unique_to_final
+34025934,MycoTRAP-DB,False,True,,0.982121785,,0.982121785,,unique_to_final
+34259866,CNVIntegrate,False,True,,0.995991111,,0.995991111,,unique_to_final
+"24009897, 25388151",EVpedia,False,True,,0.995006621,,0.995006621,,unique_to_final
+22080506,DIGIT,False,True,,0.994396985,,0.994396985,,unique_to_final
+33511767,FAWMine,False,True,,0.997773767,,0.997773767,,unique_to_final
+26822210,ASDB,False,True,,0.991850942,,0.991850942,,unique_to_final
+24558125,MANTRA,False,True,,0.991984367,,0.991984367,,unique_to_final
+22489867,EnzyBase,False,True,,0.992943108,,0.992943108,,unique_to_final
+"26519400, 33125081, 24214961, 26476454, 27899662, 30321428, 21882442, 23192552, 22080510",KEGG,False,True,,0.995484889,,0.995484889,,unique_to_final
+34174131,CanVaS,False,True,,0.996876478,,0.996876478,,unique_to_final
+"25877637, 27924018, 31680165",DisGeNET,False,True,,0.997833073,,0.997833073,,unique_to_final
+22064857,FungiDB,False,True,,0.997218907,,0.997218907,,unique_to_final
+"24214964, 26635391, 30542988, 31701128",DriverDB,False,True,,0.995986342,,0.995986342,,unique_to_final
+"22218860, 24214987",UniHI,False,True,,0.993736625,,0.993736625,,unique_to_final
+31283070,VIPdb,False,True,,0.984589517,,0.984589517,,unique_to_final
+"27924042, 24174544",PlantTFDB,False,True,,0.997673213,,0.997673213,,unique_to_final
+"34314492, 26476458, 33125071",GlyTouCan,False,True,,0.994329453,,0.994329453,,unique_to_final
+23459781,FRIDa,False,True,,0.992402077,,0.992402077,,unique_to_final
+26138588,SmedGD,False,True,,0.994868353,,0.994868353,,unique_to_final
+25065645,EctoGEM,False,True,,0.991552711,,0.991552711,,unique_to_final
+24339831,Circ2Traits,False,True,,0.996000826,,0.996000826,,unique_to_final
+27246819,BioHub,False,True,,0.989485323,,0.989485323,,unique_to_final
+31602478,PmiREN,False,True,,0.997984946,,0.997984946,,unique_to_final
+"23550210, 31308250",cBioPortal,False,True,,0.992826402,,0.992826402,,unique_to_final
+29985970,BrainEXP,False,True,,0.997224808,,0.997224808,,unique_to_final
+25005261,FmTFDb,False,True,,0.99798429,,0.99798429,,unique_to_final
+31612957,DNAproDB,False,True,,0.995879531,,0.995879531,,unique_to_final
+21575179,SORGOdb,False,True,,0.995990634,,0.995990634,,unique_to_final
+26112452,PlantOrDB,False,True,,0.997664332,,0.997664332,,unique_to_final
+"31524988, 30329098",LncBook,False,True,,0.997623146,,0.997623146,,unique_to_final
+34538772,GenOrigin,False,True,,0.986215472,,0.986215472,,unique_to_final
+35559777,MESOCOSM,False,True,,0.996743441,,0.996743441,,unique_to_final
+22563442,MycoRRdb,False,True,,0.989182293,,0.989182293,,unique_to_final
+31584092,PDBe-KB,False,True,,0.995546019,,0.995546019,,unique_to_final
+25378306,Plastid-LCGbase,False,True,,0.993730698,,0.993730698,,unique_to_final
+25414335,ProteomeScout,False,True,,0.997024179,,0.997024179,,unique_to_final
+31724711,SCOP,False,True,,0.993221243,,0.993221243,,unique_to_final
+29624889,PhyMet2,False,True,,0.994540513,,0.994540513,,unique_to_final
+30147056,PIMBase,False,True,,0.997270882,,0.997270882,,unique_to_final
+24198250,POGO-DB,False,True,,0.998100138,,0.998100138,,unique_to_final
+24531082,SMAL,False,True,,0.99170814,,0.99170814,,unique_to_final
+"33175170, 32102777, 33704069",2019nCoVR,False,True,,0.997189482,,0.997189482,,unique_to_final
+26909679,DsTRD,False,True,,0.992711484,,0.992711484,,unique_to_final
+33045721,ViruSurf,False,True,,0.998281777,,0.998281777,,unique_to_final
+24470572,ChEpiMod,False,True,,0.997203112,,0.997203112,,unique_to_final
+22123737,hiPathDB,False,True,,0.997191489,,0.997191489,,unique_to_final
+25300491,TrypanoCyc,False,True,,0.996331513,,0.996331513,,unique_to_final
+23389821,RenalTube,False,True,,0.996694028,,0.996694028,,unique_to_final
+31958638,BoMiProt,False,True,,0.996749759,,0.996749759,,unique_to_final
+22102570,ProPortal,False,True,,0.995003283,,0.995003283,,unique_to_final
+27733507,PMDBase,False,True,,0.997673035,,0.997673035,,unique_to_final
+"23868073, 33290554, 26578592, 27899595, 30407594, 23193289",PANTHER,False,True,,0.996814907,,0.996814907,,unique_to_final
+26800248,SISTR,False,True,,0.992295837,,0.992295837,,unique_to_final
+26173767,MFMD,False,True,,0.991956189,,0.991956189,,unique_to_final
+25725059,LocSigDB,False,True,,0.997438669,,0.997438669,,unique_to_final
+31584099,gutMDisorder,False,True,,0.997505665,,0.997505665,,unique_to_final
+24194607,TreeFam,False,True,,0.990964532,,0.990964532,,unique_to_final
+31608375,GSAD,False,True,,0.995496213,,0.995496213,,unique_to_final
+31809863,PsyMuKB,False,True,,0.996618569,,0.996618569,,unique_to_final
+24264865,Bival-Bind,False,True,,0.987922519,,0.987922519,,unique_to_final
+31780665,LDB,False,True,,0.982422173,,0.982422173,,unique_to_final
+"33835459, 23118484, 29106616",MODOMICS,False,True,,0.997817814,,0.997817814,,unique_to_final
+34085038,EyeDiseases,False,True,,0.998263299,,0.998263299,,unique_to_final
+26078228,WFRGdb,False,True,,0.997528315,,0.997528315,,unique_to_final
+27209279,DNetDB,False,True,,0.996409118,,0.996409118,,unique_to_final
+27924023,MethSMRT,False,True,,0.995354295,,0.995354295,,unique_to_final
+28416714,JingleBells,False,True,,0.996701837,,0.996701837,,unique_to_final
+29069520,RNArchitecture,False,True,,0.993474245,,0.993474245,,unique_to_final
+22833564,NESdb,False,True,,0.996034861,,0.996034861,,unique_to_final
+30223042,TSNAdb,False,True,,0.982816732,,0.982816732,,unique_to_final
+25474259,DBBP,False,True,,0.99723047,,0.99723047,,unique_to_final
+"29077939, 25332392",lncRNASNP,False,True,,0.996575296,,0.996575296,,unique_to_final
+22434841,TGD,False,True,,0.996270736,,0.996270736,,unique_to_final
+29869221,MU3D,False,True,,0.996364331,,0.996364331,,unique_to_final
+22539672,e-Drug3D,False,True,,0.993923992,,0.993923992,,unique_to_final
+33211888,CSEA-DB,False,True,,0.997746289,,0.997746289,,unique_to_final
+22079417,DACS-DB,False,True,,0.99001509,,0.99001509,,unique_to_final
+21731755,PanSNPdb,False,True,,0.997955024,,0.997955024,,unique_to_final
+25935546,u-CARE,False,True,,0.98301971,,0.98301971,,unique_to_final
+28701700,HDNetDB,False,True,,0.996480525,,0.996480525,,unique_to_final
+31691822,DrLLPS,False,True,,0.997929573,,0.997929573,,unique_to_final
+27069559,MD-CTS,False,True,,0.988920406,,0.988920406,,unique_to_final
+28502574,DINeR,False,True,,0.992539942,,0.992539942,,unique_to_final
+30380071,DSMNC,False,True,,0.989300251,,0.989300251,,unique_to_final
+27625390,PathoYeastract,False,True,,0.99473387,,0.99473387,,unique_to_final
+25352729,FCDD,False,True,,0.995983303,,0.995983303,,unique_to_final
+26582924,enviPath,False,True,,0.992086053,,0.992086053,,unique_to_final
+31412866,ETM-DB,False,True,,0.991336733,,0.991336733,,unique_to_final
+28549078,HEROD,False,True,,0.983515739,,0.983515739,,unique_to_final
+35694152,EnhFFL,False,True,,0.994996548,,0.994996548,,unique_to_final
+33196814,RBP2GO,False,True,,0.996937677,,0.996937677,,unique_to_final
+30357379,EndoDB,False,True,,0.996743798,,0.996743798,,unique_to_final
+33181825,CitrusKB,False,True,,0.99783051,,0.99783051,,unique_to_final
+29039006,RBFLDB,False,True,,0.992151543,,0.992151543,,unique_to_final
+33095862,ThermoMutDB,False,True,,0.998117328,,0.998117328,,unique_to_final
+32761141,SPDB,False,True,,0.982828304,,0.982828304,,unique_to_final
+32976578,TREND-DB,False,True,,0.993754983,,0.993754983,,unique_to_final
+25030426,HelicoBase,False,True,,0.996223032,,0.996223032,,unique_to_final
+33645624,KAIKObase,False,True,,0.99772799,,0.99772799,,unique_to_final
+24341535,VTCdb,False,True,,0.994380951,,0.994380951,,unique_to_final
+34954795,CoDNaS-RNA,False,True,,0.989147276,,0.989147276,,unique_to_final
+31702846,ConSurf,False,True,,0.988563061,,0.988563061,,unique_to_final
+29961821,SDADB,False,True,,0.996021926,,0.996021926,,unique_to_final
+30593925,SITVIT2,False,True,,0.996629322,,0.996629322,,unique_to_final
+27936097,PeTMbase,False,True,,0.988303959,,0.988303959,,unique_to_final
+31284879,ImtRDB,False,True,,0.997494876,,0.997494876,,unique_to_final
+32934277,StoneMod,False,True,,0.996549025,,0.996549025,,unique_to_final
+27115628,ProTherm,False,True,,0.994540989,,0.994540989,,unique_to_final
+25392418,ValidatorDB,False,True,,0.997314692,,0.997314692,,unique_to_final
+25392411,PyIgClassify,False,True,,0.995087743,,0.995087743,,unique_to_final
+34456903,ImmuCellDB,False,True,,0.99683398,,0.99683398,,unique_to_final
+30446142,EPS-DB,False,True,,0.998128307,,0.998128307,,unique_to_final
+33514395,MPM,False,True,,0.994437575,,0.994437575,,unique_to_final
+24285301,AVPdb,False,True,,0.996542871,,0.996542871,,unique_to_final
+26450949,ProPepper,False,True,,0.996425271,,0.996425271,,unique_to_final
+30721533,SiMPLOD,False,True,,0.995890737,,0.995890737,,unique_to_final
+28481528,PubChemQC,False,True,,0.988919353,,0.988919353,,unique_to_final
+24146773,EMBRYS,False,True,,0.995997906,,0.995997906,,unique_to_final
+"28985416, 30945202",EVLncRNAs,False,True,,0.995015562,,0.995015562,,unique_to_final
+31501752,ABCD,False,True,,0.989302754,,0.989302754,,unique_to_final
+33119754,HeRA,False,True,,0.993696928,,0.993696928,,unique_to_final
+28862395,PMS_DN,False,True,,0.993797079,,0.993797079,,unique_to_final
+29092939,TCPA,False,True,,0.990851581,,0.990851581,,unique_to_final
+31664080,dendPoint,False,True,,0.994515121,,0.994515121,,unique_to_final
+23161692,SchistoDB,False,True,,0.998987973,,0.998987973,,unique_to_final
+32990748,miRNASNP-v3,False,True,,0.997226487,,0.997226487,,unique_to_final
+23314752,UniVIO,False,True,,0.993773353,,0.993773353,,unique_to_final
+27799474,mirDNMR,False,True,,0.996765435,,0.996765435,,unique_to_final
+22140107,SNPedia,False,True,,0.99539566,,0.99539566,,unique_to_final
+26748106,EpimiRBase,False,True,,0.9903965,,0.9903965,,unique_to_final
+33740463,ICSCB,False,True,,0.996838212,,0.996838212,,unique_to_final
+26578584,InsectBase,False,True,,0.997729719,,0.997729719,,unique_to_final
+32820322,LncAS2Cancer,False,True,,0.992546678,,0.992546678,,unique_to_final
+24304896,CellFinder,False,True,,0.99684298,,0.99684298,,unique_to_final
+24602877,BambooGDB,False,True,,0.996197879,,0.996197879,,unique_to_final
+32337573,MPTherm,False,True,,0.997999251,,0.997999251,,unique_to_final
+25538713,VitisCyc,False,True,,0.997620523,,0.997620523,,unique_to_final
+24622612,GigaDB,False,True,,0.98824966,,0.98824966,,unique_to_final
+34120586,NUCOME,False,True,,0.996816218,,0.996816218,,unique_to_final
+23864220,MisPred,False,True,,0.997501791,,0.997501791,,unique_to_final
+30053267,dbCAN-seq,False,True,,0.997396141,,0.997396141,,unique_to_final
+23860041,MGDD,False,True,,0.994052202,,0.994052202,,unique_to_final
+30329142,CancerSEA,False,True,,0.997147083,,0.997147083,,unique_to_final
+24952385,ShrimpGPAT,False,True,,0.997447491,,0.997447491,,unique_to_final
+30794542,RESPIRE,False,True,,0.993819237,,0.993819237,,unique_to_final
+26516187,SynLethDB,False,True,,0.998530388,,0.998530388,,unique_to_final
+32702093,AciDB,False,True,,0.99098736,,0.99098736,,unique_to_final
+22876890,AtlasT4SS,False,True,,0.984139264,,0.984139264,,unique_to_final
+33053178,DNAmoreDB,False,True,,0.992567003,,0.992567003,,unique_to_final
+22140101,MethylomeDB,False,True,,0.997244477,,0.997244477,,unique_to_final
+28187703,iHMS,False,True,,0.988777816,,0.988777816,,unique_to_final
+25152233,ExpTreeDB,False,True,,0.995681107,,0.995681107,,unique_to_final
+"30453895, 32009518",RATEmiRs,False,True,,0.978475153,,0.978475153,,unique_to_final
+29743053,PDXliver,False,True,,0.993864596,,0.993864596,,unique_to_final
+25058394,IthaGenes,False,True,,0.993503034,,0.993503034,,unique_to_final
+24148649,snOPY,False,True,,0.990186676,,0.990186676,,unique_to_final
+27924044,PlaMoM,False,True,,0.996463239,,0.996463239,,unique_to_final
+30231853,AgriSeqDB,False,True,,0.997874022,,0.997874022,,unique_to_final
+31036810,ASNR,False,True,,0.994962871,,0.994962871,,unique_to_final
+24912499,REGNET,False,True,,0.995660305,,0.995660305,,unique_to_final
+"22067448, 26578559",VFDB,False,True,,0.998255268,,0.998255268,,unique_to_final
+30272193,BACTOME,False,True,,0.997656286,,0.997656286,,unique_to_final
+24302289,EDdb,False,True,,0.994813681,,0.994813681,,unique_to_final
+33418085,MicroPhenoDB,False,True,,0.990126431,,0.990126431,,unique_to_final
+30602089,STADIUM,False,True,,0.983587086,,0.983587086,,unique_to_final
+26556651,cropPAL,False,True,,0.991583467,,0.991583467,,unique_to_final
+21586118,RCGDB,False,True,,0.987567484,,0.987567484,,unique_to_final
+25979979,DroughtDB,False,True,,0.997056782,,0.997056782,,unique_to_final
+22301388,MaxQB,False,True,,0.992410779,,0.992410779,,unique_to_final
+23448274,PASmiR,False,True,,0.993088782,,0.993088782,,unique_to_final
+33993461,TUPDB,False,True,,0.994650185,,0.994650185,,unique_to_final
+30329086,CAGm,False,True,,0.991939008,,0.991939008,,unique_to_final
+21418024,PlantPIs,False,True,,0.9976331,,0.9976331,,unique_to_final
+28327601,BCIP,False,True,,0.996045272,,0.996045272,,unique_to_final
+33981200,Gene4PD,False,True,,0.994049946,,0.994049946,,unique_to_final
+34107869,PINIR,False,True,,0.995020032,,0.995020032,,unique_to_final
+23515433,TIARA,False,True,,0.992577295,,0.992577295,,unique_to_final
+29036719,ChannelsDB,False,True,,0.998202503,,0.998202503,,unique_to_final
+26476444,PDBe,False,True,,0.99717021,,0.99717021,,unique_to_final
+24170807,YEASTRACT,False,True,,0.997687936,,0.997687936,,unique_to_final
+"25115331, 33247931",KiMoSys,False,True,,0.998547196,,0.998547196,,unique_to_final
+34859531,gnomAD,False,True,,0.988560289,,0.988560289,,unique_to_final
+33970229,ChemHub,False,True,,0.996807337,,0.996807337,,unique_to_final
+26989154,CSCdb,False,True,,0.995143592,,0.995143592,,unique_to_final
+23668932,CreZoo,False,True,,0.978289962,,0.978289962,,unique_to_final
+31680168,TSEA-DB,False,True,,0.995504111,,0.995504111,,unique_to_final
+"30445619, 33231677, 27924024",GTRD,False,True,,0.998025298,,0.998025298,,unique_to_final
+31024751,CASBench,False,True,,0.995392978,,0.995392978,,unique_to_final
+22332784,DiatomCyc,False,True,,0.997156441,,0.997156441,,unique_to_final
+23977990,EvoSNP-DB,False,True,,0.993930091,,0.993930091,,unique_to_final
+28968841,AtCircDB,False,True,,0.993186295,,0.993186295,,unique_to_final
+"31647096, 28053165",proGenomes2,False,True,,0.9957847,,0.9957847,,unique_to_final
+28967693,HUMA,False,True,,0.995447814,,0.995447814,,unique_to_final
+33683131,MRMAssayDB,False,True,,0.997641921,,0.997641921,,unique_to_final
+27053566,Vaxar,False,True,,0.983407974,,0.983407974,,unique_to_final
+34387941,PharmGKB,False,True,,0.997299695,,0.997299695,,unique_to_final
+34241085,OCELOT,False,True,,0.996991932,,0.996991932,,unique_to_final
+21247929,CEREALAB,False,True,,0.995646238,,0.995646238,,unique_to_final
+24578355,StaphyloBase,False,True,,0.997347653,,0.997347653,,unique_to_final
+29145635,tRex,False,True,,0.994673848,,0.994673848,,unique_to_final
+23698860,TiPs,False,True,,0.989953816,,0.989953816,,unique_to_final
+21584191,MTB-PCDB,False,True,,0.996515731,,0.996515731,,unique_to_final
+31725863,GRONS,False,True,,0.979251385,,0.979251385,,unique_to_final
+22123747,MitoZoa,False,True,,0.997121572,,0.997121572,,unique_to_final
+"22096229, 25428371, 27899635, 30398656, 33156333",InterPro,False,True,,0.995504975,,0.995504975,,unique_to_final
+"24060102, 24175918",RegPrecise,False,True,,0.986235499,,0.986235499,,unique_to_final
+24592289,MycobacRV,False,True,,0.986873567,,0.986873567,,unique_to_final
+24564786,Fungal PCWDE Database,False,True,,0.985806865,,0.979104906,,unique_to_final
+"25355519, 27727438, 27899578, 30371878",COSMIC,False,True,,0.99756813,,0.99756813,,unique_to_final
+29077896,mirTrans,False,True,,0.996958256,,0.996958256,,unique_to_final
+34361108,alfaNET,False,True,,0.997048736,,0.997048736,,unique_to_final
+25378308,REBASE,False,True,,0.997635245,,0.997635245,,unique_to_final
+"31665428, 31707700",ASD,False,True,,0.992668907,,0.992668907,,unique_to_final
+31598703,CancerGeneNet,False,True,,0.994320154,,0.994320154,,unique_to_final
+27242503,Ferretome,False,True,,0.98255372,,0.98255372,,unique_to_final
+"33104772, 24163257",GXD,False,True,,0.998189569,,0.998189569,,unique_to_final
+32510565,GreenCircRNA,False,True,,0.994266331,,0.994266331,,unique_to_final
+24082050,yApoptosis,False,True,,0.986070871,,0.986070871,,unique_to_final
+22140108,CharProtDB,False,True,,0.996790111,,0.996790111,,unique_to_final
+23161675,ChIPBase,False,True,,0.99755013,,0.99755013,,unique_to_final
+"30364951, 23093601",DoriC,False,True,,0.991857886,,0.991857886,,unique_to_final
+21801404,PICCOLO,False,True,,0.993021965,,0.993021965,,unique_to_final
+"23193290, 26578568, 30418626",dbPTM,False,True,,0.998039007,,0.998039007,,unique_to_final
+28977416,IMOTA,False,True,,0.99115777,,0.99115777,,unique_to_final
+29155231,RTFAdb,False,True,,0.981455028,,0.981455028,,unique_to_final
+34010390,Echinobase,False,True,,0.997653604,,0.997653604,,unique_to_final
+33231322,SoyTD,False,True,,0.986389339,,0.986389339,,unique_to_final
+26578597,HGTree,False,True,,0.998615086,,0.998615086,,unique_to_final
+"22110036, 26578557",LegumeIP,False,True,,0.996482372,,0.996482372,,unique_to_final
+26973684,FragariaCyc,False,True,,0.99653697,,0.99653697,,unique_to_final
+31139565,HNCDB,False,True,,0.998145655,,0.998145655,,unique_to_final
+33709443,LIMONADA,False,True,,0.994873464,,0.994873464,,unique_to_final
+33068412,RASP,False,True,,0.992025733,,0.992025733,,unique_to_final
+"28150237, 24234447, 21898825",UniCarbKB,False,True,,0.998428583,,0.998428583,,unique_to_final
+23411718,EimeriaTDB,False,True,,0.991310894,,0.991310894,,unique_to_final
+22491796,MSV3d,False,True,,0.996012549,,0.996012549,,unique_to_final
+33203359,FishDB,False,True,,0.997222185,,0.997222185,,unique_to_final
+25559128,MUFOLD-DB,False,True,,0.985240579,,0.985240579,,unique_to_final
+26637529,ONRLDB,False,True,,0.997567415,,0.997567415,,unique_to_final
+"29040692, 26464443",RMBase,False,True,,0.992835402,,0.992835402,,unique_to_final
+25953081,MIsoMine,False,True,,0.996668458,,0.996668458,,unique_to_final
+26486520,MSGene,False,True,,0.992402017,,0.992402017,,unique_to_final
+33181824,circR2Cancer,False,True,,0.993368697,,0.993368697,,unique_to_final
+33313674,ColorCells,False,True,,0.997294188,,0.997294188,,unique_to_final
+32858223,hTFtarget,False,True,,0.996637821,,0.996637821,,unique_to_final
+31066443,DrugComb,False,True,,0.991504312,,0.991504312,,unique_to_final
+32393257,MyoMiner,False,True,,0.994202495,,0.994202495,,unique_to_final
+"26582918, 29165669, 31777943",ClinVar,False,True,,0.996684611,,0.996684611,,unique_to_final
+31409791,DRAMP,False,True,,0.984241545,,0.984241545,,unique_to_final
+25776024,LMPID,False,True,,0.998238027,,0.998238027,,unique_to_final
+34264745,BARRA:CuRDa,False,True,,0.988691002,,0.988691002,,unique_to_final
+30357390,ALEdb,False,True,,0.993111849,,0.993111849,,unique_to_final
+"26722116, 29564831",ChromothripsisDB,False,True,,0.99702704,,0.99702704,,unique_to_final
+27863956,IHEC,False,True,,0.982326448,,0.982326448,,unique_to_final
+32681639,ATdb,False,True,,0.992148757,,0.992148757,,unique_to_final
+"27899581, 22139932",HmtDB,False,True,,0.998390019,,0.998390019,,unique_to_final
+"33270889, 25398901",MethHC,False,True,,0.997448325,,0.997448325,,unique_to_final
+"23161682, 29156057",PRGdb,False,True,,0.998317122,,0.998317122,,unique_to_final
+23396300,pseudoMap,False,True,,0.987089634,,0.987089634,,unique_to_final
+31123286,AICD,False,True,,0.981977388,,0.981977388,,unique_to_final
+30055873,PhoPepMass,False,True,,0.996143401,,0.996143401,,unique_to_final
+30329093,REDfly,False,True,,0.997037947,,0.997037947,,unique_to_final
+22067444,zfishbook,False,True,,0.99548614,,0.99548614,,unique_to_final
+28025349,viruSITE,False,True,,0.993772805,,0.993772805,,unique_to_final
+25361971,GeneFriends,False,True,,0.990629911,,0.990629911,,unique_to_final
+22165817,HOMER,False,True,,0.992719769,,0.992719769,,unique_to_final
+"29532461, 33074547",HpBase,False,True,,0.998306155,,0.998306155,,unique_to_final
+32696292,TLPdb,False,True,,0.996521711,,0.996521711,,unique_to_final
+28440791,CyanoType,False,True,,0.9971928,,0.9971928,,unique_to_final
+31452162,CryptoDB,False,True,,0.997344255,,0.997344255,,unique_to_final
+"22080514, 24163105",PolymiRTS,False,True,,0.997374415,,0.997374415,,unique_to_final
+31169974,GDBMedChem,False,True,,0.997045815,,0.997045815,,unique_to_final
+27841751,IRRMC,False,True,,0.994473457,,0.994473457,,unique_to_final
+23601370,LiverAtlas,False,True,,0.997491121,,0.997491121,,unique_to_final
+33009914,CoVdb,False,True,,0.996979177,,0.996979177,,unique_to_final
+"25038066, 31432427",CSF-PR,False,True,,0.993137106,,0.993137106,,unique_to_final
+29699484,PDZBase,False,True,,0.993412837,,0.993412837,,unique_to_final
+31390943,D-lnc,False,True,,0.984383583,,0.984383583,,unique_to_final
+34583740,FPADMET,False,True,,0.995484829,,0.995484829,,unique_to_final
+22110032,DAMPD,False,True,,0.989307284,,0.989307284,,unique_to_final
+26424083,MGDB,False,True,,0.996766806,,0.996766806,,unique_to_final
+32540200,BGVD,False,True,,0.991665125,,0.991665125,,unique_to_final
+34741074,Fibromine,False,True,,0.996297419,,0.996297419,,unique_to_final
+26043787,PTM-SNP,False,True,,0.989071167,,0.989071167,,unique_to_final
+"27365365, 30172046",CIRCpedia,False,True,,0.990549028,,0.990549028,,unique_to_final
+24889152,TSmiR,False,True,,0.990324497,,0.990324497,,unique_to_final
+23175607,CyanoLyase,False,True,,0.991719246,,0.991719246,,unique_to_final
+24855436,Polytraits,False,True,,0.996589065,,0.996589065,,unique_to_final
+25252779,PIP-DB,False,True,,0.989458632,,0.989458632,,unique_to_final
+34220930,FAANG,False,True,,0.989271164,,0.989271164,,unique_to_final
+24618344,Drug2Gene,False,True,,0.990610043,,0.990610043,,unique_to_final
+28641017,NANPDB,False,True,,0.997249413,,0.997249413,,unique_to_final
+30380090,PLSDB,False,True,,0.992310107,,0.992310107,,unique_to_final
+22606288,MGEx-Udb,False,True,,0.998166392,,0.998166392,,unique_to_final
+24304897,PPD,False,True,,0.996921718,,0.996921718,,unique_to_final
+"27924039, 22067456",FlyRNAi,False,True,,0.996583045,,0.996583045,,unique_to_final
+31584089,PhaSepDB,False,True,,0.996137023,,0.996137023,,unique_to_final
+25972521,AtmiRNET,False,True,,0.997909009,,0.997909009,,unique_to_final
+"33104797, 27587585",REDIportal,False,True,,0.996106863,,0.996106863,,unique_to_final
+31665416,Integrated Microbial Genomes Atlas of Biosynthetic gene Clusters,False,True,,0.978851591,,0.966223431,,unique_to_final
+21492431,KID,False,True,,0.998009106,,0.998009106,,unique_to_final
+33264401,SoyBase,False,True,,0.984504819,,0.984504819,,unique_to_final
+"34536568, 28137767",SmProt,False,True,,0.989004731,,0.989004731,,unique_to_final
+"33245777, 29106613",3DIV,False,True,,0.995887399,,0.995887399,,unique_to_final
+28171531,Pro54DB,False,True,,0.984204948,,0.984204948,,unique_to_final
+26989151,KinetochoreDB,False,True,,0.998664141,,0.998664141,,unique_to_final
+21765097,PGAT,False,True,,0.996497869,,0.996497869,,unique_to_final
+"28053161, 21917859",GETPrime,False,True,,0.99608171,,0.99608171,,unique_to_final
+21762488,EuroPineDB,False,True,,0.993739247,,0.993739247,,unique_to_final
+30587128,PSRN,False,True,,0.994711161,,0.994711161,,unique_to_final
+34319727,ProBiS-Dock,False,True,,0.990430673,,0.990430673,,unique_to_final
+33137193,AcrHub,False,True,,0.99744314,,0.99744314,,unique_to_final
+33995899,DRscDB,False,True,,0.997646034,,0.997646034,,unique_to_final
+"23203891, 26980515",2P2I,False,True,,0.99723657,,0.99723657,,unique_to_final
+33497436,FifBase,False,True,,0.995629787,,0.995629787,,unique_to_final
+24214993,CPLM,False,True,,0.995593056,,0.995593056,,unique_to_final
+26513174,MDP,False,True,,0.993027329,,0.993027329,,unique_to_final
+22750101,LSHGD,False,True,,0.994387046,,0.994387046,,unique_to_final
+34023905,knotAnnotSV,False,True,,0.989982367,,0.989982367,,unique_to_final
+28299908,DrugAge,False,True,,0.997624516,,0.997624516,,unique_to_final
+"30272209, 27789701, 22135291, 25332395",Rhea,False,True,,0.982805073,,0.982805073,,unique_to_final
+30268934,GAAD,False,True,,0.996480703,,0.996480703,,unique_to_final
+26496950,OpenTein,False,True,,0.988018394,,0.988018394,,unique_to_final
+"30476227, 28077563, 25428363, 27980099",BioGRID,False,True,,0.997427076,,0.997427076,,unique_to_final
+26519469,JuncDB,False,True,,0.996719241,,0.996719241,,unique_to_final
+34846641,HODD,False,True,,0.994872093,,0.994872093,,unique_to_final
+28453687,GDISC,False,True,,0.982105613,,0.982105613,,unique_to_final
+31843802,ASRD,False,True,,0.982676625,,0.982676625,,unique_to_final
+"25428361, 24931982",GRASP,False,True,,0.99731338,,0.99731338,,unique_to_final
+31034103,FAT-PTM,False,True,,0.994561623,,0.994561623,,unique_to_final
+27076334,DNAVaxDB,False,True,,0.992402136,,0.992402136,,unique_to_final
+33406221,iCysMod,False,True,,0.997266591,,0.997266591,,unique_to_final
+24888382,AAIR,False,True,,0.995133579,,0.995133579,,unique_to_final
+33367605,Virxicon,False,True,,0.996595085,,0.996595085,,unique_to_final
+"22080548, 23203883, 24214989, 26615190, 27899630, 29140475, 30395270, 31722421, 33175160",ENA,False,True,,0.991740763,,0.991740763,,unique_to_final
+25324312,EpilepsyGene,False,True,,0.996541262,,0.996541262,,unique_to_final
+25332398,DEPOD,False,True,,0.997329473,,0.997329473,,unique_to_final
+25378337,APASdb,False,True,,0.995926738,,0.995926738,,unique_to_final
+27749924,SulfAtlas,False,True,,0.992132127,,0.992132127,,unique_to_final
+"25858286, 28439836",miRGate,False,True,,0.99535054,,0.99535054,,unique_to_final
+22325123,YADAMP,False,True,,0.996951342,,0.996951342,,unique_to_final
+32338561,RadAtlas,False,True,,0.993727684,,0.993727684,,unique_to_final
+30601939,UbiHub,False,True,,0.998238921,,0.998238921,,unique_to_final
+28365722,OCaPPI-Db,False,True,,0.996962115,,0.996962115,,unique_to_final
+33906563,M6ADD,False,True,,0.994489074,,0.994489074,,unique_to_final
+27643925,StemCellCKB,False,True,,0.995615423,,0.995615423,,unique_to_final
+25477388,BARD,False,True,,0.990859985,,0.990859985,,unique_to_final
+30053265,exoRBase,False,True,,0.996153355,,0.996153355,,unique_to_final
+"31171447, 31171447",SynGO,False,True,,0.996233463,,0.996233463,,unique_to_final
+21177658,IsoBase,False,True,,0.996967256,,0.996967256,,unique_to_final
+"30380085, 30380085, 30380085",dbAMP,False,True,,0.994630337,,0.994630337,,unique_to_final
+33216897,PRID,False,True,,0.985948801,,0.985948801,,unique_to_final
+22080558,HotRegion,False,True,,0.989635229,,0.989635229,,unique_to_final
+22135301,BacMap,False,True,,0.990752041,,0.990752041,,unique_to_final
+24001185,inTB,False,True,,0.991402507,,0.991402507,,unique_to_final
+"24318814, 24265223",Electronic Mouse Atlas of Gene Expression,False,True,,0.988375112,,0.985727191,,unique_to_final
+33359127,NBIGV,False,True,,0.983493745,,0.983493745,,unique_to_final
+27899646,FAIRDOMHub,False,True,,0.996229708,,0.996229708,,unique_to_final
+23193255,H2DB,False,True,,0.996937255,,0.996937255,,unique_to_final
+31831861,TRANSNAP,False,True,,0.997132599,,0.997132599,,unique_to_final
+30482172,dbMPIKT,False,True,,0.991190982,,0.991190982,,unique_to_final
+34562055,FinBOL,False,True,,0.991614699,,0.991614699,,unique_to_final
+28365739,GrTEdb,False,True,,0.997847676,,0.997847676,,unique_to_final
+23314754,STIFDB2,False,True,,0.995890498,,0.995890498,,unique_to_final
+23161684,dcGO,False,True,,0.997635027,,0.997635027,,unique_to_final
+24150938,GEISHA,False,True,,0.996660411,,0.996660411,,unique_to_final
+"30152276, 21584190",HypoDB,False,True,,0.997157693,,0.997157693,,unique_to_final
+27651464,LNCediting,False,True,,0.996848762,,0.996848762,,unique_to_final
+27242036,CoopTFD,False,True,,0.997820497,,0.997820497,,unique_to_final
+23766369,TIMBAL,False,True,,0.996844351,,0.996844351,,unique_to_final
+26615193,PDBFlex,False,True,,0.998265803,,0.998265803,,unique_to_final
+25217587,VirusMentha,False,True,,0.996016741,,0.996016741,,unique_to_final
+28053167,PceRBase,False,True,,0.983400321,,0.983400321,,unique_to_final
+24259684,BrassiBase,False,True,,0.991759181,,0.991759181,,unique_to_final
+27192119,dbCPG,False,True,,0.991826773,,0.991826773,,unique_to_final
+29145625,mSignatureDB,False,True,,0.991612613,,0.991612613,,unique_to_final
+"23110975, 29761459, 34698891",MGI,False,True,,0.983090103,,0.983090103,,unique_to_final
+24790154,dbGSH,False,True,,0.994318962,,0.994318962,,unique_to_final
+31695717,AppleMDO,False,True,,0.992001891,,0.992001891,,unique_to_final
+32665542,CoVex,False,True,,0.995960653,,0.995960653,,unique_to_final
+29186335,OncoPPi,False,True,,0.987840295,,0.987840295,,unique_to_final
+30046160,KampoDB,False,True,,0.997830033,,0.997830033,,unique_to_final
+24771669,PhylOPDb,False,True,,0.997332573,,0.997332573,,unique_to_final
+"33305318, 34252246",PED,False,True,,0.985365828,,0.985365828,,unique_to_final
+33276297,DBCOVP,False,True,,0.997579992,,0.997579992,,unique_to_final
+30053237,HDncRNA,False,True,,0.996445835,,0.996445835,,unique_to_final
+23730305,SGR,False,True,,0.993947387,,0.993947387,,unique_to_final
+26582920,iGNM,False,True,,0.993238688,,0.993238688,,unique_to_final
+33179754,TISCH,False,True,,0.996230185,,0.996230185,,unique_to_final
+23193298,SecReT4,False,True,,0.996587932,,0.996587932,,unique_to_final
+23585830,MitoLSDB,False,True,,0.996946871,,0.996946871,,unique_to_final
+24273012,SpliceProt,False,True,,0.991778851,,0.991778851,,unique_to_final
+32076423,FHLdb,False,True,,0.99812746,,0.99812746,,unique_to_final
+22509333,PolysacDB,False,True,,0.988787591,,0.988787591,,unique_to_final
+32159215,TeaMiD,False,True,,0.993912682,,0.993912682,,unique_to_final
+"22064862, 24185697, 27738138",CGD,False,True,,0.991008719,,0.991008719,,unique_to_final
+28053168,ccNET,False,True,,0.994896412,,0.994896412,,unique_to_final
+30202870,SequencEnG,False,True,,0.989631832,,0.989631832,,unique_to_final
+30887928,VaxiJen,False,True,,0.989937842,,0.989937842,,unique_to_final
+33010170,BiG-FAM,False,True,,0.988548267,,0.988548267,,unique_to_final
+"23331499, 23715991",SignaLink,False,True,,0.985477149,,0.985477149,,unique_to_final
+29036403,CSCD,False,True,,0.997561216,,0.997561216,,unique_to_final
+21965557,QlicRice,False,True,,0.997935176,,0.997935176,,unique_to_final
+"29761469, 26578564",HGD,False,True,,0.997601748,,0.997601748,,unique_to_final
+25382819,ProKinO,False,True,,0.995589495,,0.995589495,,unique_to_final
+23284086,TreeTFDB,False,True,,0.998396933,,0.998396933,,unique_to_final
+26635394,RBP-Var,False,True,,0.991189197,,0.991189197,,unique_to_final
+23406793,T-HOD,False,True,,0.995550072,,0.995550072,,unique_to_final
+25052703,APADB,False,True,,0.981904626,,0.981904626,,unique_to_final
+25398903,PNRD,False,True,,0.991778493,,0.991778493,,unique_to_final
+"27141961, 27141961, 27141961, 27141961, 27141961",Enrichr,False,True,,0.996474743,,0.996474743,,unique_to_final
+"31680157, 27899563",ChimerDB,False,True,,0.995721757,,0.995721757,,unique_to_final
+33137185,iCSDB,False,True,,0.994947433,,0.994947433,,unique_to_final
+24137008,HoPaCI-DB,False,True,,0.997813225,,0.997813225,,unique_to_final
+28961690,ncDR,False,True,,0.99832958,,0.99832958,,unique_to_final
+30371820,UNITE,False,True,,0.997397006,,0.997397006,,unique_to_final
+25635527,ARN,False,True,,0.983717382,,0.983717382,,unique_to_final
+33252190,GRINdb,False,True,,0.997000337,,0.997000337,,unique_to_final
+26727469,dEMBF,False,True,,0.996164143,,0.996164143,,unique_to_final
+30244175,PTMD,False,True,,0.985867262,,0.985867262,,unique_to_final
+30476305,LncACTdb,False,True,,0.993309855,,0.993309855,,unique_to_final
+26578555,SugarBindDB,False,True,,0.997786748,,0.997786748,,unique_to_final
+25964630,PsyGeNET,False,True,,0.997668445,,0.997668445,,unique_to_final
+"30364956, 24194601",HMDD,False,True,,0.997899234,,0.997899234,,unique_to_final
+30874591,PAmiRDB,False,True,,0.994146883,,0.994146883,,unique_to_final
+22120661,SalmonDB,False,True,,0.996498466,,0.996498466,,unique_to_final
+22397531,AtPAN,False,True,,0.98359412,,0.98359412,,unique_to_final
+32459338,EpiRegio,False,True,,0.996769607,,0.996769607,,unique_to_final
+24265220,CAMP,False,True,,0.997035444,,0.997035444,,unique_to_final
+"29165593, 33539890, 22110034, 24185702",FunCoup,False,True,,0.996186793,,0.996186793,,unique_to_final
+23497033,phiBIOTICS,False,True,,0.983398318,,0.983398318,,unique_to_final
+25190456,CCGD,False,True,,0.979682426,,0.979682426,,unique_to_final
+24304895,BacMet,False,True,,0.994012475,,0.994012475,,unique_to_final
+22067098,ApoptoProteomics,False,True,,0.990143538,,0.990143538,,unique_to_final
+23846593,lncRNome,False,True,,0.995862365,,0.995862365,,unique_to_final
+22039151,ALFRED,False,True,,0.992198706,,0.992198706,,unique_to_final
+32986825,Animal-APAdb,False,True,,0.993082929,,0.993082929,,unique_to_final
+33196844,dbCNS,False,True,,0.997333527,,0.997333527,,unique_to_final
+31240103,MDR,False,True,,0.993409554,,0.993409554,,unique_to_final
+24356117,dbSNP,False,True,,0.992551982,,0.992551982,,unique_to_final
+27577567,DDRprot,False,True,,0.997383237,,0.997383237,,unique_to_final
+25861964,CPD,False,True,,0.994626105,,0.994626105,,unique_to_final
+22102589,UniPathway,False,True,,0.997355998,,0.997355998,,unique_to_final
+23584832,MalaCards,False,True,,0.994350731,,0.994350731,,unique_to_final
+25468930,HProtDB,False,True,,0.989957288,,0.989957288,,unique_to_final
+30760842,OpSatdb,False,True,,0.978444099,,0.978444099,,unique_to_final
+"31680159, 23193273, 27899657, 25378343",EPD,False,True,,0.994761258,,0.994761258,,unique_to_final
+"23203871, 25352553, 27924014, 30476243, 33237311",STRING,False,True,,0.995607018,,0.995607018,,unique_to_final
+23599502,INstruct,False,True,,0.997730315,,0.997730315,,unique_to_final
+24312499,PaGenBase,False,True,,0.997129798,,0.997129798,,unique_to_final
+22021380,CAPS-DB,False,True,,0.997070983,,0.997070983,,unique_to_final
+33852582,AlnC,False,True,,0.996692717,,0.996692717,,unique_to_final
+22064851,HaploReg,False,True,,0.996389806,,0.996389806,,unique_to_final
+31410488,ncRNA-eQTL,False,True,,0.982337432,,0.982337432,,unique_to_final
+"31691799, 29082924",Norine,False,True,,0.987097681,,0.987097681,,unique_to_final
+"24234449, 26935103, 22127867",FlyBase,False,True,,0.9871732,,0.9871732,,unique_to_final
+32079733,MtSSPdb,False,True,,0.998309374,,0.998309374,,unique_to_final
+23193262,Genomicus,False,True,,0.997919381,,0.997919381,,unique_to_final
+26106450,Metrabase,False,True,,0.998185456,,0.998185456,,unique_to_final
+23750084,InDiaMed,False,True,,0.99003005,,0.99003005,,unique_to_final
+25435547,Database,False,True,,0.979652524,,0.85708645,,unique_to_final
+28751672,LNCmap,False,True,,0.997964621,,0.997964621,,unique_to_final
+23516335,DEBDOM,False,True,,0.996568859,,0.996568859,,unique_to_final
+"23245335, 23197657",H-InvDB,False,True,,0.99724789,,0.99724789,,unique_to_final
+21353266,LegProt,False,True,,0.981720328,,0.981720328,,unique_to_final
+24904731,GenderMedDB,False,True,,0.995782018,,0.995782018,,unique_to_final
+26432833,iPPI-DB,False,True,,0.996882915,,0.996882915,,unique_to_final
+"24271385, 27794041",NGSmethDB,False,True,,0.998551369,,0.998551369,,unique_to_final
+29036590,TissGDB,False,True,,0.99716121,,0.99716121,,unique_to_final
+26780094,GenomeSpace,False,True,,0.996023118,,0.996023118,,unique_to_final
+22084196,BGMUT,False,True,,0.994283319,,0.994283319,,unique_to_final
+25853886,ALDB,False,True,,0.989124298,,0.989124298,,unique_to_final
+29855811,P-PAL,False,True,,0.997003108,,0.997003108,,unique_to_final
+23172288,UUCD,False,True,,0.997053325,,0.997053325,,unique_to_final
+31813095,CMVdb,False,True,,0.988853097,,0.988853097,,unique_to_final
+31665430,ENdb,False,True,,0.997351289,,0.997351289,,unique_to_final
+26026167,RPdb,False,True,,0.979530334,,0.979530334,,unique_to_final
+"23180793, 25414341, 29858800, 31641782, 25048120",IPD,False,True,,0.978224158,,0.978224158,,unique_to_final
+"29140525, 24285297",rSNPBase,False,True,,0.998359084,,0.998359084,,unique_to_final
+26074488,CancerHSP,False,True,,0.992445946,,0.992445946,,unique_to_final
+"27924021, 32162267",AAgAtlas,False,True,,0.991741061,,0.991741061,,unique_to_final
+25355510,AraNet,False,True,,0.987630188,,0.987630188,,unique_to_final
+25274736,ViRBase,False,True,,0.998200536,,0.998200536,,unique_to_final
+33994075,RHeference,False,True,,0.994272649,,0.994272649,,unique_to_final
+26912952,NABIC,False,True,,0.985369205,,0.985369205,,unique_to_final
+33798715,COnVIDa,False,True,,0.995118141,,0.995118141,,unique_to_final
+"25332399, 26302176",MTB,False,True,,0.995452483,,0.995452483,,unique_to_final
+25178365,Horse Single Nucleotide Polymorphism and Expression Database,False,True,,0.986536476,,0.980438848,,unique_to_final
+32117874,GDB17,False,True,,0.992214759,,0.992214759,,unique_to_final
+29206899,MOSAIC,False,True,,0.996641636,,0.996641636,,unique_to_final
+30276831,lncRNAnet,False,True,,0.986113548,,0.986113548,,unique_to_final
+22058127,MACiE,False,True,,0.995728016,,0.995728016,,unique_to_final
+22139934,Cube-DB,False,True,,0.995983998,,0.995983998,,unique_to_final
+33126250,MloDisDB,False,True,,0.996973872,,0.996973872,,unique_to_final
+23193254,UCNEbase,False,True,,0.997873008,,0.997873008,,unique_to_final
+28704505,CSmiRTar,False,True,,0.990449607,,0.990449607,,unique_to_final
+32386544,CCFv3,False,True,,0.989022076,,0.989022076,,unique_to_final
+23336431,BuffSatDB,False,True,,0.98745203,,0.98745203,,unique_to_final
+22039163,CELLPEDIA,False,True,,0.998041213,,0.998041213,,unique_to_final
+32219413,FerrDb,False,True,,0.984397888,,0.984397888,,unique_to_final
+23055619,PRD,False,True,,0.985122204,,0.985122204,,unique_to_final
+"30329070, 25392410",RaftProt,False,True,,0.996259689,,0.996259689,,unique_to_final
+22535208,PaxDb,False,True,,0.987990916,,0.987990916,,unique_to_final
+22140105,ScerTF,False,True,,0.989538968,,0.989538968,,unique_to_final
+"23180787, 25161662",SUBA3,False,True,,0.984873056,,0.984873056,,unique_to_final
+"26590263, 24270788",Lynx,False,True,,0.996176362,,0.996176362,,unique_to_final
+24678985,ClearedLeavesDB,False,True,,0.982267678,,0.982267678,,unique_to_final
+23193278,RGKbase,False,True,,0.996097326,,0.996097326,,unique_to_final
+32382747,RSVdb,False,True,,0.997209489,,0.997209489,,unique_to_final
+33388027,Propedia,False,True,,0.98778069,,0.98778069,,unique_to_final
+34903605,Cancer-Immu,False,True,,0.998258367,,0.998258367,,unique_to_final
+23162083,PTID,False,True,,0.993905127,,0.993905127,,unique_to_final
+27605101,LncVar,False,True,,0.995780408,,0.995780408,,unique_to_final
+25157689,STATdb,False,True,,0.997418284,,0.997418284,,unique_to_final
+22659240,CancerProView,False,True,,0.997434795,,0.997434795,,unique_to_final
+29036683,CR2Cancer,False,True,,0.981912553,,0.981912553,,unique_to_final
+26393351,dkNET,False,True,,0.995002985,,0.995002985,,unique_to_final
+25630312,LSE-Sign,False,True,,0.994305208,,0.994305208,,unique_to_final
+30215764,AWESOME,False,True,,0.993797898,,0.993797898,,unique_to_final
+24270791,CentrosomeDB,False,True,,0.996333599,,0.996333599,,unique_to_final
+33382035,DIPPER,False,True,,0.9955585,,0.9955585,,unique_to_final
+22659196,Alkamid,False,True,,0.985504031,,0.985504031,,unique_to_final
+26708986,LymPHOS,False,True,,0.99777627,,0.99777627,,unique_to_final
+31725861,PCOSBase,False,True,,0.996945679,,0.996945679,,unique_to_final
+34838806,bacteria.guru,False,True,,0.995123416,,0.995123416,,unique_to_final
+22084198,PLEXdb,False,True,,0.997321129,,0.997321129,,unique_to_final
+"26989145, 21408081",TargetMine,False,True,,0.979291916,,0.979291916,,unique_to_final
+26286928,MicRhoDE,False,True,,0.990796208,,0.990796208,,unique_to_final
+23180781,InnateDB,False,True,,0.998630166,,0.998630166,,unique_to_final
+"26434508, 21989406, 24009883",ExoCarta,False,True,,0.995963633,,0.995963633,,unique_to_final
+"33079992, 23476021",PLncDB,False,True,,0.997522697,,0.997522697,,unique_to_final
+22923302,HSPIR,False,True,,0.99661684,,0.99661684,,unique_to_final
+30714194,SDRED,False,True,,0.985853091,,0.985853091,,unique_to_final
+32620074,TeaCoN,False,True,,0.997057378,,0.997057378,,unique_to_final
+27924046,Manteia,False,True,,0.997795522,,0.997795522,,unique_to_final
+30365030,ETCM,False,True,,0.994092822,,0.994092822,,unique_to_final
+21300622,FunSecKB,False,True,,0.997838616,,0.997838616,,unique_to_final
+27819351,PEPlife,False,True,,0.99723953,,0.99723953,,unique_to_final
+23197656,TIGRFAMs,False,True,,0.994315922,,0.994315922,,unique_to_final
+24952649,CicArMiSatDB,False,True,,0.988039034,,0.988039034,,unique_to_final
+29157087,THANATOS,False,True,,0.99623239,,0.99623239,,unique_to_final
+32727974,TEMPURA,False,True,,0.997982502,,0.997982502,,unique_to_final
+26949480,SNP2Structure,False,True,,0.994531825,,0.994531825,,unique_to_final
+33304468,PDmethDB,False,True,,0.997210741,,0.997210741,,unique_to_final
+34630517,NetGenes,False,True,,0.995349348,,0.995349348,,unique_to_final
+26490638,MtiBase,False,True,,0.993986785,,0.993986785,,unique_to_final
+"27650316, 25030112",DBSecSys,False,True,,0.992282927,,0.992282927,,unique_to_final
+33245779,PheLiGe,False,True,,0.99728775,,0.99728775,,unique_to_final
+"27794045, 30407557, 33211864, 25723102",FANTOM5,False,True,,0.996881783,,0.996881783,,unique_to_final
+22494395,InterStoreDB,False,True,,0.997662365,,0.997662365,,unique_to_final
+23837716,KONAGAbase,False,True,,0.980475366,,0.980475366,,unique_to_final
+30967897,croFGD,False,True,,0.99771744,,0.99771744,,unique_to_final
+30733462,PFDB,False,True,,0.996777177,,0.996777177,,unique_to_final
+25288655,MetaProx,False,True,,0.996964276,,0.996964276,,unique_to_final
+28381244,DisBind,False,True,,0.997564256,,0.997564256,,unique_to_final
+21856757,modENCODE,False,True,,0.994001627,,0.994001627,,unique_to_final
+31598690,ProCarbDB,False,True,,0.995657146,,0.995657146,,unique_to_final
+"33196841, 34826364",ProThermDB,False,True,,0.998294175,,0.998294175,,unique_to_final
+25527095,NetGestalt,False,True,,0.99514091,,0.99514091,,unique_to_final
+29020642,cBiT,False,True,,0.986032426,,0.986032426,,unique_to_final
+24198712,VASCAN,False,True,,0.996923745,,0.996923745,,unique_to_final
+26828034,AmphibiaChina,False,True,,0.995878279,,0.995878279,,unique_to_final
+"28529706, 28529706",Expresso,False,True,,0.997199416,,0.997199416,,unique_to_final
+22096236,ProOpDB,False,True,,0.997804239,,0.997804239,,unique_to_final
+27794553,FuzDB,False,True,,0.998405516,,0.998405516,,unique_to_final
+26527724,RegulonDB,False,True,,0.998138189,,0.998138189,,unique_to_final
+34510194,Mollusca mitochondrial database,False,True,,0.986387879,,0.971826156,,unique_to_final
+32291734,AELP,False,True,,0.983020544,,0.983020544,,unique_to_final
+21873645,iRefIndex,False,True,,0.996739507,,0.996739507,,unique_to_final
+"25542617, 26919060",MSeqDR,False,True,,0.998155057,,0.998155057,,unique_to_final
+25740460,PhytoREF,False,True,,0.99713105,,0.99713105,,unique_to_final
+27515825,Onco-Regulon,False,True,,0.983626167,,0.983626167,,unique_to_final
+22760305,AraPath,False,True,,0.983345628,,0.983345628,,unique_to_final
+32527280,DDIEM,False,True,,0.995850682,,0.995850682,,unique_to_final
+23203988,PDBTM,False,True,,0.995859504,,0.995859504,,unique_to_final
+24214991,EKPD,False,True,,0.997297764,,0.997297764,,unique_to_final
+22139919,Nematode.net,False,True,,0.99133563,,0.99133563,,unique_to_final
+31504189,MeLAD,False,True,,0.996227562,,0.996227562,,unique_to_final
+26868054,CCSI,False,True,,0.997085452,,0.997085452,,unique_to_final
+23284744,StRAP,False,True,,0.99467355,,0.99467355,,unique_to_final
+27511743,VHLdb,False,True,,0.995007813,,0.995007813,,unique_to_final
+24399916,bex-db,False,True,,0.995140064,,0.995140064,,unique_to_final
+23143106,EcoCyc,False,True,,0.992975175,,0.992975175,,unique_to_final
+"27987164, 24363285",PGDBj,False,True,,0.985787213,,0.985787213,,unique_to_final
+30239683,ATD,False,True,,0.981130342,,0.981130342,,unique_to_final
+22419844,NeMedPlant,False,True,,0.994859576,,0.994859576,,unique_to_final
+33068435,AcrDB,False,True,,0.997832954,,0.997832954,,unique_to_final
+30357356,CMAUP,False,True,,0.998420835,,0.998420835,,unique_to_final
+24712981,SFGD,False,True,,0.987578392,,0.987578392,,unique_to_final
+26527728,SATPdb,False,True,,0.998526931,,0.998526931,,unique_to_final
+24608172,YTRP,False,True,,0.992604494,,0.992604494,,unique_to_final
+28974472,Stress2TF,False,True,,0.992926578,,0.992926578,,unique_to_final
+24250117,BBGD454,False,True,,0.995709896,,0.995709896,,unique_to_final
+22309450,MTDB,False,True,,0.993324598,,0.993324598,,unique_to_final
+22140115,IPAVS,False,True,,0.987295449,,0.987295449,,unique_to_final
+30584170,MDSGene,False,True,,0.993123114,,0.993123114,,unique_to_final
+24828308,MeKO,False,True,,0.985758662,,0.985758662,,unique_to_final
+30053269,PITDB,False,True,,0.992001295,,0.992001295,,unique_to_final
+23046449,IPAD,False,True,,0.993825734,,0.993825734,,unique_to_final
+31428785,CFEA,False,True,,0.997379303,,0.997379303,,unique_to_final
+30395277,PlantPAN,False,True,,0.996323383,,0.996323383,,unique_to_final
+"23074187, 27899582, 28838067, 33170210, 30407545, 26097180",ZFIN,False,True,,0.994089166,,0.994089166,,unique_to_final
+"21976737, 27789697",PDBj,False,True,,0.996294558,,0.996294558,,unique_to_final
+31713618,LncTarD,False,True,,0.998159111,,0.998159111,,unique_to_final
+23175606,WholeCellKB,False,True,,0.995857,,0.995857,,unique_to_final
+33546584,Plantannot,False,True,,0.995641232,,0.995641232,,unique_to_final
+29092931,Cistrome Cancer,False,True,,0.990812868,,0.990812868,,unique_to_final
+30999860,HumCFS,False,True,,0.988169968,,0.988169968,,unique_to_final
+23457042,RCPedia,False,True,,0.993256867,,0.993256867,,unique_to_final
+32120139,FRCD,False,True,,0.996773586,,0.996773586,,unique_to_final
+32315389,HotSpot3D,False,True,,0.995569845,,0.995569845,,unique_to_final
+24203708,SMPDB,False,True,,0.997425482,,0.997425482,,unique_to_final
+27352859,SorghumFDB,False,True,,0.993632734,,0.993632734,,unique_to_final
+25252782,RGED,False,True,,0.994495869,,0.994495869,,unique_to_final
+28862214,RespCanDB,False,True,,0.997904003,,0.997904003,,unique_to_final
+32890396,CoV3D,False,True,,0.995971898,,0.995971898,,unique_to_final
+22792232,Integrated Microbial Genomes and Metagenomes,False,True,,0.979933851,,0.961702744,,unique_to_final
+29069441,PolyA_DB,False,True,,0.997724459,,0.997724459,,unique_to_final
+24408216,tbvar,False,True,,0.995915771,,0.995915771,,unique_to_final
+25324303,P2CS,False,True,,0.982351462,,0.982351462,,unique_to_final
+30016397,dbCID,False,True,,0.99611038,,0.99611038,,unique_to_final
+30010730,RabGTD,False,True,,0.996257365,,0.996257365,,unique_to_final
+30371881,iDog,False,True,,0.997192383,,0.997192383,,unique_to_final
+23275726,MycoProtease-DB,False,True,,0.981270339,,0.981270339,,unique_to_final
+33080028,Peryton,False,True,,0.997871995,,0.997871995,,unique_to_final
+32105730,ncEP,False,True,,0.997201324,,0.997201324,,unique_to_final
+32392296,CoCoCoNet,False,True,,0.998220623,,0.998220623,,unique_to_final
+22086958,DBTSS,False,True,,0.997758806,,0.997758806,,unique_to_final
+26827236,OGDD,False,True,,0.991602957,,0.991602957,,unique_to_final
+23486013,CancerDR,False,True,,0.992159104,,0.992159104,,unique_to_final
+23203870,EENdb,False,True,,0.995524585,,0.995524585,,unique_to_final
+23161674,Voronoia4RNA,False,True,,0.995378757,,0.995378757,,unique_to_final
+27510400,Membranome,False,True,,0.99290514,,0.99290514,,unique_to_final
+30738202,MtBrowse,False,True,,0.99495405,,0.99495405,,unique_to_final
+22761927,HEMD,False,True,,0.996305764,,0.996305764,,unique_to_final
+24948109,BrassicaTED,False,True,,0.992530644,,0.992530644,,unique_to_final
+31612325,PlantAFP,False,True,,0.990319967,,0.990319967,,unique_to_final
+32179762,Hepamine,False,True,,0.994047046,,0.994047046,,unique_to_final
+31931895,TwinsMX,False,True,,0.978481114,,0.978481114,,unique_to_final
+27153700,dbDSM,False,True,,0.997294545,,0.997294545,,unique_to_final
+34839012,ASER,False,True,,0.987263083,,0.987263083,,unique_to_final
+23262288,LepChorionDB,False,True,,0.994472027,,0.994472027,,unique_to_final
+30717315,CBD,False,True,,0.993405302,,0.993405302,,unique_to_final
+25725060,MnTEdb,False,True,,0.992904842,,0.992904842,,unique_to_final
+22096234,dbDEPC,False,True,,0.980938792,,0.980938792,,unique_to_final
+24475242,MetaMetaDB,False,True,,0.99579674,,0.99579674,,unique_to_final
+25566299,MeioBase,False,True,,0.997380674,,0.997380674,,unique_to_final
+26944085,LNCat,False,True,,0.995651901,,0.995651901,,unique_to_final
+"33175131, 22144203",deepBase,False,True,,0.993842721,,0.993842721,,unique_to_final
+29031638,dbGAPs,False,True,,0.978835642,,0.978835642,,unique_to_final
+32227657,dbMTS,False,True,,0.996018052,,0.996018052,,unique_to_final
+29059383,FlavorDB,False,True,,0.997247577,,0.997247577,,unique_to_final
+27515999,PoplarGene,False,True,,0.995907903,,0.995907903,,unique_to_final
+22544707,SNPnexus,False,True,,0.9974401,,0.9974401,,unique_to_final
+30165538,SKmDB,False,True,,0.996431947,,0.996431947,,unique_to_final
+"27114493, 24234444",CollecTF,False,True,,0.998359561,,0.998359561,,unique_to_final
+22139941,MMMDB,False,True,,0.997343063,,0.997343063,,unique_to_final
+"29106664, 31665479",ProteomicsDB,False,True,,0.997059524,,0.997059524,,unique_to_final
+30407009,VIETHERB,False,True,,0.988221526,,0.988221526,,unique_to_final
+31584086,PGG.Han,False,True,,0.980565399,,0.980565399,,unique_to_final
+32228437,iMarmot,False,True,,0.997347414,,0.997347414,,unique_to_final
+29069447,DifferentialNet,False,True,,0.995048225,,0.995048225,,unique_to_final
+33137204,KinaseMD,False,True,,0.997730494,,0.997730494,,unique_to_final
+25652745,CLIPdb,False,True,,0.996144474,,0.996144474,,unique_to_final
+29045725,StemMapper,False,True,,0.99310112,,0.99310112,,unique_to_final
+34303324,PDB,False,True,,0.981093069,,0.981093069,,unique_to_final
+31831730,OPD,False,True,,0.9961472,,0.9961472,,unique_to_final
+"26656949, 23193292",NPIDB,False,True,,0.997779801,,0.997779801,,unique_to_final
+25940562,HTT-DB,False,True,,0.982042775,,0.982042775,,unique_to_final
+32512182,IRESbase,False,True,,0.987502873,,0.987502873,,unique_to_final
+21729256,RASOnD,False,True,,0.995079184,,0.995079184,,unique_to_final
+32766766,lncR2metasta,False,True,,0.978646653,,0.978646653,,unique_to_final
+"28011601, 33242091, 30759212",CSDB_GT,False,True,,0.99439846,,0.99439846,,unique_to_final
+30395284,Haemopedia,False,True,,0.996026993,,0.996026993,,unique_to_final
+26490957,SigMol,False,True,,0.986595631,,0.986595631,,unique_to_final
+34639237,GreeningDB,False,True,,0.995977521,,0.995977521,,unique_to_final
+28807036,T-Time,False,True,,0.980422139,,0.980422139,,unique_to_final
+23193294,CTCFBSDB,False,True,,0.996337473,,0.996337473,,unique_to_final
+24475134,ASDCD,False,True,,0.993572259,,0.993572259,,unique_to_final
+23143109,HemaExplorer,False,True,,0.986351252,,0.986351252,,unique_to_final
+25097382,AllergenPro,False,True,,0.997101068,,0.997101068,,unique_to_final
+26578596,HPMC,False,True,,0.989222422,,0.989222422,,unique_to_final
+29890119,FlyXCDB,False,True,,0.993109286,,0.993109286,,unique_to_final
+23203885,factorbook,False,True,,0.995431662,,0.995431662,,unique_to_final
+32591816,ExoBCD,False,True,,0.998073876,,0.998073876,,unique_to_final
+29483591,GourdBase,False,True,,0.99763602,,0.99763602,,unique_to_final
+25332396,BCCTBbp,False,True,,0.998296082,,0.998296082,,unique_to_final
+"23514094, 24270786",CAZy,False,True,,0.99791199,,0.99791199,,unique_to_final
+21546359,TparvaDB,False,True,,0.998618424,,0.998618424,,unique_to_final
+25414340,PHI-base,False,True,,0.987774253,,0.987774253,,unique_to_final
+22730453,MuteinDB,False,True,,0.990509152,,0.990509152,,unique_to_final
+24214988,SAbDab,False,True,,0.997705543,,0.997705543,,unique_to_final
+29433427,MethCNA,False,True,,0.993689835,,0.993689835,,unique_to_final
+25332394,lncRNAdb,False,True,,0.996756196,,0.996756196,,unique_to_final
+33068433,CovalentInDB,False,True,,0.996971965,,0.996971965,,unique_to_final
+29897419,MARDy,False,True,,0.99679625,,0.99679625,,unique_to_final
+"26612867, 33436076, 23203985",Dfam,False,True,,0.994080424,,0.994080424,,unique_to_final
+30804701,PPEAO,False,True,,0.983579457,,0.983579457,,unique_to_final
+"33137183, 27799466",IMG/VR,False,True,,0.986604303,,0.986604303,,unique_to_final
+23172287,PhosPhAt,False,True,,0.993283868,,0.993283868,,unique_to_final
+"22064855, 27899612",YMDB,False,True,,0.991479576,,0.991479576,,unique_to_final
+32508104,Scop3P,False,True,,0.996602729,,0.996602729,,unique_to_final
+25332401,TopFIND,False,True,,0.99184984,,0.99184984,,unique_to_final
+21177657,mESAdb,False,True,,0.995116591,,0.995116591,,unique_to_final
+24203712,TISdb,False,True,,0.993791044,,0.993791044,,unique_to_final
+25887129,dbVOR,False,True,,0.990226269,,0.990226269,,unique_to_final
+28168018,IRBAS,False,True,,0.990202904,,0.990202904,,unique_to_final
+24194603,dbPSHP,False,True,,0.997607529,,0.997607529,,unique_to_final
+25348397,ComPPI,False,True,,0.99763155,,0.99763155,,unique_to_final
+"22096228, 24178028, 26433225, 29788229",SubtiWiki,False,True,,0.997424006,,0.997424006,,unique_to_final
+33401309,ADeditome,False,True,,0.997124791,,0.997124791,,unique_to_final
+22613085,HAltORF,False,True,,0.995966196,,0.995966196,,unique_to_final
+23055621,SalmonellaBase,False,True,,0.992680967,,0.992680967,,unique_to_final
+25102069,Panorama,False,True,,0.978761613,,0.978761613,,unique_to_final
+23104379,GFDB,False,True,,0.991825804,,0.991825804,,unique_to_final
+32738156,YIR,False,True,,0.990129635,,0.990129635,,unique_to_final
+31015229,TCEA,False,True,,0.980338752,,0.980338752,,unique_to_final
+24174539,pE-DB,False,True,,0.995654404,,0.995654404,,unique_to_final
+24675620,TIBS,False,True,,0.980226338,,0.980226338,,unique_to_final
+32294193,ctcRbase,False,True,,0.997189045,,0.997189045,,unique_to_final
+29057095,SalmoNet,False,True,,0.995892107,,0.995892107,,unique_to_final
+23197660,EcoGene,False,True,,0.984577298,,0.984577298,,unique_to_final
+21984757,miREnvironment,False,True,,0.989526451,,0.989526451,,unique_to_final
+29140469,SuperDRUG2,False,True,,0.978730261,,0.978730261,,unique_to_final
+26794641,BRAINS,False,True,,0.985277057,,0.985277057,,unique_to_final
+22086960,PrimerBank,False,True,,0.995503724,,0.995503724,,unique_to_final
+33529633,CRMarker,False,True,,0.994199812,,0.994199812,,unique_to_final
+22735743,VIP DB,False,True,,0.981878147,,0.981878147,,unique_to_final
+34782688,CyFi-MAP,False,True,,0.988857135,,0.988857135,,unique_to_final
+23650583,GeneSetDB,False,True,,0.996939301,,0.996939301,,unique_to_final
+31337335,PPTdb,False,True,,0.99392122,,0.99392122,,unique_to_final
+27789569,PMKB,False,True,,0.992120802,,0.992120802,,unique_to_final
+25413576,TreeshrewDB,False,True,,0.991575599,,0.991575599,,unique_to_final
+28104956,MPDB,False,True,,0.995024717,,0.995024717,,unique_to_final
+24253300,InvFEST,False,True,,0.995598376,,0.995598376,,unique_to_final
+29059320,DiseaseEnhancer,False,True,,0.996761441,,0.996761441,,unique_to_final
+26363021,LncReg,False,True,,0.997745812,,0.997745812,,unique_to_final
+"29069501, 33179747",jMorp,False,True,,0.996074796,,0.996074796,,unique_to_final
+22965133,RhesusBase,False,True,,0.997771919,,0.997771919,,unique_to_final
+26644460,VigGS,False,True,,0.995423436,,0.995423436,,unique_to_final
+"22121227, 27899586",R-loopDB,False,True,,0.997868508,,0.997868508,,unique_to_final
+27138013,StreptoBase,False,True,,0.997655153,,0.997655153,,unique_to_final
+"26953092, 24174543",Hemolytik,False,True,,0.997379065,,0.997379065,,unique_to_final
+24214963,MCDRP,False,True,,0.995357215,,0.995357215,,unique_to_final
+34733322,Gene4HL,False,True,,0.989707867,,0.989707867,,unique_to_final
+30364952,PED,False,True,,0.992514034,,0.992514034,,unique_to_final
+31161204,PRISMOID,False,True,,0.997668028,,0.997668028,,unique_to_final
+30371817,SEdb,False,True,,0.99522537,,0.99522537,,unique_to_final
+27391016,D-PLACE,False,True,,0.995508909,,0.995508909,,unique_to_final
+26503248,dbMAE,False,True,,0.997952342,,0.997952342,,unique_to_final
+34156446,MetamORF,False,True,,0.997968137,,0.997968137,,unique_to_final
+27242037,ArthropodaCyc,False,True,,0.994480968,,0.994480968,,unique_to_final
+24203711,DrugBank,False,True,,0.995137691,,0.995137691,,unique_to_final
+"22139925, 26615194",GWASdb,False,True,,0.991770446,,0.991770446,,unique_to_final
+24271398,NeXO,False,True,,0.978267789,,0.978267789,,unique_to_final
+23396298,PIPEMicroDB,False,True,,0.981419305,,0.981419305,,unique_to_final
+27766955,e-GRASP,False,True,,0.995206547,,0.995206547,,unique_to_final
+23793747,Linc2GO,False,True,,0.995874822,,0.995874822,,unique_to_final
+31210271,Chickspress,False,True,,0.997966588,,0.997966588,,unique_to_final
+23153078,P2TF,False,True,,0.991170208,,0.991170208,,unique_to_final
+"25355513, 22135288",Dr.VIS,False,True,,0.991928021,,0.991928021,,unique_to_final
+28821760,Breast Oncogenic Specific siRNAs,False,True,,0.987298205,,0.972771386,,unique_to_final
+28361715,SheddomeDB,False,True,,0.996616364,,0.996616364,,unique_to_final
+"32898258, 25708775",EXPath,False,True,,0.997518301,,0.997518301,,unique_to_final
+"25262351, 30204897, 22080564",AnimalTFDB,False,True,,0.989919841,,0.989919841,,unique_to_final
+32028878,laPPISite,False,True,,0.994788826,,0.994788826,,unique_to_final
+33104791,DrugSpaceX,False,True,,0.995280385,,0.995280385,,unique_to_final
+34663591,SysInflam HuDB,False,True,,0.983198355,,0.983198355,,unique_to_final
+28473704,CancerPDF,False,True,,0.993715048,,0.993715048,,unique_to_final
+27164438,BrucellaBase,False,True,,0.996022701,,0.996022701,,unique_to_final
+34122478,PSDX,False,True,,0.995595694,,0.995595694,,unique_to_final
+23203878,D(2)P(2,False,True,,0.978753158,,0.978753158,,unique_to_final
+33010163,cncRNAdb,False,True,,0.991504371,,0.991504371,,unique_to_final
+32510549,DenvInD,False,True,,0.996846437,,0.996846437,,unique_to_final
+25591325,YersiniaBase,False,True,,0.989195168,,0.989195168,,unique_to_final
+28592645,ISVdb,False,True,,0.981565356,,0.981565356,,unique_to_final
+31705629,VariCarta,False,True,,0.995876968,,0.995876968,,unique_to_final
+27582018,ANGIOGENES,False,True,,0.997215807,,0.997215807,,unique_to_final
+"33051671, 26615197, 23193280",StreptomeDB,False,True,,0.996224344,,0.996224344,,unique_to_final
+23239846,RadishBase,False,True,,0.997795284,,0.997795284,,unique_to_final
+32422927,HDVdb,False,True,,0.997277975,,0.997277975,,unique_to_final
+23046413,PAGED,False,True,,0.99276948,,0.99276948,,unique_to_final
+30119164,TReasure,False,True,,0.990983844,,0.990983844,,unique_to_final
+25978092,DBDiaSNP,False,True,,0.997262299,,0.997262299,,unique_to_final
+28365738,ABCMdb,False,True,,0.99738276,,0.99738276,,unique_to_final
+33156326,MetaNetX/MNXref,False,True,,0.987576434,,0.987576434,,unique_to_final
+24466070,TGRD,False,True,,0.996569216,,0.996569216,,unique_to_final
+33511845,FMODB,False,True,,0.992171586,,0.992171586,,unique_to_final
+"30689843, 22139939",ccPDB,False,True,,0.997259557,,0.997259557,,unique_to_final
+22039152,ProGlycProt,False,True,,0.997674525,,0.997674525,,unique_to_final
+"23155064, 29077942",MetalPDB,False,True,,0.997881174,,0.997881174,,unique_to_final
+29309507,SEGreg,False,True,,0.997626861,,0.997626861,,unique_to_final
+"26602691, 33313828",PSORTdb,False,True,,0.997708738,,0.997708738,,unique_to_final
+33294866,Pancreatlas,False,True,,0.996841073,,0.996841073,,unique_to_final
+"26578570, 30496475",PlanMine,False,True,,0.994910002,,0.994910002,,unique_to_final
+25378328,MyMpn,False,True,,0.998210311,,0.998210311,,unique_to_final
+28438161,REFOLDdb,False,True,,0.993212402,,0.993212402,,unique_to_final
+28651544,SalmoBase,False,True,,0.996645689,,0.996645689,,unique_to_final
+31133849,BioPlanet,False,True,,0.989541769,,0.989541769,,unique_to_final
+30239679,AgBioData,False,True,,0.996884644,,0.996884644,,unique_to_final
+34971674,CellDepot,False,True,,0.996150434,,0.996150434,,unique_to_final
+34314366,dbMCS,False,True,,0.993598044,,0.993598044,,unique_to_final
+33382886,MetSRR,False,True,,0.996502876,,0.996502876,,unique_to_final
+21253872,TSdb,False,True,,0.996435046,,0.996435046,,unique_to_final
+30893420,AYbRAH,False,True,,0.996119797,,0.996119797,,unique_to_final
+"27899580, 33196836, 23180791, 30395283, 25428351",OrthoDB,False,True,,0.997169971,,0.997169971,,unique_to_final
+29976644,FusoPortal,False,True,,0.994699359,,0.994699359,,unique_to_final
+27694207,3DFlu,False,True,,0.99639225,,0.99639225,,unique_to_final
+28977551,AAgMarker,False,True,,0.988109291,,0.988109291,,unique_to_final
+30032758,HFMDB,False,True,,0.992333651,,0.992333651,,unique_to_final
+33219693,AtMAD,False,True,,0.989043355,,0.989043355,,unique_to_final
+30371819,MoonDB,False,True,,0.993003726,,0.993003726,,unique_to_final
+29934697,CLD,False,True,,0.992355183,,0.992355183,,unique_to_final
+21695066,GENT,False,True,,0.995685935,,0.995685935,,unique_to_final
+31524396,HybridMolDB,False,True,,0.995581388,,0.995581388,,unique_to_final
+24270047,ProfileDB,False,True,,0.997333407,,0.997333407,,unique_to_final
+32133509,KRGDB,False,True,,0.981609166,,0.981609166,,unique_to_final
+"24194602, 25477381, 26578571, 29040613, 30357349, 33156332, 27924010",DDBJ,False,True,,0.986539379,,0.986539379,,unique_to_final
+31259547,PerMM,False,True,,0.995338023,,0.995338023,,unique_to_final
+34266386,MitoTox,False,True,,0.988955975,,0.988955975,,unique_to_final
+29040693,AmyPro,False,True,,0.99600482,,0.99600482,,unique_to_final
+"23193283, 24293649",SILVA,False,True,,0.996267796,,0.996267796,,unique_to_final
+24297257,NECTAR,False,True,,0.995319307,,0.995319307,,unique_to_final
+33306802,NPBS,False,True,,0.996700525,,0.996700525,,unique_to_final
+24079801,Bolbase,False,True,,0.990760982,,0.990760982,,unique_to_final
+23282057,IntPath,False,True,,0.992235899,,0.992235899,,unique_to_final
+24307774,DIACAN,False,True,,0.994966656,,0.994966656,,unique_to_final
+29077937,PICKLES,False,True,,0.996508896,,0.996508896,,unique_to_final
+24323624,SABRE,False,True,,0.995861411,,0.995861411,,unique_to_final
+28013278,ThaleMine,False,True,,0.986150086,,0.986150086,,unique_to_final
+30196115,HeteroMeth,False,True,,0.987609446,,0.987609446,,unique_to_final
+30871473,TADKB,False,True,,0.996571302,,0.996571302,,unique_to_final
+31901979,CNAdbCC,False,True,,0.992988825,,0.992988825,,unique_to_final
+23794735,CARLSBAD,False,True,,0.99360311,,0.99360311,,unique_to_final
+22718786,ChromoHub,False,True,,0.996145904,,0.996145904,,unique_to_final
+27822553,mockrobiota,False,True,,0.997430325,,0.997430325,,unique_to_final
+"33261662, 21520341, 23843252, 26555599",dbNSFP,False,True,,0.998201787,,0.998201787,,unique_to_final
+24616562,IBIn,False,True,,0.980620027,,0.980620027,,unique_to_final
+25178289,NPCDB,False,True,,0.993397549,,0.993397549,,unique_to_final
+30045691,CIGene,False,True,,0.99484241,,0.99484241,,unique_to_final
+31713629,SpatialDB,False,True,,0.995859206,,0.995859206,,unique_to_final
+31352145,MMRdb,False,True,,0.9871943,,0.9871943,,unique_to_final
+22712730,PeanutDB,False,True,,0.997910798,,0.997910798,,unique_to_final
+30101318,PlaNC-TE,False,True,,0.996604753,,0.996604753,,unique_to_final
+21253873,TGED,False,True,,0.988756279,,0.988756279,,unique_to_final
+22365971,SITVITWEB,False,True,,0.995786428,,0.995786428,,unique_to_final
+31612960,PhaSePro,False,True,,0.996815085,,0.996815085,,unique_to_final
+33021671,RMVar,False,True,,0.992782235,,0.992782235,,unique_to_final
+22584068,CACG,False,True,,0.998239875,,0.998239875,,unique_to_final
+30593617,ViPR,False,True,,0.996145308,,0.996145308,,unique_to_final
+"33693667, 27114492",UbiNet,False,True,,0.996777952,,0.996777952,,unique_to_final
+25435546,Plant-PrAS,False,True,,0.983476034,,0.983476034,,unique_to_final
+30371888,HmtVar,False,True,,0.997302175,,0.997302175,,unique_to_final
+24253302,MultitaskProtDB,False,True,,0.998039424,,0.998039424,,unique_to_final
+23173617,MirSNP,False,True,,0.993562758,,0.993562758,,unique_to_final
+30846808,TACCO,False,True,,0.997243583,,0.997243583,,unique_to_final
+33898816,FermFooDb,False,True,,0.998155117,,0.998155117,,unique_to_final
+34877793,GEPSdb,False,True,,0.998211384,,0.998211384,,unique_to_final
+33174596,MitoCarta,False,True,,0.984350145,,0.984350145,,unique_to_final
+31665503,BBCancer,False,True,,0.997065306,,0.997065306,,unique_to_final
+24466021,CoryneBase,False,True,,0.996892035,,0.996892035,,unique_to_final
+32931381,ZenoFishDb,False,True,,0.99299258,,0.99299258,,unique_to_final
+29040751,EpiDenovo,False,True,,0.997566879,,0.997566879,,unique_to_final
+26339475,SwissPalm,False,True,,0.997897446,,0.997897446,,unique_to_final
+31296229,GENT2,False,True,,0.991305053,,0.991305053,,unique_to_final
+34015403,Ebolabase,False,True,,0.985048413,,0.985048413,,unique_to_final
+22110041,ProtChemSI,False,True,,0.998405278,,0.998405278,,unique_to_final
+21887013,AnimalLectinDb,False,True,,0.99539414,,0.99539414,,unique_to_final
+"32016318, 22903802",VariBench,False,True,,0.997050226,,0.997050226,,unique_to_final
+31509535,GutFeelingKB,False,True,,0.991220474,,0.991220474,,unique_to_final
+23125365,HBVdb,False,True,,0.996498883,,0.996498883,,unique_to_final
+27527702,HCVIVdb,False,True,,0.992048419,,0.992048419,,unique_to_final
+27387194,TBC2health,False,True,,0.996583238,,0.996583238,,unique_to_final
+26089836,PrOnto,False,True,,0.986176848,,0.986176848,,unique_to_final
+31647099,Pathway Commons,False,True,,0.995383561,,0.995383561,,unique_to_final
+28365734,MiDAS,False,True,,0.995514631,,0.995514631,,unique_to_final
+25270877,CODEX,False,True,,0.997284114,,0.997284114,,unique_to_final
+27888793,InverPep,False,True,,0.99586463,,0.99586463,,unique_to_final
+22160653,vHoT,False,True,,0.990057766,,0.990057766,,unique_to_final
+29637199,BiOnIC,False,True,,0.997383654,,0.997383654,,unique_to_final
+29764375,dbATM,False,True,,0.992344558,,0.992344558,,unique_to_final
+27026615,PheKB,False,True,,0.997518778,,0.997518778,,unique_to_final
+21245417,VeryGene,False,True,,0.988496959,,0.988496959,,unique_to_final
+34378141,GPGD,False,True,,0.995944738,,0.995944738,,unique_to_final
+33166383,FireProtDB,False,True,,0.994380713,,0.994380713,,unique_to_final
+28605766,GeneHancer,False,True,,0.987699628,,0.987699628,,unique_to_final
+"29062930, 29156309",SMBP,False,True,,0.996750757,,0.996750757,,unique_to_final
+27899660,CEBS,False,True,,0.996447543,,0.996447543,,unique_to_final
+"23125366, 25313157",Xenbase,False,True,,0.995507419,,0.995507419,,unique_to_final
+22268964,ProBiS-Database,False,True,,0.990155792,,0.990155792,,unique_to_final
+31617563,LnCeVar,False,True,,0.998445213,,0.998445213,,unique_to_final
+31624845,CRISPRCasdb,False,True,,0.988769293,,0.988769293,,unique_to_final
+31612915,MIBiG,False,True,,0.996939003,,0.996939003,,unique_to_final
+34931882,CoxBase,False,True,,0.994834006,,0.994834006,,unique_to_final
+32646415,ECCParaCorp,False,True,,0.992599487,,0.992599487,,unique_to_final
+"26173699, 27903896",IMG-ABC,False,True,,0.986837733,,0.986837733,,unique_to_final
+33360695,ToxinDB,False,True,,0.996215522,,0.996215522,,unique_to_final
+33245771,MarkerDB,False,True,,0.996113002,,0.996113002,,unique_to_final
+32496513,gutMEGA,False,True,,0.989511013,,0.989511013,,unique_to_final
+31906603,RNAInter,False,True,,0.994603395,,0.994603395,,unique_to_final
+33045729,GIMICA,False,True,,0.988819897,,0.988819897,,unique_to_final
+"30357347, 24247530",GDR,False,True,,0.979074816,,0.979074816,,unique_to_final
+31599098,PSMD,False,True,,0.98416996,,0.98416996,,unique_to_final
+25416797,doRiNA,False,True,,0.983651519,,0.983651519,,unique_to_final
+28791657,MEGALEX,False,True,,0.995782244,,0.995782244,,unique_to_final
+31195415,Onkonet,False,True,,0.994386017,,0.994386017,,unique_to_final
+22080549,GeneWeaver,False,True,,0.980351031,,0.980351031,,unique_to_final
+31611909,SCDevDB,False,True,,0.997864783,,0.997864783,,unique_to_final
+23180783,SwissRegulon,False,True,,0.99072659,,0.99072659,,unique_to_final
+"25414350, 23193287",GenBank,False,True,,0.986147463,,0.986147463,,unique_to_final
+29961817,LncCeRBase,False,True,,0.998007238,,0.998007238,,unique_to_final
+32941621,dbCAN-PUL,False,True,,0.993980992,,0.993980992,,unique_to_final
+21656910,QuAD,False,True,,0.991928503,,0.991928503,,unique_to_final
+21214365,DBCAT,False,True,,0.998600185,,0.998600185,,unique_to_final
+32509450,VIRdb,False,True,,0.994836926,,0.994836926,,unique_to_final
+28111365,PlantRGDB,False,True,,0.995906234,,0.995906234,,unique_to_final
+26179317,Evalutil,False,True,,0.994965792,,0.994965792,,unique_to_final
+34964846,COGVIC,False,True,,0.994361281,,0.994361281,,unique_to_final
+30913342,TPIA,False,True,,0.981803596,,0.981803596,,unique_to_final
+26590402,EffectiveDB,False,True,,0.997481704,,0.997481704,,unique_to_final
+"26432828, 26519406, 30407532, 30407532, 30407532, 30407532, 30407532",MaizeGDB,False,True,,0.995507419,,0.995507419,,unique_to_final
+27153630,TOPDOM,False,True,,0.992206335,,0.992206335,,unique_to_final
+"34384382, 21245031",OrchidBase,False,True,,0.997832179,,0.997832179,,unique_to_final
+22661580,ExPASy,False,True,,0.99731946,,0.99731946,,unique_to_final
+32257241,CGDB,False,True,,0.994118055,,0.994118055,,unique_to_final
+28968812,MetSigDis,False,True,,0.997604191,,0.997604191,,unique_to_final
+24561221,MitoSatPlant,False,True,,0.997031987,,0.997031987,,unique_to_final
+29987736,AT_CHLORO,False,True,,0.995981574,,0.995981574,,unique_to_final
+"21447597, 33237286, 22102590, 23161681, 24253303, 25348405, 26519399, 30395287",UniProtKB,False,True,,0.997420847,,0.997420847,,unique_to_final
+"28111366, 23324169",Orchidstra,False,True,,0.991553485,,0.991553485,,unique_to_final
+"23203987, 24316576, 26888907, 26896847, 29155950, 30407521, 31691826, 26578574, 29092050, 31598706, 22086963",Ensembl,False,True,,0.994191885,,0.994191885,,unique_to_final
+35134148,CATA,False,True,,0.994815171,,0.994815171,,unique_to_final
+32986834,ModelSEED,False,True,,0.991726339,,0.991726339,,unique_to_final
+33216899,WCSdb,False,True,,0.997819245,,0.997819245,,unique_to_final
+33125077,MASI,False,True,,0.987803578,,0.987803578,,unique_to_final
+"31665499, 29126285",ReMap,False,True,,0.989697456,,0.989697456,,unique_to_final
+33166392,LitCovid,False,True,,0.996545017,,0.996545017,,unique_to_final
+31724725,oRNAment,False,True,,0.992074907,,0.992074907,,unique_to_final
+28533016,DRodVir,False,True,,0.988821983,,0.988821983,,unique_to_final
+24297253,MycoCosm,False,True,,0.99669534,,0.99669534,,unique_to_final
+27924015,TSTMP,False,True,,0.996672034,,0.996672034,,unique_to_final
+25988315,ImmuSort,False,True,,0.995690107,,0.995690107,,unique_to_final
+23508969,CistromeFinder,False,True,,0.990140975,,0.990140975,,unique_to_final
+26030752,DMD,False,True,,0.993849114,,0.993849114,,unique_to_final
+29223505,PGMD,False,True,,0.981539965,,0.981539965,,unique_to_final
+31679514,MaveDB,False,True,,0.996891856,,0.996891856,,unique_to_final
+29109711,miPepBase,False,True,,0.993406117,,0.993406117,,unique_to_final
+31844049,ProTargetMiner,False,True,,0.99520582,,0.99520582,,unique_to_final
+25480115,Sinbase,False,True,,0.989667535,,0.989667535,,unique_to_final
+"22140109, 29220077",TAIR,False,True,,0.991281509,,0.991281509,,unique_to_final
+31691819,CAUSALdb,False,True,,0.994969904,,0.994969904,,unique_to_final
+30357403,EncoMPASS,False,True,,0.996818304,,0.996818304,,unique_to_final
+25392417,CeCaFDB,False,True,,0.99858432,,0.99858432,,unique_to_final
+27297221,sHSPdb,False,True,,0.981707454,,0.981707454,,unique_to_final
+"29145643, 32920969, 22086950, 23584835, 24157837, 26527717",MEROPS,False,True,,0.980729818,,0.980729818,,unique_to_final
+27789706,CGDB,False,True,,0.998253147,,0.998253147,,unique_to_final
+31832668,AcetoBase,False,True,,0.99637115,,0.99637115,,unique_to_final
+29106618,eRAM,False,True,,0.992225349,,0.992225349,,unique_to_final
+21546393,MSigDB,False,True,,0.988693297,,0.988693297,,unique_to_final
+24125644,MarinegenomicsDB,False,True,,0.994072795,,0.994072795,,unique_to_final
+34224878,REVA,False,True,,0.989323854,,0.989323854,,unique_to_final
+28575155,Dynamic-BM,False,True,,0.985531533,,0.985531533,,unique_to_final
+31642484,SilkDB,False,True,,0.996998668,,0.996998668,,unique_to_final
+25970778,CEMTDD,False,True,,0.996073186,,0.996073186,,unique_to_final
+22102575,YeTFaSCo,False,True,,0.996380448,,0.996380448,,unique_to_final
+29617745,TISSUES,False,True,,0.994719326,,0.994719326,,unique_to_final
+"30668832, 26553799",DASHR,False,True,,0.997241557,,0.997241557,,unique_to_final
+25990557,DSigDB,False,True,,0.996987581,,0.996987581,,unique_to_final
+21624339,ILISI,False,True,,0.987797678,,0.987797678,,unique_to_final
+23193267,PR(2,False,True,,0.98287158,,0.98287158,,unique_to_final
+"27779618, 27779621",studyforrest,False,True,,0.994259179,,0.994259179,,unique_to_final
+"23180763, 25392407, 31740968",SEVA-DB,False,True,,0.994396701,,0.994396701,,unique_to_final
+"26578581, 33151284, 24888447",DBAASP,False,True,,0.996422017,,0.996422017,,unique_to_final
+25336620,BARCdb,False,True,,0.997212112,,0.997212112,,unique_to_final
+22150118,dbANGIO,False,True,,0.997428656,,0.997428656,,unique_to_final
+26721496,NONCODEv4,False,True,,0.99214226,,0.99214226,,unique_to_final
+21435384,HOCTARdb,False,True,,0.978390336,,0.978390336,,unique_to_final
+24822057,tRNADB-CE,False,True,,0.994249242,,0.994249242,,unique_to_final
+23317704,AMDD,False,True,,0.986542583,,0.986542583,,unique_to_final
+33553941,SARSCOVIDB,False,True,,0.995992124,,0.995992124,,unique_to_final
+33174603,Datanator,False,True,,0.994000673,,0.994000673,,unique_to_final
+24608034,BCL2DB,False,True,,0.997701004,,0.997701004,,unique_to_final
+25380778,MelGene,False,True,,0.995092273,,0.995092273,,unique_to_final
+29697370,LDSplitDB,False,True,,0.995853007,,0.995853007,,unique_to_final
+22255115,PHENOMIM,False,True,,0.989852965,,0.989852965,,unique_to_final
+22140215,RAC,False,True,,0.979894936,,0.979894936,,unique_to_final
+30020436,realDB,False,True,,0.993008554,,0.993008554,,unique_to_final
+"26227548, 32621232, 28891124",DOCKGROUND,False,True,,0.997901142,,0.997901142,,unique_to_final
+28977473,dbCoRC,False,True,,0.997102678,,0.997102678,,unique_to_final
+31605615,LeGOO,False,True,,0.99293381,,0.99293381,,unique_to_final
+21965461,ISSMIC,False,True,,0.998472512,,0.998472512,,unique_to_final
+23991755,IIMDB,False,True,,0.996076167,,0.996076167,,unique_to_final
+34679164,T-ARDIS,False,True,,0.996051848,,0.996051848,,unique_to_final
+"22096231, 24297252, 26582926, 30418610",eggNOG,False,True,,0.992302001,,0.992302001,,unique_to_final
+26519468,ccmGDB,False,True,,0.998047173,,0.998047173,,unique_to_final
+23725466,PMTED,False,True,,0.991327643,,0.991327643,,unique_to_final
+23936191,HSC-Explorer,False,True,,0.983055544,,0.983055544,,unique_to_final
+24271386,OnTheFly,False,True,,0.997192144,,0.997192144,,unique_to_final
+22961451,MRTDD,False,True,,0.996869192,,0.996869192,,unique_to_final
+31566225,OGRDB,False,True,,0.995836377,,0.995836377,,unique_to_final
+28365718,VerSeDa,False,True,,0.998133659,,0.998133659,,unique_to_final
+26876982,ChemProt,False,True,,0.998003364,,0.998003364,,unique_to_final
+24428888,OncomiRdbB,False,True,,0.993847489,,0.993847489,,unique_to_final
+27504778,GNPS,False,True,,0.987443785,,0.987443785,,unique_to_final
+26183225,NEU-GD,False,True,,0.990502596,,0.990502596,,unique_to_final
+31665439,MaGenDB,False,True,,0.993712246,,0.993712246,,unique_to_final
+22748168,PharmDB,False,True,,0.995387569,,0.995387569,,unique_to_final
+23180785,PeroxiBase,False,True,,0.998095334,,0.998095334,,unique_to_final
+"27242034, 32542109",Abasy,False,True,,0.987492204,,0.987492204,,unique_to_final
+31701147,LINCS,False,True,,0.992289344,,0.992289344,,unique_to_final
+26566288,DBGC,False,True,,0.987804174,,0.987804174,,unique_to_final
+24573879,NONATObase,False,True,,0.994081736,,0.994081736,,unique_to_final
+28562632,DrugSig,False,True,,0.996384323,,0.996384323,,unique_to_final
+25593348,PlasmoGEM,False,True,,0.99704349,,0.99704349,,unique_to_final
+22564364,PharmGKB,False,True,,0.992674232,,0.992674232,,unique_to_final
+25392419,AHTPDB,False,True,,0.997885823,,0.997885823,,unique_to_final
+26438538,dbSUPER,False,True,,0.994813621,,0.994813621,,unique_to_final
+32128558,LeukmiR,False,True,,0.997031927,,0.997031927,,unique_to_final
+"23180799, 27987177",PGDD,False,True,,0.996008992,,0.996008992,,unique_to_final
+22009677,PhenoM,False,True,,0.993650556,,0.993650556,,unique_to_final
+"23955518, 29668970",MitoFish,False,True,,0.996900797,,0.996900797,,unique_to_final
+30380087,SymMap,False,True,,0.99069941,,0.99069941,,unique_to_final
+25308527,LncEnvironmentDB,False,True,,0.989758611,,0.989758611,,unique_to_final
+23436708,Human Testis Proteome Database,False,True,,0.981758612,,0.979909778,,unique_to_final
+24930145,TIPdb,False,True,,0.994740725,,0.994740725,,unique_to_final
+29897484,ILDgenDB,False,True,,0.996150136,,0.996150136,,unique_to_final
+31841142,GlyMDB,False,True,,0.990882347,,0.990882347,,unique_to_final
+27899608,TFBSbank,False,True,,0.99741137,,0.99741137,,unique_to_final
+24280345,RiceCyc,False,True,,0.990686595,,0.990686595,,unique_to_final
+28651363,NeuroMMSig,False,True,,0.995421886,,0.995421886,,unique_to_final
+33787872,Drugmonizome,False,True,,0.990401685,,0.990401685,,unique_to_final
+22127860,IndelFR,False,True,,0.997826949,,0.997826949,,unique_to_final
+32025315,CitGVD,False,True,,0.992236495,,0.992236495,,unique_to_final
+32159764,MMHub,False,True,,0.995018721,,0.995018721,,unique_to_final
+32726198,EnteroBase,False,True,,0.997007787,,0.997007787,,unique_to_final
+26507856,NBDB,False,True,,0.986459076,,0.986459076,,unique_to_final
+31807141,BGISEQ-500,False,True,,0.996839881,,0.996839881,,unique_to_final
+30837356,MusatransSSRDB,False,True,,0.983545184,,0.983545184,,unique_to_final
+34755873,ImmReg,False,True,,0.986415982,,0.986415982,,unique_to_final
+27995664,AraQTL,False,True,,0.994779587,,0.994779587,,unique_to_final
+26995712,ODCs,False,True,,0.995768189,,0.995768189,,unique_to_final
+29029599,LiverWiki,False,True,,0.995711923,,0.995711923,,unique_to_final
+25614757,WallProtDB,False,True,,0.996273875,,0.996273875,,unique_to_final
+34177338,MassBase,False,True,,0.987924576,,0.987924576,,unique_to_final
+30165582,Traitpedia,False,True,,0.997839808,,0.997839808,,unique_to_final
+29385418,DIBS,False,True,,0.994214892,,0.994214892,,unique_to_final
+28111364,TOMATOMICS,False,True,,0.993693531,,0.993693531,,unique_to_final
+22110038,GeneSigDB,False,True,,0.998035491,,0.998035491,,unique_to_final
+"25399418, 29106550, 33174605",OMA,False,True,,0.997215748,,0.997215748,,unique_to_final
+"26433226, 30715167, 33010178",BacWGSTdb,False,True,,0.994153142,,0.994153142,,unique_to_final
+26220682,SpirPro,False,True,,0.993724525,,0.993724525,,unique_to_final
+27153640,e23D,False,True,,0.991435468,,0.991435468,,unique_to_final
+27152146,NCRO,False,True,,0.979602456,,0.979602456,,unique_to_final
+28365723,SilkPathDB,False,True,,0.989426136,,0.989426136,,unique_to_final
+24994456,BorreliaBase,False,True,,0.995369911,,0.995369911,,unique_to_final
+21249531,DIADEM,False,True,,0.989351451,,0.989351451,,unique_to_final
+32911083,MosaicBase,False,True,,0.997231185,,0.997231185,,unique_to_final
+24931751,HomBRex,False,True,,0.99716574,,0.99716574,,unique_to_final
+33729437,TIE,False,True,,0.982593015,,0.982593015,,unique_to_final
+26249811,SurvCurv,False,True,,0.998165548,,0.998165548,,unique_to_final
+32976581,STAB,False,True,,0.990528941,,0.990528941,,unique_to_final
+29351734,EOGD,False,True,,0.995608449,,0.995608449,,unique_to_final
+24244721,miRStress,False,True,,0.982590735,,0.982590735,,unique_to_final
+32117995,Nc2Eye,False,True,,0.997420222,,0.997420222,,unique_to_final
+28011754,RenalDB,False,True,,0.996478856,,0.996478856,,unique_to_final
+22954629,MaConDa,False,True,,0.993165344,,0.993165344,,unique_to_final
+25982314,GermlncRNA,False,True,,0.997644544,,0.997644544,,unique_to_final
+28194231,SkinSensDB,False,True,,0.995361865,,0.995361865,,unique_to_final
+33068420,chewie-NS,False,True,,0.992993156,,0.992993156,,unique_to_final
+31500643,OPA1,False,True,,0.989455819,,0.989455819,,unique_to_final
+"24194598, 26531826, 29140473, 31701148",JASPAR,False,True,,0.993904173,,0.993904173,,unique_to_final
+33330918,piRNA-eQTL,False,True,,0.997409006,,0.997409006,,unique_to_final
+31584087,Animal-ImputeDB,False,True,,0.997726774,,0.997726774,,unique_to_final
+25270878,CancerPPD,False,True,,0.996373594,,0.996373594,,unique_to_final
+25270086,PIGD,False,True,,0.992457569,,0.992457569,,unique_to_final
+33086069,CellMiner-SCLC,False,True,,0.997686309,,0.997686309,,unique_to_final
+"29161430, 25294826",MethBank,False,True,,0.993737161,,0.993737161,,unique_to_final
+23118479,SpliceAid-F,False,True,,0.996136576,,0.996136576,,unique_to_final
+25428357,arrayMap,False,True,,0.994105458,,0.994105458,,unique_to_final
+31844835,GenFam,False,True,,0.990917087,,0.990917087,,unique_to_final
+23084601,PESNPdb,False,True,,0.998070478,,0.998070478,,unique_to_final
+23626002,KGVDB,False,True,,0.986184359,,0.986184359,,unique_to_final
+"23193258, 27008011",GEO,False,True,,0.986045718,,0.986045718,,unique_to_final
+32168374,uORFlight,False,True,,0.997313261,,0.997313261,,unique_to_final
+31738435,PMBD,False,True,,0.987427726,,0.987427726,,unique_to_final
+28011869,PCoM-DB,False,True,,0.992738867,,0.992738867,,unique_to_final
+32895427,PCOSKBR2,False,True,,0.997740662,,0.997740662,,unique_to_final
+26590403,SBR-Blood,False,True,,0.985119432,,0.985119432,,unique_to_final
+26690544,CancerNet,False,True,,0.995466173,,0.995466173,,unique_to_final
+33258964,ThRSDB,False,True,,0.989187896,,0.989187896,,unique_to_final
+21520336,ThalInd,False,True,,0.982127786,,0.982127786,,unique_to_final
+24203703,CottonGen,False,True,,0.994491816,,0.994491816,,unique_to_final
+24939193,RetinoGenetics,False,True,,0.990538726,,0.990538726,,unique_to_final
+22210871,SNPdbe,False,True,,0.988785923,,0.988785923,,unique_to_final
+24923818,ParaPep,False,True,,0.996673524,,0.996673524,,unique_to_final
+31648087,AdditiveChem,False,True,,0.995760739,,0.995760739,,unique_to_final
+34363073,MIK,False,True,,0.993417561,,0.993417561,,unique_to_final
+"31665441, 23650175, 27789705",CARD,False,True,,0.996455212,,0.996455212,,unique_to_final
+26697753,DLGP,False,True,,0.996312201,,0.996312201,,unique_to_final
+24700709,DBDB,False,True,,0.992844542,,0.992844542,,unique_to_final
+26896846,NALDB,False,True,,0.99670428,,0.99670428,,unique_to_final
+29718389,PUG-REST,False,True,,0.995439017,,0.995439017,,unique_to_final
+20672376,pfSNP,False,True,,0.996151626,,0.996151626,,unique_to_final
+26055100,dbHiMo,False,True,,0.996748298,,0.996748298,,unique_to_final
+30321400,EWASdb,False,True,,0.995485365,,0.995485365,,unique_to_final
+22086948,MetaCrop,False,True,,0.99725759,,0.99725759,,unique_to_final
+34515387,SynWiki,False,True,,0.996189475,,0.996189475,,unique_to_final
+"23066107, 26590405",TSGene,False,True,,0.985564858,,0.985564858,,unique_to_final
+32330167,geoBoundaries,False,True,,0.997810702,,0.997810702,,unique_to_final
+29982280,PepBDB,False,True,,0.992508531,,0.992508531,,unique_to_final
+24302579,DPRP,False,True,,0.99437356,,0.99437356,,unique_to_final
+30942868,DEE2,False,True,,0.989227772,,0.989227772,,unique_to_final
+"24214959, 26424852, 30256983",BacDive,False,True,,0.997053862,,0.997053862,,unique_to_final
+23886610,BmTEdb,False,True,,0.981323123,,0.981323123,,unique_to_final
+27354697,Cyclo-lib,False,True,,0.97895883,,0.97895883,,unique_to_final
+22140112,HIstome,False,True,,0.995750725,,0.995750725,,unique_to_final
+30703169,HuVarBase,False,True,,0.980674505,,0.980674505,,unique_to_final
+33151298,GRNdb,False,True,,0.997971952,,0.997971952,,unique_to_final
+33177514,SAVI,False,True,,0.993400097,,0.993400097,,unique_to_final
+"29036529, 22786784",ITSoneDB,False,True,,0.997155786,,0.997155786,,unique_to_final
+29136200,PRODORIC2,False,True,,0.997216105,,0.997216105,,unique_to_final
+30380112,Translocatome,False,True,,0.997318149,,0.997318149,,unique_to_final
+33007622,DINAX,False,True,,0.989951134,,0.989951134,,unique_to_final
+29917040,MPD,False,True,,0.986540794,,0.986540794,,unique_to_final
+32451429,MyomirDB,False,True,,0.99731797,,0.99731797,,unique_to_final
+31269035,COOLR,False,True,,0.98030597,,0.98030597,,unique_to_final
+24229347,NeuroGeM,False,True,,0.99263829,,0.99263829,,unique_to_final
+21781283,DbMDR,False,True,,0.997138441,,0.997138441,,unique_to_final
+28454513,MYCbase,False,True,,0.986929297,,0.986929297,,unique_to_final
+26066708,TRRUST,False,True,,0.997621059,,0.997621059,,unique_to_final
+27899622,UniProt,False,True,,0.995713353,,0.995713353,,unique_to_final
+30285246,CRISPRlnc,False,True,,0.995125651,,0.995125651,,unique_to_final
+32008039,EPSD,False,True,,0.98701781,,0.98701781,,unique_to_final
+31686102,FoldamerDB,False,True,,0.997375488,,0.997375488,,unique_to_final
+27899556,dbDEMC,False,True,,0.986323833,,0.986323833,,unique_to_final
+26048563,CYCLoPs,False,True,,0.996802568,,0.996802568,,unique_to_final
+28960889,eSnail,False,True,,0.99808991,,0.99808991,,unique_to_final
+22080561,SimpleSearch,False,True,,0.99120003,,0.99120003,,unique_to_final
+28365726,BMW,False,True,,0.984817743,,0.984817743,,unique_to_final
+22080556,CoryneRegNet,False,True,,0.996991575,,0.996991575,,unique_to_final
+21904429,MGDB,False,True,,0.991700888,,0.991700888,,unique_to_final
+29106644,iUUCD,False,True,,0.997192144,,0.997192144,,unique_to_final
+22766416,FunGene-DB,False,True,,0.99046123,,0.99046123,,unique_to_final
+26586806,BreCAN-DB,False,True,,0.997648492,,0.997648492,,unique_to_final
+23203869,SIFTS,False,True,,0.997229233,,0.997229233,,unique_to_final
+"22139911, 25593349, 27899619, 31724716",neXtProt,False,True,,0.98649776,,0.98649776,,unique_to_final
+28365761,PhagesDB,False,True,,0.997792363,,0.997792363,,unique_to_final
+27337171,TarNet,False,True,,0.9843418,,0.9843418,,unique_to_final
+24670875,HerceptinR,False,True,,0.99444294,,0.99444294,,unique_to_final
+21337704,GPDE,False,True,,0.997722995,,0.997722995,,unique_to_final
+"23203868, 25392420, 30462320",COXPRESdb,False,True,,0.98220855,,0.98220855,,unique_to_final
+29316788,SynBioHub,False,True,,0.997284293,,0.997284293,,unique_to_final
+27789693,3DSNP,False,True,,0.99662596,,0.99662596,,unique_to_final
+25399415,GenoBase,False,True,,0.995594084,,0.995594084,,unique_to_final
+27634949,Verdant,False,True,,0.98544848,,0.98544848,,unique_to_final
+31096089,DrugR,False,True,,0.989119887,,0.989119887,,unique_to_final
+32621601,SAGER,False,True,,0.995087028,,0.995087028,,unique_to_final
+26061870,YDHS,False,True,,0.994329572,,0.994329572,,unique_to_final
+27603020,DIANA-TarBase,False,True,,0.983838618,,0.983838618,,unique_to_final
+24465676,mUbiSiDa,False,True,,0.997054636,,0.997054636,,unique_to_final
+34461244,HVdb,False,True,,0.98835696,,0.98835696,,unique_to_final
+34504668,PEN,False,True,,0.994843125,,0.994843125,,unique_to_final
+32542382,PRMdb,False,True,,0.995993018,,0.995993018,,unique_to_final
+25414382,Kin-driver,False,True,,0.993340989,,0.993340989,,unique_to_final
+33186585,PolarProtDb,False,True,,0.996842086,,0.996842086,,unique_to_final
+26519466,IC4R,False,True,,0.995473579,,0.995473579,,unique_to_final
+25848172,ISOB,False,True,,0.992247462,,0.992247462,,unique_to_final
+25540777,ncRNA-DB,False,True,,0.996957827,,0.996957827,,unique_to_final
+30546860,YaTCM,False,True,,0.994157434,,0.994157434,,unique_to_final
+33600011,MutSpliceDB,False,True,,0.996531308,,0.996531308,,unique_to_final
+28158643,PlantExpress,False,True,,0.993935406,,0.993935406,,unique_to_final
+"25324309, 27987171, 29069403",PLAZA,False,True,,0.996272564,,0.996272564,,unique_to_final
+29284660,ModERN,False,True,,0.978945613,,0.978945613,,unique_to_final
+"26719120, 21258066",TOMATOMA,False,True,,0.9822613,,0.9822613,,unique_to_final
+29069459,OverGeneDB,False,True,,0.993383467,,0.993383467,,unique_to_final
+24297256,dbGaP,False,True,,0.997724652,,0.997724652,,unique_to_final
+25352573,ECODAB,False,True,,0.991039038,,0.991039038,,unique_to_final
+"24136998, 27987168",SoyKB,False,True,,0.996702418,,0.996702418,,unique_to_final
+"31670377, 24217916",NPInter,False,True,,0.993997335,,0.993997335,,unique_to_final
+27899613,NSDNA,False,True,,0.996830682,,0.996830682,,unique_to_final
+27789692,WERAM,False,True,,0.997139871,,0.997139871,,unique_to_final
+"33270898, 29155946, 30664776",GPCRdb,False,True,,0.993975937,,0.993975937,,unique_to_final
+30949679,IntronDB,False,True,,0.99790293,,0.99790293,,unique_to_final
+23209562,Wiki-Pi,False,True,,0.983535866,,0.983535866,,unique_to_final
+33882119,BC-TFdb,False,True,,0.990113586,,0.990113586,,unique_to_final
+28784999,AOD,False,True,,0.994940579,,0.994940579,,unique_to_final
+34081565,BEE,False,True,,0.989852111,,0.989852111,,unique_to_final
+32349124,VirusCircBase,False,True,,0.996753037,,0.996753037,,unique_to_final
+32584882,Antimicrobial chemotherapeutics database,False,True,,0.987474948,,0.987468759,,unique_to_final
+22701463,Medicago PhosphoProtein Database,False,True,,0.982081629,,0.981770674,,unique_to_final
+33442735,O-GlcNAcAtlas,False,True,,0.984077953,,0.984077953,,unique_to_final
+29198880,AureoWiki,False,True,,0.996498525,,0.996498525,,unique_to_final
+25725063,PreDREM,False,True,,0.996430159,,0.996430159,,unique_to_final
+29040625,RISE,False,True,,0.989733219,,0.989733219,,unique_to_final
+21718534,CANGS,False,True,,0.988113701,,0.988113701,,unique_to_final
+"22135298, 25514926",PhosphoSitePlus,False,True,,0.998392642,,0.998392642,,unique_to_final
+29036329,m6AVar,False,True,,0.985386446,,0.985386446,,unique_to_final
+33539279,BSGatlas,False,True,,0.995428026,,0.995428026,,unique_to_final
+29575358,ProtaBank,False,True,,0.99739188,,0.99739188,,unique_to_final
+33552037,BioMaster,False,True,,0.990046203,,0.990046203,,unique_to_final
+26255309,MetazSecKB,False,True,,0.997505963,,0.997505963,,unique_to_final
+23826978,pico-PLAZA,False,True,,0.990684529,,0.990684529,,unique_to_final
+"22123736, 25378336",GOA,False,True,,0.988438288,,0.988438288,,unique_to_final
+30379998,dbCPM,False,True,,0.986568928,,0.986568928,,unique_to_final
+29696033,REDIdb,False,True,,0.993994772,,0.993994772,,unique_to_final
+27412095,SSBD,False,True,,0.980243762,,0.980243762,,unique_to_final
+26481352,DIDA,False,True,,0.982567787,,0.982567787,,unique_to_final
+23203879,BSRD,False,True,,0.995059371,,0.995059371,,unique_to_final
+32976589,DIGGER,False,True,,0.998090148,,0.998090148,,unique_to_final
+24723423,OrthoMaM,False,True,,0.997223616,,0.997223616,,unique_to_final
+21498547,LccED,False,True,,0.97930038,,0.97930038,,unique_to_final
+26073932,Pedican,False,True,,0.98098731,,0.98098731,,unique_to_final
+"24214965, 27899562, 30398643, 25883136, 21936816",ChEMBL,False,True,,0.997582018,,0.997582018,,unique_to_final
+31586392,APAatlas,False,True,,0.997015476,,0.997015476,,unique_to_final
+34345532,CanImmunother,False,True,,0.998033106,,0.998033106,,unique_to_final
+27800578,SCEGRAM,False,True,,0.992693186,,0.992693186,,unique_to_final
+"23203880, 25398902, 27899625",YM500,False,True,,0.994998276,,0.994998276,,unique_to_final
+33997360,PCPD,False,True,,0.983033021,,0.983033021,,unique_to_final
+27374121,HPIDB,False,True,,0.988542557,,0.988542557,,unique_to_final
+29175726,FROG-kb,False,True,,0.992679045,,0.992679045,,unique_to_final
+30266410,HCCDB,False,True,,0.998168528,,0.998168528,,unique_to_final
+23016940,HomeoDB2,False,True,,0.997463286,,0.997463286,,unique_to_final
+23874618,NanoMiner,False,True,,0.984119594,,0.984119594,,unique_to_final
+29087479,STCRDab,False,True,,0.99811368,,0.99811368,,unique_to_final
+24203705,MetaRef,False,True,,0.996002674,,0.996002674,,unique_to_final
+34296749,circExp,False,True,,0.985390902,,0.985390902,,unique_to_final
+25428362,SGN,False,True,,0.983287116,,0.983287116,,unique_to_final
+24735618,TCMSP,False,True,,0.992832065,,0.992832065,,unique_to_final
+27376128,BcCluster,False,True,,0.995449245,,0.995449245,,unique_to_final
+26243198,miRegulome,False,True,,0.996385574,,0.996385574,,unique_to_final
+25522035,YNA,False,True,,0.981317759,,0.981317759,,unique_to_final
+24194591,LenVarDB,False,True,,0.996493101,,0.996493101,,unique_to_final
+32952115,CNGBdb,False,True,,0.99559629,,0.99559629,,unique_to_final
+26209309,HMA,False,True,,0.983201583,,0.983201583,,unique_to_final
+30759968,CDRgator,False,True,,0.994814634,,0.994814634,,unique_to_final
+28365741,TMPL,False,True,,0.995930076,,0.995930076,,unique_to_final
+22102581,ProRepeat,False,True,,0.997152328,,0.997152328,,unique_to_final
+22829726,Actinobase,False,True,,0.993042409,,0.993042409,,unique_to_final
+27087309,Kalium,False,True,,0.988748372,,0.988748372,,unique_to_final
+31566222,GWAS Atlas,False,True,,0.990907868,,0.990907868,,unique_to_final
+32351388,TCMIO,False,True,,0.994452953,,0.994452953,,unique_to_final
+"27982098, 27982098, 27982098",ARN,False,True,,0.983553469,,0.983553469,,unique_to_final
+25911153,ProtoBug,False,True,,0.979299188,,0.979299188,,unique_to_final
+"33084874, 27799467, 22075992",OGEE,False,True,,0.996816039,,0.996816039,,unique_to_final
+24647629,DBatVir,False,True,,0.997140765,,0.997140765,,unique_to_final
+27164589,CVD2014,False,True,,0.991893431,,0.991893431,,unique_to_final
+23998809,LongevityMap,False,True,,0.995389521,,0.995389521,,unique_to_final
+34768782,legumeSSRdb,False,True,,0.996245384,,0.996245384,,unique_to_final
+26504143,PDID,False,True,,0.99190706,,0.99190706,,unique_to_final
+26975833,REGene,False,True,,0.984254122,,0.984254122,,unique_to_final
+28365721,PCPPI,False,True,,0.994418144,,0.994418144,,unique_to_final
+23911837,PTP-central,False,True,,0.99302128,,0.99302128,,unique_to_final
+30150996,AromaDb,False,True,,0.996747673,,0.996747673,,unique_to_final
+26384373,FARE-CAFE,False,True,,0.994346166,,0.994346166,,unique_to_final
+26051695,ComiRNet,False,True,,0.991619289,,0.991619289,,unique_to_final
+26759061,Psmir,False,True,,0.9962219,,0.9962219,,unique_to_final
+"29112718, 29927072, 33211869, 23125362",Rfam,False,True,,0.996679723,,0.996679723,,unique_to_final
+"23060735, 23109552, 23630246",MetaboLights,False,True,,0.997964621,,0.997964621,,unique_to_final
+31637139,ncRNA2MetS,False,True,,0.990252088,,0.990252088,,unique_to_final
+"27742822, 31691816",miRPathDB,False,True,,0.997528672,,0.997528672,,unique_to_final
+25097386,ProADD,False,True,,0.992834508,,0.992834508,,unique_to_final
+31110280,CancerMine,False,True,,0.981553555,,0.981553555,,unique_to_final
+31696036,FlavoDb,False,True,,0.994724214,,0.994724214,,unique_to_final
+22493526,IntDb,False,True,,0.989881754,,0.989881754,,unique_to_final
+"32248568, 27924022",FINDbase,False,True,,0.996567488,,0.996567488,,unique_to_final
+31642496,Gene4Denovo,False,True,,0.993604973,,0.993604973,,unique_to_final
+32661237,GlobalFungi,False,True,,0.989663839,,0.989663839,,unique_to_final
+25913159,ClosIndb,False,True,,0.993508637,,0.993508637,,unique_to_final
+"30357384, 21940398",BitterDB,False,True,,0.998117387,,0.998117387,,unique_to_final
+31211398,SpinachBase,False,True,,0.997433722,,0.997433722,,unique_to_final
+23282181,PCDq,False,True,,0.992855191,,0.992855191,,unique_to_final
+33216893,DPL,False,True,,0.99479425,,0.99479425,,unique_to_final
+25522231,funRNA,False,True,,0.992636442,,0.992636442,,unique_to_final
+28511181,1-CMDb,False,True,,0.992982775,,0.992982775,,unique_to_final
+"26590404, 30298402",FunTree,False,True,,0.994794667,,0.994794667,,unique_to_final
+24558441,HTD,False,True,,0.994018674,,0.994018674,,unique_to_final
+23594715,TUMIR,False,True,,0.997981846,,0.997981846,,unique_to_final
+"23180788, 26578591",SomamiR,False,True,,0.985346377,,0.985346377,,unique_to_final
+"24319143, 22135289",MMDB,False,True,,0.99548922,,0.99548922,,unique_to_final
+22874333,HeTOP,False,True,,0.993553936,,0.993553936,,unique_to_final
+23658631,MabsBase,False,True,,0.996929765,,0.996929765,,unique_to_final
+32380213,TrypInDB,False,True,,0.996800661,,0.996800661,,unique_to_final
+22800758,AthaMap,False,True,,0.989823103,,0.989823103,,unique_to_final
+"33211879, 23193272, 25361974, 30357387",ArrayExpress,False,True,,0.994881332,,0.994881332,,unique_to_final
+34791105,HFIP,False,True,,0.989193519,,0.989193519,,unique_to_final
+26620522,PPIM,False,True,,0.989891842,,0.989891842,,unique_to_final
+"34037703, 34113986",TFcancer,False,True,,0.99685061,,0.99685061,,unique_to_final
+23180778,ZInC,False,True,,0.982900321,,0.982900321,,unique_to_final
+23482072,TetraFGD,False,True,,0.996410549,,0.996410549,,unique_to_final
+33599248,bc-GenExMiner,False,True,,0.983812017,,0.983812017,,unique_to_final
+"30371892, 33151287",DrugCentral,False,True,,0.996682286,,0.996682286,,unique_to_final
+24926662,lnCeDB,False,True,,0.99820447,,0.99820447,,unique_to_final
+"25352543, 27794554, 30395267, 33106848",RNAcentral,False,True,,0.993771434,,0.993771434,,unique_to_final
+"25378303, 29069517",iBeetle-Base,False,True,,0.997434308,,0.997434308,,unique_to_final
+24225318,Selectome,False,True,,0.979073048,,0.979073048,,unique_to_final
+"22260278, 27679478",IRD,False,True,,0.993188262,,0.993188262,,unique_to_final
+22715306,VPTD,False,True,,0.991008282,,0.991008282,,unique_to_final
+29059366,SBCDDB,False,True,,0.994983792,,0.994983792,,unique_to_final
+29625201,saRNAdb,False,True,,0.994530654,,0.994530654,,unique_to_final
+24297255,iPfam,False,True,,0.995806396,,0.995806396,,unique_to_final
+28413782,APMicroDB,False,True,,0.996813858,,0.996813858,,unique_to_final
+"30357393, 33270111",GENCODE,False,True,,0.998485327,,0.998485327,,unique_to_final
+"25414348, 31701150",BioModels,False,True,,0.990961909,,0.990961909,,unique_to_final
+24340041,POGs2,False,True,,0.997185946,,0.997185946,,unique_to_final
+22064863,EcoliWiki,False,True,,0.997703433,,0.997703433,,unique_to_final
+32096105,SANDchild,False,True,,0.992918432,,0.992918432,,unique_to_final
+34335304,Amadis,False,True,,0.995023131,,0.995023131,,unique_to_final
+24214957,bNAber,False,True,,0.994556367,,0.994556367,,unique_to_final
+24163098,SMMRNA,False,True,,0.997671962,,0.997671962,,unique_to_final
+31648227,MANET,False,True,,0.982270757,,0.982270757,,unique_to_final
+27899614,SUBA4,False,True,,0.997400373,,0.997400373,,unique_to_final
+29520288,TBC2target,False,True,,0.991942734,,0.991942734,,unique_to_final
+23696674,CGD,False,True,,0.991376301,,0.991376301,,unique_to_final
+31245720,VPGD,False,True,,0.986272037,,0.986272037,,unique_to_final
+"28775335, 23330984",NuBBEDB,False,True,,0.996761322,,0.996761322,,unique_to_final
+22753780,AutoBind,False,True,,0.98091805,,0.98091805,,unique_to_final
+22809392,CIDeR,False,True,,0.997793913,,0.997793913,,unique_to_final
+24153109,PDBsum,True,False,0.9920382,,0.9920382,,,unique_to_rerun
+33074547,HpBase,True,False,0.9835905,,0.9835905,,,unique_to_rerun
+27789701,Rhea,True,False,0.98101854,,0.98101854,,,unique_to_rerun
+25398901,MethHC,True,False,0.98145866,,0.98145866,,,unique_to_rerun
+30272209,Rhea,True,False,0.97966945,,0.97966945,,,unique_to_rerun
+31642470,WormBase,True,False,0.98246026,,0.98246026,,,unique_to_rerun
+23843252,dbNSFP,True,False,0.98441046,,0.98441046,,,unique_to_rerun
+25055920,miRWalk,True,False,0.99092877,,0.99092877,,,unique_to_rerun
+23327937,RegulonDB,True,False,0.98334587,,0.98334587,,,unique_to_rerun
+33436076,Dfam,True,False,0.98289216,,0.98289216,,,unique_to_rerun
+33231677,GTRD,True,False,0.9781932,,0.9781932,,,unique_to_rerun
+27794041,NGSmethDB,True,False,0.9831371,,0.9831371,,,unique_to_rerun
+23161672,APPRIS,True,False,0.9893796,,0.9893796,,,unique_to_rerun
+30418626,dbPTM,True,False,0.99331987,,0.99331987,,,unique_to_rerun

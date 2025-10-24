@@ -1,8 +1,8 @@
 # Biodata Inventory ML Pipeline - AI Agent Reference Guide
 
-**Created**: 2025-10-22  
-**Last Updated**: 2025-10-23 (Updated notebook path configuration and utility function integration)  
-**Status**: ✅ **PRODUCTION READY**  
+**Created**: 2025-10-22
+**Last Updated**: 2025-10-24 (Restructured rerun notebook with utility functions and fixed critical bugs)
+**Status**: ✅ **PRODUCTION READY**
 **Purpose**: Living document for AI agents working on the biodata inventory ML pipeline
 
 ---
@@ -269,11 +269,12 @@ ls -la trained_models_25/
 ---
 
 ### **Training-Inventory Compatibility**
-- **Archive Path Issue**: Training uses `training_archives/`, inventory expects `trained_models_archive/`
-- **Model Deployment**: Training automatically deploys to standard locations for compatibility
-- **Session Linking**: Use training UNIQUE_ID as TRAINING_SESSION_ID in inventory notebooks
-- **Resolution Status**: ⚠️ Archive path mismatch requires update (see compatibility analysis)
-- **Pending Fix**: `src/training_utils.py` needs archive path update for full compatibility
+- **Archive Path**: ✅ FIXED - Both use `training_archives/{UNIQUE_ID}_full_training/`
+- **Model Traceability**: ✅ REQUIRED - TRAINING_SESSION_ID mandatory in rerun notebook
+- **Session Linking**: Training UNIQUE_ID → Rerun TRAINING_SESSION_ID → Full audit trail
+- **Utility Functions**: Training uses `src/training_utils.py`, Rerun uses `src/rerun_utils.py`
+- **Resolution Status**: ✅ Fixed as of 2025-10-24 - Full traceability enforced
+- **Script Execution**: Both use absolute paths with INVENTORY_DIRECTORY prefix
 
 ---
 
@@ -472,6 +473,84 @@ Recovery: Smart detection of existing checkpoints with configuration validation
 - `src/ner_data_generator.py` - Fixed numpy/pandas compatibility (lines 15-16, multiple NaN references)
 - `src/ner_train.py` - Fixed AdamW import compatibility (line 14, removed optimization import)
 - `docs/starting_doc.md` - Added comprehensive session documentation and file references
+
+---
+
+## 📝 **October 24, 2025 Update**
+
+### **PyTorch 2.6 Compatibility Fix**
+
+**Issue**: PyTorch 2.6 changed default `weights_only` parameter in `torch.load()` from `False` to `True` for security. This broke model evaluation because checkpoints contain custom classes (`Metrics` NamedTuple).
+
+**Solution**: Added `weights_only=False` parameter to all `torch.load()` calls for trusted checkpoints.
+
+**Files Modified**:
+- `src/inventory_utils/filing.py` - Fixed `get_classif_model()` (line 39) and `get_ner_model()` (line 70)
+- `src/model_picker.py` - Fixed `get_metrics()` (line 68)
+
+**Impact**: Model evaluation (Step 4) now completes successfully in Google Colab training notebook.
+
+---
+
+## 📝 **October 24, 2025 Rerun Notebook Restructure**
+
+### **Architecture Improvements**
+
+**Created**: `src/rerun_utils.py` - Reusable utility functions for inventory processing (~590 lines)
+
+**Key Changes**:
+- ✅ **Clean Configuration Cell**: All variables defined upfront (similar to training notebook)
+- ✅ **Utility Functions**: Extracted 14 inline functions to reusable module
+- ✅ **Fixed Script Paths**: Changed from relative `src/` to absolute `{INVENTORY_DIRECTORY}/src/`
+- ✅ **Fixed Archive Paths**: Training archives now correctly reference `training_archives/{ID}_full_training/`
+- ✅ **Mandatory Traceability**: TRAINING_SESSION_ID is required, no fallback to production models
+- ✅ **Eliminated Duplication**: Removed 3 duplicate checkpoint function definitions
+- ✅ **Consistent Pattern**: Matches training notebook architecture and style
+
+**Files Modified**:
+- `rerun_2022_inventory_with_checkpoints.ipynb` - Complete restructure with 12 clean cells
+- `src/rerun_utils.py` - NEW utility module with 13 reusable functions
+- `docs/starting_doc.md` - Updated compatibility documentation
+
+**Column Name Fix**:
+- ✅ Fixed Cell 8 validation to use correct 2022 dataset column names (`id`, `abstract` instead of `pmid`, `abstractText`)
+
+**Benefits**:
+- 🧹 **Cleaner Cells**: Pipeline cells reduced from 30-50 lines to 10-15 lines
+- 🔄 **Reusable**: Functions can be used in future inventory processing notebooks
+- 🐛 **Bug Fixes**: Critical script path bugs resolved
+- 📊 **Maintainability**: Change logic once, works everywhere
+- ✅ **Testable**: Utility functions can be unit tested
+- 🎯 **Consistent**: Follows same architecture as training notebook
+
+**Cell Structure**:
+1. Mount Google Drive
+2. Configuration (all variables)
+3. Validation & Display
+4. Environment Setup
+5. GPU Check
+6. Checkpoint System Setup
+7. Model Loading with Traceability
+8. Input Validation
+9. Classification Pipeline (~15 lines)
+10. NER Pipeline (~15 lines)
+11. Post-Processing (URL + Names)
+12. Final Results & Archive
+
+**Utility Functions**:
+- `validate_rerun_config()` - Config validation
+- `display_rerun_config()` - Config display
+- `load_models_with_traceability()` - Model loading
+- `check_local_results()` - Check local files
+- `check_drive_checkpoint()` - Check Google Drive
+- `load_step_from_checkpoint()` - Load from checkpoint
+- `save_step_to_checkpoint()` - Save to checkpoint
+- `run_prediction_script()` - Execute scripts
+- `show_rerun_progress()` - Progress display
+- `display_step_results()` - Results display
+- `create_rerun_archive()` - Archive creation
+- `create_rerun_readme()` - README generation
+- `validate_input_data()` - Input validation
 
 ---
 

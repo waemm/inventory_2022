@@ -1,8 +1,27 @@
 # Colab Probability Calculation Investigation
 
-**Date**: 2025-10-24
+**Date**: 2025-10-24 | **Updated**: 2025-10-27
 **Issue**: Colab reruns producing dramatically lower probability scores compared to local bash script runs
 **Impact**: Only 0.8% of Colab predictions pass 0.978 quality threshold vs 84.7% for local runs
+**Status**: ❌ Float32 dtype fix RULED OUT (tested 2025-10-25, no effect)
+
+---
+
+## 🔴 CRITICAL UPDATE (2025-10-27)
+
+**Float32 Dtype Fix TESTED and RULED OUT**
+
+Run: `2025-10-25-nkd1ij_oldmodel_2022_rerun`
+- Used: `ner_predict_diagnostic.py` with explicit `logits.float()` conversion
+- Result: **IDENTICAL probabilities** to non-diagnostic runs
+  - pfSNP: 0.6506803 (unchanged)
+  - ACSR: 0.671921 (unchanged)
+  - PRO: 0.51616657 (unchanged)
+  - PRIDE: 0.74313384 (unchanged)
+
+**Conclusion**: The problem is NOT a simple float16/float32 dtype issue in softmax calculation.
+
+**New Investigation Priority**: Focus on library version differences, tokenization changes, or model loading/state issues.
 
 ---
 

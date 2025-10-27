@@ -14,8 +14,7 @@ import torch
 from torch.optim import AdamW
 from torch.utils.data.dataloader import DataLoader
 from tqdm.auto import tqdm
-from transformers import (AutoModelForTokenClassification, get_scheduler,
-                          optimization)
+from transformers import (AutoModelForTokenClassification, get_scheduler)
 
 from inventory_utils.constants import ID2NER_TAG, NER_TAG2ID
 from inventory_utils.custom_classes import (CustomHelpFormatter, Metrics,
@@ -187,11 +186,9 @@ def initialize_model(args: Args, train_dataloader: DataLoader,
     device = torch.device(
         'cuda') if torch.cuda.is_available() else torch.device('cpu')
     model.to(device)
-    optimizer = cast(
-        optimization.AdamW,
-        AdamW(model.parameters(),
-              lr=args.learning_rate,
-              weight_decay=args.weight_decay))
+    optimizer = AdamW(model.parameters(),
+                      lr=args.learning_rate,
+                      weight_decay=args.weight_decay)
     num_training_steps = args.num_epochs * len(train_dataloader)
 
     if args.lr_scheduler:

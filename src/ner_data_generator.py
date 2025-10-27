@@ -12,9 +12,8 @@ from typing import List, NamedTuple, TextIO
 
 import nltk
 import pandas as pd
-from numpy.core.numeric import NaN
-from pandas._testing.asserters import assert_series_equal
-from pandas.testing import assert_frame_equal
+import numpy as np
+from pandas.testing import assert_series_equal, assert_frame_equal
 
 from inventory_utils.custom_classes import CustomHelpFormatter
 from inventory_utils.wrangling import (concat_title_abstract, split_df,
@@ -129,17 +128,17 @@ def test_filter_data() -> None:
     """ Test filter_data() """
 
     in_df = pd.DataFrame(
-        [['123', 'A title', 'An abstract.', NaN, NaN, '', ''],
-         ['456', 'A title', 'An abstract.', 'full_name', NaN, '', ''],
-         ['789', 'A title', 'An abstract.', NaN, 'common_name', '', '']],
+        [['123', 'A title', 'An abstract.', np.nan, np.nan, '', ''],
+         ['456', 'A title', 'An abstract.', 'full_name', np.nan, '', ''],
+         ['789', 'A title', 'An abstract.', np.nan, 'common_name', '', '']],
         columns=[
             'id', 'title', 'abstract', 'full_name', 'common_name', 'url',
             'short_description'
         ])
 
     out_df = pd.DataFrame(
-        [['456', 'A title', 'An abstract.', 'full_name', NaN],
-         ['789', 'A title', 'An abstract.', NaN, 'common_name']],
+        [['456', 'A title', 'An abstract.', 'full_name', np.nan],
+         ['789', 'A title', 'An abstract.', np.nan, 'common_name']],
         columns=['id', 'title', 'abstract', 'full_name', 'common_name'])
 
     assert_frame_equal(filter_data(in_df), out_df)
@@ -170,7 +169,7 @@ def test_clean_data() -> None:
     """ Test clean_data() """
 
     in_df = pd.DataFrame(
-        [['123', 'A <i>title</i>', 'An <i>abstract</i>.', 'full_name', NaN],
+        [['123', 'A <i>title</i>', 'An <i>abstract</i>.', 'full_name', np.nan],
          ['456', 'A dup title', 'A dup abstract.', 'full_name', 'common_name'],
          ['456', 'A dup title', 'A dup abstract.', 'full_name', 'common_name']
          ],

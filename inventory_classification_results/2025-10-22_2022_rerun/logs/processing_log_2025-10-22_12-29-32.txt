@@ -36,3 +36,44 @@ Evaluate: 0.4.6
 2025-10-22 12:29:38 [INFO] Input: data/epmc_query_results_2022.csv
 2025-10-22 12:29:38 [INFO] Model: out/classif_train_out/article_classifier.pt
 2025-10-22 12:29:38 [INFO] Output: inventory_classification_results/2025-10-22_2022_rerun/classification/predictions.csv
+2025-10-22 16:37:38 [SUCCESS] Classification completed (248m 0s)
+2025-10-22 16:37:43 [INFO] Total predictions:    20889
+2025-10-22 16:37:43 [INFO] Filtering bio-resource papers...
+Bio-resource papers: 4827 out of 20889 (23.1%)
+2025-10-22 16:37:45 [SUCCESS] Positive predictions filtered successfully
+2025-10-22 16:37:45 [PROGRESS] Step 2/5: Running NER on bio-resource papers...
+2025-10-22 16:37:45 [INFO] Input: inventory_classification_results/2025-10-22_2022_rerun/classification/predicted_positives.csv
+2025-10-22 16:37:45 [INFO] Model: out/ner_train_out/named_entity_recognition.pt
+2025-10-22 16:37:45 [INFO] Output: inventory_classification_results/2025-10-22_2022_rerun/ner/predictions.csv
+2025-10-22 17:45:35 [SUCCESS] NER completed (67m 50s)
+2025-10-22 17:45:36 [INFO] Papers with NER results:     4395
+2025-10-22 17:45:36 [PROGRESS] Step 3/5: Extracting URLs...
+2025-10-22 17:45:36 [INFO] Input: inventory_classification_results/2025-10-22_2022_rerun/ner/predictions.csv
+2025-10-22 17:45:36 [INFO] Max URLs per paper: 3
+2025-10-22 17:45:36 [INFO] Output: inventory_classification_results/2025-10-22_2022_rerun/url_extraction/predictions.csv
+2025-10-22 17:45:44 [SUCCESS] URL extraction completed (8s)
+2025-10-22 17:45:45 [INFO] Papers with URLs:     4368
+2025-10-22 17:45:45 [PROGRESS] Step 4/5: Processing names...
+2025-10-22 17:45:45 [INFO] Input: inventory_classification_results/2025-10-22_2022_rerun/url_extraction/predictions.csv
+2025-10-22 17:45:45 [INFO] Output: inventory_classification_results/2025-10-22_2022_rerun/processed_names/predictions.csv
+2025-10-22 17:45:50 [SUCCESS] Name processing completed (5s)
+2025-10-22 17:45:51 [INFO] Processed entries:     4368
+2025-10-22 17:45:51 [PROGRESS] Step 5/5: Creating final results...
+2025-10-22 17:45:51 [INFO] Input: inventory_classification_results/2025-10-22_2022_rerun/processed_names/predictions.csv
+2025-10-22 17:45:51 [INFO] Output: inventory_classification_results/2025-10-22_2022_rerun/final_results/biodata_inventory_2022_rerun.csv
+2025-10-22 17:45:51 [SUCCESS] Final results created (0s)
+2025-10-22 17:45:52 [INFO] Final inventory entries:     4368
+2025-10-22 17:45:52 [INFO] Generating run metadata...
+2025-10-22 17:46:00 [SUCCESS] Metadata generated successfully
+2025-10-22 17:46:00 [HEADER] 2022 INVENTORY RERUN COMPLETE
+2025-10-22 17:46:01 [SUCCESS] Total processing time: 5h 16m 28s
+2025-10-22 17:46:01 [SUCCESS] Archive location: inventory_classification_results/2025-10-22_2022_rerun
+2025-10-22 17:46:01 [INFO] Results summary:
+2025-10-22 17:46:07 [INFO]   Papers processed:    20889
+2025-10-22 17:46:07 [INFO]   Bio-resource papers:     4827
+2025-10-22 17:46:07 [INFO]   Final inventory:     4368 resources
+2025-10-22 17:46:07 [INFO] Key files:
+2025-10-22 17:46:07 [INFO]   Final inventory: inventory_classification_results/2025-10-22_2022_rerun/final_results/biodata_inventory_2022_rerun.csv
+2025-10-22 17:46:07 [INFO]   Documentation: inventory_classification_results/2025-10-22_2022_rerun/README.md
+2025-10-22 17:46:07 [INFO]   Processing log: inventory_classification_results/2025-10-22_2022_rerun/logs/processing_log_2025-10-22_12-29-32.txt
+2025-10-22 17:46:07 [INFO] ✅ 2022 inventory successfully rerun with latest models!

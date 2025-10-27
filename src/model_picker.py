@@ -65,7 +65,7 @@ def get_metrics(checkpoint_fh: BinaryIO) -> Dict[str, Union[float, str]]:
     Return: Dictionary of validation set metrics
     """
 
-    checkpoint = torch.load(checkpoint_fh)
+    checkpoint = torch.load(checkpoint_fh, weights_only=False)
     metrics = cast(Metrics, checkpoint['val_metrics'])
 
     return {

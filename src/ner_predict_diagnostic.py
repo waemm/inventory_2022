@@ -20,6 +20,7 @@ from typing import BinaryIO, Dict, List, NamedTuple, TextIO, cast
 
 import pandas as pd
 import torch
+import transformers
 from pandas.testing import assert_frame_equal
 from transformers.modeling_outputs import TokenClassifierOutput
 from transformers.tokenization_utils import PreTrainedTokenizer
@@ -258,8 +259,8 @@ def predict_sequence(model, device: torch.device, seq: str,
         predict_sequence.call_count = 0
     predict_sequence.call_count += 1
 
-    # Only log first prediction for diagnostics
-    should_log = predict_sequence.call_count == 1
+    # Log first 3 predictions to see patterns
+    should_log = predict_sequence.call_count <= 3
 
     with torch.no_grad():
         tokenized_seq = tokenizer(seq,
@@ -270,20 +271,37 @@ def predict_sequence(model, device: torch.device, seq: str,
 
         if should_log:
             print("\n" + "="*70)
-            print("DIAGNOSTIC INFO - First Prediction")
+            print(f"DIAGNOSTIC INFO - Prediction #{predict_sequence.call_count}")
             print("="*70)
+            print(f"PyTorch version: {torch.__version__}")
+            print(f"Transformers version: {transformers.__version__}")
+            print(f"\n--- Model State ---")
             print(f"Model training mode: {model.training}")
+            print(f"Model device: {next(model.parameters()).device}")
+            print(f"Model dtype: {next(model.parameters()).dtype}")
+
+            print(f"\n--- Input Tokenization ---")
+            print(f"Input text sample (first 100 chars): {seq[:100]}...")
             print(f"Input device: {tokenized_seq['input_ids'].device}")
             print(f"Input dtype: {tokenized_seq['input_ids'].dtype}")
+            print(f"Input shape: {tokenized_seq['input_ids'].shape}")
+            print(f"Token IDs (first 10): {tokenized_seq['input_ids'][0][:10].tolist()}")
 
         outputs = cast(TokenClassifierOutput, model(**tokenized_seq))
         logits = outputs.logits
 
         if should_log:
-            print(f"\nLogits shape: {logits.shape}")
+            print(f"\n--- Model Output (Logits) ---")
+            print(f"Logits shape: {logits.shape}")
             print(f"Logits dtype: {logits.dtype}")
             print(f"Logits device: {logits.device}")
+            print(f"Logits requires_grad: {logits.requires_grad}")
             print(f"Logits range: [{logits.min().item():.6f}, {logits.max().item():.6f}]")
+            print(f"Logits mean: {logits.mean().item():.6f}")
+            print(f"Logits std: {logits.std().item():.6f}")
+
+            # Show raw logit values for first token
+            print(f"\nFirst token logits (all 3 classes): {logits[0][1].tolist()}")
 
         preds = logits.argmax(dim=-1).cpu().numpy()[0][1:-1]
 
@@ -295,25 +313,40 @@ def predict_sequence(model, device: torch.device, seq: str,
         all_probs_float32 = torch.nn.functional.softmax(logits.float(),
                                                         dim=-1).cpu().numpy()[0][1:-1]
 
+        # ALTERNATIVE: log_softmax + exp (numerically stable)
+        log_probs = torch.nn.functional.log_softmax(logits, dim=-1)
+        all_probs_logsoftmax = torch.exp(log_probs).cpu().numpy()[0][1:-1]
+
         if should_log:
             print(f"\n--- Softmax Comparison ---")
-            print(f"Default softmax dtype: {type(all_probs_default[0])}")
-            print(f"Float32 softmax dtype: {type(all_probs_float32[0])}")
+            print(f"Logits dtype before softmax: {logits.dtype}")
+            print(f"Default softmax output dtype: {all_probs_default.dtype}")
+            print(f"Float32 softmax output dtype: {all_probs_float32.dtype}")
+            print(f"Log-softmax output dtype: {all_probs_logsoftmax.dtype}")
 
             # Show first few probability values
-            print(f"\nSample probabilities (first 3 tokens):")
-            for i in range(min(3, len(preds))):
+            print(f"\nSample probabilities (first 5 tokens with predictions):")
+            for i in range(min(5, len(preds))):
                 pred_idx = preds[i]
-                print(f"  Token {i}: pred={pred_idx}, "
-                      f"default_prob={all_probs_default[i][pred_idx]:.6f}, "
-                      f"float32_prob={all_probs_float32[i][pred_idx]:.6f}")
+                print(f"  Token {i}: pred={pred_idx} ({ID2NER_TAG.get(pred_idx, 'UNKNOWN')})")
+                print(f"    default:    {all_probs_default[i][pred_idx]:.8f}")
+                print(f"    float32:    {all_probs_float32[i][pred_idx]:.8f}")
+                print(f"    log-softmax: {all_probs_logsoftmax[i][pred_idx]:.8f}")
+                print(f"    All 3 class probs (default): {all_probs_default[i]}")
 
             # Calculate differences
-            max_diff = abs(all_probs_default - all_probs_float32).max()
-            mean_diff = abs(all_probs_default - all_probs_float32).mean()
-            print(f"\nProbability differences:")
-            print(f"  Max difference: {max_diff:.8f}")
-            print(f"  Mean difference: {mean_diff:.8f}")
+            max_diff_f32 = abs(all_probs_default - all_probs_float32).max()
+            mean_diff_f32 = abs(all_probs_default - all_probs_float32).mean()
+            max_diff_log = abs(all_probs_default - all_probs_logsoftmax).max()
+            mean_diff_log = abs(all_probs_default - all_probs_logsoftmax).mean()
+
+            print(f"\nProbability differences (default vs float32):")
+            print(f"  Max difference: {max_diff_f32:.8f}")
+            print(f"  Mean difference: {mean_diff_f32:.8f}")
+
+            print(f"\nProbability differences (default vs log-softmax):")
+            print(f"  Max difference: {max_diff_log:.8f}")
+            print(f"  Mean difference: {mean_diff_log:.8f}")
 
             print("="*70 + "\n")
 
@@ -585,17 +618,92 @@ def main() -> None:
         os.makedirs(args.out_dir)
 
     out_file = os.path.join(args.out_dir, 'predictions.csv')
+    log_file = os.path.join(args.out_dir, 'diagnostic_log.txt')
 
     device = get_torch_device()
 
     model, _, tokenizer = get_ner_model(args.checkpoint, device)
+
+    # DIAGNOSTIC: Setup logging to both console and file
+    import sys
+    from datetime import datetime
+
+    class TeeLogger:
+        """Write to both stdout and a file"""
+        def __init__(self, filename):
+            self.terminal = sys.stdout
+            self.log = open(filename, 'w')
+
+        def write(self, message):
+            self.terminal.write(message)
+            self.log.write(message)
+            self.log.flush()
+
+        def flush(self):
+            self.terminal.flush()
+            self.log.flush()
+
+    # Redirect stdout to both console and log file
+    sys.stdout = TeeLogger(log_file)
+
+    # DIAGNOSTIC: Print environment and model information
+    print("\n" + "="*70)
+    print("ENHANCED DIAGNOSTIC MODE - Environment Information")
+    print(f"Run timestamp: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    print("="*70)
+    print(f"PyTorch version: {torch.__version__}")
+    print(f"Transformers version: {transformers.__version__}")
+    print(f"CUDA available: {torch.cuda.is_available()}")
+    if torch.cuda.is_available():
+        print(f"CUDA version: {torch.version.cuda}")
+        print(f"Device count: {torch.cuda.device_count()}")
+        print(f"Current device: {torch.cuda.current_device()}")
+        print(f"Device name: {torch.cuda.get_device_name(0)}")
+    print(f"Device used: {device}")
+
+    print(f"\n--- Model Information ---")
+    print(f"Checkpoint: {args.checkpoint}")
+    total_params = sum(p.numel() for p in model.parameters())
+    trainable_params = sum(p.numel() for p in model.parameters() if p.requires_grad)
+    print(f"Total parameters: {total_params:,}")
+    print(f"Trainable parameters: {trainable_params:,}")
+    print(f"Model dtype: {next(model.parameters()).dtype}")
+    print(f"Model device: {next(model.parameters()).device}")
+
+    # Calculate parameter checksum for verification
+    import hashlib
+    param_bytes = b''.join([p.cpu().detach().numpy().tobytes()
+                            for p in model.parameters()])
+    param_hash = hashlib.md5(param_bytes).hexdigest()[:16]
+    print(f"Model parameter checksum (MD5, first 16): {param_hash}")
+
+    print(f"\n--- Tokenizer Information ---")
+    print(f"Tokenizer class: {type(tokenizer).__name__}")
+    print(f"Vocab size: {len(tokenizer)}")
+
+    print(f"\n--- Dataset Information ---")
+    print(f"Input papers: {len(input_df)}")
+
+    print("="*70 + "\n")
+    print("Starting predictions (will log first 3 in detail)...\n")
 
     predictions = reformat_output(
         deduplicate(predict(model, tokenizer, input_df, device)))
 
     predictions.to_csv(out_file, index=False)
 
-    print(f'Done. Saved predictions to {out_file}.')
+    print(f'\n{"="*70}')
+    print("DIAGNOSTIC RUN COMPLETE")
+    print(f'{"="*70}')
+    print(f'Predictions saved to: {out_file}')
+    print(f'Diagnostic log saved to: {log_file}')
+    print(f"Total predictions made: {len(predictions)}")
+    print(f"Unique papers with predictions: {predictions['ID'].nunique()}")
+    print(f'{"="*70}\n')
+
+    # Restore stdout
+    sys.stdout.log.close()
+    sys.stdout = sys.stdout.terminal
 
 
 # ---------------------------------------------------------------------------

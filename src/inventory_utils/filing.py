@@ -36,7 +36,7 @@ def get_classif_model(checkpoint_fh: BinaryIO,
     Model instance from checkpoint, and model name
     """
 
-    checkpoint = torch.load(checkpoint_fh, map_location=device)
+    checkpoint = torch.load(checkpoint_fh, map_location=device, weights_only=False)
     model_name = checkpoint['model_name']
     model = classifier.from_pretrained(model_name, num_labels=2)
     
@@ -67,7 +67,7 @@ def get_ner_model(
     Model instance from checkpoint, model name, and tokenizer
     """
 
-    checkpoint = torch.load(checkpoint_fh, map_location=device)
+    checkpoint = torch.load(checkpoint_fh, map_location=device, weights_only=False)
     model_name = checkpoint['model_name']
     model = ner_classifier.from_pretrained(model_name,
                                            id2label=ID2NER_TAG,

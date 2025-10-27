@@ -6,6 +6,7 @@ Authors: Kenneth Schackart
 
 import argparse
 import os
+import pickle
 from typing import BinaryIO, Dict, List, NamedTuple, Union, cast
 
 import pandas as pd
@@ -59,21 +60,39 @@ def get_metrics(checkpoint_fh: BinaryIO) -> Dict[str, Union[float, str]]:
     """
     Retrieve the validation metrics from model checkpoint
 
+    Supports both new format (weights_only=True, metrics as dict)
+    and old format (weights_only=False, metrics as NamedTuple).
+
     Parameters:
     `checkpoint_fh`: Trained model checkpoint
 
     Return: Dictionary of validation set metrics
     """
 
-    checkpoint = torch.load(checkpoint_fh, weights_only=False)
-    metrics = cast(Metrics, checkpoint['val_metrics'])
+    # Try new format first (weights_only=True) - version-resilient
+    try:
+        checkpoint = torch.load(checkpoint_fh, weights_only=True)
+        metrics = checkpoint['val_metrics']  # Already a dict
 
-    return {
-        'f1': metrics.f1,
-        'precision': metrics.precision,
-        'recall': metrics.recall,
-        'loss': metrics.loss
-    }
+        return {
+            'f1': metrics['f1'],
+            'precision': metrics['precision'],
+            'recall': metrics['recall'],
+            'loss': metrics['loss']
+        }
+
+    except (pickle.UnpicklingError, RuntimeError, TypeError, KeyError):
+        # Fall back to old format (weights_only=False) - for legacy checkpoints
+        checkpoint_fh.seek(0)  # Reset file pointer
+        checkpoint = torch.load(checkpoint_fh, weights_only=False)
+        metrics = cast(Metrics, checkpoint['val_metrics'])  # NamedTuple
+
+        return {
+            'f1': metrics.f1,
+            'precision': metrics.precision,
+            'recall': metrics.recall,
+            'loss': metrics.loss
+        }
 
 
 # ---------------------------------------------------------------------------

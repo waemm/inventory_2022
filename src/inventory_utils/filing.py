@@ -8,6 +8,7 @@ Authors: Kenneth Schackart
 """
 
 import os
+import pickle
 import sys
 from typing import Any, BinaryIO, Tuple
 
@@ -28,6 +29,9 @@ def get_classif_model(checkpoint_fh: BinaryIO,
     """
     Instatiate predictive model from checkpoint
 
+    Supports both new format (weights_only=True, metrics as dicts)
+    and old format (weights_only=False, metrics as NamedTuples).
+
     Params:
     `checkpoint_fh`: Model checkpoint filehandle
     `device`: The `torch.device` to use
@@ -36,15 +40,22 @@ def get_classif_model(checkpoint_fh: BinaryIO,
     Model instance from checkpoint, and model name
     """
 
-    checkpoint = torch.load(checkpoint_fh, map_location=device, weights_only=False)
+    # Try new format first (weights_only=True) - version-resilient
+    try:
+        checkpoint = torch.load(checkpoint_fh, map_location=device, weights_only=True)
+    except (pickle.UnpicklingError, RuntimeError, TypeError) as e:
+        # Fall back to old format (weights_only=False) - for legacy checkpoints
+        checkpoint_fh.seek(0)  # Reset file pointer
+        checkpoint = torch.load(checkpoint_fh, map_location=device, weights_only=False)
+
     model_name = checkpoint['model_name']
     model = classifier.from_pretrained(model_name, num_labels=2)
-    
+
     # Remove incompatible keys for newer transformers versions
     state_dict = checkpoint['model_state_dict']
     if 'roberta.embeddings.position_ids' in state_dict:
         del state_dict['roberta.embeddings.position_ids']
-    
+
     model.load_state_dict(state_dict)
     model.to(device)
     model.eval()
@@ -59,6 +70,9 @@ def get_ner_model(
     """
     Instatiate predictive NER model from checkpoint
 
+    Supports both new format (weights_only=True, metrics as dicts)
+    and old format (weights_only=False, metrics as NamedTuples).
+
     Params:
     `checkpoint_fh`: Model checkpoint filehandle
     `device`: The `torch.device` to use
@@ -67,17 +81,24 @@ def get_ner_model(
     Model instance from checkpoint, model name, and tokenizer
     """
 
-    checkpoint = torch.load(checkpoint_fh, map_location=device, weights_only=False)
+    # Try new format first (weights_only=True) - version-resilient
+    try:
+        checkpoint = torch.load(checkpoint_fh, map_location=device, weights_only=True)
+    except (pickle.UnpicklingError, RuntimeError, TypeError) as e:
+        # Fall back to old format (weights_only=False) - for legacy checkpoints
+        checkpoint_fh.seek(0)  # Reset file pointer
+        checkpoint = torch.load(checkpoint_fh, map_location=device, weights_only=False)
+
     model_name = checkpoint['model_name']
     model = ner_classifier.from_pretrained(model_name,
                                            id2label=ID2NER_TAG,
                                            label2id=NER_TAG2ID)
-    
+
     # Remove incompatible keys for newer transformers versions
     state_dict = checkpoint['model_state_dict']
     if 'roberta.embeddings.position_ids' in state_dict:
         del state_dict['roberta.embeddings.position_ids']
-    
+
     model.load_state_dict(state_dict)
     model.to(device)
     model.eval()
@@ -116,6 +137,9 @@ def save_model(model: Any, model_name: str, train_metrics: Metrics,
     """
     Save model checkpoint, epoch, and F1 score to file
 
+    Saves metrics as dicts instead of NamedTuples for PyTorch version
+    compatibility (enables weights_only=True loading).
+
     Parameters:
     `model`: Model to save
     `model_name`: Model HuggingFace name
@@ -128,8 +152,18 @@ def save_model(model: Any, model_name: str, train_metrics: Metrics,
         {
             'model_state_dict': model.state_dict(),
             'model_name': model_name,
-            'train_metrics': train_metrics,
-            'val_metrics': val_metrics
+            'train_metrics': {
+                'precision': float(train_metrics.precision),
+                'recall': float(train_metrics.recall),
+                'f1': float(train_metrics.f1),
+                'loss': float(train_metrics.loss)
+            },
+            'val_metrics': {
+                'precision': float(val_metrics.precision),
+                'recall': float(val_metrics.recall),
+                'f1': float(val_metrics.f1),
+                'loss': float(val_metrics.loss)
+            }
         }, filename)
 
 

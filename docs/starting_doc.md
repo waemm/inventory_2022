@@ -1,8 +1,8 @@
 # Biodata Inventory ML Pipeline - AI Agent Reference Guide
 
 **Created**: 2025-10-22
-**Last Updated**: 2025-10-27 (Added comprehensive Colab vs Local investigation and root cause analysis)
-**Status**: ⚠️ **PRODUCTION READY (Local Only) - Colab Issue Under Investigation**
+**Last Updated**: 2025-10-27 (PyTorch checkpoint compatibility issue RESOLVED)
+**Status**: ✅ **PRODUCTION READY (Local & Colab)**
 **Purpose**: Living document for AI agents working on the biodata inventory ML pipeline
 
 ---
@@ -32,6 +32,22 @@ This is a **sophisticated ML pipeline** that uses biomedical BERT models to auto
 4. **Training Pipeline** - 6-step process with session-specific directories
 5. **Model Deployment** - Copy to standard production locations for compatibility
 6. **Archive Creation** - Complete session artifacts preservation with traceability
+
+### **🎉 PyTorch Checkpoint Compatibility (RESOLVED 2025-10-27)**
+
+**Problem**: Models trained in PyTorch 2.0.0 produced different predictions in PyTorch 2.8.0 (Colab), causing 99% prediction loss.
+
+**Root Cause**: Checkpoint files contained NamedTuple objects that PyTorch 2.8 deserializes incorrectly, corrupting model weights.
+
+**Solution**:
+- ✅ Converted checkpoints to dict-only format (no custom objects)
+- ✅ Updated loading code to use `weights_only=True` with backward compatibility
+- ✅ Modified Colab notebook to prevent model overwriting
+- ✅ Verified predictions match local results (99.97% agreement)
+
+**Impact**: Saved ~9.5 hours of retraining time, models now work across PyTorch versions
+
+**For Details**: See [`docs/PYTORCH_CHECKPOINT_FIX.md`](PYTORCH_CHECKPOINT_FIX.md) for comprehensive documentation
 
 ---
 

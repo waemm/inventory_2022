@@ -505,8 +505,30 @@ def create_final_archive(archive_dir, unique_id, config, classif_output_dir=None
     
     # Create comprehensive documentation
     create_archive_readme(archive_dir, unique_id, config)
-    
+
     print(f"   ✅ Archived: README.md")
+
+    # Create model manifest with checksums
+    from model_traceability import create_model_manifest
+
+    classif_model = f"{archive_dir}/classification_model.pt"
+    ner_model = f"{archive_dir}/ner_model.pt"
+
+    if Path(classif_model).exists() and Path(ner_model).exists():
+        try:
+            manifest_path = create_model_manifest(
+                archive_dir,
+                unique_id,
+                config,
+                classif_model,
+                ner_model
+            )
+            print(f"   ✅ Model manifest created with checksums")
+            archived_count += 1
+        except Exception as e:
+            print(f"   ⚠️ Could not create model manifest: {e}")
+            print(f"   ℹ️  Models archived but traceability limited")
+
     print(f"\n📊 Archive Summary: {archived_count + 2} items archived")
     return archived_count
 

@@ -81,9 +81,9 @@ def load_models_with_traceability(
         training_session_id: str,
         inventory_dir: str,
         target_classif: str,
-        target_ner: str) -> Tuple[str, str]:
+        target_ner: str) -> Tuple[str, str, Dict[str, Any]]:
     """
-    Load models from training archive with full traceability
+    Load models from training archive with full traceability and verification
 
     Args:
         training_session_id: Training session UNIQUE_ID
@@ -92,10 +92,11 @@ def load_models_with_traceability(
         target_ner: Target path for NER model
 
     Returns:
-        Tuple of (model_source, training_session_used)
+        Tuple of (model_source, training_session_used, verification_report)
 
     Raises:
         FileNotFoundError: If training archive or models not found
+        ValueError: If checksum verification fails
     """
     print(f"🔗 Using models from training session: {training_session_id}")
 
@@ -122,8 +123,43 @@ def load_models_with_traceability(
 
     print("✅ Training archive validated")
 
+    # Verify checksums before copying
+    manifest_path = f"{archive_base}/model_manifest.json"
+    verification_report = {}
+
+    if Path(manifest_path).exists():
+        from model_traceability import load_and_verify_models
+
+        print("\n🔐 Verifying model checksums...")
+        try:
+            verified, verification_report = load_and_verify_models(
+                manifest_path,
+                archive_classif,
+                archive_ner,
+                strict=True  # Raise exception on mismatch
+            )
+
+            if verified:
+                print("   ✅ All models verified - integrity confirmed")
+            else:
+                raise ValueError(
+                    "Model checksum verification failed!\n"
+                    "Models may be corrupted. Check verification report."
+                )
+        except FileNotFoundError:
+            print("   ⚠️ No manifest found - skipping checksum verification")
+            print("   ℹ️  Consider regenerating training archive with checksums")
+            verification_report = {'error': 'manifest_not_found'}
+        except Exception as e:
+            print(f"   ❌ Verification error: {e}")
+            raise
+    else:
+        print("   ⚠️ No manifest found - skipping checksum verification")
+        print("   ℹ️  Models from older training run without traceability")
+        verification_report = {'error': 'manifest_not_found'}
+
     # Copy models to working locations
-    print("📋 Copying models to working directory...")
+    print("\n📋 Copying verified models to working directory...")
     shutil.copy2(archive_classif, target_classif)
     shutil.copy2(archive_ner, target_ner)
 
@@ -138,8 +174,9 @@ def load_models_with_traceability(
     print(f"   📁 {target_ner} ({ner_size:.0f}MB)")
     print(f"   Model Source: {model_source}")
     print(f"   Training Session: {training_session_id}")
+    print(f"   Checksum Verified: {'✅ Yes' if verification_report.get('all_verified') else '⚠️ Skipped'}")
 
-    return model_source, training_session_id
+    return model_source, training_session_id, verification_report
 
 
 # ---------------------------------------------------------------------------
@@ -337,6 +374,11 @@ def create_rerun_archive(
         'archive_location': archive_dir,
         'files_archived': archived_count
     })
+
+    # Add model verification record
+    if 'model_traceability' in config and 'verification_report' in config['model_traceability']:
+        enhanced_config['model_verification'] = config['model_traceability']['verification_report']
+        print(f"   ℹ️  Model verification report included in config")
 
     config_path = f"{archive_dir}/config_with_traceability.json"
     with open(config_path, 'w') as f:

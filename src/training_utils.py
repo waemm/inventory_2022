@@ -496,11 +496,12 @@ def create_final_archive(archive_dir, unique_id, config, classif_output_dir=None
             print(f"   ✅ Archived: {Path(dst).name}/")
             archived_count += 1
     
-    # Archive configuration
-    config_path = f"{config['checkpoint_base']}/config.json"
-    if Path(config_path).exists():
-        shutil.copy2(config_path, f"{archive_dir}/training_config.json")
-        print(f"   ✅ Archived: training_config.json")
+    # Archive configuration (if checkpoint_base exists in config)
+    if 'checkpoint_base' in config:
+        config_path = f"{config['checkpoint_base']}/config.json"
+        if Path(config_path).exists():
+            shutil.copy2(config_path, f"{archive_dir}/training_config.json")
+            print(f"   ✅ Archived: training_config.json")
     
     # Create comprehensive documentation
     create_archive_readme(archive_dir, unique_id, config)
@@ -572,15 +573,13 @@ GPU: {torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'CPU'}
 - **ner_test_evaluation/** - Test set evaluation for NER
 
 ### Configuration
-- **training_config.json** - Complete training configuration
 - **README.md** - This documentation file
 
-## Checkpoint System
+## Session Information
 
-This training run used a hybrid checkpointing system:
-- **Checkpoint Location**: {config.get('checkpoint_base', 'Unknown')}
-- **Recovery**: Can resume from any major step if interrupted
-- **Validation**: Configuration compatibility checking
+- **Session ID**: {unique_id}
+- **Test Mode**: {'Yes' if config.get('test_mode', False) else 'No'}
+- **Training Pipeline**: Simplified (no checkpoints)
 
 ## Usage Instructions
 
@@ -602,10 +601,10 @@ These models can be directly used with the existing prediction pipeline:
 
 ---
 
-**Archive Created**: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}  
-**Training Pipeline**: full_training_pipeline_with_checkpoints_clean.ipynb  
+**Archive Created**: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
+**Training Pipeline**: full_training_pipeline_simplified.ipynb
 **Archive Location**: {archive_dir}
-**Checkpoint System**: Hybrid (local + Google Drive)
+**Data Integrity**: No checkpoints - clean linear pipeline
 """
     
     with open(f"{archive_dir}/README.md", "w") as f:

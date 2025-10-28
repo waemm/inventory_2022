@@ -887,6 +887,7 @@ Final Inventory (biodata resources)
 - ✅ **Always prompt user if new branch needed for new work**
 - ✅ **Use descriptive commit messages with context**
 - ✅ **Tag major releases and model updates**
+- ❌ **Do NOT include AI attribution lines** in commit messages (no "Generated with Claude Code" or "Co-Authored-By: Claude")
 
 **Planning Requirements**:
 - ✅ **Always write detailed plans to the `plans/` folder before major work**

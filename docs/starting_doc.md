@@ -200,8 +200,11 @@ NER Model: out/ner_train_out/named_entity_recognition.pt
 ### **Recent Work Documentation**
 - `GBC/inventory_2022/docs/full_training_21_10_25_doc.md` - October 21 training session documentation
 - `GBC/inventory_2022/docs/MODEL_ARCHIVAL_SYSTEM.md` - Model archival system implementation
+- `GBC/inventory_2022/docs/RERUN_NOTEBOOK_SIMPLIFICATION_SUMMARY.md` - Rerun notebook simplification (October 28, 2025)
 - `GBC/inventory_2022/plans/2025-10-22_2022_inventory_rerun_plan.md` - 2022 rerun implementation plan
 - `GBC/inventory_2022/plans/2025-10-23_colab_conversion_plan.md` - Colab notebook conversion plan
+- `GBC/inventory_2022/plans/2025-10-28_rerun_notebook_simplification_plan.md` - Rerun simplification implementation plan
+- `GBC/inventory_2022/plans/2025-10-28_model_traceability_plan.md` - Model traceability implementation plan
 
 ### **Google Colab Notebooks**
 - `GBC/inventory_2022/full_training_pipeline_simplified.ipynb` - Complete training pipeline (simplified, no checkpoints)

@@ -128,7 +128,7 @@ def load_models_with_traceability(
     verification_report = {}
 
     if Path(manifest_path).exists():
-        from model_traceability import load_and_verify_models
+        from src.model_traceability import load_and_verify_models
 
         print("\n🔐 Verifying model checksums...")
         try:

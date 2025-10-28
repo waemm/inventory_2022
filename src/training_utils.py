@@ -509,7 +509,7 @@ def create_final_archive(archive_dir, unique_id, config, classif_output_dir=None
     print(f"   ✅ Archived: README.md")
 
     # Create model manifest with checksums
-    from model_traceability import create_model_manifest
+    from src.model_traceability import create_model_manifest
 
     classif_model = f"{archive_dir}/classification_model.pt"
     ner_model = f"{archive_dir}/ner_model.pt"

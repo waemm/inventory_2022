@@ -96,10 +96,11 @@ export PYTHONPATH="src:$PYTHONPATH"
 ### **Run 2022 Inventory Rerun** (Google Colab)
 ```python
 # Use the Google Colab notebook for streamlined 2022 dataset processing
-# rerun_2022_inventory_with_checkpoints.ipynb
+# rerun_2022_inventory_simplified.ipynb
 # - Configure TRAINING_SESSION_ID for model traceability
 # - Streamlined 5-step pipeline optimized for 21,677 papers
-# - Full/test modes with checkpoint recovery
+# - TEST_MODE toggle for quick testing vs production runs
+# - No checkpoints (eliminates data contamination risk)
 ```
 
 ---
@@ -206,7 +207,8 @@ NER Model: out/ner_train_out/named_entity_recognition.pt
 - `GBC/inventory_2022/full_training_pipeline_simplified.ipynb` - Complete training pipeline (simplified, no checkpoints)
 - `GBC/inventory_2022/full_training_pipeline_with_checkpoints_clean.ipynb` - DEPRECATED - Use simplified version
 - `GBC/inventory_2022/inventory_update_pipeline_with_checkpoints.ipynb` - Inventory update pipeline with model traceability
-- `GBC/inventory_2022/rerun_2022_inventory_with_checkpoints.ipynb` - Streamlined 2022 dataset rerun with model traceability
+- `GBC/inventory_2022/rerun_2022_inventory_simplified.ipynb` - Streamlined 2022 dataset rerun (simplified, no checkpoints)
+- `GBC/inventory_2022/rerun_2022_inventory_with_checkpoints.ipynb.backup` - DEPRECATED - Backup of checkpoint version
 
 ### **Source Code**
 - `GBC/inventory_2022/src/class_train.py` - Classification model training
@@ -357,6 +359,7 @@ ls -la trained_models_25/
 For detailed session-by-session changelog, architecture evolution, and refactoring work, see [`HISTORICAL_UPDATES.md`](HISTORICAL_UPDATES.md).
 
 **Recent Highlights:**
+- ✅ **October 28, 2025**: Rerun notebook simplified - removed checkpoint system for data integrity
 - ✅ **October 28, 2025**: Checkpoint corruption issue resolved - deprecated checkpoint functionality
 - ✅ **October 27, 2025**: PyTorch 2.8 compatibility issue resolved - see [`PYTORCH_CHECKPOINT_FIX.md`](PYTORCH_CHECKPOINT_FIX.md)
 - ✅ **October 24, 2025**: Rerun notebook restructured with reusable utility functions

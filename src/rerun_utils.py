@@ -42,14 +42,6 @@ def validate_rerun_config(config: Dict[str, Any]) -> None:
             "Example: TRAINING_SESSION_ID = '2025-10-23-abc123'"
         )
 
-    # Validate RUN_MODE
-    run_mode = config.get('run_mode', '')
-    if run_mode not in ['full', 'test']:
-        raise ValueError(
-            f"❌ Invalid RUN_MODE: {run_mode}\n"
-            "Must be 'full' or 'test'"
-        )
-
     print("✅ Configuration validation passed")
 
 
@@ -72,14 +64,13 @@ def display_rerun_config(config: Dict[str, Any]) -> None:
     print(f"\n📂 Path Configuration:")
     print(f"   📁 Inventory Directory: {config['inventory_directory']}")
     print(f"   📁 Training Archive: {config['training_archive_base']}")
-    print(f"   📁 Checkpoint Base: {config['checkpoint_base']}")
     print(f"   📁 Results Archive: {config['results_archive_base']}")
 
     print(f"\n📊 Processing Configuration:")
     print(f"   📋 Input Data: {config['input_data']}")
-    print(f"   🔍 Run Mode: {config['run_mode']}")
-    if config['run_mode'] == 'test':
-        print(f"   🧪 Test Subset: {config['test_subset_size']} papers")
+    print(f"   🔍 Test Mode: {config.get('test_mode', False)}")
+    if config.get('test_mode'):
+        print(f"   🧪 Test Subset: {config.get('test_subset_size', 1000)} papers")
     print(f"   🔗 Max URLs: {config['max_urls']}")
 
     print("\n" + "=" * 60)
@@ -173,82 +164,13 @@ def check_local_results(results_path: str) -> Tuple[bool, int]:
 
 
 # ---------------------------------------------------------------------------
-def check_drive_checkpoint(checkpoint_base: str, step_name: str) -> bool:
-    """
-    Check if checkpoint exists in Google Drive
-
-    Args:
-        checkpoint_base: Base checkpoint directory path
-        step_name: Name of the step (e.g., 'classification', 'ner_processing')
-
-    Returns:
-        bool: True if checkpoint exists
-    """
-    checkpoint_path = f"{checkpoint_base}/{step_name}"
-    return Path(checkpoint_path).exists() and len(list(Path(checkpoint_path).glob('*.csv'))) > 0
-
-
+# CHECKPOINT FUNCTIONS REMOVED (2025-10-28)
+# Checkpoint functionality was deprecated after discovering data contamination issues
+# See docs/PYTORCH_CHECKPOINT_FIX.md (Addendum) for details
+# Pipeline runs fast enough (~10-15 minutes) that checkpointing adds unnecessary complexity
 # ---------------------------------------------------------------------------
-def load_step_from_checkpoint(
-        checkpoint_base: str,
-        step_name: str,
-        output_dir: str) -> bool:
-    """
-    Load step results from Google Drive checkpoint
-
-    Args:
-        checkpoint_base: Base checkpoint directory path
-        step_name: Name of the step
-        output_dir: Local output directory to copy files to
-
-    Returns:
-        bool: True if successful
-    """
-    checkpoint_path = f"{checkpoint_base}/{step_name}"
-
-    if not Path(checkpoint_path).exists():
-        return False
-
-    # Copy all CSV files from checkpoint to output directory
-    csv_files = list(Path(checkpoint_path).glob('*.csv'))
-
-    if not csv_files:
-        return False
-
-    Path(output_dir).mkdir(parents=True, exist_ok=True)
-
-    for src_file in csv_files:
-        dst_file = Path(output_dir) / src_file.name
-        shutil.copy2(src_file, dst_file)
-
-    return True
 
 
-# ---------------------------------------------------------------------------
-def save_step_to_checkpoint(
-        checkpoint_base: str,
-        step_name: str,
-        output_dir: str) -> None:
-    """
-    Save step results to Google Drive checkpoint
-
-    Args:
-        checkpoint_base: Base checkpoint directory path
-        step_name: Name of the step
-        output_dir: Local output directory containing files to save
-    """
-    checkpoint_path = f"{checkpoint_base}/{step_name}"
-    Path(checkpoint_path).mkdir(parents=True, exist_ok=True)
-
-    # Copy all CSV files from output directory to checkpoint
-    csv_files = list(Path(output_dir).glob('*.csv'))
-
-    for src_file in csv_files:
-        dst_file = Path(checkpoint_path) / src_file.name
-        shutil.copy2(src_file, dst_file)
-
-
-# ---------------------------------------------------------------------------
 def run_prediction_script(
         script_name: str,
         inventory_dir: str,
@@ -486,7 +408,7 @@ Final Inventory: biodata resources
 
 ### Input Parameters
 - **Input Dataset**: {config['input_data']}
-- **Run Mode**: {config['run_mode']}
+- **Test Mode**: {config.get('test_mode', False)}
 - **Max URLs per Paper**: {config['max_urls']}
 
 ### Pipeline Steps Executed
@@ -531,8 +453,8 @@ ner_results = pd.read_csv('{archive_dir}/ner_results.csv')
 ---
 
 **Archive Created**: {archived_time.strftime('%Y-%m-%d %H:%M:%S')}
-**Pipeline**: rerun_2022_inventory_with_checkpoints.ipynb
-**Checkpoint System**: Hybrid (local + Google Drive)
+**Pipeline**: rerun_2022_inventory_simplified.ipynb
+**Data Integrity**: Fresh run without checkpoints (eliminates contamination risk)
 **Archive Location**: {archive_dir}
 """
 

@@ -1,7 +1,7 @@
 # Biodata Inventory ML Pipeline - AI Agent Reference Guide
 
 **Created**: 2025-10-22
-**Last Updated**: 2025-10-29 (Experimental training infrastructure with enhanced logging complete)
+**Last Updated**: 2025-10-29 (Experimental training infrastructure + Google Drive automation scripts complete)
 **Status**: ✅ **PRODUCTION READY (Local & Colab)** + ✅ **EXPERIMENTAL INFRASTRUCTURE READY**
 **Purpose**: Living document for AI agents working on the biodata inventory ML pipeline
 
@@ -62,8 +62,10 @@ This is a **sophisticated ML pipeline** that uses biomedical BERT models to auto
 - ✅ Established training quality validation checklist
 - ✅ **Experimental infrastructure built** for systematic hyperparameter optimization
 - ✅ **Comprehensive research completed** on modern ML techniques and improvements
+- ✅ **Google Drive automation scripts** for seamless upload/download with audit logging
+- ✅ **Rclone integration** for direct Drive access from AI agents
 
-**Impact**: Production unblocked with V2 models, clear path forward for model improvement established
+**Impact**: Production unblocked with V2 models, clear path forward for model improvement established, automated workflow for Colab experimentation
 
 **For Details**: See [`docs/FINAL_DIAGNOSIS_SUMMARY.md`](FINAL_DIAGNOSIS_SUMMARY.md), [`docs/MODEL_DEGRADATION_ROOT_CAUSE_ANALYSIS.md`](MODEL_DEGRADATION_ROOT_CAUSE_ANALYSIS.md), and [`docs/EXPERIMENTAL_INFRASTRUCTURE_PROGRESS.md`](EXPERIMENTAL_INFRASTRUCTURE_PROGRESS.md)
 
@@ -249,6 +251,47 @@ NER Model: out/original_model/named_entity_recognition.pt
 - 🗂️ Managing experimental training archives
 
 **Reference**: See `docs/RCLONE_USAGE_GUIDE.md` for comprehensive usage rules and examples.
+
+### **🔄 Automated Sync Scripts (NEW - 2025-10-29)**
+
+**Python scripts for automated Google Drive synchronization** - located in project root.
+
+**Available Scripts**:
+
+1. **upload_to_drive.py** - Upload files to Google Drive
+   - Preserves directory structure automatically
+   - MD5 checksum-based change detection (skips unchanged files)
+   - `--force` flag to skip change detection
+   - CSV audit logs in `upload_logs/`
+
+2. **download_from_drive.py** - Download new archives from Google Drive
+   - Configurable archive types (experiment_archives, training_archives, custom)
+   - Only downloads NEW sessions (folder existence check)
+   - `--interactive` mode for confirmation
+   - CSV audit logs in `download_logs/`
+
+**Common Usage**:
+```bash
+# Upload files for Colab testing
+python upload_to_drive.py experimental_training_pipeline.ipynb src/experimental_utils.py
+
+# Download new experimental results
+python download_from_drive.py --archive-type experiment_archives
+
+# Force re-upload
+python upload_to_drive.py --force src/file.py
+
+# Interactive download with confirmation
+python download_from_drive.py --archive-type training_archives --interactive
+```
+
+**When to Use These Scripts**:
+- 📤 Before Colab runs: Upload updated code to Drive
+- 📥 After Colab runs: Download new experimental results for analysis
+- 🔄 Regular sync: Keep local and Drive in sync
+- 📋 Audit trail: All operations logged to CSV with checksums
+
+**Reference**: See `GDRIVE_SYNC_README.md` in project root for complete documentation, examples, and troubleshooting.
 
 ---
 

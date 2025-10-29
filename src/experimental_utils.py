@@ -303,9 +303,16 @@ class ExperimentTracker:
         for exp in self.experiments:
             row = {
                 'experiment_id': exp['experiment_id'],
-                'status': exp['status'],
-                **{f"config_{k}": v for k, v in exp['config'].items()}
+                'status': exp['status']
             }
+
+            # Add config (handles both completed and failed experiments)
+            if 'config' in exp:
+                # Completed experiments have nested config
+                row.update({f"config_{k}": v for k, v in exp['config'].items()})
+            else:
+                # Failed experiments have flattened config_* keys
+                row.update({k: v for k, v in exp.items() if k.startswith('config_')})
 
             if exp['status'] == 'completed':
                 # Classification metrics

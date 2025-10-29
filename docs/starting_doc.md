@@ -1,8 +1,8 @@
 # Biodata Inventory ML Pipeline - AI Agent Reference Guide
 
 **Created**: 2025-10-22
-**Last Updated**: 2025-10-29 (Google Drive access via rclone skill added)
-**Status**: ✅ **PRODUCTION READY (Local & Colab)**
+**Last Updated**: 2025-10-29 (Experimental training infrastructure with enhanced logging complete)
+**Status**: ✅ **PRODUCTION READY (Local & Colab)** + ✅ **EXPERIMENTAL INFRASTRUCTURE READY**
 **Purpose**: Living document for AI agents working on the biodata inventory ML pipeline
 
 ---
@@ -432,6 +432,16 @@ ls -la trained_models_25/
 - ✅ **Session Traceability**: Full lineage from training to inventory processing
 - ✅ **Simplified Workflow**: No directory cleaning or conflict resolution needed
 
+### **Experimental Training Infrastructure** (NEW - 2025-10-29)
+- ✅ **Pre-Flight Checks**: 6-point validation before training (imports, NLTK, model, data, GPU)
+- ✅ **Enhanced Logging**: Complete subprocess output captured to files
+- ✅ **Error Diagnostics**: Full tracebacks saved to error_details.txt files
+- ✅ **Log Archival**: Training logs and error details included in session archives
+- ✅ **Notebook Visibility**: Last 50 lines of training output displayed for quick debugging
+- ✅ **Timeout Protection**: 3600s (1 hour) timeout prevents hung processes
+- ✅ **Intelligent Error Tracking**: References log files in experiment results CSV
+- ✅ **Google Drive Ready**: All updates compatible with Colab/Drive workflow
+
 ### **Immediate Use**
 - ✅ **Run Production Training**: Full 10-epoch training on complete datasets (Google Colab)
 - ✅ **Process New Literature**: Apply models to new EuropePMC queries (Google Colab + Local)
@@ -459,6 +469,9 @@ ls -la trained_models_25/
 For detailed session-by-session changelog, architecture evolution, and refactoring work, see [`HISTORICAL_UPDATES.md`](HISTORICAL_UPDATES.md).
 
 **Recent Highlights:**
+- ✅ **October 29, 2025**: Experimental training infrastructure complete - enhanced logging, pre-flight checks, error diagnostics
+- ✅ **October 29, 2025**: Google Drive access via rclone skill - direct access to experimental archives
+- ✅ **October 29, 2025**: 3-phase model improvement plan - roadmap to NER F1 0.85-0.88 (+15-18%)
 - ✅ **October 28, 2025**: Rerun notebook simplified - removed checkpoint system for data integrity
 - ✅ **October 28, 2025**: Checkpoint corruption issue resolved - deprecated checkpoint functionality
 - ✅ **October 27, 2025**: PyTorch 2.8 compatibility issue resolved - see [`PYTORCH_CHECKPOINT_FIX.md`](PYTORCH_CHECKPOINT_FIX.md)

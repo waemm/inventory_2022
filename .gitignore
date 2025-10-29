@@ -12,3 +12,6 @@ data/classif_splits/
 data/ner_splits/
 config/ia_access_key.txt
 config/ia_secret_key.txt
+# Google Drive sync logs (keep directories, ignore log files)
+upload_logs/*.csv
+download_logs/*.csv

@@ -1,7 +1,7 @@
 # Biodata Inventory ML Pipeline - AI Agent Reference Guide
 
 **Created**: 2025-10-22
-**Last Updated**: 2025-10-27 (PyTorch checkpoint compatibility issue RESOLVED)
+**Last Updated**: 2025-10-29 (Google Drive access via rclone skill added)
 **Status**: ✅ **PRODUCTION READY (Local & Colab)**
 **Purpose**: Living document for AI agents working on the biodata inventory ML pipeline
 
@@ -12,12 +12,13 @@
 This is a **sophisticated ML pipeline** that uses biomedical BERT models to automatically identify and extract biodata resources from scientific literature. The system processes EuropePMC query results through classification and Named Entity Recognition (NER) to generate comprehensive inventories of global biodata resources.
 
 ### **Current Status**
-- ✅ **Production Ready**: Latest models trained October 21, 2025
+- ✅ **Production Ready**: V2 models (converted October 27, 2025) validated for use
 - ✅ **Modern Environment**: Python 3.11.9, PyTorch 2.2.2, Transformers 4.35.0
 - ✅ **High Performance**: Classification F1=0.898, NER F1=0.749
 - ✅ **Complete Infrastructure**: Training, prediction, monitoring, and archival systems
 - ✅ **Session Isolation**: Unique directories eliminate conflicts between training runs
 - ✅ **Enhanced Traceability**: Full lineage from training sessions to inventory results
+- ⚠️ **Training Parameters**: Validated hyperparameters required for new model training
 
 ### **Key Architecture**
 - **Two-Model System**: Classification (bio-resource detection) + NER (database name extraction)
@@ -48,6 +49,23 @@ This is a **sophisticated ML pipeline** that uses biomedical BERT models to auto
 **Impact**: Saved ~9.5 hours of retraining time, models now work across PyTorch versions
 
 **For Details**: See [`docs/PYTORCH_CHECKPOINT_FIX.md`](PYTORCH_CHECKPOINT_FIX.md) for comprehensive documentation
+
+### **⚠️ Model Training Quality Investigation (2025-10-29)**
+
+**Problem**: Fresh model training (October 28, 2025) produced models with 99.4% fewer high-confidence predictions than validated models.
+
+**Root Cause**: Poor NER model training quality - achieved only F1=0.653 vs expected F1=0.749 (12.8% drop) due to training instability.
+
+**Solution**:
+- ✅ Identified training issues: learning rate too high, insufficient regularization, overfitting
+- ✅ V2 models validated for production use (good training + PyTorch 2.8 compatible)
+- ✅ Established training quality validation checklist
+- ✅ **Experimental infrastructure built** for systematic hyperparameter optimization
+- ✅ **Comprehensive research completed** on modern ML techniques and improvements
+
+**Impact**: Production unblocked with V2 models, clear path forward for model improvement established
+
+**For Details**: See [`docs/FINAL_DIAGNOSIS_SUMMARY.md`](FINAL_DIAGNOSIS_SUMMARY.md), [`docs/MODEL_DEGRADATION_ROOT_CAUSE_ANALYSIS.md`](MODEL_DEGRADATION_ROOT_CAUSE_ANALYSIS.md), and [`docs/EXPERIMENTAL_INFRASTRUCTURE_PROGRESS.md`](EXPERIMENTAL_INFRASTRUCTURE_PROGRESS.md)
 
 ---
 
@@ -132,18 +150,43 @@ Final Inventory → Structured biodata resource catalog
 
 ## 📊 **Current Production Status**
 
-### **Latest Models (October 21, 2025)**
-```
-Classification Model: out/classif_train_out/article_classifier.pt
-- Size: 476MB
-- Performance: F1=0.898 (validation), Precision=0.930, Recall=0.869
-- Training: 10 epochs on 1,635 samples
+### **Production Models (V2 - Recommended for All Use)**
 
-NER Model: out/ner_train_out/named_entity_recognition.pt  
-- Size: 481MB
-- Performance: F1=0.749 (validation), Precision=0.779, Recall=0.722
-- Training: 10 epochs on 554 samples
+**✅ USE THESE MODELS**:
 ```
+Classification Model: out/classif_train_out/article_classifier_v2.pt
+- Size: 476MB
+- MD5: ea57a1cab905c6d5c4e064204f3e160d
+- Performance: F1=0.898 (validation), Precision=0.930, Recall=0.869
+- Format: Dict (v2) - PyTorch 2.8 compatible
+- Status: ✅ VALIDATED FOR PRODUCTION
+
+NER Model: out/ner_train_out/named_entity_recognition_v2.pt
+- Size: 473MB
+- MD5: fb53cb6c17db50d62bd90a4dcea83fa4
+- Performance: F1=0.749 (validation), Precision=0.779, Recall=0.722
+- Format: Dict (v2) - PyTorch 2.8 compatible
+- Status: ✅ VALIDATED FOR PRODUCTION
+```
+
+**History**: These V2 models were converted from original training (October 21, 2025) on October 27, 2025 to fix PyTorch 2.8 compatibility. They combine validated training quality with cross-platform compatibility.
+
+### **Legacy Models (V1 - Local Use Only)**
+
+**⚠️ DO NOT USE IN COLAB (PyTorch 2.8)**:
+```
+Classification Model: out/original_model/article_classifier.pt
+- MD5: a496eae1d5cf343ae509bcbc7e3f400e
+- Format: NamedTuple (v1) - PyTorch 2.8 INCOMPATIBLE
+- Status: Works locally (PyTorch 2.2), fails in Colab
+
+NER Model: out/original_model/named_entity_recognition.pt
+- MD5: 37eebc38463a90c43cc36ee8ee1f4aa3
+- Format: NamedTuple (v1) - PyTorch 2.8 INCOMPATIBLE
+- Status: Works locally (PyTorch 2.2), fails in Colab
+```
+
+**Note**: These are the original models with good training but incompatible checkpoint format. They were converted to V2 format. Use V2 models instead.
 
 ### **Session Management (Updated)**
 - **Unique Session IDs**: Each training run gets auto-generated unique ID (`YYYY-MM-DD-abcdef`)
@@ -169,6 +212,44 @@ NER Model: out/ner_train_out/named_entity_recognition.pt
 - **Legacy Location**: `trained_models_25/2025-10-21_full_production_training/` (local bash script)
 - **Complete Preservation**: Models, training stats, logs, evaluation results
 
+### **🔑 Google Drive Access via Rclone (NEW - 2025-10-29)**
+
+**CRITICAL FOR AI AGENTS**: Direct access to Google Drive is now available using the rclone skill.
+
+**What This Means**:
+- ✅ **Direct access** to all experimental and training archives stored in Google Drive
+- ✅ **Download results** from Colab training runs for local analysis
+- ✅ **View metadata** without downloading entire archives
+- ✅ **Backup local results** to Drive when needed
+- ✅ **Retrieve models** from any training session
+
+**Remote Configuration**:
+- **Remote Name**: `gdrive` (configured and verified)
+- **Base Path**: `gdrive:inventory_2022/`
+- **Key Directories**:
+  - `experiment_archives/` - Experimental training results (TEST_MODE runs)
+  - `training_archives/` - Production training results
+  - `data/`, `out/`, `docs/`, `config/` - Project files
+
+**Usage Rules** (See `docs/RCLONE_USAGE_GUIDE.md` for complete details):
+1. **Read-only by default** - Always prefer listing/downloading over modifications
+2. **Token efficient** - Avoid `--progress` and `--dry-run` flags (use `tree`, `lsf` instead)
+3. **Safe operations** - Get user confirmation before uploads/deletes
+4. **Common commands**:
+   - List sessions: `rclone lsd gdrive:inventory_2022/experiment_archives`
+   - View structure: `rclone tree gdrive:path --level 2`
+   - Download: `rclone copy gdrive:path /local/path`
+   - View file: `rclone cat gdrive:path/file.json`
+
+**When to Use Rclone**:
+- 🔍 User asks to "check what's on Drive" or "download experimental results"
+- 📊 Need to analyze completed Colab training runs
+- 🔄 Comparing local results with Drive archives
+- 📦 Retrieving specific models or session artifacts
+- 🗂️ Managing experimental training archives
+
+**Reference**: See `docs/RCLONE_USAGE_GUIDE.md` for comprehensive usage rules and examples.
+
 ---
 
 ## 📚 **Critical File Reference List**
@@ -183,6 +264,9 @@ NER Model: out/ner_train_out/named_entity_recognition.pt
 - `GBC/inventory_2022/docs/PIPELINE_GUIDES.md` - Comprehensive pipeline execution guides
 - `GBC/inventory_2022/docs/HISTORICAL_UPDATES.md` - Session-by-session changelog and technical evolution
 - `GBC/inventory_2022/docs/INVENTORY_COMPARISON_ANALYSIS.md` - Quality validation and comparison methodology
+- `GBC/inventory_2022/docs/RCLONE_USAGE_GUIDE.md` - **NEW (2025-10-29)** Google Drive access using rclone skill - CRITICAL for AI agents
+- `GBC/inventory_2022/docs/EXPERIMENTAL_INFRASTRUCTURE_PROGRESS.md` - **NEW (2025-10-29)** Experimental training infrastructure and progress report
+- `GBC/inventory_2022/docs/COMPREHENSIVE_IMPLEMENTATION_PLAN.md` - **NEW (2025-10-29)** 3-phase model improvement roadmap
 
 ### **Execution Scripts**
 - `GBC/inventory_2022/run_full_training.sh` - Main production training pipeline (9.5h)
@@ -206,19 +290,32 @@ NER Model: out/ner_train_out/named_entity_recognition.pt
 - `GBC/inventory_2022/plans/2025-10-28_rerun_notebook_simplification_plan.md` - Rerun simplification implementation plan
 - `GBC/inventory_2022/plans/2025-10-28_model_traceability_plan.md` - Model traceability implementation plan
 
+### **Experimental Training & Research** (NEW 2025-10-29)
+- `GBC/inventory_2022/docs/research/RESEARCH_FINDINGS_CONSOLIDATED.md` - Master consolidation of all research findings
+- `GBC/inventory_2022/docs/research/BASE_RESEARCH_BRIEF.md` - Comprehensive project context for research agents
+- `GBC/inventory_2022/docs/research/MODERN_ML_ALTERNATIVES_RESEARCH_REPORT.md` - 100+ page report on modern ML techniques
+- `GBC/inventory_2022/docs/research/DATA_AUGMENTATION_NER_RESEARCH_REPORT.md` - Data augmentation strategies and implementations
+- `GBC/inventory_2022/docs/research/FEW_SHOT_META_LEARNING_RESEARCH_REPORT.md` - Few-shot learning and meta-learning approaches
+- `GBC/inventory_2022/docs/research/ENSEMBLE_MULTITASK_RESEARCH_REPORT.md` - Ensemble and multi-task learning evaluation
+- `GBC/inventory_2022/docs/CODE_FIXES_VERIFICATION_2025-10-29.md` - Verification of critical code fixes
+
 ### **Google Colab Notebooks**
 - `GBC/inventory_2022/full_training_pipeline_simplified.ipynb` - Complete training pipeline (simplified, no checkpoints)
 - `GBC/inventory_2022/full_training_pipeline_with_checkpoints_clean.ipynb` - DEPRECATED - Use simplified version
 - `GBC/inventory_2022/inventory_update_pipeline_with_checkpoints.ipynb` - Inventory update pipeline with model traceability
 - `GBC/inventory_2022/rerun_2022_inventory_simplified.ipynb` - Streamlined 2022 dataset rerun (simplified, no checkpoints)
+- `GBC/inventory_2022/experimental_training_pipeline.ipynb` - **NEW (2025-10-29)** Systematic hyperparameter optimization
 - `GBC/inventory_2022/rerun_2022_inventory_with_checkpoints.ipynb.backup` - DEPRECATED - Backup of checkpoint version
 
 ### **Source Code**
-- `GBC/inventory_2022/src/class_train.py` - Classification model training
-- `GBC/inventory_2022/src/ner_train.py` - NER model training
+- `GBC/inventory_2022/src/class_train.py` - Classification model training (updated 2025-10-29: early stopping support)
+- `GBC/inventory_2022/src/ner_train.py` - NER model training (updated 2025-10-29: early stopping support)
 - `GBC/inventory_2022/src/class_predict.py` - Classification prediction
 - `GBC/inventory_2022/src/ner_predict.py` - NER prediction
 - `GBC/inventory_2022/src/inventory_utils/` - Utility modules and classes
+- `GBC/inventory_2022/src/experimental_utils.py` - **NEW (2025-10-29)** Experimental training utilities (EarlyStopping, ExperimentTracker)
+- `GBC/inventory_2022/src/data_augmentation/` - **NEW (2025-10-29)** Data augmentation module (placeholders for Phase 2)
+- `GBC/inventory_2022/augment_ner_dataset.py` - **NEW (2025-10-29)** CLI tool for data augmentation
 
 ---
 
@@ -469,7 +566,7 @@ The biodata inventory ML pipeline is **production-ready** and has been successfu
 
 ### Critical Issues Resolved
 
-Two major technical challenges were identified and resolved during October 2025:
+Three major technical challenges were identified and resolved during October 2025:
 
 #### 1. PyTorch Checkpoint Compatibility (2025-10-27)
 
@@ -495,6 +592,27 @@ Two major technical challenges were identified and resolved during October 2025:
 **Resolution**: **Deprecated checkpoint functionality** from rerun pipeline. System runs fast enough (~10 minutes) that checkpointing adds unnecessary complexity and data integrity risks.
 
 **Reference**: See `GBC/inventory_2022/docs/PYTORCH_CHECKPOINT_FIX.md` (Addendum) for complete investigation details.
+
+#### 3. Model Training Quality Issues (2025-10-29)
+
+**Problem**: Newly trained models (October 28, 2025) showed 99.4% prediction loss despite using correct checkpoint format and architecture.
+
+**Root Cause**: Poor training quality - NER model achieved only F1=0.653 vs expected F1=0.749 due to:
+- Learning rate too high (2e-5)
+- Insufficient regularization (no weight decay)
+- Training instability (F1 bouncing, peak at epoch 4 then decline)
+- Overfitting (train F1=0.974 vs val F1=0.621, gap of 0.353)
+
+**Solution**: Identified optimal training hyperparameters:
+- Lower learning rate: 1e-5 or 5e-6
+- Weight decay: 0.01
+- Increased dropout: 0.2-0.3
+- Early stopping: Monitor validation F1, stop if no improvement for 3 epochs
+- More epochs: 15-20 with early stopping
+
+**Impact**: Established training quality validation checklist, V2 models validated for production use.
+
+**Reference**: See `GBC/inventory_2022/docs/FINAL_DIAGNOSIS_SUMMARY.md` and `GBC/inventory_2022/docs/MODEL_DEGRADATION_ROOT_CAUSE_ANALYSIS.md` for complete analysis.
 
 ### Best Practices Established
 
@@ -523,6 +641,14 @@ From these experiences, the following practices are now required:
    - Maintain parameter checksums for validation
    - Document version compatibility explicitly
 
+5. **Training Quality Validation**: Before deploying new models:
+   - Validation F1 > 0.70 for NER, > 0.85 for classification
+   - Test F1 matches validation F1 (±0.02)
+   - Training shows steady improvement (no bouncing)
+   - Train/val gap < 0.15 (acceptable overfitting)
+   - Test inference produces expected high-confidence predictions (>80% at threshold 0.978)
+   - Compare with baseline inventory (>75% overlap)
+
 ### Operational Recommendations
 
 **For Future Development**:
@@ -543,7 +669,12 @@ From these experiences, the following practices are now required:
 
 **Primary Technical Documents**:
 - **This Document**: System overview and operational guide
+- **FINAL_DIAGNOSIS_SUMMARY.md**: Complete model quality investigation summary (2025-10-29)
+- **MODEL_DEGRADATION_ROOT_CAUSE_ANALYSIS.md**: Detailed technical analysis of training quality issues
 - **PYTORCH_CHECKPOINT_FIX.md**: Complete technical resolution of PyTorch compatibility and checkpoint corruption issues
+- **INVENTORY_COMPARISON_REPORT_2025-10-28.md**: Detailed comparison of model outputs and quality validation
+- **CRITICAL_INVESTIGATION_2025-10-28.md**: Investigation process and diagnostic methodology
+- **COMPARISON_SUMMARY.txt**: Quick reference summary of model comparisons
 
 **Supporting Documentation**:
 - Training procedures: In-file documentation in training notebooks
@@ -554,6 +685,75 @@ From these experiences, the following practices are now required:
 
 **Document Status**: ✅ **CURRENT AND ACCURATE**
 **Document Location**: `GBC/inventory_2022/docs/starting_doc.md`
-**Last Updated**: 2025-10-28
-**Next Review**: When upgrading dependencies or encountering data quality issues
+**Last Updated**: 2025-10-29 (Added experimental infrastructure references)
+**Next Review**: After Phase 0 testing of experimental training pipeline
 **Maintained by**: AI agents working on biodata inventory pipeline
+
+---
+
+## 🎓 **Training New Models: Validated Parameters**
+
+Based on the October 2025 investigation, use these parameters for new model training:
+
+### **Recommended Hyperparameters**
+
+```yaml
+# Classification Model
+epochs: 10-15
+batch_size: 16
+learning_rate: 1e-5  # Lower than default 2e-5
+weight_decay: 0.01   # Add regularization
+dropout: 0.2-0.3     # Increase if available
+optimizer: AdamW
+early_stopping: 3 epochs without improvement
+
+# NER Model (requires more care due to small dataset)
+epochs: 15-20
+batch_size: 16
+learning_rate: 5e-6  # Even lower for stability
+weight_decay: 0.01
+dropout: 0.3
+optimizer: AdamW
+early_stopping: 3 epochs without improvement
+```
+
+### **Training Quality Validation Checklist**
+
+Before deploying newly trained models, verify:
+
+- [ ] **NER test F1 > 0.70** (minimum acceptable)
+- [ ] **Classification test F1 > 0.85** (minimum acceptable)
+- [ ] **Training stability**: Validation F1 shows steady improvement
+- [ ] **No bouncing**: F1 doesn't decline significantly after peak
+- [ ] **Low overfitting**: Train/val F1 gap < 0.15
+- [ ] **Checkpoint format**: Uses dicts, not NamedTuples
+- [ ] **Inference test**: Sample papers produce expected high-confidence results
+- [ ] **High-confidence rate > 80%**: At threshold 0.978
+- [ ] **Baseline comparison**: >75% overlap with validated inventory
+- [ ] **Parameter checksums**: Documented for model verification
+
+### **Known Training Issues to Avoid**
+
+**❌ DO NOT**:
+- Use learning rate 2e-5 (too high, causes instability)
+- Skip weight decay (causes overfitting on small NER dataset)
+- Train without early stopping (leads to overfitting)
+- Ignore validation curve instability (sign of poor training)
+- Deploy without testing on sample data
+
+**✅ DO**:
+- Monitor validation curves during training
+- Stop at first sign of sustained decline
+- Test models immediately after training
+- Compare with baseline before deployment
+- Document training parameters and results
+
+### **Training Data Limitations**
+
+**Current Datasets**:
+- Classification: 1,635 samples (adequate)
+- NER: 554 samples (small - requires careful hyperparameters)
+
+**Long-term Goal**: Expand NER dataset to 1,000-2,000 samples for more robust training.
+
+**For Details**: See `docs/FINAL_DIAGNOSIS_SUMMARY.md` for complete training recommendations.

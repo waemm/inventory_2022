@@ -29,11 +29,13 @@ class Args(NamedTuple):
     `outdir`: Output directory
     `splits`: Train, val, test proportions
     `seed`: Random seed
+    `augmented`: Whether to use augmented dataset
     """
     infile: TextIO
     outdir: str
     splits: List[float]
     seed: bool
+    augmented: bool
 
 
 # ---------------------------------------------------------------------------
@@ -78,13 +80,26 @@ def get_args() -> Args:
                         '--seed',
                         action='store_true',
                         help='Set random seed')
+    parser.add_argument('--augmented',
+                        action='store_true',
+                        help='Use augmented NER dataset for training')
 
     args = parser.parse_args()
 
     if not sum(args.splits) == 1.0:
         parser.error(f'--splits {args.splits} must sum to 1')
 
-    return Args(args.infile, args.out_dir, args.splits, args.seed)
+    # If augmented flag is set, override infile with augmented dataset
+    if args.augmented:
+        augmented_path = 'data/manual_ner_extraction_augmented.csv'
+        if os.path.exists(augmented_path):
+            print(f'Using augmented dataset: {augmented_path}')
+            args.infile = open(augmented_path, 'rt', encoding='ISO-8859-1')
+        else:
+            parser.error(f'Augmented dataset not found: {augmented_path}. '
+                        'Run augment_ner_dataset.py first to generate augmented data.')
+
+    return Args(args.infile, args.out_dir, args.splits, args.seed, args.augmented)
 
 
 # ---------------------------------------------------------------------------

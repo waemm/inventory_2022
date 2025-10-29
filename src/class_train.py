@@ -7,7 +7,7 @@ Authors: Ana-Maria Istrate and Kenneth Schackart
 import argparse
 import copy
 import os
-from typing import Any, List, NamedTuple, TextIO, Tuple
+from typing import Any, List, NamedTuple, Optional, TextIO, Tuple
 
 import pandas as pd
 import torch
@@ -24,6 +24,12 @@ from inventory_utils.custom_classes import (CustomHelpFormatter, Metrics,
 from inventory_utils.filing import make_filenames, save_model, save_train_stats
 from inventory_utils.metrics import get_classif_metrics
 from inventory_utils.runtime import set_random_seed
+
+# FIX C1: Import with fallback for different Python path configurations
+try:
+    from experimental_utils import EarlyStopping
+except ImportError:
+    from src.experimental_utils import EarlyStopping
 
 
 # ---------------------------------------------------------------------------
@@ -45,6 +51,9 @@ class Args(NamedTuple):
     batch_size: int
     lr_scheduler: bool
     seed: bool
+    early_stopping: bool
+    patience: int
+    dropout: Optional[float]
 
 
 # ---------------------------------------------------------------------------
@@ -159,6 +168,20 @@ def get_args():
                                 '--seed',
                                 action='store_true',
                                 help='Set random seed')
+    runtime_params.add_argument('--early-stopping',
+                                action='store_true',
+                                help='Enable early stopping based on validation F1')
+    runtime_params.add_argument('--patience',
+                                metavar='INT',
+                                type=int,
+                                default=3,
+                                help='Early stopping patience (epochs)')
+
+    model_params.add_argument('--dropout',
+                              metavar='NUM',
+                              type=float,
+                              default=None,
+                              help='Dropout rate override (optional)')
 
     args = parser.parse_args()
 
@@ -166,18 +189,25 @@ def get_args():
                 args.predictive_field, args.labels_field,
                 args.descriptive_labels, args.model_name, args.max_len,
                 args.learning_rate, args.weight_decay, args.num_training,
-                args.num_epochs, args.batch_size, args.lr_scheduler, args.seed)
+                args.num_epochs, args.batch_size, args.lr_scheduler, args.seed,
+                args.early_stopping, args.patience, args.dropout)
 
 
 # ---------------------------------------------------------------------------
 def train(settings: Settings,
-          crit_metric: str) -> Tuple[Any, pd.DataFrame, Metrics, Metrics]:
+          crit_metric: str,
+          early_stopping_enabled: bool = False,
+          patience: int = 3,
+          out_dir: str = 'out/') -> Tuple[Any, pd.DataFrame, Metrics, Metrics]:
     """
     Train the classifier
 
     Parameters:
     `settings`: Model settings (NamedTuple)
     `crit_metric`: Metric used for selecting best epoch
+    `early_stopping_enabled`: Whether to use early stopping
+    `patience`: Early stopping patience
+    `out_dir`: Output directory for checkpoints
 
     Return: Tuple of best model, training stats dataframe, train_metrics,
     and validation_metrics
@@ -193,6 +223,12 @@ def train(settings: Settings,
     best_val = Metrics(0, 0, 0, 0)
     best_train = Metrics(0, 0, 0, 0)
     model.train()
+
+    # Initialize early stopping if enabled
+    early_stopper = None
+    if early_stopping_enabled:
+        early_stopper = EarlyStopping(patience=patience, output_dir=out_dir)
+        print(f'Early stopping enabled with patience={patience}')
 
     for epoch in range(settings.num_epochs):
 
@@ -233,6 +269,35 @@ def train(settings: Settings,
               f'Val Precision: {val_metrics.precision:.3f}\n'
               f'Val Recall: {val_metrics.recall:.3f}\n'
               f'Val F1: {val_metrics.f1:.3f}')
+
+        # Check early stopping
+        if early_stopper and early_stopper(epoch, val_metrics.f1, model):
+            print(f'\nEarly stopping triggered at epoch {epoch + 1}')
+            summary = early_stopper.get_summary()
+            print(f"Best epoch: {summary['best_epoch'] + 1}")
+            print(f"Best val F1: {summary['best_score']:.4f}")
+            print(f"Stop reason: {summary['stop_reason']}")
+
+            # FIX C2: Load best model from checkpoint file instead of using reference
+            # Find the checkpoint file that was saved for the best epoch
+            from pathlib import Path
+            checkpoint_dir = Path(out_dir)
+            # Look for checkpoint matching best epoch pattern
+            best_epoch = summary['best_epoch']
+            best_score = summary['best_score']
+            checkpoint_pattern = f"best_model_epoch{best_epoch}_f1{best_score:.4f}.pt"
+            checkpoint_path = checkpoint_dir / checkpoint_pattern
+
+            if checkpoint_path.exists():
+                model.load_state_dict(torch.load(checkpoint_path, map_location=settings.device))
+                best_model = copy.deepcopy(model)
+                print(f"Loaded best model from checkpoint: {checkpoint_path}")
+            else:
+                print(f"Warning: Checkpoint {checkpoint_path} not found, using current model state")
+                best_model = copy.deepcopy(model)
+            break
+
+        model.train()
 
     print('Finished model training!')
     print('=' * 30)
@@ -373,7 +438,7 @@ def main() -> None:
     print('=' * 30)
 
     model, train_stats_df, train_metrics, val_metrics = train(
-        settings, args.metric)
+        settings, args.metric, args.early_stopping, args.patience, out_dir)
     train_stats_df['model_name'] = model_name
 
     checkpt_filename, train_stats_filename = make_filenames(out_dir)

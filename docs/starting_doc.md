@@ -1,8 +1,8 @@
 # Biodata Inventory ML Pipeline - AI Agent Reference Guide
 
 **Created**: 2025-10-22
-**Last Updated**: 2025-10-29 (Experimental training infrastructure + Google Drive automation scripts complete)
-**Status**: ✅ **PRODUCTION READY (Local & Colab)** + ✅ **EXPERIMENTAL INFRASTRUCTURE READY**
+**Last Updated**: 2025-10-29 (First experimental run completed - infrastructure validated, data configuration issue identified)
+**Status**: ✅ **PRODUCTION READY (Local & Colab)** + ✅ **EXPERIMENTAL INFRASTRUCTURE VALIDATED**
 **Purpose**: Living document for AI agents working on the biodata inventory ML pipeline
 
 ---
@@ -64,10 +64,11 @@ This is a **sophisticated ML pipeline** that uses biomedical BERT models to auto
 - ✅ **Comprehensive research completed** on modern ML techniques and improvements
 - ✅ **Google Drive automation scripts** for seamless upload/download with audit logging
 - ✅ **Rclone integration** for direct Drive access from AI agents
+- ✅ **First full experimental run completed** (2025-10-29) - 4 experiments, infrastructure validated
 
-**Impact**: Production unblocked with V2 models, clear path forward for model improvement established, automated workflow for Colab experimentation
+**Impact**: Production unblocked with V2 models, clear path forward for model improvement established, automated workflow for Colab experimentation fully operational
 
-**For Details**: See [`docs/FINAL_DIAGNOSIS_SUMMARY.md`](FINAL_DIAGNOSIS_SUMMARY.md), [`docs/MODEL_DEGRADATION_ROOT_CAUSE_ANALYSIS.md`](MODEL_DEGRADATION_ROOT_CAUSE_ANALYSIS.md), and [`docs/EXPERIMENTAL_INFRASTRUCTURE_PROGRESS.md`](EXPERIMENTAL_INFRASTRUCTURE_PROGRESS.md)
+**For Details**: See [`docs/FINAL_DIAGNOSIS_SUMMARY.md`](FINAL_DIAGNOSIS_SUMMARY.md), [`docs/MODEL_DEGRADATION_ROOT_CAUSE_ANALYSIS.md`](MODEL_DEGRADATION_ROOT_CAUSE_ANALYSIS.md), [`docs/EXPERIMENTAL_INFRASTRUCTURE_PROGRESS.md`](EXPERIMENTAL_INFRASTRUCTURE_PROGRESS.md), and [`docs/EXPERIMENTAL_SESSION_ANALYSIS_2025-10-29.md`](EXPERIMENTAL_SESSION_ANALYSIS_2025-10-29.md)
 
 ---
 
@@ -342,12 +343,20 @@ python download_from_drive.py --archive-type training_archives --interactive
 - `GBC/inventory_2022/docs/research/ENSEMBLE_MULTITASK_RESEARCH_REPORT.md` - Ensemble and multi-task learning evaluation
 - `GBC/inventory_2022/docs/CODE_FIXES_VERIFICATION_2025-10-29.md` - Verification of critical code fixes
 
+### **Experimental Training Analysis** (NEW 2025-10-29)
+- `GBC/inventory_2022/docs/EXPERIMENTAL_SESSION_ANALYSIS_2025-10-29.md` - **Complete analysis of first full experimental run**
+  - Session 2025-10-29-4lblwv: 4 experiments, 53 minutes total
+  - Infrastructure validation: ✅ All systems operational
+  - Performance results: Classification F1=0.882, NER F1=0.630 (best configurations)
+  - Root cause analysis: Data split inconsistency vs production baseline
+  - Recommendations for next experimental run
+
 ### **Google Colab Notebooks**
+- `GBC/inventory_2022/experimental_training_pipeline.ipynb` - **NEW (2025-10-29)** Automated experimental training with hyperparameter optimization
 - `GBC/inventory_2022/full_training_pipeline_simplified.ipynb` - Complete training pipeline (simplified, no checkpoints)
 - `GBC/inventory_2022/full_training_pipeline_with_checkpoints_clean.ipynb` - DEPRECATED - Use simplified version
 - `GBC/inventory_2022/inventory_update_pipeline_with_checkpoints.ipynb` - Inventory update pipeline with model traceability
 - `GBC/inventory_2022/rerun_2022_inventory_simplified.ipynb` - Streamlined 2022 dataset rerun (simplified, no checkpoints)
-- `GBC/inventory_2022/experimental_training_pipeline.ipynb` - **NEW (2025-10-29)** Systematic hyperparameter optimization
 - `GBC/inventory_2022/rerun_2022_inventory_with_checkpoints.ipynb.backup` - DEPRECATED - Backup of checkpoint version
 
 ### **Source Code**
@@ -512,7 +521,15 @@ ls -la trained_models_25/
 For detailed session-by-session changelog, architecture evolution, and refactoring work, see [`HISTORICAL_UPDATES.md`](HISTORICAL_UPDATES.md).
 
 **Recent Highlights:**
+- ✅ **October 29, 2025**: **First full experimental run completed** (session 2025-10-29-4lblwv)
+  - All 4 experiments successful (53 minutes total)
+  - Infrastructure 100% validated: logging, tracking, archival all operational
+  - Results: Classification F1=0.882, NER F1=0.630 (best configs)
+  - Issue identified: Data split inconsistency prevents baseline comparison
+  - **Action required**: Fix splits to use production data before next run
+  - See [`EXPERIMENTAL_RESULTS_COMPREHENSIVE_2025-10-29.md`](EXPERIMENTAL_RESULTS_COMPREHENSIVE_2025-10-29.md) and [`EXPERIMENTAL_SESSION_ANALYSIS_2025-10-29.md`](EXPERIMENTAL_SESSION_ANALYSIS_2025-10-29.md)
 - ✅ **October 29, 2025**: Experimental training infrastructure complete - enhanced logging, pre-flight checks, error diagnostics
+- ✅ **October 29, 2025**: Google Drive sync scripts operational - upload_to_drive.py, download_from_drive.py with MD5 checking
 - ✅ **October 29, 2025**: Google Drive access via rclone skill - direct access to experimental archives
 - ✅ **October 29, 2025**: 3-phase model improvement plan - roadmap to NER F1 0.85-0.88 (+15-18%)
 - ✅ **October 28, 2025**: Rerun notebook simplified - removed checkpoint system for data integrity

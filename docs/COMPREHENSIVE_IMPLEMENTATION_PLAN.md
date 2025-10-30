@@ -1,8 +1,64 @@
 # Comprehensive Implementation Plan: Build Higher-Quality Models
 
 **Date Created**: 2025-10-29
-**Status**: Ready for Review and Execution
+**Last Updated**: 2025-10-30
+**Status**: ⚠️ BLOCKED - Phase 1 requires V2 configuration investigation
 **Goal**: Build new models with quality ≥ V2 (Classification F1≥0.898, NER F1≥0.749)
+
+---
+
+## ⚠️ CRITICAL UPDATE (2025-10-30): Multi-Model Comparison Results
+
+**Session**: 2025-10-30-p9rat5 (4 models, 64 minutes)
+
+**BLOCKING ISSUE DISCOVERED**: All tested models significantly underperform V2 NER baseline despite:
+- ✅ Fixed production data splits (data/classif_splits_full, data/ner_splits_full)
+- ✅ Validated optimal hyperparameters (classif_lr=1e-5, ner_lr=5e-5)
+- ✅ Modern biomedical models (BioLinkBERT, PubMedBERT, SciBERT)
+- ✅ Improved training configuration (epochs=15, patience=5)
+
+**Results Summary**:
+
+| Model | Classification F1 | vs V2 | NER F1 | vs V2 | Status |
+|-------|------------------|-------|--------|-------|--------|
+| V2 Baseline | 0.898 | - | 0.749 | - | Production |
+| PubMedBERT | 0.917 | +2.1% ✅ | 0.635 | -15.2% ❌ | Best Classification |
+| Original (allenai/dsp_roberta) | 0.879 | -2.1% | 0.670 | -10.5% ❌ | Best NER |
+| BioLinkBERT | 0.893 | -0.6% | 0.656 | -12.4% ❌ | SOTA Model |
+| SciBERT | 0.893 | -0.6% | 0.630 | -15.9% ❌ | Lightweight |
+
+**Classification Performance**: ✅ EXCEEDS TARGET
+- PubMedBERT achieved F1=0.917 (+2.1% vs V2)
+- Demonstrates infrastructure and data splits are working correctly
+- All models competitive with V2 baseline
+
+**NER Performance**: ❌ CRITICAL GAP
+- Best model: F1=0.670 (original allenai/dsp_roberta)
+- **10.5% below V2 baseline** (0.749)
+- **All models 10-16% below baseline**
+- Phase 1 target (F1 ≥ 0.80) not achieved
+
+**Root Cause Hypotheses**:
+1. **V2 Training Configuration Unknown**: Actual V2 hyperparameters likely differ from current assumptions
+2. **Learning Rate Mismatch**: Experimental LRs may not be optimal for production splits
+3. **Early Stopping Too Aggressive**: Patience=5 may stop before NER convergence
+4. **Training Duration**: V2 may have trained longer than 15 epochs
+5. **Unknown V2 Optimizations**: V2 may use different weight decay, dropout, or other settings
+
+**IMMEDIATE ACTION REQUIRED**:
+- 🔍 **CRITICAL**: Locate V2 actual training configuration from October 21, 2025 archives
+- 📊 Review training curves from session 2025-10-30-p9rat5 to understand convergence
+- 🧪 Run test set evaluation to verify validation metrics
+- 🔄 Plan learning rate sweep with production splits if V2 config not found
+- 📝 Document V2 actual parameters once found
+
+**Phase 1 Status**: ⚠️ BLOCKED
+- Cannot proceed with Phase 1 until V2 baseline performance is matched
+- Infrastructure validated (classification results prove this)
+- Data quality validated (using same production splits as V2)
+- **Must identify what V2 used that we're missing**
+
+**For Complete Analysis**: See `docs/MULTI_MODEL_RESULTS_2025-10-30.md`
 
 ---
 
@@ -54,16 +110,24 @@ Comprehensive research by 4 specialized AI agents identified:
 
 ### Expected Outcomes
 
-| Phase | Timeline | NER F1 | Classification F1 | Key Actions |
-|-------|----------|--------|-------------------|-------------|
-| **Current (V2)** | - | 0.749 | 0.898 | Production baseline |
-| **Phase 1** | Week 1 | 0.80-0.82 | 0.91-0.93 | Fix hyperparameters, modern model |
-| **Phase 2** | Weeks 2-3 | 0.85-0.87 | 0.93-0.95 | Data augmentation, TAPT |
-| **Phase 3** | Weeks 4-6 | 0.86-0.88 | 0.93-0.95 | Self-training, advanced |
-| **Conservative** | - | **0.85+** | **0.92+** | +13% NER, +2% Classification |
-| **Optimistic** | - | **0.88+** | **0.95+** | +18% NER, +6% Classification |
+**⚠️ UPDATE (2025-10-30)**: Phase 1 blocked by NER baseline gap. Must match V2 baseline (0.749) before proceeding.
 
-**Confidence Level**: 75% for Phase 1-2, 60% for Phase 3
+| Phase | Timeline | NER F1 | Classification F1 | Key Actions | Status |
+|-------|----------|--------|-------------------|-------------|--------|
+| **Current (V2)** | - | 0.749 | 0.898 | Production baseline | ✅ |
+| **Phase 0** | Week 0 | **0.749** | **0.92** | **Match V2, find config** | ⚠️ REQUIRED |
+| **Phase 1** | Week 1 | 0.80-0.82 | 0.91-0.93 | Fix hyperparameters, modern model | BLOCKED |
+| **Phase 2** | Weeks 2-3 | 0.85-0.87 | 0.93-0.95 | Data augmentation, TAPT | BLOCKED |
+| **Phase 3** | Weeks 4-6 | 0.86-0.88 | 0.93-0.95 | Self-training, advanced | BLOCKED |
+| **Conservative** | - | **0.85+** | **0.92+** | +13% NER, +2% Classification | Pending Phase 0 |
+| **Optimistic** | - | **0.88+** | **0.95+** | +18% NER, +6% Classification | Pending Phase 0 |
+
+**Confidence Level**:
+- **Phase 0**: CRITICAL - Must complete before any progress
+- Phase 1-2: 75% (if Phase 0 successful)
+- Phase 3: 60% (if Phase 0 successful)
+
+**Current Challenge**: Latest experimental run (2025-10-30-p9rat5) achieved only NER F1=0.670 with optimal hyperparameters and modern models. All 4 tested models underperformed V2 baseline by 10-16%. Investigation required to identify V2's actual training configuration.
 
 ### Investment Required
 
@@ -203,7 +267,14 @@ All research agents (Modern ML, Data Augmentation, Few-Shot Learning, Ensemble/M
 
 ### Overview
 
+**⚠️ UPDATED (2025-10-30)**: Phase 0 inserted as critical prerequisite
+
 ```
+Phase 0 (Week 0 - CRITICAL)
+  ↓ Test: Can we match V2 baseline (NER F1 = 0.749)?
+  ├─ YES → Proceed to Phase 1
+  └─ NO → Continue investigation, cannot proceed
+
 Phase 1 (Week 1)
   ↓ Test: Is NER F1 ≥ 0.80?
   ├─ YES → Proceed to Phase 2
@@ -224,19 +295,178 @@ Decision: Stop if target (F1 ≥ 0.749) achieved
 
 ### Timeline Summary
 
-| Week | Phase | Focus | Expected NER F1 | Hours |
-|------|-------|-------|----------------|-------|
-| 1 | Phase 1 | Hyperparameters + Modern Model | 0.80-0.82 | 20-25 |
-| 2-3 | Phase 2 | Data Aug + TAPT | 0.85-0.87 | 30-40 |
-| 4-6 | Phase 3 | Self-Training + Advanced | 0.86-0.88 | 25-35 |
-| **Total** | - | - | **0.85-0.88** | **75-100** |
+**⚠️ UPDATED (2025-10-30)**: Phase 0 added
+
+| Week | Phase | Focus | Expected NER F1 | Hours | Status |
+|------|-------|-------|----------------|-------|--------|
+| **0** | **Phase 0** | **V2 Config Investigation** | **0.749** | **8-16** | ⚠️ REQUIRED |
+| 1 | Phase 1 | Hyperparameters + Modern Model | 0.80-0.82 | 20-25 | BLOCKED |
+| 2-3 | Phase 2 | Data Aug + TAPT | 0.85-0.87 | 30-40 | BLOCKED |
+| 4-6 | Phase 3 | Self-Training + Advanced | 0.86-0.88 | 25-35 | BLOCKED |
+| **Total** | - | - | **0.85-0.88** | **83-116** | - |
+
+---
+
+## Phase 0: V2 Baseline Investigation (Week 0 - CRITICAL)
+
+**⚠️ ADDED (2025-10-30)**: Critical prerequisite before Phase 1 can proceed
+
+### Goal
+Match V2 baseline performance (NER F1 = 0.749, Classification F1 = 0.898) by identifying and replicating V2's actual training configuration.
+
+### Status
+**BLOCKING**: Latest experimental run (2025-10-30-p9rat5) achieved only NER F1=0.670 (-10.5% vs V2) despite:
+- ✅ Fixed production data splits
+- ✅ Validated optimal hyperparameters
+- ✅ Modern biomedical models
+- ✅ Improved training configuration
+
+**Problem**: We don't know V2's actual training hyperparameters. Current assumptions appear incorrect.
+
+### Tasks
+
+#### Day 0.1: Locate V2 Training Configuration (2-4 hours)
+
+**0.1.1 Search October 21 Training Archives** (1 hour)
+- Check `trained_models_25/2025-10-21_full_production_training/`
+- Look for training logs with hyperparameters
+- Check for config files used during training
+- Search for stdout/stderr logs with training parameters
+- **Deliverable**: V2 actual hyperparameters documented
+
+**0.1.2 Review Local Training Logs** (1 hour)
+- Check `logs/` directory for October 21 logs
+- Search for `full_training_*.log` files
+- Look for parameter specifications in bash scripts
+- Check git history for config changes around October 21
+- **Deliverable**: Complete V2 training configuration
+
+**0.1.3 Analyze V2 Model Checkpoints** (1-2 hours)
+- Load V2 models and inspect optimizer state
+- Check for weight decay, dropout values embedded in model
+- Compare model architecture with current experimental setup
+- Look for any training state information preserved
+- **Deliverable**: V2 optimization settings
+
+#### Day 0.2: Analyze Training Curves (2-3 hours)
+
+**0.2.1 Review Session 2025-10-30-p9rat5 Curves** (1 hour)
+- Download training curves from Google Drive
+- Analyze convergence patterns for all 4 models
+- Identify early stopping points and best epochs
+- Compare classification vs NER convergence behavior
+- **Deliverable**: Convergence analysis report
+
+**0.2.2 Compare with V2 Training Patterns** (1-2 hours)
+- If V2 training curves available, compare side-by-side
+- Look for differences in learning dynamics
+- Identify if NER training was stable or unstable
+- Check if V2 trained beyond 15 epochs
+- **Deliverable**: Training pattern comparison
+
+#### Day 0.3: Test Set Validation (2-3 hours)
+
+**0.3.1 Run Test Set Evaluation** (1-2 hours)
+- Evaluate session 2025-10-30-p9rat5 models on test set
+- Compare validation F1 vs test F1 for all 4 models
+- Verify metrics are consistent (rule out validation set issues)
+- Check if test set performance also below V2 baseline
+- **Deliverable**: Test set metrics for all models
+
+**0.3.2 Verify V2 Test Set Performance** (1 hour)
+- Load V2 models and evaluate on same test set
+- Confirm V2 achieves expected test F1 (0.749 NER, 0.898 classif)
+- Rule out data split issues
+- **Deliverable**: V2 test set confirmation
+
+#### Day 0.4: Reproduce V2 Configuration (2-4 hours)
+
+**0.4.1 Configure Exact V2 Parameters** (1 hour)
+- Update experimental_training_pipeline.ipynb with V2 config
+- Use exact same hyperparameters as V2
+- Use exact same model (allenai/dsp_roberta_base_dapt_biomed_tapt_rct_500)
+- Use production data splits (already done)
+- **Deliverable**: V2 configuration experiment setup
+
+**0.4.2 Run V2 Reproduction Experiment** (1-2 hours training)
+- Execute single experiment with V2 exact configuration
+- Monitor training progress
+- Compare results with V2 baseline
+- **Deliverable**: V2 reproduction results
+
+**0.4.3 Analyze Reproduction Results** (1 hour)
+- Compare reproduction vs V2 baseline
+- If matched: Phase 0 complete, proceed to Phase 1
+- If not matched: Continue investigation
+- **Deliverable**: Go/No-Go decision for Phase 1
+
+### Success Criteria
+
+**Minimum Acceptable**:
+- ✅ V2 configuration documented (hyperparameters, training details)
+- ✅ Training curves analyzed and understood
+- ✅ Test set validation confirms V2 baseline
+
+**Ideal Outcome**:
+- ✅ V2 configuration reproduced exactly
+- ✅ Reproduction achieves NER F1 ≥ 0.745 (within 0.5% of V2)
+- ✅ Clear understanding of what V2 used vs current experimental approach
+- ✅ Phase 1 can proceed with confidence
+
+**If Phase 0 Fails** (V2 config not found):
+- Plan alternative: Learning rate sweep on production splits
+- Test wider range: classif_lr = [5e-6, 1e-5, 2e-5, 3e-5]
+- Test wider range: ner_lr = [2e-5, 5e-5, 8e-5, 1e-4]
+- May require 8-16 experiments (3-4 hours)
+
+### Expected Timeline
+
+**Best Case** (V2 config found): 1 day (8 hours)
+- Day 0.1-0.2: Find config and analyze (4-6 hours)
+- Day 0.3: Test validation (2-3 hours)
+- Day 0.4: Skip or quick verification
+
+**Likely Case** (V2 config found, needs reproduction): 2 days (12-16 hours)
+- Day 0.1-0.2: Investigation (4-7 hours)
+- Day 0.3: Validation (2-3 hours)
+- Day 0.4: Reproduction run (2-4 hours + 1-2 hours training)
+
+**Worst Case** (V2 config not found): 3-4 days (16-24 hours)
+- Day 0.1-0.3: Thorough investigation (8-12 hours)
+- Day 0.4: Learning rate sweep experiments (8-12 hours including training)
+
+### Deliverables
+
+- [ ] V2 training configuration document
+- [ ] Training curves analysis report
+- [ ] Test set validation results
+- [ ] V2 reproduction experiment results (if applicable)
+- [ ] Go/No-Go decision for Phase 1
+
+### Next Steps
+
+**If Phase 0 Successful**:
+- Document V2 configuration as new baseline
+- Proceed to Phase 1 with confidence
+- Use V2 config as starting point for optimization
+
+**If Phase 0 Unsuccessful**:
+- Conduct learning rate sweep on production splits
+- Consider alternative investigation approaches
+- May need to revise Phase 1 expectations
 
 ---
 
 ## Phase 1: Quick Wins (Week 1)
 
+**⚠️ STATUS**: BLOCKED until Phase 0 complete
+
 ### Goal
 Achieve NER F1 ≥ 0.80 (+7% from 0.749) with minimal implementation effort.
+
+### Prerequisites
+- ✅ Phase 0 complete (V2 baseline matched)
+- ✅ V2 training configuration documented
 
 ### Tasks
 

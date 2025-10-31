@@ -111,31 +111,130 @@ def test_make_filenames() -> None:
 # ---------------------------------------------------------------------------
 def clean_results(results: List[dict]) -> pd.DataFrame:
     """
-    Retrieve the PMIDs, titles, and abstracts from results of query
+    Retrieve enhanced metadata from results of query
 
     Parameters:
     `results`: JSON-encoded response (nested dictionary)
 
-    Return: Dataframe of results
+    Return: Dataframe of results with 24 metadata fields
     """
+    import json
 
-    pmids = []
-    titles = []
-    abstracts = []
-    dates = []
+    records = []
     for page in results:
         for paper in page.get('resultList').get('result'):  # type: ignore
-            pmids.append(paper.get('pmid'))
-            titles.append(paper.get('title'))
-            abstracts.append(paper.get('abstractText'))
-            dates.append(paper.get('firstPublicationDate'))
+            # Extract all enhanced metadata fields
+            record = {
+                # Core fields (original 4)
+                'id': paper.get('pmid'),
+                'title': paper.get('title'),
+                'abstract': paper.get('abstractText'),
+                'publication_date': paper.get('firstPublicationDate'),
 
-    return pd.DataFrame({
-        'id': pmids,
-        'title': titles,
-        'abstract': abstracts,
-        'publication_date': dates
-    })
+                # Boolean flags (Tier 1 - 8 fields)
+                'hasDbCrossReferences': paper.get('hasDbCrossReferences'),
+                'hasData': paper.get('hasData'),
+                'hasSuppl': paper.get('hasSuppl'),
+                'isOpenAccess': paper.get('isOpenAccess'),
+                'inPMC': paper.get('inPMC'),
+                'inEPMC': paper.get('inEPMC'),
+                'hasPDF': paper.get('hasPDF'),
+                'hasBook': paper.get('hasBook'),
+
+                # Citation data
+                'citedByCount': paper.get('citedByCount'),
+
+                # Temporal (extract year)
+                'pubYear': paper.get('pubYear'),
+
+                # Publication type
+                'pubType': _extract_pub_type(paper.get('pubTypeList')),
+
+                # Enhanced features (Tier 2)
+                'keywords': _extract_keywords(paper.get('keywordList')),
+                'meshTerms': _extract_mesh_terms(paper.get('meshHeadingList')),
+                'journalTitle': _extract_journal_title(paper.get('journalInfo')),
+                'journalISSN': _extract_journal_issn(paper.get('journalInfo')),
+                'authorAffiliations': _extract_author_affiliations(paper.get('authorList')),
+            }
+            records.append(record)
+
+    return pd.DataFrame(records)
+
+
+# Helper functions for metadata extraction
+def _extract_pub_type(pub_type_list):
+    """Extract publication type"""
+    if not pub_type_list:
+        return None
+    pub_types = pub_type_list.get('pubType', [])
+    if pub_types:
+        import json
+        return json.dumps(pub_types)
+    return None
+
+
+def _extract_keywords(keyword_list):
+    """Extract keywords"""
+    if not keyword_list:
+        return None
+    keywords = keyword_list.get('keyword', [])
+    if keywords:
+        import json
+        return json.dumps(keywords)
+    return None
+
+
+def _extract_mesh_terms(mesh_heading_list):
+    """Extract MeSH terms"""
+    if not mesh_heading_list:
+        return None
+    mesh_headings = mesh_heading_list.get('meshHeading', [])
+    if mesh_headings:
+        terms = [h.get('descriptorName') for h in mesh_headings if h.get('descriptorName')]
+        if terms:
+            import json
+            return json.dumps(terms)
+    return None
+
+
+def _extract_journal_title(journal_info):
+    """Extract journal title"""
+    if not journal_info:
+        return None
+    journal = journal_info.get('journal', {})
+    return journal.get('title')
+
+
+def _extract_journal_issn(journal_info):
+    """Extract journal ISSN"""
+    if not journal_info:
+        return None
+    journal = journal_info.get('journal', {})
+    issn_list = journal.get('issn', [])
+    if issn_list:
+        if isinstance(issn_list, list):
+            return '|'.join(issn_list)
+        return str(issn_list)
+    return None
+
+
+def _extract_author_affiliations(author_list):
+    """Extract author affiliations"""
+    if not author_list:
+        return None
+    authors = author_list.get('author', [])
+    if not authors:
+        return None
+    affiliations = set()
+    for author in authors:
+        affiliation = author.get('affiliation', '')
+        if affiliation:
+            affiliations.add(affiliation)
+    if affiliations:
+        import json
+        return json.dumps(list(affiliations))
+    return None
 
 
 # ---------------------------------------------------------------------------

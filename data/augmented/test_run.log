@@ -1,0 +1,43 @@
+2025-10-31 09:04:15,618 - __main__ - INFO - ======================================================================
+2025-10-31 09:04:15,618 - __main__ - INFO - Dataset Augmentation Pipeline
+2025-10-31 09:04:15,618 - __main__ - INFO - ======================================================================
+2025-10-31 09:04:15,619 - __main__ - INFO - 
+Validating input files...
+2025-10-31 09:04:15,619 - __main__ - INFO - ✓ Classification data: data/manual_classifications.csv
+2025-10-31 09:04:15,619 - __main__ - INFO - ✓ NER data: data/manual_ner_extraction.csv
+2025-10-31 09:04:15,619 - __main__ - INFO - ✓ Engineered features: data/metadata/features_engineered.csv
+2025-10-31 09:04:15,619 - __main__ - INFO - ✓ Feature transformers: data/metadata/feature_transformers.pkl
+2025-10-31 09:04:15,620 - __main__ - INFO - ✓ Output directory: data/augmented
+2025-10-31 09:04:15,624 - __main__ - INFO - 
+======================================================================
+2025-10-31 09:04:15,624 - __main__ - INFO - Loading data...
+2025-10-31 09:04:15,624 - __main__ - INFO - ======================================================================
+2025-10-31 09:04:15,624 - __main__ - INFO - Loading classification training data...
+2025-10-31 09:04:15,657 - __main__ - ERROR - 
+======================================================================
+2025-10-31 09:04:15,657 - __main__ - ERROR - ERROR: Augmentation failed
+2025-10-31 09:04:15,657 - __main__ - ERROR - ======================================================================
+2025-10-31 09:04:15,658 - __main__ - ERROR - UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc5 in position 240510: invalid continuation byte
+2025-10-31 09:04:15,658 - __main__ - ERROR - Full traceback:
+Traceback (most recent call last):
+  File "/Users/warren/development/GBC/inventory_2022/src/augment_training_data.py", line 597, in main
+    classif_df = pd.read_csv(classif_path)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 626, in _read
+    return parser.read(nrows)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1923, in read
+    ) = self._engine.read(  # type: ignore[attr-defined]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 234, in read
+    chunks = self._reader.read_low_memory(nrows)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "parsers.pyx", line 838, in pandas._libs.parsers.TextReader.read_low_memory
+  File "parsers.pyx", line 905, in pandas._libs.parsers.TextReader._read_rows
+  File "parsers.pyx", line 874, in pandas._libs.parsers.TextReader._tokenize_rows
+  File "parsers.pyx", line 891, in pandas._libs.parsers.TextReader._check_tokenize_status
+  File "parsers.pyx", line 2053, in pandas._libs.parsers.raise_parser_error
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc5 in position 240510: invalid continuation byte

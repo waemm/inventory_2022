@@ -1,0 +1,2 @@
+usage: query_epmc.py [-h] -f DATE [-t DATE] [-o DIR] QUERY
+query_epmc.py: error: unrecognized arguments:    config/query.txt

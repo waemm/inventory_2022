@@ -1,8 +1,8 @@
 # Biodata Inventory ML Pipeline - AI Agent Reference Guide
 
 **Created**: 2025-10-22
-**Last Updated**: 2025-10-30 (Multi-model comparison completed - critical NER performance gap identified)
-**Status**: ✅ **PRODUCTION READY (Local & Colab)** + ⚠️ **EXPERIMENTAL TRAINING BLOCKED (NER baseline gap)**
+**Last Updated**: 2025-10-30 (Enhanced metadata fetching and feature engineering completed - Phase 1 & 2 of Option 2 ready)
+**Status**: ✅ **PRODUCTION READY (Local & Colab)** + ⚠️ **EXPERIMENTAL TRAINING BLOCKED (NER baseline gap)** + ✅ **ENHANCED METADATA FEATURES AVAILABLE**
 **Purpose**: Living document for AI agents working on the biodata inventory ML pipeline
 
 ---
@@ -50,39 +50,73 @@ This is a **sophisticated ML pipeline** that uses biomedical BERT models to auto
 
 **For Details**: See [`docs/PYTORCH_CHECKPOINT_FIX.md`](PYTORCH_CHECKPOINT_FIX.md) for comprehensive documentation
 
-### **⚠️ CRITICAL: Multi-Model Comparison Results (2025-10-30)**
+### **✅ NEW: Enhanced Metadata Features Available (2025-10-30)**
 
-**Session**: 2025-10-30-p9rat5 (4 experiments, 64 minutes total)
+**Project**: Option 2 (Multi-Task Learning) - Enhanced metadata fetching and feature engineering
 
-**Problem**: All 4 biomedical BERT models underperform V2 baseline by 10-16% on NER task despite using validated optimal hyperparameters and fixed production data splits.
+**Status**: ✅ **PHASE 1 & 2 COMPLETE**
 
-**Results Summary**:
-- **Classification**: PubMedBERT best (F1=0.917) - EXCEEDS V2 baseline by +2.1% ✅
-- **NER**: Original model best (F1=0.670) - BELOW V2 baseline by -10.5% ❌
-- **Phase 1 Target** (NER F1 ≥ 0.80): NOT ACHIEVED
+**Deliverables**:
+- ✅ 21,392 papers with 20 metadata fields fetched from Europe PMC
+- ✅ 18 engineered ML-ready features (Tier 1: 12 core, Tier 2: 6 text embeddings)
+- ✅ Production-ready feature engineering pipeline
+- ✅ Zero NaN values, 100% Tier 1 completeness
+- ✅ Comprehensive documentation (20+ pages)
 
-**Critical Finding**: All tested models show significant NER performance degradation:
-- Original (allenai/dsp_roberta): F1=0.670 vs V2 0.749 (-10.5%)
-- BioLinkBERT (2022 SOTA): F1=0.656 (-12.4%)
-- PubMedBERT: F1=0.635 (-15.2%)
-- SciBERT: F1=0.630 (-15.9%)
+**Key Files**:
+- `data/metadata/pmc_metadata_enhanced_full.csv` - 21,392 papers × 20 fields
+- `data/metadata/features_engineered.csv` - 21,392 papers × 38 features (20 + 18 engineered)
+- `src/query_epmc.py` - Enhanced metadata fetching (modified)
+- `src/prepare_metadata_features.py` - Feature engineering pipeline (new)
 
-**Root Cause Hypotheses**:
-1. **V2 Training Configuration Unknown**: Actual V2 hyperparameters may differ from assumptions
-2. **Learning Rate Mismatch**: Experimental LRs (classif=1e-5, ner=5e-5) may not be optimal for production splits
-3. **Early Stopping Too Aggressive**: Patience=5 may stop training before convergence
-4. **Training Duration Insufficient**: V2 may have trained longer than 15 epochs
-5. **Unknown V2 Optimizations**: V2 may use additional techniques (weight decay, dropout adjustments, etc.)
+**Next Steps**: Dataset augmentation (Phase 3), multi-task learning implementation (Phase 4)
 
-**Immediate Action Required**:
-- 🔍 **CRITICAL**: Find actual V2 training configuration (check October 21 training archives)
-- 📊 Review training curves to understand convergence patterns
-- 🧪 Run test set validation to verify metrics
-- 🔄 Consider additional learning rate sweep with production splits
+**For Details**: See [`docs/ENHANCED_METADATA_FINAL_REPORT_2025-10-30.md`](ENHANCED_METADATA_FINAL_REPORT_2025-10-30.md)
 
-**Impact**: Phase 1 blocked until V2 baseline performance can be matched. Cannot proceed to Phase 2 (data augmentation) without first matching baseline.
+---
 
-**For Details**: See [`docs/MULTI_MODEL_RESULTS_2025-10-30.md`](MULTI_MODEL_RESULTS_2025-10-30.md) for complete analysis
+### **🔍 CRITICAL: Phase 0 Data Split Investigation (2025-10-30)**
+
+**Session 1**: 2025-10-30-p9rat5 (4 models, wrong LRs) - **SUPERSEDED**
+**Session 2**: 2025-10-30-1mmo8l (4 experiments, V2 exact parameters) - **LATEST**
+
+**Root Cause Identified**: The 10% NER performance gap is caused by **DIFFERENT DATA SPLITS**, not incorrect hyperparameters.
+
+**Session 2025-10-30-1mmo8l Results** (V2 exact configuration):
+- **Configuration**: LR=2e-5 (both models), batch=16, epochs=10, no early stopping ✅
+- **Classification**: F1=0.891 vs V2 0.898 (-0.7%) ✅ **MATCHED**
+- **NER**: F1=0.676 vs V2 0.749 (-9.7%) ❌ **GAP PERSISTS**
+
+**Critical Evidence**:
+1. ✅ All hyperparameters match V2 exactly (verified from snakemake configs)
+2. ✅ Classification performance matches V2 (within ±1%)
+3. ❌ NER performance gap persists despite correct configuration
+4. 🔍 V2 used random seed (`-r` flag) but **seed value not preserved**
+5. 🔍 V2 original data splits no longer available
+
+**Root Cause**:
+- V2 training (October 21, 2025) used random seed to generate splits
+- Seed value was not stored or preserved
+- Current experimental training generates fresh splits with different seed
+- NER dataset small (554 samples) → highly sensitive to split composition
+- Classification larger (1,635 samples) → less sensitive, matches V2
+
+**Test Set Performance**:
+- V2 NER: Test F1 = 0.742, Val F1 = 0.749 (very close)
+- Current: Test evaluation needed to validate model quality
+
+**Next Actions**:
+1. ⏳ **PRIORITY**: Evaluate session 1mmo8l models on test set
+2. 🔍 Search for V2 original split files (if preserved)
+3. 📋 Decide: Redefine baseline (NER F1 ≈ 0.67) OR find V2 splits
+
+**Impact**: Cannot match V2 validation F1 without V2's exact splits. Must either:
+- Accept current performance (F1 ≈ 0.67) as new baseline and proceed to Phase 1
+- Find V2 splits for exact reproduction (if available)
+
+**For Details**: See [`docs/PHASE_0_CRITICAL_FINDINGS_2025-10-30.md`](PHASE_0_CRITICAL_FINDINGS_2025-10-30.md) for complete analysis
+
+**Superseded Analysis**: See [`docs/MULTI_MODEL_RESULTS_2025-10-30.md`](MULTI_MODEL_RESULTS_2025-10-30.md) for session 2025-10-30-p9rat5 (incorrect LR hypothesis)
 
 ---
 
@@ -238,6 +272,8 @@ NER Model: out/original_model/named_entity_recognition.pt
 - **Full Training Data**: `data/manual_classifications.csv` (1,635), `data/manual_ner_extraction.csv` (554)
 - **Test Data**: `data/manual_classifications_test.csv` (100), `data/manual_ner_extraction_test.csv` (50)
 - **2022 EuropePMC Data**: `data/epmc_query_results_2022.csv` (21,677 papers)
+- **Enhanced Metadata** (NEW 2025-10-30): `data/metadata/pmc_metadata_enhanced_full.csv` (21,392 papers × 20 fields)
+- **Engineered Features** (NEW 2025-10-30): `data/metadata/features_engineered.csv` (21,392 papers × 38 features for Multi-Task Learning)
 
 ### **Output Directories (Session-Specific)**
 - **Training Splits**: `data/classif_splits_full_{UNIQUE_ID}`, `data/ner_splits_full_{UNIQUE_ID}`
@@ -349,6 +385,7 @@ python download_from_drive.py --archive-type training_archives --interactive
 - `GBC/inventory_2022/docs/EXPERIMENTAL_INFRASTRUCTURE_PROGRESS.md` - **NEW (2025-10-29)** Experimental training infrastructure and progress report
 - `GBC/inventory_2022/docs/COMPREHENSIVE_IMPLEMENTATION_PLAN.md` - **NEW (2025-10-29)** 3-phase model improvement roadmap
 - `GBC/inventory_2022/docs/MULTI_MODEL_RESULTS_2025-10-30.md` - **NEW (2025-10-30)** Multi-model comparison results and critical performance gap analysis
+- `GBC/inventory_2022/docs/ENHANCED_METADATA_FINAL_REPORT_2025-10-30.md` - **NEW (2025-10-30)** Complete enhanced metadata fetching and feature engineering report (Phase 1 & 2)
 
 ### **Execution Scripts**
 - `GBC/inventory_2022/run_full_training.sh` - Main production training pipeline (9.5h)
@@ -413,6 +450,8 @@ python download_from_drive.py --archive-type training_archives --interactive
 - `GBC/inventory_2022/src/experimental_utils.py` - **NEW (2025-10-29)** Experimental training utilities (EarlyStopping, ExperimentTracker)
 - `GBC/inventory_2022/src/data_augmentation/` - **NEW (2025-10-29)** Data augmentation module (placeholders for Phase 2)
 - `GBC/inventory_2022/augment_ner_dataset.py` - **NEW (2025-10-29)** CLI tool for data augmentation
+- `GBC/inventory_2022/src/query_epmc.py` - **ENHANCED (2025-10-30)** Europe PMC query with 20-field metadata extraction
+- `GBC/inventory_2022/src/prepare_metadata_features.py` - **NEW (2025-10-30)** Feature engineering pipeline for Option 2 (Multi-Task Learning)
 
 ---
 
@@ -566,6 +605,13 @@ ls -la trained_models_25/
 For detailed session-by-session changelog, architecture evolution, and refactoring work, see [`HISTORICAL_UPDATES.md`](HISTORICAL_UPDATES.md).
 
 **Recent Highlights:**
+- ✅ **October 30, 2025**: **Enhanced metadata fetching and feature engineering complete** (Option 2 Phase 1 & 2)
+  - Fetched 21,392 papers with 20 metadata fields from Europe PMC
+  - Engineered 18 ML-ready features (Tier 1: 12 core, Tier 2: 6 text embeddings)
+  - Production-ready pipeline: `src/query_epmc.py` (enhanced), `src/prepare_metadata_features.py` (new)
+  - Zero NaN values, 100% Tier 1 completeness, 83.1% MeSH terms coverage
+  - Ready for Phase 3 (dataset augmentation) and Phase 4 (multi-task learning)
+  - See [`ENHANCED_METADATA_FINAL_REPORT_2025-10-30.md`](ENHANCED_METADATA_FINAL_REPORT_2025-10-30.md)
 - ⚠️ **October 30, 2025**: **CRITICAL - Multi-model comparison reveals baseline performance gap** (session 2025-10-30-p9rat5)
   - All 4 models tested (64 minutes total)
   - Fixed data splits to use production data ✅
@@ -795,6 +841,7 @@ From these experiences, the following practices are now required:
 
 **Primary Technical Documents**:
 - **This Document**: System overview and operational guide
+- **ENHANCED_METADATA_FINAL_REPORT_2025-10-30.md**: Complete enhanced metadata fetching and feature engineering report (Phase 1 & 2) - NEW
 - **FINAL_DIAGNOSIS_SUMMARY.md**: Complete model quality investigation summary (2025-10-29)
 - **MODEL_DEGRADATION_ROOT_CAUSE_ANALYSIS.md**: Detailed technical analysis of training quality issues
 - **PYTORCH_CHECKPOINT_FIX.md**: Complete technical resolution of PyTorch compatibility and checkpoint corruption issues
@@ -811,8 +858,8 @@ From these experiences, the following practices are now required:
 
 **Document Status**: ✅ **CURRENT AND ACCURATE**
 **Document Location**: `GBC/inventory_2022/docs/starting_doc.md`
-**Last Updated**: 2025-10-30 (Added multi-model comparison critical findings)
-**Next Review**: After V2 training configuration investigation
+**Last Updated**: 2025-10-30 (Added enhanced metadata fetching and feature engineering - Option 2 Phase 1 & 2 complete)
+**Next Review**: After Phase 3 (dataset augmentation) or V2 training configuration investigation
 **Maintained by**: AI agents working on biodata inventory pipeline
 
 ---

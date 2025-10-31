@@ -1,0 +1,5 @@
+usage: fetch_enhanced_metadata.py [-h] --input FILE --output FILE
+                                  [--chunk-size N] [--retry N]
+                                  [--backoff SECONDS] [--checkpoint FILE]
+                                  [--resume]
+fetch_enhanced_metadata.py: error: unrecognized arguments:     

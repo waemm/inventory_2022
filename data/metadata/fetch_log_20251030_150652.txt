@@ -1,0 +1,57 @@
+=== Enhanced Metadata Fetch Log ===
+Started: 2025-10-30 15:06:52
+
+[2025-10-30 15:06:52] [INFO] === Enhanced Metadata Fetch Started ===
+[2025-10-30 15:06:52] [INFO] Input: data/epmc_query_results_2022.csv
+[2025-10-30 15:06:52] [INFO] Output: data/metadata/pmc_metadata_enhanced_full.csv
+[2025-10-30 15:06:52] [INFO] Chunk size: 1000
+[2025-10-30 15:06:52] [INFO] Max retries: 3
+[2025-10-30 15:06:52] [INFO] Backoff delay: 0.5s
+[2025-10-30 15:06:52] [INFO] Loading input PMIDs...
+[2025-10-30 15:06:54] [INFO] Loaded 20889 unique PMIDs
+[2025-10-30 15:06:54] [INFO] Split into 21 chunks
+[2025-10-30 15:06:54] [INFO] Fetching metadata from Europe PMC...
+[2025-10-30 15:06:54] [WARNING] Empty results for batch of 1000 PMIDs
+[2025-10-30 15:06:55] [DEBUG] Checkpoint saved: 1 chunks processed
+[2025-10-30 15:06:55] [WARNING] Empty results for batch of 1000 PMIDs
+[2025-10-30 15:06:55] [DEBUG] Checkpoint saved: 2 chunks processed
+[2025-10-30 15:06:56] [WARNING] Empty results for batch of 1000 PMIDs
+[2025-10-30 15:06:56] [DEBUG] Checkpoint saved: 3 chunks processed
+[2025-10-30 15:06:57] [WARNING] Empty results for batch of 1000 PMIDs
+[2025-10-30 15:06:57] [DEBUG] Checkpoint saved: 4 chunks processed
+[2025-10-30 15:06:57] [WARNING] Empty results for batch of 1000 PMIDs
+[2025-10-30 15:06:57] [DEBUG] Checkpoint saved: 5 chunks processed
+[2025-10-30 15:06:58] [WARNING] Empty results for batch of 1000 PMIDs
+[2025-10-30 15:06:58] [DEBUG] Checkpoint saved: 6 chunks processed
+[2025-10-30 15:06:59] [WARNING] Empty results for batch of 1000 PMIDs
+[2025-10-30 15:06:59] [DEBUG] Checkpoint saved: 7 chunks processed
+[2025-10-30 15:06:59] [WARNING] Empty results for batch of 1000 PMIDs
+[2025-10-30 15:06:59] [DEBUG] Checkpoint saved: 8 chunks processed
+[2025-10-30 15:07:00] [WARNING] Empty results for batch of 1000 PMIDs
+[2025-10-30 15:07:00] [DEBUG] Checkpoint saved: 9 chunks processed
+[2025-10-30 15:07:01] [WARNING] Empty results for batch of 1000 PMIDs
+[2025-10-30 15:07:01] [DEBUG] Checkpoint saved: 10 chunks processed
+[2025-10-30 15:07:01] [WARNING] Empty results for batch of 1000 PMIDs
+[2025-10-30 15:07:01] [DEBUG] Checkpoint saved: 11 chunks processed
+[2025-10-30 15:07:02] [WARNING] Empty results for batch of 1000 PMIDs
+[2025-10-30 15:07:02] [DEBUG] Checkpoint saved: 12 chunks processed
+[2025-10-30 15:07:03] [WARNING] Empty results for batch of 1000 PMIDs
+[2025-10-30 15:07:03] [DEBUG] Checkpoint saved: 13 chunks processed
+[2025-10-30 15:07:04] [WARNING] Empty results for batch of 1000 PMIDs
+[2025-10-30 15:07:04] [DEBUG] Checkpoint saved: 14 chunks processed
+[2025-10-30 15:07:04] [WARNING] Empty results for batch of 1000 PMIDs
+[2025-10-30 15:07:04] [DEBUG] Checkpoint saved: 15 chunks processed
+[2025-10-30 15:07:05] [WARNING] Empty results for batch of 1000 PMIDs
+[2025-10-30 15:07:05] [DEBUG] Checkpoint saved: 16 chunks processed
+[2025-10-30 15:07:06] [WARNING] Empty results for batch of 1000 PMIDs
+[2025-10-30 15:07:06] [DEBUG] Checkpoint saved: 17 chunks processed
+[2025-10-30 15:07:07] [WARNING] Empty results for batch of 1000 PMIDs
+[2025-10-30 15:07:07] [DEBUG] Checkpoint saved: 18 chunks processed
+[2025-10-30 15:07:07] [WARNING] Empty results for batch of 1000 PMIDs
+[2025-10-30 15:07:07] [DEBUG] Checkpoint saved: 19 chunks processed
+[2025-10-30 15:07:08] [WARNING] Empty results for batch of 1000 PMIDs
+[2025-10-30 15:07:08] [DEBUG] Checkpoint saved: 20 chunks processed
+[2025-10-30 15:07:09] [WARNING] Empty results for batch of 889 PMIDs
+[2025-10-30 15:07:09] [DEBUG] Checkpoint saved: 21 chunks processed
+[2025-10-30 15:07:09] [INFO] Converting results to DataFrame...
+[2025-10-30 15:07:09] [INFO] Validating results...

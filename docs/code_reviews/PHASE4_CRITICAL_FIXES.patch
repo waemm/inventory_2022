@@ -1,0 +1,311 @@
+# Phase 4 Multi-Task Learning - Critical Fixes Patch
+# Apply these fixes to resolve 4/6 test failures
+# Date: 2025-10-31
+
+################################################################################
+# CRITICAL FIX #1: Metadata Dimension Mismatch (34 → 28)
+################################################################################
+
+# FILE: src/models/multitask_model.py
+# ISSUE: Model expects 34 metadata features but data has 28
+# IMPACT: Causes dimension mismatch error in all forward passes
+
+# ----- CHANGE 1: Line 11 (Module docstring) -----
+# OLD:
+- Metadata projection layer (34 features → 768 dims)
+
+# NEW:
+- Metadata projection layer (28 features → 768 dims)
+
+
+# ----- CHANGE 2: Line 39 (MetadataProjection docstring) -----
+# OLD:
+    n_features: Number of input metadata features (34)
+
+# NEW:
+    n_features: Number of input metadata features (28)
+
+
+# ----- CHANGE 3: Line 156 (Comment in compute_auxiliary_loss docstring) -----
+# OLD:
+    metadata: [batch_size, 34] - Ground truth metadata
+
+# NEW:
+    metadata: [batch_size, 28] - Ground truth metadata
+
+
+# ----- CHANGE 4: Lines 259-270 (__init__ method) -----
+# OLD:
+def __init__(
+    self,
+    model_name_or_path: str = "roberta-base",
+    n_metadata_features: int = 34,  # ← WRONG DEFAULT
+    num_classes: int = 2,
+    ...
+):
+    super().__init__()
+
+    # Load RoBERTa encoder (shared across all tasks)
+    logger.info(f"Loading encoder from: {model_name_or_path}")
+
+# NEW:
+def __init__(
+    self,
+    model_name_or_path: str = "roberta-base",
+    n_metadata_features: int = None,  # ← CHANGED: No default
+    num_classes: int = 2,
+    ...
+):
+    super().__init__()
+
+    # ADDED: Validation
+    if n_metadata_features is None:
+        raise ValueError(
+            "n_metadata_features must be specified explicitly. "
+            "Expected 28 for current augmented dataset (Phase 3). "
+            "Features: 10 boolean + 4 numerical + 2 categorical + 12 TF-IDF."
+        )
+
+    if n_metadata_features != 28:
+        logger.warning(
+            f"n_metadata_features={n_metadata_features} specified, but current "
+            f"augmented data has 28 features. Ensure this matches your data!"
+        )
+
+    # Load RoBERTa encoder (shared across all tasks)
+    logger.info(f"Loading encoder from: {model_name_or_path}")
+
+
+# ----- CHANGE 5: Lines 440-468 (create_model factory function) -----
+# OLD:
+def create_model(config: dict) -> BiomedicalMultiTaskModel:
+    """
+    Factory function to create model from configuration.
+    ...
+    """
+    return BiomedicalMultiTaskModel(
+        model_name_or_path=config.get('model_name_or_path', 'roberta-base'),
+        n_metadata_features=config.get('n_metadata_features', 34),  # ← WRONG DEFAULT
+        num_classes=config.get('num_classes', 2),
+        ...
+    )
+
+# NEW:
+def create_model(config: dict) -> BiomedicalMultiTaskModel:
+    """
+    Factory function to create model from configuration.
+
+    Args:
+        config: Configuration dictionary with model parameters.
+                REQUIRED: 'n_metadata_features' must match actual data (28).
+
+    Raises:
+        ValueError: If n_metadata_features not specified in config
+    """
+    # ADDED: Validation
+    if 'n_metadata_features' not in config:
+        raise ValueError(
+            "config must specify 'n_metadata_features'. "
+            "For Phase 3 augmented data, use 28."
+        )
+
+    return BiomedicalMultiTaskModel(
+        model_name_or_path=config.get('model_name_or_path', 'roberta-base'),
+        n_metadata_features=config['n_metadata_features'],  # ← CHANGED: Required
+        num_classes=config.get('num_classes', 2),
+        ...
+    )
+
+
+# ----- CHANGE 6: Line 483 (Test code at bottom) -----
+# OLD:
+if __name__ == "__main__":
+    logging.basicConfig(level=logging.INFO)
+
+    model = BiomedicalMultiTaskModel(model_name_or_path="roberta-base")
+
+    batch_size = 4
+    seq_len = 128
+    input_ids = torch.randint(0, 1000, (batch_size, seq_len))
+    attention_mask = torch.ones(batch_size, seq_len)
+    metadata = torch.randn(batch_size, 34)  # ← WRONG
+
+# NEW:
+if __name__ == "__main__":
+    logging.basicConfig(level=logging.INFO)
+
+    model = BiomedicalMultiTaskModel(
+        model_name_or_path="roberta-base",
+        n_metadata_features=28  # ← CHANGED
+    )
+
+    batch_size = 4
+    seq_len = 128
+    input_ids = torch.randint(0, 1000, (batch_size, seq_len))
+    attention_mask = torch.ones(batch_size, seq_len)
+    metadata = torch.randn(batch_size, 28)  # ← CHANGED
+
+
+################################################################################
+# CRITICAL FIX #2: Import Error Handling
+################################################################################
+
+# FILE: src/train_multitask.py
+# ISSUE: Import may fail if transformers not installed
+# NOTE: The import statement is actually CORRECT, but add error handling
+
+# ----- CHANGE: Line 22 (Import statement) -----
+# OLD:
+from transformers import get_linear_schedule_with_warmup
+
+# NEW:
+try:
+    from transformers import get_linear_schedule_with_warmup
+except ImportError as e:
+    raise ImportError(
+        "Failed to import get_linear_schedule_with_warmup from transformers. "
+        "Please ensure transformers>=4.0.0 is installed: "
+        "pip install transformers>=4.0.0"
+    ) from e
+
+
+################################################################################
+# IMPORTANT FIX #3: Improve Auxiliary Loss Documentation
+################################################################################
+
+# FILE: src/train_multitask.py
+# ISSUE: Unclear which features are being predicted
+# Lines 144-176
+
+# ----- CHANGE: Improve docstring -----
+# ADD this complete docstring to compute_auxiliary_loss method:
+
+def compute_auxiliary_loss(
+    self,
+    boolean_logits: torch.Tensor,
+    numerical_preds: torch.Tensor,
+    metadata: torch.Tensor
+) -> torch.Tensor:
+    """
+    Compute auxiliary loss for metadata prediction (regularization).
+
+    The auxiliary task predicts a SUBSET of metadata features:
+    - Boolean: All 10 features (hasDbCrossReferences, hasData, etc.)
+    - Numerical: Only 2 features (log_citations, years_since_pub)
+      Note: citedByCount and pubYear are NOT predicted
+
+    Metadata tensor ordering:
+    - [0:10]   Boolean (10)
+    - [10:14]  Numerical (4) - we use only [10:12]
+    - [14:16]  Categorical (2) - not used
+    - [16:28]  TF-IDF (12) - not used
+
+    Args:
+        boolean_logits: [batch_size, 10] - Predicted boolean features
+        numerical_preds: [batch_size, 2] - Predicted numerical features
+        metadata: [batch_size, 28] - Ground truth metadata
+
+    Returns:
+        loss: Scalar auxiliary loss (BCE + MSE)
+    """
+    # Extract boolean targets (indices 0-9)
+    boolean_targets = metadata[:, :10]
+
+    # Extract numerical targets (indices 10-11 only)
+    numerical_targets = metadata[:, 10:12]
+
+    # Boolean loss (Binary Cross Entropy)
+    boolean_loss = self.bce_criterion(boolean_logits, boolean_targets)
+
+    # Numerical loss (Mean Squared Error)
+    numerical_loss = self.mse_criterion(numerical_preds, numerical_targets)
+
+    # Combined auxiliary loss
+    aux_loss = boolean_loss + numerical_loss
+
+    return aux_loss
+
+
+################################################################################
+# IMPORTANT FIX #4: Add Metadata Dimension Validation
+################################################################################
+
+# FILE: src/data/multitask_dataloader.py
+# ISSUE: No runtime validation of extracted metadata dimensions
+# Lines 155-167
+
+# ----- CHANGE: Enhance _validate_metadata_features -----
+# REPLACE entire method with:
+
+def _validate_metadata_features(self):
+    """Verify that all metadata features exist and extract correctly."""
+    classif_cols = set(self.classif_df.columns)
+    ner_cols = set(self.ner_df.columns)
+
+    # Check feature names exist
+    for feature in self.metadata_features:
+        if feature not in classif_cols:
+            raise ValueError(
+                f"Metadata feature '{feature}' not found in classification data"
+            )
+        if feature not in ner_cols:
+            raise ValueError(
+                f"Metadata feature '{feature}' not found in NER data"
+            )
+
+    logger.info(f"✓ Validated {len(self.metadata_features)} feature names")
+
+    # ADDED: Validate extracted dimensions
+    sample_classif = self._extract_metadata(self.classif_df.iloc[0])
+    sample_ner = self._extract_metadata(self.ner_df.iloc[0])
+
+    if len(sample_classif) != self.n_metadata_features:
+        raise ValueError(
+            f"Classification metadata extraction failed! "
+            f"Expected {self.n_metadata_features} features but got {len(sample_classif)}."
+        )
+
+    if len(sample_ner) != self.n_metadata_features:
+        raise ValueError(
+            f"NER metadata extraction failed! "
+            f"Expected {self.n_metadata_features} features but got {len(sample_ner)}."
+        )
+
+    logger.info(f"✓ Metadata extraction validated: {len(sample_classif)} features")
+
+
+################################################################################
+# VERIFICATION
+################################################################################
+
+# After applying all fixes, run:
+python test_multitask_setup.py
+
+# Expected results:
+# ✓ Test 1: Data Loading - PASS
+# ✓ Test 2: Model Architecture - PASS
+# ✓ Test 3: Loss Computation - PASS (was failing)
+# ✓ Test 4: Gradient Flow - PASS (was failing)
+# ✓ Test 5: Metrics Tracking - PASS (was failing)
+# ✓ Test 6: Short Training Run - PASS (was failing)
+
+# All 6/6 tests should pass after fixes!
+
+################################################################################
+# SUMMARY OF CHANGES
+################################################################################
+
+# Files Modified: 3
+# 1. src/models/multitask_model.py (6 changes)
+# 2. src/train_multitask.py (2 changes)
+# 3. src/data/multitask_dataloader.py (1 change)
+
+# Lines Changed: ~50 lines total
+# Time to Apply: 15-30 minutes
+# Risk Level: LOW (all changes are bug fixes, no architectural changes)
+
+# CRITICAL: The config file already has the correct value (28), so no changes needed there!
+
+################################################################################
+# END OF PATCH
+################################################################################

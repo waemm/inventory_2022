@@ -110,8 +110,10 @@ class MultiTaskEvaluator:
         report = classification_report(
             all_labels,
             all_preds,
+            labels=[0, 1],  # Explicitly specify expected labels
             target_names=['Non-Resource', 'Resource'],
-            output_dict=True
+            output_dict=True,
+            zero_division=0
         )
         metrics['classification_report'] = report
 
@@ -180,6 +182,7 @@ class MultiTaskEvaluator:
         report = classification_report(
             all_labels,
             all_preds,
+            labels=[0, 1, 2],  # Explicitly specify expected labels
             target_names=label_names,
             output_dict=True,
             zero_division=0

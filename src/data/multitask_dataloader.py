@@ -437,13 +437,16 @@ def create_multitask_dataloaders(
     # Create validation dataset if paths provided
     val_loader = None
     if classif_val_path and ner_val_path:
+        # Create a copy of kwargs and ensure oversample_ner is False for validation
+        val_kwargs = kwargs.copy()
+        val_kwargs['oversample_ner'] = False  # Don't oversample validation
+
         val_dataset = MultiTaskDataset(
             classif_path=classif_val_path,
             ner_path=ner_val_path,
             tokenizer=tokenizer,
             test_mode=test_mode,
-            oversample_ner=False,  # Don't oversample validation
-            **kwargs
+            **val_kwargs
         )
 
         val_loader = DataLoader(

@@ -1,0 +1,121 @@
+# Multi-Task Learning Configuration
+# Phase 4 Implementation - Option 2 (Multi-Task with Metadata)
+
+# Model Architecture
+model:
+  base_model: "roberta-base"  # Can be path to TAPT model
+  n_metadata_features: 28  # 28 numerical features (excludes text fields)
+  hidden_size: 768
+
+  # Task-specific settings
+  num_classes: 2  # Binary classification
+  num_ner_labels: 3  # B, I, O
+
+  # Auxiliary prediction settings
+  n_boolean_features: 10  # hasDbCrossReferences, hasData, etc.
+  n_numerical_features: 2  # log_citations, years_since_pub
+
+  # Dropout rates (research-backed)
+  classification_dropout: 0.3  # Higher for classification
+  ner_dropout: 0.1  # Lower for token-level tasks
+
+# Task Configuration
+tasks:
+  classification:
+    max_length: 256  # Shorter for classification
+    batch_size: 16
+
+  ner:
+    max_length: 512  # Longer for NER
+    batch_size: 16
+
+# Training Configuration
+training:
+  # Mode settings
+  test_mode: true  # Start with TEST_MODE for validation
+
+  # Training hyperparameters
+  epochs: 30
+  batch_size: 16
+  learning_rate: 2.0e-5
+  weight_decay: 0.01
+  warmup_steps: 500
+  max_grad_norm: 1.0
+
+  # Loss weights (fixed for MVP)
+  # λ₁=0.3 (classification), λ₂=0.7 (NER), λ₃=0.1 (auxiliary)
+  lambda_classification: 0.3
+  lambda_ner: 0.7
+  lambda_auxiliary: 0.1
+
+  # Early stopping
+  patience: 10
+  min_delta: 0.001
+  monitor: "combined_f1"  # Monitor combined F1 score
+
+  # Negative transfer detection
+  negative_transfer_threshold: 0.85  # Alert if F1 < 85% of baseline
+
+# Data Configuration
+data:
+  # Training data paths
+  classif_train: "data/augmented/classif_train_with_metadata.csv"
+  ner_train: "data/augmented/ner_train_with_metadata.csv"
+
+  # Validation data (optional - use train/val split if needed)
+  classif_val: null
+  ner_val: null
+
+  # Data processing
+  oversample_ner: true  # Balance NER samples to match classification
+  metadata_normalization: "standard"  # standard, minmax, or none
+
+  # Dataloader settings
+  num_workers: 0  # Set to 0 for debugging, increase for production
+  pin_memory: true
+
+# Monitoring Configuration
+monitoring:
+  # Gradient analysis
+  track_gradient_conflicts: true
+  gradient_conflict_threshold: 0.0  # Alert if cosine similarity < 0
+
+  # Logging
+  log_interval: 50  # Log every N batches
+  save_checkpoints: ["best_classification", "best_ner", "best_combined", "final"]
+
+  # Tensorboard (optional)
+  use_tensorboard: false
+  tensorboard_dir: "outputs/tensorboard"
+
+# Baseline Metrics (for comparison)
+baseline:
+  # Current single-task performance
+  classification_f1: 0.898
+  ner_f1: 0.676
+
+  # Target performance
+  target_ner_f1: 0.749  # Need to reach this for NER
+  target_classification_f1: 0.898  # Maintain or improve
+
+# Evaluation Configuration
+evaluation:
+  # Metrics to track
+  classification_metrics: ["f1", "precision", "recall", "accuracy"]
+  ner_metrics: ["f1_macro", "f1_micro", "precision_macro", "recall_macro"]
+
+  # Report generation
+  generate_confusion_matrix: true
+  generate_per_class_metrics: true
+  save_predictions: false  # Set true to save predictions for analysis
+
+# Hardware Configuration
+hardware:
+  device: "cuda"  # cuda, cpu, or mps (for Apple Silicon)
+  mixed_precision: false  # Use fp16 mixed precision (requires CUDA)
+
+# Experiment Tracking
+experiment:
+  name: "multitask_mvp_v1"
+  description: "Phase 4 Multi-Task Learning MVP with metadata integration"
+  tags: ["multitask", "metadata", "mvp", "phase4"]

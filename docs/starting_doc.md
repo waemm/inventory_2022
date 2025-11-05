@@ -223,6 +223,11 @@ rclone cat gdrive:inventory_2022/path/file.json
 - [`LESSONS_LEARNED.md`](LESSONS_LEARNED.md) - Critical issues and best practices
 - [`QUICK_REFERENCE_COMMANDS.md`](QUICK_REFERENCE_COMMANDS.md) - Common operations
 
+### NER & LLM Testing
+- [`NER_explanation.md`](NER_explanation.md) - **Comprehensive NER guide** (extraction, output format, examples)
+- [`../data/llm_comparison/prompts/README.md`](../data/llm_comparison/prompts/README.md) - LLM testing prompts (V2 improved)
+- [`../data/llm_comparison/results/ANALYSIS_SUMMARY.md`](../data/llm_comparison/results/ANALYSIS_SUMMARY.md) - LLM vs BERT comparison
+
 ### Phase 4 Multi-Task Learning
 - [`multi_task_model/README.md`](multi_task_model/README.md) - **Start here** for Phase 4
 - [`multi_task_model/PHASE4_IMPLEMENTATION_SUMMARY.md`](multi_task_model/PHASE4_IMPLEMENTATION_SUMMARY.md) - Complete architecture guide
@@ -381,7 +386,7 @@ Before deploying new models:
 
 **Document Location**: `GBC/inventory_2022/docs/starting_doc.md`
 **Document Status**: ✅ Streamlined and current (~400 lines)
-**Last Review**: 2025-11-04
+**Last Review**: 2025-10-31 (Added LLM testing & NER documentation)
 **Next Review**: After Phase 4 inference bug resolution
 **Maintained By**: AI agents working on biodata inventory pipeline
 
@@ -397,3 +402,5 @@ Before deploying new models:
 - Pipelines → [`PIPELINE_GUIDES.md`](PIPELINE_GUIDES.md)
 - History → [`HISTORICAL_UPDATES.md`](HISTORICAL_UPDATES.md)
 - Current Issue → [`MEMORY_OVERFLOW_FIX_SESSION_2025-11-04.md`](MEMORY_OVERFLOW_FIX_SESSION_2025-11-04.md)
+- NER Guide → [`NER_explanation.md`](NER_explanation.md)
+- LLM Testing → [`../data/llm_comparison/prompts/README.md`](../data/llm_comparison/prompts/README.md)

@@ -322,6 +322,9 @@ def extract_entities_from_bio_tags(
     probabilities: List[float]
 ) -> List[Tuple[str, str, float]]:
     """
+    DEPRECATED: Token-level extraction produces BPE artifacts.
+    Use extract_entities_word_level() instead for clean entity extraction.
+
     Extract entities from BIO-tagged tokens.
 
     Args:
@@ -401,9 +404,167 @@ def extract_entities_from_bio_tags(
     return results
 
 
+def extract_entities_word_level(
+    text: str,
+    tokenizer,
+    input_ids: torch.Tensor,
+    bio_tags: List[int],
+    probabilities: List[float],
+    id2tag: Dict[int, str]
+) -> List[Tuple[str, str, float]]:
+    """
+    Extract entities using word-level reconstruction (V2 approach).
+
+    This function eliminates BPE tokenization artifacts by extracting clean text
+    directly from the original string using word-level character spans.
+
+    Args:
+        text: Original text string (title + abstract)
+        tokenizer: HuggingFace tokenizer with word_ids() support
+        input_ids: Token IDs tensor [seq_len]
+        bio_tags: BIO tag IDs for each token [seq_len]
+        probabilities: Token-level probabilities [seq_len]
+        id2tag: Mapping from tag IDs to tag strings {0: 'O', 1: 'B-COM', ...}
+
+    Returns:
+        List of (entity_text, entity_type, avg_confidence) tuples
+        - entity_text: Clean text from original string (no BPE artifacts)
+        - entity_type: 'COM' or 'FUL'
+        - avg_confidence: Average token probability for the entity
+    """
+    # CRITICAL FIX #1: Add empty input validation
+    if not text or not text.strip():
+        logger.debug("Empty text input, returning no entities")
+        return []
+
+    # IMPROVEMENT #2: Add try-catch for tokenization
+    try:
+        # Step 1: Get word-level mappings from tokenizer
+        encoding = tokenizer(text, return_tensors='pt', truncation=True, max_length=512)
+        word_ids = encoding.word_ids()[1:-1]  # Skip [CLS] and [SEP]
+    except Exception as e:
+        logger.error(f"Tokenization failed: {e}")
+        return []
+
+    # CRITICAL FIX #2: Add length validation
+    expected_len = len(word_ids)
+    actual_bio_len = len(bio_tags) - 2  # Minus [CLS] and [SEP]
+    if expected_len != actual_bio_len:
+        logger.error(
+            f"Length mismatch: word_ids={expected_len}, bio_tags={actual_bio_len}. "
+            f"Text: {text[:50]}..."
+        )
+        return []
+
+    # Step 2: Build word_locs dict (word_id -> CharSpan)
+    word_locs = {}
+    for word_id in set(word_ids):
+        if word_id is not None:
+            word_locs[word_id] = encoding.word_to_chars(word_id)
+
+    # IMPROVEMENT #3: Add word_locs validation
+    if not word_locs:
+        logger.debug(f"No valid words found in text: {text[:50]}...")
+        return []
+
+    # IMPROVEMENT #1: Add debug logging
+    logger.debug(f"Processing {len(word_locs)} words for entity extraction")
+
+    # Step 3: Process word-by-word (not token-by-token!)
+    entities = []
+    current_entity = None
+
+    for word_id in sorted(word_locs.keys()):
+        # Find all tokens for this word
+        token_indices = [i for i, wid in enumerate(word_ids) if wid == word_id]
+
+        # Get tags and probs for this word's tokens
+        word_tags = [id2tag[bio_tags[i+1]] for i in token_indices]  # +1 for [CLS]
+        word_probs = [probabilities[i+1] for i in token_indices]
+
+        # Determine word's BIO tag (prioritize B-tags, then I-tags)
+        if any(tag.startswith('B-') for tag in word_tags):
+            word_tag = next(tag for tag in word_tags if tag.startswith('B-'))
+        elif any(tag.startswith('I-') for tag in word_tags):
+            word_tag = next(tag for tag in word_tags if tag.startswith('I-'))
+        else:
+            word_tag = 'O'
+
+        # Extract clean word text from original string
+        span = word_locs[word_id]
+        word_text = text[span.start:span.end]
+
+        # Entity assembly logic (same as V2)
+        if word_tag.startswith('B-'):
+            if current_entity:
+                entities.append(current_entity)
+
+            entity_type = word_tag[2:]  # 'COM' or 'FUL'
+            current_entity = {
+                'text': word_text,
+                'type': entity_type,
+                'probs': word_probs
+            }
+
+        elif word_tag.startswith('I-') and current_entity:
+            entity_type = word_tag[2:]
+            if entity_type == current_entity['type']:
+                current_entity['text'] += ' ' + word_text
+                current_entity['probs'].extend(word_probs)
+            else:
+                # Type mismatch - start new entity
+                entities.append(current_entity)
+                current_entity = {
+                    'text': word_text,
+                    'type': entity_type,
+                    'probs': word_probs
+                }
+
+        else:  # O tag
+            if current_entity:
+                entities.append(current_entity)
+                current_entity = None
+
+    # Don't forget last entity
+    if current_entity:
+        entities.append(current_entity)
+
+    # IMPROVEMENT #1: Add debug logging
+    logger.debug(f"Extracted {len(entities)} entities before quality filtering")
+
+    # Calculate average confidence and apply V2 quality filters
+    results = []
+    for ent in entities:
+        entity_text = ent['text'].strip()
+
+        # CRITICAL FIX #3: Add probability list validation
+        if not ent['probs']:
+            logger.warning(f"Entity '{entity_text}' has no probabilities, skipping")
+            continue
+
+        avg_prob = sum(ent['probs']) / len(ent['probs'])
+
+        # V2 quality filters: length > 1, no URLs, length <= 100
+        if (len(entity_text) > 1 and
+            'http' not in entity_text.lower() and
+            len(entity_text) <= 100):
+            results.append((entity_text, ent['type'], avg_prob))
+        else:
+            # IMPROVEMENT #1: Add debug logging for filtered entities
+            logger.debug(f"Filtered out entity: '{entity_text}' (length={len(entity_text)})")
+
+    # IMPROVEMENT #1: Add debug logging
+    logger.debug(f"Returned {len(results)} entities after quality filtering")
+
+    return results
+
+
 def tokens_to_words(tokenizer, input_ids: torch.Tensor) -> List[str]:
     """
     Convert token IDs back to words.
+
+    DEPRECATED: Only used by deprecated extract_entities_from_bio_tags().
+    New code should use extract_entities_word_level() instead.
 
     Args:
         tokenizer: HuggingFace tokenizer
@@ -414,6 +575,105 @@ def tokens_to_words(tokenizer, input_ids: torch.Tensor) -> List[str]:
     """
     tokens = tokenizer.convert_ids_to_tokens(input_ids.cpu().numpy())
     return tokens
+
+
+def deduplicate_phase4_output(ner_results: pd.DataFrame) -> pd.DataFrame:
+    """
+    Deduplicate Phase 4 NER output using V2's proven deduplication logic.
+
+    Converts Phase 4 wide format to V2 long format, applies V2 deduplication
+    (which handles exact duplicates and case-insensitive matching), then
+    converts back to Phase 4 format.
+
+    Args:
+        ner_results: DataFrame with columns [ID, text, publication_date,
+                     common_name, common_prob, full_name, full_prob]
+
+    Returns:
+        Deduplicated DataFrame in same format as input
+    """
+    # Import V2 deduplication function
+    import sys
+    from pathlib import Path
+    sys.path.insert(0, str(Path(__file__).parent))
+    from ner_predict import deduplicate
+
+    # Convert Phase 4 wide format to V2 long format
+    long_format = []
+    for _, row in ner_results.iterrows():
+        # Parse common_name entities (COM type)
+        if pd.notna(row['common_name']) and row['common_name']:
+            names = [n.strip() for n in str(row['common_name']).split(',') if n.strip()]
+            probs = [p.strip() for p in str(row['common_prob']).split(',') if p.strip()]
+
+            for name, prob in zip(names, probs):
+                long_format.append({
+                    'ID': row['ID'],
+                    'text': row['text'],
+                    'publication_date': row.get('publication_date', ''),
+                    'mention': name,
+                    'label': 'COM',
+                    'prob': float(prob)
+                })
+
+        # Parse full_name entities (FUL type)
+        if pd.notna(row['full_name']) and row['full_name']:
+            names = [n.strip() for n in str(row['full_name']).split(',') if n.strip()]
+            probs = [p.strip() for p in str(row['full_prob']).split(',') if p.strip()]
+
+            for name, prob in zip(names, probs):
+                long_format.append({
+                    'ID': row['ID'],
+                    'text': row['text'],
+                    'publication_date': row.get('publication_date', ''),
+                    'mention': name,
+                    'label': 'FUL',
+                    'prob': float(prob)
+                })
+
+    # Handle empty case
+    if not long_format:
+        logger.warning("No entities found for deduplication")
+        return ner_results
+
+    # Convert to DataFrame and apply V2 deduplication
+    long_df = pd.DataFrame(long_format)
+    logger.info(f"Before deduplication: {len(long_df)} entity instances")
+    deduped_df = deduplicate(long_df)
+    logger.info(f"After deduplication: {len(deduped_df)} entity instances")
+    reduction = len(long_df) - len(deduped_df)
+    if reduction > 0:
+        logger.info(f"Removed {reduction} duplicates ({reduction/len(long_df)*100:.1f}%)")
+
+    # Convert back to Phase 4 wide format
+    results = []
+    for paper_id in deduped_df['ID'].unique():
+        paper_entities = deduped_df[deduped_df['ID'] == paper_id]
+
+        # Get original row data
+        orig_row = ner_results[ner_results['ID'] == paper_id].iloc[0]
+
+        # Separate by entity type
+        com_entities = paper_entities[paper_entities['label'] == 'COM']
+        ful_entities = paper_entities[paper_entities['label'] == 'FUL']
+
+        # Build entity strings
+        common_names = ', '.join(com_entities['mention'].tolist())
+        common_probs = ', '.join([f"{p:.3f}" for p in com_entities['prob'].tolist()])
+        full_names = ', '.join(ful_entities['mention'].tolist())
+        full_probs = ', '.join([f"{p:.3f}" for p in ful_entities['prob'].tolist()])
+
+        results.append({
+            'ID': paper_id,
+            'text': orig_row['text'],
+            'publication_date': orig_row.get('publication_date', ''),
+            'common_name': common_names,
+            'common_prob': common_probs,
+            'full_name': full_names,
+            'full_prob': full_probs
+        })
+
+    return pd.DataFrame(results)
 
 
 # ============================================================================
@@ -617,11 +877,8 @@ def run_ner_inference(
             probs = torch.softmax(logits, dim=-1)
             preds = torch.argmax(logits, dim=-1)
 
-            # CRITICAL FIX #1: Extract entities in correct format
+            # PHASE 4 POST-PROCESSING FIX: Use word-level extraction
             for i in range(len(batch['id'])):
-                # Get tokens
-                tokens = tokens_to_words(tokenizer, input_ids[i])
-
                 # Get predictions and probabilities for this sequence
                 seq_preds = preds[i].cpu().numpy()
                 seq_probs = probs[i].cpu().numpy()
@@ -629,16 +886,19 @@ def run_ner_inference(
                 # Get probability of predicted tag for each token
                 token_probs = [seq_probs[j, seq_preds[j]] for j in range(len(seq_preds))]
 
-                # Extract entities as list of (text, type, prob) tuples
-                entities = extract_entities_from_bio_tags(
-                    tokens=tokens,
+                # NEW: Word-level extraction with proper detokenization
+                entities = extract_entities_word_level(
+                    text=batch['text'][i],
+                    tokenizer=tokenizer,
+                    input_ids=input_ids[i],
                     bio_tags=seq_preds.tolist(),
-                    probabilities=token_probs
+                    probabilities=token_probs,
+                    id2tag=ID2TAG
                 )
 
                 total_entities += len(entities)
 
-                # CRITICAL FIX #1: Separate entities by type (COM vs FUL)
+                # Separate entities by type (COM vs FUL)
                 com_entities = [(text, prob) for text, etype, prob in entities if etype == 'COM']
                 ful_entities = [(text, prob) for text, etype, prob in entities if etype == 'FUL']
 
@@ -910,9 +1170,13 @@ def main():
     ner_results = run_ner_inference(model, ner_dataloader, tokenizer, device)
     ner_time = time.time() - start_time
 
-    # Save NER results
+    # PHASE 4 POST-PROCESSING FIX: Apply deduplication
+    logger.info("\nApplying deduplication to remove duplicate entities...")
+    ner_results_deduped = deduplicate_phase4_output(ner_results)
+
+    # Save NER results (deduplicated)
     ner_output = output_dir / 'ner_results.csv'
-    ner_results.to_csv(ner_output, index=False)
+    ner_results_deduped.to_csv(ner_output, index=False)
     logger.info(f"NER results saved to: {ner_output}")
 
     # ========================================================================

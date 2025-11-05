@@ -374,6 +374,170 @@ git commit -m "Add checkpoint conversion and backward-compatible loading for PyT
 
 ---
 
+## Next Steps & Focus Areas
+
+### Immediate Priority: Name Processing Investigation
+
+**Problem**: While the NER checkpoint fix resolved the 99% prediction loss, there's still a discrepancy in the downstream name processing confidence scores between local and Colab environments.
+
+**Key Findings**:
+- ✅ NER predictions: 99.97% match (RESOLVED)
+- ❌ Name processing confidence: 74% (Colab) vs 97% (local) - NEEDS INVESTIGATION
+
+**Investigation Tasks**:
+
+1. **Compare Environment Versions**
+   - Check Python library versions in both environments
+   - Document differences in pandas, numpy, or string processing libraries
+   - Test if locale settings affect string matching
+
+2. **Trace Name Processing Pipeline**
+   - Identify which script/function calculates `best_name_prob`
+   - Compare execution between local and Colab with same input
+   - Add diagnostic logging to name processing steps
+
+3. **Review Name Matching Logic**
+   - Check for hardcoded paths or environment-specific logic
+   - Verify string normalization is consistent
+   - Test with sample data in both environments
+
+4. **Test Hypothesis**
+   - Run name processing with identical inputs in both environments
+   - Compare intermediate results step-by-step
+   - Identify exact point where divergence occurs
+
+**Expected Outcome**: Identify root cause of name processing confidence difference and implement fix to achieve >95% match with local results.
+
+### Secondary Priorities
+
+1. **Model Version Management**
+   - Consider renaming production models to include version (e.g., `article_classifier_v2.pt`)
+   - Create model registry documenting which version is current
+   - Establish versioning convention for future models
+
+2. **Checkpoint Validation Tool**
+   - Create pre-run validation script that checks:
+     - Checkpoint format (dict vs NamedTuple)
+     - Parameter checksum matches expected value
+     - Loads successfully with `weights_only=True`
+   - Integrate into pipeline startup
+
+3. **Environment Standardization**
+   - Document exact Python versions and library versions for reproducibility
+   - Create requirements.txt for Colab environment matching local
+   - Consider containerization for complete environment consistency
+
+4. **Regression Testing**
+   - Establish automated tests for prediction quality
+   - Monitor parameter checksums in production
+   - Alert if predictions diverge from expected ranges
+
+### Long-term Improvements
+
+1. **Model Retraining Strategy**
+   - Phase out old checkpoint format entirely
+   - Retrain all archived models with new format
+   - Standardize on dict-only checkpoints going forward
+
+2. **Pipeline Modernization**
+   - Review all model saving/loading code for consistency
+   - Implement centralized checkpoint management
+   - Add version tracking to all model files
+
+3. **Documentation Updates**
+   - Create troubleshooting guide for common checkpoint issues
+   - Document expected checksums for all production models
+   - Maintain changelog of model versions and their checksums
+
+---
+
+## Addendum: Checkpoint Corruption Discovery (2025-10-28)
+
+### Additional Issue Identified
+
+During investigation of name processing confidence discrepancies between Colab and local runs, we discovered a **critical checkpoint loading bug** in the rerun pipeline that affected one production run.
+
+### The Problem
+
+**Symptom**: One Colab run (`2025-10-27-7mvru2_oldmodel_2022_rerun`) showed dramatically lower confidence scores:
+- Local `best_name_prob` mean: **97.4%**
+- Colab `best_name_prob` mean: **73.8%** (24% drop)
+
+**Initial Hypothesis**: The `process_names.py` script was corrupting probabilities.
+
+**Root Cause Discovered**: The URL extraction step loaded results from a **completely different checkpoint/run** instead of processing the fresh NER output.
+
+### Evidence
+
+Detailed comparison between problematic run and fresh run revealed:
+
+1. **Data Mismatch**:
+   - NER output: 4,395 rows (correct)
+   - URL extraction: 3,570 rows (825 rows lost!)
+   - 125 IDs in URL results that **don't exist** in NER output
+   - 950 IDs from NER output **missing** from URL results
+
+2. **Probability Corruption**:
+   - NER → URL extraction step in problematic run: **-23.4% probability drop**
+   - Fresh run preserved probabilities correctly: **+0.02% change**
+
+3. **Zero Match Rate**:
+   - Compared overlapping IDs between NER and URL extraction
+   - **0 out of 10 probabilities matched** - complete data mismatch
+   - Example: ID 33264402
+     - NER output: `0.9787074`
+     - URL extraction: `0.7222729` (different source!)
+
+### Analysis
+
+The checkpoint loading system in the Colab notebook loaded cached URL extraction results from a previous/different run instead of processing the current NER output. This resulted in:
+
+- Mismatched IDs between pipeline steps
+- Corrupted probability values propagating to final inventory
+- False appearance of name processing issues
+
+**The `process_names.py` script was innocent** - it correctly processed the corrupted data it received (garbage in, garbage out).
+
+### Resolution
+
+1. **Fresh Run Validation**: Confirmed fresh runs without checkpoint loading work correctly (97.3% mean probability)
+2. **Checkpoint System Deprecation**: Decision made to **remove checkpoint functionality** from rerun pipeline
+   - Adds unnecessary complexity
+   - Creates data integrity risks
+   - Colab runs fast enough (~10 minutes) that checkpointing isn't needed
+
+3. **File Isolation**: Each run produces completely fresh results without cross-contamination
+
+### Lessons Learned
+
+1. **Checkpoint Validation Required**: If implementing checkpoint systems, must validate:
+   - Session ID matches
+   - Row counts match between steps
+   - Sample IDs and data match expectations
+   - Data checksums/hashes for integrity
+
+2. **Pipeline Data Integrity**: Each pipeline step should verify its input data came from the correct upstream step
+
+3. **Diagnostic Approach**: When investigating data quality issues:
+   - Check **each pipeline step** independently
+   - Verify **row counts and IDs** match between steps
+   - Compare **sample values** between consecutive steps
+   - Don't assume the obvious culprit (e.g., name processing) without evidence
+
+### Impact
+
+- **Production Risk**: One archived run contains incorrect results due to checkpoint contamination
+- **Future Mitigation**: Checkpoint system removed from pipeline
+- **Documentation**: This finding emphasizes importance of data integrity checks in ML pipelines
+
+### Files Affected
+
+- Problematic: `collab_results/2025-10-27-7mvru2_oldmodel_2022_rerun/` (contaminated by wrong checkpoint)
+- Clean: `collab_results/2025-10-28-ulgfhi_oldmodel_2022_rerun/` (fresh run, no checkpoints)
+- Local: `inventory_classification_results/2025-10-22_2022_rerun/` (reference baseline)
+
+---
+
 ## References
 
 ### Related Documents
@@ -403,6 +567,6 @@ git commit -m "Add checkpoint conversion and backward-compatible loading for PyT
 
 ---
 
-**Status**: ✅ PRODUCTION READY
-**Last Updated**: 2025-10-27
+**Status**: ✅ PRODUCTION READY (Checkpoint system deprecated)
+**Last Updated**: 2025-10-28
 **Next Review**: When upgrading PyTorch versions or encountering similar compatibility issues

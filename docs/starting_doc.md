@@ -231,10 +231,12 @@ rclone cat gdrive:inventory_2022/path/file.json
 ### Phase 4 Multi-Task Learning
 - [`multi_task_model/README.md`](multi_task_model/README.md) - **Start here** for Phase 4
 - [`multi_task_model/PHASE4_IMPLEMENTATION_SUMMARY.md`](multi_task_model/PHASE4_IMPLEMENTATION_SUMMARY.md) - Complete architecture guide
+- [`PHASE4_NER_POST_PROCESSING_COMPLETE.md`](PHASE4_NER_POST_PROCESSING_COMPLETE.md) - **NEW:** NER post-processing (BPE fix + deduplication) ✅ PRODUCTION READY
 - [`multi_task_model/PHASE4_VS_V2_COMPARISON.md`](multi_task_model/PHASE4_VS_V2_COMPARISON.md) - Why NER improved 23.8%
 
 ### Critical Issues & Fixes
-- [`MEMORY_OVERFLOW_FIX_SESSION_2025-11-04.md`](MEMORY_OVERFLOW_FIX_SESSION_2025-11-04.md) - 🚨 Current investigation handoff
+- [`PHASE4_NER_POST_PROCESSING_COMPLETE.md`](PHASE4_NER_POST_PROCESSING_COMPLETE.md) - **NEW (2025-11-05):** NER post-processing complete ✅
+- [`MEMORY_OVERFLOW_FIX_SESSION_2025-11-04.md`](MEMORY_OVERFLOW_FIX_SESSION_2025-11-04.md) - Memory overflow & NaN fix (2025-11-04) ✅
 - [`PYTORCH_CHECKPOINT_FIX.md`](PYTORCH_CHECKPOINT_FIX.md) - PyTorch 2.8 compatibility resolution
 - [`FINAL_DIAGNOSIS_SUMMARY.md`](FINAL_DIAGNOSIS_SUMMARY.md) - Model quality investigation
 - [`ENHANCED_METADATA_FINAL_REPORT_2025-10-30.md`](ENHANCED_METADATA_FINAL_REPORT_2025-10-30.md) - Metadata features implementation
@@ -386,8 +388,8 @@ Before deploying new models:
 
 **Document Location**: `GBC/inventory_2022/docs/starting_doc.md`
 **Document Status**: ✅ Streamlined and current (~400 lines)
-**Last Review**: 2025-10-31 (Added LLM testing & NER documentation)
-**Next Review**: After Phase 4 inference bug resolution
+**Last Review**: 2025-11-05 (Added Phase 4 NER post-processing completion)
+**Next Review**: After full 2022 dataset validation with Phase 4
 **Maintained By**: AI agents working on biodata inventory pipeline
 
 ---
@@ -401,6 +403,7 @@ Before deploying new models:
 - Phase 4 → [`multi_task_model/README.md`](multi_task_model/README.md)
 - Pipelines → [`PIPELINE_GUIDES.md`](PIPELINE_GUIDES.md)
 - History → [`HISTORICAL_UPDATES.md`](HISTORICAL_UPDATES.md)
-- Current Issue → [`MEMORY_OVERFLOW_FIX_SESSION_2025-11-04.md`](MEMORY_OVERFLOW_FIX_SESSION_2025-11-04.md)
+- Recent Completion → [`PHASE4_NER_POST_PROCESSING_COMPLETE.md`](PHASE4_NER_POST_PROCESSING_COMPLETE.md)
+- Recent Fix → [`MEMORY_OVERFLOW_FIX_SESSION_2025-11-04.md`](MEMORY_OVERFLOW_FIX_SESSION_2025-11-04.md)
 - NER Guide → [`NER_explanation.md`](NER_explanation.md)
 - LLM Testing → [`../data/llm_comparison/prompts/README.md`](../data/llm_comparison/prompts/README.md)

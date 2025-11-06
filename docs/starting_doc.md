@@ -102,6 +102,62 @@ Sophisticated ML pipeline using biomedical BERT models to automatically identify
 
 ---
 
+## 🔬 Entity Complexity Investigation (Phase 2 & 2B)
+
+**Status**: ✅ COMPLETE - 12 complexity levels tested (5% to 92%)
+**Duration**: October 21 - November 3, 2025
+**Key Finding**: Split composition explains **80% of NER performance gap** to V2 baseline
+
+### Executive Summary
+
+Comprehensive investigation revealed that test set entity complexity significantly affects NER model performance, but the relationship is **more complex than expected**:
+
+- **Split B (66% complexity)** achieved best performance: F1 = 0.7281 (vs current baseline 0.644)
+- **Gap closure**: 80.1% (8.41 out of 10.5 percentage points to V2's 0.749)
+- **Unexpected "valley"** at 55-60% complexity (worse than 28% complexity)
+- **High-complexity plateau** at 80-92% performs nearly as well as Split B (avg F1 = 0.7240)
+- **Split K2 (92%)** achieved F1 = 0.7273 (only 0.0008 behind Split B!)
+
+### Key Results
+
+| Split | Complexity | Val F1 | Performance Tier |
+|-------|-----------|--------|------------------|
+| **Split B** | 65.9% | **0.7281** | 🥇 Best |
+| **Split K2** | 92.0% | **0.7273** | 🥈 Nearly tied |
+| **Split E** | 83.9% | 0.7233 | 🥉 High plateau |
+| Split J | 80.0% | 0.7215 | High plateau |
+| Split D | 28.2% | 0.7165 | Mid-tier |
+| Split G | 60.0% | 0.6950 | ⚠️ Valley (worse than 28%!) |
+| Split F | 55.0% | 0.6975 | ⚠️ Valley |
+
+### What This Means
+
+1. **Split composition is critical** - explains 80% of performance difference
+2. **Optimal complexity ~66%** BUT Split B may have benefited from lucky initialization
+3. **High complexity (80-92%) is viable** - almost as good, potentially more stable
+4. **Avoid 55-60% range** - unexpected performance valley
+5. **Remaining 2.09 points to V2** require training procedure optimization
+
+### Next Steps (Phase 3)
+
+**Priority 1**: Validate Split B consistency with 5 random seeds (~40 GPU hours)
+**Priority 2**: Test high-complexity plateau stability (~72 GPU hours)
+**Priority 3**: Map the 55-60% performance valley (~56 GPU hours)
+**Priority 4**: Hyperparameter optimization to close final 2.09 point gap (~120 GPU hours)
+
+**Estimated timeline**: 5-7 weeks, ~288 GPU hours total
+
+### Documentation
+
+- **Phase 3 Work Plan**: [`docs/handover/PHASE3_WORK_PLAN.md`](handover/PHASE3_WORK_PLAN.md) ⭐ **Complete execution plan with all details**
+- **Phase 2B Final Results**: [`docs/split_project/PHASE2B_FINAL_RESULTS.md`](split_project/PHASE2B_FINAL_RESULTS.md)
+- **Phase 2 Results**: `PHASE2_COMPLETE_ANALYSIS.md`
+- **Analysis Scripts**: `docs/split_project/analyze_phase2b_complete.py`
+- **Data**: All 12 splits in `data/ner_splits_split{X}/`
+- **Training Archives**: `collab_results/training_archives/2025-11-03-*_split*/`
+
+---
+
 ## 🚀 Quick Start
 
 ### Environment Setup

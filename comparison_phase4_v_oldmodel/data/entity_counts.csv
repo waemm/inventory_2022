@@ -1,0 +1,9 @@
+system,column,total_papers,papers_with_entities,papers_without_entities,total_entities,mean_entities_per_paper,median_entities_per_paper,min_entities_per_paper,max_entities_per_paper,std_entities_per_paper
+Ground Truth Common,true_com,13907,60,13847,64,0.004601998993312721,0.0,0,2,0.07180836478443929
+Ground Truth Full,true_ful,13907,62,13845,66,0.004745811461853743,0.0,0,2,0.07279367853696515
+V2 Common,v2_com,13907,4321,9586,5495,0.39512475731645935,0.0,0,5,0.6711467064067607
+V2 Full,v2_ful,13907,1674,12233,2115,0.1520816854821313,0.0,0,4,0.44979078787283244
+Phase 4 Common (Raw),p4_com_raw,13907,13754,153,33929,2.4397066225641764,2.0,0,14,1.8795950263774384
+Phase 4 Common (Clean),p4_com_clean,13907,13754,153,33929,2.4397066225641764,2.0,0,14,1.8795950263774384
+Phase 4 Full (Raw),p4_ful_raw,13907,0,13907,0,0.0,0.0,0,0,0.0
+Phase 4 Full (Clean),p4_ful_clean,13907,0,13907,0,0.0,0.0,0,0,0.0

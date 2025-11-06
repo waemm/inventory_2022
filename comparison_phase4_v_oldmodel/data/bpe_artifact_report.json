@@ -1,0 +1,33 @@
+{
+  "common_name": {
+    "total_rows": 13754,
+    "contaminated_rows": 0,
+    "row_contamination_rate": 0.0,
+    "total_entities": 33929,
+    "contaminated_entities": 0,
+    "entity_contamination_rate": 0.0,
+    "artifact_counts": {
+      "with_G_marker": 0,
+      "short_tokens": 0
+    },
+    "examples": []
+  },
+  "full_name": {
+    "total_rows": 13754,
+    "contaminated_rows": 0,
+    "row_contamination_rate": 0.0,
+    "total_entities": 0,
+    "contaminated_entities": 0,
+    "entity_contamination_rate": 0.0,
+    "artifact_counts": {
+      "with_G_marker": 0,
+      "short_tokens": 0
+    },
+    "examples": []
+  },
+  "summary": {
+    "total_papers": 13754,
+    "common_contaminated": 0,
+    "full_contaminated": 0
+  }
+}

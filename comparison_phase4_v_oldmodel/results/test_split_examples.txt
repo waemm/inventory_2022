@@ -1,0 +1,148 @@
+====================================================================================================
+DETAILED EXAMPLES: V2 vs Phase 4 Cleaned Predictions
+====================================================================================================
+
+
+====================================================================================================
+CATEGORY 1: Phase 4 Cleaned Significantly Outperforms V2 (Top 3)
+====================================================================================================
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+Example 1: Phase 4 F1=1.000 vs V2 F1=0.000 (Δ=1.000)
+────────────────────────────────────────────────────────────────────────────────────────────────────
+Paper ID: 30137226
+Title: ImaGEO: integrative gene expression meta-analysis from GEO database....
+
+Ground Truth (1 entities):
+  - ImaGEO
+
+V2 Predictions (0 entities):
+
+Phase 4 Cleaned Predictions (1 entities):
+  ✓ ImaGEO
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+Example 2: Phase 4 F1=1.000 vs V2 F1=0.000 (Δ=1.000)
+────────────────────────────────────────────────────────────────────────────────────────────────────
+Paper ID: 31706268
+Title: Genome-wide prediction and prioritization of human aging genes by data fusion: a machine learning ap...
+
+Ground Truth (1 entities):
+  - PPHAGE
+
+V2 Predictions (0 entities):
+
+Phase 4 Cleaned Predictions (1 entities):
+  ✓ PPHAGE
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+Example 3: Phase 4 F1=1.000 vs V2 F1=0.400 (Δ=0.600)
+────────────────────────────────────────────────────────────────────────────────────────────────────
+Paper ID: 33876217
+Title: CanDriS: posterior profiling of cancer-driving sites based on two-component evolutionary model....
+
+Ground Truth (1 entities):
+  - CandrisDB
+
+V2 Predictions (4 entities):
+  ✗ CanDriS
+  ✓ CandrisDB
+  ✗ Sites
+  ✗ ancer
+
+Phase 4 Cleaned Predictions (1 entities):
+  ✓ CandrisDB
+
+
+====================================================================================================
+CATEGORY 2: V2 Significantly Outperforms Phase 4 Cleaned (Top 3)
+====================================================================================================
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+Example 1: V2 F1=1.000 vs Phase 4 F1=0.000 (Δ=1.000)
+────────────────────────────────────────────────────────────────────────────────────────────────────
+Paper ID: 22102583
+Title: Mouse Phenome Database (MPD)....
+
+Ground Truth (2 entities):
+  - MPD
+  - Mouse Phenome Database
+
+V2 Predictions (2 entities) - Better:
+  - MPD
+  - Mouse Phenome Database
+
+Phase 4 Cleaned Predictions (3 entities) - Worse:
+  - Database
+  - Mouse
+  - Phenome
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+Example 2: V2 F1=1.000 vs Phase 4 F1=0.000 (Δ=1.000)
+────────────────────────────────────────────────────────────────────────────────────────────────────
+Paper ID: 27841751
+Title: A public database of macromolecular diffraction experiments....
+
+Ground Truth (2 entities):
+  - IRRMC
+  - Integrated Resource for Reproducibility in Macromolecular Crystallography
+
+V2 Predictions (2 entities) - Better:
+  - IRRMC
+  - Integrated Resource for Reproducibility in Macromolecular Crystallography
+
+Phase 4 Cleaned Predictions (7 entities) - Worse:
+  - Crystallography
+  - Integrated
+  - Macromolecular
+  - Reproducibility
+  - Resource
+  ... and 2 more
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+Example 3: V2 F1=1.000 vs Phase 4 F1=0.000 (Δ=1.000)
+────────────────────────────────────────────────────────────────────────────────────────────────────
+Paper ID: 32766766
+Title: LncR2metasta: a manually curated database for experimentally supported lncRNAs during various cancer...
+
+Ground Truth (1 entities):
+  - lncR2metasta
+
+V2 Predictions (1 entities) - Better:
+  - LncR2metasta
+
+Phase 4 Cleaned Predictions (2 entities) - Worse:
+  - lncR
+  - metasta
+
+
+====================================================================================================
+CATEGORY 3: Both Systems Perform Well (2 Examples)
+====================================================================================================
+
+Example 1: V2 F1=1.000, Phase 4 F1=1.000
+Paper ID: 22102771
+Title: EuDBase: An online resource for automated EST analysis pipeline (ESTFrontier) an...
+
+
+Example 2: V2 F1=1.000, Phase 4 F1=1.000
+Paper ID: 23599502
+Title: INstruct: a database of high-quality 3D structurally resolved protein interactom...
+
+
+====================================================================================================
+CATEGORY 4: Both Systems Struggle (2 Examples)
+====================================================================================================
+
+Example 1: V2 F1=0.000, Phase 4 F1=0.000
+Paper ID: 22075991
+Title: The Gene Wiki in 2011: community intelligence applied to human gene annotation....
+
+
+Example 2: V2 F1=0.000, Phase 4 F1=0.000
+Paper ID: 22086951
+Title: The UCSC Genome Browser database: extensions and updates 2011....

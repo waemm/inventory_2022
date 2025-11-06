@@ -1,8 +1,8 @@
 # Biodata Inventory ML Pipeline - AI Agent Reference Guide
 
 **Created**: 2025-10-22
-**Last Updated**: 2025-11-05 (Phase 4 cartesian product bug FIXED and VERIFIED)
-**Status**: ✅ **PRODUCTION READY** + ✅ **PHASE 4 MULTI-TASK MODEL COMPLETE** + ✅ **PHASE 4 INFERENCE VERIFIED**
+**Last Updated**: 2025-11-06 (Phase 4 vs V2 comparison analysis - critical bug identified)
+**Status**: ⚠️ **V2 PRODUCTION READY** + 🔴 **PHASE 4 HAS POST-PROCESSING BUG** (NER entity grouping broken)
 **Purpose**: High-level reference and navigation hub for AI agents
 
 ---
@@ -53,16 +53,52 @@ Sophisticated ML pipeline using biomedical BERT models to automatically identify
 
 ---
 
+## ⚠️ Critical Discovery: Phase 4 Post-Processing Bug (2025-11-05)
+
+**Status**: 🔴 **BUG IDENTIFIED** - Phase 4 NER has critical post-processing bug
+
+**Issue**: Phase 4's entity grouping logic fragments multi-word entities into individual words
+- **Example**: "Mouse Phenome Database" → `["Mouse", "Phenome", "Database"]` (3 fragments instead of 1 entity)
+- **Impact**: Test split F1 drops from expected ~66% to actual 22.49%
+- **V2 Performance**: 66.35% F1 on same test split (3× better)
+
+**Root Cause**: Post-processing fails to merge consecutive IOB `I-` tags into complete multi-word entities
+
+**Comparison Analysis** (Scripts 01-02 of 08 Complete):
+- ✅ **Data bugs fixed** (6 critical bugs: ID mismatch, JSON serialization, NaN handling, etc.)
+- ✅ **Test evaluation complete**: 63 papers with ground truth, statistically significant difference (p < 0.0001)
+- ✅ **Root cause identified**: Entity grouping bug in Phase 4 inference notebook
+- ⏳ **Pending**: Scripts 03-08 (inventory evaluation, BPE analysis, visualizations, final report)
+
+**Two Options**:
+1. **Continue analysis** with current (buggy) Phase 4 to document failures → Scripts 03-08
+2. **Fix Phase 4 bug first**, then complete fair comparison
+
+**Documentation**:
+- **Project handover**: [`docs/handovers/HANDOVER_COMPARISON_PROJECT.md`](handovers/HANDOVER_COMPARISON_PROJECT.md) ⭐ **Complete context for continuing**
+- **Bug fix guide**: [`docs/handovers/HANDOVER_PHASE4_BUG_FIX.md`](handovers/HANDOVER_PHASE4_BUG_FIX.md) ⭐ **Step-by-step fix instructions**
+- **Comparison plan**: [`plans/2025-11-05_phase4_vs_v2_ner_comparison.md`](../plans/2025-11-05_phase4_vs_v2_ner_comparison.md)
+- **Code review**: [`comparison_phase4_v_oldmodel/results/ROOT_CAUSE_ANALYSIS_DISCREPANCY.md`](../comparison_phase4_v_oldmodel/results/ROOT_CAUSE_ANALYSIS_DISCREPANCY.md)
+
+**Project Location**: `comparison_phase4_v_oldmodel/` (scripts, data, results)
+
+**Recommendation**: ⚠️ **DO NOT use Phase 4 for production NER** until post-processing bug is fixed
+
+---
+
 ## 📈 Recent Major Milestones
 
 | Date | Milestone | Status | Performance | Reference |
 |------|-----------|--------|-------------|-----------|
+| 2025-11-06 | Phase 4 vs V2 Comparison (Scripts 01-02) | 🔴 Bug Found | Phase 4: 22.49% vs V2: 66.35% | [handovers/HANDOVER_COMPARISON_PROJECT.md](handovers/HANDOVER_COMPARISON_PROJECT.md) |
 | 2025-11-05 | Phase 4 Cartesian Product Fix | ✅ Verified | 288,736 → 20,896 results | [PHASE4_INFERENCE_CARTESIAN_PRODUCT_BUG_FIX.md](PHASE4_INFERENCE_CARTESIAN_PRODUCT_BUG_FIX.md) |
 | 2025-11-04 | Phase 4 Memory Optimization | ✅ Done | Memory: 94% reduction | [MEMORY_OVERFLOW_FIX_SESSION_2025-11-04.md](MEMORY_OVERFLOW_FIX_SESSION_2025-11-04.md) |
-| 2025-10-31 | Phase 4 Multi-Task Complete | ✅ Done | NER F1: 0.9274 (+23.82%) | [multi_task_model/README.md](multi_task_model/README.md) |
+| 2025-10-31 | Phase 4 Multi-Task Complete | ⚠️ Has Bug | NER F1: 0.9274* (validation) | [multi_task_model/README.md](multi_task_model/README.md) |
 | 2025-10-30 | Enhanced Metadata Features | ✅ Done | 21,392 papers × 38 features | [ENHANCED_METADATA_FINAL_REPORT_2025-10-30.md](ENHANCED_METADATA_FINAL_REPORT_2025-10-30.md) |
 | 2025-10-29 | Training Infrastructure | ✅ Done | Experimental pipeline ready | [EXPERIMENTAL_INFRASTRUCTURE_PROGRESS.md](EXPERIMENTAL_INFRASTRUCTURE_PROGRESS.md) |
 | 2025-10-27 | PyTorch Compatibility | ✅ Resolved | Cross-platform models | [PYTORCH_CHECKPOINT_FIX.md](PYTORCH_CHECKPOINT_FIX.md) |
+
+*Note: 0.9274 F1 was validation metric (token-level). Independent test evaluation shows 0.2249 F1 (entity-level) due to post-processing bug.
 
 ---
 
@@ -114,40 +150,49 @@ Final Inventory → Structured biodata resource catalog
 
 ### Model Performance
 
-**V2 Models (Traditional Two-Model System)**:
-| Model | F1 Score | Precision | Recall | Status |
-|-------|----------|-----------|--------|--------|
-| Classification | 0.898 | 0.930 | 0.869 | ✅ Production |
-| NER | 0.749 | 0.779 | 0.722 | ✅ Production |
+**V2 Models (Traditional Two-Model System)** - ✅ **RECOMMENDED FOR PRODUCTION**:
+| Model | F1 Score | Precision | Recall | Test Split Performance | Status |
+|-------|----------|-----------|--------|------------------------|--------|
+| Classification | 0.898 | 0.930 | 0.869 | N/A | ✅ Production |
+| NER | 0.749 | 0.779 | 0.722 | **0.6635** (entity-level) | ✅ Production |
 
-**Phase 4 Multi-Task Model** (Recommended):
-| Task | F1 Score | vs V2 | Status |
-|------|----------|-------|--------|
-| NER | **0.9274** | **+23.82%** | ✅ Production Ready |
-| Classification | 0.8586 | -4.38% | ✅ Ready (acceptable trade-off) |
-| **Combined** | **0.8917** | **+8.28%** | ✅ Overall improvement |
+**Phase 4 Multi-Task Model** - 🔴 **HAS POST-PROCESSING BUG**:
+| Task | Validation F1* | Test F1** | vs V2 | Status |
+|------|---------------|-----------|-------|--------|
+| NER | 0.9274* (token-level) | **0.2249** (entity-level) | **-66% vs V2** | 🔴 BROKEN |
+| Classification | 0.8586 | Not tested | -4.38% | ⚠️ Unknown |
 
-**Recommendation**: ✅ Deploy Phase 4 model (inference verified with sessions 1f3ixn & f649n1)
+*Validation metrics from training (token-level IOB accuracy, not entity extraction)
+**Independent test evaluation on 63 papers with ground truth (entity-level matching)
+
+**Issue**: Post-processing bug fragments multi-word entities (e.g., "Mouse Phenome Database" → ["Mouse", "Phenome", "Database"])
+
+**Recommendation**: ⚠️ **USE V2 MODELS** until Phase 4 post-processing bug is fixed
+- See: [`docs/handovers/HANDOVER_PHASE4_BUG_FIX.md`](handovers/HANDOVER_PHASE4_BUG_FIX.md) for fix instructions
 
 ---
 
 ## 📊 Production Status
 
-### Production Models (V2 - Currently Active)
+### Production Models (V2 - ✅ RECOMMENDED)
 
 **Classification**: `out/classif_train_out/article_classifier_v2.pt`
-- F1: 0.898 | Status: ✅ Validated | Format: Dict (PyTorch 2.8 compatible)
+- F1: 0.898 | Status: ✅ Validated & Production Ready | Format: Dict (PyTorch 2.8 compatible)
 
 **NER**: `out/ner_train_out/named_entity_recognition_v2.pt`
-- F1: 0.749 | Status: ✅ Validated | Format: Dict (PyTorch 2.8 compatible)
+- F1: 0.749 (validation), 0.6635 (test split) | Status: ✅ Validated & Production Ready | Format: Dict (PyTorch 2.8 compatible)
 
-### Phase 4 Multi-Task Model (Ready for Deployment)
+### Phase 4 Multi-Task Model (🔴 NOT READY - HAS BUG)
 
 **Location**: `collab_results/experiment_archives/2025-10-31-rq7i4n/multitask_training/`
 
-**Recommended**: `checkpoint_best_ner.pt` (NER F1: 0.9274)
+**Checkpoint**: `checkpoint_best_ner.pt` (Validation F1: 0.9274, Test F1: 0.2249)
 
-**Status**: ✅ Inference pipeline verified and ready for production use
+**Status**: 🔴 **DO NOT USE FOR PRODUCTION**
+- Post-processing bug fragments multi-word entities
+- Test performance 3× worse than V2 (22.49% vs 66.35%)
+- Fix required before deployment
+- See: [`docs/handovers/HANDOVER_PHASE4_BUG_FIX.md`](handovers/HANDOVER_PHASE4_BUG_FIX.md)
 
 ### Datasets
 - **Training**: 1,635 classification samples, 554 NER samples

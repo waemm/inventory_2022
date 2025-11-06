@@ -1,0 +1,58 @@
+================================================================================
+ID TYPE CONVERSION BUG FIX - QUICK REFERENCE
+================================================================================
+
+PROBLEM:
+--------
+Phase 4 IDs: "20672376.0" (float → string)
+V2 IDs:      "20672376"   (int → string)
+Result:      IDs don't match during merge, papers excluded from comparison
+
+SOLUTION:
+---------
+Convert all IDs: float → int → string
+Result:      "20672376" (consistent format)
+
+CODE PATTERN:
+-------------
+df['ID'] = df['ID'].astype(float).astype(int).astype(str)
+
+FIXED FUNCTIONS:
+----------------
+1. load_v2_results()        - Line 67  (ID column)
+2. load_phase4_results()    - Line 120 (ID column)
+3. load_ner_test_split()    - Line 173 (id column - lowercase!)
+4. load_inventory()         - Line 228 (pmid/PMID/id/ID - flexible)
+
+FILES:
+------
+Fixed:  comparison_phase4_v_oldmodel/scripts/utils/data_loading.py
+Test:   comparison_phase4_v_oldmodel/scripts/test_id_normalization.py
+Docs:   comparison_phase4_v_oldmodel/ID_NORMALIZATION_FIX.md
+
+VERIFICATION:
+-------------
+$ cd comparison_phase4_v_oldmodel/scripts
+$ python test_id_normalization.py
+
+Expected output:
+  ✓ Loaded V2 results: 4,395 rows
+  ✓ Loaded Phase 4 results: 13,754 rows
+  ✓ Loaded test split: 66 rows
+  ✓ IDs are properly normalized (no .0 suffix)
+  ✓ IDs are merge-compatible (same format)
+
+TEST RESULTS:
+-------------
+✓ All ID columns normalized correctly
+✓ No .0 suffixes in any IDs
+✓ V2 and Phase 4 IDs match exactly (e.g., '20672376')
+✓ Found 4 common IDs in sample set
+✓ Merge operations will work correctly
+
+IMPACT:
+-------
+Before: Papers incorrectly marked as "only in V2" or "only in Phase 4"
+After:  All papers with matching IDs correctly aligned for comparison
+
+================================================================================

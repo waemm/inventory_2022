@@ -1,0 +1,1415 @@
+2025-11-05 19:12:08,256 - __main__ - INFO - ================================================================================
+2025-11-05 19:12:08,260 - __main__ - INFO - Phase 4 vs V2 NER Comparison: Preprocessing and Alignment
+2025-11-05 19:12:08,260 - __main__ - INFO - ================================================================================
+2025-11-05 19:12:08,260 - __main__ - INFO - Output directory: /Users/warren/development/GBC/inventory_2022/comparison_phase4_v_oldmodel/data
+2025-11-05 19:12:08,260 - __main__ - INFO - BPE cleaning: ENABLED
+2025-11-05 19:12:08,260 - __main__ - INFO - ================================================================================
+2025-11-05 19:12:08,260 - __main__ - INFO - STEP 1: Loading Datasets
+2025-11-05 19:12:08,260 - __main__ - INFO - ================================================================================
+2025-11-05 19:12:08,262 - __main__ - INFO - 
+[1/4] Loading V2 (old model) NER results...
+2025-11-05 19:12:08,263 - utils.data_loading - INFO - Loading V2 results from: /Users/warren/development/GBC/inventory_2022/collab_results/2025-10-28-ulgfhi_oldmodel_2022_rerun/ner_results.csv
+2025-11-05 19:12:08,648 - utils.data_loading - INFO - Successfully loaded 4395 V2 results with columns: ['ID', 'text', 'publication_date', 'common_name', 'common_prob', 'full_name', 'full_prob']
+2025-11-05 19:12:08,649 - __main__ - INFO - ✓ Loaded 4,395 V2 results
+2025-11-05 19:12:08,649 - __main__ - INFO - 
+[2/4] Loading Phase 4 (new model) NER results...
+2025-11-05 19:12:08,649 - utils.data_loading - INFO - Loading Phase 4 results from: /Users/warren/development/GBC/inventory_2022/collab_results/experiment_archives/2025-11-05-poq5i4_phase4_2022_rerun/ner_results.csv
+2025-11-05 19:12:08,811 - utils.data_loading - INFO - Successfully loaded 20890 Phase 4 results with columns: ['ID', 'common_name', 'common_prob', 'full_name', 'full_prob']
+2025-11-05 19:12:08,812 - __main__ - INFO - ✓ Loaded 20,890 Phase 4 results
+2025-11-05 19:12:08,812 - __main__ - INFO - 
+[3/4] Loading NER test split ground truth...
+2025-11-05 19:12:08,812 - utils.data_loading - INFO - Loading NER test split from: /Users/warren/development/GBC/inventory_2022/data/ner_splits_full/test_ner.csv
+2025-11-05 19:12:08,825 - utils.data_loading - INFO - Successfully loaded 66 test samples with columns: ['id', 'title', 'abstract', 'full_name', 'common_name', 'title_abstract']
+2025-11-05 19:12:08,826 - __main__ - INFO - ✓ Loaded 66 test samples
+2025-11-05 19:12:08,828 - __main__ - INFO - 
+[4/4] Loading final inventory...
+2025-11-05 19:12:08,828 - utils.data_loading - INFO - Loading inventory from: /Users/warren/development/GBC/inventory_2022/data/final_inventory_2022.csv
+2025-11-05 19:12:09,126 - utils.data_loading - INFO - Successfully loaded 3112 papers with columns: ['ID', 'best_name', 'best_name_prob', 'best_common', 'best_common_prob', 'best_full', 'best_full_prob', 'article_count', 'extracted_url', 'extracted_url_status', 'extracted_url_country', 'extracted_url_coordinates', 'wayback_url', 'publication_date', 'affiliation', 'authors', 'grant_ids', 'grant_agencies', 'num_citations', 'affiliation_countries']
+2025-11-05 19:12:09,126 - __main__ - INFO - ✓ Loaded 3,112 papers in inventory
+2025-11-05 19:12:09,126 - __main__ - INFO - 
+✓ All datasets loaded successfully
+2025-11-05 19:12:09,126 - __main__ - INFO - 
+================================================================================
+2025-11-05 19:12:09,126 - __main__ - INFO - STEP 2: Parsing Entity Columns
+2025-11-05 19:12:09,126 - __main__ - INFO - ================================================================================
+2025-11-05 19:12:09,126 - __main__ - INFO - 
+[1/3] Parsing V2 entities (common_name, full_name)...
+2025-11-05 19:12:09,226 - __main__ - INFO - ✓ Parsed V2 entities
+2025-11-05 19:12:09,226 - __main__ - INFO - 
+[2/3] Parsing Phase 4 entities (common_name, full_name)...
+2025-11-05 19:12:09,816 - __main__ - INFO - ✓ Parsed Phase 4 entities
+2025-11-05 19:12:09,816 - __main__ - INFO - 
+[3/3] Parsing test split entities (ground truth)...
+2025-11-05 19:12:09,817 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['UniProt', 'UniProtKB']
+2025-11-05 19:12:09,817 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['sc-PDB']
+2025-11-05 19:12:09,817 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['GeneEx']
+2025-11-05 19:12:09,817 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['dbGuide']
+2025-11-05 19:12:09,819 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['CDSbank']
+2025-11-05 19:12:09,819 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['SuperFly']
+2025-11-05 19:12:09,820 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['IDEAL']
+2025-11-05 19:12:09,820 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['PESNPdb']
+2025-11-05 19:12:09,820 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Pfam']
+2025-11-05 19:12:09,820 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['DrugR+']
+2025-11-05 19:12:09,820 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['IRRMC']
+2025-11-05 19:12:09,820 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['PDXliver']
+2025-11-05 19:12:09,820 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['HFBD']
+2025-11-05 19:12:09,821 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['']
+2025-11-05 19:12:09,821 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['KEGG']
+2025-11-05 19:12:09,821 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['SmedGD']
+2025-11-05 19:12:09,821 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['ViralHostRangeDB']
+2025-11-05 19:12:09,821 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['MosaicBase']
+2025-11-05 19:12:09,822 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['ImaGEO']
+2025-11-05 19:12:09,840 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['FIC']
+2025-11-05 19:12:09,842 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['DNAmod']
+2025-11-05 19:12:09,843 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['']
+2025-11-05 19:12:09,843 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['MeDAS']
+2025-11-05 19:12:09,843 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['BEE']
+2025-11-05 19:12:09,843 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['BacWGSTdb']
+2025-11-05 19:12:09,843 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['']
+2025-11-05 19:12:09,843 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['OMIM']
+2025-11-05 19:12:09,844 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['PolarProtDb']
+2025-11-05 19:12:09,844 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['PhenCards']
+2025-11-05 19:12:09,844 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['']
+2025-11-05 19:12:09,857 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['lncR2metasta']
+2025-11-05 19:12:09,858 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['DIGGER']
+2025-11-05 19:12:09,858 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['RTFAdb']
+2025-11-05 19:12:09,860 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['cgMLST@Taiwan']
+2025-11-05 19:12:09,860 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['CoV3D']
+2025-11-05 19:12:09,861 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['CandrisDB']
+2025-11-05 19:12:09,861 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['CellMiner-SCLC', 'SCLC-CellMiner']
+2025-11-05 19:12:09,861 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['NGSmethDB']
+2025-11-05 19:12:09,861 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['MPD']
+2025-11-05 19:12:09,861 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['CircR2Cancer', 'circR2Cancer']
+2025-11-05 19:12:09,864 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['TMSNP']
+2025-11-05 19:12:09,864 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['SANCDB']
+2025-11-05 19:12:09,864 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['PPHAGE']
+2025-11-05 19:12:09,864 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['bc-GenExMiner']
+2025-11-05 19:12:09,866 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['BGD']
+2025-11-05 19:12:09,866 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['TGV database']
+2025-11-05 19:12:09,866 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['TCRdb']
+2025-11-05 19:12:09,867 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['InSexBase']
+2025-11-05 19:12:09,867 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['D3Similarity']
+2025-11-05 19:12:09,867 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['PED']
+2025-11-05 19:12:09,867 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Pharos', 'TCRD']
+2025-11-05 19:12:09,867 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['MatrixDB']
+2025-11-05 19:12:09,867 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['LnCeCell']
+2025-11-05 19:12:09,867 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['ExVe']
+2025-11-05 19:12:09,867 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['DrugRepV']
+2025-11-05 19:12:09,867 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['INstruct']
+2025-11-05 19:12:09,867 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['WormBase']
+2025-11-05 19:12:09,867 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['IMG/VR']
+2025-11-05 19:12:09,868 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['EuDBase']
+2025-11-05 19:12:09,868 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['DDBJ']
+2025-11-05 19:12:09,868 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['IDDB']
+2025-11-05 19:12:09,868 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['MGI']
+2025-11-05 19:12:09,868 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['miRegulome']
+2025-11-05 19:12:09,868 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['UCSC Genome Browser database']
+2025-11-05 19:12:09,868 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['HIM database']
+2025-11-05 19:12:09,868 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['NanDeSyn']
+2025-11-05 19:12:09,870 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['UniProt Knowledgebase']
+2025-11-05 19:12:09,870 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['sc-PDB']
+2025-11-05 19:12:10,008 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Gene Circuit Explorer']
+2025-11-05 19:12:10,008 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['dbGuide']
+2025-11-05 19:12:10,009 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['CDSbank']
+2025-11-05 19:12:10,009 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['SuperFly']
+2025-11-05 19:12:10,009 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Intrinsically Disordered proteins with Extensive Annotations and Literature']
+2025-11-05 19:12:10,010 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['PESNPdb']
+2025-11-05 19:12:10,010 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Pfam 33.1']
+2025-11-05 19:12:10,010 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['DrugR+']
+2025-11-05 19:12:10,010 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Integrated Resource for Reproducibility in Macromolecular Crystallography']
+2025-11-05 19:12:10,010 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['PDXliver']
+2025-11-05 19:12:10,010 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['HF biomarker knowledge database']
+2025-11-05 19:12:10,010 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['The Gene Ontology resource']
+2025-11-05 19:12:10,011 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['KEGG']
+2025-11-05 19:12:10,011 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Schmidtea mediterranea genome database']
+2025-11-05 19:12:10,011 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Viral Host Range database']
+2025-11-05 19:12:10,012 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['MosaicBase']
+2025-11-05 19:12:10,013 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['ImaGEO']
+2025-11-05 19:12:10,014 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['functional interactome of Caenorhabditis elegans']
+2025-11-05 19:12:10,014 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['DNA modification database']
+2025-11-05 19:12:10,015 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Autoimmune Diseases Explorer']
+2025-11-05 19:12:10,015 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Metazoan Developmental Alternative Splicing database']
+2025-11-05 19:12:10,015 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Biomedical Entity Explorer']
+2025-11-05 19:12:10,016 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['BacWGSTdb']
+2025-11-05 19:12:10,016 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Mouse Kidney Fibromics browser']
+2025-11-05 19:12:10,016 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Online Mendelian Inheritance in Man']
+2025-11-05 19:12:10,016 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['PolarProtDb']
+2025-11-05 19:12:10,016 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['PhenCards']
+2025-11-05 19:12:10,016 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Gene Wiki']
+2025-11-05 19:12:10,016 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['lncR2metasta']
+2025-11-05 19:12:10,016 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['DIGGER']
+2025-11-05 19:12:10,017 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['RTFAdb']
+2025-11-05 19:12:10,017 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['cgMLST@Taiwan']
+2025-11-05 19:12:10,017 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['CoV3D']
+2025-11-05 19:12:10,017 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['CandrisDB']
+2025-11-05 19:12:10,017 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['CellMiner-SCLC', 'SCLC-CellMiner']
+2025-11-05 19:12:10,017 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['NGSmethDB']
+2025-11-05 19:12:10,017 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Mouse Phenome Database']
+2025-11-05 19:12:10,017 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['CircR2Cancer', 'circR2Cancer']
+2025-11-05 19:12:10,017 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['']
+2025-11-05 19:12:10,018 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['South African Natural Compounds Database']
+2025-11-05 19:12:10,018 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['PPHAGE']
+2025-11-05 19:12:10,018 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Breast cancer gene-expression miner']
+2025-11-05 19:12:10,018 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Bovine Genome Database']
+2025-11-05 19:12:10,018 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Tomato Genomic Variations database']
+2025-11-05 19:12:10,018 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['TCRdb']
+2025-11-05 19:12:10,018 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['InSexBase']
+2025-11-05 19:12:10,018 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['D3Similarity']
+2025-11-05 19:12:10,018 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Pancreatic Expression Database', 'pancreatic expression database']
+2025-11-05 19:12:10,018 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Pharos', 'The Target Central Resource Database']
+2025-11-05 19:12:10,019 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['MatrixDB']
+2025-11-05 19:12:10,019 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['LnCeCell']
+2025-11-05 19:12:10,019 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['ExVe']
+2025-11-05 19:12:10,020 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['DrugRepV']
+2025-11-05 19:12:10,020 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['INstruct']
+2025-11-05 19:12:10,020 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['WormBase']
+2025-11-05 19:12:10,020 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['IMG/VR database']
+2025-11-05 19:12:10,020 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['EuDBase']
+2025-11-05 19:12:10,020 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['DDBJ Center']
+2025-11-05 19:12:10,020 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['infertility disease database']
+2025-11-05 19:12:10,021 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Mouse Genome Informatics']
+2025-11-05 19:12:10,021 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['miRegulome']
+2025-11-05 19:12:10,022 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['University of California Santa Cruz Genome Browser']
+2025-11-05 19:12:10,022 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['herbal ingredients in-vivo metabolism database']
+2025-11-05 19:12:10,023 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Nannochloropsis Design and Synthesis']
+2025-11-05 19:12:10,038 - __main__ - INFO - ✓ Parsed test split entities
+2025-11-05 19:12:10,038 - __main__ - INFO - 
+✓ All entity columns parsed successfully
+2025-11-05 19:12:10,038 - __main__ - INFO - 
+================================================================================
+2025-11-05 19:12:10,038 - __main__ - INFO - STEP 3: Detecting and Cleaning BPE Artifacts
+2025-11-05 19:12:10,038 - __main__ - INFO - ================================================================================
+2025-11-05 19:12:10,038 - __main__ - INFO - 
+[1/3] Analyzing Phase 4 common_name for BPE contamination...
+2025-11-05 19:12:10,531 - utils.bpe_cleaning - INFO - BPE Contamination Report:
+2025-11-05 19:12:10,532 - utils.bpe_cleaning - INFO -   Rows: 12839/20890 (61.5%)
+2025-11-05 19:12:10,532 - utils.bpe_cleaning - INFO -   Entities: 52485/174448 (30.1%)
+2025-11-05 19:12:10,533 - utils.bpe_cleaning - INFO -   Ġ markers: 20
+2025-11-05 19:12:10,534 - utils.bpe_cleaning - INFO -   Short tokens: 0
+2025-11-05 19:12:10,534 - __main__ - INFO - 
+[2/3] Analyzing Phase 4 full_name for BPE contamination...
+2025-11-05 19:12:10,557 - utils.bpe_cleaning - INFO - BPE Contamination Report:
+2025-11-05 19:12:10,557 - utils.bpe_cleaning - INFO -   Rows: 0/20890 (0.0%)
+2025-11-05 19:12:10,557 - utils.bpe_cleaning - INFO -   Entities: 0/0 (0.0%)
+2025-11-05 19:12:10,557 - utils.bpe_cleaning - INFO -   Ġ markers: 0
+2025-11-05 19:12:10,558 - utils.bpe_cleaning - INFO -   Short tokens: 0
+2025-11-05 19:12:10,558 - __main__ - INFO - 
+[3/3] Cleaning BPE artifacts from Phase 4 entity lists...
+2025-11-05 19:12:10,558 - __main__ - INFO -   - Cleaning common_name_list...
+2025-11-05 19:12:11,645 - __main__ - INFO -   - Cleaning full_name_list...
+2025-11-05 19:12:11,734 - __main__ - INFO - 
+✓ BPE cleaning complete:
+2025-11-05 19:12:11,734 - __main__ - INFO -   - Common name contamination: 61.5% of papers
+2025-11-05 19:12:11,737 - __main__ - INFO -   - Full name contamination: 0.0% of papers
+2025-11-05 19:12:11,737 - __main__ - INFO -   - Total entities processed: 174,448
+2025-11-05 19:12:11,737 - __main__ - INFO - 
+================================================================================
+2025-11-05 19:12:11,738 - __main__ - INFO - STEP 4: Aligning Papers by ID
+2025-11-05 19:12:11,738 - __main__ - INFO - ================================================================================
+2025-11-05 19:12:11,738 - __main__ - INFO - 
+[1/4] Preparing V2 data...
+2025-11-05 19:12:11,775 - __main__ - INFO - ✓ V2: 4,395 papers
+2025-11-05 19:12:11,775 - __main__ - INFO - 
+[2/4] Preparing Phase 4 data...
+2025-11-05 19:12:11,910 - __main__ - INFO - ✓ Phase 4: 20,890 papers
+2025-11-05 19:12:11,910 - __main__ - INFO - 
+[3/4] Preparing test split (ground truth)...
+2025-11-05 19:12:11,922 - __main__ - INFO - ✓ Test split: 66 papers
+2025-11-05 19:12:11,923 - __main__ - INFO - 
+[4/4] Merging datasets by paper_id...
+2025-11-05 19:12:11,925 - __main__ - INFO -   - Merging V2 and Phase 4 results...
+2025-11-05 19:12:12,364 - __main__ - INFO -     • Both V2 and Phase 4: 0
+2025-11-05 19:12:12,381 - __main__ - INFO -     • Only V2: 4,395
+2025-11-05 19:12:12,386 - __main__ - INFO -     • Only Phase 4: 20,890
+2025-11-05 19:12:12,404 - __main__ - INFO -   - Merging with ground truth...
+2025-11-05 19:12:12,538 - __main__ - INFO -     • With ground truth: 58
+2025-11-05 19:12:12,544 - __main__ - INFO -     • Without ground truth: 25,227
+2025-11-05 19:12:12,583 - __main__ - INFO - 
+✓ Alignment complete: 25,285 total papers
+2025-11-05 19:12:12,594 - __main__ - INFO - 
+Coverage statistics:
+2025-11-05 19:12:12,594 - __main__ - INFO -   - Papers with ground truth: 58 (0.2%)
+2025-11-05 19:12:12,594 - __main__ - INFO -   - Papers with V2 predictions: 4,395 (17.4%)
+2025-11-05 19:12:12,594 - __main__ - INFO -   - Papers with Phase 4 predictions: 20,890 (82.6%)
+2025-11-05 19:12:12,597 - __main__ - INFO - 
+================================================================================
+2025-11-05 19:12:12,598 - __main__ - INFO - STEP 5: Generating Entity Count Statistics
+2025-11-05 19:12:12,599 - __main__ - INFO - ================================================================================
+2025-11-05 19:12:12,599 - __main__ - INFO - 
+Calculating entity count distributions...
+2025-11-05 19:12:13,266 - __main__ - INFO - 
+✓ Entity count statistics:
+2025-11-05 19:12:13,268 - __main__ - INFO - 
+Ground Truth Common:
+2025-11-05 19:12:13,268 - __main__ - INFO -   - Total entities: 62
+2025-11-05 19:12:13,268 - __main__ - INFO -   - Papers with entities: 58 (0.2%)
+2025-11-05 19:12:13,268 - __main__ - INFO -   - Mean per paper: 0.00
+2025-11-05 19:12:13,268 - __main__ - INFO -   - Median per paper: 0.0
+2025-11-05 19:12:13,269 - __main__ - INFO - 
+Ground Truth Full:
+2025-11-05 19:12:13,270 - __main__ - INFO -   - Total entities: 62
+2025-11-05 19:12:13,270 - __main__ - INFO -   - Papers with entities: 58 (0.2%)
+2025-11-05 19:12:13,271 - __main__ - INFO -   - Mean per paper: 0.00
+2025-11-05 19:12:13,272 - __main__ - INFO -   - Median per paper: 0.0
+2025-11-05 19:12:13,273 - __main__ - INFO - 
+V2 Common:
+2025-11-05 19:12:13,273 - __main__ - INFO -   - Total entities: 5,495
+2025-11-05 19:12:13,273 - __main__ - INFO -   - Papers with entities: 4,321 (17.1%)
+2025-11-05 19:12:13,274 - __main__ - INFO -   - Mean per paper: 0.22
+2025-11-05 19:12:13,274 - __main__ - INFO -   - Median per paper: 0.0
+2025-11-05 19:12:13,275 - __main__ - INFO - 
+V2 Full:
+2025-11-05 19:12:13,275 - __main__ - INFO -   - Total entities: 2,115
+2025-11-05 19:12:13,275 - __main__ - INFO -   - Papers with entities: 1,674 (6.6%)
+2025-11-05 19:12:13,276 - __main__ - INFO -   - Mean per paper: 0.08
+2025-11-05 19:12:13,276 - __main__ - INFO -   - Median per paper: 0.0
+2025-11-05 19:12:13,277 - __main__ - INFO - 
+Phase 4 Common (Raw):
+2025-11-05 19:12:13,278 - __main__ - INFO -   - Total entities: 174,448
+2025-11-05 19:12:13,278 - __main__ - INFO -   - Papers with entities: 13,777 (54.5%)
+2025-11-05 19:12:13,278 - __main__ - INFO -   - Mean per paper: 6.90
+2025-11-05 19:12:13,278 - __main__ - INFO -   - Median per paper: 3.0
+2025-11-05 19:12:13,278 - __main__ - INFO - 
+Phase 4 Common (Clean):
+2025-11-05 19:12:13,279 - __main__ - INFO -   - Total entities: 174,448
+2025-11-05 19:12:13,279 - __main__ - INFO -   - Papers with entities: 13,777 (54.5%)
+2025-11-05 19:12:13,279 - __main__ - INFO -   - Mean per paper: 6.90
+2025-11-05 19:12:13,279 - __main__ - INFO -   - Median per paper: 3.0
+2025-11-05 19:12:13,280 - __main__ - INFO - 
+Phase 4 Full (Raw):
+2025-11-05 19:12:13,280 - __main__ - INFO -   - Total entities: 0
+2025-11-05 19:12:13,280 - __main__ - INFO -   - Papers with entities: 0 (0.0%)
+2025-11-05 19:12:13,280 - __main__ - INFO -   - Mean per paper: 0.00
+2025-11-05 19:12:13,280 - __main__ - INFO -   - Median per paper: 0.0
+2025-11-05 19:12:13,280 - __main__ - INFO - 
+Phase 4 Full (Clean):
+2025-11-05 19:12:13,281 - __main__ - INFO -   - Total entities: 0
+2025-11-05 19:12:13,281 - __main__ - INFO -   - Papers with entities: 0 (0.0%)
+2025-11-05 19:12:13,281 - __main__ - INFO -   - Mean per paper: 0.00
+2025-11-05 19:12:13,281 - __main__ - INFO -   - Median per paper: 0.0
+2025-11-05 19:12:13,281 - __main__ - INFO - 
+================================================================================
+2025-11-05 19:12:13,282 - __main__ - INFO - STEP 6: Saving Output Files
+2025-11-05 19:12:13,282 - __main__ - INFO - ================================================================================
+2025-11-05 19:12:13,282 - __main__ - INFO - 
+Output directory: /Users/warren/development/GBC/inventory_2022/comparison_phase4_v_oldmodel/data
+2025-11-05 19:12:13,282 - __main__ - INFO - 
+[1/3] Saving aligned_papers.csv...
+2025-11-05 19:12:14,288 - __main__ - INFO - ✓ Saved 25,285 papers to: /Users/warren/development/GBC/inventory_2022/comparison_phase4_v_oldmodel/data/aligned_papers.csv
+2025-11-05 19:12:14,289 - __main__ - INFO -   File size: 3.30 MB
+2025-11-05 19:12:14,290 - __main__ - INFO - 
+[2/3] Saving bpe_artifact_report.json...
+2025-11-05 19:12:14,293 - __main__ - INFO - ✓ Saved BPE report to: /Users/warren/development/GBC/inventory_2022/comparison_phase4_v_oldmodel/data/bpe_artifact_report.json
+2025-11-05 19:12:14,294 - __main__ - INFO - 
+[3/3] Saving entity_counts.csv...
+2025-11-05 19:12:14,308 - __main__ - INFO - ✓ Saved entity statistics to: /Users/warren/development/GBC/inventory_2022/comparison_phase4_v_oldmodel/data/entity_counts.csv
+2025-11-05 19:12:14,310 - __main__ - INFO - 
+✓ All outputs saved successfully
+2025-11-05 19:12:14,311 - __main__ - INFO - 
+================================================================================
+2025-11-05 19:12:14,311 - __main__ - INFO - FINAL SUMMARY
+2025-11-05 19:12:14,312 - __main__ - INFO - ================================================================================
+2025-11-05 19:12:14,312 - __main__ - INFO - 
+📊 Dataset Statistics:
+2025-11-05 19:12:14,312 - __main__ - INFO -   Total papers aligned: 25,285
+2025-11-05 19:12:14,314 - __main__ - INFO -   Papers with ground truth: 58
+2025-11-05 19:12:14,321 - __main__ - INFO -   Papers with V2 results: 4,395
+2025-11-05 19:12:14,337 - __main__ - INFO -   Papers with Phase 4 results: 20,890
+2025-11-05 19:12:14,338 - __main__ - INFO - 
+🔍 BPE Contamination:
+2025-11-05 19:12:14,338 - __main__ - INFO -   Common name papers contaminated: 12,839 (61.5%)
+2025-11-05 19:12:14,338 - __main__ - INFO -   Full name papers contaminated: 0 (0.0%)
+2025-11-05 19:12:14,338 - __main__ - INFO - 
+📈 Entity Counts:
+2025-11-05 19:12:14,338 - __main__ - INFO -   Ground Truth Common: 62 entities
+2025-11-05 19:12:14,338 - __main__ - INFO -   Ground Truth Full: 62 entities
+2025-11-05 19:12:14,339 - __main__ - INFO - 
+✅ Preprocessing complete! Ready for comparison analysis.
+2025-11-05 19:12:14,339 - __main__ - INFO -    Next step: Run 02_entity_level_comparison.py
+2025-11-05 19:12:14,339 - __main__ - INFO - 
+================================================================================
+2025-11-05 19:12:14,339 - __main__ - INFO - ✅ SUCCESS: All processing completed successfully
+2025-11-05 19:12:14,339 - __main__ - INFO - ================================================================================
+2025-11-05 19:50:36,119 - __main__ - INFO - ================================================================================
+2025-11-05 19:50:36,119 - __main__ - INFO - Phase 4 vs V2 NER Comparison: Preprocessing and Alignment
+2025-11-05 19:50:36,119 - __main__ - INFO - ================================================================================
+2025-11-05 19:50:36,120 - __main__ - INFO - Output directory: /Users/warren/development/GBC/inventory_2022/comparison_phase4_v_oldmodel/data
+2025-11-05 19:50:36,120 - __main__ - INFO - BPE cleaning: ENABLED
+2025-11-05 19:50:36,120 - __main__ - INFO - ================================================================================
+2025-11-05 19:50:36,120 - __main__ - INFO - STEP 1: Loading Datasets
+2025-11-05 19:50:36,121 - __main__ - INFO - ================================================================================
+2025-11-05 19:50:36,121 - __main__ - INFO - 
+[1/4] Loading V2 (old model) NER results...
+2025-11-05 19:50:36,122 - utils.data_loading - INFO - Loading V2 results from: /Users/warren/development/GBC/inventory_2022/collab_results/2025-10-28-ulgfhi_oldmodel_2022_rerun/ner_results.csv
+2025-11-05 19:50:36,476 - utils.data_loading - INFO - Successfully loaded 4395 V2 results with columns: ['ID', 'text', 'publication_date', 'common_name', 'common_prob', 'full_name', 'full_prob']
+2025-11-05 19:50:36,477 - __main__ - INFO - ✓ Loaded 4,395 V2 results
+2025-11-05 19:50:36,477 - __main__ - INFO - 
+[2/4] Loading Phase 4 (new model) NER results...
+2025-11-05 19:50:36,477 - utils.data_loading - INFO - Loading Phase 4 results from: /Users/warren/development/GBC/inventory_2022/collab_results/experiment_archives/2025-11-05-ygnr9f_phase4_2022_rerun/ner_results.csv
+2025-11-05 19:50:37,348 - utils.data_loading - INFO - Successfully loaded 13754 Phase 4 results with columns: ['ID', 'text', 'publication_date', 'common_name', 'common_prob', 'full_name', 'full_prob']
+2025-11-05 19:50:37,349 - __main__ - INFO - ✓ Loaded 13,754 Phase 4 results
+2025-11-05 19:50:37,354 - __main__ - INFO - 
+[3/4] Loading NER test split ground truth...
+2025-11-05 19:50:37,354 - utils.data_loading - INFO - Loading NER test split from: /Users/warren/development/GBC/inventory_2022/data/ner_splits_full/test_ner.csv
+2025-11-05 19:50:37,369 - utils.data_loading - INFO - Successfully loaded 66 test samples with columns: ['id', 'title', 'abstract', 'full_name', 'common_name', 'title_abstract']
+2025-11-05 19:50:37,370 - __main__ - INFO - ✓ Loaded 66 test samples
+2025-11-05 19:50:37,371 - __main__ - INFO - 
+[4/4] Loading final inventory...
+2025-11-05 19:50:37,372 - utils.data_loading - INFO - Loading inventory from: /Users/warren/development/GBC/inventory_2022/data/final_inventory_2022.csv
+2025-11-05 19:50:37,600 - utils.data_loading - INFO - Successfully loaded 3112 papers with columns: ['ID', 'best_name', 'best_name_prob', 'best_common', 'best_common_prob', 'best_full', 'best_full_prob', 'article_count', 'extracted_url', 'extracted_url_status', 'extracted_url_country', 'extracted_url_coordinates', 'wayback_url', 'publication_date', 'affiliation', 'authors', 'grant_ids', 'grant_agencies', 'num_citations', 'affiliation_countries']
+2025-11-05 19:50:37,601 - __main__ - INFO - ✓ Loaded 3,112 papers in inventory
+2025-11-05 19:50:37,601 - __main__ - INFO - 
+✓ All datasets loaded successfully
+2025-11-05 19:50:37,601 - __main__ - INFO - 
+================================================================================
+2025-11-05 19:50:37,601 - __main__ - INFO - STEP 2: Parsing Entity Columns
+2025-11-05 19:50:37,601 - __main__ - INFO - ================================================================================
+2025-11-05 19:50:37,602 - __main__ - INFO - 
+[1/3] Parsing V2 entities (common_name, full_name)...
+2025-11-05 19:50:37,634 - __main__ - INFO - ✓ Parsed V2 entities
+2025-11-05 19:50:37,634 - __main__ - INFO - 
+[2/3] Parsing Phase 4 entities (common_name, full_name)...
+2025-11-05 19:50:37,766 - __main__ - INFO - ✓ Parsed Phase 4 entities
+2025-11-05 19:50:37,766 - __main__ - INFO - 
+[3/3] Parsing test split entities (ground truth)...
+2025-11-05 19:50:37,771 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['UniProt', 'UniProtKB']
+2025-11-05 19:50:37,772 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['sc-PDB']
+2025-11-05 19:50:37,774 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['GeneEx']
+2025-11-05 19:50:37,776 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['dbGuide']
+2025-11-05 19:50:37,777 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['CDSbank']
+2025-11-05 19:50:37,779 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['SuperFly']
+2025-11-05 19:50:37,779 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['IDEAL']
+2025-11-05 19:50:37,780 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['PESNPdb']
+2025-11-05 19:50:37,780 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Pfam']
+2025-11-05 19:50:37,780 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['DrugR+']
+2025-11-05 19:50:37,780 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['IRRMC']
+2025-11-05 19:50:37,780 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['PDXliver']
+2025-11-05 19:50:37,780 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['HFBD']
+2025-11-05 19:50:37,781 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['']
+2025-11-05 19:50:37,781 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['KEGG']
+2025-11-05 19:50:37,781 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['SmedGD']
+2025-11-05 19:50:37,782 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['ViralHostRangeDB']
+2025-11-05 19:50:37,782 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['MosaicBase']
+2025-11-05 19:50:37,782 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['ImaGEO']
+2025-11-05 19:50:37,782 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['FIC']
+2025-11-05 19:50:37,782 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['DNAmod']
+2025-11-05 19:50:37,782 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['']
+2025-11-05 19:50:37,782 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['MeDAS']
+2025-11-05 19:50:37,782 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['BEE']
+2025-11-05 19:50:37,782 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['BacWGSTdb']
+2025-11-05 19:50:37,783 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['']
+2025-11-05 19:50:37,783 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['OMIM']
+2025-11-05 19:50:37,783 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['PolarProtDb']
+2025-11-05 19:50:37,783 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['PhenCards']
+2025-11-05 19:50:37,783 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['']
+2025-11-05 19:50:37,783 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['lncR2metasta']
+2025-11-05 19:50:37,784 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['DIGGER']
+2025-11-05 19:50:37,784 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['RTFAdb']
+2025-11-05 19:50:37,784 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['cgMLST@Taiwan']
+2025-11-05 19:50:37,784 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['CoV3D']
+2025-11-05 19:50:37,784 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['CandrisDB']
+2025-11-05 19:50:37,784 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['CellMiner-SCLC', 'SCLC-CellMiner']
+2025-11-05 19:50:37,784 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['NGSmethDB']
+2025-11-05 19:50:37,785 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['MPD']
+2025-11-05 19:50:37,785 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['CircR2Cancer', 'circR2Cancer']
+2025-11-05 19:50:37,786 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['TMSNP']
+2025-11-05 19:50:37,787 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['SANCDB']
+2025-11-05 19:50:37,787 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['PPHAGE']
+2025-11-05 19:50:37,788 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['bc-GenExMiner']
+2025-11-05 19:50:37,788 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['BGD']
+2025-11-05 19:50:37,788 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['TGV database']
+2025-11-05 19:50:37,788 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['TCRdb']
+2025-11-05 19:50:37,788 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['InSexBase']
+2025-11-05 19:50:37,789 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['D3Similarity']
+2025-11-05 19:50:37,789 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['PED']
+2025-11-05 19:50:37,790 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Pharos', 'TCRD']
+2025-11-05 19:50:37,790 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['MatrixDB']
+2025-11-05 19:50:37,791 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['LnCeCell']
+2025-11-05 19:50:37,791 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['ExVe']
+2025-11-05 19:50:37,792 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['DrugRepV']
+2025-11-05 19:50:37,792 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['INstruct']
+2025-11-05 19:50:37,792 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['WormBase']
+2025-11-05 19:50:37,792 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['IMG/VR']
+2025-11-05 19:50:37,792 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['EuDBase']
+2025-11-05 19:50:37,793 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['DDBJ']
+2025-11-05 19:50:37,793 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['IDDB']
+2025-11-05 19:50:37,794 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['MGI']
+2025-11-05 19:50:37,795 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['miRegulome']
+2025-11-05 19:50:37,796 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['UCSC Genome Browser database']
+2025-11-05 19:50:37,796 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['HIM database']
+2025-11-05 19:50:37,797 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['NanDeSyn']
+2025-11-05 19:50:37,799 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['UniProt Knowledgebase']
+2025-11-05 19:50:37,799 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['sc-PDB']
+2025-11-05 19:50:37,799 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Gene Circuit Explorer']
+2025-11-05 19:50:37,800 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['dbGuide']
+2025-11-05 19:50:37,800 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['CDSbank']
+2025-11-05 19:50:37,800 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['SuperFly']
+2025-11-05 19:50:37,800 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Intrinsically Disordered proteins with Extensive Annotations and Literature']
+2025-11-05 19:50:37,800 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['PESNPdb']
+2025-11-05 19:50:37,800 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Pfam 33.1']
+2025-11-05 19:50:37,801 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['DrugR+']
+2025-11-05 19:50:37,801 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Integrated Resource for Reproducibility in Macromolecular Crystallography']
+2025-11-05 19:50:37,801 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['PDXliver']
+2025-11-05 19:50:37,801 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['HF biomarker knowledge database']
+2025-11-05 19:50:37,802 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['The Gene Ontology resource']
+2025-11-05 19:50:37,802 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['KEGG']
+2025-11-05 19:50:37,802 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Schmidtea mediterranea genome database']
+2025-11-05 19:50:37,802 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Viral Host Range database']
+2025-11-05 19:50:37,802 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['MosaicBase']
+2025-11-05 19:50:37,802 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['ImaGEO']
+2025-11-05 19:50:37,802 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['functional interactome of Caenorhabditis elegans']
+2025-11-05 19:50:37,802 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['DNA modification database']
+2025-11-05 19:50:37,803 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Autoimmune Diseases Explorer']
+2025-11-05 19:50:37,803 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Metazoan Developmental Alternative Splicing database']
+2025-11-05 19:50:37,803 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Biomedical Entity Explorer']
+2025-11-05 19:50:37,803 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['BacWGSTdb']
+2025-11-05 19:50:37,803 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Mouse Kidney Fibromics browser']
+2025-11-05 19:50:37,803 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Online Mendelian Inheritance in Man']
+2025-11-05 19:50:37,803 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['PolarProtDb']
+2025-11-05 19:50:37,803 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['PhenCards']
+2025-11-05 19:50:37,804 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Gene Wiki']
+2025-11-05 19:50:37,804 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['lncR2metasta']
+2025-11-05 19:50:37,804 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['DIGGER']
+2025-11-05 19:50:37,804 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['RTFAdb']
+2025-11-05 19:50:37,804 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['cgMLST@Taiwan']
+2025-11-05 19:50:37,805 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['CoV3D']
+2025-11-05 19:50:37,805 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['CandrisDB']
+2025-11-05 19:50:37,805 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['CellMiner-SCLC', 'SCLC-CellMiner']
+2025-11-05 19:50:37,805 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['NGSmethDB']
+2025-11-05 19:50:37,805 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Mouse Phenome Database']
+2025-11-05 19:50:37,805 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['CircR2Cancer', 'circR2Cancer']
+2025-11-05 19:50:37,806 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['']
+2025-11-05 19:50:37,806 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['South African Natural Compounds Database']
+2025-11-05 19:50:37,806 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['PPHAGE']
+2025-11-05 19:50:37,806 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Breast cancer gene-expression miner']
+2025-11-05 19:50:37,806 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Bovine Genome Database']
+2025-11-05 19:50:37,806 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Tomato Genomic Variations database']
+2025-11-05 19:50:37,806 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['TCRdb']
+2025-11-05 19:50:37,806 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['InSexBase']
+2025-11-05 19:50:37,806 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['D3Similarity']
+2025-11-05 19:50:37,807 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Pancreatic Expression Database', 'pancreatic expression database']
+2025-11-05 19:50:37,807 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Pharos', 'The Target Central Resource Database']
+2025-11-05 19:50:37,807 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['MatrixDB']
+2025-11-05 19:50:37,807 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['LnCeCell']
+2025-11-05 19:50:37,807 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['ExVe']
+2025-11-05 19:50:37,807 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['DrugRepV']
+2025-11-05 19:50:37,807 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['INstruct']
+2025-11-05 19:50:37,809 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['WormBase']
+2025-11-05 19:50:37,810 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['IMG/VR database']
+2025-11-05 19:50:37,810 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['EuDBase']
+2025-11-05 19:50:37,810 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['DDBJ Center']
+2025-11-05 19:50:37,811 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['infertility disease database']
+2025-11-05 19:50:37,811 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Mouse Genome Informatics']
+2025-11-05 19:50:37,811 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['miRegulome']
+2025-11-05 19:50:37,812 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['University of California Santa Cruz Genome Browser']
+2025-11-05 19:50:37,812 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['herbal ingredients in-vivo metabolism database']
+2025-11-05 19:50:37,812 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Nannochloropsis Design and Synthesis']
+2025-11-05 19:50:37,813 - __main__ - INFO - ✓ Parsed test split entities
+2025-11-05 19:50:37,813 - __main__ - INFO - 
+✓ All entity columns parsed successfully
+2025-11-05 19:50:37,813 - __main__ - INFO - 
+================================================================================
+2025-11-05 19:50:37,813 - __main__ - INFO - STEP 3: Detecting and Cleaning BPE Artifacts
+2025-11-05 19:50:37,814 - __main__ - INFO - ================================================================================
+2025-11-05 19:50:37,814 - __main__ - INFO - 
+[1/3] Analyzing Phase 4 common_name for BPE contamination...
+2025-11-05 19:50:38,165 - utils.bpe_cleaning - INFO - BPE Contamination Report:
+2025-11-05 19:50:38,166 - utils.bpe_cleaning - INFO -   Rows: 0/13754 (0.0%)
+2025-11-05 19:50:38,166 - utils.bpe_cleaning - INFO -   Entities: 0/33929 (0.0%)
+2025-11-05 19:50:38,166 - utils.bpe_cleaning - INFO -   Ġ markers: 0
+2025-11-05 19:50:38,166 - utils.bpe_cleaning - INFO -   Short tokens: 0
+2025-11-05 19:50:38,166 - __main__ - INFO - 
+[2/3] Analyzing Phase 4 full_name for BPE contamination...
+2025-11-05 19:50:38,226 - utils.bpe_cleaning - INFO - BPE Contamination Report:
+2025-11-05 19:50:38,227 - utils.bpe_cleaning - INFO -   Rows: 0/13754 (0.0%)
+2025-11-05 19:50:38,228 - utils.bpe_cleaning - INFO -   Entities: 0/0 (0.0%)
+2025-11-05 19:50:38,228 - utils.bpe_cleaning - INFO -   Ġ markers: 0
+2025-11-05 19:50:38,229 - utils.bpe_cleaning - INFO -   Short tokens: 0
+2025-11-05 19:50:38,232 - __main__ - INFO - 
+[3/3] Cleaning BPE artifacts from Phase 4 entity lists...
+2025-11-05 19:50:38,233 - __main__ - INFO -   - Cleaning common_name_list...
+2025-11-05 19:50:38,531 - __main__ - INFO -   - Cleaning full_name_list...
+2025-11-05 19:50:38,551 - __main__ - INFO - 
+✓ BPE cleaning complete:
+2025-11-05 19:50:38,551 - __main__ - INFO -   - Common name contamination: 0.0% of papers
+2025-11-05 19:50:38,552 - __main__ - INFO -   - Full name contamination: 0.0% of papers
+2025-11-05 19:50:38,557 - __main__ - INFO -   - Total entities processed: 33,929
+2025-11-05 19:50:38,557 - __main__ - INFO - 
+================================================================================
+2025-11-05 19:50:38,557 - __main__ - INFO - STEP 4: Aligning Papers by ID
+2025-11-05 19:50:38,557 - __main__ - INFO - ================================================================================
+2025-11-05 19:50:38,558 - __main__ - INFO - 
+[1/4] Preparing V2 data...
+2025-11-05 19:50:38,584 - __main__ - INFO - ✓ V2: 4,395 papers
+2025-11-05 19:50:38,584 - __main__ - INFO - 
+[2/4] Preparing Phase 4 data...
+2025-11-05 19:50:38,695 - __main__ - INFO - ✓ Phase 4: 13,754 papers
+2025-11-05 19:50:38,696 - __main__ - INFO - 
+[3/4] Preparing test split (ground truth)...
+2025-11-05 19:50:38,698 - __main__ - INFO - ✓ Test split: 66 papers
+2025-11-05 19:50:38,698 - __main__ - INFO - 
+[4/4] Merging datasets by paper_id...
+2025-11-05 19:50:38,699 - __main__ - INFO -   - Merging V2 and Phase 4 results...
+2025-11-05 19:50:38,784 - __main__ - INFO -     • Both V2 and Phase 4: 0
+2025-11-05 19:50:38,797 - __main__ - INFO -     • Only V2: 4,395
+2025-11-05 19:50:38,803 - __main__ - INFO -     • Only Phase 4: 13,754
+2025-11-05 19:50:38,873 - __main__ - INFO -   - Merging with ground truth...
+2025-11-05 19:50:39,016 - __main__ - INFO -     • With ground truth: 58
+2025-11-05 19:50:39,019 - __main__ - INFO -     • Without ground truth: 18,091
+2025-11-05 19:50:39,040 - __main__ - INFO - 
+✓ Alignment complete: 18,149 total papers
+2025-11-05 19:50:39,050 - __main__ - INFO - 
+Coverage statistics:
+2025-11-05 19:50:39,050 - __main__ - INFO -   - Papers with ground truth: 58 (0.3%)
+2025-11-05 19:50:39,050 - __main__ - INFO -   - Papers with V2 predictions: 4,395 (24.2%)
+2025-11-05 19:50:39,051 - __main__ - INFO -   - Papers with Phase 4 predictions: 13,754 (75.8%)
+2025-11-05 19:50:39,063 - __main__ - INFO - 
+================================================================================
+2025-11-05 19:50:39,063 - __main__ - INFO - STEP 5: Generating Entity Count Statistics
+2025-11-05 19:50:39,063 - __main__ - INFO - ================================================================================
+2025-11-05 19:50:39,063 - __main__ - INFO - 
+Calculating entity count distributions...
+2025-11-05 19:50:39,490 - __main__ - INFO - 
+✓ Entity count statistics:
+2025-11-05 19:50:39,491 - __main__ - INFO - 
+Ground Truth Common:
+2025-11-05 19:50:39,491 - __main__ - INFO -   - Total entities: 62
+2025-11-05 19:50:39,491 - __main__ - INFO -   - Papers with entities: 58 (0.3%)
+2025-11-05 19:50:39,491 - __main__ - INFO -   - Mean per paper: 0.00
+2025-11-05 19:50:39,491 - __main__ - INFO -   - Median per paper: 0.0
+2025-11-05 19:50:39,492 - __main__ - INFO - 
+Ground Truth Full:
+2025-11-05 19:50:39,492 - __main__ - INFO -   - Total entities: 62
+2025-11-05 19:50:39,492 - __main__ - INFO -   - Papers with entities: 58 (0.3%)
+2025-11-05 19:50:39,492 - __main__ - INFO -   - Mean per paper: 0.00
+2025-11-05 19:50:39,492 - __main__ - INFO -   - Median per paper: 0.0
+2025-11-05 19:50:39,493 - __main__ - INFO - 
+V2 Common:
+2025-11-05 19:50:39,493 - __main__ - INFO -   - Total entities: 5,495
+2025-11-05 19:50:39,494 - __main__ - INFO -   - Papers with entities: 4,321 (23.8%)
+2025-11-05 19:50:39,494 - __main__ - INFO -   - Mean per paper: 0.30
+2025-11-05 19:50:39,494 - __main__ - INFO -   - Median per paper: 0.0
+2025-11-05 19:50:39,495 - __main__ - INFO - 
+V2 Full:
+2025-11-05 19:50:39,495 - __main__ - INFO -   - Total entities: 2,115
+2025-11-05 19:50:39,496 - __main__ - INFO -   - Papers with entities: 1,674 (9.2%)
+2025-11-05 19:50:39,496 - __main__ - INFO -   - Mean per paper: 0.12
+2025-11-05 19:50:39,496 - __main__ - INFO -   - Median per paper: 0.0
+2025-11-05 19:50:39,497 - __main__ - INFO - 
+Phase 4 Common (Raw):
+2025-11-05 19:50:39,497 - __main__ - INFO -   - Total entities: 33,929
+2025-11-05 19:50:39,497 - __main__ - INFO -   - Papers with entities: 13,754 (75.8%)
+2025-11-05 19:50:39,497 - __main__ - INFO -   - Mean per paper: 1.87
+2025-11-05 19:50:39,498 - __main__ - INFO -   - Median per paper: 1.0
+2025-11-05 19:50:39,498 - __main__ - INFO - 
+Phase 4 Common (Clean):
+2025-11-05 19:50:39,498 - __main__ - INFO -   - Total entities: 33,929
+2025-11-05 19:50:39,498 - __main__ - INFO -   - Papers with entities: 13,754 (75.8%)
+2025-11-05 19:50:39,498 - __main__ - INFO -   - Mean per paper: 1.87
+2025-11-05 19:50:39,499 - __main__ - INFO -   - Median per paper: 1.0
+2025-11-05 19:50:39,499 - __main__ - INFO - 
+Phase 4 Full (Raw):
+2025-11-05 19:50:39,499 - __main__ - INFO -   - Total entities: 0
+2025-11-05 19:50:39,499 - __main__ - INFO -   - Papers with entities: 0 (0.0%)
+2025-11-05 19:50:39,499 - __main__ - INFO -   - Mean per paper: 0.00
+2025-11-05 19:50:39,499 - __main__ - INFO -   - Median per paper: 0.0
+2025-11-05 19:50:39,500 - __main__ - INFO - 
+Phase 4 Full (Clean):
+2025-11-05 19:50:39,501 - __main__ - INFO -   - Total entities: 0
+2025-11-05 19:50:39,501 - __main__ - INFO -   - Papers with entities: 0 (0.0%)
+2025-11-05 19:50:39,501 - __main__ - INFO -   - Mean per paper: 0.00
+2025-11-05 19:50:39,501 - __main__ - INFO -   - Median per paper: 0.0
+2025-11-05 19:50:39,501 - __main__ - INFO - 
+================================================================================
+2025-11-05 19:50:39,501 - __main__ - INFO - STEP 6: Saving Output Files
+2025-11-05 19:50:39,501 - __main__ - INFO - ================================================================================
+2025-11-05 19:50:39,502 - __main__ - INFO - 
+Output directory: /Users/warren/development/GBC/inventory_2022/comparison_phase4_v_oldmodel/data
+2025-11-05 19:50:39,502 - __main__ - INFO - 
+[1/3] Saving aligned_papers.csv...
+2025-11-05 19:50:39,885 - __main__ - INFO - ✓ Saved 18,149 papers to: /Users/warren/development/GBC/inventory_2022/comparison_phase4_v_oldmodel/data/aligned_papers.csv
+2025-11-05 19:50:39,887 - __main__ - INFO -   File size: 1.37 MB
+2025-11-05 19:50:39,887 - __main__ - INFO - 
+[2/3] Saving bpe_artifact_report.json...
+2025-11-05 19:50:39,889 - __main__ - INFO - ✓ Saved BPE report to: /Users/warren/development/GBC/inventory_2022/comparison_phase4_v_oldmodel/data/bpe_artifact_report.json
+2025-11-05 19:50:39,889 - __main__ - INFO - 
+[3/3] Saving entity_counts.csv...
+2025-11-05 19:50:39,890 - __main__ - INFO - ✓ Saved entity statistics to: /Users/warren/development/GBC/inventory_2022/comparison_phase4_v_oldmodel/data/entity_counts.csv
+2025-11-05 19:50:39,890 - __main__ - INFO - 
+✓ All outputs saved successfully
+2025-11-05 19:50:39,890 - __main__ - INFO - 
+================================================================================
+2025-11-05 19:50:39,890 - __main__ - INFO - FINAL SUMMARY
+2025-11-05 19:50:39,891 - __main__ - INFO - ================================================================================
+2025-11-05 19:50:39,891 - __main__ - INFO - 
+📊 Dataset Statistics:
+2025-11-05 19:50:39,891 - __main__ - INFO -   Total papers aligned: 18,149
+2025-11-05 19:50:39,891 - __main__ - INFO -   Papers with ground truth: 58
+2025-11-05 19:50:39,894 - __main__ - INFO -   Papers with V2 results: 4,395
+2025-11-05 19:50:39,896 - __main__ - INFO -   Papers with Phase 4 results: 13,754
+2025-11-05 19:50:39,896 - __main__ - INFO - 
+🔍 BPE Contamination:
+2025-11-05 19:50:39,897 - __main__ - INFO -   Common name papers contaminated: 0 (0.0%)
+2025-11-05 19:50:39,898 - __main__ - INFO -   Full name papers contaminated: 0 (0.0%)
+2025-11-05 19:50:39,898 - __main__ - INFO - 
+📈 Entity Counts:
+2025-11-05 19:50:39,899 - __main__ - INFO -   Ground Truth Common: 62 entities
+2025-11-05 19:50:39,899 - __main__ - INFO -   Ground Truth Full: 62 entities
+2025-11-05 19:50:39,899 - __main__ - INFO - 
+✅ Preprocessing complete! Ready for comparison analysis.
+2025-11-05 19:50:39,900 - __main__ - INFO -    Next step: Run 02_entity_level_comparison.py
+2025-11-05 19:50:39,900 - __main__ - INFO - 
+================================================================================
+2025-11-05 19:50:39,900 - __main__ - INFO - ✅ SUCCESS: All processing completed successfully
+2025-11-05 19:50:39,900 - __main__ - INFO - ================================================================================
+2025-11-05 19:59:40,252 - __main__ - INFO - ================================================================================
+2025-11-05 19:59:40,252 - __main__ - INFO - Phase 4 vs V2 NER Comparison: Preprocessing and Alignment
+2025-11-05 19:59:40,252 - __main__ - INFO - ================================================================================
+2025-11-05 19:59:40,252 - __main__ - INFO - Output directory: /Users/warren/development/GBC/inventory_2022/comparison_phase4_v_oldmodel/data
+2025-11-05 19:59:40,253 - __main__ - INFO - BPE cleaning: ENABLED
+2025-11-05 19:59:40,253 - __main__ - INFO - ================================================================================
+2025-11-05 19:59:40,253 - __main__ - INFO - STEP 1: Loading Datasets
+2025-11-05 19:59:40,253 - __main__ - INFO - ================================================================================
+2025-11-05 19:59:40,253 - __main__ - INFO - 
+[1/4] Loading V2 (old model) NER results...
+2025-11-05 19:59:40,253 - utils.data_loading - INFO - Loading V2 results from: /Users/warren/development/GBC/inventory_2022/collab_results/2025-10-28-ulgfhi_oldmodel_2022_rerun/ner_results.csv
+2025-11-05 19:59:40,574 - utils.data_loading - INFO - Successfully loaded 4395 V2 results with columns: ['ID', 'text', 'publication_date', 'common_name', 'common_prob', 'full_name', 'full_prob']
+2025-11-05 19:59:40,575 - __main__ - INFO - ✓ Loaded 4,395 V2 results
+2025-11-05 19:59:40,575 - __main__ - INFO - 
+[2/4] Loading Phase 4 (new model) NER results...
+2025-11-05 19:59:40,576 - utils.data_loading - INFO - Loading Phase 4 results from: /Users/warren/development/GBC/inventory_2022/collab_results/experiment_archives/2025-11-05-ygnr9f_phase4_2022_rerun/ner_results.csv
+2025-11-05 19:59:41,481 - utils.data_loading - INFO - Successfully loaded 13754 Phase 4 results with columns: ['ID', 'text', 'publication_date', 'common_name', 'common_prob', 'full_name', 'full_prob']
+2025-11-05 19:59:41,481 - __main__ - INFO - ✓ Loaded 13,754 Phase 4 results
+2025-11-05 19:59:41,483 - __main__ - INFO - 
+[3/4] Loading NER test split ground truth...
+2025-11-05 19:59:41,484 - utils.data_loading - INFO - Loading NER test split from: /Users/warren/development/GBC/inventory_2022/data/ner_splits_full/test_ner.csv
+2025-11-05 19:59:41,503 - utils.data_loading - INFO - Successfully loaded 66 test samples with columns: ['id', 'title', 'abstract', 'full_name', 'common_name', 'title_abstract']
+2025-11-05 19:59:41,503 - __main__ - INFO - ✓ Loaded 66 test samples
+2025-11-05 19:59:41,503 - __main__ - INFO - 
+[4/4] Loading final inventory...
+2025-11-05 19:59:41,504 - utils.data_loading - INFO - Loading inventory from: /Users/warren/development/GBC/inventory_2022/data/final_inventory_2022.csv
+2025-11-05 19:59:41,609 - utils.data_loading - ERROR - Error loading inventory from /Users/warren/development/GBC/inventory_2022/data/final_inventory_2022.csv: could not convert string to float: '27924021, 32162267'
+2025-11-05 19:59:41,610 - __main__ - ERROR - ✗ Unexpected error loading data: could not convert string to float: '27924021, 32162267'
+2025-11-05 19:59:41,610 - __main__ - ERROR - 
+❌ ERROR: Unexpected error: could not convert string to float: '27924021, 32162267'
+2025-11-05 19:59:41,610 - __main__ - ERROR - Full traceback:
+Traceback (most recent call last):
+  File "/Users/warren/development/GBC/inventory_2022/comparison_phase4_v_oldmodel/scripts/01_preprocess_and_align.py", line 623, in main
+    datasets = load_all_data(args)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/warren/development/GBC/inventory_2022/comparison_phase4_v_oldmodel/scripts/01_preprocess_and_align.py", line 191, in load_all_data
+    datasets['inventory'] = load_inventory(args.inventory_path)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/warren/development/GBC/inventory_2022/comparison_phase4_v_oldmodel/scripts/utils/data_loading.py", line 228, in load_inventory
+    df[id_col] = df[id_col].astype(float).astype(int).astype(str)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pandas/core/generic.py", line 6643, in astype
+    new_data = self._mgr.astype(dtype=dtype, copy=copy, errors=errors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pandas/core/internals/managers.py", line 430, in astype
+    return self.apply(
+           ^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pandas/core/internals/managers.py", line 363, in apply
+    applied = getattr(b, f)(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pandas/core/internals/blocks.py", line 758, in astype
+    new_values = astype_array_safe(values, dtype, copy=copy, errors=errors)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pandas/core/dtypes/astype.py", line 237, in astype_array_safe
+    new_values = astype_array(values, dtype, copy=copy)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pandas/core/dtypes/astype.py", line 182, in astype_array
+    values = _astype_nansafe(values, dtype, copy=copy)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pandas/core/dtypes/astype.py", line 133, in _astype_nansafe
+    return arr.astype(dtype, copy=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: '27924021, 32162267'
+2025-11-05 20:01:21,919 - __main__ - INFO - ================================================================================
+2025-11-05 20:01:21,921 - __main__ - INFO - Phase 4 vs V2 NER Comparison: Preprocessing and Alignment
+2025-11-05 20:01:21,921 - __main__ - INFO - ================================================================================
+2025-11-05 20:01:21,922 - __main__ - INFO - Output directory: /Users/warren/development/GBC/inventory_2022/comparison_phase4_v_oldmodel/data
+2025-11-05 20:01:21,922 - __main__ - INFO - BPE cleaning: ENABLED
+2025-11-05 20:01:21,922 - __main__ - INFO - ================================================================================
+2025-11-05 20:01:21,922 - __main__ - INFO - STEP 1: Loading Datasets
+2025-11-05 20:01:21,922 - __main__ - INFO - ================================================================================
+2025-11-05 20:01:21,922 - __main__ - INFO - 
+[1/4] Loading V2 (old model) NER results...
+2025-11-05 20:01:21,923 - utils.data_loading - INFO - Loading V2 results from: /Users/warren/development/GBC/inventory_2022/collab_results/2025-10-28-ulgfhi_oldmodel_2022_rerun/ner_results.csv
+2025-11-05 20:01:22,267 - utils.data_loading - INFO - Successfully loaded 4395 V2 results with columns: ['ID', 'text', 'publication_date', 'common_name', 'common_prob', 'full_name', 'full_prob']
+2025-11-05 20:01:22,267 - __main__ - INFO - ✓ Loaded 4,395 V2 results
+2025-11-05 20:01:22,267 - __main__ - INFO - 
+[2/4] Loading Phase 4 (new model) NER results...
+2025-11-05 20:01:22,267 - utils.data_loading - INFO - Loading Phase 4 results from: /Users/warren/development/GBC/inventory_2022/collab_results/experiment_archives/2025-11-05-ygnr9f_phase4_2022_rerun/ner_results.csv
+2025-11-05 20:01:23,124 - utils.data_loading - INFO - Successfully loaded 13754 Phase 4 results with columns: ['ID', 'text', 'publication_date', 'common_name', 'common_prob', 'full_name', 'full_prob']
+2025-11-05 20:01:23,127 - __main__ - INFO - ✓ Loaded 13,754 Phase 4 results
+2025-11-05 20:01:23,132 - __main__ - INFO - 
+[3/4] Loading NER test split ground truth...
+2025-11-05 20:01:23,132 - utils.data_loading - INFO - Loading NER test split from: /Users/warren/development/GBC/inventory_2022/data/ner_splits_full/test_ner.csv
+2025-11-05 20:01:23,148 - utils.data_loading - INFO - Successfully loaded 66 test samples with columns: ['id', 'title', 'abstract', 'full_name', 'common_name', 'title_abstract']
+2025-11-05 20:01:23,149 - __main__ - INFO - ✓ Loaded 66 test samples
+2025-11-05 20:01:23,149 - __main__ - INFO - 
+[4/4] Loading final inventory...
+2025-11-05 20:01:23,149 - utils.data_loading - INFO - Loading inventory from: /Users/warren/development/GBC/inventory_2022/data/final_inventory_2022.csv
+2025-11-05 20:01:23,440 - utils.data_loading - WARNING - Found 355 rows with comma-separated IDs in 'ID' column. Using only the first ID from each comma-separated value.
+2025-11-05 20:01:23,477 - utils.data_loading - INFO - Successfully loaded 3112 papers with columns: ['ID', 'best_name', 'best_name_prob', 'best_common', 'best_common_prob', 'best_full', 'best_full_prob', 'article_count', 'extracted_url', 'extracted_url_status', 'extracted_url_country', 'extracted_url_coordinates', 'wayback_url', 'publication_date', 'affiliation', 'authors', 'grant_ids', 'grant_agencies', 'num_citations', 'affiliation_countries']
+2025-11-05 20:01:23,477 - __main__ - INFO - ✓ Loaded 3,112 papers in inventory
+2025-11-05 20:01:23,477 - __main__ - INFO - 
+✓ All datasets loaded successfully
+2025-11-05 20:01:23,477 - __main__ - INFO - 
+================================================================================
+2025-11-05 20:01:23,477 - __main__ - INFO - STEP 2: Parsing Entity Columns
+2025-11-05 20:01:23,477 - __main__ - INFO - ================================================================================
+2025-11-05 20:01:23,477 - __main__ - INFO - 
+[1/3] Parsing V2 entities (common_name, full_name)...
+2025-11-05 20:01:23,575 - __main__ - INFO - ✓ Parsed V2 entities
+2025-11-05 20:01:23,575 - __main__ - INFO - 
+[2/3] Parsing Phase 4 entities (common_name, full_name)...
+2025-11-05 20:01:23,909 - __main__ - INFO - ✓ Parsed Phase 4 entities
+2025-11-05 20:01:23,909 - __main__ - INFO - 
+[3/3] Parsing test split entities (ground truth)...
+2025-11-05 20:01:23,910 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['UniProt', 'UniProtKB']
+2025-11-05 20:01:23,913 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['sc-PDB']
+2025-11-05 20:01:23,913 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['GeneEx']
+2025-11-05 20:01:23,914 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['dbGuide']
+2025-11-05 20:01:23,914 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['CDSbank']
+2025-11-05 20:01:23,915 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['SuperFly']
+2025-11-05 20:01:23,915 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['IDEAL']
+2025-11-05 20:01:23,915 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['PESNPdb']
+2025-11-05 20:01:23,915 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Pfam']
+2025-11-05 20:01:23,916 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['DrugR+']
+2025-11-05 20:01:23,917 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['IRRMC']
+2025-11-05 20:01:23,917 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['PDXliver']
+2025-11-05 20:01:23,917 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['HFBD']
+2025-11-05 20:01:23,917 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['']
+2025-11-05 20:01:23,917 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['KEGG']
+2025-11-05 20:01:23,917 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['SmedGD']
+2025-11-05 20:01:23,917 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['ViralHostRangeDB']
+2025-11-05 20:01:23,917 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['MosaicBase']
+2025-11-05 20:01:23,918 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['ImaGEO']
+2025-11-05 20:01:23,918 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['FIC']
+2025-11-05 20:01:23,918 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['DNAmod']
+2025-11-05 20:01:23,918 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['']
+2025-11-05 20:01:23,918 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['MeDAS']
+2025-11-05 20:01:23,918 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['BEE']
+2025-11-05 20:01:23,918 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['BacWGSTdb']
+2025-11-05 20:01:23,918 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['']
+2025-11-05 20:01:23,918 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['OMIM']
+2025-11-05 20:01:23,919 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['PolarProtDb']
+2025-11-05 20:01:23,919 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['PhenCards']
+2025-11-05 20:01:23,919 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['']
+2025-11-05 20:01:23,919 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['lncR2metasta']
+2025-11-05 20:01:23,919 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['DIGGER']
+2025-11-05 20:01:23,919 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['RTFAdb']
+2025-11-05 20:01:23,919 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['cgMLST@Taiwan']
+2025-11-05 20:01:23,919 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['CoV3D']
+2025-11-05 20:01:23,919 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['CandrisDB']
+2025-11-05 20:01:23,919 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['CellMiner-SCLC', 'SCLC-CellMiner']
+2025-11-05 20:01:23,920 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['NGSmethDB']
+2025-11-05 20:01:23,920 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['MPD']
+2025-11-05 20:01:23,921 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['CircR2Cancer', 'circR2Cancer']
+2025-11-05 20:01:23,921 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['TMSNP']
+2025-11-05 20:01:23,921 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['SANCDB']
+2025-11-05 20:01:23,922 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['PPHAGE']
+2025-11-05 20:01:23,922 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['bc-GenExMiner']
+2025-11-05 20:01:23,922 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['BGD']
+2025-11-05 20:01:23,922 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['TGV database']
+2025-11-05 20:01:23,922 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['TCRdb']
+2025-11-05 20:01:23,922 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['InSexBase']
+2025-11-05 20:01:23,923 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['D3Similarity']
+2025-11-05 20:01:23,923 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['PED']
+2025-11-05 20:01:23,923 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Pharos', 'TCRD']
+2025-11-05 20:01:23,923 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['MatrixDB']
+2025-11-05 20:01:23,923 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['LnCeCell']
+2025-11-05 20:01:23,923 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['ExVe']
+2025-11-05 20:01:23,923 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['DrugRepV']
+2025-11-05 20:01:23,923 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['INstruct']
+2025-11-05 20:01:23,923 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['WormBase']
+2025-11-05 20:01:23,923 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['IMG/VR']
+2025-11-05 20:01:23,923 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['EuDBase']
+2025-11-05 20:01:23,924 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['DDBJ']
+2025-11-05 20:01:23,924 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['IDDB']
+2025-11-05 20:01:23,925 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['MGI']
+2025-11-05 20:01:23,925 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['miRegulome']
+2025-11-05 20:01:23,925 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['UCSC Genome Browser database']
+2025-11-05 20:01:23,926 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['HIM database']
+2025-11-05 20:01:23,926 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['NanDeSyn']
+2025-11-05 20:01:23,936 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['UniProt Knowledgebase']
+2025-11-05 20:01:23,938 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['sc-PDB']
+2025-11-05 20:01:23,945 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Gene Circuit Explorer']
+2025-11-05 20:01:23,953 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['dbGuide']
+2025-11-05 20:01:23,953 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['CDSbank']
+2025-11-05 20:01:23,954 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['SuperFly']
+2025-11-05 20:01:23,955 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Intrinsically Disordered proteins with Extensive Annotations and Literature']
+2025-11-05 20:01:23,955 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['PESNPdb']
+2025-11-05 20:01:23,955 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Pfam 33.1']
+2025-11-05 20:01:23,955 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['DrugR+']
+2025-11-05 20:01:23,955 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Integrated Resource for Reproducibility in Macromolecular Crystallography']
+2025-11-05 20:01:23,955 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['PDXliver']
+2025-11-05 20:01:23,956 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['HF biomarker knowledge database']
+2025-11-05 20:01:23,956 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['The Gene Ontology resource']
+2025-11-05 20:01:23,956 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['KEGG']
+2025-11-05 20:01:23,956 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Schmidtea mediterranea genome database']
+2025-11-05 20:01:23,956 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Viral Host Range database']
+2025-11-05 20:01:23,956 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['MosaicBase']
+2025-11-05 20:01:23,956 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['ImaGEO']
+2025-11-05 20:01:23,956 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['functional interactome of Caenorhabditis elegans']
+2025-11-05 20:01:23,956 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['DNA modification database']
+2025-11-05 20:01:23,956 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Autoimmune Diseases Explorer']
+2025-11-05 20:01:23,957 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Metazoan Developmental Alternative Splicing database']
+2025-11-05 20:01:23,957 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Biomedical Entity Explorer']
+2025-11-05 20:01:23,957 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['BacWGSTdb']
+2025-11-05 20:01:23,957 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Mouse Kidney Fibromics browser']
+2025-11-05 20:01:23,957 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Online Mendelian Inheritance in Man']
+2025-11-05 20:01:23,957 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['PolarProtDb']
+2025-11-05 20:01:23,957 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['PhenCards']
+2025-11-05 20:01:23,958 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Gene Wiki']
+2025-11-05 20:01:23,958 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['lncR2metasta']
+2025-11-05 20:01:23,958 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['DIGGER']
+2025-11-05 20:01:23,958 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['RTFAdb']
+2025-11-05 20:01:23,958 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['cgMLST@Taiwan']
+2025-11-05 20:01:23,958 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['CoV3D']
+2025-11-05 20:01:23,958 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['CandrisDB']
+2025-11-05 20:01:23,958 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['CellMiner-SCLC', 'SCLC-CellMiner']
+2025-11-05 20:01:23,958 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['NGSmethDB']
+2025-11-05 20:01:23,958 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Mouse Phenome Database']
+2025-11-05 20:01:23,958 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['CircR2Cancer', 'circR2Cancer']
+2025-11-05 20:01:23,958 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['']
+2025-11-05 20:01:23,959 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['South African Natural Compounds Database']
+2025-11-05 20:01:23,959 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['PPHAGE']
+2025-11-05 20:01:23,959 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Breast cancer gene-expression miner']
+2025-11-05 20:01:23,959 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Bovine Genome Database']
+2025-11-05 20:01:23,959 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Tomato Genomic Variations database']
+2025-11-05 20:01:23,959 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['TCRdb']
+2025-11-05 20:01:23,959 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['InSexBase']
+2025-11-05 20:01:23,959 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['D3Similarity']
+2025-11-05 20:01:23,959 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Pancreatic Expression Database', 'pancreatic expression database']
+2025-11-05 20:01:23,959 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Pharos', 'The Target Central Resource Database']
+2025-11-05 20:01:23,959 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['MatrixDB']
+2025-11-05 20:01:23,959 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['LnCeCell']
+2025-11-05 20:01:23,959 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['ExVe']
+2025-11-05 20:01:23,959 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['DrugRepV']
+2025-11-05 20:01:23,960 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['INstruct']
+2025-11-05 20:01:23,960 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['WormBase']
+2025-11-05 20:01:23,960 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['IMG/VR database']
+2025-11-05 20:01:23,960 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['EuDBase']
+2025-11-05 20:01:23,960 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['DDBJ Center']
+2025-11-05 20:01:23,960 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['infertility disease database']
+2025-11-05 20:01:23,960 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Mouse Genome Informatics']
+2025-11-05 20:01:23,960 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['miRegulome']
+2025-11-05 20:01:23,960 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['University of California Santa Cruz Genome Browser']
+2025-11-05 20:01:23,960 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['herbal ingredients in-vivo metabolism database']
+2025-11-05 20:01:23,960 - utils.data_loading - WARNING - Failed to parse as JSON, trying comma-separated: ['Nannochloropsis Design and Synthesis']
+2025-11-05 20:01:23,961 - __main__ - INFO - ✓ Parsed test split entities
+2025-11-05 20:01:23,961 - __main__ - INFO - 
+✓ All entity columns parsed successfully
+2025-11-05 20:01:23,961 - __main__ - INFO - 
+================================================================================
+2025-11-05 20:01:23,961 - __main__ - INFO - STEP 3: Detecting and Cleaning BPE Artifacts
+2025-11-05 20:01:23,961 - __main__ - INFO - ================================================================================
+2025-11-05 20:01:23,961 - __main__ - INFO - 
+[1/3] Analyzing Phase 4 common_name for BPE contamination...
+2025-11-05 20:01:24,228 - utils.bpe_cleaning - INFO - BPE Contamination Report:
+2025-11-05 20:01:24,228 - utils.bpe_cleaning - INFO -   Rows: 0/13754 (0.0%)
+2025-11-05 20:01:24,228 - utils.bpe_cleaning - INFO -   Entities: 0/33929 (0.0%)
+2025-11-05 20:01:24,228 - utils.bpe_cleaning - INFO -   Ġ markers: 0
+2025-11-05 20:01:24,228 - utils.bpe_cleaning - INFO -   Short tokens: 0
+2025-11-05 20:01:24,228 - __main__ - INFO - 
+[2/3] Analyzing Phase 4 full_name for BPE contamination...
+2025-11-05 20:01:24,260 - utils.bpe_cleaning - INFO - BPE Contamination Report:
+2025-11-05 20:01:24,261 - utils.bpe_cleaning - INFO -   Rows: 0/13754 (0.0%)
+2025-11-05 20:01:24,262 - utils.bpe_cleaning - INFO -   Entities: 0/0 (0.0%)
+2025-11-05 20:01:24,262 - utils.bpe_cleaning - INFO -   Ġ markers: 0
+2025-11-05 20:01:24,262 - utils.bpe_cleaning - INFO -   Short tokens: 0
+2025-11-05 20:01:24,262 - __main__ - INFO - 
+[3/3] Cleaning BPE artifacts from Phase 4 entity lists...
+2025-11-05 20:01:24,262 - __main__ - INFO -   - Cleaning common_name_list...
+2025-11-05 20:01:24,386 - __main__ - INFO -   - Cleaning full_name_list...
+2025-11-05 20:01:24,405 - __main__ - INFO - 
+✓ BPE cleaning complete:
+2025-11-05 20:01:24,406 - __main__ - INFO -   - Common name contamination: 0.0% of papers
+2025-11-05 20:01:24,406 - __main__ - INFO -   - Full name contamination: 0.0% of papers
+2025-11-05 20:01:24,407 - __main__ - INFO -   - Total entities processed: 33,929
+2025-11-05 20:01:24,411 - __main__ - INFO - 
+================================================================================
+2025-11-05 20:01:24,411 - __main__ - INFO - STEP 4: Aligning Papers by ID
+2025-11-05 20:01:24,411 - __main__ - INFO - ================================================================================
+2025-11-05 20:01:24,415 - __main__ - INFO - 
+[1/4] Preparing V2 data...
+2025-11-05 20:01:24,425 - __main__ - INFO - ✓ V2: 4,395 papers
+2025-11-05 20:01:24,425 - __main__ - INFO - 
+[2/4] Preparing Phase 4 data...
+2025-11-05 20:01:24,448 - __main__ - INFO - ✓ Phase 4: 13,754 papers
+2025-11-05 20:01:24,448 - __main__ - INFO - 
+[3/4] Preparing test split (ground truth)...
+2025-11-05 20:01:24,451 - __main__ - INFO - ✓ Test split: 66 papers
+2025-11-05 20:01:24,451 - __main__ - INFO - 
+[4/4] Merging datasets by paper_id...
+2025-11-05 20:01:24,451 - __main__ - INFO -   - Merging V2 and Phase 4 results...
+2025-11-05 20:01:24,540 - __main__ - INFO -     • Both V2 and Phase 4: 4,242
+2025-11-05 20:01:24,550 - __main__ - INFO -     • Only V2: 153
+2025-11-05 20:01:24,554 - __main__ - INFO -     • Only Phase 4: 9,512
+2025-11-05 20:01:24,558 - __main__ - INFO -   - Merging with ground truth...
+2025-11-05 20:01:24,602 - __main__ - INFO -     • With ground truth: 63
+2025-11-05 20:01:24,605 - __main__ - INFO -     • Without ground truth: 13,844
+2025-11-05 20:01:24,620 - __main__ - INFO - 
+✓ Alignment complete: 13,907 total papers
+2025-11-05 20:01:24,624 - __main__ - INFO - 
+Coverage statistics:
+2025-11-05 20:01:24,625 - __main__ - INFO -   - Papers with ground truth: 63 (0.5%)
+2025-11-05 20:01:24,625 - __main__ - INFO -   - Papers with V2 predictions: 4,395 (31.6%)
+2025-11-05 20:01:24,626 - __main__ - INFO -   - Papers with Phase 4 predictions: 13,754 (98.9%)
+2025-11-05 20:01:24,627 - __main__ - INFO - 
+================================================================================
+2025-11-05 20:01:24,628 - __main__ - INFO - STEP 5: Generating Entity Count Statistics
+2025-11-05 20:01:24,633 - __main__ - INFO - ================================================================================
+2025-11-05 20:01:24,633 - __main__ - INFO - 
+Calculating entity count distributions...
+2025-11-05 20:01:24,883 - __main__ - INFO - 
+✓ Entity count statistics:
+2025-11-05 20:01:24,884 - __main__ - INFO - 
+Ground Truth Common:
+2025-11-05 20:01:24,884 - __main__ - INFO -   - Total entities: 67
+2025-11-05 20:01:24,884 - __main__ - INFO -   - Papers with entities: 63 (0.5%)
+2025-11-05 20:01:24,884 - __main__ - INFO -   - Mean per paper: 0.00
+2025-11-05 20:01:24,884 - __main__ - INFO -   - Median per paper: 0.0
+2025-11-05 20:01:24,885 - __main__ - INFO - 
+Ground Truth Full:
+2025-11-05 20:01:24,885 - __main__ - INFO -   - Total entities: 67
+2025-11-05 20:01:24,885 - __main__ - INFO -   - Papers with entities: 63 (0.5%)
+2025-11-05 20:01:24,885 - __main__ - INFO -   - Mean per paper: 0.00
+2025-11-05 20:01:24,885 - __main__ - INFO -   - Median per paper: 0.0
+2025-11-05 20:01:24,886 - __main__ - INFO - 
+V2 Common:
+2025-11-05 20:01:24,886 - __main__ - INFO -   - Total entities: 5,495
+2025-11-05 20:01:24,887 - __main__ - INFO -   - Papers with entities: 4,321 (31.1%)
+2025-11-05 20:01:24,887 - __main__ - INFO -   - Mean per paper: 0.40
+2025-11-05 20:01:24,887 - __main__ - INFO -   - Median per paper: 0.0
+2025-11-05 20:01:24,887 - __main__ - INFO - 
+V2 Full:
+2025-11-05 20:01:24,888 - __main__ - INFO -   - Total entities: 2,115
+2025-11-05 20:01:24,889 - __main__ - INFO -   - Papers with entities: 1,674 (12.0%)
+2025-11-05 20:01:24,889 - __main__ - INFO -   - Mean per paper: 0.15
+2025-11-05 20:01:24,890 - __main__ - INFO -   - Median per paper: 0.0
+2025-11-05 20:01:24,891 - __main__ - INFO - 
+Phase 4 Common (Raw):
+2025-11-05 20:01:24,891 - __main__ - INFO -   - Total entities: 33,929
+2025-11-05 20:01:24,891 - __main__ - INFO -   - Papers with entities: 13,754 (98.9%)
+2025-11-05 20:01:24,891 - __main__ - INFO -   - Mean per paper: 2.44
+2025-11-05 20:01:24,891 - __main__ - INFO -   - Median per paper: 2.0
+2025-11-05 20:01:24,892 - __main__ - INFO - 
+Phase 4 Common (Clean):
+2025-11-05 20:01:24,892 - __main__ - INFO -   - Total entities: 33,929
+2025-11-05 20:01:24,892 - __main__ - INFO -   - Papers with entities: 13,754 (98.9%)
+2025-11-05 20:01:24,893 - __main__ - INFO -   - Mean per paper: 2.44
+2025-11-05 20:01:24,893 - __main__ - INFO -   - Median per paper: 2.0
+2025-11-05 20:01:24,893 - __main__ - INFO - 
+Phase 4 Full (Raw):
+2025-11-05 20:01:24,894 - __main__ - INFO -   - Total entities: 0
+2025-11-05 20:01:24,894 - __main__ - INFO -   - Papers with entities: 0 (0.0%)
+2025-11-05 20:01:24,894 - __main__ - INFO -   - Mean per paper: 0.00
+2025-11-05 20:01:24,894 - __main__ - INFO -   - Median per paper: 0.0
+2025-11-05 20:01:24,896 - __main__ - INFO - 
+Phase 4 Full (Clean):
+2025-11-05 20:01:24,898 - __main__ - INFO -   - Total entities: 0
+2025-11-05 20:01:24,898 - __main__ - INFO -   - Papers with entities: 0 (0.0%)
+2025-11-05 20:01:24,899 - __main__ - INFO -   - Mean per paper: 0.00
+2025-11-05 20:01:24,899 - __main__ - INFO -   - Median per paper: 0.0
+2025-11-05 20:01:24,899 - __main__ - INFO - 
+================================================================================
+2025-11-05 20:01:24,909 - __main__ - INFO - STEP 6: Saving Output Files
+2025-11-05 20:01:24,909 - __main__ - INFO - ================================================================================
+2025-11-05 20:01:24,910 - __main__ - INFO - 
+Output directory: /Users/warren/development/GBC/inventory_2022/comparison_phase4_v_oldmodel/data
+2025-11-05 20:01:24,910 - __main__ - INFO - 
+[1/3] Saving aligned_papers.csv...
+2025-11-05 20:01:25,301 - __main__ - INFO - ✓ Saved 13,907 papers to: /Users/warren/development/GBC/inventory_2022/comparison_phase4_v_oldmodel/data/aligned_papers.csv
+2025-11-05 20:01:25,302 - __main__ - INFO -   File size: 1.27 MB
+2025-11-05 20:01:25,302 - __main__ - INFO - 
+[2/3] Saving bpe_artifact_report.json...
+2025-11-05 20:01:25,303 - __main__ - INFO - ✓ Saved BPE report to: /Users/warren/development/GBC/inventory_2022/comparison_phase4_v_oldmodel/data/bpe_artifact_report.json
+2025-11-05 20:01:25,304 - __main__ - INFO - 
+[3/3] Saving entity_counts.csv...
+2025-11-05 20:01:25,309 - __main__ - INFO - ✓ Saved entity statistics to: /Users/warren/development/GBC/inventory_2022/comparison_phase4_v_oldmodel/data/entity_counts.csv
+2025-11-05 20:01:25,309 - __main__ - INFO - 
+✓ All outputs saved successfully
+2025-11-05 20:01:25,309 - __main__ - INFO - 
+================================================================================
+2025-11-05 20:01:25,310 - __main__ - INFO - FINAL SUMMARY
+2025-11-05 20:01:25,310 - __main__ - INFO - ================================================================================
+2025-11-05 20:01:25,310 - __main__ - INFO - 
+📊 Dataset Statistics:
+2025-11-05 20:01:25,310 - __main__ - INFO -   Total papers aligned: 13,907
+2025-11-05 20:01:25,312 - __main__ - INFO -   Papers with ground truth: 63
+2025-11-05 20:01:25,314 - __main__ - INFO -   Papers with V2 results: 4,395
+2025-11-05 20:01:25,317 - __main__ - INFO -   Papers with Phase 4 results: 13,754
+2025-11-05 20:01:25,317 - __main__ - INFO - 
+🔍 BPE Contamination:
+2025-11-05 20:01:25,317 - __main__ - INFO -   Common name papers contaminated: 0 (0.0%)
+2025-11-05 20:01:25,317 - __main__ - INFO -   Full name papers contaminated: 0 (0.0%)
+2025-11-05 20:01:25,317 - __main__ - INFO - 
+📈 Entity Counts:
+2025-11-05 20:01:25,318 - __main__ - INFO -   Ground Truth Common: 67 entities
+2025-11-05 20:01:25,319 - __main__ - INFO -   Ground Truth Full: 67 entities
+2025-11-05 20:01:25,320 - __main__ - INFO - 
+✅ Preprocessing complete! Ready for comparison analysis.
+2025-11-05 20:01:25,320 - __main__ - INFO -    Next step: Run 02_entity_level_comparison.py
+2025-11-05 20:01:25,320 - __main__ - INFO - 
+================================================================================
+2025-11-05 20:01:25,320 - __main__ - INFO - ✅ SUCCESS: All processing completed successfully
+2025-11-05 20:01:25,320 - __main__ - INFO - ================================================================================
+2025-11-05 20:56:02,609 - __main__ - INFO - ================================================================================
+2025-11-05 20:56:02,610 - __main__ - INFO - Phase 4 vs V2 NER Comparison: Preprocessing and Alignment
+2025-11-05 20:56:02,610 - __main__ - INFO - ================================================================================
+2025-11-05 20:56:02,610 - __main__ - INFO - Output directory: /Users/warren/development/GBC/inventory_2022/comparison_phase4_v_oldmodel/data
+2025-11-05 20:56:02,610 - __main__ - INFO - BPE cleaning: ENABLED
+2025-11-05 20:56:02,610 - __main__ - INFO - ================================================================================
+2025-11-05 20:56:02,610 - __main__ - INFO - STEP 1: Loading Datasets
+2025-11-05 20:56:02,610 - __main__ - INFO - ================================================================================
+2025-11-05 20:56:02,610 - __main__ - INFO - 
+[1/4] Loading V2 (old model) NER results...
+2025-11-05 20:56:02,611 - utils.data_loading - INFO - Loading V2 results from: /Users/warren/development/GBC/inventory_2022/collab_results/2025-10-28-ulgfhi_oldmodel_2022_rerun/ner_results.csv
+2025-11-05 20:56:02,982 - utils.data_loading - DEBUG - Normalized 'ID' column to string format (sample: 20672376)
+2025-11-05 20:56:02,982 - utils.data_loading - INFO - Successfully loaded 4395 V2 results with columns: ['ID', 'text', 'publication_date', 'common_name', 'common_prob', 'full_name', 'full_prob']
+2025-11-05 20:56:02,982 - __main__ - INFO - ✓ Loaded 4,395 V2 results
+2025-11-05 20:56:02,982 - __main__ - INFO - 
+[2/4] Loading Phase 4 (new model) NER results...
+2025-11-05 20:56:02,983 - utils.data_loading - INFO - Loading Phase 4 results from: /Users/warren/development/GBC/inventory_2022/collab_results/experiment_archives/2025-11-05-ygnr9f_phase4_2022_rerun/ner_results.csv
+2025-11-05 20:56:04,258 - utils.data_loading - DEBUG - Normalized 'ID' column to string format (sample: 20479508)
+2025-11-05 20:56:04,259 - utils.data_loading - INFO - Successfully loaded 13754 Phase 4 results with columns: ['ID', 'text', 'publication_date', 'common_name', 'common_prob', 'full_name', 'full_prob']
+2025-11-05 20:56:04,259 - __main__ - INFO - ✓ Loaded 13,754 Phase 4 results
+2025-11-05 20:56:04,259 - __main__ - INFO - 
+[3/4] Loading NER test split ground truth...
+2025-11-05 20:56:04,259 - utils.data_loading - INFO - Loading NER test split from: /Users/warren/development/GBC/inventory_2022/data/ner_splits_full/test_ner.csv
+2025-11-05 20:56:04,272 - utils.data_loading - DEBUG - Normalized 'id' column to string format (sample: 33237286)
+2025-11-05 20:56:04,273 - utils.data_loading - INFO - Successfully loaded 66 test samples with columns: ['id', 'title', 'abstract', 'full_name', 'common_name', 'title_abstract']
+2025-11-05 20:56:04,274 - __main__ - INFO - ✓ Loaded 66 test samples
+2025-11-05 20:56:04,274 - __main__ - INFO - 
+[4/4] Loading final inventory...
+2025-11-05 20:56:04,275 - utils.data_loading - INFO - Loading inventory from: /Users/warren/development/GBC/inventory_2022/data/final_inventory_2022.csv
+2025-11-05 20:56:04,445 - utils.data_loading - WARNING - Found 355 rows with comma-separated IDs in 'ID' column. Using only the first ID from each comma-separated value.
+2025-11-05 20:56:04,460 - utils.data_loading - DEBUG - Normalized 'ID' column to string format (sample: 21389154)
+2025-11-05 20:56:04,460 - utils.data_loading - INFO - Successfully loaded 3112 papers with columns: ['ID', 'best_name', 'best_name_prob', 'best_common', 'best_common_prob', 'best_full', 'best_full_prob', 'article_count', 'extracted_url', 'extracted_url_status', 'extracted_url_country', 'extracted_url_coordinates', 'wayback_url', 'publication_date', 'affiliation', 'authors', 'grant_ids', 'grant_agencies', 'num_citations', 'affiliation_countries']
+2025-11-05 20:56:04,461 - __main__ - INFO - ✓ Loaded 3,112 papers in inventory
+2025-11-05 20:56:04,461 - __main__ - INFO - 
+✓ All datasets loaded successfully
+2025-11-05 20:56:04,461 - __main__ - INFO - 
+================================================================================
+2025-11-05 20:56:04,461 - __main__ - INFO - STEP 2: Parsing Entity Columns
+2025-11-05 20:56:04,461 - __main__ - INFO - ================================================================================
+2025-11-05 20:56:04,461 - __main__ - INFO - 
+[1/3] Parsing V2 entities (common_name, full_name)...
+2025-11-05 20:56:04,487 - __main__ - INFO - ✓ Parsed V2 entities
+2025-11-05 20:56:04,487 - __main__ - INFO - 
+[2/3] Parsing Phase 4 entities (common_name, full_name)...
+2025-11-05 20:56:04,686 - __main__ - INFO - ✓ Parsed Phase 4 entities
+2025-11-05 20:56:04,687 - __main__ - INFO - 
+[3/3] Parsing test split entities (ground truth)...
+2025-11-05 20:56:04,687 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['UniProt', 'UniProtKB']
+2025-11-05 20:56:04,688 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['sc-PDB']
+2025-11-05 20:56:04,688 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['GeneEx']
+2025-11-05 20:56:04,693 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['dbGuide']
+2025-11-05 20:56:04,694 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['CDSbank']
+2025-11-05 20:56:04,694 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['SuperFly']
+2025-11-05 20:56:04,695 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['IDEAL']
+2025-11-05 20:56:04,695 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['PESNPdb']
+2025-11-05 20:56:04,695 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['Pfam']
+2025-11-05 20:56:04,695 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['DrugR+']
+2025-11-05 20:56:04,696 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['IRRMC']
+2025-11-05 20:56:04,697 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['PDXliver']
+2025-11-05 20:56:04,697 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['HFBD']
+2025-11-05 20:56:04,698 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['']
+2025-11-05 20:56:04,699 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['KEGG']
+2025-11-05 20:56:04,699 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['SmedGD']
+2025-11-05 20:56:04,699 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['ViralHostRangeDB']
+2025-11-05 20:56:04,699 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['MosaicBase']
+2025-11-05 20:56:04,699 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['ImaGEO']
+2025-11-05 20:56:04,700 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['FIC']
+2025-11-05 20:56:04,700 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['DNAmod']
+2025-11-05 20:56:04,700 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['']
+2025-11-05 20:56:04,701 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['MeDAS']
+2025-11-05 20:56:04,701 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['BEE']
+2025-11-05 20:56:04,701 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['BacWGSTdb']
+2025-11-05 20:56:04,703 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['']
+2025-11-05 20:56:04,704 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['OMIM']
+2025-11-05 20:56:04,705 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['PolarProtDb']
+2025-11-05 20:56:04,706 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['PhenCards']
+2025-11-05 20:56:04,706 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['']
+2025-11-05 20:56:04,707 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['lncR2metasta']
+2025-11-05 20:56:04,712 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['DIGGER']
+2025-11-05 20:56:04,712 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['RTFAdb']
+2025-11-05 20:56:04,713 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['cgMLST@Taiwan']
+2025-11-05 20:56:04,718 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['CoV3D']
+2025-11-05 20:56:04,721 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['CandrisDB']
+2025-11-05 20:56:04,722 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['CellMiner-SCLC', 'SCLC-CellMiner']
+2025-11-05 20:56:04,722 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['NGSmethDB']
+2025-11-05 20:56:04,722 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['MPD']
+2025-11-05 20:56:04,723 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['CircR2Cancer', 'circR2Cancer']
+2025-11-05 20:56:04,723 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['TMSNP']
+2025-11-05 20:56:04,723 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['SANCDB']
+2025-11-05 20:56:04,723 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['PPHAGE']
+2025-11-05 20:56:04,723 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['bc-GenExMiner']
+2025-11-05 20:56:04,724 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['BGD']
+2025-11-05 20:56:04,724 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['TGV database']
+2025-11-05 20:56:04,724 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['TCRdb']
+2025-11-05 20:56:04,724 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['InSexBase']
+2025-11-05 20:56:04,725 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['D3Similarity']
+2025-11-05 20:56:04,726 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['PED']
+2025-11-05 20:56:04,727 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['Pharos', 'TCRD']
+2025-11-05 20:56:04,729 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['MatrixDB']
+2025-11-05 20:56:04,731 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['LnCeCell']
+2025-11-05 20:56:04,732 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['ExVe']
+2025-11-05 20:56:04,733 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['DrugRepV']
+2025-11-05 20:56:04,733 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['INstruct']
+2025-11-05 20:56:04,734 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['WormBase']
+2025-11-05 20:56:04,739 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['IMG/VR']
+2025-11-05 20:56:04,743 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['EuDBase']
+2025-11-05 20:56:04,744 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['DDBJ']
+2025-11-05 20:56:04,745 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['IDDB']
+2025-11-05 20:56:04,745 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['MGI']
+2025-11-05 20:56:04,745 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['miRegulome']
+2025-11-05 20:56:04,745 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['UCSC Genome Browser database']
+2025-11-05 20:56:04,762 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['HIM database']
+2025-11-05 20:56:04,769 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['NanDeSyn']
+2025-11-05 20:56:04,773 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['UniProt Knowledgebase']
+2025-11-05 20:56:04,776 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['sc-PDB']
+2025-11-05 20:56:04,777 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['Gene Circuit Explorer']
+2025-11-05 20:56:04,777 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['dbGuide']
+2025-11-05 20:56:04,777 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['CDSbank']
+2025-11-05 20:56:04,805 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['SuperFly']
+2025-11-05 20:56:04,805 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['Intrinsically Disordered proteins with Extensive Annotations and Literature']
+2025-11-05 20:56:04,806 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['PESNPdb']
+2025-11-05 20:56:04,818 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['Pfam 33.1']
+2025-11-05 20:56:04,818 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['DrugR+']
+2025-11-05 20:56:04,818 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['Integrated Resource for Reproducibility in Macromolecular Crystallography']
+2025-11-05 20:56:04,821 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['PDXliver']
+2025-11-05 20:56:04,821 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['HF biomarker knowledge database']
+2025-11-05 20:56:04,823 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['The Gene Ontology resource']
+2025-11-05 20:56:04,823 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['KEGG']
+2025-11-05 20:56:04,824 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['Schmidtea mediterranea genome database']
+2025-11-05 20:56:04,828 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['Viral Host Range database']
+2025-11-05 20:56:04,829 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['MosaicBase']
+2025-11-05 20:56:04,836 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['ImaGEO']
+2025-11-05 20:56:04,849 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['functional interactome of Caenorhabditis elegans']
+2025-11-05 20:56:04,853 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['DNA modification database']
+2025-11-05 20:56:04,854 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['Autoimmune Diseases Explorer']
+2025-11-05 20:56:04,854 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['Metazoan Developmental Alternative Splicing database']
+2025-11-05 20:56:04,854 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['Biomedical Entity Explorer']
+2025-11-05 20:56:04,854 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['BacWGSTdb']
+2025-11-05 20:56:04,855 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['Mouse Kidney Fibromics browser']
+2025-11-05 20:56:04,855 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['Online Mendelian Inheritance in Man']
+2025-11-05 20:56:04,856 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['PolarProtDb']
+2025-11-05 20:56:04,856 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['PhenCards']
+2025-11-05 20:56:04,857 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['Gene Wiki']
+2025-11-05 20:56:04,858 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['lncR2metasta']
+2025-11-05 20:56:04,859 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['DIGGER']
+2025-11-05 20:56:04,861 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['RTFAdb']
+2025-11-05 20:56:04,868 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['cgMLST@Taiwan']
+2025-11-05 20:56:04,871 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['CoV3D']
+2025-11-05 20:56:04,871 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['CandrisDB']
+2025-11-05 20:56:04,872 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['CellMiner-SCLC', 'SCLC-CellMiner']
+2025-11-05 20:56:04,872 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['NGSmethDB']
+2025-11-05 20:56:04,872 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['Mouse Phenome Database']
+2025-11-05 20:56:04,872 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['CircR2Cancer', 'circR2Cancer']
+2025-11-05 20:56:04,873 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['']
+2025-11-05 20:56:04,874 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['South African Natural Compounds Database']
+2025-11-05 20:56:04,874 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['PPHAGE']
+2025-11-05 20:56:04,889 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['Breast cancer gene-expression miner']
+2025-11-05 20:56:04,899 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['Bovine Genome Database']
+2025-11-05 20:56:04,899 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['Tomato Genomic Variations database']
+2025-11-05 20:56:04,902 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['TCRdb']
+2025-11-05 20:56:04,912 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['InSexBase']
+2025-11-05 20:56:04,915 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['D3Similarity']
+2025-11-05 20:56:04,916 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['Pancreatic Expression Database', 'pancreatic expression database']
+2025-11-05 20:56:04,917 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['Pharos', 'The Target Central Resource Database']
+2025-11-05 20:56:04,917 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['MatrixDB']
+2025-11-05 20:56:04,918 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['LnCeCell']
+2025-11-05 20:56:04,918 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['ExVe']
+2025-11-05 20:56:04,918 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['DrugRepV']
+2025-11-05 20:56:04,919 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['INstruct']
+2025-11-05 20:56:04,919 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['WormBase']
+2025-11-05 20:56:04,920 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['IMG/VR database']
+2025-11-05 20:56:04,921 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['EuDBase']
+2025-11-05 20:56:04,921 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['DDBJ Center']
+2025-11-05 20:56:04,921 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['infertility disease database']
+2025-11-05 20:56:04,921 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['Mouse Genome Informatics']
+2025-11-05 20:56:04,922 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['miRegulome']
+2025-11-05 20:56:04,922 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['University of California Santa Cruz Genome Browser']
+2025-11-05 20:56:04,924 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['herbal ingredients in-vivo metabolism database']
+2025-11-05 20:56:04,925 - utils.data_loading - DEBUG - JSON parsing failed, trying Python literal eval: ['Nannochloropsis Design and Synthesis']
+2025-11-05 20:56:04,928 - __main__ - INFO - ✓ Parsed test split entities
+2025-11-05 20:56:04,929 - __main__ - INFO - 
+✓ All entity columns parsed successfully
+2025-11-05 20:56:04,929 - __main__ - INFO - 
+================================================================================
+2025-11-05 20:56:04,930 - __main__ - INFO - STEP 3: Detecting and Cleaning BPE Artifacts
+2025-11-05 20:56:04,931 - __main__ - INFO - ================================================================================
+2025-11-05 20:56:04,931 - __main__ - INFO - 
+[1/3] Analyzing Phase 4 common_name for BPE contamination...
+2025-11-05 20:56:05,078 - utils.bpe_cleaning - INFO - BPE Contamination Report:
+2025-11-05 20:56:05,078 - utils.bpe_cleaning - INFO -   Rows: 0/13754 (0.0%)
+2025-11-05 20:56:05,079 - utils.bpe_cleaning - INFO -   Entities: 0/33929 (0.0%)
+2025-11-05 20:56:05,079 - utils.bpe_cleaning - INFO -   Ġ markers: 0
+2025-11-05 20:56:05,079 - utils.bpe_cleaning - INFO -   Short tokens: 0
+2025-11-05 20:56:05,080 - __main__ - INFO - 
+[2/3] Analyzing Phase 4 full_name for BPE contamination...
+2025-11-05 20:56:05,095 - utils.bpe_cleaning - INFO - BPE Contamination Report:
+2025-11-05 20:56:05,104 - utils.bpe_cleaning - INFO -   Rows: 0/13754 (0.0%)
+2025-11-05 20:56:05,105 - utils.bpe_cleaning - INFO -   Entities: 0/0 (0.0%)
+2025-11-05 20:56:05,105 - utils.bpe_cleaning - INFO -   Ġ markers: 0
+2025-11-05 20:56:05,105 - utils.bpe_cleaning - INFO -   Short tokens: 0
+2025-11-05 20:56:05,105 - __main__ - INFO - 
+[3/3] Cleaning BPE artifacts from Phase 4 entity lists...
+2025-11-05 20:56:05,105 - __main__ - INFO -   - Cleaning common_name_list...
+2025-11-05 20:56:05,416 - __main__ - INFO -   - Cleaning full_name_list...
+2025-11-05 20:56:05,447 - __main__ - INFO - 
+✓ BPE cleaning complete:
+2025-11-05 20:56:05,448 - __main__ - INFO -   - Common name contamination: 0.0% of papers
+2025-11-05 20:56:05,449 - __main__ - INFO -   - Full name contamination: 0.0% of papers
+2025-11-05 20:56:05,449 - __main__ - INFO -   - Total entities processed: 33,929
+2025-11-05 20:56:05,449 - __main__ - INFO - 
+================================================================================
+2025-11-05 20:56:05,450 - __main__ - INFO - STEP 4: Aligning Papers by ID
+2025-11-05 20:56:05,450 - __main__ - INFO - ================================================================================
+2025-11-05 20:56:05,451 - __main__ - INFO - 
+[1/4] Preparing V2 data...
+2025-11-05 20:56:05,461 - __main__ - INFO - ✓ V2: 4,395 papers
+2025-11-05 20:56:05,461 - __main__ - INFO - 
+[2/4] Preparing Phase 4 data...
+2025-11-05 20:56:05,489 - __main__ - INFO - ✓ Phase 4: 13,754 papers
+2025-11-05 20:56:05,490 - __main__ - INFO - 
+[3/4] Preparing test split (ground truth)...
+2025-11-05 20:56:05,493 - __main__ - INFO - ✓ Test split: 66 papers
+2025-11-05 20:56:05,493 - __main__ - INFO - 
+[4/4] Merging datasets by paper_id...
+2025-11-05 20:56:05,493 - __main__ - INFO -   - Merging V2 and Phase 4 results...
+2025-11-05 20:56:05,676 - __main__ - INFO -     • Both V2 and Phase 4: 4,242
+2025-11-05 20:56:05,678 - __main__ - INFO -     • Only V2: 153
+2025-11-05 20:56:05,680 - __main__ - INFO -     • Only Phase 4: 9,512
+2025-11-05 20:56:05,686 - __main__ - INFO -   - Merging with ground truth...
+2025-11-05 20:56:05,793 - __main__ - INFO -     • With ground truth: 63
+2025-11-05 20:56:05,821 - __main__ - INFO -     • Without ground truth: 13,844
+2025-11-05 20:56:05,846 - __main__ - INFO - 
+✓ Alignment complete: 13,907 total papers
+2025-11-05 20:56:05,859 - __main__ - INFO - 
+Coverage statistics:
+2025-11-05 20:56:05,859 - __main__ - INFO -   - Papers with ground truth: 63 (0.5%)
+2025-11-05 20:56:05,859 - __main__ - INFO -   - Papers with V2 predictions: 4,395 (31.6%)
+2025-11-05 20:56:05,860 - __main__ - INFO -   - Papers with Phase 4 predictions: 13,754 (98.9%)
+2025-11-05 20:56:05,861 - __main__ - INFO - 
+================================================================================
+2025-11-05 20:56:05,861 - __main__ - INFO - STEP 5: Generating Entity Count Statistics
+2025-11-05 20:56:05,861 - __main__ - INFO - ================================================================================
+2025-11-05 20:56:05,862 - __main__ - INFO - 
+Calculating entity count distributions...
+2025-11-05 20:56:06,272 - __main__ - INFO - 
+✓ Entity count statistics:
+2025-11-05 20:56:06,273 - __main__ - INFO - 
+Ground Truth Common:
+2025-11-05 20:56:06,273 - __main__ - INFO -   - Total entities: 64
+2025-11-05 20:56:06,273 - __main__ - INFO -   - Papers with entities: 60 (0.4%)
+2025-11-05 20:56:06,274 - __main__ - INFO -   - Mean per paper: 0.00
+2025-11-05 20:56:06,274 - __main__ - INFO -   - Median per paper: 0.0
+2025-11-05 20:56:06,274 - __main__ - INFO - 
+Ground Truth Full:
+2025-11-05 20:56:06,274 - __main__ - INFO -   - Total entities: 66
+2025-11-05 20:56:06,274 - __main__ - INFO -   - Papers with entities: 62 (0.4%)
+2025-11-05 20:56:06,275 - __main__ - INFO -   - Mean per paper: 0.00
+2025-11-05 20:56:06,275 - __main__ - INFO -   - Median per paper: 0.0
+2025-11-05 20:56:06,275 - __main__ - INFO - 
+V2 Common:
+2025-11-05 20:56:06,275 - __main__ - INFO -   - Total entities: 5,495
+2025-11-05 20:56:06,276 - __main__ - INFO -   - Papers with entities: 4,321 (31.1%)
+2025-11-05 20:56:06,276 - __main__ - INFO -   - Mean per paper: 0.40
+2025-11-05 20:56:06,276 - __main__ - INFO -   - Median per paper: 0.0
+2025-11-05 20:56:06,276 - __main__ - INFO - 
+V2 Full:
+2025-11-05 20:56:06,276 - __main__ - INFO -   - Total entities: 2,115
+2025-11-05 20:56:06,277 - __main__ - INFO -   - Papers with entities: 1,674 (12.0%)
+2025-11-05 20:56:06,277 - __main__ - INFO -   - Mean per paper: 0.15
+2025-11-05 20:56:06,277 - __main__ - INFO -   - Median per paper: 0.0
+2025-11-05 20:56:06,277 - __main__ - INFO - 
+Phase 4 Common (Raw):
+2025-11-05 20:56:06,278 - __main__ - INFO -   - Total entities: 33,929
+2025-11-05 20:56:06,278 - __main__ - INFO -   - Papers with entities: 13,754 (98.9%)
+2025-11-05 20:56:06,278 - __main__ - INFO -   - Mean per paper: 2.44
+2025-11-05 20:56:06,278 - __main__ - INFO -   - Median per paper: 2.0
+2025-11-05 20:56:06,278 - __main__ - INFO - 
+Phase 4 Common (Clean):
+2025-11-05 20:56:06,278 - __main__ - INFO -   - Total entities: 33,929
+2025-11-05 20:56:06,279 - __main__ - INFO -   - Papers with entities: 13,754 (98.9%)
+2025-11-05 20:56:06,279 - __main__ - INFO -   - Mean per paper: 2.44
+2025-11-05 20:56:06,279 - __main__ - INFO -   - Median per paper: 2.0
+2025-11-05 20:56:06,279 - __main__ - INFO - 
+Phase 4 Full (Raw):
+2025-11-05 20:56:06,279 - __main__ - INFO -   - Total entities: 0
+2025-11-05 20:56:06,279 - __main__ - INFO -   - Papers with entities: 0 (0.0%)
+2025-11-05 20:56:06,280 - __main__ - INFO -   - Mean per paper: 0.00
+2025-11-05 20:56:06,280 - __main__ - INFO -   - Median per paper: 0.0
+2025-11-05 20:56:06,280 - __main__ - INFO - 
+Phase 4 Full (Clean):
+2025-11-05 20:56:06,280 - __main__ - INFO -   - Total entities: 0
+2025-11-05 20:56:06,280 - __main__ - INFO -   - Papers with entities: 0 (0.0%)
+2025-11-05 20:56:06,281 - __main__ - INFO -   - Mean per paper: 0.00
+2025-11-05 20:56:06,281 - __main__ - INFO -   - Median per paper: 0.0
+2025-11-05 20:56:06,281 - __main__ - INFO - 
+================================================================================
+2025-11-05 20:56:06,282 - __main__ - INFO - STEP 6: Saving Output Files
+2025-11-05 20:56:06,282 - __main__ - INFO - ================================================================================
+2025-11-05 20:56:06,282 - __main__ - INFO - 
+Output directory: /Users/warren/development/GBC/inventory_2022/comparison_phase4_v_oldmodel/data
+2025-11-05 20:56:06,283 - __main__ - INFO - 
+[1/3] Saving aligned_papers.csv...
+2025-11-05 20:56:06,283 - __main__ - INFO -   - Serializing entity lists to JSON...
+2025-11-05 20:56:06,303 - __main__ - DEBUG -     • Serialized 'true_com' to JSON
+2025-11-05 20:56:06,308 - __main__ - DEBUG -     • Serialized 'true_ful' to JSON
+2025-11-05 20:56:06,343 - __main__ - DEBUG -     • Serialized 'v2_com' to JSON
+2025-11-05 20:56:06,366 - __main__ - DEBUG -     • Serialized 'v2_ful' to JSON
+2025-11-05 20:56:06,663 - __main__ - DEBUG -     • Serialized 'p4_com_raw' to JSON
+2025-11-05 20:56:06,782 - __main__ - DEBUG -     • Serialized 'p4_com_clean' to JSON
+2025-11-05 20:56:06,928 - __main__ - DEBUG -     • Serialized 'p4_ful_raw' to JSON
+2025-11-05 20:56:06,984 - __main__ - DEBUG -     • Serialized 'p4_ful_clean' to JSON
+2025-11-05 20:56:06,989 - __main__ - INFO -   - Sample serialized entities:
+2025-11-05 20:56:06,996 - __main__ - INFO -     • true_com: ["sc-PDB"]
+2025-11-05 20:56:06,998 - __main__ - INFO -     • true_ful: ["sc-PDB"]
+2025-11-05 20:56:07,001 - __main__ - INFO -     • v2_com: ["pfSNP"]
+2025-11-05 20:56:07,004 - __main__ - INFO -     • v2_ful: []
+2025-11-05 20:56:07,009 - __main__ - INFO -     • p4_com_raw: ["TCLUST"]
+2025-11-05 20:56:07,017 - __main__ - INFO -     • p4_com_clean: ["TCLUST"]
+2025-11-05 20:56:07,019 - __main__ - INFO -     • p4_ful_raw: []
+2025-11-05 20:56:07,021 - __main__ - INFO -     • p4_ful_clean: []
+2025-11-05 20:56:07,205 - __main__ - INFO - ✓ Saved 13,907 papers to: /Users/warren/development/GBC/inventory_2022/comparison_phase4_v_oldmodel/data/aligned_papers.csv
+2025-11-05 20:56:07,215 - __main__ - INFO -   File size: 1.45 MB
+2025-11-05 20:56:07,215 - __main__ - INFO - 
+[2/3] Saving bpe_artifact_report.json...
+2025-11-05 20:56:07,218 - __main__ - INFO - ✓ Saved BPE report to: /Users/warren/development/GBC/inventory_2022/comparison_phase4_v_oldmodel/data/bpe_artifact_report.json
+2025-11-05 20:56:07,218 - __main__ - INFO - 
+[3/3] Saving entity_counts.csv...
+2025-11-05 20:56:07,222 - __main__ - INFO - ✓ Saved entity statistics to: /Users/warren/development/GBC/inventory_2022/comparison_phase4_v_oldmodel/data/entity_counts.csv
+2025-11-05 20:56:07,224 - __main__ - INFO - 
+✓ All outputs saved successfully
+2025-11-05 20:56:07,235 - __main__ - INFO - 
+================================================================================
+2025-11-05 20:56:07,236 - __main__ - INFO - FINAL SUMMARY
+2025-11-05 20:56:07,239 - __main__ - INFO - ================================================================================
+2025-11-05 20:56:07,239 - __main__ - INFO - 
+📊 Dataset Statistics:
+2025-11-05 20:56:07,239 - __main__ - INFO -   Total papers aligned: 13,907
+2025-11-05 20:56:07,245 - __main__ - INFO -   Papers with ground truth: 63
+2025-11-05 20:56:07,247 - __main__ - INFO -   Papers with V2 results: 4,395
+2025-11-05 20:56:07,250 - __main__ - INFO -   Papers with Phase 4 results: 13,754
+2025-11-05 20:56:07,250 - __main__ - INFO - 
+🔍 BPE Contamination:
+2025-11-05 20:56:07,250 - __main__ - INFO -   Common name papers contaminated: 0 (0.0%)
+2025-11-05 20:56:07,251 - __main__ - INFO -   Full name papers contaminated: 0 (0.0%)
+2025-11-05 20:56:07,251 - __main__ - INFO - 
+📈 Entity Counts:
+2025-11-05 20:56:07,251 - __main__ - INFO -   Ground Truth Common: 64 entities
+2025-11-05 20:56:07,252 - __main__ - INFO -   Ground Truth Full: 66 entities
+2025-11-05 20:56:07,253 - __main__ - INFO - 
+✅ Preprocessing complete! Ready for comparison analysis.
+2025-11-05 20:56:07,253 - __main__ - INFO -    Next step: Run 02_entity_level_comparison.py
+2025-11-05 20:56:07,253 - __main__ - INFO - 
+================================================================================
+2025-11-05 20:56:07,253 - __main__ - INFO - ✅ SUCCESS: All processing completed successfully
+2025-11-05 20:56:07,254 - __main__ - INFO - ================================================================================

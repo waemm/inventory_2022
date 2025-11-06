@@ -1,0 +1,64 @@
+paper_id,title,v2_precision,v2_recall,v2_f1,v2_tp,v2_fp,v2_fn,v2_total_predicted,v2_total_true,phase4_raw_precision,phase4_raw_recall,phase4_raw_f1,phase4_raw_tp,phase4_raw_fp,phase4_raw_fn,phase4_raw_total_predicted,phase4_raw_total_true,phase4_cleaned_precision,phase4_cleaned_recall,phase4_cleaned_f1,phase4_cleaned_tp,phase4_cleaned_fp,phase4_cleaned_fn,phase4_cleaned_total_predicted,phase4_cleaned_total_true
+21398668,sc-PDB: a database for identifying variations and multiplicity of 'druggable' binding sites in proteins.,0.3333333333333333,1.0,0.5,1,2,0,3,1,0.0,0.0,0.0,0,2,1,2,1,0.0,0.0,0.0,0,2,1,2,1
+22067451,IDEAL: Intrinsically Disordered proteins with Extensive Annotations and Literature.,0.3333333333333333,0.5,0.4,1,2,1,3,2,0.0,0.0,0.0,0,8,2,8,2,0.0,0.0,0.0,0,8,2,8,2
+22075991,The Gene Wiki in 2011: community intelligence applied to human gene annotation.,0.0,0.0,0.0,0,2,1,2,1,0.0,0.0,0.0,0,2,1,2,1,0.0,0.0,0.0,0,2,1,2,1
+22086951,The UCSC Genome Browser database: extensions and updates 2011.,0.0,0.0,0.0,0,0,2,0,2,0.0,0.0,0.0,0,8,2,8,2,0.0,0.0,0.0,0,8,2,8,2
+22102583,Mouse Phenome Database (MPD).,1.0,1.0,1.0,2,0,0,2,2,0.0,0.0,0.0,0,3,2,3,2,0.0,0.0,0.0,0,3,2,3,2
+22102771,EuDBase: An online resource for automated EST analysis pipeline (ESTFrontier) and database for red seaweed Eucheuma denticulatum.,1.0,1.0,1.0,1,0,0,1,1,1.0,1.0,1.0,1,0,0,1,1,1.0,1.0,1.0,1,0,0,1,1
+23084601,PESNPdb: a comprehensive database of SNPs studied in association with pre-eclampsia.,0.5,1.0,0.6666666666666666,1,1,0,2,1,1.0,1.0,1.0,1,0,0,1,1,1.0,1.0,1.0,1,0,0,1,1
+23599502,INstruct: a database of high-quality 3D structurally resolved protein interactome networks.,1.0,1.0,1.0,1,0,0,1,1,1.0,1.0,1.0,1,0,0,1,1,1.0,1.0,1.0,1,0,0,1,1
+23721660,HIM-herbal ingredients in-vivo metabolism database.,0.0,0.0,0.0,0,1,2,1,2,0.0,0.0,0.0,0,6,2,6,2,0.0,0.0,0.0,0,6,2,6,2
+24163255,The pancreatic expression database: recent extensions and updates.,1.0,0.6666666666666666,0.8,2,0,1,2,3,0.0,0.0,0.0,0,3,3,3,3,0.0,0.0,0.0,0,3,3,3,3
+24580755,"CDSbank: taxonomy-aware extraction, selection, renaming and formatting of protein-coding DNA or amino acid sequences.",1.0,1.0,1.0,1,0,0,1,1,1.0,1.0,1.0,1,0,0,1,1,1.0,1.0,1.0,1,0,0,1,1
+25404137,SuperFly: a comparative database for quantified spatio-temporal gene expression patterns in early dipteran embryos.,1.0,1.0,1.0,1,0,0,1,1,1.0,1.0,1.0,1,0,0,1,1,1.0,1.0,1.0,1,0,0,1,1
+25428349,"OMIM.org: Online Mendelian Inheritance in Man (OMIMÂ®), an online catalog of human genes and genetic disorders.",0.4,1.0,0.5714285714285715,2,3,0,5,2,0.0,0.0,0.0,0,5,2,5,2,0.0,0.0,0.0,0,5,2,5,2
+26138588,SmedGD 2.0: The Schmidtea mediterranea genome database.,0.5,1.0,0.6666666666666666,2,2,0,4,2,0.0,0.0,0.0,0,4,2,4,2,0.0,0.0,0.0,0,4,2,4,2
+26243198,miRegulome: a knowledge-base of miRNA regulomics and analysis.,1.0,1.0,1.0,1,0,0,1,1,1.0,1.0,1.0,1,0,0,1,1,1.0,1.0,1.0,1,0,0,1,1
+27794041,NGSmethDB 2017: enhanced methylomes and differential methylation.,1.0,1.0,1.0,1,0,0,1,1,1.0,1.0,1.0,1,0,0,1,1,1.0,1.0,1.0,1,0,0,1,1
+27841751,A public database of macromolecular diffraction experiments.,1.0,1.0,1.0,2,0,0,2,2,0.0,0.0,0.0,0,7,2,7,2,0.0,0.0,0.0,0,7,2,7,2
+29155231,RTFAdb: A database of computationally predicted associations between retrotransposons and transcription factors in the human and mouse genomes.,1.0,1.0,1.0,1,0,0,1,1,1.0,1.0,1.0,1,0,0,1,1,1.0,1.0,1.0,1,0,0,1,1
+29743053,PDXliver: a database of liver cancer patient derived xenograft mouse models.,1.0,1.0,1.0,1,0,0,1,1,1.0,1.0,1.0,1,0,0,1,1,1.0,1.0,1.0,1,0,0,1,1
+29761459,Mouse Genome Informatics (MGI) Is the International Resource for Information on theÃÂ Laboratory Mouse.,0.6666666666666666,1.0,0.8,2,1,0,3,2,0.0,0.0,0.0,0,3,2,3,2,0.0,0.0,0.0,0,3,2,3,2
+30137226,ImaGEO: integrative gene expression meta-analysis from GEO database.,0.0,0.0,0.0,0,0,1,0,1,1.0,1.0,1.0,1,0,0,1,1,1.0,1.0,1.0,1,0,0,1,1
+30371822,MatrixDB: integration of new data with a focus on glycosaminoglycan interactions.,0.5,1.0,0.6666666666666666,1,1,0,2,1,1.0,1.0,1.0,1,0,0,1,1,1.0,1.0,1.0,1,0,0,1,1
+30715167,The global dissemination of bacterial infections necessitates the study of reverse genomic epidemiology.,1.0,1.0,1.0,1,0,0,1,1,1.0,1.0,1.0,1,0,0,1,1,1.0,1.0,1.0,1,0,0,1,1
+31016417,DNAmod: the DNA modification database.,0.3333333333333333,0.5,0.4,1,2,1,3,2,0.0,0.0,0.0,0,3,2,3,2,0.0,0.0,0.0,0,3,2,3,2
+31096089,"DrugR+: A comprehensive relational database for drug repurposing, combination therapy, and replacement therapy.",0.0,0.0,0.0,0,2,1,2,1,0.0,0.0,0.0,0,3,1,3,1,0.0,0.0,0.0,0,3,1,3,1
+31201317,Multi omics analysis of fibrotic kidneys in two mouse models.,0.0,0.0,0.0,0,1,1,1,1,0.0,0.0,0.0,0,0,1,0,1,0.0,0.0,0.0,0,0,1,0,1
+31642470,WormBase: a modern Model Organism Information Resource.,0.5,1.0,0.6666666666666666,1,1,0,2,1,1.0,1.0,1.0,1,0,0,1,1,1.0,1.0,1.0,1,0,0,1,1
+31647100,Bovine Genome Database: new annotation tools for a new reference genome.,0.6666666666666666,1.0,0.8,2,1,0,3,2,0.0,0.0,0.0,0,3,2,3,2,0.0,0.0,0.0,0,3,2,3,2
+31706268,Genome-wide prediction and prioritization of human aging genes by data fusion: a machine learning approach.,0.0,0.0,0.0,0,0,1,0,1,1.0,1.0,1.0,1,0,0,1,1,1.0,1.0,1.0,1,0,0,1,1
+32766766,LncR2metasta: a manually curated database for experimentally supported lncRNAs during various cancer metastatic events.,1.0,1.0,1.0,1,0,0,1,1,0.0,0.0,0.0,0,2,1,2,1,0.0,0.0,0.0,0,2,1,2,1
+32829394,Reanalysis of genome sequences of tomato accessions and its wild relatives: development of Tomato Genomic Variation (TGV) database integrating SNPs and INDELs polymorphisms.,0.0,0.0,0.0,0,3,2,3,2,0.0,0.0,0.0,0,0,2,0,2,0.0,0.0,0.0,0,0,2,0,2
+32890396,CoV3D: a database of high resolution coronavirus protein structures.,1.0,1.0,1.0,1,0,0,1,1,0.0,0.0,0.0,0,1,1,1,1,0.0,0.0,0.0,0,1,1,1,1
+32911083,MosaicBase: A Knowledgebase of Postzygotic Mosaic Variants in Noncancer Disease-related and Healthy Human Individuals.,1.0,1.0,1.0,1,0,0,1,1,1.0,1.0,1.0,1,0,0,1,1,1.0,1.0,1.0,1,0,0,1,1
+32941628,"IDDB: a comprehensive resource featuring genes, variants and characteristics associated with infertility.",0.5,0.5,0.5,1,1,1,2,2,0.3333333333333333,0.5,0.4,1,2,1,3,2,0.3333333333333333,0.5,0.4,1,2,1,3,2
+32976589,DIGGER: exploring the functional role of alternative splicing in protein interactions.,1.0,1.0,1.0,1,0,0,1,1,1.0,1.0,1.0,1,0,0,1,1,1.0,1.0,1.0,1,0,0,1,1
+32990749,TCRdb: a comprehensive database for T-cell receptor sequences with powerful search function.,1.0,1.0,1.0,1,0,0,1,1,1.0,1.0,1.0,1,0,0,1,1,1.0,1.0,1.0,1,0,0,1,1
+33051688,dbGuide: a database of functionally validated guide RNAs for genome editing in human and mouse cells.,0.5,1.0,0.6666666666666666,1,1,0,2,1,1.0,1.0,1.0,1,0,0,1,1,1.0,1.0,1.0,1,0,0,1,1
+33076954,Predicted functional interactome of Caenorhabditis elegans and a web tool for the functional interpretation of differentially expressed genes.,0.2,0.5,0.28571428571428575,1,4,1,5,2,0.0,0.0,0.0,0,6,2,6,2,0.0,0.0,0.0,0,6,2,6,2
+33084905,MeDAS: a Metazoan Developmental Alternative Splicing database.,1.0,1.0,1.0,2,0,0,2,2,0.0,0.0,0.0,0,5,2,5,2,0.0,0.0,0.0,0,5,2,5,2
+33086069,SCLC-CellMiner: A Resource for Small Cell Lung Cancer Cell Line Genomics and Pharmacology Based on Genomic Signatures.,0.6666666666666666,1.0,0.8,2,1,0,3,2,0.0,0.0,0.0,0,2,2,2,2,0.0,0.0,0.0,0,2,2,2,2
+33103271,The NanDeSyn database for Nannochloropsis systems and synthetic biology.,1.0,1.0,1.0,2,0,0,2,2,0.0,0.0,0.0,0,4,2,4,2,0.0,0.0,0.0,0,4,2,4,2
+33125078,Pfam: The protein families database in 2021.,0.3333333333333333,0.5,0.4,1,2,1,3,2,0.5,0.5,0.5,1,1,1,2,2,0.5,0.5,0.5,1,1,1,2,2
+33125081,KEGG: integrating viruses and cellular organisms.,1.0,1.0,1.0,1,0,0,1,1,1.0,1.0,1.0,1,0,0,1,1,1.0,1.0,1.0,1,0,0,1,1
+33137183,IMG/VR v3: an integrated ecological and evolutionary framework for interrogating genomes of uncultivated viruses.,0.5,0.5,0.5,1,1,1,2,2,0.0,0.0,0.0,0,3,2,3,2,0.0,0.0,0.0,0,3,2,3,2
+33156327,TCRD and Pharos 2021: mining the human proteome for disease biology.,0.6666666666666666,0.6666666666666666,0.6666666666666666,2,1,1,3,3,0.0,0.0,0.0,0,5,3,5,3,0.0,0.0,0.0,0,5,3,5,3
+33156332,DDBJ update: streamlining submission and access of human data.,0.4,1.0,0.5714285714285715,2,3,0,5,2,0.5,0.5,0.5,1,1,1,2,2,0.5,0.5,0.5,1,1,1,2,2
+33181824,CircR2Cancer: a manually curated database of associations between circRNAs and cancers.,1.0,0.5,0.6666666666666666,1,0,1,1,2,0.0,0.0,0.0,0,2,2,2,2,0.0,0.0,0.0,0,2,2,2,2
+33186585,PolarProtDb: A Database of Transmembrane and Secreted Proteins showing Apical-Basal Polarity.,1.0,1.0,1.0,1,0,0,1,1,1.0,1.0,1.0,1,0,0,1,1,1.0,1.0,1.0,1,0,0,1,1
+33219686,LnCeCell: a comprehensive database of predicted lncRNA-associated ceRNA networks at single-cell resolution.,1.0,1.0,1.0,1,0,0,1,1,1.0,1.0,1.0,1,0,0,1,1,1.0,1.0,1.0,1,0,0,1,1
+33237286,UniProt: the universal protein knowledgebase in 2021.,1.0,1.0,1.0,3,0,0,3,3,0.5,0.3333333333333333,0.4,1,1,2,2,3,0.5,0.3333333333333333,0.4,1,1,2,2,3
+33279968,"Gene Circuit Explorer (GeneEx): an interactive web-app for visualizing, simulating and analyzing gene regulatory circuits.",0.0,0.0,0.0,0,0,2,0,2,0.0,0.0,0.0,0,3,2,3,2,0.0,0.0,0.0,0,3,2,3,2
+33290552,The Gene Ontology resource: enriching a GOld mine.,0.0,0.0,0.0,0,1,1,1,1,0.0,0.0,0.0,0,4,1,4,1,0.0,0.0,0.0,0,4,1,4,1
+33461215,Ligand-based approach for predicting drug targets and for virtual screening against COVID-19.,1.0,1.0,1.0,1,0,0,1,1,0.0,0.0,0.0,0,1,1,1,1,0.0,0.0,0.0,0,1,1,1,1
+33485793,cgMLST@Taiwan: A web service platform for Vibrio cholerae cgMLST profiling and global strain tracking.,1.0,1.0,1.0,1,0,0,1,1,0.0,0.0,0.0,0,2,1,2,1,0.0,0.0,0.0,0,2,1,2,1
+33507270,InSexBase: an annotated genomic resource of sex chromosomes and sex-biased genes in insects.,1.0,1.0,1.0,1,0,0,1,1,1.0,1.0,1.0,1,0,0,1,1,1.0,1.0,1.0,1,0,0,1,1
+33594411,"Viral Host Range database, an online tool for recording, analyzing and disseminating virus-host interactions.",0.6666666666666666,1.0,0.8,2,1,0,3,2,0.0,0.0,0.0,0,4,2,4,2,0.0,0.0,0.0,0,4,2,4,2
+33599248,bc-GenExMiner 4.5: new mining module computes breast cancer differential gene expression analyses.,0.5,1.0,0.6666666666666666,2,2,0,4,2,0.0,0.0,0.0,0,5,2,5,2,0.0,0.0,0.0,0,5,2,5,2
+33655207,TMSNP: a web server to predict pathogenesis of missense mutations in the transmembrane region of membrane proteins.,1.0,1.0,1.0,1,0,0,1,1,0.0,0.0,0.0,0,0,1,0,1,0.0,0.0,0.0,0,0,1,0,1
+33876217,CanDriS: posterior profiling of cancer-driving sites based on two-component evolutionary model.,0.25,1.0,0.4,1,3,0,4,1,1.0,1.0,1.0,1,0,0,1,1,1.0,1.0,1.0,1,0,0,1,1
+33952332,SANCDB: an update on South African natural compounds and their readily available analogs.,1.0,1.0,1.0,2,0,0,2,2,0.0,0.0,0.0,0,5,2,5,2,0.0,0.0,0.0,0,5,2,5,2
+33995920,ExVe: The knowledge base of orthologous proteins identified in fungal extracellular vesicles.,1.0,1.0,1.0,1,0,0,1,1,1.0,1.0,1.0,1,0,0,1,1,1.0,1.0,1.0,1,0,0,1,1
+34081565,Biomedical Entity Explorer: A Web Server for Biomedical Entity Exploration.,0.0,0.0,0.0,0,0,2,0,2,0.0,0.0,0.0,0,3,2,3,2,0.0,0.0,0.0,0,3,2,3,2
+34164644,HFBD: a biomarker knowledge database for heart failure heterogeneity and personalized applications.,1.0,1.0,1.0,2,0,0,2,2,0.0,0.0,0.0,0,4,2,4,2,0.0,0.0,0.0,0,4,2,4,2

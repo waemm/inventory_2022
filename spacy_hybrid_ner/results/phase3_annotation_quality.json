@@ -1,0 +1,327 @@
+{
+  "statistics": [
+    {
+      "split": "train",
+      "documents": 3153,
+      "docs_with_entities": 3079,
+      "coverage": 0.9765302886140184,
+      "entities": 15096,
+      "avg_per_doc": 4.787821122740247,
+      "skipped": 0,
+      "label_counts": {
+        "COM": 12682,
+        "FUL": 2414
+      }
+    },
+    {
+      "split": "dev",
+      "documents": 676,
+      "docs_with_entities": 661,
+      "coverage": 0.977810650887574,
+      "entities": 3175,
+      "avg_per_doc": 4.696745562130178,
+      "skipped": 0,
+      "label_counts": {
+        "COM": 2698,
+        "FUL": 477
+      }
+    },
+    {
+      "split": "test",
+      "documents": 676,
+      "docs_with_entities": 657,
+      "coverage": 0.9718934911242604,
+      "entities": 3101,
+      "avg_per_doc": 4.587278106508876,
+      "skipped": 0,
+      "label_counts": {
+        "COM": 2617,
+        "FUL": 484
+      }
+    }
+  ],
+  "sample_annotations": [
+    {
+      "doc_id": 0,
+      "text": "SIFTS: Structure Integration with Function, Taxonomy and Sequences resource. The Structure Integration with Function, Taxonomy and Sequences resource (SIFTS; http://pdbe.org/sifts) is a close collabor",
+      "entities": [
+        {
+          "text": "SIFTS",
+          "label": "COM",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "Structure Integration with Function",
+          "label": "FUL",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "text": "Structure Integration with Function",
+          "label": "FUL",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "text": "SIFTS",
+          "label": "COM",
+          "start": 23,
+          "end": 24
+        },
+        {
+          "text": "PDBe",
+          "label": "COM",
+          "start": 39,
+          "end": 40
+        },
+        {
+          "text": "UniProt",
+          "label": "COM",
+          "start": 42,
+          "end": 43
+        },
+        {
+          "text": "UniProt",
+          "label": "COM",
+          "start": 66,
+          "end": 67
+        },
+        {
+          "text": "PDB",
+          "label": "COM",
+          "start": 75,
+          "end": 76
+        },
+        {
+          "text": "UniProt",
+          "label": "COM",
+          "start": 80,
+          "end": 81
+        },
+        {
+          "text": "PDB",
+          "label": "COM",
+          "start": 91,
+          "end": 92
+        },
+        {
+          "text": "SIFTS",
+          "label": "COM",
+          "start": 100,
+          "end": 101
+        },
+        {
+          "text": "SIFTS",
+          "label": "COM",
+          "start": 104,
+          "end": 105
+        },
+        {
+          "text": "Pfam",
+          "label": "COM",
+          "start": 116,
+          "end": 117
+        },
+        {
+          "text": "SCOP",
+          "label": "COM",
+          "start": 118,
+          "end": 119
+        },
+        {
+          "text": "CATH",
+          "label": "COM",
+          "start": 120,
+          "end": 121
+        },
+        {
+          "text": "InterPro",
+          "label": "COM",
+          "start": 124,
+          "end": 125
+        },
+        {
+          "text": "PDB",
+          "label": "COM",
+          "start": 143,
+          "end": 144
+        },
+        {
+          "text": "SIFTS",
+          "label": "COM",
+          "start": 157,
+          "end": 158
+        },
+        {
+          "text": "PDB",
+          "label": "COM",
+          "start": 166,
+          "end": 167
+        }
+      ]
+    },
+    {
+      "doc_id": 1,
+      "text": "ELM 2016--data update and new functionality of the eukaryotic linear motif resource. The Eukaryotic Linear Motif (ELM) resource (http://elm.eu.org) is a manually curated database of short linear motif",
+      "entities": [
+        {
+          "text": "ELM",
+          "label": "COM",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "eukaryotic linear motif",
+          "label": "FUL",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "text": "ELM",
+          "label": "COM",
+          "start": 20,
+          "end": 21
+        },
+        {
+          "text": "ELM",
+          "label": "COM",
+          "start": 61,
+          "end": 62
+        }
+      ]
+    },
+    {
+      "doc_id": 2,
+      "text": "MetalPDB in 2018: a database of metal sites in biological macromolecular structures. MetalPDB (http://metalweb.cerm.unifi.it/) is a database providing information on metal-binding sites detected in th",
+      "entities": [
+        {
+          "text": "MetalPDB",
+          "label": "COM",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "a database of metal sites in biological macromolecular structures",
+          "label": "FUL",
+          "start": 4,
+          "end": 13
+        },
+        {
+          "text": "MetalPDB",
+          "label": "COM",
+          "start": 14,
+          "end": 15
+        },
+        {
+          "text": "MetalPDB",
+          "label": "COM",
+          "start": 42,
+          "end": 43
+        },
+        {
+          "text": "MetalPDB",
+          "label": "COM",
+          "start": 81,
+          "end": 82
+        },
+        {
+          "text": "MetalPDB",
+          "label": "COM",
+          "start": 115,
+          "end": 116
+        },
+        {
+          "text": "PDB",
+          "label": "COM",
+          "start": 130,
+          "end": 131
+        },
+        {
+          "text": "MetalPDB",
+          "label": "COM",
+          "start": 143,
+          "end": 144
+        },
+        {
+          "text": "PDB",
+          "label": "COM",
+          "start": 218,
+          "end": 219
+        },
+        {
+          "text": "MetalPDB",
+          "label": "COM",
+          "start": 225,
+          "end": 226
+        }
+      ]
+    },
+    {
+      "doc_id": 3,
+      "text": "Xenbase: key features and resources of the Xenopus model organism knowledgebase.",
+      "entities": [
+        {
+          "text": "Xenbase",
+          "label": "COM",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "Xenopus model organism",
+          "label": "FUL",
+          "start": 8,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "doc_id": 4,
+      "text": "Full-length transcriptome-based H-InvDB throws a new light on chromosome-centric proteomics. H-Invitational Database (H-InvDB;  http://hinv.jp/ ) is an integrated database of all human genes and trans",
+      "entities": [
+        {
+          "text": "H-InvDB",
+          "label": "COM",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "text": "H-Invitational Database",
+          "label": "FUL",
+          "start": 19,
+          "end": 23
+        },
+        {
+          "text": "H-InvDB",
+          "label": "COM",
+          "start": 24,
+          "end": 27
+        },
+        {
+          "text": "H-InvDB",
+          "label": "COM",
+          "start": 63,
+          "end": 66
+        },
+        {
+          "text": "H-InvDB",
+          "label": "COM",
+          "start": 124,
+          "end": 127
+        },
+        {
+          "text": "EPD",
+          "label": "COM",
+          "start": 140,
+          "end": 141
+        },
+        {
+          "text": "EPD",
+          "label": "COM",
+          "start": 168,
+          "end": 169
+        }
+      ]
+    }
+  ]
+}

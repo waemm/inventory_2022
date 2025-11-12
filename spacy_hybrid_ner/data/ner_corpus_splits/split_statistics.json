@@ -1,0 +1,16 @@
+{
+  "total_papers": 4505,
+  "train_papers": 3153,
+  "dev_papers": 676,
+  "test_papers": 676,
+  "train_pct": 69.98890122086571,
+  "dev_pct": 15.005549389567147,
+  "test_pct": 15.005549389567147,
+  "text_statistics": {
+    "train_avg_length": 1227.0421820488423,
+    "dev_avg_length": 1181.6819526627219,
+    "test_avg_length": 1205.8165680473373,
+    "train_min_length": 50,
+    "train_max_length": 3765
+  }
+}

@@ -27,7 +27,16 @@ spacy[cuda12x] → cupy-cuda12x → numpy 2.0 → AttributeError: np.float_ remo
 
 ## Solution
 
-**Downgrade NumPy to 1.26.x BEFORE installing spaCy**
+**Two-step process: Downgrade NumPy, then force reinstall spaCy**
+
+### Issue Evolution
+
+**Attempt 1**: Downgrade NumPy before installing spaCy
+- Result: Got past `np.float_` error but hit binary incompatibility
+- Error: `ValueError: numpy.dtype size changed, may indicate binary incompatibility`
+- Cause: Colab pre-installs spaCy compiled against NumPy 2.0
+
+**Attempt 2** (WORKING SOLUTION): Force reinstall spaCy after NumPy downgrade
 
 ### Fixed Cell 6 Code
 
@@ -39,16 +48,25 @@ import json
 
 print("📦 Installing dependencies...")
 
-# CRITICAL FIX: Downgrade NumPy to 1.26.x for cupy compatibility
-# Colab now has NumPy 2.0 by default, but cupy (used by spaCy CUDA) doesn't support it yet
-print("⚙️  Installing NumPy 1.26.x (cupy/spaCy CUDA compatibility)...")
+# CRITICAL FIX: NumPy 2.0 incompatibility with cupy
+# Step 1: Downgrade NumPy to 1.26.x (cupy doesn't support NumPy 2.0 yet)
+print("⚙️  Step 1/2: Installing NumPy 1.26.x (cupy compatibility)...")
 subprocess.run(['pip', 'install', '-q', 'numpy<2.0'], check=True)
 
-# Now install spaCy with CUDA support
-print("⚙️  Installing spaCy with CUDA support...")
+# Step 2: Force reinstall spaCy to recompile against NumPy 1.26.x
+# Without --force-reinstall, spaCy would use cached build from NumPy 2.0
+print("⚙️  Step 2/2: Installing spaCy with CUDA (forced rebuild)...")
 subprocess.run([
     'pip', 'install', '-q',
-    'spacy[cuda12x]',  # CUDA 12.x support for Colab
+    '--force-reinstall',       # Force rebuild against new NumPy
+    '--no-cache-dir',          # Don't use cached wheels
+    'spacy[cuda12x]'           # CUDA 12.x support
+], check=True)
+
+# Install other dependencies (no binary compatibility issues)
+print("⚙️  Installing visualization dependencies...")
+subprocess.run([
+    'pip', 'install', '-q',
     'pandas',
     'matplotlib',
     'seaborn',
@@ -61,9 +79,10 @@ print("✅ Dependencies installed")
 ### Key Changes
 
 1. **Added NumPy downgrade**: `pip install numpy<2.0` runs FIRST
-2. **Added progress messages**: User sees what's being installed
-3. **Added comments**: Explains WHY we're downgrading NumPy
-4. **Set check=True**: Ensures NumPy install completes before spaCy
+2. **Added forced reinstall**: `--force-reinstall --no-cache-dir` to rebuild spaCy
+3. **Separated visualization deps**: No need to rebuild pandas/matplotlib
+4. **Added progress messages**: User sees what's being installed step-by-step
+5. **Set check=True**: Ensures each critical step completes before continuing
 
 ## Testing
 
@@ -105,13 +124,25 @@ To verify the fix works in Colab:
 2. Run Cell 6 (Environment Setup)
 3. Check output shows:
    ```
-   ⚙️  Installing NumPy 1.26.x (cupy/spaCy CUDA compatibility)...
-   ⚙️  Installing spaCy with CUDA support...
+   📦 Installing dependencies...
+   ⚙️  Step 1/2: Installing NumPy 1.26.x (cupy compatibility)...
+   ⚙️  Step 2/2: Installing spaCy with CUDA (forced rebuild)...
+   ⚙️  Installing visualization dependencies...
    ✅ Dependencies installed
    🔧 Imported modules
       spaCy version: 3.7.x
+
+   ============================================================
+   GPU CONFIGURATION
+   ============================================================
    ✅ GPU Available: spaCy will use CUDA
+      GPU will be used for training
+      Expected speedup: 5-10x faster than CPU
+
+   ✅ Environment setup complete
    ```
+
+**Note**: Step 2 (forced rebuild) will take ~2-3 minutes as it recompiles spaCy and cupy against the new NumPy version.
 
 ## Next Steps
 

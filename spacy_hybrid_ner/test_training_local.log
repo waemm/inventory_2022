@@ -1,0 +1,105 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/spacy/__main__.py", line 4, in <module>
+    setup_cli()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/spacy/cli/_util.py", line 91, in setup_cli
+    command(prog_name=COMMAND)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/click/core.py", line 1442, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/typer/core.py", line 783, in main
+    return _main(
+           ^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/typer/core.py", line 225, in _main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/click/core.py", line 1830, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/click/core.py", line 1226, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/click/core.py", line 794, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/typer/main.py", line 683, in wrapper
+    return callback(**use_params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/spacy/cli/train.py", line 54, in train_cli
+    train(config_path, output_path, use_gpu=use_gpu, overrides=overrides)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/spacy/cli/train.py", line 81, in train
+    nlp = init_nlp(config, use_gpu=use_gpu)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/spacy/training/initialize.py", line 95, in init_nlp
+    nlp.initialize(lambda: train_corpus(nlp), sgd=optimizer)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/spacy/language.py", line 1349, in initialize
+    proc.initialize(get_examples, nlp=self, **p_settings)
+  File "spacy/pipeline/transition_parser.pyx", line 568, in spacy.pipeline.transition_parser.Parser.initialize
+ValueError: dictionary update sequence element #0 has length 3; 2 is required
+[38;5;4mℹ Saving to output directory: spacy_hybrid_ner/test_output[0m
+[38;5;4mℹ Using CPU[0m
+[1m
+=========================== Initializing pipeline ===========================[0m
+[1m
+================================================================================
+SPACY TRAINING LOCAL TEST
+================================================================================
+[0m
+
+[1m================================================================================[0m
+[1m1. CHECKING SPACY INSTALLATION[0m
+[1m================================================================================[0m
+[92m✓ spaCy installed: version 3.7.0[0m
+
+[1m================================================================================[0m
+[1m2. VALIDATING CONFIG FILE[0m
+[1m================================================================================[0m
+[94mℹ Config file: spacy_hybrid_ner/data/ner_training/config.cfg[0m
+[92m✓ Config validation passed[0m
+
+[1m================================================================================[0m
+[1m3. CHECKING TRAINING DATA FILES[0m
+[1m================================================================================[0m
+[92m✓ config    : config.cfg (0.00 MB)[0m
+[92m✓ train     : train.spacy (4.41 MB)[0m
+[92m✓ dev       : dev.spacy (0.94 MB)[0m
+[92m✓ test      : test.spacy (0.96 MB)[0m
+
+[1m================================================================================[0m
+[1m4. INSPECTING DATA STRUCTURE[0m
+[1m================================================================================[0m
+[94mℹ train: 3153 docs, 15096 entities[0m
+[94mℹ   Sample entity: 'SIFTS' [COM][0m
+[94mℹ   Labels found: ['COM', 'FUL'][0m
+[92m✓   train data looks good[0m
+[94mℹ dev: 676 docs, 3175 entities[0m
+[94mℹ   Sample entity: 'TC3A' [COM][0m
+[94mℹ   Labels found: ['COM', 'FUL'][0m
+[92m✓   dev data looks good[0m
+[94mℹ test: 676 docs, 3101 entities[0m
+[94mℹ   Sample entity: 'Alliance of Genome Resources' [COM][0m
+[94mℹ   Labels found: ['COM', 'FUL'][0m
+[92m✓   test data looks good[0m
+
+[1m================================================================================[0m
+[1m5. RUNNING QUICK TRAINING TEST (1 epoch)[0m
+[1m================================================================================[0m
+[94mℹ Running command:[0m
+  python -m spacy train spacy_hybrid_ner/data/ner_training/config.cfg --output spacy_hybrid_ner/test_output --paths.train spacy_hybrid_ner/data/ner_training/train.spacy --paths.dev spacy_hybrid_ner/data/ner_training/dev.spacy --training.max_epochs 1 --gpu-id -1
+[94mℹ 
+This will take 1-2 minutes for 1 epoch...[0m
+[91m✗ Training test failed with exit code 1[0m
+
+[1m================================================================================[0m
+[1mSUMMARY[0m
+[1m================================================================================[0m
+[92m✓ spaCy Installation       : PASSED[0m
+[92m✓ Config Validation        : PASSED[0m
+[92m✓ Data Files               : PASSED[0m
+[92m✓ Data Structure           : PASSED[0m
+[91m✗ Training Test            : FAILED[0m
+
+[1mOverall: 4/5 checks passed[0m
+[91m✗ 
+❌ Some checks failed. Fix issues before running in Colab.[0m

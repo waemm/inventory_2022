@@ -1,0 +1,24 @@
+{
+  "total_papers": 100,
+  "papers_with_entities": 81,
+  "coverage": 0.81,
+  "total_entities": 111,
+  "avg_entities_per_paper": 1.11,
+  "entities_with_canonical_id": 111,
+  "canonical_id_coverage": 1.0,
+  "label_distribution": {
+    "BIO_RESOURCE": 111
+  },
+  "top_10_resources": {
+    "FireDB": 2,
+    "TetraFGD": 2,
+    "RED": 2,
+    "Membranome": 2,
+    "TOMATOMICS": 2,
+    "ImmReg": 2,
+    "HACER": 2,
+    "Atacama": 2,
+    "ETph": 2,
+    "MitoSatPlant": 2
+  }
+}

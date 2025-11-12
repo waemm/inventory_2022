@@ -1,0 +1,14 @@
+# spaCy Hybrid NER Requirements
+# Installation: pip install -r requirements.txt
+
+# Core dependency
+spacy>=3.7.0,<4.0.0
+
+# Data processing
+pandas>=1.5.0
+numpy>=1.23.0
+
+# Already in parent project requirements
+# (these should already be installed)
+# - torch>=2.0.0
+# - transformers>=4.35.0

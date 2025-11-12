@@ -36,12 +36,14 @@ Date: 2025-11-12
 import spacy
 from spacy.tokens import DocBin
 import pandas as pd
+import numpy as np
 import re
 import json
 import sys
 from pathlib import Path
 from tqdm import tqdm
 from collections import Counter
+import random
 
 # Project paths
 SCRIPT_DIR = Path(__file__).parent
@@ -354,6 +356,114 @@ def validate_annotations(split_name='train', sample_size=5):
     return samples
 
 
+def comprehensive_validation(split_name='train', sample_size=100):
+    """
+    Comprehensive annotation quality assessment.
+
+    Analyzes:
+    - Entity length distribution
+    - Label distribution balance
+    - Documents with multiple entities
+    - Overlap detection
+    - Random sample for manual precision review
+
+    Returns:
+        dict: Quality metrics
+    """
+    import numpy as np
+    import random
+
+    print(f"\n{'='*70}")
+    print(f"COMPREHENSIVE VALIDATION ({split_name.upper()})")
+    print(f"{'='*70}")
+
+    # Load .spacy file
+    spacy_path = OUTPUT_DIR / f'{split_name}.spacy'
+    nlp = spacy.blank("en")
+    db = DocBin().from_disk(spacy_path)
+    docs = list(db.get_docs(nlp.vocab))
+
+    # Metrics
+    entity_lengths = []
+    label_counts = Counter()
+    overlap_count = 0
+    docs_with_multiple_entities = 0
+
+    for doc in docs:
+        if len(doc.ents) > 1:
+            docs_with_multiple_entities += 1
+
+        for ent in doc.ents:
+            entity_lengths.append(len(ent))  # Number of tokens
+            label_counts[ent.label_] += 1
+
+        # Check for overlaps (shouldn't exist after our filtering)
+        for i in range(len(doc.ents) - 1):
+            if doc.ents[i].end > doc.ents[i+1].start:
+                overlap_count += 1
+
+    # Statistics
+    print(f"\n1. ENTITY LENGTH DISTRIBUTION:")
+    print(f"   Min: {min(entity_lengths)} tokens")
+    print(f"   Max: {max(entity_lengths)} tokens")
+    print(f"   Mean: {np.mean(entity_lengths):.2f} tokens")
+    print(f"   Median: {np.median(entity_lengths):.0f} tokens")
+    print(f"   Std Dev: {np.std(entity_lengths):.2f}")
+
+    print(f"\n2. LABEL DISTRIBUTION:")
+    total_labels = sum(label_counts.values())
+    for label, count in sorted(label_counts.items()):
+        print(f"   {label}: {count:,} ({count/total_labels*100:.1f}%)")
+
+    print(f"\n3. DOCUMENT STATISTICS:")
+    print(f"   Total documents: {len(docs):,}")
+    print(f"   Docs with entities: {len([d for d in docs if len(d.ents) > 0]):,}")
+    print(f"   Docs with multiple entities: {docs_with_multiple_entities:,} ({docs_with_multiple_entities/len(docs)*100:.1f}%)")
+    print(f"   Overlapping entities detected: {overlap_count}")
+
+    if overlap_count > 0:
+        print(f"   ⚠️  WARNING: Found {overlap_count} overlapping entities!")
+
+    # Random sample for manual review
+    print(f"\n4. RANDOM SAMPLE FOR MANUAL REVIEW (n={min(sample_size, len(docs))}):")
+    random_sample = random.sample(docs, min(sample_size, len(docs)))
+
+    review_data = []
+    for i, doc in enumerate(random_sample[:10]):  # Show first 10
+        print(f"\n   Sample {i+1}:")
+        print(f"     Text: {doc.text[:80]}...")
+        print(f"     Entities: {[(ent.text, ent.label_) for ent in doc.ents]}")
+        review_data.append({
+            'text': doc.text,
+            'entities': [(ent.text, ent.label_, ent.start, ent.end) for ent in doc.ents]
+        })
+
+    # Save sample to CSV for manual review
+    review_df = pd.DataFrame([
+        {
+            'text': item['text'][:200],
+            'entity_count': len(item['entities']),
+            'entities': str(item['entities'])
+        }
+        for item in review_data
+    ])
+
+    review_path = OUTPUT_DIR / f'{split_name}_quality_sample.csv'
+    review_df.to_csv(review_path, index=False)
+    print(f"\n✓ Saved quality sample to: {review_path}")
+
+    print(f"{'='*70}\n")
+
+    return {
+        'entity_lengths': entity_lengths,
+        'label_counts': dict(label_counts),
+        'overlap_count': overlap_count,
+        'docs_with_multiple_entities': docs_with_multiple_entities,
+        'total_docs': len(docs),
+        'sample': review_data
+    }
+
+
 def main():
     """Main execution."""
     print("=" * 70)
@@ -403,6 +513,38 @@ def main():
     with open(quality_path, 'w') as f:
         json.dump(quality_report, f, indent=2)
     print(f"✓ Saved quality report to: {quality_path}")
+
+    # Comprehensive Quality Validation
+    print("\n" + "="*70)
+    print("COMPREHENSIVE QUALITY VALIDATION")
+    print("="*70)
+
+    quality_metrics = {}
+    for split in ['train', 'dev', 'test']:
+        metrics = comprehensive_validation(split, sample_size=100)
+        quality_metrics[split] = metrics
+
+    # Save comprehensive metrics to JSON
+    metrics_path = RESULTS_DIR / 'comprehensive_validation_metrics.json'
+    serializable_metrics = {
+        split: {
+            'entity_length_stats': {
+                'min': int(min(m['entity_lengths'])),
+                'max': int(max(m['entity_lengths'])),
+                'mean': float(np.mean(m['entity_lengths'])),
+                'median': float(np.median(m['entity_lengths'])),
+                'std': float(np.std(m['entity_lengths']))
+            },
+            'label_counts': m['label_counts'],
+            'overlap_count': m['overlap_count'],
+            'docs_with_multiple_entities': m['docs_with_multiple_entities'],
+            'total_docs': m['total_docs']
+        }
+        for split, m in quality_metrics.items()
+    }
+    with open(metrics_path, 'w') as f:
+        json.dump(serializable_metrics, f, indent=2)
+    print(f"\n✓ Saved comprehensive validation metrics to: {metrics_path}")
 
     # Summary
     print("\n" + "=" * 70)

@@ -1,0 +1,50 @@
+{
+  "train": {
+    "entity_length_stats": {
+      "min": 1,
+      "max": 16,
+      "mean": 1.789480657127716,
+      "median": 1.0,
+      "std": 1.912828860793808
+    },
+    "label_counts": {
+      "COM": 12682,
+      "FUL": 2414
+    },
+    "overlap_count": 0,
+    "docs_with_multiple_entities": 2680,
+    "total_docs": 3153
+  },
+  "dev": {
+    "entity_length_stats": {
+      "min": 1,
+      "max": 14,
+      "mean": 1.7483464566929134,
+      "median": 1.0,
+      "std": 1.9265185293028686
+    },
+    "label_counts": {
+      "COM": 2698,
+      "FUL": 477
+    },
+    "overlap_count": 0,
+    "docs_with_multiple_entities": 565,
+    "total_docs": 676
+  },
+  "test": {
+    "entity_length_stats": {
+      "min": 1,
+      "max": 14,
+      "mean": 1.763624637213802,
+      "median": 1.0,
+      "std": 1.8622107075920282
+    },
+    "label_counts": {
+      "COM": 2617,
+      "FUL": 484
+    },
+    "overlap_count": 0,
+    "docs_with_multiple_entities": 577,
+    "total_docs": 676
+  }
+}

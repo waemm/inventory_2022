@@ -1,8 +1,8 @@
 # Biodata Inventory ML Pipeline - AI Agent Reference Guide
 
 **Created**: 2025-10-22
-**Last Updated**: 2025-11-12 (V2 vs PyCaret comparison study complete)
-**Status**: ✅ **V2 PRODUCTION READY** + ✅ **PHASE 4 TRAINING NOTEBOOKS READY** + ✅ **PYCARET METADATA CLASSIFIER READY** + ✅ **MODEL COMPARISON COMPLETE**
+**Last Updated**: 2025-11-12 (spaCy Hybrid NER implementation plan approved)
+**Status**: ✅ **V2 PRODUCTION READY** + ✅ **PHASE 4 TRAINING NOTEBOOKS READY** + ✅ **PYCARET METADATA CLASSIFIER READY** + 📋 **SPACY HYBRID NER READY FOR IMPLEMENTATION**
 **Purpose**: High-level reference and navigation hub for AI agents
 
 ---
@@ -377,10 +377,80 @@ python src/query_epmc.py config/final_query_v4_improved.txt \
 
 ---
 
+## 🔬 spaCy Hybrid NER Implementation (2025-11-12)
+
+**Status**: 📋 **READY FOR IMPLEMENTATION** - Comprehensive plan approved
+
+**Goal**: Build EntityRuler + Statistical NER system for bioresource extraction with alias resolution and NEW entity discovery
+
+### Key Capabilities
+
+1. **High-Precision Known Entity Extraction**: EntityRuler with pattern matching (>95% precision target)
+2. **Alias Resolution**: Links short/long form names (e.g., "PDB" ↔ "Protein Domain Database")
+3. **Generalization to New Entities**: Statistical NER trained via distant supervision
+4. **Production-Ready Pipeline**: Packaged spaCy model for deployment
+
+### Architecture
+
+**Hybrid Pipeline**: EntityRuler → Statistical NER (order is CRITICAL!)
+- **EntityRuler**: Rule-based matching for ~3,000-5,000 known resources (dictionary-based)
+- **Statistical NER**: Learns patterns to discover NEW/unknown bioresources
+- **Training Method**: Distant supervision on 4,559 bioresource papers
+
+### Timeline & Phases
+
+**Total Duration**: 14-20 days (3-4 weeks full-time)
+
+| Phase | Duration | Key Deliverables |
+|-------|----------|------------------|
+| Phase 1 | 3-4 days | Dictionary enriched (70-80% coverage), patterns.jsonl |
+| Phase 2 | 2-3 days | EntityRuler validated (>95% precision) |
+| Phase 3 | 4-5 days | Training data (.spacy files) via distant supervision |
+| Phase 4 | 1-2 days | Statistical NER trained (F1 >70% target) |
+| Phase 5 | 2-3 days | Hybrid pipeline integrated and validated |
+| Phase 6 | 2-3 days | Production deployment, benchmarks |
+
+### Comprehensive Documentation
+
+**⭐ Implementation Plan**: [`plans/spacy_hybrid_ner/`](../plans/spacy_hybrid_ner/) - **Start here**
+
+**Phase-Specific Guides**:
+- [`00_PROJECT_OVERVIEW.md`](../plans/spacy_hybrid_ner/00_PROJECT_OVERVIEW.md) - Architecture, timeline, success criteria
+- [`01_DATA_PREPARATION_PHASES_1_2.md`](../plans/spacy_hybrid_ner/01_DATA_PREPARATION_PHASES_1_2.md) - Dictionary extraction, EntityRuler baseline
+- [`02_TRAINING_PHASES_3_4.md`](../plans/spacy_hybrid_ner/02_TRAINING_PHASES_3_4.md) - Distant supervision, statistical training
+- [`03_DEPLOYMENT_PHASES_5_6.md`](../plans/spacy_hybrid_ner/03_DEPLOYMENT_PHASES_5_6.md) - Hybrid integration, production deployment
+- [`04_TROUBLESHOOTING_AND_RISKS.md`](../plans/spacy_hybrid_ner/04_TROUBLESHOOTING_AND_RISKS.md) - Risk mitigation, debugging guide
+- [`05_SCRIPTS_INDEX.md`](../plans/spacy_hybrid_ner/05_SCRIPTS_INDEX.md) - Complete reference for all 13 scripts
+
+**Research Foundation**: [`docs/research_docs/ner_implementation.md`](research_docs/ner_implementation.md) - Strategy 3 (Hybrid) detailed analysis
+
+### Data Assets
+
+**Bioresource Dictionary**: `/Users/warren/development/GBC/gbc-publication-analysis/bioresource_papers_latest.csv`
+- 4,559 papers, 3,761 unique short names, 1,450 unique full names
+- ⚠️ 60% missing full_name (will be enriched in Phase 1.2)
+
+**Metadata**: `data/metadata/pmc_metadata_enhanced_full.csv` (21,612 papers with 28-34 features)
+
+### Implementation Status
+
+**Scripts to be Created** (13 total):
+- Phase 1: `01_extract_bioresource_dictionary.py`, `02_enrich_missing_fullnames.py`, `03_generate_patterns_jsonl.py`
+- Phase 2: `04_test_entityruler_pipeline.py`, `05_validate_entityruler.py`
+- Phase 3: `06_prepare_training_corpus.py`, `07_distant_supervision_annotation.py`
+- Phase 4: `notebooks/spacy_ner_training.ipynb` (Google Colab)
+- Phase 5: `09_build_hybrid_pipeline.py`, `10_validate_hybrid_pipeline.py`, `11_benchmark_hybrid_speed.py`, `12_analyze_alias_resolution.py`
+- Phase 6: `13_benchmark_all_models.py`, `src/ner_predict_spacy.py`
+
+**Impact**: Will enable discovery of NEW/unknown bioresources not in training dictionary while maintaining high precision (>95%) on known entities. Addresses key limitation of existing V2/Phase 4 models: no alias linking capability.
+
+---
+
 ## 📈 Recent Major Milestones
 
 | Date | Milestone | Status | Performance | Reference |
 |------|-----------|--------|-------------|-----------|
+| 2025-11-12 | spaCy Hybrid NER Implementation Plan | 📋 Ready | 6 phases, 14-20 days timeline | [plans/spacy_hybrid_ner/](../plans/spacy_hybrid_ner/) ⭐ |
 | 2025-11-11 | PyCaret Metadata Classification | ✅ Complete | 84.6% recall (11/13 papers) | [PYCARET_METADATA_CLASSIFICATION_FINAL_REPORT.md](PYCARET_METADATA_CLASSIFICATION_FINAL_REPORT.md) ⭐ |
 | 2025-11-11 | EPMC Query V5.1 | ✅ Complete | 77.3% training positives, 100% manual | [EPMC_QUERY_V5_OPTIMIZATION.md](EPMC_QUERY_V5_OPTIMIZATION.md) ⭐ |
 | 2025-11-10 | EPMC Query V4 | ✅ Complete | 0% → 92.3% manual capture (12/13) | [EPMC_QUERY_OPTIMIZATION_FINAL_REPORT.md](../analysis_output/EPMC_QUERY_OPTIMIZATION_FINAL_REPORT.md) |

@@ -1,0 +1,49 @@
+{
+  "evaluation_date": "2025-11-12T11:32:29.038220",
+  "dataset": "Full V5.1 Query (2011-2021)",
+  "total_papers": 153180,
+  "models": {
+    "V2_BERT": {
+      "predicted_bio_resource": 12285,
+      "predicted_not_bio_resource": 140895,
+      "percentage_bio_resource": 8.019976498237368,
+      "processing_time_seconds": 1152.3586049079895,
+      "papers_per_second": 132.92737117386363
+    },
+    "PyCaret_92_features": {
+      "predicted_bio_resource": 52630,
+      "predicted_not_bio_resource": 100550,
+      "percentage_bio_resource": 34.35827131479306,
+      "processing_time_seconds": 49.077173709869385,
+      "papers_per_second": 3121.2270067865666
+    },
+    "PyCaret_112_features": {
+      "predicted_bio_resource": 41638,
+      "predicted_not_bio_resource": 111542,
+      "percentage_bio_resource": 27.182399791095442,
+      "processing_time_seconds": 73.36676406860352,
+      "papers_per_second": 2087.8800086748283
+    }
+  },
+  "agreement": {
+    "v2_vs_pycaret_92": {
+      "count": 105499,
+      "percentage": 68.8725682203943
+    },
+    "v2_vs_pycaret_112": {
+      "count": 115985,
+      "percentage": 75.7181094137616
+    },
+    "pycaret_92_vs_112": {
+      "count": 136266,
+      "percentage": 88.95808852330592
+    }
+  },
+  "overlap": {
+    "all_three_agree_positive": 8129,
+    "all_three_agree_negative": 94156,
+    "v2_only_positive": 3433,
+    "pycaret_92_only_positive": 44013,
+    "pycaret_112_only_positive": 33274
+  }
+}

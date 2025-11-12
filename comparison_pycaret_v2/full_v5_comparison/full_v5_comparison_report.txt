@@ -1,0 +1,94 @@
+
+================================================================================
+FULL V5.1 COMPARISON SUMMARY - V2 BERT vs PyCaret (153k Papers)
+================================================================================
+
+Date: 2025-11-12 11:32:29
+Dataset: Full V5.1 Query (2011-2021)
+Total Papers: 153,180
+
+================================================================================
+PREDICTION DISTRIBUTIONS
+================================================================================
+
+V2 BERT:
+  Bio-resource:     12,285 (8.0%)
+  NOT bio-resource: 140,895 (92.0%)
+  Processing time:  1152.4s (133 papers/sec)
+
+PyCaret (92 features):
+  Bio-resource:     52,630 (34.4%)
+  NOT bio-resource: 100,550 (65.6%)
+  Processing time:  49.1s (3121 papers/sec)
+
+PyCaret (112 features):
+  Bio-resource:     41,638 (27.2%)
+  NOT bio-resource: 111,542 (72.8%)
+  Processing time:  73.4s (2088 papers/sec)
+
+================================================================================
+AGREEMENT ANALYSIS
+================================================================================
+
+V2 vs PyCaret (92 features):   105,499 (68.9%) agreement
+V2 vs PyCaret (112 features):  115,985 (75.7%) agreement
+PyCaret (92) vs PyCaret (112): 136,266 (89.0%) agreement
+
+================================================================================
+OVERLAP ANALYSIS
+================================================================================
+
+All 3 models agree POSITIVE:  8,129 (5.3%)
+All 3 models agree NEGATIVE:  94,156 (61.5%)
+Total agreement (all 3):      102,285 (66.8%)
+
+V2 ONLY says bio-resource:    3,433
+PyCaret (92) says bio but V2 says NOT:  44,013
+PyCaret (112) says bio but V2 says NOT: 33,274
+
+================================================================================
+KEY FINDINGS
+================================================================================
+
+1. PREDICTION RATES:
+   - V2 is VERY conservative: Only 8.0% classified as bio-resource
+   - PyCaret (92 feat) is more liberal: 34.4% classified as bio-resource
+   - PyCaret (112 feat) is moderate: 27.2% classified as bio-resource
+   - Ratio difference: PyCaret finds 4-5x MORE bio-resources than V2
+
+2. AGREEMENT:
+   - V2 vs PyCaret (92): 68.9% agreement
+   - V2 vs PyCaret (112): 75.7% agreement
+   - Two PyCaret models: 89.0% agreement
+   - Low V2-PyCaret agreement suggests different classification strategies
+
+3. HIGH CONFIDENCE SUBSET:
+   - 8,129 papers (5.3%) where ALL 3 models agree it's a bio-resource
+   - This is the "high confidence" positive set
+   - Likely to be genuine bio-resource papers
+
+4. SPEED COMPARISON:
+   - V2 BERT: 133 papers/sec (~19 minutes for 153k)
+   - PyCaret (92): 3121 papers/sec (~49 seconds)
+   - PyCaret (112): 2088 papers/sec (~73 seconds)
+   - Speed ratio: PyCaret is ~20-30x faster than V2
+
+5. IMPLICATIONS FOR PRODUCTION:
+   - V2 appears more conservative/precise (8% positive rate)
+   - PyCaret more sensitive/recall-focused (27-34% positive rate)
+   - Consider using V2 for high-precision filtering
+   - Consider using PyCaret for high-recall initial screening
+   - The 8,129 papers with unanimous agreement are likely true positives
+
+================================================================================
+FILES GENERATED
+================================================================================
+
+✅ /Users/warren/development/GBC/inventory_2022/comparison_pycaret_v2/full_v5_comparison/full_v5_merged_predictions.csv
+✅ /Users/warren/development/GBC/inventory_2022/comparison_pycaret_v2/full_v5_comparison/v2_yes_pycaret_no.csv
+✅ /Users/warren/development/GBC/inventory_2022/comparison_pycaret_v2/full_v5_comparison/v2_no_pycaret_true_yes.csv
+✅ /Users/warren/development/GBC/inventory_2022/comparison_pycaret_v2/full_v5_comparison/all_three_agree_positive.csv
+✅ /Users/warren/development/GBC/inventory_2022/comparison_pycaret_v2/full_v5_comparison/full_v5_comparison.png
+✅ /Users/warren/development/GBC/inventory_2022/comparison_pycaret_v2/full_v5_comparison/full_v5_comparison_summary.json
+
+================================================================================

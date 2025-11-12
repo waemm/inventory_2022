@@ -1,0 +1,12 @@
+{
+  "session_id": "2025-11-12_11-04-39",
+  "timestamp": "2025-11-12T11:25:06.487450",
+  "dataset": "Full V5.1 Query (2011-2021)",
+  "total_papers": 153180,
+  "predicted_bio_resource": 12285,
+  "predicted_not_bio_resource": 140895,
+  "percentage_bio_resource": 8.019976498237368,
+  "processing_time_seconds": 1152.3586049079895,
+  "papers_per_second": 132.92737117386363,
+  "output_file": "/content/drive/MyDrive/inventory_2022/comparison_pycaret_v2/v2_full_v5_predictions/v2_full_v5_predictions.csv"
+}

@@ -1,0 +1,48 @@
+{
+  "session_id": "2025-11-12_09-38-29",
+  "timestamp": "2025-11-12T09:38:57.855896",
+  "test_set": "/Users/warren/development/GBC/inventory_2022/comparison_pycaret_v2/data/test_set_full.csv",
+  "test_set_size": 3743,
+  "models_run": [
+    "TEST_MODE_True",
+    "TEST_MODE_False"
+  ],
+  "results": {
+    "TEST_MODE_True": {
+      "total_papers": 3743,
+      "predicted_positive": 3325,
+      "actual_positive": 3684,
+      "confusion_matrix": {
+        "tp": 3293,
+        "fp": 32,
+        "tn": 27,
+        "fn": 391
+      },
+      "metrics": {
+        "accuracy": 0.88698904621961,
+        "precision": 0.990375939849624,
+        "recall": 0.8938653637350705,
+        "f1": 0.9396490226851192
+      },
+      "output_file": "/Users/warren/development/GBC/inventory_2022/comparison_pycaret_v2/pycaret_predictions/pycaret_TEST_MODE_True_results.csv"
+    },
+    "TEST_MODE_False": {
+      "total_papers": 3743,
+      "predicted_positive": 3308,
+      "actual_positive": 3684,
+      "confusion_matrix": {
+        "tp": 3278,
+        "fp": 30,
+        "tn": 29,
+        "fn": 406
+      },
+      "metrics": {
+        "accuracy": 0.8835158963398344,
+        "precision": 0.9909310761789601,
+        "recall": 0.8897937024972855,
+        "f1": 0.9376430205949657
+      },
+      "output_file": "/Users/warren/development/GBC/inventory_2022/comparison_pycaret_v2/pycaret_predictions/pycaret_TEST_MODE_False_results.csv"
+    }
+  }
+}

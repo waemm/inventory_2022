@@ -1,0 +1,4 @@
+Model,Type,Size (MB),Features,Requires GPU,Training Time,Inference Speed
+V2 BERT,BERT-based deep learning,400.0,Full text (title+abstract),Yes,~2-4 hours,"~3-5 min (3,742 papers)"
+PyCaret (92 features),AutoML ensemble (30 MeSH),0.18,Metadata only (92 features),No,~10 minutes,"<1 min (3,742 papers)"
+PyCaret (112 features),AutoML ensemble (54 MeSH),0.27,Metadata only (112 features),No,~15 minutes,"<1 min (3,742 papers)"

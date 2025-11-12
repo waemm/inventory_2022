@@ -1,0 +1,49 @@
+{
+  "session_id": "2025-11-12_09-52-35",
+  "purpose": "pycaret_comparison",
+  "timestamp": "2025-11-12_09-52-35",
+  "test_mode": false,
+  "input_data": "comparison_pycaret_v2/data/test_set_full.csv",
+  "test_set_size": 3742,
+  "model": "article_classifier_v2.pt",
+  "model_performance": {
+    "f1": 0.898,
+    "precision": 0.898,
+    "recall": 0.898
+  },
+  "test_set_info": {
+    "total": 3742,
+    "positives": 3683,
+    "negatives": 59,
+    "training_overlap": 0,
+    "source": "bioresource_papers.csv + V2 test negatives"
+  },
+  "inventory_directory": "/content/drive/MyDrive/inventory_2022",
+  "drive_v2_classif": "/content/drive/MyDrive/inventory_2022/out/original_model/article_classifier_v2.pt",
+  "created": "2025-11-12T09:52:35.074285",
+  "model_loaded": {
+    "path": "article_classifier_v2.pt",
+    "source": "Google Drive - out/original_model/",
+    "size_mb": 475.57019901275635,
+    "loaded_at": "2025-11-12T09:53:01.885271"
+  },
+  "results_summary": {
+    "total_papers": 3742,
+    "predicted_positive": 3618,
+    "predicted_negative": 124,
+    "actual_positive": 3683,
+    "actual_negative": 59,
+    "metrics": {
+      "accuracy": 0.9799572421165152,
+      "precision": 0.9986180210060807,
+      "recall": 0.9809937550909584,
+      "f1": 0.9897274345980003
+    },
+    "confusion_matrix": {
+      "tp": 3613,
+      "fp": 5,
+      "tn": 54,
+      "fn": 70
+    }
+  }
+}

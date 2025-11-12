@@ -1,0 +1,64 @@
+{
+  "evaluation_date": "2025-11-12T09:59:30.751691",
+  "test_set_size": 3742,
+  "test_set_distribution": {
+    "positives": 3683,
+    "negatives": 59
+  },
+  "models": {
+    "V2_BERT": {
+      "confusion_matrix": {
+        "tp": 3613,
+        "fp": 5,
+        "tn": 54,
+        "fn": 70
+      },
+      "metrics": {
+        "accuracy": 0.9799572421165152,
+        "precision": 0.9986180210060807,
+        "recall": 0.9809937550909584,
+        "f1": 0.9897274345980003,
+        "specificity": 0.9152542372881356,
+        "npv": 0.43548387096774194
+      },
+      "model_size_mb": 400,
+      "requires_gpu": true
+    },
+    "PyCaret_92_features": {
+      "confusion_matrix": {
+        "tp": 3292,
+        "fp": 32,
+        "tn": 27,
+        "fn": 391
+      },
+      "metrics": {
+        "accuracy": 0.8869588455371459,
+        "precision": 0.9903730445246691,
+        "recall": 0.8938365462937823,
+        "f1": 0.939631796774654,
+        "specificity": 0.4576271186440678,
+        "npv": 0.0645933014354067
+      },
+      "model_size_mb": 0.18,
+      "requires_gpu": false
+    },
+    "PyCaret_112_features": {
+      "confusion_matrix": {
+        "tp": 3278,
+        "fp": 30,
+        "tn": 29,
+        "fn": 405
+      },
+      "metrics": {
+        "accuracy": 0.8837520042757884,
+        "precision": 0.9909310761789601,
+        "recall": 0.890035297311974,
+        "f1": 0.9377771420397655,
+        "specificity": 0.4915254237288136,
+        "npv": 0.06682027649769585
+      },
+      "model_size_mb": 0.27,
+      "requires_gpu": false
+    }
+  }
+}

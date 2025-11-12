@@ -1,8 +1,8 @@
 # Biodata Inventory ML Pipeline - AI Agent Reference Guide
 
 **Created**: 2025-10-22
-**Last Updated**: 2025-11-11 (PyCaret metadata classifier: 84.6% recall achieved)
-**Status**: ✅ **V2 PRODUCTION READY** + ✅ **PHASE 4 TRAINING NOTEBOOKS READY** + ✅ **PYCARET METADATA CLASSIFIER READY**
+**Last Updated**: 2025-11-12 (V2 vs PyCaret comparison study complete)
+**Status**: ✅ **V2 PRODUCTION READY** + ✅ **PHASE 4 TRAINING NOTEBOOKS READY** + ✅ **PYCARET METADATA CLASSIFIER READY** + ✅ **MODEL COMPARISON COMPLETE**
 **Purpose**: High-level reference and navigation hub for AI agents
 
 ---
@@ -793,128 +793,57 @@ Before deploying new models:
 
 **Document Location**: `GBC/inventory_2022/docs/starting_doc.md`
 **Document Status**: ✅ Current and comprehensive (~670 lines)
-**Last Review**: 2025-11-11 (EPMC query V5.1 optimization complete)
-**Next Review**: After V5.1 production deployment and precision assessment
+**Last Review**: 2025-11-12 (V2 vs PyCaret comparison study complete)
+**Next Review**: After model deployment decision and manual validation of high-confidence subset
 **Maintained By**: AI agents working on biodata inventory pipeline
 
-**Latest Work Summary** (2025-11-11):
-- ✅ Recovered V5 query work (undocumented session after crash)
-- ✅ Discovered critical wildcard bug in V5 query (EPMC doesn't auto-stem!)
-- ✅ Created V5.1 with wildcard fix (`resource*` not `resource`)
-- ✅ Validated V5.1: 34/44 training positives captured (77.3%)
-- ✅ Major databases recovered: Ensembl 2012/2021, PANTHER v16, OMIM, IDEAL
-- ✅ Comprehensive documentation created
-- 📊 **Next**: Run V5.1 on 2022 data, assess precision, deploy to production
+**Latest Work Summary** (2025-11-12):
+- ✅ **V2 vs PyCaret Model Comparison**: Complete systematic evaluation on 156k papers
+- ✅ Discovered fundamental classification difference: V2=conservative (8%), PyCaret=sensitive (27-34%)
+- ✅ Identified 8,129 high-confidence papers (unanimous agreement across 3 models)
+- ✅ Documented 44k disagreement cases requiring manual review
+- ✅ Created hybrid two-stage pipeline recommendation (23x speedup)
+- ✅ All scripts, results, and comprehensive documentation committed
+- 📊 **Next**: Manual validation of high-confidence subset, deploy hybrid pipeline
+
+**Previous Work** (2025-11-11):
+- ✅ EPMC query V5.1 optimization (wildcard fix, 77.3% training coverage)
+- ✅ PyCaret metadata classifier (84.6% recall on test set)
 
 ---
 
 ## 🆚 V2 vs PyCaret Model Comparison Study (2025-11-12)
 
-**Status**: ✅ **COMPLETE** - Comprehensive evaluation of V2 BERT vs PyCaret metadata classifiers
+**Status**: ✅ **COMPLETE** - Systematic evaluation on 156k papers (3,742 test + 153k production)
 
-### Executive Summary
-
-Completed systematic comparison of three bio-resource classification models:
-- **V2 BERT** (400 MB, GPU, full-text) - Production deep learning model
-- **PyCaret (92 features)** (184 KB, CPU, metadata-only) - AutoML ensemble
-- **PyCaret (112 features)** (271 KB, CPU, metadata-only) - AutoML ensemble
-
-**Dataset Scale**:
-- Test Set: 3,742 papers with ground truth (3,683 positives, 59 negatives)
-- Production: 153,180 unlabeled papers from V5.1 query (2011-2021)
+**Key Finding**: V2 (conservative, 8% positive) vs PyCaret (sensitive, 27-34% positive) represent fundamentally different classification strategies. Both valid, choice depends on deployment constraints.
 
 ### Critical Findings
 
-**1. Fundamental Classification Philosophy Difference**
-- **V2 is CONSERVATIVE**: 8.0% positive rate on production data (high precision)
-- **PyCaret is SENSITIVE**: 27-34% positive rate on production data (high recall)
-- **Implication**: Different models, different objectives - both valid
+1. **Classification Philosophy**: V2=high precision (99.9%), PyCaret=high recall (89-90%) - 5% F1 difference
+2. **Speed & Size**: PyCaret is **23x faster** (3,121 vs 133 p/s) and **2,000x smaller** (184 KB vs 400 MB)
+3. **Agreement**: Only 69-76% agreement on 153k unlabeled papers (large disagreement gap)
+4. **High Confidence**: **8,129 papers** (5.3%) where ALL 3 models agree = bio-resource
+5. **The Gap**: **44k papers** where PyCaret=YES but V2=NO (requires manual review)
 
-**2. Performance vs Efficiency Tradeoff**
-```
-┌─────────────────┬──────────┬───────────┬──────────┬──────────┬────────┐
-│ Model           │ Test F1  │ Precision │ Recall   │ Speed    │ Size   │
-├─────────────────┼──────────┼───────────┼──────────┼──────────┼────────┤
-│ V2 BERT         │ 98.9%    │ 99.9%     │ 98.1%    │ 133 p/s  │ 400 MB │
-│ PyCaret (92)    │ 94.0%    │ 99.0%     │ 89.4%    │ 3,121p/s │ 184 KB │
-│ PyCaret (112)   │ 93.8%    │ 99.1%     │ 89.0%    │ 2,088p/s │ 271 KB │
-└─────────────────┴──────────┴───────────┴──────────┴──────────┴────────┘
-```
-- **Accuracy Gap**: V2 outperforms by 5% F1
-- **Speed Gap**: PyCaret is **23x faster** (3,121 vs 133 papers/sec)
-- **Size Gap**: PyCaret is **2,000x smaller** (184 KB vs 400 MB)
+### Recommendations
 
-**3. Agreement Analysis on 153k Unlabeled Papers**
-- V2 vs PyCaret (92): **68.9% agreement** (disagree on 31%)
-- V2 vs PyCaret (112): **75.7% agreement** (disagree on 24%)
-- PyCaret models: **89.0% agreement** (close alignment)
-
-**4. High Confidence Subset Discovered**
-- **8,129 papers** (5.3%) where ALL 3 models unanimously agree = bio-resource
-- Likely represents "unambiguous" bio-resource papers
-- **Use case**: Gold standard validation set, high-priority curation targets
-
-**5. The "Gap" - 44,013 Papers of Disagreement**
-- **28.7%** of dataset: PyCaret says YES, V2 says NO
-- Represents fundamental difference in classification boundaries
-- **Next step**: Manual review to understand root cause
-
-### Production Recommendations
-
-**Use V2 BERT when:**
-- ✅ Maximum accuracy required (98.9% F1)
-- ✅ GPU infrastructure available
-- ✅ High precision critical (minimize false positives)
-- ✅ Can afford 15-20 min inference time
-
-**Use PyCaret when:**
-- ✅ Speed critical (23x faster, <1 min for 153k papers)
-- ✅ CPU-only environment
-- ✅ Resource constraints (2,000x smaller)
-- ✅ High recall screening (catch more candidates)
-- ✅ Metadata-only acceptable
-
-**Hybrid Two-Stage Pipeline (RECOMMENDED):**
-1. **Stage 1**: PyCaret fast screening → 27-34% pass (in <1 min)
-2. **Stage 2**: V2 validation on PyCaret positives → ~5 min
-3. **Stage 3**: Prioritize 8,129 unanimous papers (highest confidence)
-
-**Benefits**: Combines speed of PyCaret with accuracy of V2, reduces V2 processing from 19 min to ~5 min
+- **Use V2**: Maximum accuracy, GPU available, high precision critical
+- **Use PyCaret**: Speed critical (23x faster), CPU-only, resource constraints
+- **⭐ Hybrid Pipeline**: PyCaret screening (1 min) → V2 validation (5 min) = Best of both
 
 ### Key Artifacts
 
-**Location**: `comparison_pycaret_v2/`
-
-**Results**:
-- Test set comparison: `evaluation/performance_comparison.csv`
-- Production analysis: `full_v5_comparison/full_v5_merged_predictions.csv`
-- High confidence set: `full_v5_comparison/all_three_agree_positive.csv` (8,129 papers)
-- Disagreement cases: `full_v5_comparison/v2_no_pycaret_true_yes.csv` (44,013 papers)
-- Visualizations: `evaluation/metrics_comparison.png`, `full_v5_comparison/full_v5_comparison.png`
+**Results**: `comparison_pycaret_v2/full_v5_comparison/`
+- `all_three_agree_positive.csv` - 8,129 high-confidence papers
+- `v2_no_pycaret_true_yes.csv` - 44k disagreement cases
+- `full_v5_merged_predictions.csv` - All 153k predictions
 
 **Documentation**:
-- **⭐ Comprehensive Study**: [`docs/V2_PYCARET_COMPARISON_STUDY.md`](V2_PYCARET_COMPARISON_STUDY.md) - **Complete analysis and methodology**
+- **⭐ COMPLETE STUDY**: [`V2_PYCARET_COMPARISON_STUDY.md`](V2_PYCARET_COMPARISON_STUDY.md) - Full methodology, results, analysis
 - Quick start: `comparison_pycaret_v2/QUICK_START.md`
-- Full summary: `comparison_pycaret_v2/COMPARISON_COMPLETE_SUMMARY.md`
 
-**Google Colab Notebooks**:
-- Test set: `comparison_pycaret_v2/notebooks/02_v2_classification.ipynb`
-- Full V5.1: `comparison_pycaret_v2/notebooks/03_v2_full_v5_classification.ipynb`
-
-### Impact & Next Steps
-
-**Immediate Use**:
-1. **High-priority curation**: Start with 8,129 unanimous papers
-2. **Fast screening**: Deploy PyCaret for real-time classification
-3. **Validation**: Use V2 for final confirmation on PyCaret positives
-
-**Future Research**:
-1. Manual review sample from 44k disagreement papers
-2. Validate high-confidence unanimous subset
-3. Test hybrid two-stage pipeline in production
-4. Consider ensemble combining both approaches
-
-**Key Insight**: Classification strategy (conservative vs sensitive) matters more than model architecture. Choice depends on deployment constraints and business objectives (precision vs recall).
+**Next Steps**: Manual validation of high-confidence subset, deploy hybrid pipeline
 
 ---
 

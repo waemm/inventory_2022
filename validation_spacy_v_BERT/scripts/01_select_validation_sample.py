@@ -3,11 +3,14 @@
 Select Validation Sample for Model Comparison
 ==============================================
 
-Selects 100-125 unique resource papers for manual validation study:
-- 50 global core bioresources (is_global_core_biodata_resource=1)
-- 50-75 other validated resources
+Selects papers ensuring 125 UNIQUE RESOURCES for manual validation study:
+- Starts with 50 global core bioresources (is_global_core_biodata_resource=1)
+- Adds "other" papers until reaching 125 unique resources total
 - Removes training overlap
 - Saves to results/validation/sample/validation_sample.csv
+
+Strategy: Iteratively adds papers until target unique resource count is achieved.
+This ensures we have exactly 125 unique resources for validation.
 
 Usage:
     python scripts/01_select_validation_sample.py
@@ -89,17 +92,18 @@ def load_ground_truth():
 
     return df
 
-def select_sample(df_ground_truth, training_ids, n_global_core=50, n_other=50):
+def select_sample(df_ground_truth, training_ids, n_global_core=50, target_unique_resources=125):
     """
-    Select stratified sample:
-    - n_global_core papers with is_global_core_biodata_resource=1
-    - n_other papers with is_global_core_biodata_resource=0
+    Select stratified sample ensuring TARGET_UNIQUE_RESOURCES unique resources:
+    - Start with n_global_core papers with is_global_core_biodata_resource=1
+    - Keep adding "other" papers until we have target_unique_resources unique resources
 
     Excludes training papers and ensures unique resources.
     """
     logger.info("\n" + "="*60)
     logger.info("SAMPLE SELECTION")
     logger.info("="*60)
+    logger.info(f"Target: {target_unique_resources} unique resources")
 
     # Convert ID column to string for comparison
     id_col = None
@@ -128,7 +132,13 @@ def select_sample(df_ground_truth, training_ids, n_global_core=50, n_other=50):
         # Create dummy column
         df_filtered['is_global_core_biodata_resource'] = 0
 
-    # Select global core papers
+    # Check for resource column
+    if 'resource_short_name' not in df_filtered.columns:
+        raise ValueError("Column 'resource_short_name' not found - cannot count unique resources")
+
+    # ========================================================================
+    # Step 1: Select global core papers
+    # ========================================================================
     df_global = df_filtered[df_filtered['is_global_core_biodata_resource'] == 1].copy()
     logger.info(f"\nGlobal core papers available: {len(df_global)}")
 
@@ -140,31 +150,65 @@ def select_sample(df_ground_truth, training_ids, n_global_core=50, n_other=50):
         logger.info(f"   Selected ALL {len(df_global)} global core papers (less than target)")
         n_global_core = len(df_global)
 
-    # Select other papers
+    # Count unique resources in global core sample
+    unique_resources_global = sample_global['resource_short_name'].nunique()
+    logger.info(f"   Unique resources in global core: {unique_resources_global}")
+
+    # ========================================================================
+    # Step 2: Add "other" papers until we reach target unique resources
+    # ========================================================================
     df_other = df_filtered[df_filtered['is_global_core_biodata_resource'] == 0].copy()
     logger.info(f"\nOther papers available: {len(df_other)}")
 
-    if len(df_other) >= n_other:
-        sample_other = df_other.sample(n=n_other, random_state=42)
-        logger.info(f"   Selected {n_other} other papers (random sample)")
-    else:
-        sample_other = df_other
-        logger.info(f"   Selected ALL {len(df_other)} other papers (less than target)")
+    # Shuffle other papers with fixed seed
+    df_other_shuffled = df_other.sample(frac=1, random_state=42).reset_index(drop=True)
 
-    # Combine samples
-    sample_df = pd.concat([sample_global, sample_other], ignore_index=True)
+    # Start with global core sample
+    sample_df = sample_global.copy()
+    unique_resources_total = unique_resources_global
 
+    # Iteratively add papers until we reach target
+    papers_added = 0
+    for idx, row in df_other_shuffled.iterrows():
+        # Add this paper to sample
+        sample_df = pd.concat([sample_df, pd.DataFrame([row])], ignore_index=True)
+        papers_added += 1
+
+        # Count unique resources
+        unique_resources_total = sample_df['resource_short_name'].nunique()
+
+        # Check if we've reached target
+        if unique_resources_total >= target_unique_resources:
+            logger.info(f"   ✅ Target reached!")
+            logger.info(f"   Added {papers_added} other papers")
+            logger.info(f"   Unique resources: {unique_resources_total}")
+            break
+
+        # Progress update every 25 papers
+        if papers_added % 25 == 0:
+            logger.info(f"   Progress: {papers_added} papers added, {unique_resources_total} unique resources...")
+
+    # Final check
+    if unique_resources_total < target_unique_resources:
+        logger.warning(f"⚠️  Could not reach target of {target_unique_resources} unique resources")
+        logger.warning(f"   Exhausted all available papers ({len(df_other_shuffled)} other papers)")
+        logger.warning(f"   Final unique resources: {unique_resources_total}")
+
+    # ========================================================================
+    # Step 3: Summary
+    # ========================================================================
     logger.info(f"\n" + "="*60)
     logger.info(f"FINAL SAMPLE")
     logger.info("="*60)
     logger.info(f"Global core papers: {n_global_core}")
-    logger.info(f"Other papers: {len(sample_other)}")
+    logger.info(f"Other papers: {papers_added}")
     logger.info(f"Total papers: {len(sample_df)}")
+    logger.info(f"Unique resources: {unique_resources_total} (target: {target_unique_resources})")
 
-    # Count unique resources
-    if 'resource_short_name' in sample_df.columns:
-        unique_resources = sample_df['resource_short_name'].nunique()
-        logger.info(f"Unique resources: {unique_resources}")
+    if unique_resources_total >= target_unique_resources:
+        logger.info(f"✅ Target achieved!")
+    else:
+        logger.info(f"⚠️  Target not fully achieved (shortfall: {target_unique_resources - unique_resources_total})")
 
     return sample_df
 
@@ -212,8 +256,8 @@ def main():
         # Load ground truth
         df_ground_truth = load_ground_truth()
 
-        # Select sample
-        sample_df = select_sample(df_ground_truth, training_ids, n_global_core=50, n_other=50)
+        # Select sample (target: 125 unique resources)
+        sample_df = select_sample(df_ground_truth, training_ids, n_global_core=50, target_unique_resources=125)
 
         # Save sample
         save_sample(sample_df, OUTPUT_FILE)

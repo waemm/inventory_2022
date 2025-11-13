@@ -116,6 +116,15 @@ class SpacyNERPredictor:
         if 'pubmed_id' not in papers_df.columns:
             raise ValueError("DataFrame must have 'pubmed_id' column")
 
+        # Validate batch_size parameter
+        if batch_size < 1:
+            raise ValueError(f"batch_size must be positive, got {batch_size}")
+        if batch_size > 1000:
+            logger.warning(
+                f"Large batch_size ({batch_size}) may cause memory issues. "
+                f"Consider using batch_size <= 100 for most workloads."
+            )
+
         logger.info(f"Processing {len(papers_df)} papers with batch_size={batch_size}...")
 
         # Prepare texts and metadata upfront
@@ -138,27 +147,34 @@ class SpacyNERPredictor:
                 'is_valid': len(text) >= 10
             })
 
-        # Batch process with spaCy's .pipe() for 2-5× speedup
+        # Separate valid and invalid texts for efficiency
+        valid_texts_data = [d for d in texts_data if d['is_valid']]
+        invalid_texts_data = [d for d in texts_data if not d['is_valid']]
+
+        # Log skipped papers
+        if invalid_texts_data:
+            logger.info(f"  Skipping {len(invalid_texts_data)} papers with insufficient text")
+
+        # Initialize results
         results = []
         papers_with_entities = 0
         processed_count = 0
 
-        for idx, (data, doc) in enumerate(zip(texts_data,
-                                               self.nlp.pipe([d['text'] for d in texts_data],
-                                                            batch_size=batch_size))):
-            pmid = data['pmid']
+        # Add empty results for invalid texts (don't process through pipeline)
+        for data in invalid_texts_data:
+            results.append({
+                'pmid': data['pmid'],
+                'entity_count': 0,
+                'entities': [],
+                'resources': []
+            })
+            processed_count += 1
 
-            # Handle invalid texts
-            if not data['is_valid']:
-                logger.warning(f"Skipping paper {pmid}: insufficient text")
-                results.append({
-                    'pmid': pmid,
-                    'entity_count': 0,
-                    'entities': [],
-                    'resources': []
-                })
-                processed_count += 1
-                continue
+        # Batch process ONLY valid texts with spaCy's .pipe() for 2-5× speedup
+        for data, doc in zip(valid_texts_data,
+                            self.nlp.pipe([d['text'] for d in valid_texts_data],
+                                         batch_size=batch_size)):
+            pmid = data['pmid']
 
             # Extract entities with metadata
             entities = []

@@ -61,19 +61,14 @@ class SpacyNERPredictor:
         logger.info(f"Loading spaCy hybrid pipeline from {model_path}")
         self.nlp = spacy.load(str(model_path))
 
-        # Verify pipeline components
-        if "entity_ruler" not in self.nlp.pipe_names:
-            raise ValueError("EntityRuler component not found in pipeline!")
-        if "ner" not in self.nlp.pipe_names:
-            raise ValueError("NER component not found in pipeline!")
+        # Verify pipeline components and order
+        expected_order = ["entity_ruler", "ner"]
+        actual_order = [name for name in self.nlp.pipe_names if name in expected_order]
 
-        # Verify pipeline order
-        ruler_idx = self.nlp.pipe_names.index("entity_ruler")
-        ner_idx = self.nlp.pipe_names.index("ner")
-        if ruler_idx >= ner_idx:
+        if actual_order != expected_order:
             raise ValueError(
-                "Pipeline order incorrect! EntityRuler must come before NER. "
-                f"Current order: {self.nlp.pipe_names}"
+                f"Pipeline order incorrect! Expected {expected_order}, "
+                f"got {actual_order} from full pipeline: {self.nlp.pipe_names}"
             )
 
         logger.info(f"✓ Pipeline loaded successfully: {self.nlp.pipe_names}")
@@ -81,7 +76,8 @@ class SpacyNERPredictor:
     def predict(
         self,
         papers_df: pd.DataFrame,
-        text_column: Optional[str] = None
+        text_column: Optional[str] = None,
+        batch_size: int = 32
     ) -> List[Dict[str, Any]]:
         """
         Extract bioresource entities from papers with alias resolution.
@@ -91,6 +87,8 @@ class SpacyNERPredictor:
                       or a pre-concatenated text column
             text_column: Optional name of column containing pre-concatenated text.
                         If None, will concatenate title + abstract.
+            batch_size: Number of papers to process in each batch (default: 32)
+                       Higher values = faster but more memory usage
 
         Returns:
             List of dicts with extracted entities and metadata:
@@ -118,11 +116,10 @@ class SpacyNERPredictor:
         if 'pubmed_id' not in papers_df.columns:
             raise ValueError("DataFrame must have 'pubmed_id' column")
 
-        logger.info(f"Processing {len(papers_df)} papers...")
+        logger.info(f"Processing {len(papers_df)} papers with batch_size={batch_size}...")
 
-        results = []
-        papers_with_entities = 0
-
+        # Prepare texts and metadata upfront
+        texts_data = []
         for idx, paper in papers_df.iterrows():
             # Get text
             if text_column and text_column in paper:
@@ -135,18 +132,33 @@ class SpacyNERPredictor:
                 abstract = str(paper.get('abstract', ''))
                 text = f"{title} {abstract}".strip()
 
-            if len(text) < 10:
-                logger.warning(f"Skipping paper {paper['pubmed_id']}: insufficient text")
+            texts_data.append({
+                'pmid': paper['pubmed_id'],
+                'text': text,
+                'is_valid': len(text) >= 10
+            })
+
+        # Batch process with spaCy's .pipe() for 2-5× speedup
+        results = []
+        papers_with_entities = 0
+        processed_count = 0
+
+        for idx, (data, doc) in enumerate(zip(texts_data,
+                                               self.nlp.pipe([d['text'] for d in texts_data],
+                                                            batch_size=batch_size))):
+            pmid = data['pmid']
+
+            # Handle invalid texts
+            if not data['is_valid']:
+                logger.warning(f"Skipping paper {pmid}: insufficient text")
                 results.append({
-                    'pmid': paper['pubmed_id'],
+                    'pmid': pmid,
                     'entity_count': 0,
                     'entities': [],
                     'resources': []
                 })
+                processed_count += 1
                 continue
-
-            # Run hybrid pipeline
-            doc = self.nlp(text)
 
             # Extract entities with metadata
             entities = []
@@ -168,15 +180,17 @@ class SpacyNERPredictor:
                 papers_with_entities += 1
 
             results.append({
-                'pmid': paper['pubmed_id'],
+                'pmid': pmid,
                 'entity_count': len(entities),
                 'entities': entities,
                 'resources': resources
             })
 
+            processed_count += 1
+
             # Progress logging
-            if (idx + 1) % 100 == 0:
-                logger.info(f"  Processed {idx + 1}/{len(papers_df)} papers...")
+            if processed_count % 100 == 0:
+                logger.info(f"  Processed {processed_count}/{len(papers_df)} papers...")
 
         logger.info(
             f"✓ Extracted entities from {papers_with_entities}/{len(papers_df)} papers "
@@ -231,7 +245,8 @@ class SpacyNERPredictor:
         self,
         papers_df: pd.DataFrame,
         output_path: str,
-        text_column: Optional[str] = None
+        text_column: Optional[str] = None,
+        batch_size: int = 32
     ) -> pd.DataFrame:
         """
         Predict and save results to CSV.
@@ -240,6 +255,7 @@ class SpacyNERPredictor:
             papers_df: Input papers
             output_path: Path to save results CSV
             text_column: Optional name of text column
+            batch_size: Number of papers to process in each batch (default: 32)
 
         Returns:
             DataFrame with flattened results (one row per entity)
@@ -253,7 +269,7 @@ class SpacyNERPredictor:
             - start_char: Character offset start
             - end_char: Character offset end
         """
-        results = self.predict(papers_df, text_column=text_column)
+        results = self.predict(papers_df, text_column=text_column, batch_size=batch_size)
 
         # Flatten for CSV
         rows = []

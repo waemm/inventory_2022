@@ -172,13 +172,17 @@ def evaluate_entityruler(nlp, test_df: pd.DataFrame):
                 'predicted': by_label['COM']['predicted'],
                 'ground_truth': by_label['COM']['ground_truth'],
                 'ratio': round(by_label['COM']['predicted'] / by_label['COM']['ground_truth'], 2)
-                    if by_label['COM']['ground_truth'] > 0 else 0
+                    if by_label['COM']['ground_truth'] > 0 else (
+                        float('inf') if by_label['COM']['predicted'] > 0 else 0
+                    )
             },
             'FUL': {
                 'predicted': by_label['FUL']['predicted'],
                 'ground_truth': by_label['FUL']['ground_truth'],
                 'ratio': round(by_label['FUL']['predicted'] / by_label['FUL']['ground_truth'], 2)
-                    if by_label['FUL']['ground_truth'] > 0 else 0
+                    if by_label['FUL']['ground_truth'] > 0 else (
+                        float('inf') if by_label['FUL']['predicted'] > 0 else 0
+                    )
             }
         }
     }

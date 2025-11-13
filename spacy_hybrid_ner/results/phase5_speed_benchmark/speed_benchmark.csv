@@ -1,0 +1,4 @@
+model,papers,time_sec,papers_per_sec,ms_per_paper,total_entities,entities_per_paper
+EntityRuler Only,100,1.56,64.13,15.59,376,3.76
+Statistical NER Only,100,7.27,13.75,72.72,399,3.99
+Hybrid Pipeline,100,2.31,43.21,23.14,376,3.76

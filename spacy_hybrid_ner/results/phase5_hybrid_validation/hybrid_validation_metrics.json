@@ -1,0 +1,15 @@
+{
+  "total_papers": 676,
+  "total_entities": 2824,
+  "ruler_entities": 2824,
+  "statistical_entities": 0,
+  "papers_with_entities": 632,
+  "papers_with_ruler": 632,
+  "papers_with_statistical": 0,
+  "coverage": 93.49,
+  "avg_entities_per_paper": 4.18,
+  "ruler_percentage": 100.0,
+  "statistical_percentage": 0.0,
+  "unique_ruler_resources": 668,
+  "unique_statistical_resources": 0
+}

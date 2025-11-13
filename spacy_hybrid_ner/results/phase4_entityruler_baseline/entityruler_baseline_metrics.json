@@ -1,0 +1,24 @@
+{
+  "total_papers": 676,
+  "papers_with_ground_truth": 676,
+  "papers_with_entities": 632,
+  "coverage": 93.49,
+  "ground_truth_coverage": 93.49,
+  "total_predicted": 2824,
+  "total_ground_truth": 947,
+  "avg_entities_per_paper": 4.18,
+  "unique_predicted_resources": 668,
+  "unique_ground_truth_resources": 877,
+  "by_label": {
+    "COM": {
+      "predicted": 0,
+      "ground_truth": 676,
+      "ratio": 0.0
+    },
+    "FUL": {
+      "predicted": 0,
+      "ground_truth": 271,
+      "ratio": 0.0
+    }
+  }
+}

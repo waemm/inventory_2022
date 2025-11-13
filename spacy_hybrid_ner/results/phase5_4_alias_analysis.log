@@ -1,0 +1,117 @@
+======================================================================
+PHASE 5.4: ANALYZE ALIAS RESOLUTION
+======================================================================
+
+Loading hybrid pipeline from: spacy_hybrid_ner/models/ner_hybrid_v1
+  ✓ Loaded pipeline with components: ['entity_ruler', 'ner']
+
+Loading test data from: spacy_hybrid_ner/data/ner_corpus_splits/test.csv
+  ✓ Loaded 676 test papers
+
+Analyzing alias resolution on 676 test papers...
+  Processed 100/676 papers...
+  Processed 200/676 papers...
+  Processed 300/676 papers...
+  Processed 400/676 papers...
+  Processed 500/676 papers...
+  Processed 600/676 papers...
+
+======================================================================
+ALIAS RESOLUTION ANALYSIS REPORT (PHASE 5.4)
+======================================================================
+
+Entity Statistics:
+  Total entities: 2,824
+  Entities with canonical ID: 2,824 (100.0%)
+  Entities without ID (from Statistical NER): 0
+
+Resource Statistics:
+  Total unique resources: 668
+  Resources with multiple aliases: 283
+  Multi-alias percentage: 42.4%
+
+----------------------------------------------------------------------
+TARGET ASSESSMENT:
+----------------------------------------------------------------------
+✓ Entities with canonical ID: 100.0% (Target: 70-80%)
+✓ Multiple alias forms detected: 283 resources
+
+----------------------------------------------------------------------
+ALIAS RESOLUTION EXAMPLES
+----------------------------------------------------------------------
+
+Top 15 resources with multiple alias forms:
+
+1. NESdb (2 forms, 6 mentions, 1 papers)
+     - 'NESdb' (5×)
+     - 'a database of NES-containing CRM1 cargoes' (1×)
+
+2. CellLineMiner (2 forms, 5 mentions, 1 papers)
+     - 'CellLineMiner' (4×)
+     - 'a knowledge portal for human cell lines' (1×)
+
+3. MuteinDB (2 forms, 5 mentions, 1 papers)
+     - 'MuteinDB' (4×)
+     - 'the mutein database linking substrates' (1×)
+
+4. GeOMe (2 forms, 6 mentions, 1 papers)
+     - 'GeOMe' (4×)
+     - 'Genomic Observatories Metadatabase' (2×)
+
+5. SRA (2 forms, 7 mentions, 6 papers)
+     - 'SRA' (4×)
+     - 'Sequence Read Archive' (3×)
+
+6. KEGG (2 forms, 32 mentions, 15 papers)
+     - 'KEGG' (30×)
+     - 'Kyoto Encyclopedia of Genes and Genomes' (2×)
+
+7. QAP (2 forms, 3 mentions, 1 papers)
+     - 'QAP' (2×)
+     - 'Quail Anatomy Portal' (1×)
+
+8. BmTEdb (2 forms, 4 mentions, 1 papers)
+     - 'BmTEdb' (3×)
+     - 'a collective database of transposable elements in the silkworm genome' (1×)
+
+9. Ebolabase (2 forms, 4 mentions, 1 papers)
+     - 'Ebolabase' (3×)
+     - 'Zaire ebolavirus-human protein interaction database for drug-repurposing' (1×)
+
+10. URSDB (2 forms, 4 mentions, 1 papers)
+     - 'URSDB' (3×)
+     - 'Universe of RNA Structures DataBase' (1×)
+
+11. PDB (2 forms, 33 mentions, 19 papers)
+     - 'PDB' (32×)
+     - 'Worldwide Protein Data Bank organization' (1×)
+
+12. Psmir (2 forms, 5 mentions, 1 papers)
+     - 'Psmir' (4×)
+     - 'a database of potential associations between small molecules and miRNAs' (1×)
+
+13. CSVS (2 forms, 5 mentions, 1 papers)
+     - 'CSVS' (4×)
+     - 'Collaborative Spanish Variability Server' (1×)
+
+14. HGNC (2 forms, 4 mentions, 1 papers)
+     - 'HGNC' (3×)
+     - 'HUGO Gene Nomenclature Committee' (1×)
+
+15. CRCDA (2 forms, 4 mentions, 1 papers)
+     - 'CRCDA' (2×)
+     - 'resources for cancer NGS data analysis' (2×)
+
+
+✓ Metrics saved to: spacy_hybrid_ner/results/phase5_alias_resolution/alias_resolution_metrics.json
+✓ Alias groups saved to: spacy_hybrid_ner/results/phase5_alias_resolution/alias_groups.json
+
+======================================================================
+✓ PHASE 5.4 COMPLETE
+======================================================================
+
+Results saved to: spacy_hybrid_ner/results/phase5_alias_resolution/
+
+✅ PHASE 5 COMPLETE - All hybrid pipeline tasks done!
+
+Next: Phase 6 - Production deployment

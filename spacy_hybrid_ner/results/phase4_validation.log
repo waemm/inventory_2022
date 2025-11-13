@@ -1,0 +1,69 @@
+======================================================================
+PHASE 4: ENTITYRULER BASELINE VALIDATION
+======================================================================
+Building EntityRuler-only pipeline...
+  ✓ Loaded 6,216 patterns
+  ✓ Pipeline: ['entity_ruler']
+
+Loading test data from: spacy_hybrid_ner/data/ner_corpus_splits/test.csv
+  ✓ Loaded 676 test papers
+
+Evaluating on 676 test papers...
+  Processed 100/676 papers...
+  Processed 200/676 papers...
+  Processed 300/676 papers...
+  Processed 400/676 papers...
+  Processed 500/676 papers...
+  Processed 600/676 papers...
+
+======================================================================
+ENTITYRULER BASELINE VALIDATION REPORT (PHASE 4)
+======================================================================
+
+Test Set:
+  Total papers: 676
+  Papers with ground truth: 676
+  Papers with predictions: 632
+
+Coverage:
+  Overall: 93.5%
+  On ground truth papers: 93.5%
+
+Entity Counts:
+  Predicted: 2,824
+  Ground truth: 947
+  Avg per paper: 4.18
+
+Unique Resources:
+  Predicted: 668
+  Ground truth: 877
+
+By Label:
+  COM:
+    Predicted: 0
+    Ground truth: 676
+    Ratio (pred/gt): 0.00
+  FUL:
+    Predicted: 0
+    Ground truth: 271
+    Ratio (pred/gt): 0.00
+
+----------------------------------------------------------------------
+TARGET ASSESSMENT:
+----------------------------------------------------------------------
+✓ Ground truth coverage: 93.5% (Target: ≥75%)
+
+Note: True precision requires manual review of predictions.
+      Expected precision: >95% based on Phase 1-2 validation.
+      Coverage metric provides quality indicator.
+
+✓ Metrics saved to: spacy_hybrid_ner/results/phase4_entityruler_baseline/entityruler_baseline_metrics.json
+✓ Predictions saved to: spacy_hybrid_ner/results/phase4_entityruler_baseline/entityruler_baseline_predictions.csv
+
+======================================================================
+✓ PHASE 4 COMPLETE
+======================================================================
+
+Results saved to: spacy_hybrid_ner/results/phase4_entityruler_baseline/
+
+Next: Phase 5 - Build hybrid pipeline (EntityRuler + Statistical NER)

@@ -1,0 +1,9 @@
+{
+  "total_entities": 2824,
+  "entities_with_id": 2824,
+  "entities_without_id": 0,
+  "id_percentage": 100.0,
+  "total_resources": 668,
+  "resources_with_multiple_aliases": 283,
+  "multi_alias_percentage": 42.37
+}

@@ -1,0 +1,6506 @@
+{
+  "ICBatlas": {
+    "unique_forms": [
+      "ICBatlas"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      36095221
+    ]
+  },
+  "NESdb": {
+    "unique_forms": [
+      "NESdb",
+      "a database of NES-containing CRM1 cargoes"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      22833564
+    ]
+  },
+  "CIPEMAB": {
+    "unique_forms": [
+      "CIPEMAB"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      30004104
+    ]
+  },
+  "CellLineMiner": {
+    "unique_forms": [
+      "CellLineMiner",
+      "a knowledge portal for human cell lines"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      23251048
+    ]
+  },
+  "Abasy": {
+    "unique_forms": [
+      "Abasy"
+    ],
+    "total_mentions": 9,
+    "papers": [
+      27242034,
+      32542109
+    ]
+  },
+  "MuteinDB": {
+    "unique_forms": [
+      "MuteinDB",
+      "the mutein database linking substrates"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      22730453
+    ]
+  },
+  "MetaTropismDB": {
+    "unique_forms": [
+      "MetaTropismDB"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      33238004
+    ]
+  },
+  "GeOMe": {
+    "unique_forms": [
+      "GeOMe",
+      "Genomic Observatories Metadatabase"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      28771471
+    ]
+  },
+  "SRA": {
+    "unique_forms": [
+      "Sequence Read Archive",
+      "SRA"
+    ],
+    "total_mentions": 7,
+    "papers": [
+      26450948,
+      30371817,
+      34850094,
+      28771471,
+      30445619,
+      31210271
+    ]
+  },
+  "MirGeneDB": {
+    "unique_forms": [
+      "MirGeneDB"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      34850127
+    ]
+  },
+  "DGV": {
+    "unique_forms": [
+      "DGV"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      24174537
+    ]
+  },
+  "DGVa": {
+    "unique_forms": [
+      "DGVa"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      24174537
+    ]
+  },
+  "SNObase": {
+    "unique_forms": [
+      "SNObase"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      23129220
+    ]
+  },
+  "KEGG": {
+    "unique_forms": [
+      "Kyoto Encyclopedia of Genes and Genomes",
+      "KEGG"
+    ],
+    "total_mentions": 32,
+    "papers": [
+      31648227,
+      23129220,
+      31611909,
+      26527717,
+      26476454,
+      21762488,
+      36300620,
+      25347823,
+      27530928,
+      28420402,
+      30321428,
+      25190456,
+      34147352,
+      26746174,
+      28708831
+    ]
+  },
+  "StreptomeDB": {
+    "unique_forms": [
+      "StreptomeDB"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      33051671
+    ]
+  },
+  "GproteinDb": {
+    "unique_forms": [
+      "G protein"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      23087376,
+      23798574,
+      25971743
+    ]
+  },
+  "KiMoSys": {
+    "unique_forms": [
+      "KiMoSys"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      25115331
+    ]
+  },
+  "QAP": {
+    "unique_forms": [
+      "QAP",
+      "Quail Anatomy Portal"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      24715219
+    ]
+  },
+  "BmTEdb": {
+    "unique_forms": [
+      "a collective database of transposable elements in the silkworm genome",
+      "BmTEdb"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      23886610
+    ]
+  },
+  "KAIKObase": {
+    "unique_forms": [
+      "silkworm genome"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      23886610,
+      31642484
+    ]
+  },
+  "DBM-DB": {
+    "unique_forms": [
+      "diamondback moth Genome Database"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      24434032
+    ]
+  },
+  "iFISH": {
+    "unique_forms": [
+      "publically available"
+    ],
+    "total_mentions": 7,
+    "papers": [
+      32286817,
+      24678734,
+      24434032,
+      30208340,
+      28962356,
+      23650583,
+      27053566
+    ]
+  },
+  "Ebolabase": {
+    "unique_forms": [
+      "Zaire ebolavirus-human protein interaction database for drug-repurposing",
+      "Ebolabase"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      34015403
+    ]
+  },
+  "AAgMarker": {
+    "unique_forms": [
+      "AAgMarker"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      28977551
+    ]
+  },
+  "URSDB": {
+    "unique_forms": [
+      "URSDB",
+      "Universe of RNA Structures DataBase"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      27242032
+    ]
+  },
+  "PDB": {
+    "unique_forms": [
+      "Worldwide Protein Data Bank organization",
+      "PDB"
+    ],
+    "total_mentions": 33,
+    "papers": [
+      27450113,
+      25300483,
+      24243844,
+      23087378,
+      27899675,
+      27242032,
+      27530928,
+      25361972,
+      22800569,
+      22102591,
+      33237313,
+      26131021,
+      25301850,
+      31648227,
+      26949480,
+      21349870,
+      27043825,
+      22127861,
+      24253302
+    ]
+  },
+  "SpliceAid-F": {
+    "unique_forms": [
+      "a database of human splicing factors and their RNA-binding sites"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      23118479
+    ]
+  },
+  "Ensembl": {
+    "unique_forms": [
+      "Ensembl"
+    ],
+    "total_mentions": 11,
+    "papers": [
+      30407521,
+      24608034,
+      25414340,
+      29165610,
+      30395289,
+      31210271
+    ]
+  },
+  "Psmir": {
+    "unique_forms": [
+      "Psmir",
+      "a database of potential associations between small molecules and miRNAs"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      26759061
+    ]
+  },
+  "ChEMBL": {
+    "unique_forms": [
+      "ChEMBL"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      25404129,
+      32117874,
+      32679723
+    ]
+  },
+  "GDB17": {
+    "unique_forms": [
+      "GDB17"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      32117874
+    ]
+  },
+  "GDBMedChem": {
+    "unique_forms": [
+      "GDBMedChem"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      32117874
+    ]
+  },
+  "MycoRRdb": {
+    "unique_forms": [
+      "MycoRRdb"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      22563442
+    ]
+  },
+  "RNA-Chrom": {
+    "unique_forms": [
+      "a manually curated analytical database of RNA-chromatin interactome"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      37221043
+    ]
+  },
+  "SABIO-RK": {
+    "unique_forms": [
+      "an updated resource for manually curated biochemical reaction kinetics"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      29092055
+    ]
+  },
+  "CSVS": {
+    "unique_forms": [
+      "CSVS",
+      "Collaborative Spanish Variability Server"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      32990755
+    ]
+  },
+  "ArchDB": {
+    "unique_forms": [
+      "ArchDB"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      24265221
+    ]
+  },
+  "eSnail": {
+    "unique_forms": [
+      "eSnail"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      28960889
+    ]
+  },
+  "webTWAS": {
+    "unique_forms": [
+      "webTWAS"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      34669946
+    ]
+  },
+  "HGNC": {
+    "unique_forms": [
+      "HGNC",
+      "HUGO Gene Nomenclature Committee"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      30304474
+    ]
+  },
+  "TransportDB": {
+    "unique_forms": [
+      "TransportDB"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      27899676
+    ]
+  },
+  "CRCDA": {
+    "unique_forms": [
+      "resources for cancer NGS data analysis",
+      "CRCDA"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      26450948
+    ]
+  },
+  "BioLiP": {
+    "unique_forms": [
+      "BioLiP",
+      "a semi-manually curated database for biologically relevant ligand-protein interactions"
+    ],
+    "total_mentions": 8,
+    "papers": [
+      23087378
+    ]
+  },
+  "HeartBioPortal": {
+    "unique_forms": [
+      "HeartBioPortal"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      33382884
+    ]
+  },
+  "JCDB": {
+    "unique_forms": [
+      "JCDB",
+      "curcas database"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      31874631
+    ]
+  },
+  "FisOmics": {
+    "unique_forms": [
+      "A portal of fish genomic resources",
+      "FisOmics"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      30611878
+    ]
+  },
+  "dbCerEx": {
+    "unique_forms": [
+      "a web-based database for the analysis of cervical cancer transcriptomes",
+      "dbCerEx"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      24918550
+    ]
+  },
+  "TACA": {
+    "unique_forms": [
+      "TACA",
+      "The Alzheimer's Cell Atlas"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      36254161
+    ]
+  },
+  "miPepBase": {
+    "unique_forms": [
+      "miPepBase"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      29109711
+    ]
+  },
+  "exoRBase": {
+    "unique_forms": [
+      "exoRBase"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      34918744
+    ]
+  },
+  "PlantGF": {
+    "unique_forms": [
+      "PlantGF"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      35134149
+    ]
+  },
+  "NipahVR": {
+    "unique_forms": [
+      "NipahVR"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      32090261
+    ]
+  },
+  "PGDB": {
+    "unique_forms": [
+      "PGDB"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      37710163,
+      29059334
+    ]
+  },
+  "Integrated Microbial Genomes Atlas of Biosynthetic gene Clusters": {
+    "unique_forms": [
+      "Integrated Microbial Genomes Atlas of Biosynthetic gene Clusters"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      31665416
+    ]
+  },
+  "antiSMASH": {
+    "unique_forms": [
+      "antiSMASH"
+    ],
+    "total_mentions": 12,
+    "papers": [
+      31665416,
+      27924032,
+      30395294
+    ]
+  },
+  "GOLD": {
+    "unique_forms": [
+      "GOLD"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      31665416
+    ]
+  },
+  "TISSUES": {
+    "unique_forms": [
+      "TISSUES"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      29617745
+    ]
+  },
+  "STRING": {
+    "unique_forms": [
+      "STRING"
+    ],
+    "total_mentions": 9,
+    "papers": [
+      25352553,
+      29617745,
+      25361972,
+      36370105,
+      23203871
+    ]
+  },
+  "DKK": {
+    "unique_forms": [
+      "Dark Kinase Knowledgebase",
+      "DKK"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      33079988
+    ]
+  },
+  "IDG": {
+    "unique_forms": [
+      "IDG"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      33079988
+    ]
+  },
+  "PDBbind": {
+    "unique_forms": [
+      "PDBbind"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      25301850
+    ]
+  },
+  "ChanFAD": {
+    "unique_forms": [
+      "ChanFAD"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      36304304
+    ]
+  },
+  "PCDq": {
+    "unique_forms": [
+      "PCDq"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      23282181
+    ]
+  },
+  "BIND": {
+    "unique_forms": [
+      "Biomolecular Interaction Network Database",
+      "BIND"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      23772554,
+      23282181
+    ]
+  },
+  "MINT": {
+    "unique_forms": [
+      "MINT"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      23772554,
+      23282181
+    ]
+  },
+  "IntAct": {
+    "unique_forms": [
+      "IntAct"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      23772554,
+      23282181
+    ]
+  },
+  "Dr.VIS": {
+    "unique_forms": [
+      "a database of human disease-related viral integration sites"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      22135288
+    ]
+  },
+  "ChiTaRS": {
+    "unique_forms": [
+      "a database of human",
+      "ChiTaRS"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      22135288,
+      25414346,
+      23843252
+    ]
+  },
+  "RegPhos": {
+    "unique_forms": [
+      "RegPhos"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      24771658
+    ]
+  },
+  "UniCarbKB": {
+    "unique_forms": [
+      "UniCarbKB"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      21898825
+    ]
+  },
+  "CPCat": {
+    "unique_forms": [
+      "Chemical/Product Categories Database",
+      "CPCat"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      28962356
+    ]
+  },
+  "BioModels": {
+    "unique_forms": [
+      "BioModels",
+      "ten-year anniversary"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      25414348
+    ]
+  },
+  "AlloMAPS": {
+    "unique_forms": [
+      "allosteric mutation analysis and polymorphism of signaling database",
+      "AlloMAPS"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      30365033
+    ]
+  },
+  "Cancertope": {
+    "unique_forms": [
+      "Cancertope"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      27832200
+    ]
+  },
+  "ViruSurf": {
+    "unique_forms": [
+      "an integrated database to investigate viral sequences",
+      "ViruSurf"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      33045721
+    ]
+  },
+  "RefSeq": {
+    "unique_forms": [
+      "RefSeq",
+      "Prokaryotic Genome Annotation Pipeline"
+    ],
+    "total_mentions": 14,
+    "papers": [
+      33181826,
+      24316578,
+      24259432,
+      21269480,
+      22102591,
+      33045721,
+      25510495
+    ]
+  },
+  "GenBank": {
+    "unique_forms": [
+      "GenBank"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      33045721,
+      33166387,
+      23193267,
+      29308007
+    ]
+  },
+  "COG": {
+    "unique_forms": [
+      "COG"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      33045721
+    ]
+  },
+  "GISAID": {
+    "unique_forms": [
+      "GISAID"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      33045721
+    ]
+  },
+  "sc-PDB": {
+    "unique_forms": [
+      "a 3D-database of ligandable binding sites--10 years on"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      25300483
+    ]
+  },
+  "Norine": {
+    "unique_forms": [
+      "Norine"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      29082924
+    ]
+  },
+  "PlantTFDB": {
+    "unique_forms": [
+      "PlantTFDB"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      27924042
+    ]
+  },
+  "MatrixDB": {
+    "unique_forms": [
+      "MatrixDB",
+      "the extracellular matrix interaction database"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      25378329
+    ]
+  },
+  "ConoServer": {
+    "unique_forms": [
+      "updated content"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      25378329
+    ]
+  },
+  "IMEx": {
+    "unique_forms": [
+      "IMEx"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      25378329,
+      25217587
+    ]
+  },
+  "MMDB": {
+    "unique_forms": [
+      "Magnaporthe oryzae Microsatellite Database",
+      "MMDB"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      28293068
+    ]
+  },
+  "SGN": {
+    "unique_forms": [
+      "SGN",
+      "Sol Genomics Network"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      25428362
+    ]
+  },
+  "ProCaff": {
+    "unique_forms": [
+      "carbohydrate complex binding affinity database",
+      "ProCaff"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      32119071
+    ]
+  },
+  "EPSLiM": {
+    "unique_forms": [
+      "EPSLiM"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      24678734
+    ]
+  },
+  "RegNetwork": {
+    "unique_forms": [
+      "RegNetwork"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      26424082
+    ]
+  },
+  "TRRUST": {
+    "unique_forms": [
+      "regulatory relationships"
+    ],
+    "total_mentions": 13,
+    "papers": [
+      21217125,
+      29069510,
+      26072489,
+      23161675,
+      26424082
+    ]
+  },
+  "SmGDB": {
+    "unique_forms": [
+      "SmGDB"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      35460467
+    ]
+  },
+  "MtSSPdb": {
+    "unique_forms": [
+      "MtSSPdb"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      32079733
+    ]
+  },
+  "SureChEMBL": {
+    "unique_forms": [
+      "a large-scale"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      27402679,
+      33179754,
+      23772554,
+      23299413,
+      32079733,
+      30364951
+    ]
+  },
+  "SWITCHES": {
+    "unique_forms": [
+      "SWITCHES"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      33459764
+    ]
+  },
+  "dbNSFP": {
+    "unique_forms": [
+      "dbNSFP"
+    ],
+    "total_mentions": 11,
+    "papers": [
+      23843252,
+      21520341,
+      26555599
+    ]
+  },
+  "GENCODE": {
+    "unique_forms": [
+      "GENCODE"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      23843252,
+      26555599
+    ]
+  },
+  "ENA": {
+    "unique_forms": [
+      "ENA",
+      "European Nucleotide Archive"
+    ],
+    "total_mentions": 20,
+    "papers": [
+      24608034,
+      22096232,
+      24214989,
+      33166387,
+      31722421,
+      29140475
+    ]
+  },
+  "iSyTE": {
+    "unique_forms": [
+      "iSyTE"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      29036527
+    ]
+  },
+  "DescribePROT": {
+    "unique_forms": [
+      "DescribePROT",
+      "database of amino acid-level protein structure and function predictions"
+    ],
+    "total_mentions": 7,
+    "papers": [
+      33119734
+    ]
+  },
+  "UniProt": {
+    "unique_forms": [
+      "the universal protein knowledgebase",
+      "UniProt"
+    ],
+    "total_mentions": 31,
+    "papers": [
+      33237313,
+      23180791,
+      23178820,
+      33237286,
+      32076423,
+      26582918,
+      24253303,
+      27010673,
+      25361972,
+      21707958,
+      33119734,
+      24253302,
+      30395289,
+      28708831,
+      22123736
+    ]
+  },
+  "DAA": {
+    "unique_forms": [
+      "Ageing Atlas",
+      "DAA"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      25232097
+    ]
+  },
+  "FLAD": {
+    "unique_forms": [
+      "Forensic Loci Allele Database",
+      "FLAD"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      26456067
+    ]
+  },
+  "RiceMetaSys": {
+    "unique_forms": [
+      "RiceMetaSys"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      28964253
+    ]
+  },
+  "PSSRD": {
+    "unique_forms": [
+      "PSSRD",
+      "SSR database"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      34059664
+    ]
+  },
+  "TUMIR": {
+    "unique_forms": [
+      "TUMIR",
+      "an experimentally supported database of microRNA deregulation in various cancers"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      23594715
+    ]
+  },
+  "SubtiWiki": {
+    "unique_forms": [
+      "SubtiWiki"
+    ],
+    "total_mentions": 9,
+    "papers": [
+      24178028,
+      22096228
+    ]
+  },
+  "VASCAN": {
+    "unique_forms": [
+      "VASCAN",
+      "Database of Vascular Plants of Canada"
+    ],
+    "total_mentions": 9,
+    "papers": [
+      24198712
+    ]
+  },
+  "GBIF": {
+    "unique_forms": [
+      "GBIF",
+      "Global Biodiversity Information Facility"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      24198712,
+      22649282
+    ]
+  },
+  "OMA": {
+    "unique_forms": [
+      "OMA",
+      "Orthologous Matrix"
+    ],
+    "total_mentions": 7,
+    "papers": [
+      25399418
+    ]
+  },
+  "ECG-ViEW": {
+    "unique_forms": [
+      "Electrocardiogram Vigilance with Electronic data Warehouse II"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      28437484
+    ]
+  },
+  "HCVIVdb": {
+    "unique_forms": [
+      "HCVIVdb",
+      "HCV IRES variation database"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      27527702
+    ]
+  },
+  "RNAiAtlas": {
+    "unique_forms": [
+      "RNAiAtlas"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      22700939
+    ]
+  },
+  "TGED": {
+    "unique_forms": [
+      "TGED",
+      "Tetrahymena Gene Expression Database"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      21253873
+    ]
+  },
+  "HNOCDB": {
+    "unique_forms": [
+      "HNOCDB"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      22024348
+    ]
+  },
+  "starPepDB": {
+    "unique_forms": [
+      "starPepDB"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      30994884
+    ]
+  },
+  "CromoCat": {
+    "unique_forms": [
+      "CromoCat"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      37646943
+    ]
+  },
+  "MASCP Gator": {
+    "unique_forms": [
+      "an overview of the Arabidopsis proteomic aggregation portal"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      24167507
+    ]
+  },
+  "neXtProt": {
+    "unique_forms": [
+      "neXtProt"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      31724716
+    ]
+  },
+  "DrugCentral": {
+    "unique_forms": [
+      "DrugCentral"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      37707619
+    ]
+  },
+  "DDBJ": {
+    "unique_forms": [
+      "DNA Data Bank of Japan",
+      "DDBJ"
+    ],
+    "total_mentions": 7,
+    "papers": [
+      33166387,
+      29040613
+    ]
+  },
+  "INSDC": {
+    "unique_forms": [
+      "International Nucleotide Sequence Database Collaboration",
+      "INSDC"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      33166387,
+      29040613
+    ]
+  },
+  "TaxKB": {
+    "unique_forms": [
+      "TaxKB",
+      "Taxane knowledge base"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      26131021
+    ]
+  },
+  "OrthoDB": {
+    "unique_forms": [
+      "OrthoDB",
+      "a hierarchical catalog of animal"
+    ],
+    "total_mentions": 12,
+    "papers": [
+      27899580,
+      23180791
+    ]
+  },
+  "dbPSP": {
+    "unique_forms": [
+      "prokaryotes"
+    ],
+    "total_mentions": 8,
+    "papers": [
+      24243842,
+      29177508,
+      31740968,
+      28529077,
+      24214966,
+      23180791,
+      22417913
+    ]
+  },
+  "InterPro": {
+    "unique_forms": [
+      "InterPro"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      21762488,
+      22096229,
+      23180791
+    ]
+  },
+  "OMIM": {
+    "unique_forms": [
+      "Online Mendelian Inheritance in Man",
+      "OMIM"
+    ],
+    "total_mentions": 16,
+    "papers": [
+      28124611,
+      26582918,
+      25347823,
+      21520336,
+      23378291,
+      23180791,
+      25428349
+    ]
+  },
+  "FlyBase": {
+    "unique_forms": [
+      "FlyBase"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      29069517,
+      23180791
+    ]
+  },
+  "VirusMentha": {
+    "unique_forms": [
+      "a new resource for virus-host protein interactions",
+      "VirusMentha"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      25217587
+    ]
+  },
+  "PEO": {
+    "unique_forms": [
+      "PEO",
+      "Plant Expression Omnibus"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      38050352
+    ]
+  },
+  "MeiosisOnline": {
+    "unique_forms": [
+      "MeiosisOnline"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      34485275
+    ]
+  },
+  "MicroScope": {
+    "unique_forms": [
+      "MicroScope"
+    ],
+    "total_mentions": 9,
+    "papers": [
+      27899624,
+      28968784
+    ]
+  },
+  "MAPS": {
+    "unique_forms": [
+      "MAPS"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      37855672
+    ]
+  },
+  "LIPID MAPS": {
+    "unique_forms": [
+      "update to databases and tools for the lipidomics community"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      37855672
+    ]
+  },
+  "5SRNAdb": {
+    "unique_forms": [
+      "5SRNAdb",
+      "an information resource for 5S ribosomal RNAs"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      26490961
+    ]
+  },
+  "MODOMICS": {
+    "unique_forms": [
+      "Modification Pathways Database",
+      "MODOMICS"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      34893873,
+      33835459
+    ]
+  },
+  "OGEE": {
+    "unique_forms": [
+      "OGEE",
+      "an online gene essentiality database"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      22075992
+    ]
+  },
+  "GeneSetDB": {
+    "unique_forms": [
+      "A comprehensive meta-database",
+      "GeneSetDB"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      23650583
+    ]
+  },
+  "GSA": {
+    "unique_forms": [
+      "GSA"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      23650583
+    ]
+  },
+  "MVP": {
+    "unique_forms": [
+      "MVP",
+      "Microbe Versus"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      29177508
+    ]
+  },
+  "CCIDB": {
+    "unique_forms": [
+      "interaction database"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      27980099,
+      26516188,
+      29177508
+    ]
+  },
+  "LegumeIP": {
+    "unique_forms": [
+      "LegumeIP"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      26578557
+    ]
+  },
+  "ImmuCellDB": {
+    "unique_forms": [
+      "ImmuCellDB"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      34456903
+    ]
+  },
+  "MENT": {
+    "unique_forms": [
+      "Methylation and Expression database of",
+      "MENT"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      23219992
+    ]
+  },
+  "GEO": {
+    "unique_forms": [
+      "Gene Expression Omnibus",
+      "GEO"
+    ],
+    "total_mentions": 8,
+    "papers": [
+      31559014,
+      30371817,
+      33270889,
+      25347823,
+      23219992,
+      34147352
+    ]
+  },
+  "TCGA": {
+    "unique_forms": [
+      "The Cancer Genome Atlas",
+      "TCGA"
+    ],
+    "total_mentions": 11,
+    "papers": [
+      31410488,
+      33270889,
+      25527095,
+      23219992,
+      31630971,
+      31015229
+    ]
+  },
+  "GPCards": {
+    "unique_forms": [
+      "GPCards",
+      "An integrated database of genotype-phenotype correlations in human genetic diseases"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      33868597
+    ]
+  },
+  "MSigDB": {
+    "unique_forms": [
+      "MSigDB",
+      "Molecular signatures database"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      21546393
+    ]
+  },
+  "CAZy": {
+    "unique_forms": [
+      "CAZy"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      21622642
+    ]
+  },
+  "mycoCLAP": {
+    "unique_forms": [
+      "mycoCLAP"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      21622642
+    ]
+  },
+  "SilkDB": {
+    "unique_forms": [
+      "SilkDB"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      31642484
+    ]
+  },
+  "WormBase": {
+    "unique_forms": [
+      "WormBase"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      24194605
+    ]
+  },
+  "MetaCyc": {
+    "unique_forms": [
+      "MetaCyc"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      29059334
+    ]
+  },
+  "WeCoNET": {
+    "unique_forms": [
+      "WeCoNET"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      35658913
+    ]
+  },
+  "HORDE": {
+    "unique_forms": [
+      "Human Olfactory Receptor Data Explorer",
+      "HORDE"
+    ],
+    "total_mentions": 9,
+    "papers": [
+      23585031
+    ]
+  },
+  "SEVA": {
+    "unique_forms": [
+      "SEVA"
+    ],
+    "total_mentions": 12,
+    "papers": [
+      31740968,
+      25392407
+    ]
+  },
+  "SEVA-DB": {
+    "unique_forms": [
+      "Standard European Vector Architecture"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      31740968,
+      25392407
+    ]
+  },
+  "CSDB_GT": {
+    "unique_forms": [
+      "CSDB_GT"
+    ],
+    "total_mentions": 9,
+    "papers": [
+      33242091,
+      30759212
+    ]
+  },
+  "SUBA4": {
+    "unique_forms": [
+      "SUBA4",
+      "SUBcellular location database for Arabidopsis proteins"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      27899614
+    ]
+  },
+  "SelenoDB": {
+    "unique_forms": [
+      "SelenoDB"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      24194593
+    ]
+  },
+  "MobiDB": {
+    "unique_forms": [
+      "MobiDB"
+    ],
+    "total_mentions": 10,
+    "papers": [
+      33237329,
+      25361972
+    ]
+  },
+  "Biosurveillance Analytics Resource Directory": {
+    "unique_forms": [
+      "Biosurveillance Analytics Resource Directory"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      26820405
+    ]
+  },
+  "BARD": {
+    "unique_forms": [
+      "BARD"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      26820405
+    ]
+  },
+  "LncSEA": {
+    "unique_forms": [
+      "LncSEA"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      33045741
+    ]
+  },
+  "mirPub": {
+    "unique_forms": [
+      "mirPub",
+      "a database for searching microRNA publications"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      25527833
+    ]
+  },
+  "TarBase": {
+    "unique_forms": [
+      "TarBase"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      25527833
+    ]
+  },
+  "ESTHER": {
+    "unique_forms": [
+      "ESTHER"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      37582413
+    ]
+  },
+  "PHI-base": {
+    "unique_forms": [
+      "Pathogen-Host Interactions database"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      25414340
+    ]
+  },
+  "MK4MDD": {
+    "unique_forms": [
+      "MK4MDD"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      23071556
+    ]
+  },
+  "DisProt": {
+    "unique_forms": [
+      "DisProt"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      31713636,
+      25361972
+    ]
+  },
+  "Lnc2Meth": {
+    "unique_forms": [
+      "Lnc2Meth"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      29069510
+    ]
+  },
+  "TRIP": {
+    "unique_forms": [
+      "TRIP",
+      "TRansient receptor potential"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      23071747
+    ]
+  },
+  "IMPC": {
+    "unique_forms": [
+      "International Mouse Phenotyping Consortium"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      36305825
+    ]
+  },
+  "ExoCarta": {
+    "unique_forms": [
+      "ExoCarta"
+    ],
+    "total_mentions": 10,
+    "papers": [
+      24009883,
+      21989406
+    ]
+  },
+  "RGD": {
+    "unique_forms": [
+      "RGD",
+      "Rat Genome Database"
+    ],
+    "total_mentions": 9,
+    "papers": [
+      36930729,
+      21478484,
+      23603846
+    ]
+  },
+  "CCLOWW": {
+    "unique_forms": [
+      "CCLOWW"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      35776384
+    ]
+  },
+  "BioGPS": {
+    "unique_forms": [
+      "building your own mash-up of gene annotations and expression profiles",
+      "BioGPS"
+    ],
+    "total_mentions": 7,
+    "papers": [
+      26578587
+    ]
+  },
+  "Atacama": {
+    "unique_forms": [
+      "Atacama"
+    ],
+    "total_mentions": 9,
+    "papers": [
+      31535335
+    ]
+  },
+  "TCEA": {
+    "unique_forms": [
+      "The Cancer Editome Atlas",
+      "TCEA"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      31015229
+    ]
+  },
+  "OGDD": {
+    "unique_forms": [
+      "OGDD",
+      "Olive Genetic Diversity Database"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      26827236
+    ]
+  },
+  "ProPortal": {
+    "unique_forms": [
+      "ProPortal"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      22102570
+    ]
+  },
+  "KIXBASE": {
+    "unique_forms": [
+      "KIXBASE"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      29097748
+    ]
+  },
+  "KLIFS": {
+    "unique_forms": [
+      "KLIFS"
+    ],
+    "total_mentions": 8,
+    "papers": [
+      33084889
+    ]
+  },
+  "EcoliNet": {
+    "unique_forms": [
+      "a database of cofunctional gene network for Escherichia coli",
+      "EcoliNet"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      25650278
+    ]
+  },
+  "CCG": {
+    "unique_forms": [
+      "CCG",
+      "Catalogue of Cancer Genes"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      28147217
+    ]
+  },
+  "FEAMR": {
+    "unique_forms": [
+      "FEAMR",
+      "A Database for Surveillance of Food and Environment-Associated Antimicrobial Resistance"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      35876977
+    ]
+  },
+  "MEROPS": {
+    "unique_forms": [
+      "MEROPS"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      23264352,
+      23584835,
+      26527717
+    ]
+  },
+  "ChemHub": {
+    "unique_forms": [
+      "ChemHub",
+      "a knowledgebase of functional chemicals for synthetic biology studies"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      33970229
+    ]
+  },
+  "FunTree": {
+    "unique_forms": [
+      "FunTree"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      30298402
+    ]
+  },
+  "CATH": {
+    "unique_forms": [
+      "CATH"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      30298402
+    ]
+  },
+  "PSCDB": {
+    "unique_forms": [
+      "PSCDB",
+      "Protein Structural Change DataBase"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      22080505
+    ]
+  },
+  "eTOX": {
+    "unique_forms": [
+      "eTOX"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      27481021
+    ]
+  },
+  "GourdBase": {
+    "unique_forms": [
+      "GourdBase"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      29483591
+    ]
+  },
+  "ImmuMethy": {
+    "unique_forms": [
+      "ImmuMethy"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      35363305
+    ]
+  },
+  "PmiREN": {
+    "unique_forms": [
+      "PmiREN",
+      "Plant miRNA Encyclopedia"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      31602478
+    ]
+  },
+  "miRBase": {
+    "unique_forms": [
+      "miRBase"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      31602478
+    ]
+  },
+  "CFGP": {
+    "unique_forms": [
+      "CFGP",
+      "Comparative Fungal Genomics Platform"
+    ],
+    "total_mentions": 9,
+    "papers": [
+      23193288
+    ]
+  },
+  "RepeatsDB": {
+    "unique_forms": [
+      "RepeatsDB"
+    ],
+    "total_mentions": 9,
+    "papers": [
+      33237313,
+      30357350,
+      27899671
+    ]
+  },
+  "Pfam": {
+    "unique_forms": [
+      "Pfam"
+    ],
+    "total_mentions": 14,
+    "papers": [
+      33237313,
+      25880930,
+      30357350,
+      25361972,
+      27899671
+    ]
+  },
+  "RiceXPro": {
+    "unique_forms": [
+      "RiceXPro"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      23180765
+    ]
+  },
+  "TRANSNAP": {
+    "unique_forms": [
+      "TRANSNAP",
+      "a web database providing comprehensive information on Japanese pear transcriptome"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      31831861
+    ]
+  },
+  "TCMSID": {
+    "unique_forms": [
+      "TCMSID"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      36587232
+    ]
+  },
+  "AdditiveChem": {
+    "unique_forms": [
+      "AdditiveChem",
+      "A comprehensive bioinformatics knowledge-base for food additive chemicals"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      31648087
+    ]
+  },
+  "SNP2Structure": {
+    "unique_forms": [
+      "SNP2Structure"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      26949480
+    ]
+  },
+  "APAatlas": {
+    "unique_forms": [
+      "APAatlas",
+      "decoding alternative polyadenylation across human tissues"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      31586392
+    ]
+  },
+  "RNA CoSSMos": {
+    "unique_forms": [
+      "RNA Characterization of Secondary Structure Motifs"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      22127861
+    ]
+  },
+  "A3DyDB": {
+    "unique_forms": [
+      "exploring structural aggregation propensities in the yeast proteome",
+      "A3DyDB"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      37716955
+    ]
+  },
+  "PEP725": {
+    "unique_forms": [
+      "Pan European Phenological database",
+      "PEP725"
+    ],
+    "total_mentions": 7,
+    "papers": [
+      29455297
+    ]
+  },
+  "FunCoup": {
+    "unique_forms": [
+      "FunCoup"
+    ],
+    "total_mentions": 8,
+    "papers": [
+      29165593,
+      24185702
+    ]
+  },
+  "ADDAGMA": {
+    "unique_forms": [
+      "ADDAGMA",
+      "domestic animal gut microbiome atlas"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      35222847
+    ]
+  },
+  "NeuroMMSig": {
+    "unique_forms": [
+      "Multimodal mechanistic signatures for neurodegenerative diseases",
+      "NeuroMMSig"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      28651363
+    ]
+  },
+  "iHypoxia": {
+    "unique_forms": [
+      "iHypoxia"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      36503126
+    ]
+  },
+  "HDNetDB": {
+    "unique_forms": [
+      "HDNetDB"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      28701700
+    ]
+  },
+  "GTRD": {
+    "unique_forms": [
+      "Gene Transcription Regulation Database",
+      "GTRD"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      30445619
+    ]
+  },
+  "HOCOMOCO": {
+    "unique_forms": [
+      "HOCOMOCO"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      30445619
+    ]
+  },
+  "ENCODE": {
+    "unique_forms": [
+      "ENCODE",
+      "The Encyclopedia of DNA Elements"
+    ],
+    "total_mentions": 8,
+    "papers": [
+      23193274,
+      30445619,
+      30247654
+    ]
+  },
+  "DNAproDB": {
+    "unique_forms": [
+      "DNAproDB"
+    ],
+    "total_mentions": 7,
+    "papers": [
+      31612957
+    ]
+  },
+  "Littorina sequence database": {
+    "unique_forms": [
+      "Littorina sequence database"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      21707958
+    ]
+  },
+  "LSD": {
+    "unique_forms": [
+      "LSD",
+      "leaf senescence database"
+    ],
+    "total_mentions": 10,
+    "papers": [
+      24185698,
+      21707958
+    ]
+  },
+  "PlantRNA": {
+    "unique_forms": [
+      "PlantRNA"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      36196656
+    ]
+  },
+  "StemMapper": {
+    "unique_forms": [
+      "StemMapper",
+      "a curated gene expression database for stem cell lineage analysis"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      29045725
+    ]
+  },
+  "Reactome": {
+    "unique_forms": [
+      "Reactome"
+    ],
+    "total_mentions": 12,
+    "papers": [
+      24243840,
+      33170273,
+      35037224,
+      29165610,
+      27799469
+    ]
+  },
+  "Gramene": {
+    "unique_forms": [
+      "Gramene"
+    ],
+    "total_mentions": 9,
+    "papers": [
+      33170273,
+      29165610,
+      27799469
+    ]
+  },
+  "HACER": {
+    "unique_forms": [
+      "HACER",
+      "an atlas of human active enhancers to interpret regulatory variants"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      30247654
+    ]
+  },
+  "CAUSALdb": {
+    "unique_forms": [
+      "CAUSALdb"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      31691819
+    ]
+  },
+  "PGG.Han": {
+    "unique_forms": [
+      "PGG.Han",
+      "the Han Chinese genome database and analysis platform"
+    ],
+    "total_mentions": 7,
+    "papers": [
+      31584086
+    ]
+  },
+  "CVD2014": {
+    "unique_forms": [
+      "CVD2014"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      27164589
+    ]
+  },
+  "DisGeNET": {
+    "unique_forms": [
+      "DisGeNET"
+    ],
+    "total_mentions": 10,
+    "papers": [
+      27924018,
+      31680165
+    ]
+  },
+  "P-PAL": {
+    "unique_forms": [
+      "Procura-PALavras"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      29855811
+    ]
+  },
+  "SM-TF": {
+    "unique_forms": [
+      "A structural database of small molecule-transcription factor complexes"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      27010673
+    ]
+  },
+  "DrugBank": {
+    "unique_forms": [
+      "DrugBank"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      27010673,
+      27980099,
+      26504143
+    ]
+  },
+  "Biotinidase Gene Variants Registry": {
+    "unique_forms": [
+      "Biotinidase Gene Variants Registry"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      23550138
+    ]
+  },
+  "GeneCards": {
+    "unique_forms": [
+      "GeneCards"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      22155609
+    ]
+  },
+  "CELLPEDIA": {
+    "unique_forms": [
+      "CELLPEDIA"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      22039163
+    ]
+  },
+  "PSMD": {
+    "unique_forms": [
+      "PSMD",
+      "Pan-Species Microsatellite Database"
+    ],
+    "total_mentions": 7,
+    "papers": [
+      31599098
+    ]
+  },
+  "GreeNC": {
+    "unique_forms": [
+      "Green Non-Coding Database",
+      "GreeNC"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      30945200
+    ]
+  },
+  "EDomics": {
+    "unique_forms": [
+      "a comprehensive and comparative multi-omics database for animal evo-devo",
+      "EDomics"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      36318263
+    ]
+  },
+  "ChEBI": {
+    "unique_forms": [
+      "ChEBI"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      23109552,
+      26467479
+    ]
+  },
+  "PLMD": {
+    "unique_forms": [
+      "protein lysine modification database",
+      "PLMD"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      28529077
+    ]
+  },
+  "ODIAC": {
+    "unique_forms": [
+      "ODIAC"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      31662803
+    ]
+  },
+  "HDAM": {
+    "unique_forms": [
+      "Human Disease Associated Mutation",
+      "HDAM"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      23369322
+    ]
+  },
+  "HIVed": {
+    "unique_forms": [
+      "HIV expression database",
+      "HIVed"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      28358052
+    ]
+  },
+  "GlobalAMFungi": {
+    "unique_forms": [
+      "GlobalAMFungi"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      37781910
+    ]
+  },
+  "PceRBase": {
+    "unique_forms": [
+      "PceRBase",
+      "ceRNA database"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      28053167
+    ]
+  },
+  "tRex": {
+    "unique_forms": [
+      "tRex"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      29145635
+    ]
+  },
+  "dbPPT": {
+    "unique_forms": [
+      "database of Phosphorylation site in",
+      "dbPPT"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      25534750
+    ]
+  },
+  "SCDevDB": {
+    "unique_forms": [
+      "SCDevDB"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      31611909
+    ]
+  },
+  "HGD": {
+    "unique_forms": [
+      "HGD"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      36318261
+    ]
+  },
+  "QPN": {
+    "unique_forms": [
+      "QPN",
+      "The Quebec Parkinson Network"
+    ],
+    "total_mentions": 7,
+    "papers": [
+      31868683
+    ]
+  },
+  "ONQUADRO": {
+    "unique_forms": [
+      "a database of experimentally determined quadruplex structures",
+      "ONQUADRO"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      34986600
+    ]
+  },
+  "SpaceLID": {
+    "unique_forms": [
+      "SpaceLID"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      37833498
+    ]
+  },
+  "SORGOdb": {
+    "unique_forms": [
+      "Superoxide Reductase Gene",
+      "SORGOdb"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      21575179
+    ]
+  },
+  "DiaNat-DB": {
+    "unique_forms": [
+      "a molecular database of antidiabetic compounds from medicinal plants"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      35424427
+    ]
+  },
+  "KGVDB": {
+    "unique_forms": [
+      "KGVDB"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      23626002
+    ]
+  },
+  "COOLR": {
+    "unique_forms": [
+      "Cooperative Open Online Landslide Repository",
+      "COOLR"
+    ],
+    "total_mentions": 10,
+    "papers": [
+      31269035
+    ]
+  },
+  "SILVA": {
+    "unique_forms": [
+      "SILVA"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      24293649
+    ]
+  },
+  "RDP": {
+    "unique_forms": [
+      "Ribosomal Database Project",
+      "RDP"
+    ],
+    "total_mentions": 9,
+    "papers": [
+      24288368,
+      24293649
+    ]
+  },
+  "PolySac3DB": {
+    "unique_forms": [
+      "PolySac3DB",
+      "an annotated data base of 3 dimensional structures of polysaccharides"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      23151233
+    ]
+  },
+  "AgriSeqDB": {
+    "unique_forms": [
+      "AgriSeqDB"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      30231853
+    ]
+  },
+  "MetaNetX": {
+    "unique_forms": [
+      "MetaNetX"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      26527720,
+      33156326
+    ]
+  },
+  "wwPDB": {
+    "unique_forms": [
+      "wwPDB"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      27450113
+    ]
+  },
+  "CSDB": {
+    "unique_forms": [
+      "CSDB",
+      "Carbohydrate Structure Database"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      30759212
+    ]
+  },
+  "StaphyloBase": {
+    "unique_forms": [
+      "a specialized genomic resource for the staphylococcal research community",
+      "StaphyloBase"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      24578355
+    ]
+  },
+  "dbAQP-SNP": {
+    "unique_forms": [
+      "a database of missense single-nucleotide polymorphisms in human aquaporins"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      36913438
+    ]
+  },
+  "ProTherm": {
+    "unique_forms": [
+      "ProTherm"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      27115628
+    ]
+  },
+  "TiPs": {
+    "unique_forms": [
+      "TiPs",
+      "a database of therapeutic targets in pathogens and associated tools"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      23698860
+    ]
+  },
+  "JuncDB": {
+    "unique_forms": [
+      "an exon-exon junction database",
+      "JuncDB"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      26519469
+    ]
+  },
+  "ProbResist": {
+    "unique_forms": [
+      "a database for drug-resistant probiotic bacteria",
+      "ProbResist"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      35962763
+    ]
+  },
+  "AmphibiaChina": {
+    "unique_forms": [
+      "an online database of Chinese Amphibians",
+      "AmphibiaChina"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      26828034
+    ]
+  },
+  "UCSC Genome Browser": {
+    "unique_forms": [
+      "UCSC Genome Browser"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      32976578,
+      23193274,
+      28137767
+    ]
+  },
+  "PID": {
+    "unique_forms": [
+      "PID"
+    ],
+    "total_mentions": 12,
+    "papers": [
+      23607573,
+      31559014,
+      32076423
+    ]
+  },
+  "CCGD": {
+    "unique_forms": [
+      "Candidate Cancer Gene Database",
+      "CCGD"
+    ],
+    "total_mentions": 8,
+    "papers": [
+      25190456,
+      30208340
+    ]
+  },
+  "CCGD-ESCC": {
+    "unique_forms": [
+      "Chinese Cancer Genomic Database-Esophageal Squamous Cell Carcinoma"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      30208340
+    ]
+  },
+  "eQTL": {
+    "unique_forms": [
+      "eQTL"
+    ],
+    "total_mentions": 8,
+    "papers": [
+      31410488,
+      30371817,
+      30208340
+    ]
+  },
+  "SoyProDB": {
+    "unique_forms": [
+      "SoyProDB",
+      "soybean protein database"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      23423175
+    ]
+  },
+  "PTMint": {
+    "unique_forms": [
+      "PTMint"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      36548389
+    ]
+  },
+  "G4Bank": {
+    "unique_forms": [
+      "A database of experimentally identified DNA\u00a0G-quadruplex sequences",
+      "G4Bank"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      37389723
+    ]
+  },
+  "TGRD": {
+    "unique_forms": [
+      "TGRD",
+      "Tomato Genomic Resources Database"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      24466070
+    ]
+  },
+  "CMAP": {
+    "unique_forms": [
+      "CMAP"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      24466070
+    ]
+  },
+  "NvERTx": {
+    "unique_forms": [
+      "NvERTx"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      29739837
+    ]
+  },
+  "REGULATOR": {
+    "unique_forms": [
+      "REGULATOR"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      25880930
+    ]
+  },
+  "ASFVdb": {
+    "unique_forms": [
+      "ASFVdb",
+      "African swine fever virus database"
+    ],
+    "total_mentions": 7,
+    "papers": [
+      32294195
+    ]
+  },
+  "ICBcomb": {
+    "unique_forms": [
+      "ICBcomb",
+      "a comprehensive expression database for immune checkpoint blockade combination therapy"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      38095856
+    ]
+  },
+  "BioSamples": {
+    "unique_forms": [
+      "BioSample Database"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      22096232
+    ]
+  },
+  "ArrayExpress": {
+    "unique_forms": [
+      "ArrayExpress"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      22096232
+    ]
+  },
+  "PRIDE": {
+    "unique_forms": [
+      "PRIDE"
+    ],
+    "total_mentions": 11,
+    "papers": [
+      22096232,
+      30395289,
+      29140531
+    ]
+  },
+  "BYKdb": {
+    "unique_forms": [
+      "BYKdb",
+      "Bacterial protein tYrosine Kinase database"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      22080550
+    ]
+  },
+  "UniProtKB": {
+    "unique_forms": [
+      "Universal Protein Resource",
+      "UniProtKB"
+    ],
+    "total_mentions": 8,
+    "papers": [
+      33237286,
+      22080550,
+      25522231,
+      24253303,
+      30887928,
+      22123736
+    ]
+  },
+  "GPDE": {
+    "unique_forms": [
+      "Griss Proteomics Database Engine",
+      "GPDE"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      21337704
+    ]
+  },
+  "cncRNAdb": {
+    "unique_forms": [
+      "cncRNAdb"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      33010163
+    ]
+  },
+  "PCoM-DB": {
+    "unique_forms": [
+      "protein co-migration database"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      28011869
+    ]
+  },
+  "MarkerDB": {
+    "unique_forms": [
+      "an online database of molecular biomarkers",
+      "MarkerDB"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      33245771
+    ]
+  },
+  "BoMiProt": {
+    "unique_forms": [
+      "BoMiProt",
+      "A database of bovine milk proteins"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      31958638
+    ]
+  },
+  "BloodChIP": {
+    "unique_forms": [
+      "BloodChIP"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      24185696
+    ]
+  },
+  "PlantcircBase": {
+    "unique_forms": [
+      "PlantcircBase"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      35637632
+    ]
+  },
+  "DFL": {
+    "unique_forms": [
+      "DFL",
+      "Fish Library"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      22493695
+    ]
+  },
+  "WGVD": {
+    "unique_forms": [
+      "Wheat Genome Variation Database",
+      "WGVD"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      33181826
+    ]
+  },
+  "DruGeVar": {
+    "unique_forms": [
+      "DruGeVar"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      25228099
+    ]
+  },
+  "GPIeR": {
+    "unique_forms": [
+      "Pharmacogenomic",
+      "Pharmacogenomics"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      25228099,
+      34387941
+    ]
+  },
+  "PODB": {
+    "unique_forms": [
+      "Plant Organelles Database",
+      "PODB"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      24092884
+    ]
+  },
+  "msRepDB": {
+    "unique_forms": [
+      "msRepDB",
+      "a comprehensive repetitive sequence database of over 80 000 species"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      34850956
+    ]
+  },
+  "ITS2": {
+    "unique_forms": [
+      "ITS2"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      22786784
+    ]
+  },
+  "ITSoneDB": {
+    "unique_forms": [
+      "ITSoneDB"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      22786784
+    ]
+  },
+  "Drug2Gene": {
+    "unique_forms": [
+      "Drug2Gene",
+      "an exhaustive resource to explore effectively the drug-target relation network"
+    ],
+    "total_mentions": 7,
+    "papers": [
+      24618344
+    ]
+  },
+  "OCELOT": {
+    "unique_forms": [
+      "OCELOT",
+      "Organic Crystals in Electronic and"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      34241085
+    ]
+  },
+  "HFBD": {
+    "unique_forms": [
+      "HF biomarker knowledge database",
+      "HFBD"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      34164644
+    ]
+  },
+  "NetPath": {
+    "unique_forms": [
+      "NetPath"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      21959865
+    ]
+  },
+  "MitProNet": {
+    "unique_forms": [
+      "A knowledgebase and analysis platform of proteome",
+      "MitProNet"
+    ],
+    "total_mentions": 8,
+    "papers": [
+      25347823
+    ]
+  },
+  "VESPUCCI": {
+    "unique_forms": [
+      "VESPUCCI"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      35283898
+    ]
+  },
+  "FusoPortal": {
+    "unique_forms": [
+      "FusoPortal"
+    ],
+    "total_mentions": 7,
+    "papers": [
+      29976644
+    ]
+  },
+  "DeOri": {
+    "unique_forms": [
+      "DeOri",
+      "Database of Eukaryotic ORIs"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      22467915
+    ]
+  },
+  "ThalInd": {
+    "unique_forms": [
+      "ThalInd"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      21520336
+    ]
+  },
+  "HGMD": {
+    "unique_forms": [
+      "HGMD",
+      "Human Gene Mutation Database"
+    ],
+    "total_mentions": 14,
+    "papers": [
+      21520336,
+      28349240,
+      22948725
+    ]
+  },
+  "DSDatlas": {
+    "unique_forms": [
+      "disorders of",
+      "DSDatlas"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      21520336,
+      35560008
+    ]
+  },
+  "LOVD": {
+    "unique_forms": [
+      "LOVD"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      21520336
+    ]
+  },
+  "LAHEDES": {
+    "unique_forms": [
+      "LAGLIDADG",
+      "LAHEDES"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      22570419
+    ]
+  },
+  "Rice DB": {
+    "unique_forms": [
+      "an Oryza Information Portal linking annotation"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      24147765
+    ]
+  },
+  "PathoPhenoDB": {
+    "unique_forms": [
+      "PathoPhenoDB"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      31160594
+    ]
+  },
+  "GenomeSpace": {
+    "unique_forms": [
+      "GenomeSpace"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      26780094
+    ]
+  },
+  "OLIDA": {
+    "unique_forms": [
+      "OLIDA"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      35411390
+    ]
+  },
+  "SwissSidechain": {
+    "unique_forms": [
+      "a molecular and structural database of non-natural sidechains",
+      "SwissSidechain"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      23104376
+    ]
+  },
+  "CTD": {
+    "unique_forms": [
+      "CTD",
+      "Comparative Toxicogenomics Database"
+    ],
+    "total_mentions": 20,
+    "papers": [
+      29351546,
+      25326323,
+      33068428
+    ]
+  },
+  "LiverWiki": {
+    "unique_forms": [
+      "a wiki-based database for human liver",
+      "LiverWiki"
+    ],
+    "total_mentions": 8,
+    "papers": [
+      29029599
+    ]
+  },
+  "Human Eye Transcriptome Atlas": {
+    "unique_forms": [
+      "Human Eye Transcriptome Atlas"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      35124170
+    ]
+  },
+  "SmedGD": {
+    "unique_forms": [
+      "SmedGD",
+      "Schmidtea mediterranea Genome Database"
+    ],
+    "total_mentions": 7,
+    "papers": [
+      26138588
+    ]
+  },
+  "DRscDB": {
+    "unique_forms": [
+      "DRscDB"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      33995899
+    ]
+  },
+  "CamRegBase": {
+    "unique_forms": [
+      "CamRegBase",
+      "a gene regulation database for the biofuel crop"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      33306801
+    ]
+  },
+  "AREsite2": {
+    "unique_forms": [
+      "AREsite2"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      26602692
+    ]
+  },
+  "GrainGenes": {
+    "unique_forms": [
+      "GrainGenes"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      35616118
+    ]
+  },
+  "ShrimpGPAT": {
+    "unique_forms": [
+      "Shrimp Gene and Protein Annotation Tool",
+      "ShrimpGPAT"
+    ],
+    "total_mentions": 7,
+    "papers": [
+      24952385
+    ]
+  },
+  "JASPAR": {
+    "unique_forms": [
+      "JASPAR"
+    ],
+    "total_mentions": 7,
+    "papers": [
+      31665425,
+      31701148
+    ]
+  },
+  "CORE": {
+    "unique_forms": [
+      "CORE"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      31701148
+    ]
+  },
+  "LnChrom": {
+    "unique_forms": [
+      "LnChrom"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      29788225
+    ]
+  },
+  "ECODAB": {
+    "unique_forms": [
+      "Escherichia coli O-antigen database",
+      "ECODAB"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      25352573
+    ]
+  },
+  "CACG": {
+    "unique_forms": [
+      "a database for comparative analysis of conjoined genes",
+      "CACG"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      22584068
+    ]
+  },
+  "MultitaskProtDB": {
+    "unique_forms": [
+      "a database of multitasking proteins",
+      "MultitaskProtDB"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      24253302
+    ]
+  },
+  "Kalium": {
+    "unique_forms": [
+      "Kalium"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      37682529
+    ]
+  },
+  "UCL LDLR": {
+    "unique_forms": [
+      "lipoprotein receptor gene familial hypercholesterolemia variant database"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      22881376
+    ]
+  },
+  "COMBATdb": {
+    "unique_forms": [
+      "COMBATdb"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      36353986
+    ]
+  },
+  "iCSDB": {
+    "unique_forms": [
+      "iCSDB",
+      "an integrated database of CRISPR screens"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      33137185
+    ]
+  },
+  "BioGRID": {
+    "unique_forms": [
+      "BioGRID",
+      "Biological General Repository for Interaction Datasets"
+    ],
+    "total_mentions": 10,
+    "papers": [
+      33137185,
+      27980099
+    ]
+  },
+  "SIGNOR": {
+    "unique_forms": [
+      "SIGNOR",
+      "SIGnaling Network Open Resource"
+    ],
+    "total_mentions": 8,
+    "papers": [
+      28654729
+    ]
+  },
+  "UniLectin3D": {
+    "unique_forms": [
+      "UniLectin3D"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      30239928
+    ]
+  },
+  "OptoBase": {
+    "unique_forms": [
+      "OptoBase",
+      "A Web Platform for Molecular Optogenetics"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      29913065
+    ]
+  },
+  "iCAZyGFADB": {
+    "unique_forms": [
+      "an insect CAZyme and\u00a0gene function annotation database",
+      "iCAZyGFADB"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      38015957
+    ]
+  },
+  "HOCTARdb": {
+    "unique_forms": [
+      "HOCTARdb"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      21435384
+    ]
+  },
+  "DAMPD": {
+    "unique_forms": [
+      "Dragon Antimicrobial Peptide Database",
+      "DAMPD"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      22110032
+    ]
+  },
+  "antimicrobial peptide database": {
+    "unique_forms": [
+      "antimicrobial peptide database"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      22110032
+    ]
+  },
+  "ERISdb": {
+    "unique_forms": [
+      "a database of plant splice sites and splicing signals",
+      "ERISdb"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      23299413
+    ]
+  },
+  "CPAD": {
+    "unique_forms": [
+      "CPAD",
+      "Curated Protein Aggregation Database"
+    ],
+    "total_mentions": 9,
+    "papers": [
+      27043825
+    ]
+  },
+  "CYCLoPs": {
+    "unique_forms": [
+      "Collection of Yeast Cells Localization Patterns",
+      "CYCLoPs"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      26048563
+    ]
+  },
+  "PAGER": {
+    "unique_forms": [
+      "PAGER",
+      "constructing PAGs and new PAG-PAG relationships for network biology"
+    ],
+    "total_mentions": 8,
+    "papers": [
+      26072489
+    ]
+  },
+  "Isotopo": {
+    "unique_forms": [
+      "Isotopo"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      25204646
+    ]
+  },
+  "QTLdb": {
+    "unique_forms": [
+      "QTLdb"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      34850103
+    ]
+  },
+  "CorrDB": {
+    "unique_forms": [
+      "CorrDB"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      34850103
+    ]
+  },
+  "TropGeneDB": {
+    "unique_forms": [
+      "TropGeneDB"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      23161680
+    ]
+  },
+  "GTR": {
+    "unique_forms": [
+      "GTR",
+      "Testing Registry"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      23193275
+    ]
+  },
+  "GPHR": {
+    "unique_forms": [
+      "GPHR"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      23798574
+    ]
+  },
+  "GPCRdb": {
+    "unique_forms": [
+      "GPCRdb"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      36395823
+    ]
+  },
+  "GENI-DB": {
+    "unique_forms": [
+      "a database of global events for epidemic intelligence"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      22383735
+    ]
+  },
+  "CSCD2": {
+    "unique_forms": [
+      "CSCD2"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      34551437
+    ]
+  },
+  "AmyLoad": {
+    "unique_forms": [
+      "AmyLoad",
+      "website dedicated to amyloidogenic protein fragments"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      26088800
+    ]
+  },
+  "SCNProDB": {
+    "unique_forms": [
+      "SCNProDB",
+      "A database for the identification of soybean cyst nematode proteins"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      25097385
+    ]
+  },
+  "TBPP": {
+    "unique_forms": [
+      "TBPP"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      31838261
+    ]
+  },
+  "TB DEPOT": {
+    "unique_forms": [
+      "Data Exploration Portal"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      31838261
+    ]
+  },
+  "TRustDB": {
+    "unique_forms": [
+      "TRustDB"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      36394420
+    ]
+  },
+  "Milletdb": {
+    "unique_forms": [
+      "Milletdb"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      37530223
+    ]
+  },
+  "Antagomir": {
+    "unique_forms": [
+      "Antagomir"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      21904438
+    ]
+  },
+  "MicrobPad MD": {
+    "unique_forms": [
+      "microbial pathogen diagnostic methods database"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      23178820
+    ]
+  },
+  "DBCOVP": {
+    "unique_forms": [
+      "DBCOVP",
+      "A database of coronavirus virulent glycoproteins"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      33276297
+    ]
+  },
+  "TAIR": {
+    "unique_forms": [
+      "TAIR",
+      "Arabidopsis Information Resource"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      24185698,
+      36200836
+    ]
+  },
+  "GLASS": {
+    "unique_forms": [
+      "a comprehensive database for experimentally validated GPCR-ligand associations",
+      "GLASS"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      25971743
+    ]
+  },
+  "OpenSRH": {
+    "unique_forms": [
+      "OpenSRH",
+      "optimizing brain tumor surgery using intraoperative stimulated Raman histology"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      37082565
+    ]
+  },
+  "SoyBase": {
+    "unique_forms": [
+      "SoyBase"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      33264401
+    ]
+  },
+  "ACSR": {
+    "unique_forms": [
+      "AIDS and Cancer Specimen Resource",
+      "ACSR"
+    ],
+    "total_mentions": 8,
+    "papers": [
+      20949389
+    ]
+  },
+  "KIR": {
+    "unique_forms": [
+      "Kiwifruit Information Resource",
+      "KIR"
+    ],
+    "total_mentions": 8,
+    "papers": [
+      23180793,
+      26656885
+    ]
+  },
+  "PDID": {
+    "unique_forms": [
+      "Protein-Drug Interaction Database",
+      "PDID"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      26504143
+    ]
+  },
+  "COGVIC": {
+    "unique_forms": [
+      "COGVIC",
+      "Catalog of Germline Variants in"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      34964846
+    ]
+  },
+  "CyanoBase": {
+    "unique_forms": [
+      "CyanoBase"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      24275496
+    ]
+  },
+  "KNApSAcK": {
+    "unique_forms": [
+      "KNApSAcK"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      23292603
+    ]
+  },
+  "HSP": {
+    "unique_forms": [
+      "Human Salivary Proteome Wiki",
+      "HSP"
+    ],
+    "total_mentions": 8,
+    "papers": [
+      34032471
+    ]
+  },
+  "FVD": {
+    "unique_forms": [
+      "FVD",
+      "The fish-associated virus database"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      29126995
+    ]
+  },
+  "DDTRP": {
+    "unique_forms": [
+      "DDTRP",
+      "Database of Drug Targets for Resistant Pathogens"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      21938213
+    ]
+  },
+  "iEKPD": {
+    "unique_forms": [
+      "iEKPD"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      30380109
+    ]
+  },
+  "EKPD": {
+    "unique_forms": [
+      "EKPD"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      30380109
+    ]
+  },
+  "MirtronDB": {
+    "unique_forms": [
+      "MirtronDB",
+      "a mirtron knowledge base"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      30874795
+    ]
+  },
+  "KUPKB": {
+    "unique_forms": [
+      "a kidney and urinary pathway",
+      "KUPKB"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      21624162
+    ]
+  },
+  "Northeast India Helminth Parasite Information Database": {
+    "unique_forms": [
+      "Northeast India Helminth Parasite Information Database"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      27285615
+    ]
+  },
+  "BrainEXP": {
+    "unique_forms": [
+      "BrainEXP",
+      "Brain EXPression Database"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      29985970
+    ]
+  },
+  "BacDive": {
+    "unique_forms": [
+      "Bacterial Diversity Metadatabase",
+      "BacDive"
+    ],
+    "total_mentions": 13,
+    "papers": [
+      26424852,
+      24214959
+    ]
+  },
+  "MetaboLights": {
+    "unique_forms": [
+      "MetaboLights"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      23109552
+    ]
+  },
+  "CysModDB": {
+    "unique_forms": [
+      "CysModDB"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      36305460
+    ]
+  },
+  "Vaxar": {
+    "unique_forms": [
+      "Vaxar"
+    ],
+    "total_mentions": 7,
+    "papers": [
+      27053566
+    ]
+  },
+  "BCLncRDB": {
+    "unique_forms": [
+      "a comprehensive database of LncRNAs associated with breast cancer",
+      "BCLncRDB"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      37227514
+    ]
+  },
+  "Horse Single Nucleotide Polymorphism and Expression Database": {
+    "unique_forms": [
+      "Horse Single Nucleotide Polymorphism and Expression Database"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      25178365
+    ]
+  },
+  "BRENDA": {
+    "unique_forms": [
+      "BRENDA"
+    ],
+    "total_mentions": 8,
+    "papers": [
+      33211880,
+      28420402
+    ]
+  },
+  "ICE": {
+    "unique_forms": [
+      "ICE",
+      "Integrated Chemical Environment"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      28557712
+    ]
+  },
+  "HGTree": {
+    "unique_forms": [
+      "database of horizontally transferred genes determined by tree reconciliation",
+      "HGTree"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      26578597
+    ]
+  },
+  "jMorp": {
+    "unique_forms": [
+      "jMorp",
+      "Japanese Multi Omics Reference Panel"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      33179747
+    ]
+  },
+  "MeRy-B": {
+    "unique_forms": [
+      "a web knowledgebase for the storage"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      21668943
+    ]
+  },
+  "NLDB": {
+    "unique_forms": [
+      "NLDB",
+      "Natural Ligand DataBase"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      27530928
+    ]
+  },
+  "EnzyMine": {
+    "unique_forms": [
+      "EnzyMine"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      33002112
+    ]
+  },
+  "REXdb": {
+    "unique_forms": [
+      "REXdb"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      30622655
+    ]
+  },
+  "FlyExpress": {
+    "unique_forms": [
+      "FlyExpress"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      21994220
+    ]
+  },
+  "ScerTF": {
+    "unique_forms": [
+      "ScerTF"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      22140105
+    ]
+  },
+  "NAFLDkb": {
+    "unique_forms": [
+      "NAFLDkb"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      37167092
+    ]
+  },
+  "TFSyntax": {
+    "unique_forms": [
+      "a database of transcription factors binding syntax in mammalian genomes",
+      "TFSyntax"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      36200824
+    ]
+  },
+  "iUUCD": {
+    "unique_forms": [
+      "iUUCD"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      29106644
+    ]
+  },
+  "UUCD": {
+    "unique_forms": [
+      "a family-based database of ubiquitin and ubiquitin-like conjugation",
+      "UUCD"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      23172288,
+      29106644
+    ]
+  },
+  "EctomycorrhizalDB": {
+    "unique_forms": [
+      "EctomycorrhizalDB"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      22359444
+    ]
+  },
+  "FANTOM5": {
+    "unique_forms": [
+      "FANTOM5"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      27402679
+    ]
+  },
+  "SSTAR": {
+    "unique_forms": [
+      "SSTAR",
+      "Functional Annotation of the Mammalian Genome project"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      27402679
+    ]
+  },
+  "LSE-Sign": {
+    "unique_forms": [
+      "A lexical database for Spanish Sign Language"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      25630312
+    ]
+  },
+  "HuVarBase": {
+    "unique_forms": [
+      "HuVarBase"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      30703169
+    ]
+  },
+  "AutophagySMDB": {
+    "unique_forms": [
+      "Autophagy Small Molecule Database",
+      "AutophagySMDB"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      30669929
+    ]
+  },
+  "DoriC": {
+    "unique_forms": [
+      "DoriC"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      30364951
+    ]
+  },
+  "MSV3d": {
+    "unique_forms": [
+      "Database of human MisSense Variants",
+      "MSV3d"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      22491796
+    ]
+  },
+  "dbSNP": {
+    "unique_forms": [
+      "dbSNP"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      22491796
+    ]
+  },
+  "SISTR": {
+    "unique_forms": [
+      "Salmonella In Silico Typing Resource",
+      "SISTR"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      26800248
+    ]
+  },
+  "ProfileDB": {
+    "unique_forms": [
+      "ProfileDB",
+      "a resource for proteomics and cross-omics biomarker discovery"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      24270047
+    ]
+  },
+  "PolyASite": {
+    "unique_forms": [
+      "PolyASite"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      31617559
+    ]
+  },
+  "PoSSuM": {
+    "unique_forms": [
+      "PoSSuM",
+      "PoSSuM drug search"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      25404129
+    ]
+  },
+  "ChIPBase": {
+    "unique_forms": [
+      "ChIPBase"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      23161675
+    ]
+  },
+  "Pleurochrysome": {
+    "unique_forms": [
+      "Pleurochrysome"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      26746174
+    ]
+  },
+  "ADmeth": {
+    "unique_forms": [
+      "ADmeth"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      35617175
+    ]
+  },
+  "PASS": {
+    "unique_forms": [
+      "PASS"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      25435546
+    ]
+  },
+  "Plant-PrAS": {
+    "unique_forms": [
+      "Plant Protein Annotation Suite database"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      25435546
+    ]
+  },
+  "ICEberg": {
+    "unique_forms": [
+      "ICEberg"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      30407568
+    ]
+  },
+  "TOPDOM": {
+    "unique_forms": [
+      "database of conservatively located domains and motifs in proteins",
+      "TOPDOM"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      27153630
+    ]
+  },
+  "SynBioLGDB": {
+    "unique_forms": [
+      "a resource for experimentally validated logic gates in synthetic biology",
+      "SynBioLGDB"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      25627341
+    ]
+  },
+  "OOCDB": {
+    "unique_forms": [
+      "OOCDB"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      36640825
+    ]
+  },
+  "PubChem": {
+    "unique_forms": [
+      "PubChem"
+    ],
+    "total_mentions": 9,
+    "papers": [
+      35037224,
+      30371825,
+      25451822
+    ]
+  },
+  "geoBoundaries": {
+    "unique_forms": [
+      "geoBoundaries Global Administrative Database",
+      "geoBoundaries"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      32330167
+    ]
+  },
+  "CPASS": {
+    "unique_forms": [
+      "CPASS"
+    ],
+    "total_mentions": 15,
+    "papers": [
+      21269480
+    ]
+  },
+  "BSM-Arc": {
+    "unique_forms": [
+      "Biological Structure Model Archive"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      32026396
+    ]
+  },
+  "HIR": {
+    "unique_forms": [
+      "HIR"
+    ],
+    "total_mentions": 8,
+    "papers": [
+      33677507
+    ]
+  },
+  "PANTHER": {
+    "unique_forms": [
+      "PANTHER"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      33677507
+    ]
+  },
+  "DAVID": {
+    "unique_forms": [
+      "DAVID"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      33677507
+    ]
+  },
+  "TIGRFAMs": {
+    "unique_forms": [
+      "TIGRFAMs"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      23197656
+    ]
+  },
+  "Verdant": {
+    "unique_forms": [
+      "automated annotation"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      23197656
+    ]
+  },
+  "MiREDiBase": {
+    "unique_forms": [
+      "MiREDiBase"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      34349127
+    ]
+  },
+  "StimulStat": {
+    "unique_forms": [
+      "StimulStat",
+      "A lexical database for Russian"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      29218589
+    ]
+  },
+  "PLBD": {
+    "unique_forms": [
+      "PLBD"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      37290059
+    ]
+  },
+  "VectorBase": {
+    "unique_forms": [
+      "VectorBase"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      25510499
+    ]
+  },
+  "IRD": {
+    "unique_forms": [
+      "IRD",
+      "Influenza Research Database"
+    ],
+    "total_mentions": 12,
+    "papers": [
+      22260278,
+      27679478
+    ]
+  },
+  "sORFs.org": {
+    "unique_forms": [
+      "a repository of small ORFs identified by ribosome profiling",
+      "sORFs.org"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      29140531
+    ]
+  },
+  "SGWHC": {
+    "unique_forms": [
+      "SGWHC",
+      "Sex and Gender Women's Health Collaborative"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      23724943
+    ]
+  },
+  "IID": {
+    "unique_forms": [
+      "IID",
+      "Integrated Interactions Database"
+    ],
+    "total_mentions": 9,
+    "papers": [
+      26516188
+    ]
+  },
+  "EmAtlas": {
+    "unique_forms": [
+      "EmAtlas",
+      "a comprehensive atlas for exploring spatiotemporal activation in mammalian embryogenesis"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      36189903
+    ]
+  },
+  "tModBase": {
+    "unique_forms": [
+      "tModBase"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      36408909
+    ]
+  },
+  "FireDB": {
+    "unique_forms": [
+      "FireDB",
+      "a compendium of biological and pharmacologically relevant ligands"
+    ],
+    "total_mentions": 9,
+    "papers": [
+      24243844
+    ]
+  },
+  "piRBase": {
+    "unique_forms": [
+      "piRBase"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      30371818
+    ]
+  },
+  "TISCH": {
+    "unique_forms": [
+      "TISCH",
+      "Tumor Immune Single Cell Hub"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      33179754
+    ]
+  },
+  "EVpedia": {
+    "unique_forms": [
+      "EVpedia",
+      "a community web portal for extracellular vesicles research"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      25388151
+    ]
+  },
+  "SCOP": {
+    "unique_forms": [
+      "Structural Classification of Proteins",
+      "SCOP"
+    ],
+    "total_mentions": 7,
+    "papers": [
+      22800569,
+      31648227,
+      30357403
+    ]
+  },
+  "PCBOST": {
+    "unique_forms": [
+      "Protein Classification Based on Structural Trees",
+      "PCBOST"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      22800569
+    ]
+  },
+  "GOA": {
+    "unique_forms": [
+      "GOA"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      22123736
+    ]
+  },
+  "QSDB": {
+    "unique_forms": [
+      "Quorum Sensing Database",
+      "QSDB"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      34559210
+    ]
+  },
+  "TargetMine": {
+    "unique_forms": [
+      "TargetMine"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      21408081
+    ]
+  },
+  "BacWGSTdb": {
+    "unique_forms": [
+      "BacWGSTdb"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      26433226
+    ]
+  },
+  "DFRMLI": {
+    "unique_forms": [
+      "Dana-Farber Repository for",
+      "DFRMLI"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      21782820
+    ]
+  },
+  "TOMATOMET": {
+    "unique_forms": [
+      "TOMATOMET"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      33969254
+    ]
+  },
+  "AnnoLnc": {
+    "unique_forms": [
+      "AnnoLnc"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      33326073
+    ]
+  },
+  "SDC": {
+    "unique_forms": [
+      "SDC"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      35284049
+    ]
+  },
+  "3DSNP": {
+    "unique_forms": [
+      "3DSNP"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      34723317
+    ]
+  },
+  "SEdb": {
+    "unique_forms": [
+      "SEdb",
+      "comprehensive human super-enhancer database"
+    ],
+    "total_mentions": 7,
+    "papers": [
+      30371817
+    ]
+  },
+  "PediCXR": {
+    "unique_forms": [
+      "An open"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      34127402
+    ]
+  },
+  "Database of Instruments for Resource Use Measurement": {
+    "unique_forms": [
+      "Database of Instruments for Resource Use Measurement"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      23529715
+    ]
+  },
+  "A2MDB": {
+    "unique_forms": [
+      "Aspergillus Secondary Metabolites Database",
+      "A2MDB"
+    ],
+    "total_mentions": 8,
+    "papers": [
+      28779078
+    ]
+  },
+  "UPRome": {
+    "unique_forms": [
+      "UPRome"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      35875835
+    ]
+  },
+  "SpectraBank": {
+    "unique_forms": [
+      "SpectraBank"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      22821489
+    ]
+  },
+  "MTCID": {
+    "unique_forms": [
+      "MTCID"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      22209237
+    ]
+  },
+  "DbMDR": {
+    "unique_forms": [
+      "DbMDR"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      21781283
+    ]
+  },
+  "MDR": {
+    "unique_forms": [
+      "MDR"
+    ],
+    "total_mentions": 9,
+    "papers": [
+      21781283
+    ]
+  },
+  "VTO": {
+    "unique_forms": [
+      "Vertebrate Taxonomy Ontology",
+      "VTO"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      24267744
+    ]
+  },
+  "Phenoscape KB": {
+    "unique_forms": [
+      "Phenoscape Knowledgebase"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      24267744
+    ]
+  },
+  "LNCipedia": {
+    "unique_forms": [
+      "LNCipedia"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      30371849
+    ]
+  },
+  "Genome Composition Database": {
+    "unique_forms": [
+      "Genome Composition Database"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      22417913
+    ]
+  },
+  "PolymiRTS": {
+    "unique_forms": [
+      "PolymiRTS"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      24163105
+    ]
+  },
+  "InSexBase": {
+    "unique_forms": [
+      "InSexBase"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      33507270
+    ]
+  },
+  "ListeriaBase": {
+    "unique_forms": [
+      "ListeriaBase"
+    ],
+    "total_mentions": 8,
+    "papers": [
+      26444974
+    ]
+  },
+  "SomaMutDB": {
+    "unique_forms": [
+      "SomaMutDB",
+      "a database of somatic mutations in normal human tissues"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      34634815
+    ]
+  },
+  "CarbonylDB": {
+    "unique_forms": [
+      "CarbonylDB",
+      "a curated data-resource of protein carbonylation sites"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      29509874
+    ]
+  },
+  "MethMotif": {
+    "unique_forms": [
+      "MethMotif"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      30380113
+    ]
+  },
+  "PhenoDB": {
+    "unique_forms": [
+      "PhenoDB"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      23378291
+    ]
+  },
+  "dbGaP": {
+    "unique_forms": [
+      "dbGaP"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      23378291
+    ]
+  },
+  "HeteroMeth": {
+    "unique_forms": [
+      "HeteroMeth",
+      "A Database of Cell-to-cell Heterogeneity in DNA Methylation"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      30196115
+    ]
+  },
+  "CoV3D": {
+    "unique_forms": [
+      "CoV3D",
+      "a database of high resolution coronavirus protein structures"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      32890396
+    ]
+  },
+  "ACNPD": {
+    "unique_forms": [
+      "ACNPD",
+      "anti-cancer natural product database"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      34497528
+    ]
+  },
+  "Express": {
+    "unique_forms": [
+      "Express"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      29337142
+    ]
+  },
+  "DsTRD": {
+    "unique_forms": [
+      "Danshen Transcriptional Resource Database",
+      "DsTRD"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      26909679
+    ]
+  },
+  "GreenCircRNA": {
+    "unique_forms": [
+      "GreenCircRNA",
+      "a database for plant circRNAs that act as miRNA decoys"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      32510565
+    ]
+  },
+  "Phytozome": {
+    "unique_forms": [
+      "Phytozome"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      26112452,
+      32510565
+    ]
+  },
+  "Cancer3D": {
+    "unique_forms": [
+      "Cancer3D"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      30407596
+    ]
+  },
+  "mesophotic.org": {
+    "unique_forms": [
+      "mesophotic.org",
+      "a repository for scientific information on mesophotic ecosystems"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      31836897
+    ]
+  },
+  "SkateBase": {
+    "unique_forms": [
+      "SkateBase"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      25309735
+    ]
+  },
+  "FHLdb": {
+    "unique_forms": [
+      "Familial Hemophagocytic",
+      "FHLdb"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      32076423
+    ]
+  },
+  "ClinVar": {
+    "unique_forms": [
+      "ClinVar"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      26582918,
+      32076423
+    ]
+  },
+  "gnomAD": {
+    "unique_forms": [
+      "Genome Aggregation Database",
+      "gnomAD"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      34859531,
+      32076423
+    ]
+  },
+  "CathaCyc": {
+    "unique_forms": [
+      "CathaCyc"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      23493402
+    ]
+  },
+  "CrossTope": {
+    "unique_forms": [
+      "CrossTope"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      23396301
+    ]
+  },
+  "realDB": {
+    "unique_forms": [
+      "realDB"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      30020436
+    ]
+  },
+  "UPB": {
+    "unique_forms": [
+      "Urinary Protein Biomarker",
+      "UPB"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      21876203
+    ]
+  },
+  "SmProt": {
+    "unique_forms": [
+      "small proteins database",
+      "SmProt"
+    ],
+    "total_mentions": 8,
+    "papers": [
+      28137767
+    ]
+  },
+  "WDSPdb": {
+    "unique_forms": [
+      "WDSPdb"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      25348404
+    ]
+  },
+  "AcetoBase": {
+    "unique_forms": [
+      "AcetoBase",
+      "a functional gene repository and database for formyltetrahydrofolate synthetase sequences"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      31832668
+    ]
+  },
+  "DOOR": {
+    "unique_forms": [
+      "DOOR"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      24214966
+    ]
+  },
+  "Yeast Phosphoinositide-Binding Proteins": {
+    "unique_forms": [
+      "Yeast Phosphoinositide-Binding Proteins"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      34285772
+    ]
+  },
+  "DegraBase": {
+    "unique_forms": [
+      "DegraBase"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      23264352
+    ]
+  },
+  "SMBP": {
+    "unique_forms": [
+      "Secondary Metabolite Bioinformatics Portal",
+      "SMBP"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      29156309
+    ]
+  },
+  "HProtDB": {
+    "unique_forms": [
+      "HProtDB",
+      "Halophile protein database"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      25468930
+    ]
+  },
+  "NucPosDB": {
+    "unique_forms": [
+      "NucPosDB"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      35061087
+    ]
+  },
+  "Plant-ImputeDB": {
+    "unique_forms": [
+      "an integrated multiple plant reference panel database for genotype imputation"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      33137192
+    ]
+  },
+  "CDD": {
+    "unique_forms": [
+      "CDD",
+      "Conserved Domain Database"
+    ],
+    "total_mentions": 7,
+    "papers": [
+      25414356
+    ]
+  },
+  "ImmunemiR": {
+    "unique_forms": [
+      "ImmunemiR"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      28124611
+    ]
+  },
+  "HMDD": {
+    "unique_forms": [
+      "HMDD"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      28124611
+    ]
+  },
+  "TopicalPdb": {
+    "unique_forms": [
+      "TopicalPdb",
+      "A database of topically delivered peptides"
+    ],
+    "total_mentions": 7,
+    "papers": [
+      29432422
+    ]
+  },
+  "HRGRN": {
+    "unique_forms": [
+      "HRGRN",
+      "A Graph Search-Empowered Integrative Database of Arabidopsis Signaling Transduction"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      26657893
+    ]
+  },
+  "Florabank1": {
+    "unique_forms": [
+      "Florabank1"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      22649282
+    ]
+  },
+  "PopHumanScan": {
+    "unique_forms": [
+      "the online catalog of human genome adaptation",
+      "PopHumanScan"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      30335169
+    ]
+  },
+  "PharmaKoVariome": {
+    "unique_forms": [
+      "PharmaKoVariome"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      36255213
+    ]
+  },
+  "SITVITWEB": {
+    "unique_forms": [
+      "SITVITWEB"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      22365971
+    ]
+  },
+  "dbMCS": {
+    "unique_forms": [
+      "for anti-Cancer drug Sensitivity",
+      "dbMCS"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      34314366
+    ]
+  },
+  "Chickspress": {
+    "unique_forms": [
+      "Chickspress",
+      "a resource for chicken gene expression"
+    ],
+    "total_mentions": 7,
+    "papers": [
+      31210271
+    ]
+  },
+  "PRIMOS": {
+    "unique_forms": [
+      "PRIMOS",
+      "Protein Interaction and Molecule Search"
+    ],
+    "total_mentions": 7,
+    "papers": [
+      23772554
+    ]
+  },
+  "SalivaDB": {
+    "unique_forms": [
+      "SalivaDB"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      36747479
+    ]
+  },
+  "VirusDB": {
+    "unique_forms": [
+      "VirusDB"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      29308007
+    ]
+  },
+  "PICKLES": {
+    "unique_forms": [
+      "PICKLES"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      36350677
+    ]
+  },
+  "TcoFBase": {
+    "unique_forms": [
+      "TcoFBase"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      34718747
+    ]
+  },
+  "PlantPhoneDB": {
+    "unique_forms": [
+      "PlantPhoneDB"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      35842742
+    ]
+  },
+  "ETCM": {
+    "unique_forms": [
+      "ETCM"
+    ],
+    "total_mentions": 8,
+    "papers": [
+      30365030
+    ]
+  },
+  "CyanoEXpress": {
+    "unique_forms": [
+      "CyanoEXpress"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      22829745
+    ]
+  },
+  "EpiFactors": {
+    "unique_forms": [
+      "EpiFactors"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      36350659
+    ]
+  },
+  "miRGate": {
+    "unique_forms": [
+      "a curated database of human"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      36350659
+    ]
+  },
+  "FuzDB": {
+    "unique_forms": [
+      "FuzDB"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      27794553
+    ]
+  },
+  "miREC": {
+    "unique_forms": [
+      "miREC"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      25889518
+    ]
+  },
+  "NBDB": {
+    "unique_forms": [
+      "Nucleotide binding database",
+      "NBDB"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      26507856
+    ]
+  },
+  "FAANG": {
+    "unique_forms": [
+      "FAANG",
+      "Functional Annotation of Animal Genomes"
+    ],
+    "total_mentions": 13,
+    "papers": [
+      34220930
+    ]
+  },
+  "MANET": {
+    "unique_forms": [
+      "metabolic Molecular Ancestry Networks",
+      "MANET"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      31648227
+    ]
+  },
+  "OlfactionBase": {
+    "unique_forms": [
+      "OlfactionBase",
+      "a repository to explore odors"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      34469532
+    ]
+  },
+  "cBioPortal": {
+    "unique_forms": [
+      "cBioPortal"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      23550210
+    ]
+  },
+  "GXB": {
+    "unique_forms": [
+      "GXB"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      31559014
+    ]
+  },
+  "CHDbase": {
+    "unique_forms": [
+      "CHDbase"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      35961607
+    ]
+  },
+  "NECTAR": {
+    "unique_forms": [
+      "Non-synonymous Enriched Coding muTation ARchive",
+      "NECTAR"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      24297257
+    ]
+  },
+  "JET2": {
+    "unique_forms": [
+      "JET2"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      27899675
+    ]
+  },
+  "Soybean Proteome Database": {
+    "unique_forms": [
+      "Soybean Proteome Database"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      22661982
+    ]
+  },
+  "MutEx": {
+    "unique_forms": [
+      "a multifaceted gateway for exploring integrative pan-cancer genomic data",
+      "MutEx"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      31588509
+    ]
+  },
+  "HotRegion": {
+    "unique_forms": [
+      "a database of predicted hot spot clusters",
+      "HotRegion"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      22080558
+    ]
+  },
+  "MedPServer": {
+    "unique_forms": [
+      "MedPServer"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      30381914
+    ]
+  },
+  "DrugPath": {
+    "unique_forms": [
+      "DrugPath"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      24663501
+    ]
+  },
+  "Kin-driver": {
+    "unique_forms": [
+      "a database of driver mutations in protein kinases"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      25414382
+    ]
+  },
+  "SEED": {
+    "unique_forms": [
+      "SEED"
+    ],
+    "total_mentions": 8,
+    "papers": [
+      23110173
+    ]
+  },
+  "CHBMP": {
+    "unique_forms": [
+      "Hemophilia B mutation project",
+      "CHBMP"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      24498619
+    ]
+  },
+  "NetGestalt": {
+    "unique_forms": [
+      "NetGestalt"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      25527095
+    ]
+  },
+  "GVM": {
+    "unique_forms": [
+      "GVM",
+      "Genome Variation Map"
+    ],
+    "total_mentions": 8,
+    "papers": [
+      29069473
+    ]
+  },
+  "MycoProtease-DB": {
+    "unique_forms": [
+      "Useful resource for Mycobacterium tuberculosis complex and nontuberculous mycobacterial proteases"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      23275726
+    ]
+  },
+  "MTB": {
+    "unique_forms": [
+      "MTB",
+      "Mouse Tumor Biology Database"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      26302176,
+      23275726
+    ]
+  },
+  "MCPdb": {
+    "unique_forms": [
+      "MCPdb",
+      "The bacterial microcompartment database"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      33780471
+    ]
+  },
+  "AELP": {
+    "unique_forms": [
+      "Auditory English Lexicon Project",
+      "AELP"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      32291734
+    ]
+  },
+  "CREAMMIST": {
+    "unique_forms": [
+      "CREAMMIST",
+      "an integrative probabilistic database for cancer drug response prediction"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      36259664
+    ]
+  },
+  "Victors": {
+    "unique_forms": [
+      "Victors"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      30365026
+    ]
+  },
+  "biochem4j": {
+    "unique_forms": [
+      "biochem4j",
+      "Integrated and extensible biochemical knowledge through graph databases"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      28708831
+    ]
+  },
+  "SiMPLOD": {
+    "unique_forms": [
+      "SiMPLOD",
+      "Structurally-integrated database for Mutations of PLOD genes"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      30721533
+    ]
+  },
+  "circVAR": {
+    "unique_forms": [
+      "circVAR"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      33121433
+    ]
+  },
+  "circBase": {
+    "unique_forms": [
+      "circBase"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      33121433
+    ]
+  },
+  "DSLD": {
+    "unique_forms": [
+      "Dietary Supplement Label Database",
+      "DSLD"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      30774152
+    ]
+  },
+  "Breast Oncogenic Specific siRNAs": {
+    "unique_forms": [
+      "Breast Oncogenic Specific siRNAs"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      28821760
+    ]
+  },
+  "CenhANCER": {
+    "unique_forms": [
+      "CenhANCER"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      37207350
+    ]
+  },
+  "EDCs DataBank": {
+    "unique_forms": [
+      "3D-Structure database of endocrine disrupting chemicals"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      25451822
+    ]
+  },
+  "DBTMEE": {
+    "unique_forms": [
+      "DBTMEE",
+      "a database of transcriptome in mouse early embryos"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      25336621
+    ]
+  },
+  "GESUR": {
+    "unique_forms": [
+      "GESUR"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      31630971
+    ]
+  },
+  "ncRPheno": {
+    "unique_forms": [
+      "Online Mendelian Inheritance in Man"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      25428349
+    ]
+  },
+  "IBIS": {
+    "unique_forms": [
+      "Inferred Biomolecular Interaction Server",
+      "IBIS"
+    ],
+    "total_mentions": 10,
+    "papers": [
+      22102591
+    ]
+  },
+  "DPTEdb": {
+    "unique_forms": [
+      "dioecious plant transposable element database",
+      "DPTEdb"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      27173524
+    ]
+  },
+  "VaxiJen": {
+    "unique_forms": [
+      "VaxiJen"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      30887928
+    ]
+  },
+  "Pedican": {
+    "unique_forms": [
+      "Pedican",
+      "of pediatric cancers"
+    ],
+    "total_mentions": 7,
+    "papers": [
+      26073932
+    ]
+  },
+  "PhosphoSitePlus": {
+    "unique_forms": [
+      "PhosphoSitePlus"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      22135298
+    ]
+  },
+  "LPSN": {
+    "unique_forms": [
+      "LPSN",
+      "List of Prokaryotic Names with Standing in Nomenclature"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      24243842
+    ]
+  },
+  "EuroPineDB": {
+    "unique_forms": [
+      "a high-coverage web database for maritime pine transcriptome",
+      "EuroPineDB"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      21762488
+    ]
+  },
+  "PKIDB": {
+    "unique_forms": [
+      "PKIDB"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      32679723
+    ]
+  },
+  "BGISEQ-500": {
+    "unique_forms": [
+      "BGISEQ-500"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      31807141
+    ]
+  },
+  "Metaxa2": {
+    "unique_forms": [
+      "Metaxa2"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      29967752
+    ]
+  },
+  "PGD": {
+    "unique_forms": [
+      "PGD",
+      "Pineapple Genomics Database"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      30245835
+    ]
+  },
+  "NGSmethDB": {
+    "unique_forms": [
+      "an updated genome resource for high quality",
+      "NGSmethDB"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      24271385
+    ]
+  },
+  "ProteomeXchange": {
+    "unique_forms": [
+      "ProteomeXchange"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      30395289
+    ]
+  },
+  "EENdb": {
+    "unique_forms": [
+      "EENdb",
+      "engineered endonuclease database"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      23203870
+    ]
+  },
+  "IndiGenomes": {
+    "unique_forms": [
+      "IndiGenomes"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      33095885
+    ]
+  },
+  "uORFdb": {
+    "unique_forms": [
+      "uORFdb"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      24163100
+    ]
+  },
+  "CANGS": {
+    "unique_forms": [
+      "Analyzing Next Generation Sequences DataBase",
+      "CANGS"
+    ],
+    "total_mentions": 8,
+    "papers": [
+      21718534
+    ]
+  },
+  "virusMS": {
+    "unique_forms": [
+      "virusMS"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      33811468
+    ]
+  },
+  "DEOP": {
+    "unique_forms": [
+      "DEOP"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      25326239
+    ]
+  },
+  "EPIPOX": {
+    "unique_forms": [
+      "A Resource Facilitating Epitope-Vaccine Design Against Human Pathogenic Orthopoxviruses",
+      "EPIPOX"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      37258914
+    ]
+  },
+  "MPIC": {
+    "unique_forms": [
+      "MPIC"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      25435547
+    ]
+  },
+  "STAB": {
+    "unique_forms": [
+      "STAB",
+      "Spatio-Temporal cell Atlas of the human Brain"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      32976581
+    ]
+  },
+  "BGD": {
+    "unique_forms": [
+      "BGD",
+      "Bovine Genome Database"
+    ],
+    "total_mentions": 7,
+    "papers": [
+      31647100
+    ]
+  },
+  "RNA2Immune": {
+    "unique_forms": [
+      "RNA2Immune"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      35595213
+    ]
+  },
+  "CiliaCarta": {
+    "unique_forms": [
+      "CiliaCarta",
+      "An integrated and validated compendium of ciliary genes"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      31095607
+    ]
+  },
+  "Galbase": {
+    "unique_forms": [
+      "a comprehensive repository for integrating chicken multi-omics data",
+      "Galbase"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      35549894
+    ]
+  },
+  "EMBRYS": {
+    "unique_forms": [
+      "EMBRYS"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      24265223
+    ]
+  },
+  "DECIPHER": {
+    "unique_forms": [
+      "DECIPHER"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      35143074
+    ]
+  },
+  "CanVaS": {
+    "unique_forms": [
+      "Cancer Variation",
+      "CanVaS"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      34174131
+    ]
+  },
+  "MPSBase": {
+    "unique_forms": [
+      "Comprehensive repository of differentially expressed genes for mucopolysaccharidoses",
+      "MPSBase"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      34147352
+    ]
+  },
+  "CPD": {
+    "unique_forms": [
+      "CPD"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      34147352
+    ]
+  },
+  "ATOdb": {
+    "unique_forms": [
+      "ATOdb"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      37699323
+    ]
+  },
+  "VARAdb": {
+    "unique_forms": [
+      "comprehensive variation annotation database for human",
+      "VARAdb"
+    ],
+    "total_mentions": 7,
+    "papers": [
+      33095866
+    ]
+  },
+  "IEAtlas": {
+    "unique_forms": [
+      "IEAtlas",
+      "an atlas of HLA-presented immune epitopes derived from non-coding regions"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      36099422
+    ]
+  },
+  "miRNASNP": {
+    "unique_forms": [
+      "miRNASNP"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      32990748
+    ]
+  },
+  "PAT": {
+    "unique_forms": [
+      "PAT"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      36243963
+    ]
+  },
+  "TeroKit": {
+    "unique_forms": [
+      "TeroKit",
+      "A Database-Driven Web Server for Terpenome Research"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      32286817
+    ]
+  },
+  "CEGA": {
+    "unique_forms": [
+      "CEGA",
+      "Conserved Elements from Genomic Alignments"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      26527719
+    ]
+  },
+  "RNALocate": {
+    "unique_forms": [
+      "a resource for RNA subcellular localizations",
+      "RNALocate"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      27543076
+    ]
+  },
+  "SSER": {
+    "unique_forms": [
+      "Species specific essential reactions database",
+      "SSER"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      28420402
+    ]
+  },
+  "BiGG": {
+    "unique_forms": [
+      "BiGG"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      28420402
+    ]
+  },
+  "GenomeTrakrCP": {
+    "unique_forms": [
+      "GenomeTrakrCP",
+      "of Chloroplast Genome Sequences"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      28651291
+    ]
+  },
+  "Linc2GO": {
+    "unique_forms": [
+      "Linc2GO",
+      "a human LincRNA function annotation resource based on ceRNA hypothesis"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      23793747
+    ]
+  },
+  "CrusTF": {
+    "unique_forms": [
+      "CrusTF"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      29178828
+    ]
+  },
+  "SGD": {
+    "unique_forms": [
+      "SGD",
+      "Saccharomyces Genome Database"
+    ],
+    "total_mentions": 7,
+    "papers": [
+      26631132
+    ]
+  },
+  "Alkamid": {
+    "unique_forms": [
+      "Alkamid"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      22659196
+    ]
+  },
+  "Animal-SNPAtlas": {
+    "unique_forms": [
+      "a comprehensive SNP database for multiple animals"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      36300636
+    ]
+  },
+  "CANTATAdb": {
+    "unique_forms": [
+      "CANTATAdb"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      30945201
+    ]
+  },
+  "Medicago PhosphoProtein Database": {
+    "unique_forms": [
+      "Medicago PhosphoProtein Database"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      22701463
+    ]
+  },
+  "SCOPe": {
+    "unique_forms": [
+      "SCOPe"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      35411388
+    ]
+  },
+  "mBodyMap": {
+    "unique_forms": [
+      "mBodyMap"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      34718713
+    ]
+  },
+  "PhytoREF": {
+    "unique_forms": [
+      "PhytoREF"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      25740460
+    ]
+  },
+  "ASNR": {
+    "unique_forms": [
+      "ASNR",
+      "Animal Social Network Repository"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      31036810
+    ]
+  },
+  "ProteomicsDB": {
+    "unique_forms": [
+      "toward a FAIR open-source resource for life-science research",
+      "ProteomicsDB"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      34791421
+    ]
+  },
+  "ANISEED": {
+    "unique_forms": [
+      "ANISEED"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      31680137
+    ]
+  },
+  "Genomicus": {
+    "unique_forms": [
+      "Genomicus"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      31680137
+    ]
+  },
+  "eggNOG": {
+    "unique_forms": [
+      "eggNOG"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      22096231
+    ]
+  },
+  "SIMAP": {
+    "unique_forms": [
+      "SIMAP"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      22096231
+    ]
+  },
+  "COGs": {
+    "unique_forms": [
+      "COGs"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      22096231
+    ]
+  },
+  "TFBSshape": {
+    "unique_forms": [
+      "TFBSshape"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      31665425
+    ]
+  },
+  "UniPROBE": {
+    "unique_forms": [
+      "UniPROBE"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      31665425
+    ]
+  },
+  "MeDReaders": {
+    "unique_forms": [
+      "MeDReaders"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      31665425
+    ]
+  },
+  "PharmGKB": {
+    "unique_forms": [
+      "PharmGKB",
+      "Pharmacogenomics Knowledgebase"
+    ],
+    "total_mentions": 10,
+    "papers": [
+      34387941
+    ]
+  },
+  "EchinoDB": {
+    "unique_forms": [
+      "EchinoDB"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      26800861
+    ]
+  },
+  "FurinDB": {
+    "unique_forms": [
+      "FurinDB",
+      "A database of 20-residue furin cleavage site motifs"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      21541042
+    ]
+  },
+  "DATAMAN": {
+    "unique_forms": [
+      "DATAMAN"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      33331653
+    ]
+  },
+  "NALDB": {
+    "unique_forms": [
+      "NALDB",
+      "Nucleic acid ligand database"
+    ],
+    "total_mentions": 9,
+    "papers": [
+      26896846
+    ]
+  },
+  "MethHC": {
+    "unique_forms": [
+      "MethHC"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      33270889
+    ]
+  },
+  "ClusterMine360": {
+    "unique_forms": [
+      "ClusterMine360"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      23104377
+    ]
+  },
+  "Nanosized Cancer Polymarker Biochip Project": {
+    "unique_forms": [
+      "Nanosized Cancer Polymarker Biochip Project"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      21928249
+    ]
+  },
+  "PR(2": {
+    "unique_forms": [
+      "PR(2",
+      "Protist Ribosomal Reference database"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      23193267
+    ]
+  },
+  "sInterBase": {
+    "unique_forms": [
+      "sInterBase",
+      "a comprehensive database of Escherichia coli sRNA-mRNA interactions"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      37042720
+    ]
+  },
+  "IPD": {
+    "unique_forms": [
+      "IPD",
+      "The Immuno Polymorphism Database"
+    ],
+    "total_mentions": 12,
+    "papers": [
+      23180793
+    ]
+  },
+  "HPA": {
+    "unique_forms": [
+      "HPA"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      23180793
+    ]
+  },
+  "PsyMuKB": {
+    "unique_forms": [
+      "NeuroPsychiatric Mutation Knowledge Base",
+      "PsyMuKB"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      31809863
+    ]
+  },
+  "ATLAS": {
+    "unique_forms": [
+      "Altered TCR Ligand Affinities and Structures",
+      "ATLAS"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      28160322
+    ]
+  },
+  "Cistrome DB": {
+    "unique_forms": [
+      "Cistrome Data Browser"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      30462313
+    ]
+  },
+  "Cistrome": {
+    "unique_forms": [
+      "Cistrome"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      30462313
+    ]
+  },
+  "SUBA3": {
+    "unique_forms": [
+      "SUBA3"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      24185698
+    ]
+  },
+  "EncoMPASS": {
+    "unique_forms": [
+      "EncoMPASS"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      30357403
+    ]
+  },
+  "MNDR": {
+    "unique_forms": [
+      "MNDR",
+      "mammal ncRNA-disease repository"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      32833025
+    ]
+  },
+  "funRNA": {
+    "unique_forms": [
+      "funRNA"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      25522231
+    ]
+  },
+  "ChIPSummitDB": {
+    "unique_forms": [
+      "ChIPSummitDB"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      31942977
+    ]
+  },
+  "Tenuipalpidae": {
+    "unique_forms": [
+      "newly available"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      31942977
+    ]
+  },
+  "PlantOrDB": {
+    "unique_forms": [
+      "PlantOrDB",
+      "a genome-wide ortholog database for land plants and green algae"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      26112452
+    ]
+  },
+  "Ricebase": {
+    "unique_forms": [
+      "a breeding and genetics platform for rice",
+      "Ricebase"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      27515824
+    ]
+  },
+  "DRAMP": {
+    "unique_forms": [
+      "DRAMP"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      34976872
+    ]
+  },
+  "AgeFactDB": {
+    "unique_forms": [
+      "AgeFactDB",
+      "JenAge Ageing Factor Database"
+    ],
+    "total_mentions": 5,
+    "papers": [
+      24217911
+    ]
+  },
+  "GenDR": {
+    "unique_forms": [
+      "GenDR"
+    ],
+    "total_mentions": 1,
+    "papers": [
+      24217911
+    ]
+  },
+  "FlyRNAi": {
+    "unique_forms": [
+      "FlyRNAi",
+      "Drosophila RNAi screening"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      27924039
+    ]
+  },
+  "BCL2DB": {
+    "unique_forms": [
+      "database of BCL-2 family members and BH3-only proteins",
+      "BCL2DB"
+    ],
+    "total_mentions": 6,
+    "papers": [
+      24608034
+    ]
+  },
+  "HVdb": {
+    "unique_forms": [
+      "HVdb"
+    ],
+    "total_mentions": 2,
+    "papers": [
+      34461244
+    ]
+  },
+  "SchistoDB": {
+    "unique_forms": [
+      "SchistoDB"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      23161692
+    ]
+  },
+  "TissueNet": {
+    "unique_forms": [
+      "TissueNet"
+    ],
+    "total_mentions": 7,
+    "papers": [
+      27899616
+    ]
+  },
+  "KinetochoreDB": {
+    "unique_forms": [
+      "KinetochoreDB"
+    ],
+    "total_mentions": 3,
+    "papers": [
+      26989151
+    ]
+  },
+  "NANPDB": {
+    "unique_forms": [
+      "Northern African Natural Products Database",
+      "NANPDB"
+    ],
+    "total_mentions": 4,
+    "papers": [
+      28641017
+    ]
+  }
+}

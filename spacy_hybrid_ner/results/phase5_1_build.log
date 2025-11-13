@@ -1,0 +1,78 @@
+/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/spacy/util.py:910: UserWarning: [W095] Model 'en_pipeline' (0.0.0) was trained with spaCy v3.8.8 and may not be 100% compatible with the current version (3.7.0). If you see errors or degraded performance, download a newer compatible model or retrain your custom model with the current spaCy version. For more details and available updates, run: python -m spacy validate
+  warnings.warn(warn_msg)
+======================================================================
+PHASE 5.1: BUILD HYBRID PIPELINE
+======================================================================
+Building hybrid NER pipeline...
+======================================================================
+
+Step 1: Creating blank English pipeline...
+  ✓ Blank pipeline created
+
+Step 2: Adding EntityRuler (high precision component)...
+  ✓ Patterns loaded: 6,216
+  ✓ Provides: High precision matching + canonical ID assignment
+
+Step 3: Adding statistical NER (discovery component)...
+  Loading from: collab_results/experiment_archives/2025-11-12-3uubs8/spacy_model/model-best
+  ✓ Statistical NER component added
+  ✓ Provides: Discovery of new/unknown bioresources
+
+----------------------------------------------------------------------
+Pipeline Verification:
+----------------------------------------------------------------------
+Components: ['entity_ruler', 'ner']
+Order: entity_ruler → ner
+✓ Pipeline order verified: EntityRuler → Statistical NER
+
+======================================================================
+TESTING HYBRID PIPELINE
+======================================================================
+
+Test text:
+
+    We analyzed the Bio-Analytic Resource (BAR) and a new Genomics Knowledge Base
+    for plant research. The PDB and OMIM databases provided additional context.
+    BAR contains gene expression data.
+    
+
+----------------------------------------------------------------------
+Extracted 4 entities:
+----------------------------------------------------------------------
+
+'BAR'
+  Label: BIO_RESOURCE
+  Canonical ID: BAR
+  Source: EntityRuler
+
+'PDB'
+  Label: BIO_RESOURCE
+  Canonical ID: PDB
+  Source: EntityRuler
+
+'OMIM'
+  Label: BIO_RESOURCE
+  Canonical ID: OMIM
+  Source: EntityRuler
+
+'BAR'
+  Label: BIO_RESOURCE
+  Canonical ID: BAR
+  Source: EntityRuler
+
+----------------------------------------------------------------------
+Summary:
+----------------------------------------------------------------------
+EntityRuler entities: 4 (known, with canonical IDs)
+Statistical NER entities: 0 (discovered, no canonical IDs)
+Total: 4
+
+======================================================================
+SUCCESS CRITERIA CHECK
+======================================================================
+✓ Pipeline order correct
+✓ Known entities detected
+✗ New entities detected
+✓ EntityRuler entities have IDs
+
+❌ Some checks failed. Pipeline may not work correctly.

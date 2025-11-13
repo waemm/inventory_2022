@@ -1,0 +1,88 @@
+INVENTORY RESULTS COMPARISON - October 28, 2025
+================================================
+
+Three rerun sessions were compared against each other and a baseline inventory.
+
+RUNS COMPARED:
+==============
+
+1. Full Run (gl3fd6)
+   - Session ID: 2025-10-28-gl3fd6_2022_rerun
+   - Models: 2025-10-28-nzksic
+   - Input: 21,677 papers
+   - High-confidence records: 22 / 3,592 (0.61%)
+   - Status: ⚠️ DEGRADED PERFORMANCE
+
+2. Old Model (ulgfhi)
+   - Session ID: 2025-10-28-ulgfhi_oldmodel_2022_rerun
+   - Models: 2025-10-24-apz1py (older training)
+   - Input: 21,677 papers
+   - High-confidence records: 3,698 / 4,368 (84.7%)
+   - Status: ✅ EXPECTED PERFORMANCE
+
+3. Baseline (final_inventory_2022)
+   - Original manually-verified inventory
+   - Records: 2,362 high-confidence entries
+   - Status: ✅ GOLD STANDARD
+
+COMPARISON RESULTS:
+===================
+
+gl3fd6 vs ulgfhi (Full Run vs Old Model):
+  - Resources matching: 20 / 22 (90.9%)
+  - Unique to gl3fd6: 2
+  - Unique to ulgfhi: 3,678
+  - Conclusion: gl3fd6 severely underperforms
+
+gl3fd6 vs baseline (Full Run vs Baseline):
+  - Resources matching: 9 / 22 (40.9%)
+  - Unique to gl3fd6: 13
+  - Unique to baseline: 2,353
+  - Conclusion: Very limited overlap, poor coverage
+
+ulgfhi vs baseline (Old Model vs Baseline):
+  - Resources matching: 1,939 / 2,362 (82.1%)
+  - Unique to ulgfhi: 1,759 (new discoveries)
+  - Unique to baseline: 423 (not in rerun)
+  - Conclusion: Excellent consistency with baseline
+
+KEY FINDINGS:
+=============
+
+⚠️  CRITICAL: The 2025-10-28-nzksic models are severely degraded
+    - Producing only 0.61% high-confidence results
+    - 168x fewer results than expected
+    - Lower confidence scores overall
+
+✅  VALIDATED: The 2025-10-24-apz1py models work correctly
+    - 84.7% high-confidence pass rate
+    - 82% overlap with baseline
+    - Consistent confidence scoring
+
+RECOMMENDATION:
+===============
+
+USE: collab_results/2025-10-28-ulgfhi_oldmodel_2022_rerun/final_inventory.csv
+     (Old model run - validated and reliable)
+
+INVESTIGATE:
+  - Training session 2025-10-28-nzksic for issues
+  - Check model training logs and performance metrics
+  - Verify no data contamination in newer models
+
+COMPARISON FILES:
+=================
+
+comparison_gl3fd6_vs_ulgfhi/
+  - inventory_comparison_summary.csv
+  - inventory_comparison_detailed.csv
+
+comparison_gl3fd6_vs_baseline/
+  - inventory_comparison_summary.csv
+  - inventory_comparison_detailed.csv
+
+comparison_oldmodel_vs_baseline/
+  - inventory_comparison_summary.csv
+  - inventory_comparison_detailed.csv
+
+See INVENTORY_COMPARISON_REPORT_2025-10-28.md for detailed analysis.

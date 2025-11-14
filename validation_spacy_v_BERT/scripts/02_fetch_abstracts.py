@@ -12,17 +12,21 @@ Usage:
     source ../biodata_modern_env/bin/activate
     python scripts/02_fetch_abstracts.py
 
+    For testing with small sample:
+    TEST_MODE=True python scripts/02_fetch_abstracts.py
+
 Inputs:
-    - results/validation/sample/validation_sample.csv
+    - results/validation/sample/validation_sample.csv (or validation_sample_test.csv in TEST_MODE)
 
 Outputs:
-    - results/validation/sample/validation_sample_with_abstracts.csv
+    - results/validation/sample/validation_sample_with_abstracts.csv (or *_test.csv in TEST_MODE)
     - logs/02_fetch_abstracts.log
 
 Author: Phase 1 Validation Study
 Date: 2025-11-13
 """
 
+import os
 import pandas as pd
 import requests
 import time
@@ -34,9 +38,21 @@ from datetime import datetime
 # CONFIGURATION
 # ============================================================================
 
+# TEST_MODE: Set to True to process test sample (_test files)
+TEST_MODE = os.environ.get('TEST_MODE', 'False').lower() == 'true'
+
+if TEST_MODE:
+    print("\n🧪 TEST MODE ENABLED")
+    print("   Will fetch abstracts for test sample\n")
+else:
+    print("\n🚀 PRODUCTION MODE")
+    print("   Will fetch abstracts for full validation sample\n")
+
 # Paths (relative to validation_spacy_v_BERT/)
-SAMPLE_FILE = Path("results/validation/sample/validation_sample.csv")
-OUTPUT_FILE = Path("results/validation/sample/validation_sample_with_abstracts.csv")
+# NO session ID - these are INPUT files that don't change between runs
+output_suffix = "_test" if TEST_MODE else ""
+SAMPLE_FILE = Path(f"results/validation/sample/validation_sample{output_suffix}.csv")
+OUTPUT_FILE = Path(f"results/validation/sample/validation_sample_with_abstracts{output_suffix}.csv")
 LOG_FILE = Path("logs/02_fetch_abstracts.log")
 
 # EPMC API
@@ -285,4 +301,4 @@ def main():
 # ============================================================================
 
 if __name__ == "__main__":
-    exit(main())
+    main()

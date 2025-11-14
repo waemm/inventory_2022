@@ -72,10 +72,15 @@ else:
     print("\n🚀 PRODUCTION MODE")
     print("   Will process all papers in validation sample\n")
 
-# Paths (relative to validation_spacy_v_BERT/) - use _test suffix in TEST_MODE
+# Paths (relative to validation_spacy_v_BERT/)
 VALIDATION_ROOT = Path(__file__).parent.parent
+
+# INPUT file: No session ID (stable input file)
+input_suffix = "_test" if TEST_MODE else ""
+SAMPLE_FILE = VALIDATION_ROOT / f"results/validation/sample/validation_sample_with_abstracts{input_suffix}.csv"
+
+# OUTPUT files: Session ID for traceability
 output_suffix = f"_{SESSION_ID}" if SESSION_ID else ("_test" if TEST_MODE else "")
-SAMPLE_FILE = VALIDATION_ROOT / f"results/validation/sample/validation_sample_with_abstracts{output_suffix}.csv"
 OUTPUT_DIR = VALIDATION_ROOT / "results/validation/classification"
 OUTPUT_FILE = OUTPUT_DIR / f"v2_classification_results{output_suffix}.csv"
 LOG_FILE = VALIDATION_ROOT / "logs/03a_run_v2_classification.log"

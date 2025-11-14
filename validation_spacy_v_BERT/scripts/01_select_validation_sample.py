@@ -14,12 +14,41 @@ This ensures we have exactly 125 unique resources for validation.
 
 Usage:
     python scripts/01_select_validation_sample.py
+
+    For testing with small sample:
+    TEST_MODE=True python scripts/01_select_validation_sample.py
 """
 
 import sys
+import os
 import pandas as pd
 from pathlib import Path
 import logging
+
+# ============================================================================
+# CONFIGURATION
+# ============================================================================
+
+# TEST_MODE: Set to True for quick testing (10 unique resources, ~10-15 papers)
+#            Set to False for full validation (125 unique resources, ~148 papers)
+TEST_MODE = os.environ.get('TEST_MODE', 'False').lower() == 'true'
+
+# Target configuration based on mode
+if TEST_MODE:
+    TARGET_UNIQUE_RESOURCES = 10
+    N_GLOBAL_CORE = 5  # Smaller sample for testing
+    TEST_SIZE = 15  # Maximum papers to include in final test sample
+    print("\n🧪 TEST MODE ENABLED")
+    print(f"   Target: {TARGET_UNIQUE_RESOURCES} unique resources")
+    print(f"   Global core: {N_GLOBAL_CORE} papers")
+    print(f"   Max papers: {TEST_SIZE}\n")
+else:
+    TARGET_UNIQUE_RESOURCES = 125
+    N_GLOBAL_CORE = 50
+    TEST_SIZE = None
+    print("\n🚀 PRODUCTION MODE")
+    print(f"   Target: {TARGET_UNIQUE_RESOURCES} unique resources")
+    print(f"   Global core: {N_GLOBAL_CORE} papers\n")
 
 # Setup logging
 logging.basicConfig(
@@ -32,7 +61,11 @@ logger = logging.getLogger(__name__)
 PROJECT_ROOT = Path(__file__).parent.parent
 GROUND_TRUTH_PATH = Path("/Users/warren/development/GBC/gbc-publication-analysis/bioresource_papers_latest.csv")
 OUTPUT_DIR = PROJECT_ROOT / "results" / "validation" / "sample"
-OUTPUT_FILE = OUTPUT_DIR / "validation_sample.csv"
+
+# Output file (add _test suffix in TEST_MODE to avoid overwriting production results)
+# NO session ID - this is an INPUT file that doesn't change between runs
+output_suffix = "_test" if TEST_MODE else ""
+OUTPUT_FILE = OUTPUT_DIR / f"validation_sample{output_suffix}.csv"
 
 # Training data paths (to remove overlap)
 CLASSIF_TRAIN_PATH = PROJECT_ROOT / "data" / "classif_splits_full" / "train_paper_classif.csv"
@@ -247,6 +280,7 @@ def main():
     logger.info("\n" + "="*60)
     logger.info("VALIDATION SAMPLE SELECTION")
     logger.info("="*60)
+    logger.info(f"Mode: {'TEST' if TEST_MODE else 'PRODUCTION'}")
     logger.info(f"Project root: {PROJECT_ROOT}")
 
     try:
@@ -256,8 +290,21 @@ def main():
         # Load ground truth
         df_ground_truth = load_ground_truth()
 
-        # Select sample (target: 125 unique resources)
-        sample_df = select_sample(df_ground_truth, training_ids, n_global_core=50, target_unique_resources=125)
+        # Select sample using configuration
+        sample_df = select_sample(
+            df_ground_truth,
+            training_ids,
+            n_global_core=N_GLOBAL_CORE,
+            target_unique_resources=TARGET_UNIQUE_RESOURCES
+        )
+
+        # Apply TEST_MODE paper count limit if needed
+        if TEST_MODE and TEST_SIZE and len(sample_df) > TEST_SIZE:
+            logger.info(f"\n🧪 TEST_MODE: Limiting to {TEST_SIZE} papers")
+            logger.info(f"   Before limit: {len(sample_df)} papers")
+            sample_df = sample_df.head(TEST_SIZE)
+            logger.info(f"   After limit: {len(sample_df)} papers")
+            logger.info(f"   Unique resources in limited sample: {sample_df['resource_short_name'].nunique()}")
 
         # Save sample
         save_sample(sample_df, OUTPUT_FILE)
@@ -265,6 +312,8 @@ def main():
         logger.info("\n" + "="*60)
         logger.info("✅ SAMPLE SELECTION COMPLETE")
         logger.info("="*60)
+        if TEST_MODE:
+            logger.info(f"🧪 Test sample created: {len(sample_df)} papers")
         logger.info(f"Next step: Fetch abstracts from EPMC")
         logger.info(f"   python scripts/02_fetch_abstracts.py")
 

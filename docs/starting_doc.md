@@ -1,8 +1,8 @@
 # Biodata Inventory ML Pipeline - AI Agent Reference Guide
 
 **Created**: 2025-10-22
-**Last Updated**: 2025-11-13 (Condensed & Restructured)
-**Status**: ✅ **V2 PRODUCTION READY** + ⚠️ **PHASE 4 HAS CRITICAL BUG**
+**Last Updated**: 2025-11-14 (Validation study Phase 1 complete)
+**Status**: ✅ **V2 PRODUCTION READY** + ⚠️ **PHASE 4 HAS CRITICAL BUG** + ✅ **VALIDATION COMPLETE**
 **Purpose**: Quick onboarding and navigation hub for AI agents
 
 ---
@@ -58,6 +58,10 @@ Sophisticated ML pipeline using biomedical BERT models to automatically identify
 
 | Date | Milestone | Performance | Reference |
 |------|-----------|-------------|-----------|
+| 2025-11-14 | **Google Drive NER Model Fix** | 341 → 694 entities (+103.5%, verified identical) ✅ | [validation_spacy_v_BERT/NER_FIX_VERIFICATION_COMPLETE.md](../validation_spacy_v_BERT/NER_FIX_VERIFICATION_COMPLETE.md) |
+| 2025-11-14 | **Model Validation Study Complete** | PyCaret 98.65%, spaCy NER 76% recall ⭐ | [validation_spacy_v_BERT/](../validation_spacy_v_BERT/) |
+| 2025-11-14 | **PyCaret Validation Bug Fix** | 0% → 94.6% positive (PMID merge fix) ✅ | [plans/2025-11-13-FINAL_ROOT_CAUSE.md](../plans/2025-11-13-FINAL_ROOT_CAUSE.md) |
+| 2025-11-13 | **spaCy Phases 4-6 + Validation** | 91% precision, 48% recall (title-only) ⭐ | [spacy_hybrid_ner/MANUAL_VALIDATION_STUDY_REPORT.md](../spacy_hybrid_ner/MANUAL_VALIDATION_STUDY_REPORT.md) |
 | 2025-11-12 | **spaCy Phase 3 Training** | F1=79.62% (exceeded target) ⭐ | [RECENT_MILESTONES_2025.md](RECENT_MILESTONES_2025.md#spacy-hybrid-ner-phase-1-3-complete-2025-11-12) |
 | 2025-11-12 | V2 vs PyCaret Comparison | 8,129 high-confidence papers | [RECENT_MILESTONES_2025.md](RECENT_MILESTONES_2025.md#v2-vs-pycaret-model-comparison-study-2025-11-12) |
 | 2025-11-11 | **PyCaret Classification** | 84.6% recall (11/13 papers) | [RECENT_MILESTONES_2025.md](RECENT_MILESTONES_2025.md#pycaret-metadata-classification-2025-11-11) |
@@ -67,6 +71,91 @@ Sophisticated ML pipeline using biomedical BERT models to automatically identify
 
 **See**: [`docs/RECENT_MILESTONES_2025.md`](RECENT_MILESTONES_2025.md) for detailed descriptions
 **See**: [`docs/ARCHIVE_RESOLVED_ISSUES.md`](ARCHIVE_RESOLVED_ISSUES.md) for resolved historical issues
+
+---
+
+## 🔬 Model Validation Study (2025-11-14)
+
+### Status: ✅ PHASE 1 COMPLETE - 148 Papers Validated
+
+Comprehensive comparison of 5 models (3 classification + 2 NER) on 148 validation papers covering 125 unique biodata resources.
+
+### Classification Results
+
+**Models Compared:**
+- V2 BERT Classifier (text-based: title+abstract)
+- PyCaret TEST_MODE=True (metadata: 92 features)
+- PyCaret TEST_MODE=False (metadata: 112 features)
+
+**Key Findings:**
+- **Agreement**: 94.6% consensus (140/148 papers)
+- **PyCaret Winner**: 98.65% accuracy vs V2's 97.97%
+- **PyCaret Strength**: 100% precision (zero false positives), perfect GCBR detection
+- **V2 Strength**: Catches 2 emerging databases PyCaret misses (no citation bias)
+- **Disagreements**: Only 8 papers (5.4%) - 6/8 resolved in PyCaret's favor
+
+**Recommendation**: Use PyCaret as primary classifier with V2 as safety net for edge cases
+
+### NER Results
+
+**Models Compared:**
+- V2 BERT NER (BioBERT-based, trained on title+abstract)
+- spaCy Hybrid NER (EntityRuler + Statistical NER, 752 resources)
+
+**Key Findings:**
+- **spaCy Winner**: 76.0% recall vs V2's 69.6% (+6.4% advantage)
+- **spaCy extracted**: 295 entities (100% with canonical IDs)
+- **V2 extracted**: 270 entities (no canonical IDs)
+- **Agreement**: 171 exact matches + 6 fuzzy (44.1% overlap)
+- **spaCy Strength**: Higher recall, zero false positives, 100% canonical ID coverage
+- **V2 Issues**: 35 fragmentation errors, 6 false positives (single chars), missed 118 major resources
+
+**Recommendation**: Use spaCy Hybrid NER as primary (with postprocessing to trim 18 overly long entities)
+
+### Google Drive NER Model Fix (2025-11-14)
+
+**Issue Discovered**: Colab NER extracted only 341 entities vs 694 expected (50% fewer)
+
+**Root Cause**: Wrong NER model file on Google Drive (MD5: `98f2355d...` vs correct `37eebc38...`)
+
+**Fix Applied**:
+- ✅ Backed up wrong model: `BACKUP_WRONG_named_entity_recognition_20251114.pt`
+- ✅ Uploaded correct model (473 MB, verified MD5 match)
+- ✅ Verified fix: New Colab run produced **identical** results to local (694 entities, mean prob 0.9415)
+
+**Impact**:
+- Entities: 341 → 694 (+103.5%)
+- Mean probability: 0.69 → 0.94 (+36.4%)
+- High confidence (≥0.9): 7.6% → 80.4% (+953%)
+
+**Documentation**:
+- Investigation: [`validation_spacy_v_BERT/MULTIPLE_COLAB_RUNS_ANALYSIS.md`](../validation_spacy_v_BERT/MULTIPLE_COLAB_RUNS_ANALYSIS.md)
+- Fix Summary: [`validation_spacy_v_BERT/NER_MODEL_FIX_COMPLETE.md`](../validation_spacy_v_BERT/NER_MODEL_FIX_COMPLETE.md)
+- Verification: [`validation_spacy_v_BERT/NER_FIX_VERIFICATION_COMPLETE.md`](../validation_spacy_v_BERT/NER_FIX_VERIFICATION_COMPLETE.md)
+- Quick Start: [`validation_spacy_v_BERT/COLAB_NER_FIX_QUICK_START.md`](../validation_spacy_v_BERT/COLAB_NER_FIX_QUICK_START.md)
+
+**Status**: ✅ VERIFIED COMPLETE - Colab now produces identical results to local
+
+### Detailed Documentation
+
+**Classification Analysis:**
+- Quick Reference: [`validation_spacy_v_BERT/DISAGREEMENT_QUICK_REFERENCE.md`](../validation_spacy_v_BERT/DISAGREEMENT_QUICK_REFERENCE.md)
+- Full Report: [`validation_spacy_v_BERT/DISAGREEMENT_ANALYSIS_REPORT.md`](../validation_spacy_v_BERT/DISAGREEMENT_ANALYSIS_REPORT.md)
+- Summary Table: [`validation_spacy_v_BERT/disagreement_cases_summary.csv`](../validation_spacy_v_BERT/disagreement_cases_summary.csv)
+
+**NER Analysis:**
+- Key Findings: [`validation_spacy_v_BERT/results/validation/ner/KEY_FINDINGS.txt`](../validation_spacy_v_BERT/results/validation/ner/KEY_FINDINGS.txt)
+- Summary: [`validation_spacy_v_BERT/results/validation/ner/NER_ANALYSIS_SUMMARY.md`](../validation_spacy_v_BERT/results/validation/ner/NER_ANALYSIS_SUMMARY.md)
+- Full Report: [`validation_spacy_v_BERT/results/validation/ner/NER_COMPARISON_REPORT_2025-11-13-iwsisa.md`](../validation_spacy_v_BERT/results/validation/ner/NER_COMPARISON_REPORT_2025-11-13-iwsisa.md)
+
+**Phase 1 Overview:**
+- Executive Report: [`validation_spacy_v_BERT/results/validation/PHASE1_VALIDATION_REPORT_2025-11-13-iwsisa.md`](../validation_spacy_v_BERT/results/validation/PHASE1_VALIDATION_REPORT_2025-11-13-iwsisa.md)
+- Progress Tracking: [`plans/validation_spacy_v_BERT/PROGRESS.md`](../plans/validation_spacy_v_BERT/PROGRESS.md)
+- Critical Files: [`validation_spacy_v_BERT/CRITICAL_FILES_REFERENCE.md`](../validation_spacy_v_BERT/CRITICAL_FILES_REFERENCE.md)
+
+**Production Recommendation**:
+- Classification: PyCaret (98.65% accuracy) + V2 safety net
+- NER: spaCy Hybrid (76% recall, 100% canonical IDs) + optional V2 supplement for maximum recall
 
 ---
 

@@ -12,9 +12,12 @@ Usage:
     source ../biodata_modern_env/bin/activate
     python scripts/03a_run_v2_classification.py
 
+    For testing with small sample:
+    TEST_MODE=True python scripts/03a_run_v2_classification.py
+
 Inputs:
     - results/validation/sample/validation_sample_with_abstracts.csv
-    - ../../out/classif_train_out/article_classifier_v2.pt
+    - ../../out/original_model/article_classifier.pt
 
 Outputs:
     - results/validation/classification/v2_classification_results.csv
@@ -27,6 +30,7 @@ Date: 2025-11-13
 """
 
 import sys
+import os
 import pandas as pd
 import torch
 from pathlib import Path
@@ -36,6 +40,8 @@ from datetime import datetime
 # Add project root to path for imports
 PROJECT_ROOT = Path(__file__).parent.parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
+# Also add src directory for inventory_utils imports
+sys.path.insert(0, str(PROJECT_ROOT / "src"))
 
 from src.class_predict import get_dataloaders, predict, Args
 from inventory_utils.filing import get_classif_model
@@ -46,15 +52,36 @@ from datasets import ClassLabel
 # CONFIGURATION
 # ============================================================================
 
-# Paths (relative to validation_spacy_v_BERT/)
+# TEST_MODE: Set to True for quick testing (10-15 papers)
+#            Set to False for full validation (all papers in sample)
+TEST_MODE = os.environ.get('TEST_MODE', 'False').lower() == 'true'
+SESSION_ID = os.environ.get('SESSION_ID', '')
+if not SESSION_ID:
+    # Generate session ID if not provided (without _test suffix - TEST_MODE just limits processing)
+    import random
+    import string
+    from datetime import datetime
+    SESSION_ID = f"{datetime.now().strftime('%Y-%m-%d')}-{''.join(random.choices(string.ascii_lowercase + string.digits, k=6))}"
+
+TEST_SIZE = 15 if TEST_MODE else None
+
+if TEST_MODE:
+    print("\n🧪 TEST MODE ENABLED")
+    print(f"   Will process first {TEST_SIZE} papers\n")
+else:
+    print("\n🚀 PRODUCTION MODE")
+    print("   Will process all papers in validation sample\n")
+
+# Paths (relative to validation_spacy_v_BERT/) - use _test suffix in TEST_MODE
 VALIDATION_ROOT = Path(__file__).parent.parent
-SAMPLE_FILE = VALIDATION_ROOT / "results/validation/sample/validation_sample_with_abstracts.csv"
+output_suffix = f"_{SESSION_ID}" if SESSION_ID else ("_test" if TEST_MODE else "")
+SAMPLE_FILE = VALIDATION_ROOT / f"results/validation/sample/validation_sample_with_abstracts{output_suffix}.csv"
 OUTPUT_DIR = VALIDATION_ROOT / "results/validation/classification"
-OUTPUT_FILE = OUTPUT_DIR / "v2_classification_results.csv"
+OUTPUT_FILE = OUTPUT_DIR / f"v2_classification_results{output_suffix}.csv"
 LOG_FILE = VALIDATION_ROOT / "logs/03a_run_v2_classification.log"
 
 # Model path (relative to project root)
-MODEL_PATH = PROJECT_ROOT / "out/classif_train_out/article_classifier_v2.pt"
+MODEL_PATH = PROJECT_ROOT / "out/original_model/article_classifier.pt"
 
 # Model parameters (matching training configuration)
 MAX_LEN = 256
@@ -126,7 +153,7 @@ def prepare_input_file(sample_df, temp_file_path):
     input_df = input_df.replace(r'\t', ' ', regex=True)
 
     # Save to temp file
-    input_df.to_csv(temp_file_path, index=False, encoding='ISO-8859-1')
+    input_df.to_csv(temp_file_path, index=False, encoding='utf-8')
 
     logger.info(f"✓ Prepared {len(input_df)} papers for classification")
     logger.info(f"  - Title column: {title_col}")
@@ -216,9 +243,15 @@ def main():
     # ------------------------------------------------------------------------
     logger.info("\n🔍 Validating inputs...")
 
-    if not SAMPLE_FILE.exists():
-        logger.error(f"❌ Sample file not found: {SAMPLE_FILE}")
+    # Use local variable to avoid UnboundLocalError
+    sample_file = SAMPLE_FILE
+
+    # Fail fast if expected file doesn't exist (no fallback discovery)
+    if not sample_file.exists():
+        logger.error(f"❌ Sample file not found: {sample_file}")
         logger.error("Please run script 02 first: python scripts/02_fetch_abstracts.py")
+        if SESSION_ID:
+            logger.error(f"   Expected session: {SESSION_ID}")
         return 1
 
     if not MODEL_PATH.exists():
@@ -226,15 +259,21 @@ def main():
         logger.error("Expected V2 BERT classification model")
         return 1
 
-    logger.info(f"✓ Sample file: {SAMPLE_FILE}")
+    logger.info(f"✓ Sample file: {sample_file}")
     logger.info(f"✓ Model: {MODEL_PATH} ({MODEL_PATH.stat().st_size / 1024 / 1024:.1f} MB)")
 
     # ------------------------------------------------------------------------
     # 2. Load validation sample
     # ------------------------------------------------------------------------
     logger.info("\n📚 Loading validation sample...")
-    df_sample = pd.read_csv(SAMPLE_FILE)
+    df_sample = pd.read_csv(sample_file)
     logger.info(f"✓ Loaded {len(df_sample)} papers")
+
+    # Apply TEST_MODE if enabled
+    if TEST_MODE:
+        logger.info(f"🧪 TEST_MODE: Using first {TEST_SIZE} papers")
+        df_sample = df_sample.head(TEST_SIZE)
+        logger.info(f"✓ Test sample size: {len(df_sample)} papers")
 
     # Check for abstracts
     has_abstract = df_sample['abstract'].notna() & (df_sample['abstract'] != '')
@@ -337,4 +376,4 @@ def main():
 # ============================================================================
 
 if __name__ == "__main__":
-    exit(main())
+    main()

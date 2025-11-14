@@ -12,9 +12,12 @@ Usage:
     source ../biodata_modern_env/bin/activate
     python scripts/04a_run_v2_ner.py
 
+    For testing with small sample:
+    TEST_MODE=True python scripts/04a_run_v2_ner.py
+
 Inputs:
     - results/validation/sample/validation_sample_with_abstracts.csv
-    - ../../out/ner_train_out/article_ner_v2.pt
+    - ../../out/original_model/named_entity_recognition.pt
 
 Outputs:
     - results/validation/ner/v2_ner_results.csv
@@ -27,6 +30,7 @@ Date: 2025-11-13
 """
 
 import sys
+import os
 import pandas as pd
 import torch
 from pathlib import Path
@@ -36,6 +40,8 @@ from datetime import datetime
 # Add project root to path for imports
 PROJECT_ROOT = Path(__file__).parent.parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
+# Also add src directory for inventory_utils imports
+sys.path.insert(0, str(PROJECT_ROOT / "src"))
 
 from src.ner_predict import predict
 from inventory_utils.filing import get_ner_model
@@ -45,15 +51,37 @@ from inventory_utils.runtime import get_torch_device
 # CONFIGURATION
 # ============================================================================
 
-# Paths (relative to validation_spacy_v_BERT/)
+# TEST_MODE: Set to True for quick testing (10-15 papers)
+#            Set to False for full validation (all papers in sample)
+TEST_MODE = os.environ.get('TEST_MODE', 'False').lower() == 'true'
+SESSION_ID = os.environ.get('SESSION_ID', '')
+if not SESSION_ID:
+    # Generate session ID WITHOUT _test suffix (matches script 03a)
+    # TEST_MODE just limits processing, not file naming
+    import random
+    import string
+    from datetime import datetime
+    SESSION_ID = f"{datetime.now().strftime('%Y-%m-%d')}-{''.join(random.choices(string.ascii_lowercase + string.digits, k=6))}"
+
+TEST_SIZE = 15 if TEST_MODE else None
+
+if TEST_MODE:
+    print("\n🧪 TEST MODE ENABLED")
+    print(f"   Will process first {TEST_SIZE} papers\n")
+else:
+    print("\n🚀 PRODUCTION MODE")
+    print("   Will process all papers in validation sample\n")
+
+# Paths (relative to validation_spacy_v_BERT/) - use _test suffix in TEST_MODE
 VALIDATION_ROOT = Path(__file__).parent.parent
-SAMPLE_FILE = VALIDATION_ROOT / "results/validation/sample/validation_sample_with_abstracts.csv"
+output_suffix = f"_{SESSION_ID}" if SESSION_ID else ("_test" if TEST_MODE else "")
+SAMPLE_FILE = VALIDATION_ROOT / f"results/validation/sample/validation_sample_with_abstracts{output_suffix}.csv"
 OUTPUT_DIR = VALIDATION_ROOT / "results/validation/ner"
-OUTPUT_FILE = OUTPUT_DIR / "v2_ner_results.csv"
+OUTPUT_FILE = OUTPUT_DIR / f"v2_ner_results{output_suffix}.csv"
 LOG_FILE = VALIDATION_ROOT / "logs/04a_run_v2_ner.log"
 
 # Model path (relative to project root)
-MODEL_PATH = PROJECT_ROOT / "out/ner_train_out/article_ner_v2.pt"
+MODEL_PATH = PROJECT_ROOT / "out/original_model/named_entity_recognition.pt"
 
 # ============================================================================
 # LOGGING SETUP
@@ -152,7 +180,7 @@ def run_v2_ner(input_df, model_path, device):
 
     # Load model
     with open(model_path, 'rb') as f:
-        model, tokenizer = get_ner_model(f, device)
+        model, model_name, tokenizer = get_ner_model(f, device)
 
     logger.info(f"✓ Model loaded")
     logger.info(f"  Device: {device}")
@@ -205,6 +233,12 @@ def main():
     logger.info("\n📚 Loading validation sample...")
     df_sample = pd.read_csv(SAMPLE_FILE)
     logger.info(f"✓ Loaded {len(df_sample)} papers")
+
+    # Apply TEST_MODE if enabled
+    if TEST_MODE:
+        logger.info(f"🧪 TEST_MODE: Using first {TEST_SIZE} papers")
+        df_sample = df_sample.head(TEST_SIZE)
+        logger.info(f"✓ Test sample size: {len(df_sample)} papers")
 
     # Check for abstracts
     has_abstract = df_sample['abstract'].notna() & (df_sample['abstract'] != '')
@@ -280,4 +314,4 @@ def main():
 # ============================================================================
 
 if __name__ == "__main__":
-    exit(main())
+    main()

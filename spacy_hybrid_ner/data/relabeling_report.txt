@@ -1,0 +1,30 @@
+======================================================================
+ENTITYRULER PATTERN RELABELING REPORT
+======================================================================
+
+SUMMARY
+----------------------------------------------------------------------
+Total patterns:     6,216
+COM (short) labels: 3,911 (62.9%)
+FUL (full) labels:  2,305 (37.1%)
+
+CONFIDENCE DISTRIBUTION
+----------------------------------------------------------------------
+High confidence (≥90%):   6,207 (99.9%)
+Medium confidence (75-90%): 4 (0.1%)
+Low confidence (<75%):    5 (0.1%)
+
+MANUAL REVIEW NEEDED
+----------------------------------------------------------------------
+Cases flagged: 6
+
+Top 20 cases for review:
+
+ 1. 'Pharmacogenomics' → COM (conf=0.60, id=GPIeR)
+ 2. 'Chromosome-centrics' → COM (conf=0.60, id=GenomewidePDB)
+ 3. 'tautomerics' → COM (conf=0.65, id=tautomeric)
+ 4. 'henomebrowsers' → COM (conf=0.65, id=PathoPhenoDB)
+ 5. 'Spliceosomes' → COM (conf=0.65, id=Spliceosome)
+ 6. 'Herceptins' → COM (conf=0.75, id=HerceptinR)
+
+======================================================================

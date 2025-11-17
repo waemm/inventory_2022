@@ -1,0 +1,83 @@
+{
+  "metadata": {
+    "study_date": "2025-11-13T11:11:42.307882",
+    "model_type": "spaCy Hybrid NER (EntityRuler + Statistical NER)",
+    "num_papers": 125,
+    "num_unique_resources": 100,
+    "num_global_core_papers": 53,
+    "num_other_papers": 72
+  },
+  "aggregate_metrics": {
+    "micro_averaged": {
+      "precision": 0.9109,
+      "recall": 0.4842,
+      "f1": 0.6323,
+      "total_true_positives": 92,
+      "total_false_positives": 9,
+      "total_false_negatives": 98
+    },
+    "macro_averaged": {
+      "precision": 0.728,
+      "recall": 0.556,
+      "f1": 0.6107
+    }
+  },
+  "by_paper_type": {
+    "global_core": {
+      "num_papers": 53,
+      "precision": 0.7453,
+      "recall": 0.566,
+      "f1": 0.6226
+    },
+    "other": {
+      "num_papers": 72,
+      "precision": 0.7153,
+      "recall": 0.5486,
+      "f1": 0.6019
+    }
+  },
+  "distribution": {
+    "perfect_matches": 45,
+    "partial_matches": 47,
+    "no_matches": 33
+  },
+  "top_missed_resources": {
+    "RGD": 2,
+    "GOC": 2,
+    "ENA": 2,
+    "IMEx": 2,
+    "HPA": 2,
+    "BRENDA": 2,
+    "PDB": 2,
+    "BacDive": 2,
+    "Europe PMC": 2,
+    "ZFIN": 2
+  },
+  "top_false_positive_papers": [
+    {
+      "pubmed_id": "35037224",
+      "resource_short_name": "Plant Reactome",
+      "fp_count": 2
+    },
+    {
+      "pubmed_id": "34314492",
+      "resource_short_name": "GlyTouCan",
+      "fp_count": 2
+    },
+    {
+      "pubmed_id": "31584092",
+      "resource_short_name": "PDBe-KB",
+      "fp_count": 1
+    },
+    {
+      "pubmed_id": "37695921",
+      "resource_short_name": "antimicrobial peptide database",
+      "fp_count": 1
+    },
+    {
+      "pubmed_id": "31647101",
+      "resource_short_name": "miRTarBase",
+      "fp_count": 1
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+pubmed_id,title,publication_year,resource_short_name,resource_full_name,is_global_core,citation_count,true_positives,false_positives,false_negatives,predicted_count,ground_truth_count,tp_count,fp_count,fn_count,precision,recall,f1
+37347557,"The Rat Genome Database: Genetic, Genomic, and Phenotypic Data Across Multiple Species.",2023,RGD,Rat Genome Database,1,386,['rgd'],[],['rat genome'],1,2,1,0,1,1.0,0.5,0.6666666666666666
+36930729,"2022 updates to the Rat Genome Database: a Findable, Accessible, Interoperable, and Reusable (FAIR) ...",2023,RGD,Rat Genome Database,1,386,['rgd'],[],['rat genome'],1,2,1,0,1,1.0,0.5,0.6666666666666666
+36318249,Ensembl 2023.,2023,Ensembl,,1,662,['ensembl'],[],[],1,1,1,0,0,1.0,1.0,1.0
+34791404,Ensembl 2022.,2022,Ensembl,,1,1357,['ensembl'],[],[],1,1,1,0,0,1.0,1.0,1.0
+36399492,The European Nucleotide Archive in 2022.,2023,ENA,European Nucleotide Archive,1,65,['ena'],[],['european nucleotide archive'],1,2,1,0,1,1.0,0.5,0.6666666666666666
+34850158,The European Nucleotide Archive in 2021.,2022,ENA,European Nucleotide Archive,1,60,['ena'],[],['european nucleotide archive'],1,2,1,0,1,1.0,0.5,0.6666666666666666
+36420889,DNA Data Bank of Japan (DDBJ) update report 2022.,2023,DDBJ,DNA Data Bank of Japan,1,25,['ddbj'],[],['dna data bank of japan'],1,2,1,0,1,1.0,0.5,0.6666666666666666
+34751405,DNA Data Bank of Japan (DDBJ) update report 2021.,2022,DDBJ,DNA Data Bank of Japan,1,226,['ddbj'],[],['dna data bank of japan'],1,2,1,0,1,1.0,0.5,0.6666666666666666
+33231642,Mouse Genome Database (MGD): Knowledgebase for mouse-human comparative biology.,2021,MGD,Mouse Genome Database,1,275,['mgd'],[],['mouse genome'],1,2,1,0,1,1.0,0.5,0.6666666666666666
+30407599,Mouse Genome Database (MGD) 2019.,2019,MGD,Mouse Genome Database,1,514,['mgd'],[],['mouse genome'],1,2,1,0,1,1.0,0.5,0.6666666666666666
+33237286,UniProt: the universal protein knowledgebase in 2021.,2021,UniProtKB,Universal Protein Resource,1,4177,['uniprotkb'],[],['universal protein'],1,2,1,0,1,1.0,0.5,0.6666666666666666
+30395287,UniProt: a worldwide hub of protein knowledge.,2019,UniProtKB,Universal Protein Resource,1,4767,['uniprotkb'],[],['universal protein'],1,2,1,0,1,1.0,0.5,0.6666666666666666
+34788843,The reactome pathway knowledgebase 2022.,2022,Reactome,,1,1237,[],[],['reactome'],0,1,0,0,1,0.0,0.0,0.0
+32486891,Using Reactome to build an autophagy mechanism knowledgebase.,2021,Reactome,,1,8,['reactome'],[],[],1,1,1,0,0,1.0,1.0,1.0
+32128557,Incorporation of a unified protein abundance dataset into the Saccharomyces genome database.,2020,SGD,Saccharomyces Genome Database,1,4,[],[],"['saccharomyces genome', 'sgd']",0,2,0,0,2,0.0,0.0,0.0
+29140510,Saccharomyces genome database informs human biology.,2018,SGD,Saccharomyces Genome Database,1,23,[],[],"['saccharomyces genome', 'sgd']",0,2,0,0,2,0.0,0.0,0.0
+33290554,"PANTHER version 16: a revised family classification, tree-based classification tool, enhancer region...",2021,PANTHER,Protein Analysis Through Evolutionary Relationships,1,887,['panther'],[],['protein analysis through evolutionary relationships'],1,2,1,0,1,1.0,0.5,0.6666666666666666
+30407594,"PANTHER version 14: more genomes, a new PANTHER GO-slim and improvements in enrichment analysis tool...",2019,PANTHER,Protein Analysis Through Evolutionary Relationships,1,1960,['panther'],[],['protein analysis through evolutionary relationships'],1,2,1,0,1,1.0,0.5,0.6666666666666666
+36370105,The STRING database in 2023: protein-protein association networks and functional enrichment analyses...,2023,STRING,,1,3503,['string'],[],[],1,1,1,0,0,1.0,1.0,1.0
+33237311,"The STRING database in 2021: customizable protein-protein networks, and functional characterization ...",2021,STRING,,1,4722,['string'],[],[],1,1,1,0,0,1.0,1.0,1.0
+36350672,InterPro in 2022.,2023,InterPro,,1,1439,['interpro'],[],[],1,1,1,0,0,1.0,1.0,1.0
+33156333,The InterPro protein families and domains database: 20 years on.,2021,InterPro,,1,1353,['interpro'],[],[],1,1,1,0,0,1.0,1.0,1.0
+33170210,The Zebrafish Information Network: major gene page and home page updates.,2021,ZFIN,Zebrafish Model Organism Database,1,14,[],[],"['zebrafish model organism', 'zfin']",0,2,0,0,2,0.0,0.0,0.0
+30407545,"The Zebrafish Information Network: new support for non-coding genes, richer Gene Ontology annotation...",2019,ZFIN,Zebrafish Model Organism Database,1,92,[],[],"['zebrafish model organism', 'zfin']",0,2,0,0,2,0.0,0.0,0.0
+30398643,ChEMBL: towards direct deposition of bioassay data.,2019,ChEMBL,,1,1099,['chembl'],[],[],1,1,1,0,0,1.0,1.0,1.0
+27899562,The ChEMBL database in 2017.,2017,ChEMBL,,1,1139,['chembl'],[],[],1,1,1,0,0,1.0,1.0,1.0
+31642470,WormBase: a modern Model Organism Information Resource.,2020,WormBase,,1,233,['wormbase'],[],[],1,1,1,0,0,1.0,1.0,1.0
+29069413,WormBase 2017: molting into a new stage.,2018,WormBase,,1,131,['wormbase'],[],[],1,1,1,0,0,1.0,1.0,1.0
+30272209,Updates in Rhea: SPARQLing biochemical reaction data.,2019,Rhea,,1,42,['rhea'],[],[],1,1,1,0,0,1.0,1.0,1.0
+27789701,Updates in Rhea - an expert curated resource of biochemical reactions.,2017,Rhea,,1,34,['rhea'],[],[],1,1,1,0,0,1.0,1.0,1.0
+33290552,The Gene Ontology resource: enriching a GOld mine.,2021,GOC,Gene Ontology consortium,1,2274,[],[],"['gene ontology consortium', 'goc']",0,2,0,0,2,0.0,0.0,0.0
+30395331,The Gene Ontology Resource: 20 years and still GOing strong.,2019,GOC,Gene Ontology consortium,1,2908,[],[],"['gene ontology consortium', 'goc']",0,2,0,0,2,0.0,0.0,0.0
+34718743,BacDive in 2022: the knowledge base for standardized bacterial and archaeal data.,2022,BacDive,Bacterial Diversity Metadatabase,1,114,['bacdive'],[],['bacterial diversity metadatabase'],1,2,1,0,1,1.0,0.5,0.6666666666666666
+30256983,BacDive in 2019: bacterial phenotypic data for High-throughput biodiversity analysis.,2019,BacDive,Bacterial Diversity Metadatabase,1,117,['bacdive'],[],['bacterial diversity metadatabase'],1,2,1,0,1,1.0,0.5,0.6666666666666666
+36370099,The ProteomeXchange consortium at 10 years: 2023 update.,2023,ProteomeXchange,,1,408,['proteomexchange'],[],[],1,1,1,0,0,1.0,1.0,1.0
+31686107,The ProteomeXchange consortium in 2020: enabling 'big data' approaches in proteomics.,2020,ProteomeXchange,,1,545,['proteomexchange'],[],[],1,1,1,0,0,1.0,1.0,1.0
+32558264,Insights from 20 years of the Molecule of the Month.,2020,PDB,Worldwide Protein Data Bank organization,1,18,[],[],"['worldwide protein data bank organization', 'protein data bank']",0,2,0,0,2,0.0,0.0,0.0
+28296894,Impact of genetic variation on three dimensional structure and function of proteins.,2017,PDB,Worldwide Protein Data Bank organization,1,42,[],[],"['worldwide protein data bank organization', 'protein data bank']",0,2,0,0,2,0.0,0.0,0.0
+33221922,The UCSC Genome Browser database: 2021 update.,2021,UCSC Genome Browser,UCSC Genome Browser,1,379,['ucsc genome browser'],[],[],1,1,1,0,0,1.0,1.0,1.0
+26590259,The UCSC Genome Browser database: 2016 update.,2016,UCSC Genome Browser,UCSC Genome Browser,1,298,['ucsc genome browser'],[],[],1,1,1,0,0,1.0,1.0,1.0
+26935103,FlyBase portals to human disease research using Drosophila models.,2016,FlyBase,,1,46,['flybase'],[],[],1,1,1,0,0,1.0,1.0,1.0
+24234449,FlyBase 102--advanced approaches to interrogating FlyBase.,2014,FlyBase,,1,252,['flybase'],[],[],1,1,1,0,0,1.0,1.0,1.0
+33180112,Europe PMC in 2020.,2021,Europe PMC,,1,38,[],[],['europe pmc'],0,1,0,0,1,0.0,0.0,0.0
+29161421,Europe PMC in 2017.,2018,Europe PMC,,1,26,[],[],['europe pmc'],0,1,0,0,1,0.0,0.0,0.0
+33211880,"BRENDA, the ELIXIR core data resource in 2021: new developments and updates.",2021,BRENDA,BRaunschweig ENzyme DAtabase,1,355,['brenda'],[],['braunschweig enzyme'],1,2,1,0,1,1.0,0.5,0.6666666666666666
+25378310,BRENDA in 2015: exciting developments in its 25th year of existence.,2015,BRENDA,BRaunschweig ENzyme DAtabase,1,125,['brenda'],[],['braunschweig enzyme'],1,2,1,0,1,1.0,0.5,0.6666666666666666
+28940711,The human protein atlas: A spatial map of the human proteome.,2018,HPA,Human Protein Atlas,1,555,[],[],"['human protein atlas', 'hpa']",0,2,0,0,2,0.0,0.0,0.0
+21752111,The Human Protein Atlas as a proteomic resource for biomarker discovery.,2011,HPA,Human Protein Atlas,1,171,['hpa'],[],['human protein atlas'],1,2,1,0,1,1.0,0.5,0.6666666666666666
+35507258,"IMEx Databases: Displaying Molecular Interactions into a Single, Standards-Compliant Dataset.",2022,IMEx,International Molecular Exchange Consortium,1,4,['imex'],[],['international molecular exchange consortium'],1,2,1,0,1,1.0,0.5,0.6666666666666666
+33262342,Towards a unified open access dataset of molecular interactions.,2020,IMEx,International Molecular Exchange Consortium,1,46,[],[],"['imex', 'international molecular exchange consortium']",0,2,0,0,2,0.0,0.0,0.0
+32102777,The 2019 novel coronavirus resource.,2020,2019nCoVR,2019 Novel Coronavirus Resource,0,189,[],[],"['2019ncovr', '2019 novel coronavirus']",0,2,0,0,2,0.0,0.0,0.0
+35592546,The EWAS Catalog: a database of epigenome-wide association studies.,2022,EWAS,,0,177,['ewas'],[],[],1,1,1,0,0,1.0,1.0,1.0
+36406421,Database of space life investigations and bioinformatics of microbiology in extreme environments.,2022,SpaceLID,Space Life Investigation Database,0,4,[],[],"['spacelid', 'space life investigation']",0,2,0,0,2,0.0,0.0,0.0
+34747465,Hymenoptera Genome Database: new genomes and annotation datasets for improved go enrichment and orth...,2022,HGD,Hymenoptera Genome Database,0,23,[],[],"['hymenoptera genome', 'hgd']",0,2,0,0,2,0.0,0.0,0.0
+34761267,The IntAct database: efficient access to fine-grained molecular interaction data.,2022,IntAct,,0,186,['intact'],[],[],1,1,1,0,0,1.0,1.0,1.0
+32696355,Exploring Protein Intrinsic Disorder with MobiDB.,2020,MobiDB,,0,221,['mobidb'],[],[],1,1,1,0,0,1.0,1.0,1.0
+36305812,PubChem 2023 update.,2023,PubChem,,0,4613,['pubchem'],[],[],1,1,1,0,0,1.0,1.0,1.0
+34986597,HMDB 5.0: the Human Metabolome Database for 2022.,2022,HMDB,Human Metabolome Database,0,1136,['hmdb'],[],['human metabolome'],1,2,1,0,1,1.0,0.5,0.6666666666666666
+36477806,The conserved domain database in 2023.,2023,CDD,Conserved Domain Database,0,4986,[],[],"['conserved domain', 'cdd']",0,2,0,0,2,0.0,0.0,0.0
+36300620,KEGG for taxonomy-based analysis of pathways and genomes.,2023,KEGG,Kyoto Encyclopedia of Genes and Genomes,0,3038,['kegg'],[],['kyoto encyclopedia of genes and genomes'],1,2,1,0,1,1.0,0.5,0.6666666666666666
+36281025,Dockground resource for protein recognition studies.,2022,DOCKGROUND,,0,54,[],[],['dockground'],0,1,0,0,1,0.0,0.0,0.0
+35037224,Plant Reactome and PubChem: The Plant Pathway and (Bio)Chemical Entity Knowledgebases.,2022,Plant Reactome,,0,74,[],"['pubchem', 'reactome']",['plant reactome'],2,1,0,2,1,0.0,0.0,0.0
+33068428,Comparative Toxicogenomics Database (CTD): update 2021.,2021,CTD,Comparative Toxicogenomics Database,0,581,['ctd'],[],['comparative toxicogenomics'],1,2,1,0,1,1.0,0.5,0.6666666666666666
+31612961,GWAS Central: a comprehensive resource for the discovery and comparison of genotype and phenotype da...,2020,GWAS Central,,0,45,[],[],['gwas central'],0,1,0,0,1,0.0,0.0,0.0
+31680160,ELM-the eukaryotic linear motif resource in 2020.,2020,ELM,eukaryotic linear motif,0,220,['elm'],[],['eukaryotic linear motif'],1,2,1,0,1,1.0,0.5,0.6666666666666666
+32406920,AnnoLnc2: the one-stop portal to systematically annotate novel lncRNAs for human and mouse.,2020,AnnoLnc,,0,41,[],[],['annolnc'],0,1,0,0,1,0.0,0.0,0.0
+31696235,MGnify: the microbiome analysis resource in 2020.,2020,MGnify,,0,398,['mgnify'],[],[],1,1,1,0,0,1.0,1.0,1.0
+36419334,"DATAMAN: A global database of methane, nitrous oxide, and ammonia emission factors for livestock hou...",2023,DATAMAN,,0,4,['dataman'],[],[],1,1,1,0,0,1.0,1.0,1.0
+31584099,gutMDisorder: a comprehensive database for dysbiosis of the gut microbiota in disorders and interven...,2020,gutMDisorder,,0,115,['gutmdisorder'],[],[],1,1,1,0,0,1.0,1.0,1.0
+31713636,DisProt: intrinsic protein disorder annotation in 2020.,2020,DisProt,Database of Intrinsically Disordered Proteins,0,162,['disprot'],[],['database of intrinsically disordered proteins'],1,2,1,0,1,1.0,0.5,0.6666666666666666
+33166392,LitCovid: an open database of COVID-19 literature.,2021,LitCovid,,0,155,['litcovid'],[],[],1,1,1,0,0,1.0,1.0,1.0
+35899212,Development and Implementation of the AIDA International Registry for Patients With VEXAS Syndrome.,2022,AIDA,,0,16,['aida'],[],[],1,1,1,0,0,1.0,1.0,1.0
+34314492,"Enhancing the interoperability of glycan data flow between ChEBI, PubChem and GlyGen.",2021,GlyTouCan,,0,50,[],"['pubchem', 'chebi']",['glytoucan'],2,1,0,2,1,0.0,0.0,0.0
+31584092,PDBe-KB: a community-driven resource for structural and functional annotations.,2020,PDBe-KB,Protein Data Bank in Europe - Knowledge Base,0,87,[],['pdbe'],"['pdbe-kb', 'protein data bank in europe - knowledge base']",1,2,0,1,2,0.0,0.0,0.0
+34762703,CicerSpTEdb: A web-based database for high-resolution genome-wide identification of transposable ele...,2021,CicerSpTEdb,Cicer Species Transposable,0,6,['cicersptedb'],[],['cicer species transposable'],1,2,1,0,1,1.0,0.5,0.6666666666666666
+31665520,"SIGNOR 2.0, the SIGnaling Network Open Resource 2.0: 2019 update.",2020,SIGNOR,SIGnaling Network Open Resource,0,164,['signor'],[],['signaling network open'],1,2,1,0,1,1.0,0.5,0.6666666666666666
+37183442,Human Autoantigen Atlas: Searching for the Hallmarks of Autoantigens.,2023,AAgAtlas,Human Autoantigen Atlas,0,24,['aagatlas'],[],['human autoantigen atlas'],1,2,1,0,1,1.0,0.5,0.6666666666666666
+31906602,LLPSDB: a database of proteins undergoing liquid-liquid phase separation in vitro.,2020,LLPSDB,,0,108,['llpsdb'],[],[],1,1,1,0,0,1.0,1.0,1.0
+33010159,PROTAC-DB: an online database of PROTACs.,2021,PROTAC-DB,,0,112,['protac-db'],[],[],1,1,1,0,0,1.0,1.0,1.0
+37695921,The antimicrobial peptide database is 20 years old: Recent developments and future directions.,2023,antimicrobial peptide database,antimicrobial peptide database,0,23,[],['apd3'],['antimicrobial peptide'],1,1,0,1,1,0.0,0.0,0.0
+34747470,AMDB: a database of animal gut microbial communities with manually curated metadata.,2022,AMDB,Animal Microbiome Database,0,13,['amdb'],[],['animal microbiome'],1,2,1,0,1,1.0,0.5,0.6666666666666666
+34934514,GISAID's Role in Pandemic Response.,2021,GISAID,Global Initiative on Sharing All Influenza Data,0,686,['gisaid'],[],['global initiative on sharing all influenza data'],1,2,1,0,1,1.0,0.5,0.6666666666666666
+31504765,GMrepo: a database of curated and consistently annotated human gut metagenomes.,2020,GMrepo,data repository for Gut Microbiota,0,98,['gmrepo'],[],['data repository for gut microbiota'],1,2,1,0,1,1.0,0.5,0.6666666666666666
+33196841,ProThermDB: thermodynamic database for proteins and mutants revisited after 15 years.,2021,ProThermDB,,0,123,['prothermdb'],[],[],1,1,1,0,0,1.0,1.0,1.0
+33835459,MODOMICS: An Operational Guide to the Use of the RNA Modification Pathways Database.,2021,MODOMICS,Modification Pathways Database,0,1190,['modomics'],[],['modification pathways'],1,2,1,0,1,1.0,0.5,0.6666666666666666
+31612915,MIBiG 2.0: a repository for biosynthetic gene clusters of known function.,2020,MIBiG,Minimum Information about a Biosynthetic Gene Cluster,0,403,['mibig'],[],['minimum information about a biosynthetic gene cluster'],1,2,1,0,1,1.0,0.5,0.6666666666666666
+31598699,QTLbase: an integrative resource for quantitative trait loci across multiple human molecular phenoty...,2020,QTLbase,,0,95,['qtlbase'],[],[],1,1,1,0,0,1.0,1.0,1.0
+31647096,"proGenomes2: an improved database for accurate and consistent habitat, taxonomic and functional anno...",2020,proGenomes2,,0,70,['progenomes2'],[],[],1,1,1,0,0,1.0,1.0,1.0
+31566222,GWAS Atlas: a curated resource of genome-wide variant-trait associations in plants and animals.,2020,GWAS Atlas,,0,88,[],[],['gwas atlas'],0,1,0,0,1,0.0,0.0,0.0
+36399502,IMG/VR v4: an expanded database of uncultivated virus genomes within a framework of extensive functi...,2023,IMG/VR,,0,313,[],[],['img/vr'],0,1,0,0,1,0.0,0.0,0.0
+32728249,Expanded encyclopaedias of DNA elements in the human and mouse genomes.,2020,ENCODE,The Encyclopedia of DNA Elements,0,1521,[],[],"['the encyclopedia of dna elements', 'encode']",0,2,0,0,2,0.0,0.0,0.0
+31647101,miRTarBase 2020: updates to the experimentally validated microRNA-target interaction database.,2020,miRTarBase,,0,931,['mirtarbase'],['ccidb'],[],2,1,1,1,0,0.5,1.0,0.6666666666666666
+30715167,The global dissemination of bacterial infections necessitates the study of reverse genomic epidemiol...,2020,BacWGSTdb,,0,140,[],[],['bacwgstdb'],0,1,0,0,1,0.0,0.0,0.0
+33270898,"GPCRdb in 2021: integrating GPCR sequence, structure and function.",2021,GPCRdb,,0,230,['gpcrdb'],[],[],1,1,1,0,0,1.0,1.0,1.0
+36318257,Twenty-five years of Genomes OnLine Database (GOLD): data updates and new features in v.9.,2023,GOLD,Genomes OnLine Database,0,726,['gold'],[],['genomes online'],1,2,1,0,1,1.0,0.5,0.6666666666666666
+31713618,LncTarD: a manually-curated database of experimentally-supported functional lncRNA-target regulation...,2020,LncTarD,,0,81,['lnctard'],[],[],1,1,1,0,0,1.0,1.0,1.0
+33179754,TISCH: a comprehensive web resource enabling interactive single-cell transcriptome visualization of ...,2021,TISCH2,Tumor Immune Single Cell Hub,0,717,[],['tisch'],"['tumor immune single cell hub', 'tisch2']",1,2,0,1,2,0.0,0.0,0.0
+31906603,RNAInter in 2020: RNA interactome repository with increased coverage and annotation.,2020,RNAInter,RNA Interactome Database,0,155,['rnainter'],[],['rna interactome'],1,2,1,0,1,1.0,0.5,0.6666666666666666
+31696236,Mouse Phenome Database: a data repository and analysis suite for curated primary mouse phenotype dat...,2020,MPD,Mouse Phenome Database,0,52,['mpd'],[],['mouse phenome'],1,2,1,0,1,1.0,0.5,0.6666666666666666
+31670377,NPInter v4.0: an integrated database of ncRNA interactions.,2020,NPInter,,0,116,['npinter'],[],[],1,1,1,0,0,1.0,1.0,1.0
+39441075,20 years of the Bio-Analytic Resource for Plant Biology.,2025,BAR,Bio-Analytic Resource for Plant Biology,1,0,['bar'],[],['bio-analytic resource for plant biology'],1,2,1,0,1,1.0,0.5,0.6666666666666666
+39404758,The Clinical Genome Resource (ClinGen): Advancing genomic knowledge through global curation.,2025,ClinGen,Clinical Genome Resource,1,1,['clingen'],[],['clinical genome'],1,2,1,0,1,1.0,0.5,0.6666666666666666
+38125297,SCInter: A comprehensive single-cell transcriptome integration database for human and mouse.,2024,SCInter,comprehensive Single-Cell transcriptome integration database for human and mouse,0,1,['scinter'],[],['comprehensive single-cell transcriptome integration database for human and mouse'],1,2,1,0,1,1.0,0.5,0.6666666666666666
+37871773,P450Rdb: A manually curated database of reactions catalyzed by cytochrome P450 enzymes.,2024,P450Rdb,,0,27,['p450rdb'],[],[],1,1,1,0,0,1.0,1.0,1.0
+37566336,The Children's Picture Books Lexicon (CPB-LEX): A large-scale lexical database from children's pictu...,2024,CPB-LEX,The Children's Picture Books Lexicon,0,4,['cpb-lex'],[],"[""the children's picture books lexicon""]",1,2,1,0,1,1.0,0.5,0.6666666666666666
+38161244,Unveiling facial kinship: The BioKinVis dataset for facial kinship verification and genetic associat...,2024,BioKinVis,,0,0,['biokinvis'],[],[],1,1,1,0,0,1.0,1.0,1.0
+37167092,NAFLDkb: A Knowledge Base and Platform for Drug Development against Nonalcoholic Fatty Liver Disease...,2024,NAFLDkb,,0,2,['nafldkb'],[],[],1,1,1,0,0,1.0,1.0,1.0
+37876351,A database for MR-based electrical properties tomography with in silico brain data-ADEPT.,2024,ADEPT,,0,0,['adept'],[],[],1,1,1,0,0,1.0,1.0,1.0
+38050352,PEO: Plant Expression Omnibus - a comparative transcriptomic database for 103 Archaeplastida.,2024,PEO,Plant Expression Omnibus,0,0,['peo'],[],['plant expression omnibus'],1,2,1,0,1,1.0,0.5,0.6666666666666666
+37789571,Analyzing the cation-aromatic interactions in proteins: Cation-aromatic database V2.0.,2024,CAD,Cation-Aromatic Database,0,0,[],[],"['cation-aromatic', 'cad']",0,2,0,0,2,0.0,0.0,0.0
+38371639,AlliumDB: a central portal for comparative and functional genomics in <i>Allium</i>.,2024,AlliumDB,,0,6,['alliumdb'],[],[],1,1,1,0,0,1.0,1.0,1.0
+38157107,BioTreasury: a community-based repository enabling indexing and rating of bioinformatics tools.,2024,BioTreasury,,0,1,['biotreasury'],[],[],1,1,1,0,0,1.0,1.0,1.0
+38160837,ViCEKb: Vitiligo-linked Chemical Exposome Knowledgebase.,2024,ViCEKb,Vitiligo-linked Chemical Exposome Knowledgebase,0,0,['vicekb'],[],['vitiligo-linked chemical exposome knowledgebase'],1,2,1,0,1,1.0,0.5,0.6666666666666666
+37747225,"Consensus-Based Development of a Global Registry for Traumatic Brain Injury: Establishment, Protocol...",2024,GEO-TBI,Global Epidemiology and Outcomes following Traumatic Brain Injury,0,0,[],[],"['global epidemiology and outcomes following traumatic brain injury', 'geo-tbi']",0,2,0,0,2,0.0,0.0,0.0
+38157777,RVvictor: Virus RNA-directed molecular interactions for RNA virus infection.,2024,RVvictor,,0,0,['rvvictor'],[],[],1,1,1,0,0,1.0,1.0,1.0
+38156953,hccTAAb Atlas: An Integrated Knowledge Database for Tumor-Associated Autoantibodies in Hepatocellula...,2024,hccTAAb,,0,0,['hcctaab'],[],[],1,1,1,0,0,1.0,1.0,1.0
+36881355,CCLOOW: Chinese children's lexicon of oral words.,2024,CCLOOW,Chinese Children's Lexicon of Oral Words,0,0,['ccloow'],[],"[""chinese children's lexicon of oral words""]",1,2,1,0,1,1.0,0.5,0.6666666666666666
+38142743,NCAD v1.0: a database for non-coding variant annotation and interpretation.,2024,NCAD,non-coding variant annotation database,0,0,['ncad'],[],['non-coding variant annotation'],1,2,1,0,1,1.0,0.5,0.6666666666666666
+37386732,REDH: A database of RNA editome in hematopoietic differentiation and malignancy.,2024,REDH,,0,0,['redh'],[],[],1,1,1,0,0,1.0,1.0,1.0
+38868513,CBD2: A functional biomarker database for colorectal cancer.,2024,CBD,Colorectal Cancer Biomarker Database,0,17,[],[],"['cbd', 'colorectal cancer biomarker']",0,2,0,0,2,0.0,0.0,0.0
+37589496,AutophagyNet: high-resolution data source for the analysis of autophagy and its regulation.,2024,AutophagyNet,Regulatory Network,0,5,['autophagynet'],[],['regulatory network'],1,2,1,0,1,1.0,0.5,0.6666666666666666
+37993103,IDPpub: Illuminating the Dark Phosphoproteome Through PubMed Mining.,2024,IDPpub,Illuminating the Dark Phosphoproteome,0,4,['idppub'],[],['illuminating the dark phosphoproteome'],1,2,1,0,1,1.0,0.5,0.6666666666666666
+38239810,MODMS: a multi-omics database for facilitating biological studies on alfalfa (<i>Medicago sativa</i>...,2024,MODMS,multi-omics database of M,0,10,['modms'],[],['multi-omics database of m'],1,2,1,0,1,1.0,0.5,0.6666666666666666
+37596815,The energetics and evolution of oxidoreductases in deep time.,2024,ProtReDox,,0,0,[],[],['protredox'],0,1,0,0,1,0.0,0.0,0.0
+37855672,LIPID MAPS: update to databases and tools for the lipidomics community.,2024,LIPID MAPS,,1,81,['lipid maps'],['maps'],[],2,1,1,1,0,0.5,1.0,0.6666666666666666

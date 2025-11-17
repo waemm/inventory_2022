@@ -1,0 +1,46 @@
+{
+  "total": 6216,
+  "COM": 3911,
+  "FUL": 2305,
+  "high_confidence": 6207,
+  "medium_confidence": 4,
+  "low_confidence": 5,
+  "manual_review": [
+    {
+      "pattern": "Pharmacogenomics",
+      "suggested_label": "COM",
+      "confidence": 0.6,
+      "canonical_id": "GPIeR"
+    },
+    {
+      "pattern": "tautomerics",
+      "suggested_label": "COM",
+      "confidence": 0.65,
+      "canonical_id": "tautomeric"
+    },
+    {
+      "pattern": "henomebrowsers",
+      "suggested_label": "COM",
+      "confidence": 0.65,
+      "canonical_id": "PathoPhenoDB"
+    },
+    {
+      "pattern": "Chromosome-centrics",
+      "suggested_label": "COM",
+      "confidence": 0.6,
+      "canonical_id": "GenomewidePDB"
+    },
+    {
+      "pattern": "Herceptins",
+      "suggested_label": "COM",
+      "confidence": 0.75,
+      "canonical_id": "HerceptinR"
+    },
+    {
+      "pattern": "Spliceosomes",
+      "suggested_label": "COM",
+      "confidence": 0.65,
+      "canonical_id": "Spliceosome"
+    }
+  ]
+}

@@ -173,7 +173,7 @@ Reusing existing V2/Phase 4 labels:
 - `11_benchmark_hybrid_speed.py`
 - `12_analyze_alias_resolution.py`
 
-**Output**: `models/ner_hybrid_v1/`
+**Output**: `models/ner_hybrid_v2_com_ful/`
 
 ### Phase 6: Production Deployment (2-3 days)
 **Focus**: Package pipeline and integrate with existing infrastructure
@@ -295,7 +295,7 @@ inventory_2022/
 │
 ├── models/
 │   ├── ner_statistical/
-│   └── ner_hybrid_v1/
+│   └── ner_hybrid_v2_com_ful/
 │
 ├── packages/
 │   └── en_ner_hybrid_bioresource-1.0.0/

@@ -16,9 +16,12 @@ Usage:
     source ../pycaret_env/bin/activate
     python scripts/03b_run_pycaret_classification.py
 
+    For testing with small sample:
+    TEST_MODE=True python scripts/03b_run_pycaret_classification.py
+
 Inputs:
     - results/validation/sample/validation_sample_with_abstracts.csv
-    - ../../data/final_query_v5.1_2011_2021/query_results.csv (for metadata)
+    - results/validation/metadata/validation_metadata_epmc.csv (fresh EPMC metadata)
     - ../../pycaret_models/test_mode_true/pycaret_metadata_classifier_v1.pkl
     - ../../pycaret_models/test_mode_false/pycaret_metadata_classifier_v1.pkl
 
@@ -34,12 +37,14 @@ Date: 2025-11-13
 """
 
 import sys
+import os
 import pandas as pd
 import numpy as np
 from pathlib import Path
 import logging
 from datetime import datetime
 import json
+import ast  # CRITICAL FIX: For parsing Python literal syntax (single quotes)
 import warnings
 warnings.filterwarnings('ignore')
 
@@ -47,12 +52,34 @@ warnings.filterwarnings('ignore')
 # CONFIGURATION
 # ============================================================================
 
-# Paths (relative to validation_spacy_v_BERT/)
+# TEST_MODE: Set to True for quick testing (10-15 papers)
+#            Set to False for full validation (all papers in sample)
+TEST_MODE = os.environ.get('TEST_MODE', 'False').lower() == 'true'
+SESSION_ID = os.environ.get('SESSION_ID', '')
+if not SESSION_ID:
+    # Generate session ID if not provided
+    import random
+    import string
+    from datetime import datetime
+    mode_suffix = "_test" if TEST_MODE else ""
+    SESSION_ID = f"{datetime.now().strftime('%Y-%m-%d')}-{''.join(random.choices(string.ascii_lowercase + string.digits, k=6))}{mode_suffix}"
+
+TEST_SIZE = 15 if TEST_MODE else None
+
+if TEST_MODE:
+    print("\n🧪 TEST MODE ENABLED")
+    print(f"   Will process first {TEST_SIZE} papers\n")
+else:
+    print("\n🚀 PRODUCTION MODE")
+    print("   Will process all papers in validation sample\n")
+
+# Paths (relative to validation_spacy_v_BERT/) - use _test suffix in TEST_MODE
 VALIDATION_ROOT = Path(__file__).parent.parent
 PROJECT_ROOT = VALIDATION_ROOT.parent
 
-SAMPLE_FILE = VALIDATION_ROOT / "results/validation/sample/validation_sample_with_abstracts.csv"
-METADATA_FILE = PROJECT_ROOT / "data/final_query_v5.1_2011_2021/query_results.csv"
+output_suffix = f"_{SESSION_ID}" if SESSION_ID else ("_test" if TEST_MODE else "")
+SAMPLE_FILE = VALIDATION_ROOT / f"results/validation/sample/validation_sample_with_abstracts{output_suffix}.csv"
+METADATA_FILE = VALIDATION_ROOT / f"results/validation/metadata/validation_metadata_epmc{output_suffix}.csv"
 OUTPUT_DIR = VALIDATION_ROOT / "results/validation/classification"
 LOG_FILE = VALIDATION_ROOT / "logs/03b_run_pycaret_classification.log"
 
@@ -322,34 +349,78 @@ def main():
     df_sample = pd.read_csv(SAMPLE_FILE)
     logger.info(f"✓ Loaded {len(df_sample)} papers")
 
+    # Apply TEST_MODE if enabled
+    if TEST_MODE:
+        logger.info(f"🧪 TEST_MODE: Using first {TEST_SIZE} papers")
+        df_sample = df_sample.head(TEST_SIZE)
+        logger.info(f"✓ Test sample size: {len(df_sample)} papers")
+
     # ------------------------------------------------------------------------
     # 3. Load metadata for feature engineering
     # ------------------------------------------------------------------------
     logger.info("\n📊 Loading metadata for feature engineering...")
     df_metadata = pd.read_csv(METADATA_FILE, low_memory=False)
-    logger.info(f"✓ Loaded {len(df_metadata):,} papers from V5.1 metadata")
+    logger.info(f"✓ Loaded {len(df_metadata):,} papers from fresh EPMC validation metadata")
 
     # ------------------------------------------------------------------------
-    # 4. Identify ID column and merge
+    # 4. Standardize on PMID column and merge
     # ------------------------------------------------------------------------
-    logger.info("\n🔗 Merging sample with metadata...")
+    logger.info("\n🔗 Merging sample with metadata on PMID...")
 
-    # Identify ID column in sample
-    sample_id_col = None
-    for col in ['publication_id', 'pubmed_id', 'PMID', 'pmid', 'id']:
+    # CRITICAL: Ensure we use actual PubMed IDs, NOT internal publication_id
+    # The sample file has both 'publication_id' (internal DB ID) and 'pubmed_id' (actual PMID)
+    # We MUST use 'pubmed_id' to match with EPMC metadata
+
+    # Find PMID column in sample (explicitly exclude non-PMID columns)
+    sample_pmid_col = None
+    for col in ['pubmed_id', 'pmid', 'PMID']:  # Only accept actual PMID column names
         if col in df_sample.columns:
-            sample_id_col = col
+            sample_pmid_col = col
+            logger.info(f"  Using sample PMID column: '{col}'")
             break
 
-    if not sample_id_col:
-        logger.error(f"❌ No ID column found in sample. Available: {list(df_sample.columns)}")
+    if not sample_pmid_col:
+        logger.error(f"❌ No PMID column found in sample!")
+        logger.error(f"   Available columns: {list(df_sample.columns)}")
+        logger.error(f"   Expected one of: pubmed_id, pmid, PMID")
         return 1
 
-    # Convert IDs to comparable format
-    df_sample['pmid'] = df_sample[sample_id_col].astype(str).str.replace('.0', '', regex=False)
-    df_metadata['pmid'] = df_metadata['id'].astype(str).str.replace('.0', '', regex=False)
+    # Find PMID column in metadata
+    metadata_pmid_col = None
+    for col in ['pmid', 'PMID', 'id']:  # EPMC uses 'id' or 'pmid'
+        if col in df_metadata.columns:
+            metadata_pmid_col = col
+            logger.info(f"  Using metadata PMID column: '{col}'")
+            break
 
-    # Merge
+    if not metadata_pmid_col:
+        logger.error(f"❌ No PMID column found in metadata!")
+        logger.error(f"   Available columns: {list(df_metadata.columns)}")
+        return 1
+
+    # Standardize both to 'pmid' column for merge
+    df_sample['pmid'] = df_sample[sample_pmid_col].astype(str).str.replace('.0', '', regex=False)
+    df_metadata['pmid'] = df_metadata[metadata_pmid_col].astype(str).str.replace('.0', '', regex=False)
+
+    logger.info(f"  Sample PMIDs: {df_sample['pmid'].nunique()} unique values")
+    logger.info(f"  Metadata PMIDs: {df_metadata['pmid'].nunique()} unique values")
+
+    # Check PMID overlap before merge (early warning system)
+    sample_pmids = set(df_sample['pmid'].unique())
+    metadata_pmids = set(df_metadata['pmid'].unique())
+    overlap = sample_pmids & metadata_pmids
+    overlap_rate = len(overlap) / len(sample_pmids) * 100 if len(sample_pmids) > 0 else 0
+
+    logger.info(f"  PMID overlap: {len(overlap)}/{len(sample_pmids)} ({overlap_rate:.1f}%)")
+
+    if overlap_rate < 95:
+        logger.warning(f"⚠️  Only {overlap_rate:.1f}% of sample PMIDs found in metadata")
+        missing_pmids = sample_pmids - metadata_pmids
+        logger.warning(f"   Missing {len(missing_pmids)} PMIDs, showing first 5:")
+        for pmid in list(missing_pmids)[:5]:
+            logger.warning(f"     - {pmid}")
+
+    # Merge on standardized PMID column
     df = df_sample.merge(
         df_metadata,
         on='pmid',
@@ -357,7 +428,143 @@ def main():
         suffixes=('_test', '_meta')
     )
 
-    logger.info(f"✓ Merged: {len(df)} papers")
+    # Validate merge success
+    merged_count = len(df)
+    papers_with_metadata = df['title_meta'].notna().sum() if 'title_meta' in df.columns else df['title'].notna().sum()
+    merge_rate = (papers_with_metadata / merged_count * 100) if merged_count > 0 else 0
+
+    logger.info(f"✓ Merged: {merged_count} papers")
+    logger.info(f"  Papers with metadata: {papers_with_metadata}/{merged_count} ({merge_rate:.1f}%)")
+
+    # ------------------------------------------------------------------------
+    # 4b. Normalize fresh EPMC column names to match V5.1 schema
+    # ------------------------------------------------------------------------
+    logger.info("\n🔄 Normalizing fresh EPMC metadata columns...")
+
+    # Debug: Show what columns we have after merge
+    logger.info(f"  Columns after merge: {len(df.columns)} total")
+    epmc_cols = [col for col in df.columns if any(x in col for x in ['abstractText', 'meshHeading', 'pubType', 'keyword', 'journal'])]
+    logger.info(f"  EPMC-related columns found: {epmc_cols}")
+
+    # Functions to extract nested EPMC data structures to V5.1 format
+    def extract_mesh_terms(mesh_heading_list):
+        """Extract mesh term names from nested meshHeadingList dict
+
+        CRITICAL FIX: Use ast.literal_eval() instead of json.loads() because
+        EPMC data uses Python literal syntax (single quotes) not JSON (double quotes)
+        """
+        if pd.isna(mesh_heading_list):
+            return '[]'
+
+        try:
+            if isinstance(mesh_heading_list, str):
+                data = ast.literal_eval(mesh_heading_list)  # FIXED: was json.loads()
+            elif isinstance(mesh_heading_list, dict):
+                data = mesh_heading_list
+            else:
+                return '[]'
+
+            # Extract descriptorName from each meshHeading
+            mesh_headings = data.get('meshHeading', []) if isinstance(data, dict) else []
+            terms = [mh.get('descriptorName', '') for mh in mesh_headings if isinstance(mh, dict)]
+            return json.dumps(terms)
+        except:
+            return '[]'
+
+    def extract_keywords(keyword_list):
+        """Extract keyword names from nested keywordList dict
+
+        CRITICAL FIX: Use ast.literal_eval() instead of json.loads()
+        """
+        if pd.isna(keyword_list):
+            return '[]'
+
+        try:
+            if isinstance(keyword_list, str):
+                data = ast.literal_eval(keyword_list)  # FIXED: was json.loads()
+            elif isinstance(keyword_list, dict):
+                data = keyword_list
+            else:
+                return '[]'
+
+            # Extract keywords from list
+            keywords = data.get('keyword', []) if isinstance(data, dict) else []
+            return json.dumps(keywords)
+        except:
+            return '[]'
+
+    def extract_pub_types(pub_type_list):
+        """Extract publication type names from nested pubTypeList dict
+
+        CRITICAL FIX: Use ast.literal_eval() instead of json.loads()
+        """
+        if pd.isna(pub_type_list):
+            return '[]'
+
+        try:
+            if isinstance(pub_type_list, str):
+                data = ast.literal_eval(pub_type_list)  # FIXED: was json.loads()
+            elif isinstance(pub_type_list, dict):
+                data = pub_type_list
+            else:
+                return '[]'
+
+            # Extract values from pubType list
+            pub_types = data.get('pubType', []) if isinstance(data, dict) else []
+            return json.dumps(pub_types)
+        except:
+            return '[]'
+
+    # Map and transform fresh EPMC columns to V5.1 format
+    if 'abstractText' in df.columns:
+        df['abstract'] = df['abstractText']
+        logger.info(f"  ✓ Mapped abstractText → abstract")
+
+    if 'meshHeadingList' in df.columns:
+        df['meshTerms'] = df['meshHeadingList'].apply(extract_mesh_terms)
+        logger.info(f"  ✓ Extracted meshTerms from meshHeadingList")
+
+    if 'pubTypeList' in df.columns:
+        df['pubType'] = df['pubTypeList'].apply(extract_pub_types)
+        logger.info(f"  ✓ Extracted pubType from pubTypeList")
+
+    if 'keywordList' in df.columns:
+        df['keywords'] = df['keywordList'].apply(extract_keywords)
+        logger.info(f"  ✓ Extracted keywords from keywordList")
+
+    # Extract journalTitle and journalISSN from nested journalInfo dict
+    journal_info_col = 'journalInfo_meta' if 'journalInfo_meta' in df.columns else ('journalInfo' if 'journalInfo' in df.columns else None)
+    if journal_info_col:
+        def extract_journal_fields(journal_info):
+            """Extract title and ISSN from journalInfo dict
+
+            CRITICAL FIX: Use ast.literal_eval() instead of json.loads()
+            """
+            if pd.isna(journal_info):
+                return pd.Series({'journalTitle': None, 'journalISSN': None})
+
+            try:
+                if isinstance(journal_info, str):
+                    info = ast.literal_eval(journal_info)  # FIXED: was json.loads()
+                elif isinstance(journal_info, dict):
+                    info = journal_info
+                else:
+                    return pd.Series({'journalTitle': None, 'journalISSN': None})
+
+                journal_dict = info.get('journal', {}) if isinstance(info, dict) else {}
+                return pd.Series({
+                    'journalTitle': journal_dict.get('title'),
+                    'journalISSN': journal_dict.get('issn')
+                })
+            except:
+                return pd.Series({'journalTitle': None, 'journalISSN': None})
+
+        journal_fields = df[journal_info_col].apply(extract_journal_fields)
+        df['journalTitle'] = journal_fields['journalTitle']
+        df['journalISSN'] = journal_fields['journalISSN']
+        logger.info(f"  ✓ Extracted journalTitle and journalISSN from {journal_info_col}")
+
+    logger.info(f"✓ Column normalization complete")
 
     # Check for missing metadata
     title_col = 'title_meta' if 'title_meta' in df.columns else 'title'
@@ -394,7 +601,8 @@ def main():
         predictions = predict_model(model, data=X)
 
         # Create results dataframe
-        id_col = sample_id_col
+        # Use publication_id if available (internal ID), otherwise use PMID
+        id_col = 'publication_id' if 'publication_id' in df.columns else sample_pmid_col
         title_col = 'title_test' if 'title_test' in df.columns else 'title'
 
         df_results = pd.DataFrame({
@@ -418,7 +626,7 @@ def main():
         logger.info(f"   Avg confidence (pos):   {precision_score:.3f}")
 
         # Save results
-        output_file = OUTPUT_DIR / f"pycaret_{model_name}_results.csv"
+        output_file = OUTPUT_DIR / f"pycaret_{model_name}_results{output_suffix}.csv"
         df_results.to_csv(output_file, index=False)
         logger.info(f"\n✓ Saved to: {output_file}")
         logger.info(f"  Size: {output_file.stat().st_size / 1024:.1f} KB")
@@ -469,4 +677,4 @@ def main():
 # ============================================================================
 
 if __name__ == "__main__":
-    exit(main())
+    main()

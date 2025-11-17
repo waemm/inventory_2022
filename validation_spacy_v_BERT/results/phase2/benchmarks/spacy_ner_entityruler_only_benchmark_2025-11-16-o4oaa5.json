@@ -1,0 +1,39 @@
+{
+  "session_id": "2025-11-16-o4oaa5",
+  "timestamp": "2025-11-16T14:36:57.997999",
+  "model": {
+    "name": "spacy_hybrid_ner_entityruler_only",
+    "path": "spacy_hybrid_ner/models/ner_hybrid_v2_com_ful",
+    "components": [
+      "entity_ruler"
+    ],
+    "disabled": [
+      "tok2vec",
+      "ner"
+    ],
+    "mode": "entityruler_only"
+  },
+  "input": {
+    "file": "validation_spacy_v_BERT/results/phase2/classification/union_v2_pycaret_150k_2025-11-14-wi1hs6_with_abstracts.csv",
+    "papers": 50192
+  },
+  "processing": {
+    "batch_size": 64,
+    "time_seconds": 1579.73,
+    "time_minutes": 26.33,
+    "speed_papers_per_sec": 31.77
+  },
+  "results": {
+    "papers_processed": 50192,
+    "papers_with_entities": 10554,
+    "coverage_percent": 21.03,
+    "total_entities": 37976,
+    "avg_entities_per_paper": 0.76,
+    "unique_canonical_ids": 3018,
+    "entities_with_canonical_id": 37976
+  },
+  "output": {
+    "file": "validation_spacy_v_BERT/results/phase2/ner/spacy_ner_entityruler_only_results_2025-11-16-o4oaa5.csv",
+    "rows": 37976
+  }
+}

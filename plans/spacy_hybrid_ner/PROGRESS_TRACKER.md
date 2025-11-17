@@ -325,7 +325,7 @@ Phase 6: Production Deployment     ███████████████
 - ✅ `scripts/10_validate_hybrid_pipeline.py`
 - ✅ `scripts/11_benchmark_hybrid_speed.py`
 - ✅ `scripts/12_analyze_alias_resolution.py`
-- ✅ `models/ner_hybrid_v1/` (production pipeline)
+- ✅ `models/ner_hybrid_v2_com_ful/` (production pipeline)
 - ✅ All Phase 5 results in `results/phase5_*/`
 
 ---
@@ -587,7 +587,7 @@ spacy_hybrid_ner/
 │   └── 12_analyze_alias_resolution.py             ✅
 │
 ├── models/
-│   └── ner_hybrid_v1/                             ✅ PRODUCTION
+│   └── ner_hybrid_v2_com_ful/                             ✅ PRODUCTION
 │
 ├── data/
 │   ├── bioresource_dictionary_enriched.json       ✅

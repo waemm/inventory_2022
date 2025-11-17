@@ -14,7 +14,7 @@ Usage:
     from src.ner_predict_spacy import SpacyNERPredictor
 
     # Initialize predictor
-    predictor = SpacyNERPredictor("spacy_hybrid_ner/models/ner_hybrid_v1")
+    predictor = SpacyNERPredictor("spacy_hybrid_ner/models/ner_hybrid_v2_com_ful")
 
     # Run prediction
     papers_df = pd.read_csv('papers.csv')  # Must have: pubmed_id, title, abstract
@@ -43,7 +43,7 @@ class SpacyNERPredictor:
     - Alias resolution (links short/long forms via canonical IDs)
     """
 
-    def __init__(self, model_path: str = "spacy_hybrid_ner/models/ner_hybrid_v1"):
+    def __init__(self, model_path: str = "spacy_hybrid_ner/models/ner_hybrid_v2_com_ful"):
         """
         Initialize predictor.
 
@@ -331,7 +331,7 @@ if __name__ == "__main__":
     test_papers = pd.read_csv('spacy_hybrid_ner/data/ner_corpus_splits/test.csv').head(10)
 
     # Initialize predictor
-    predictor = SpacyNERPredictor("spacy_hybrid_ner/models/ner_hybrid_v1")
+    predictor = SpacyNERPredictor("spacy_hybrid_ner/models/ner_hybrid_v2_com_ful")
 
     # Print pipeline info
     print("\nPipeline Info:")

@@ -23,7 +23,7 @@ from pathlib import Path
 # Configuration
 PATTERNS_PATH = "spacy_hybrid_ner/data/patterns.jsonl"
 STATISTICAL_MODEL_PATH = "collab_results/experiment_archives/2025-11-12-3uubs8/spacy_model/model-best"
-HYBRID_MODEL_PATH = "spacy_hybrid_ner/models/ner_hybrid_v1"
+HYBRID_MODEL_PATH = "spacy_hybrid_ner/models/ner_hybrid_v2_com_ful"
 TEST_DATA_PATH = "spacy_hybrid_ner/data/ner_corpus_splits/test.csv"
 OUTPUT_DIR = "spacy_hybrid_ner/results/phase5_speed_benchmark"
 

@@ -16,9 +16,12 @@ Usage:
     source ../spacy_hybrid_ner/venv/bin/activate
     python scripts/04b_run_spacy_ner.py
 
+    For testing with small sample:
+    TEST_MODE=True python scripts/04b_run_spacy_ner.py
+
 Inputs:
     - results/validation/sample/validation_sample_with_abstracts.csv
-    - ../../spacy_hybrid_ner/models/ner_hybrid_v1/
+    - ../../spacy_hybrid_ner/models/ner_hybrid_v2_com_ful/
 
 Outputs:
     - results/validation/ner/spacy_ner_results.csv
@@ -31,6 +34,7 @@ Date: 2025-11-13
 """
 
 import sys
+import os
 import pandas as pd
 import spacy
 from pathlib import Path
@@ -42,17 +46,39 @@ from collections import defaultdict
 # CONFIGURATION
 # ============================================================================
 
-# Paths (relative to validation_spacy_v_BERT/)
+# TEST_MODE: Set to True for quick testing (10-15 papers)
+#            Set to False for full validation (all papers in sample)
+TEST_MODE = os.environ.get('TEST_MODE', 'False').lower() == 'true'
+SESSION_ID = os.environ.get('SESSION_ID', '')
+if not SESSION_ID:
+    # Generate session ID if not provided
+    import random
+    import string
+    from datetime import datetime
+    mode_suffix = "_test" if TEST_MODE else ""
+    SESSION_ID = f"{datetime.now().strftime('%Y-%m-%d')}-{''.join(random.choices(string.ascii_lowercase + string.digits, k=6))}{mode_suffix}"
+
+TEST_SIZE = 15 if TEST_MODE else None
+
+if TEST_MODE:
+    print("\n🧪 TEST MODE ENABLED")
+    print(f"   Will process first {TEST_SIZE} papers\n")
+else:
+    print("\n🚀 PRODUCTION MODE")
+    print("   Will process all papers in validation sample\n")
+
+# Paths (relative to validation_spacy_v_BERT/) - use _test suffix in TEST_MODE
 VALIDATION_ROOT = Path(__file__).parent.parent
 PROJECT_ROOT = VALIDATION_ROOT.parent
 
-SAMPLE_FILE = VALIDATION_ROOT / "results/validation/sample/validation_sample_with_abstracts.csv"
+output_suffix = f"_{SESSION_ID}" if SESSION_ID else ("_test" if TEST_MODE else "")
+SAMPLE_FILE = VALIDATION_ROOT / f"results/validation/sample/validation_sample_with_abstracts{output_suffix}.csv"
 OUTPUT_DIR = VALIDATION_ROOT / "results/validation/ner"
-OUTPUT_FILE = OUTPUT_DIR / "spacy_ner_results.csv"
+OUTPUT_FILE = OUTPUT_DIR / f"spacy_ner_results{output_suffix}.csv"
 LOG_FILE = VALIDATION_ROOT / "logs/04b_run_spacy_ner.log"
 
 # Model path (relative to project root)
-MODEL_PATH = PROJECT_ROOT / "spacy_hybrid_ner/models/ner_hybrid_v1"
+MODEL_PATH = PROJECT_ROOT / "spacy_hybrid_ner/models/ner_hybrid_v2_com_ful"
 
 # ============================================================================
 # LOGGING SETUP
@@ -217,6 +243,12 @@ def main():
     df_sample = pd.read_csv(SAMPLE_FILE)
     logger.info(f"✓ Loaded {len(df_sample)} papers")
 
+    # Apply TEST_MODE if enabled
+    if TEST_MODE:
+        logger.info(f"🧪 TEST_MODE: Using first {TEST_SIZE} papers")
+        df_sample = df_sample.head(TEST_SIZE)
+        logger.info(f"✓ Test sample size: {len(df_sample)} papers")
+
     # Check for abstracts
     has_abstract = df_sample['abstract'].notna() & (df_sample['abstract'] != '')
     logger.info(f"  - Papers with abstracts: {has_abstract.sum()}/{len(df_sample)} ({100*has_abstract.sum()/len(df_sample):.1f}%)")
@@ -315,4 +347,4 @@ def main():
 # ============================================================================
 
 if __name__ == "__main__":
-    exit(main())
+    main()

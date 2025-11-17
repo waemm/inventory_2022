@@ -38,22 +38,45 @@ import logging
 from datetime import datetime
 from collections import Counter, defaultdict
 import difflib
+import os
 
 # ============================================================================
 # CONFIGURATION
 # ============================================================================
 
-# Paths (relative to validation_spacy_v_BERT/)
+# TEST_MODE: Set to True for quick testing (10-15 papers)
+#            Set to False for full validation (all papers in sample)
+TEST_MODE = os.environ.get('TEST_MODE', 'False').lower() == 'true'
+SESSION_ID = os.environ.get('SESSION_ID', '')
+if not SESSION_ID:
+    # Generate session ID if not provided
+    import random
+    import string
+    from datetime import datetime
+    mode_suffix = "_test" if TEST_MODE else ""
+    SESSION_ID = f"{datetime.now().strftime('%Y-%m-%d')}-{''.join(random.choices(string.ascii_lowercase + string.digits, k=6))}{mode_suffix}"
+
+
+if TEST_MODE:
+    print("\n🧪 TEST MODE ENABLED")
+    print("   Will compare test NER results\n")
+else:
+    print("\n🚀 PRODUCTION MODE")
+    print("   Will compare full NER results\n")
+
+# Paths (relative to validation_spacy_v_BERT/) - use _test suffix in TEST_MODE
 VALIDATION_ROOT = Path(__file__).parent.parent
 NER_DIR = VALIDATION_ROOT / "results/validation/ner"
 
+output_suffix = f"_{SESSION_ID}" if SESSION_ID else ("_test" if TEST_MODE else "")
+
 # Input files
-V2_NER_RESULTS = NER_DIR / "v2_ner_results.csv"
-SPACY_NER_RESULTS = NER_DIR / "spacy_ner_results.csv"
+V2_NER_RESULTS = NER_DIR / f"v2_ner_results{output_suffix}.csv"
+SPACY_NER_RESULTS = NER_DIR / f"spacy_ner_results{output_suffix}.csv"
 
 # Output files
-OUTPUT_CSV = NER_DIR / "ner_comparison.csv"
-OUTPUT_REPORT = NER_DIR / "ner_comparison_report.md"
+OUTPUT_CSV = NER_DIR / f"ner_comparison{output_suffix}.csv"
+OUTPUT_REPORT = NER_DIR / f"ner_comparison_report{output_suffix}.md"
 LOG_FILE = VALIDATION_ROOT / "logs/04c_compare_ner.log"
 
 # Similarity threshold for fuzzy matching
@@ -510,4 +533,4 @@ def main():
 # ============================================================================
 
 if __name__ == "__main__":
-    exit(main())
+    main()

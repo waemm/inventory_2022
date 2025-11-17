@@ -19,7 +19,7 @@ import os
 from pathlib import Path
 
 # Configuration
-HYBRID_MODEL_PATH = "spacy_hybrid_ner/models/ner_hybrid_v1"
+HYBRID_MODEL_PATH = "spacy_hybrid_ner/models/ner_hybrid_v2_com_ful"
 TEST_DATA_PATH = "spacy_hybrid_ner/data/ner_corpus_splits/test.csv"
 OUTPUT_DIR = "spacy_hybrid_ner/results/phase5_hybrid_validation"
 

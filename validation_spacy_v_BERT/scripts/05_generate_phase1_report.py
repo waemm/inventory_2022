@@ -34,21 +34,44 @@ from pathlib import Path
 import logging
 from datetime import datetime
 from collections import Counter
+import os
 
 # ============================================================================
 # CONFIGURATION
 # ============================================================================
 
-# Paths (relative to validation_spacy_v_BERT/)
+# TEST_MODE: Set to True for quick testing (10-15 papers)
+#            Set to False for full validation (all papers in sample)
+TEST_MODE = os.environ.get('TEST_MODE', 'False').lower() == 'true'
+SESSION_ID = os.environ.get('SESSION_ID', '')
+if not SESSION_ID:
+    # Generate session ID if not provided
+    import random
+    import string
+    from datetime import datetime
+    mode_suffix = "_test" if TEST_MODE else ""
+    SESSION_ID = f"{datetime.now().strftime('%Y-%m-%d')}-{''.join(random.choices(string.ascii_lowercase + string.digits, k=6))}{mode_suffix}"
+
+
+if TEST_MODE:
+    print("\n🧪 TEST MODE ENABLED")
+    print("   Will generate test validation report\n")
+else:
+    print("\n🚀 PRODUCTION MODE")
+    print("   Will generate full validation report\n")
+
+# Paths (relative to validation_spacy_v_BERT/) - use _test suffix in TEST_MODE
 VALIDATION_ROOT = Path(__file__).parent.parent
 
+output_suffix = f"_{SESSION_ID}" if SESSION_ID else ("_test" if TEST_MODE else "")
+
 # Input files
-SAMPLE_FILE = VALIDATION_ROOT / "results/validation/sample/validation_sample_with_abstracts.csv"
-CLASSIFICATION_COMPARISON = VALIDATION_ROOT / "results/validation/classification/classification_comparison.csv"
-NER_COMPARISON = VALIDATION_ROOT / "results/validation/ner/ner_comparison.csv"
+SAMPLE_FILE = VALIDATION_ROOT / f"results/validation/sample/validation_sample_with_abstracts{output_suffix}.csv"
+CLASSIFICATION_COMPARISON = VALIDATION_ROOT / f"results/validation/classification/classification_comparison{output_suffix}.csv"
+NER_COMPARISON = VALIDATION_ROOT / f"results/validation/ner/ner_comparison{output_suffix}.csv"
 
 # Output files
-OUTPUT_REPORT = VALIDATION_ROOT / "results/validation/PHASE1_VALIDATION_REPORT.md"
+OUTPUT_REPORT = VALIDATION_ROOT / f"results/validation/PHASE1_VALIDATION_REPORT{output_suffix}.md"
 LOG_FILE = VALIDATION_ROOT / "logs/05_generate_phase1_report.log"
 
 # ============================================================================
@@ -549,4 +572,4 @@ def main():
 # ============================================================================
 
 if __name__ == "__main__":
-    exit(main())
+    main()

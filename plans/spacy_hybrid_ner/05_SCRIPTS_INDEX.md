@@ -365,7 +365,7 @@ python -m spacy train \
 - `models/ner_statistical/`
 
 **Output**:
-- `models/ner_hybrid_v1/`
+- `models/ner_hybrid_v2_com_ful/`
 
 **Usage**:
 ```bash
@@ -398,7 +398,7 @@ nlp.pipe_names == ["entity_ruler", "ner"]
 **Purpose**: Validate hybrid pipeline on test set, measure coverage and entity sources
 
 **Input**:
-- `models/ner_hybrid_v1/`
+- `models/ner_hybrid_v2_com_ful/`
 - `data/ner_corpus_splits/test.csv`
 
 **Output**:
@@ -468,7 +468,7 @@ python scripts/11_benchmark_hybrid_speed.py
 **Purpose**: Analyze how well alias resolution links short/long form mentions
 
 **Input**:
-- `models/ner_hybrid_v1/`
+- `models/ner_hybrid_v2_com_ful/`
 - `data/ner_corpus_splits/test.csv`
 
 **Output**:
@@ -500,7 +500,7 @@ python scripts/12_analyze_alias_resolution.py
 **Purpose**: Compare spaCy Hybrid vs V2 BERT vs Phase 4 Multi-Task models
 
 **Input**:
-- `models/ner_hybrid_v1/`
+- `models/ner_hybrid_v2_com_ful/`
 - Test papers (100 samples)
 - (Optional) V2 BERT model, Phase 4 model
 
@@ -545,7 +545,7 @@ python scripts/13_benchmark_all_models.py
 from src.ner_predict_spacy import SpacyNERPredictor
 
 # Initialize
-predictor = SpacyNERPredictor("models/ner_hybrid_v1")
+predictor = SpacyNERPredictor("models/ner_hybrid_v2_com_ful")
 
 # Predict
 papers = pd.read_csv('papers.csv')
@@ -670,7 +670,7 @@ inventory_2022/
 │
 ├── models/
 │   ├── ner_statistical/                        # Phase 4 output
-│   └── ner_hybrid_v1/                          # Script 09 output
+│   └── ner_hybrid_v2_com_ful/                          # Script 09 output
 │
 ├── results/
 │   ├── phase2_entityruler_validation.json      # Script 05 output

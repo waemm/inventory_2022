@@ -342,7 +342,7 @@ name = "allenai/scibert_scivocab_uncased"
 
 ```python
 # Step 1: Check pipeline order
-nlp = spacy.load("models/ner_hybrid_v1")
+nlp = spacy.load("models/ner_hybrid_v2_com_ful")
 print(f"Pipeline: {nlp.pipe_names}")
 
 # MUST be: ['entity_ruler', 'ner']
@@ -452,7 +452,7 @@ df = pd.read_csv('data/test_papers.csv').head(1000)
 texts = df['text'].tolist()
 
 # Test 1: Sequential processing (BAD)
-nlp = spacy.load("models/ner_hybrid_v1")
+nlp = spacy.load("models/ner_hybrid_v2_com_ful")
 start = time.time()
 for text in texts:
     doc = nlp(text)
@@ -494,14 +494,14 @@ import spacy
 spacy.prefer_gpu()
 
 # Load model
-nlp = spacy.load("models/ner_hybrid_v1")
+nlp = spacy.load("models/ner_hybrid_v2_com_ful")
 ```
 
 #### Strategy C: Disable Unnecessary Components
 
 ```python
 # If only need entities (not tokenization details)
-nlp = spacy.load("models/ner_hybrid_v1", disable=["tagger", "parser"])
+nlp = spacy.load("models/ner_hybrid_v2_com_ful", disable=["tagger", "parser"])
 
 # Or select specific components
 with nlp.select_pipes(enable=["entity_ruler", "ner"]):
@@ -515,7 +515,7 @@ from multiprocessing import Pool
 import spacy
 
 def process_batch(texts):
-    nlp = spacy.load("models/ner_hybrid_v1")
+    nlp = spacy.load("models/ner_hybrid_v2_com_ful")
     return list(nlp.pipe(texts))
 
 # Split data into chunks
@@ -551,7 +551,7 @@ python -m spacy download en_core_web_sm
 **Solution**:
 ```python
 # Don't do this:
-nlp = spacy.load("models/ner_hybrid_v1")
+nlp = spacy.load("models/ner_hybrid_v2_com_ful")
 ruler = nlp.get_pipe("entity_ruler")  # Error!
 
 # Do this:

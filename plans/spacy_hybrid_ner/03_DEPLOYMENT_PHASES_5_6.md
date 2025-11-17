@@ -68,7 +68,7 @@ for ent in doc.ents:
 
 # Save hybrid pipeline
 os.makedirs('models', exist_ok=True)
-output_path = "models/ner_hybrid_v1"
+output_path = "models/ner_hybrid_v2_com_ful"
 nlp.to_disk(output_path)
 print(f"\n✓ Hybrid pipeline saved to: {output_path}")
 ```
@@ -104,7 +104,7 @@ Extracted 5 entities:
       Canonical ID: OMIM
       Source: EntityRuler
 
-✓ Hybrid pipeline saved to: models/ner_hybrid_v1
+✓ Hybrid pipeline saved to: models/ner_hybrid_v2_com_ful
 ```
 
 **Success Criteria**:
@@ -127,7 +127,7 @@ import json
 import os
 
 # Load hybrid pipeline
-nlp = spacy.load("models/ner_hybrid_v1")
+nlp = spacy.load("models/ner_hybrid_v2_com_ful")
 
 # Load test papers
 test_df = pd.read_csv('data/ner_corpus_splits/test.csv')
@@ -232,7 +232,7 @@ import time
 import os
 
 # Load models
-nlp_hybrid = spacy.load("models/ner_hybrid_v1")
+nlp_hybrid = spacy.load("models/ner_hybrid_v2_com_ful")
 nlp_ruler = spacy.blank("en")
 nlp_ruler.add_pipe("entity_ruler").from_disk("data/patterns.jsonl")
 nlp_statistical = spacy.load("models/ner_statistical")
@@ -292,7 +292,7 @@ import pandas as pd
 from collections import defaultdict
 import os
 
-nlp = spacy.load("models/ner_hybrid_v1")
+nlp = spacy.load("models/ner_hybrid_v2_com_ful")
 
 # Load test papers
 test_df = pd.read_csv('data/ner_corpus_splits/test.csv')
@@ -349,7 +349,7 @@ print("\n✓ Alias resolution analysis complete!")
 
 ### Phase 5 Deliverables
 
-- [ ] `models/ner_hybrid_v1/` (packaged pipeline)
+- [ ] `models/ner_hybrid_v2_com_ful/` (packaged pipeline)
 - [ ] `results/phase5_hybrid_validation.json`
 - [ ] `results/phase5_hybrid_extractions.csv`
 - [ ] `results/phase5_speed_benchmark.csv`
@@ -399,7 +399,7 @@ EOF
 
 # Package pipeline
 python -m spacy package \
-  models/ner_hybrid_v1 \
+  models/ner_hybrid_v2_com_ful \
   packages \
   --name ner_hybrid \
   --version 1.0.0 \
@@ -447,7 +447,7 @@ class SpacyNERPredictor:
     - Alias resolution (links short/long forms via canonical IDs)
     """
 
-    def __init__(self, model_path: str = "models/ner_hybrid_v1"):
+    def __init__(self, model_path: str = "models/ner_hybrid_v2_com_ful"):
         """
         Initialize predictor.
 
@@ -592,7 +592,7 @@ if __name__ == "__main__":
     papers = pd.read_csv('data/ner_corpus_splits/test.csv')
 
     # Initialize predictor
-    predictor = SpacyNERPredictor("models/ner_hybrid_v1")
+    predictor = SpacyNERPredictor("models/ner_hybrid_v2_com_ful")
 
     # Run prediction
     results = predictor.predict(papers.head(10))
@@ -627,7 +627,7 @@ test_df = pd.read_csv('data/ner_corpus_splits/test.csv').head(100)
 
 # Initialize models
 print("Loading models...")
-spacy_predictor = SpacyNERPredictor("models/ner_hybrid_v1")
+spacy_predictor = SpacyNERPredictor("models/ner_hybrid_v2_com_ful")
 
 # TODO: Add V2 BERT predictor
 # from src.ner_predict import NERPredictor as BERTPredictor

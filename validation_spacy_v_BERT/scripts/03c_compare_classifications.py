@@ -37,23 +37,46 @@ from pathlib import Path
 import logging
 from datetime import datetime
 from collections import Counter
+import os
 
 # ============================================================================
 # CONFIGURATION
 # ============================================================================
 
-# Paths (relative to validation_spacy_v_BERT/)
+# TEST_MODE: Set to True for quick testing (10-15 papers)
+#            Set to False for full validation (all papers in sample)
+TEST_MODE = os.environ.get('TEST_MODE', 'False').lower() == 'true'
+SESSION_ID = os.environ.get('SESSION_ID', '')
+if not SESSION_ID:
+    # Generate session ID if not provided
+    import random
+    import string
+    from datetime import datetime
+    mode_suffix = "_test" if TEST_MODE else ""
+    SESSION_ID = f"{datetime.now().strftime('%Y-%m-%d')}-{''.join(random.choices(string.ascii_lowercase + string.digits, k=6))}{mode_suffix}"
+
+
+if TEST_MODE:
+    print("\n🧪 TEST MODE ENABLED")
+    print("   Will compare test classification results\n")
+else:
+    print("\n🚀 PRODUCTION MODE")
+    print("   Will compare full classification results\n")
+
+# Paths (relative to validation_spacy_v_BERT/) - use _test suffix in TEST_MODE
 VALIDATION_ROOT = Path(__file__).parent.parent
 CLASSIFICATION_DIR = VALIDATION_ROOT / "results/validation/classification"
 
+output_suffix = f"_{SESSION_ID}" if SESSION_ID else ("_test" if TEST_MODE else "")
+
 # Input files
-V2_RESULTS = CLASSIFICATION_DIR / "v2_classification_results.csv"
-PYCARET_TRUE_RESULTS = CLASSIFICATION_DIR / "pycaret_test_mode_true_results.csv"
-PYCARET_FALSE_RESULTS = CLASSIFICATION_DIR / "pycaret_test_mode_false_results.csv"
+V2_RESULTS = CLASSIFICATION_DIR / f"v2_classification_results{output_suffix}.csv"
+PYCARET_TRUE_RESULTS = CLASSIFICATION_DIR / f"pycaret_test_mode_true_results{output_suffix}.csv"
+PYCARET_FALSE_RESULTS = CLASSIFICATION_DIR / f"pycaret_test_mode_false_results{output_suffix}.csv"
 
 # Output files
-OUTPUT_CSV = CLASSIFICATION_DIR / "classification_comparison.csv"
-OUTPUT_REPORT = CLASSIFICATION_DIR / "classification_comparison_report.md"
+OUTPUT_CSV = CLASSIFICATION_DIR / f"classification_comparison{output_suffix}.csv"
+OUTPUT_REPORT = CLASSIFICATION_DIR / f"classification_comparison_report{output_suffix}.md"
 LOG_FILE = VALIDATION_ROOT / "logs/03c_compare_classifications.log"
 
 # ============================================================================
@@ -480,4 +503,4 @@ def main():
 # ============================================================================
 
 if __name__ == "__main__":
-    exit(main())
+    main()

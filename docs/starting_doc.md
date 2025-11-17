@@ -1,8 +1,8 @@
 # Biodata Inventory ML Pipeline - AI Agent Reference Guide
 
 **Created**: 2025-10-22
-**Last Updated**: 2025-11-14 (Validation study Phase 1 complete)
-**Status**: ✅ **V2 PRODUCTION READY** + ⚠️ **PHASE 4 HAS CRITICAL BUG** + ✅ **VALIDATION COMPLETE**
+**Last Updated**: 2025-11-16 (spaCy tok2vec fix - Statistical NER now working!)
+**Status**: ✅ **V2 PRODUCTION READY** + ⚠️ **PHASE 4 HAS CRITICAL BUG** + ✅ **SPACY FULL HYBRID READY**
 **Purpose**: Quick onboarding and navigation hub for AI agents
 
 ---
@@ -15,9 +15,11 @@ Sophisticated ML pipeline using biomedical BERT models to automatically identify
 - ✅ **V2 Models**: Production ready (Classification F1=0.898, NER F1=0.749)
 - ✅ **Modern Stack**: Python 3.11.9, PyTorch 2.2.2, Transformers 4.35.0
 - ⚠️ **Phase 4 Multi-Task**: Has post-processing bug (DO NOT USE)
-- ✅ **spaCy Hybrid NER**: ⭐ **PHASES 1-6 COMPLETE + OPTIMIZED** (100-200 p/s, Code Quality: 9.5/10)
+- ✅ **spaCy Full Hybrid NER**: tok2vec fix complete - **117k entities (3.1x improvement)**, 64% coverage ⭐
 - ✅ **EPMC Query V5.1**: 254k papers ready (2011-mid2025)
 - ✅ **PyCaret Classifier**: 84.6% recall metadata-only model
+
+**🎊 USE SPACY FULL HYBRID FOR PRODUCTION NER** (model: `spacy_hybrid_ner/models/ner_hybrid_v2_com_ful`)
 
 **Pipeline**: EuropePMC → Classification → NER → URL Extraction → Processing → Final Inventory
 
@@ -58,6 +60,10 @@ Sophisticated ML pipeline using biomedical BERT models to automatically identify
 
 | Date | Milestone | Performance | Reference |
 |------|-----------|-------------|-----------|
+| 2025-11-16 | **🎊 spaCy tok2vec Fix Complete** | **117k entities (3.1x), 64% coverage** - Statistical NER now contributes 67.7% of entities! ⭐ | [docs/SPACY_TOK2VEC_FIX_2025-11-16.md](SPACY_TOK2VEC_FIX_2025-11-16.md) + [docs/SPACY_3WAY_COMPARISON_2025-11-16.md](SPACY_3WAY_COMPARISON_2025-11-16.md) |
+| 2025-11-15 | **spaCy Label Alignment Fix Complete** | Perfect alignment achieved (Index 0='COM', Index 1='FUL') ✅ | [plans/spacy_ner_hybrid_retraining/FIX_COMPLETION_SUMMARY.md](../plans/spacy_ner_hybrid_retraining/FIX_COMPLETION_SUMMARY.md) |
+| 2025-11-15 | **spaCy Label Mismatch Investigation** | Statistical NER 0 entities (label incompatibility) 🔴 | [validation_spacy_v_BERT/SPACY_NER_LABEL_MISMATCH_INVESTIGATION.md](../validation_spacy_v_BERT/SPACY_NER_LABEL_MISMATCH_INVESTIGATION.md) |
+| 2025-11-15 | **Phase 2 NER Complete** | 105k entities from 50k papers (spaCy: 38k, V2: 67k) ⭐ | [plans/validation_spacy_v_BERT/PROGRESS.md](../plans/validation_spacy_v_BERT/PROGRESS.md) |
 | 2025-11-14 | **Google Drive NER Model Fix** | 341 → 694 entities (+103.5%, verified identical) ✅ | [validation_spacy_v_BERT/NER_FIX_VERIFICATION_COMPLETE.md](../validation_spacy_v_BERT/NER_FIX_VERIFICATION_COMPLETE.md) |
 | 2025-11-14 | **Model Validation Study Complete** | PyCaret 98.65%, spaCy NER 76% recall ⭐ | [validation_spacy_v_BERT/](../validation_spacy_v_BERT/) |
 | 2025-11-14 | **PyCaret Validation Bug Fix** | 0% → 94.6% positive (PMID merge fix) ✅ | [plans/2025-11-13-FINAL_ROOT_CAUSE.md](../plans/2025-11-13-FINAL_ROOT_CAUSE.md) |

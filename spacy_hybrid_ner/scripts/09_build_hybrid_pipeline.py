@@ -17,9 +17,9 @@ import os
 from pathlib import Path
 
 # Configuration
-PATTERNS_PATH = "spacy_hybrid_ner/data/patterns.jsonl"
+PATTERNS_PATH = "spacy_hybrid_ner/data/patterns_com_ful.jsonl"
 STATISTICAL_MODEL_PATH = "collab_results/experiment_archives/2025-11-12-3uubs8/spacy_model/model-best"
-OUTPUT_PATH = "spacy_hybrid_ner/models/ner_hybrid_v1"
+OUTPUT_PATH = "spacy_hybrid_ner/models/ner_hybrid_v2_com_ful"
 
 
 def build_hybrid_pipeline(patterns_path: str, statistical_model_path: str):
@@ -53,11 +53,18 @@ def build_hybrid_pipeline(patterns_path: str, statistical_model_path: str):
     print(f"  ✓ Patterns loaded: {pattern_count:,}")
     print(f"  ✓ Provides: High precision matching + canonical ID assignment")
 
-    # Step 3: Add trained statistical NER (SECOND!)
-    print("\nStep 3: Adding statistical NER (discovery component)...")
+    # Step 3: Add tok2vec (REQUIRED for NER!)
+    print("\nStep 3: Adding tok2vec (embedding component)...")
     print(f"  Loading from: {statistical_model_path}")
     nlp_statistical = spacy.load(statistical_model_path)
 
+    # Add tok2vec FIRST - NER depends on it
+    nlp.add_pipe("tok2vec", source=nlp_statistical)
+    print(f"  ✓ tok2vec component added")
+    print(f"  ✓ Provides: Word embeddings for statistical NER")
+
+    # Step 4: Add trained statistical NER (requires tok2vec!)
+    print("\nStep 4: Adding statistical NER (discovery component)...")
     # Get the NER component from statistical model
     ner_component = nlp_statistical.get_pipe("ner")
 
@@ -73,8 +80,8 @@ def build_hybrid_pipeline(patterns_path: str, statistical_model_path: str):
     print(f"Components: {nlp.pipe_names}")
     print(f"Order: {' → '.join(nlp.pipe_names)}")
 
-    assert nlp.pipe_names == ["entity_ruler", "ner"], "❌ Pipeline order incorrect!"
-    print("✓ Pipeline order verified: EntityRuler → Statistical NER")
+    assert nlp.pipe_names == ["entity_ruler", "tok2vec", "ner"], "❌ Pipeline order incorrect!"
+    print("✓ Pipeline order verified: EntityRuler → tok2vec → Statistical NER")
 
     return nlp
 
@@ -194,9 +201,10 @@ def main():
     print("="*70)
 
     checks = [
-        ("Pipeline order correct", nlp.pipe_names == ["entity_ruler", "ner"]),
+        ("Pipeline order correct", nlp.pipe_names == ["entity_ruler", "tok2vec", "ner"]),
         ("Known entities detected", test_results['has_known_entities']),
         ("EntityRuler entities have IDs", test_results['ruler_entities'] > 0),
+        ("tok2vec component present", "tok2vec" in nlp.pipe_names),
         ("Statistical NER component present", "ner" in nlp.pipe_names),
     ]
 

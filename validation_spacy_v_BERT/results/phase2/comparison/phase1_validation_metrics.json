@@ -1,0 +1,49 @@
+{
+  "phase1_gold_standard": {
+    "total_papers": 148,
+    "total_unique_entities": 395,
+    "spacy_baseline_recall": 0.76,
+    "spacy_baseline_entities": 295
+  },
+  "entityruler_performance": {
+    "recall": 0.5747,
+    "precision": 1.0,
+    "f1": 0.7299,
+    "entities_found": 227,
+    "true_positives": 227,
+    "false_positives": 0,
+    "false_negatives": 168,
+    "papers_with_entities": 112,
+    "papers_coverage": 0.7568,
+    "note": "EntityRuler-first pipeline (session 2025-11-15-h728fg)"
+  },
+  "statistical_performance": {
+    "recall": 0.5646,
+    "precision": 0.8992,
+    "f1": 0.6936,
+    "entities_found": 248,
+    "true_positives": 223,
+    "false_positives": 25,
+    "false_negatives": 172,
+    "papers_with_entities": 114,
+    "papers_coverage": 0.7703,
+    "note": "Statistical-only pipeline (EntityRuler disabled)"
+  },
+  "ensemble_performance": {
+    "recall": 0.6076,
+    "precision": 0.9057,
+    "f1": 0.7273,
+    "entities_found": 265,
+    "true_positives": 240,
+    "false_positives": 25,
+    "false_negatives": 155,
+    "papers_with_entities": 114,
+    "papers_coverage": 0.7703,
+    "improvement_over_entityruler": {
+      "additional_entities": 38,
+      "recall_gain": 0.0329,
+      "precision_change": -0.0943
+    },
+    "note": "Union of EntityRuler + Statistical extractions"
+  }
+}

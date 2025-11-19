@@ -704,6 +704,74 @@ python 12_validate_end_to_end.py
 
 ---
 
+## 🔗 Bioresource URL Scanner V4 (2025-11-19)
+
+### Status: ✅ PRODUCTION READY - 4,559 URLs Scanned
+
+**Purpose**: High-performance web scanner for detecting and classifying genuine bioresource websites with automatic Wayback Machine fallback
+
+**Performance** (4,559 URLs):
+- **Live URLs**: 2,557 (56.1%)
+- **CRITICAL+HIGH**: 2,119 (46.5%)
+- **Mean score**: 28.9
+- **GCBR uptime**: 91.5%
+- **Runtime**: 75-90 minutes
+
+### Key Features
+
+- ✅ **Multi-threaded scanning** - 10 concurrent workers, domain-based rate limiting (1 req/sec per domain)
+- ✅ **Wayback Machine fallback** - Automatically rescues offline URLs (rescued 20% in test, expected 15-20% full scan)
+- ✅ **Meta refresh redirect support** - Follows JavaScript-free redirects
+- ✅ **Weighted indicator scoring** - 5-tier classification (CRITICAL/HIGH/MEDIUM/LOW/VERY LOW)
+- ✅ **Comprehensive analysis** - Detailed statistics, error categorization, domain analysis
+
+### Scoring System
+
+**High-Value Indicators** (5-3 pts):
+- Institutional: NCBI, EBI, NIH, Ensembl, UniProt
+- Functionality: search database, query database, download data
+- Domain terms: genomics, proteomics, gene, protein, sequence
+
+**Title Bonus** (+5 pts): database, server, portal, resource, tool in page title
+
+**Likelihood Classification**: ≥15 CRITICAL, 10-14 HIGH, 5-9 MEDIUM, 1-4 LOW, 0 VERY LOW
+
+### Quick Start
+
+```bash
+cd bioresource_url_scanner
+source venv/bin/activate
+
+# Test scanner (20 URLs, ~40 sec)
+python scripts/scan_gbc_test.py
+
+# Full scan (4,559 URLs, 75-90 min)
+python scripts/scan_gbc_full.py
+
+# Analyze results
+python scripts/analyze_gbc_results.py
+```
+
+### Documentation
+
+- **Complete Guide**: [`../bioresource_url_scanner/README.md`](../bioresource_url_scanner/README.md) ⭐
+- **Wayback Implementation**: [`../bioresource_url_scanner/docs/WAYBACK_IMPLEMENTATION.md`](../bioresource_url_scanner/docs/WAYBACK_IMPLEMENTATION.md)
+- **Planning Document**: [`../plans/2025-11-19_bioresource_url_scanner_integration.md`](../plans/2025-11-19_bioresource_url_scanner_integration.md)
+
+### Production Results
+
+Scanned 4,559 URLs from GBC publication analysis dataset:
+- 46.5% high-quality detection (CRITICAL+HIGH)
+- GCBR resources: 173/189 live (91.5%), 86.8% scored CRITICAL+HIGH
+- Mean response time: 1,878ms
+- Error breakdown: 46% connection errors, 25% timeouts, 13% 404s
+- Meta refresh redirects: 105 sites (2.3%)
+
+**Version**: V4 with Wayback Machine support
+**Status**: Production ready for URL quality assessment and prioritization
+
+---
+
 ## 📞 System Status Summary
 
 **Production Ready**: ✅ V2 models validated and operational

@@ -1,0 +1,106 @@
+{
+  "performance": {
+    "total_urls": 100,
+    "live_urls": 54,
+    "failed_urls": 46,
+    "live_percentage": 54.0,
+    "avg_response_time_ms": 1078.5,
+    "median_response_time_ms": 670.5,
+    "max_response_time_ms": 9534.6
+  },
+  "score_distribution": {
+    "mean": 2.4,
+    "median": 0.0,
+    "min": 0,
+    "max": 18,
+    "by_likelihood": {
+      "CRITICAL": 3,
+      "HIGH": 7,
+      "MEDIUM": 9,
+      "LOW": 17,
+      "VERY LOW": 64
+    }
+  },
+  "validation": {
+    "baseline_total": 50,
+    "baseline_live": 28,
+    "baseline_high_conf": 7,
+    "baseline_high_conf_pct": 25.0
+  },
+  "indicators": {
+    "total_indicators": 83,
+    "unique_indicators": 16,
+    "top_20": {
+      "EBI": 13,
+      "NCBI": 11,
+      "Identifier": 10,
+      "Accession": 9,
+      "Genomics": 8,
+      "PDB": 7,
+      "Curation": 5,
+      "Data Submission": 4,
+      "IRB": 3,
+      "FASTA": 3,
+      "Data Repository": 3,
+      "Deposit Data": 2,
+      "Proteomics": 2,
+      "Knowledgebase": 1,
+      "programmatic access": 1,
+      "cram": 1
+    }
+  },
+  "domains": {
+    "top_domains": {
+      "www.ncbi.nlm.nih.gov": {
+        "avg_score": 18.0,
+        "max_score": 18,
+        "count": 1
+      },
+      "card.mcmaster.ca": {
+        "avg_score": 17.0,
+        "max_score": 17,
+        "count": 1
+      },
+      "rfam.xfam.org": {
+        "avg_score": 16.0,
+        "max_score": 16,
+        "count": 1
+      },
+      "kimosys.org": {
+        "avg_score": 13.0,
+        "max_score": 13,
+        "count": 1
+      },
+      "www.kimosys.org": {
+        "avg_score": 13.0,
+        "max_score": 13,
+        "count": 1
+      },
+      "www.maizegdb.org": {
+        "avg_score": 13.0,
+        "max_score": 13,
+        "count": 1
+      },
+      "proteomecentral.proteomexchange.org": {
+        "avg_score": 12.0,
+        "max_score": 12,
+        "count": 1
+      },
+      "3dbionotes-ws.cnb.csic.es": {
+        "avg_score": 11.0,
+        "max_score": 11,
+        "count": 1
+      },
+      "pdbj.org": {
+        "avg_score": 10.0,
+        "max_score": 10,
+        "count": 1
+      },
+      "crdd.osdd.net": {
+        "avg_score": 9.0,
+        "max_score": 9,
+        "count": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+Bioresource URL Scanner Log
+======================================================================
+
+Timestamp: 2025-11-19T11:15:05.451631
+Input: /Users/warren/development/GBC/inventory_2022/bioresource_url_scanner/data/pilot_urls.csv
+Output: /Users/warren/development/GBC/inventory_2022/bioresource_url_scanner/data/pilot_results.csv
+Total URLs: 100
+Scan time: 27.3s
+URLs/sec: 3.66
+Workers: 10
+Domain delay: 1.0s
+
+Live URLs: 54
+Failed URLs: 46
+
+Likelihood Distribution:
+  CRITICAL: 3
+  HIGH: 7
+  MEDIUM: 9
+  LOW: 17
+  VERY LOW: 64

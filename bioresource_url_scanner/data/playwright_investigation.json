@@ -1,0 +1,22 @@
+[
+  {
+    "name": "BloodSpot",
+    "url": "http://www.bloodspot.eu",
+    "error": "Page.get_attribute: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"meta[name=\\\"description\\\"]\")\n"
+  },
+  {
+    "name": "RiPPMiner",
+    "url": "http://www.nii.ac.in/rippminer.html",
+    "error": "Page.get_attribute: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"meta[name=\\\"description\\\"]\")\n"
+  },
+  {
+    "name": "NPIDB",
+    "url": "http://npidb.belozersky.msu.ru/",
+    "error": "Page.get_attribute: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"meta[name=\\\"description\\\"]\")\n"
+  },
+  {
+    "name": "CSDB",
+    "url": "http://csdb.glycoscience.ru",
+    "error": "Page.get_attribute: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"meta[name=\\\"description\\\"]\")\n"
+  }
+]

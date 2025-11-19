@@ -1,0 +1,12 @@
+{
+  "total_urls": 4559,
+  "live_urls": 2557,
+  "failed_urls": 2002,
+  "critical_high_count": 2119,
+  "critical_high_percent": 46.47949111647291,
+  "mean_score": 28.875635510363708,
+  "median_score": 28.0,
+  "zero_scorers": 124,
+  "low_scorers": 156,
+  "meta_redirects": 105
+}

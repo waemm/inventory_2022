@@ -1,0 +1,73 @@
+================================================================================
+UNCLEAR CASES SIMILARITY ANALYSIS SUMMARY
+================================================================================
+
+Total unclear cases: 40
+
+Merge Recommendations:
+  MERGE (similarity ≥ 0.85):           20 papers
+  REVIEW (similarity 0.70-0.84):       0 papers
+  KEEP_SEPARATE (similarity < 0.70):   0 papers
+  SINGLE_URL (only one URL in group):  20 papers
+
+Merge Groups Identified: 6
+
+Top Merge Groups (by number of papers):
+  MG006: http://www.oxfordjournals.org/nar/database/c       - 6 papers
+  MG005: http://www.ncbi.nlm.nih.gov                        - 5 papers
+  MG003: http://medical-data-models.org                     - 3 papers
+  MG001: http://inetmodels.com                              - 2 papers
+  MG002: http://iomics.ugent.be/ms2pip                      - 2 papers
+  MG004: http://www.ebi.ac.uk/miriam                        - 2 papers
+
+Examples of High Similarity Merges (≥0.85):
+
+  1.  - Similarity: 1.000
+     PMID: 26578601
+     Entity: therapeutic target database
+     URL: http://bidd.nus.edu.sg/group/ttd/ttd.asp
+
+  2.  - Similarity: 1.000
+     PMID: 29140520
+     Entity: therapeutic target database
+     URL: http://bidd.nus.edu.sg/group/ttd/ttd.asp
+
+  3.  - Similarity: 1.000
+     PMID: 24265219
+     Entity: target database
+     URL: http://bidd.nus.edu.sg/group/ttd/ttd.asp
+
+  4.  - Similarity: 1.000
+     PMID: 33175170
+     Entity: gen
+     URL: https://bigd.big.ac.cn
+
+  5.  - Similarity: 1.000
+     PMID: 31702008
+     Entity: ngdc
+     URL: https://bigd.big.ac.cn
+
+  6.  - Similarity: 1.000
+     PMID: 27603574
+     Entity: palindrome analyser
+     URL: http://bioinformatics.ibp.cz
+
+  7.  - Similarity: 1.000
+     PMID: 30721922
+     Entity: g4hunter
+     URL: http://bioinformatics.ibp.cz
+
+  8.  - Similarity: 1.000
+     PMID: 25038066
+     Entity: csf proteome resource
+     URL: http://probe.uib.no/csf-pr
+
+  9.  - Similarity: 1.000
+     PMID: 31432427
+     Entity: cerebrospinal fluid proteome resource
+     URL: http://probe.uib.no/csf-pr
+
+  10.  - Similarity: 1.000
+     PMID: 29408954
+     Entity: sarg
+     URL: http://smile.hku.hk/SARGs

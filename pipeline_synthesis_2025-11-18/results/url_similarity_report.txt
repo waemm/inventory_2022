@@ -1,0 +1,243 @@
+================================================================================
+URL SIMILARITY ANALYSIS REPORT
+================================================================================
+
+Total unclear cases analyzed: 81
+URL groups identified (similarity ≥ 0.85): 13
+Total URLs to be merged: 29
+
+================================================================================
+TOP 20 EXAMPLES
+================================================================================
+
+============================================================
+Example 1: 3dbionotes
+============================================================
+Papers: 2
+URLs (2):
+  1. http://3dbionotes.cnb.csic.es
+  2. http://3dbionotes-ws.cnb.csic.es
+
+Similarity scores:
+  http://3dbionotes.cnb.csic.es
+  vs
+  http://3dbionotes-ws.cnb.csic.es
+  → Similarity: 1.000
+
+
+============================================================
+Example 2: comparative toxicogenomics database
+============================================================
+Papers: 3
+URLs (2):
+  1. http://ctdbase.org/
+  2. http://ctdbase.org
+
+Similarity scores:
+  http://ctdbase.org/
+  vs
+  http://ctdbase.org
+  → Similarity: 1.000
+
+
+============================================================
+Example 3: comparative toxicogenomics database
+============================================================
+Papers: 2
+URLs (2):
+  1. http://ctd.mdibl.org
+  2. http://ctd.mdibl.org/voc.go?type=disease
+
+Similarity scores:
+  http://ctd.mdibl.org
+  vs
+  http://ctd.mdibl.org/voc.go?type=disease
+  → Similarity: 0.900
+
+
+============================================================
+Example 4: dietary supplement label database
+============================================================
+Papers: 2
+URLs (2):
+  1. https://dsld.nlm.nih.gov/
+  2. https://dsld.nlm.nih.gov/dsld/
+
+Similarity scores:
+  https://dsld.nlm.nih.gov/
+  vs
+  https://dsld.nlm.nih.gov/dsld/
+  → Similarity: 0.900
+
+
+============================================================
+Example 5: european nucleotide archive
+============================================================
+Papers: 5
+URLs (4):
+  1. https://www.ebi.ac.uk/ena
+  2. http://www.ebi.ac.uk/ena/
+  3. http://www.ebi.ac.uk/ena
+  4. http://www.ebi.ac.uk/metagenomics/
+
+Similarity scores:
+  https://www.ebi.ac.uk/ena
+  vs
+  http://www.ebi.ac.uk/ena/
+  → Similarity: 1.000
+
+  https://www.ebi.ac.uk/ena
+  vs
+  http://www.ebi.ac.uk/ena
+  → Similarity: 1.000
+
+  https://www.ebi.ac.uk/ena
+  vs
+  http://www.ebi.ac.uk/metagenomics/
+  → Similarity: 0.900
+
+  http://www.ebi.ac.uk/ena/
+  vs
+  http://www.ebi.ac.uk/ena
+  → Similarity: 1.000
+
+  http://www.ebi.ac.uk/ena/
+  vs
+  http://www.ebi.ac.uk/metagenomics/
+  → Similarity: 0.900
+
+  http://www.ebi.ac.uk/ena
+  vs
+  http://www.ebi.ac.uk/metagenomics/
+  → Similarity: 0.900
+
+
+============================================================
+Example 6: gene expression omnibus
+============================================================
+Papers: 2
+URLs (2):
+  1. http://hiv.gxbsidra.org/dm3/geneBrowser/list
+  2. http://vri1.gxbsidra.org/dm3/geneBrowser/list
+
+Similarity scores:
+  http://hiv.gxbsidra.org/dm3/geneBrowser/list
+  vs
+  http://vri1.gxbsidra.org/dm3/geneBrowser/list
+  → Similarity: 1.000
+
+
+============================================================
+Example 7: hmmer
+============================================================
+Papers: 2
+URLs (2):
+  1. http://www.ebi.ac.uk/Tools/hmmer
+  2. http://www.ebi.ac.uk/Tools/hmmer/
+
+Similarity scores:
+  http://www.ebi.ac.uk/Tools/hmmer
+  vs
+  http://www.ebi.ac.uk/Tools/hmmer/
+  → Similarity: 1.000
+
+
+============================================================
+Example 8: human ageing genomic resources
+============================================================
+Papers: 2
+URLs (2):
+  1. http://genomics.senescence.info/
+  2. http://genomics.senescence.info
+
+Similarity scores:
+  http://genomics.senescence.info/
+  vs
+  http://genomics.senescence.info
+  → Similarity: 1.000
+
+
+============================================================
+Example 9: ncbi
+============================================================
+Papers: 5
+URLs (3):
+  1. https://www.ncbi.nlm.nih.gov
+  2. http://www.ncbi.nlm.nih.gov
+  3. http://www.ncbi.nlm.nih.gov/CBBresearch/Dogan/DISEASE/
+
+Similarity scores:
+  https://www.ncbi.nlm.nih.gov
+  vs
+  http://www.ncbi.nlm.nih.gov
+  → Similarity: 1.000
+
+  https://www.ncbi.nlm.nih.gov
+  vs
+  http://www.ncbi.nlm.nih.gov/CBBresearch/Dogan/DISEASE/
+  → Similarity: 0.900
+
+  http://www.ncbi.nlm.nih.gov
+  vs
+  http://www.ncbi.nlm.nih.gov/CBBresearch/Dogan/DISEASE/
+  → Similarity: 0.900
+
+
+============================================================
+Example 10: nucleic acids research database
+============================================================
+Papers: 2
+URLs (2):
+  1. http://www.oxfordjournals.org/nar/database/a/
+  2. http://www.oxfordjournals.org/nar/database/c/
+
+Similarity scores:
+  http://www.oxfordjournals.org/nar/database/a/
+  vs
+  http://www.oxfordjournals.org/nar/database/c/
+  → Similarity: 0.950
+
+
+============================================================
+Example 11: papillomavirus episteme
+============================================================
+Papers: 2
+URLs (2):
+  1. https://pave.niaid.nih.gov/
+  2. http://pave.niaid.nih.gov
+
+Similarity scores:
+  https://pave.niaid.nih.gov/
+  vs
+  http://pave.niaid.nih.gov
+  → Similarity: 1.000
+
+
+============================================================
+Example 12: saccharomyces genome database
+============================================================
+Papers: 4
+URLs (2):
+  1. http://www.yeastgenome.org/variant-viewer
+  2. http://www.yeastgenome.org
+
+Similarity scores:
+  http://www.yeastgenome.org/variant-viewer
+  vs
+  http://www.yeastgenome.org
+  → Similarity: 0.900
+
+
+============================================================
+Example 13: targetdbp
+============================================================
+Papers: 2
+URLs (2):
+  1. http://csbio.njust.edu.cn/bioinf/targetdbpplus/
+  2. http://csbio.njust.edu.cn/bioinf/targetdbp/
+
+Similarity scores:
+  http://csbio.njust.edu.cn/bioinf/targetdbpplus/
+  vs
+  http://csbio.njust.edu.cn/bioinf/targetdbp/
+  → Similarity: 0.950

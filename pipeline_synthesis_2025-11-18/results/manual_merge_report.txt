@@ -1,0 +1,72 @@
+================================================================================
+MANUAL MERGE GROUPS - FINAL DEDUPLICATION REPORT
+================================================================================
+
+Input:
+  Original deduplicated resources (Script 12): 974
+  Unclear cases analyzed: 40
+
+Manual Merge Groups Applied:
+  Papers with merge groups assigned: 20
+  Papers kept as singles: 20
+  Number of merge groups: 6
+
+Merge Groups Detail:
+
+  Group MG001: 2 papers
+    - PMID: 29069445, Entity: tcsbn
+    - PMID: 33849075, Entity: inetmodels
+
+  Group MG002: 2 papers
+    - PMID: 25990723, Entity: ms2pip
+    - PMID: 31028400, Entity: ms²pip
+
+  Group MG003: 3 papers
+    - PMID: 23920826, Entity: nan
+    - PMID: 29295221, Entity: nan
+    - PMID: 26868052, Entity: of medical data models
+
+  Group MG004: 2 papers
+    - PMID: 22140103, Entity: nan
+    - PMID: 23584831, Entity: miriam
+
+  Group MG005: 5 papers
+    - PMID: 33095870, Entity: ncbi
+    - PMID: 25398906, Entity: ncbi
+    - PMID: 26615191, Entity: ncbi
+    - PMID: 29140470, Entity: ncbi
+    - PMID: 22140104, Entity: mendelian inheritance in
+
+  Group MG006: 6 papers
+    - PMID: 26740669, Entity: human pan-microbe communities
+    - PMID: 24316579, Entity: s
+    - PMID: 33396976, Entity: rnacentral | wikipathways | kinasemd | ensembl | ucsc genome browser | gramene | greenphyldb
+    - PMID: 30626175, Entity: ar
+    - PMID: 29316735, Entity: nucleic acids research database
+    - PMID: 31906604, Entity: nucleic acids research
+
+Final Results:
+  Resources before manual merges: 974
+  Resources after manual merges: 964
+  Additional merges applied: 10
+  Reduction: 1.0%
+
+Article Count Distribution:
+  1 paper(s):  934 resources
+  2 paper(s):  23 resources
+  3 paper(s):  4 resources
+  4 paper(s):  1 resources
+  5 paper(s):  1 resources
+  6 paper(s):  1 resources
+
+Top Resources by Article Count:
+  s                                        : 6 papers
+  mendelian inheritance in                 : 5 papers
+  european nucleotide archive              : 4 papers
+  saccharomyces genome database            : 3 papers
+  comparative toxicogenomics database      : 3 papers
+  carbohydrate structure database          : 3 papers
+  (no entity name)                         : 3 papers
+  human ageing genomic resources           : 2 papers
+  mouse phenome database                   : 2 papers
+  mouse genome database                    : 2 papers

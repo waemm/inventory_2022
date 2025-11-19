@@ -1,0 +1,50 @@
+================================================================================
+LINGUISTIC HIGH-CONFIDENCE DEDUPLICATION STATISTICS (v2 - IMPROVED)
+================================================================================
+
+Input Filtering:
+  Total linguistic papers:           6609
+  db_keyword_found == True:          2066
+  has_resource_url == True:          4771
+  baseline_entity_match empty:       5491
+  Meeting all criteria:              1007
+
+URL Clustering (Similarity ≥ 0.85):
+  Unique URLs before clustering:     969
+  Unique URLs after clustering:      807
+  URLs merged:                       162
+
+Duplication Analysis:
+  Unique (canonical_url, entity):    929
+  Duplicates to merge:               78 papers in 34 groups
+  Unclear cases identified:          267
+
+Deduplication Results:
+  Papers before deduplication:       1007
+  Papers after deduplication:        963
+  Papers removed as duplicates:      44
+  Reduction:                         4.4%
+
+Comparison with v1 (Script 12):
+  v1 result:                         974 unique resources
+  v2 result (improved):              963 unique resources
+  Additional merges:                 11
+
+Article Count Distribution:
+  1 paper(s):  929 resources
+  2 paper(s):  29 resources
+  3 paper(s):  2 resources
+  4 paper(s):  1 resources
+  5 paper(s):  2 resources
+
+Top Resources by Article Count:
+  european nucleotide archive              : 5 papers
+  ncbi                                     : 5 papers
+  saccharomyces genome database            : 4 papers
+  comparative toxicogenomics database      : 3 papers
+  carbohydrate structure database          : 3 papers
+  targetdbp                                : 2 papers
+  human ageing genomic resources           : 2 papers
+  mouse phenome database                   : 2 papers
+  mouse genome database                    : 2 papers
+  g:profiler                               : 2 papers

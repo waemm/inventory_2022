@@ -3,10 +3,13 @@
 Create 4 filtered datasets from union with primary resources:
 1a. Baseline by PMID match
 1b. Baseline by entity match
-2. Linguistic (excluding baseline)
-3. SetFit (excluding baseline)
+2. Linguistic (INCLUDING baseline for deduplication)
+3. SetFit (INCLUDING baseline for deduplication)
 
 All files include quality indicators based on title analysis.
+
+NOTE: Changed 2025-11-20 to INCLUDE baseline in linguistic and SetFit sets
+for complete deduplication analysis.
 """
 
 import pandas as pd
@@ -31,8 +34,8 @@ OUTPUT_DIR.mkdir(exist_ok=True)
 # Output files
 FILE_1A = OUTPUT_DIR / 'baseline_by_pmid.csv'
 FILE_1B = OUTPUT_DIR / 'baseline_by_entity_match.csv'
-FILE_2 = OUTPUT_DIR / 'linguistic_excluding_baseline.csv'
-FILE_3 = OUTPUT_DIR / 'setfit_excluding_baseline.csv'
+FILE_2 = OUTPUT_DIR / 'linguistic_all_papers.csv'  # Changed: now includes baseline
+FILE_3 = OUTPUT_DIR / 'setfit_all_papers.csv'  # Changed: now includes baseline
 STATS_FILE = OUTPUT_DIR / 'filtering_statistics.txt'
 
 print("="*80)
@@ -272,14 +275,13 @@ df_1b.to_csv(FILE_1B, index=False)
 print(f"   Saved to: {FILE_1B}")
 
 # ============================================================================
-# CREATE FILE 2: LINGUISTIC (EXCLUDING BASELINE)
+# CREATE FILE 2: LINGUISTIC (INCLUDING BASELINE)
 # ============================================================================
 
-print("\n6. Creating File 2: Linguistic (excluding baseline)...")
+print("\n6. Creating File 2: Linguistic (including baseline)...")
 
 df_2 = df_union[
-    (df_union['in_linguistic'] == True) &
-    (~df_union['pmid_str'].isin(baseline_pmids))
+    (df_union['in_linguistic'] == True)
 ].copy()
 
 # Rename for clarity
@@ -296,14 +298,13 @@ df_2.to_csv(FILE_2, index=False)
 print(f"   Saved to: {FILE_2}")
 
 # ============================================================================
-# CREATE FILE 3: SETFIT (EXCLUDING BASELINE)
+# CREATE FILE 3: SETFIT (INCLUDING BASELINE)
 # ============================================================================
 
-print("\n7. Creating File 3: SetFit (excluding baseline)...")
+print("\n7. Creating File 3: SetFit (including baseline)...")
 
 df_3 = df_union[
-    (df_union['in_setfit'] == True) &
-    (~df_union['pmid_str'].isin(baseline_pmids))
+    (df_union['in_setfit'] == True)
 ].copy()
 
 # Rename for clarity
@@ -352,8 +353,8 @@ def calculate_stats(df, name):
 
 stats_1a = calculate_stats(df_1a, "File 1a: Baseline by PMID")
 stats_1b = calculate_stats(df_1b, "File 1b: Baseline by Entity")
-stats_2 = calculate_stats(df_2, "File 2: Linguistic (Novel)")
-stats_3 = calculate_stats(df_3, "File 3: SetFit (Novel)")
+stats_2 = calculate_stats(df_2, "File 2: Linguistic (All Papers)")
+stats_3 = calculate_stats(df_3, "File 3: SetFit (All Papers)")
 
 # Write statistics report
 with open(STATS_FILE, 'w') as f:
@@ -390,7 +391,7 @@ print(f"   Saved statistics to: {STATS_FILE}")
 
 print("\n9. Running validation checks...")
 
-# Check 1: No overlap between baseline and non-baseline
+# Check 1: Linguistic and SetFit should now INCLUDE baseline  (changed 2025-11-20)
 baseline_pmids_1a = set(df_1a['pmid'].astype(str))
 ling_pmids = set(df_2['pmid'].astype(str))
 setfit_pmids = set(df_3['pmid'].astype(str))
@@ -398,19 +399,13 @@ setfit_pmids = set(df_3['pmid'].astype(str))
 overlap_ling = baseline_pmids_1a & ling_pmids
 overlap_setfit = baseline_pmids_1a & setfit_pmids
 
-if overlap_ling:
-    print(f"   ⚠️  WARNING: {len(overlap_ling)} PMIDs overlap between baseline and linguistic")
-else:
-    print(f"   ✅ No PMID overlap between baseline (1a) and linguistic (2)")
-
-if overlap_setfit:
-    print(f"   ⚠️  WARNING: {len(overlap_setfit)} PMIDs overlap between baseline and setfit")
-else:
-    print(f"   ✅ No PMID overlap between baseline (1a) and setfit (3)")
+print(f"   Linguistic papers: {len(ling_pmids)} ({len(overlap_ling)} from baseline)")
+print(f"   SetFit papers: {len(setfit_pmids)} ({len(overlap_setfit)} from baseline)")
 
 # Check 2: Total unique PMIDs
-all_pmids = baseline_pmids_1a | ling_pmids | setfit_pmids
-print(f"   Total unique PMIDs across files: {len(all_pmids)} (max: {len(df_union)})")
+all_pmids = ling_pmids | setfit_pmids
+print(f"   Total unique PMIDs (Linguistic OR SetFit): {len(all_pmids)}")
+print(f"   Union dataset total: {len(df_union)}")
 
 # Check 3: File 1a should be subset of baseline
 check_1a = baseline_pmids_1a - baseline_pmids
@@ -430,8 +425,8 @@ print("="*80)
 print(f"\nFiles Created:")
 print(f"  File 1a (Baseline by PMID):        {len(df_1a):>6} papers → {FILE_1A.name}")
 print(f"  File 1b (Baseline by Entity):      {len(df_1b):>6} papers → {FILE_1B.name}")
-print(f"  File 2 (Linguistic, Novel):        {len(df_2):>6} papers → {FILE_2.name}")
-print(f"  File 3 (SetFit, Novel):            {len(df_3):>6} papers → {FILE_3.name}")
+print(f"  File 2 (Linguistic, All):          {len(df_2):>6} papers → {FILE_2.name}")
+print(f"  File 3 (SetFit, All):              {len(df_3):>6} papers → {FILE_3.name}")
 
 print(f"\nQuality Indicators (Very High Confidence):")
 print(f"  File 1a: {stats_1a['very_high_conf']:>6} ({stats_1a.get('very_high_conf_pct', 0):>5.1f}%)")

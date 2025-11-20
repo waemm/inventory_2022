@@ -1,8 +1,8 @@
 # Biodata Inventory ML Pipeline - AI Agent Reference Guide
 
 **Created**: 2025-10-22
-**Last Updated**: 2025-11-17 (Added SetFit experiment results - linguistic features validated)
-**Status**: ✅ **V2 PRODUCTION READY** + ⚠️ **PHASE 4 HAS CRITICAL BUG** + ✅ **SPACY FULL HYBRID READY** + ✅ **ADVANCED FILTERING VALIDATED**
+**Last Updated**: 2025-11-20 (Unified pipeline consolidation complete)
+**Status**: ✅ **V2 PRODUCTION READY** + ⚠️ **PHASE 4 HAS CRITICAL BUG** + ✅ **SPACY FULL HYBRID READY** + ✅ **UNIFIED PIPELINE COMPLETE**
 **Purpose**: Quick onboarding and navigation hub for AI agents
 
 ---
@@ -22,6 +22,71 @@ Sophisticated ML pipeline using biomedical BERT models to automatically identify
 **🎊 USE SPACY FULL HYBRID FOR PRODUCTION NER** (model: `spacy_hybrid_ner/models/ner_hybrid_v2_com_ful`)
 
 **Pipeline**: EuropePMC → Classification → NER → URL Extraction → Processing → Final Inventory
+
+---
+
+## 🎊 UNIFIED PIPELINE COMPLETE (2025-11-20)
+
+### Status: ✅ PRODUCTION READY - Complete End-to-End Pipeline
+
+The complete bioresource discovery pipeline has been consolidated into a single, reproducible system in `unified_bioresource_pipeline/`.
+
+**What Was Built:**
+- **27 files total**: 18 scripts + 5 notebooks + 1 orchestrator + 1 config + 2 docs
+- **Master orchestrator** with resume capability (696 lines)
+- **Complete configuration** system (293 lines YAML)
+- **Comprehensive documentation** (~2,400 lines total)
+
+**Key Features:**
+- ✅ Resume from any of 7 checkpoints
+- ✅ All models integrated (RoBERTa V2, PyCaret, spaCy, SetFit)
+- ✅ Colored terminal output with progress tracking
+- ✅ Complete error handling & logging
+- ✅ Original projects preserved (copied, not moved)
+
+**Pipeline Flow:**
+```
+149,943 papers (EPMC V5.1)
+    ↓ Phase 1: Classification (V2 + PyCaret) → 50,192 positives
+    ↓ Phase 2: NER (V2 + spaCy Hybrid) → 34,279 papers with entities
+    ↓ Phase 3: Linguistic Filtering → 8,648 high + 20,816 medium
+    ↓ Phase 4: SetFit Classification → 16,605 introductions
+    ↓ Phase 5: Entity Mapping & Resources
+    ↓ Phase 6: URL Scanning & Validation
+    ↓ Phase 7: Deduplication
+    ↓ ~974 unique validated bioresources ✅
+```
+
+**Quick Start:**
+```bash
+cd unified_bioresource_pipeline
+
+# Check status
+python run_pipeline.py --status
+
+# Most common: Resume from PMID extraction (already have NER results)
+python run_pipeline.py --from phase3
+
+# Run complete pipeline
+python run_pipeline.py --full
+```
+
+**Documentation:**
+- **README**: [`unified_bioresource_pipeline/README.md`](../unified_bioresource_pipeline/README.md) - Complete usage guide (24KB)
+- **Architecture**: [`docs/plans/2025-11-20_consolidated_pipeline_design.md`](plans/2025-11-20_consolidated_pipeline_design.md) - Detailed design (429 lines)
+- **Summary**: [`unified_bioresource_pipeline/CONSOLIDATION_SUMMARY.md`](../unified_bioresource_pipeline/CONSOLIDATION_SUMMARY.md) - What was accomplished
+- **Configuration**: [`unified_bioresource_pipeline/config/pipeline_config.yaml`](../unified_bioresource_pipeline/config/pipeline_config.yaml) - All settings
+- **PMID Extraction**: [`extract_ner_union_papers.py`](../extract_ner_union_papers.py) - Extracts 34,279 papers from NER union
+
+**Performance:**
+- Total runtime: 8-15 hours
+- GPU phases: Classification (2-4h), NER (5-10h), SetFit (10-15min)
+- CPU phases: Linguistic (<1min), Mapping (5-10min), Scanning (75-90min), Dedup (5min + manual)
+
+**Original Projects Preserved:**
+- `validation_spacy_v_BERT/` - Classification & NER scripts/notebooks
+- `advanced_paper_filtering/` - Linguistic filtering & SetFit
+- `advanced_filtering_pipeline/` - Deduplication & URL scanning
 
 ---
 
@@ -60,6 +125,7 @@ Sophisticated ML pipeline using biomedical BERT models to automatically identify
 
 | Date | Milestone | Performance | Reference |
 |------|-----------|-------------|-----------|
+| 2025-11-20 | **🎊 Unified Pipeline Complete** | **27 files, 7 resume points** - Complete end-to-end pipeline: 149,943 papers → 974 resources ⭐ | [unified_bioresource_pipeline/README.md](../unified_bioresource_pipeline/README.md) + [docs/plans/2025-11-20_consolidated_pipeline_design.md](plans/2025-11-20_consolidated_pipeline_design.md) |
 | 2025-11-16 | **🎊 spaCy tok2vec Fix Complete** | **117k entities (3.1x), 64% coverage** - Statistical NER now contributes 67.7% of entities! ⭐ | [docs/SPACY_TOK2VEC_FIX_2025-11-16.md](SPACY_TOK2VEC_FIX_2025-11-16.md) + [docs/SPACY_3WAY_COMPARISON_2025-11-16.md](SPACY_3WAY_COMPARISON_2025-11-16.md) |
 | 2025-11-15 | **spaCy Label Alignment Fix Complete** | Perfect alignment achieved (Index 0='COM', Index 1='FUL') ✅ | [plans/spacy_ner_hybrid_retraining/FIX_COMPLETION_SUMMARY.md](../plans/spacy_ner_hybrid_retraining/FIX_COMPLETION_SUMMARY.md) |
 | 2025-11-15 | **spaCy Label Mismatch Investigation** | Statistical NER 0 entities (label incompatibility) 🔴 | [validation_spacy_v_BERT/SPACY_NER_LABEL_MISMATCH_INVESTIGATION.md](../validation_spacy_v_BERT/SPACY_NER_LABEL_MISMATCH_INVESTIGATION.md) |

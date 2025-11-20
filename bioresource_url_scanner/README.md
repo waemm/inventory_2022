@@ -181,12 +181,12 @@ When a URL fails (timeout, 404, connection error):
 - **Throughput**: ~1 URL/sec
 - **Expected live rate**: 60-65%
 
-### Results (Production Scan)
-- **Live URLs**: 2,557/4,559 (56.1%)
-- **CRITICAL+HIGH**: 2,119/4,559 (46.5%)
-- **Mean score**: 28.9
-- **GCBR uptime**: 91.5%
-- **GCBR high-quality**: 86.8%
+### Results (Production Scan with Wayback - V4)
+- **Live URLs**: 3,716/4,559 (81.5%)
+- **CRITICAL+HIGH**: 3,118/4,559 (68.4%)
+- **Mean score**: 28.6
+- **Wayback rescued**: 1,258 (27.6% of total, 62.9% of failures)
+- **Runtime**: 75-90 minutes
 
 ---
 

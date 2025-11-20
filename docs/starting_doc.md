@@ -706,21 +706,23 @@ python 12_validate_end_to_end.py
 
 ## 🔗 Bioresource URL Scanner V4 (2025-11-19)
 
-### Status: ✅ PRODUCTION READY - 4,559 URLs Scanned
+### Status: ✅ PRODUCTION READY - 4,559 URLs Scanned with Wayback Rescue
 
-**Purpose**: High-performance web scanner for detecting and classifying genuine bioresource websites with automatic Wayback Machine fallback
+**Purpose**: High-performance web scanner for detecting and classifying genuine bioresource websites with automatic Wayback Machine fallback that rescues offline resources
 
-**Performance** (4,559 URLs):
-- **Live URLs**: 2,557 (56.1%)
-- **CRITICAL+HIGH**: 2,119 (46.5%)
-- **Mean score**: 28.9
-- **GCBR uptime**: 91.5%
+**Performance** (4,559 URLs with Wayback):
+- **Live URLs**: 3,716 (81.5%) - 45.3% increase from V3
+- **CRITICAL+HIGH**: 3,118 (68.4%) - 47.2% increase from V3
+- **Wayback rescued**: 1,258 (27.6% of total, 62.9% of failures)
+- **Mean score**: 28.6
 - **Runtime**: 75-90 minutes
+
+**Key Achievement**: Wayback Machine rescued **2 out of 3 failed URLs**, dramatically improving bioresource discovery coverage.
 
 ### Key Features
 
 - ✅ **Multi-threaded scanning** - 10 concurrent workers, domain-based rate limiting (1 req/sec per domain)
-- ✅ **Wayback Machine fallback** - Automatically rescues offline URLs (rescued 20% in test, expected 15-20% full scan)
+- ✅ **Wayback Machine fallback** - Automatically rescues offline URLs (62.9% rescue rate in production)
 - ✅ **Meta refresh redirect support** - Follows JavaScript-free redirects
 - ✅ **Weighted indicator scoring** - 5-tier classification (CRITICAL/HIGH/MEDIUM/LOW/VERY LOW)
 - ✅ **Comprehensive analysis** - Detailed statistics, error categorization, domain analysis
@@ -755,17 +757,22 @@ python scripts/analyze_gbc_results.py
 ### Documentation
 
 - **Complete Guide**: [`../bioresource_url_scanner/README.md`](../bioresource_url_scanner/README.md) ⭐
-- **Wayback Implementation**: [`../bioresource_url_scanner/docs/WAYBACK_IMPLEMENTATION.md`](../bioresource_url_scanner/docs/WAYBACK_IMPLEMENTATION.md)
+- **Wayback Implementation**: [`../bioresource_url_scanner/docs/WAYBACK_IMPLEMENTATION.md`](../bioresource_url_scanner/docs/WAYBACK_IMPLEMENTATION.md) - Production results showing 62.9% rescue rate
+- **Final Report**: [`../bioresource_url_scanner/docs/PRODUCTION_RESULTS_REPORT.md`](../bioresource_url_scanner/docs/PRODUCTION_RESULTS_REPORT.md) - Comprehensive analysis with V3 vs V4 comparison
 - **Planning Document**: [`../plans/2025-11-19_bioresource_url_scanner_integration.md`](../plans/2025-11-19_bioresource_url_scanner_integration.md)
 
-### Production Results
+### Production Results Summary
 
-Scanned 4,559 URLs from GBC publication analysis dataset:
-- 46.5% high-quality detection (CRITICAL+HIGH)
-- GCBR resources: 173/189 live (91.5%), 86.8% scored CRITICAL+HIGH
-- Mean response time: 1,878ms
-- Error breakdown: 46% connection errors, 25% timeouts, 13% 404s
-- Meta refresh redirects: 105 sites (2.3%)
+**V3 Scan (Without Wayback)** - 2025-11-19 15:28:
+- Live: 2,557/4,559 (56.1%)
+- CRITICAL+HIGH: 2,119/4,559 (46.5%)
+
+**V4 Scan (With Wayback)** - 2025-11-19 17:42:
+- Live: 3,716/4,559 (81.5%)
+- CRITICAL+HIGH: 3,118/4,559 (68.4%)
+- **Wayback rescued**: 1,258 URLs (27.6% of total)
+
+**Impact**: 45.3% more accessible resources, 47.2% better high-quality detection, 62.9% of failed URLs recovered.
 
 **Version**: V4 with Wayback Machine support
 **Status**: Production ready for URL quality assessment and prioritization

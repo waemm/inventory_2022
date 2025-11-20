@@ -37,18 +37,20 @@ Three new columns added to results:
 | `wayback_url` | String | Full Wayback snapshot URL (e.g., `https://web.archive.org/web/20240212.../`) |
 | `wayback_snapshot_date` | String | Date of snapshot in YYYY-MM-DD format |
 
-## Test Results
+## Results
 
-### Without Wayback (V3)
+### Test Results (20 URLs)
+
+**Without Wayback (V3)**:
 - **Live URLs**: 14/20 (70%)
 - **Failed**: 6/20 (30%)
 
-### With Wayback (V4)
+**With Wayback (V4)**:
 - **Live URLs**: 18/20 (90%)
 - **Failed**: 2/20 (10%)
 - **Rescued**: 4/20 (20%)
 
-### Rescued Resources
+**Test Rescued Resources**:
 
 | Resource | Score | Snapshot Date | Status |
 |----------|-------|---------------|--------|
@@ -57,7 +59,31 @@ Three new columns added to results:
 | TOMATOMICS | 32 pts | 2016-11-11 | CRITICAL |
 | ANTISTAPHYBASE | 8 pts | 2018-05-30 | MEDIUM |
 
-**Impact**: 20% improvement in URL recovery rate
+**Test Impact**: 20% improvement in URL recovery rate
+
+---
+
+### Production Results (4,559 URLs)
+
+**Without Wayback (V3 - 2025-11-19 15:28)**:
+- **Live URLs**: 2,557/4,559 (56.1%)
+- **Failed**: 2,002/4,559 (43.9%)
+- **CRITICAL+HIGH**: 2,119/4,559 (46.5%)
+
+**With Wayback (V4 - 2025-11-19 17:42)**:
+- **Live URLs**: 3,716/4,559 (81.5%)
+- **Failed**: 843/4,559 (18.5%)
+- **CRITICAL+HIGH**: 3,118/4,559 (68.4%)
+- **Wayback rescued**: 1,258/4,559 (27.6% of total)
+- **Wayback rescue rate**: 1,258/2,002 (62.9% of V3 failures)
+
+**Production Impact**:
+- **45.3% increase in live URLs** (2,557 → 3,716)
+- **47.2% increase in high-quality detection** (46.5% → 68.4%)
+- **62.9% of previously failed URLs rescued**
+- **Mean score maintained**: 28.6 (Wayback content quality = live content)
+
+**Key Insight**: Wayback Machine rescued nearly **2 out of 3** failed URLs - dramatically improving bioresource discovery coverage.
 
 ## Implementation Details
 

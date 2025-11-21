@@ -6,35 +6,62 @@ Scans all URLs in Set C using the bioresource_url_scanner and adds
 validation columns to the dataset.
 
 Created: 2025-11-20
+Updated: 2025-11-21 (Added session support)
 Estimated time: 75-90 minutes for full scan
 """
 
+import argparse
 import pandas as pd
 import sys
 import subprocess
 from pathlib import Path
 from datetime import datetime
 
+# Parse command-line arguments
+parser = argparse.ArgumentParser(description='Scan URLs in Set C')
+parser.add_argument('--session-id', type=str, required=False,
+                    help='Session ID for scanner output matching')
+parser.add_argument('--session-dir', type=str, required=False,
+                    help='Session directory for inputs/outputs')
+args = parser.parse_args()
+
 # Paths
 BASE_DIR = Path('/Users/warren/development/GBC/inventory_2022')
-DEDUP_DIR = BASE_DIR / 'pipeline_synthesis_2025-11-18/results/deduplicated'
 SCANNER_DIR = BASE_DIR / 'bioresource_url_scanner'
 SCANNER_DATA_DIR = SCANNER_DIR / 'data'
-RESULTS_DIR = BASE_DIR / 'pipeline_synthesis_2025-11-18/results/url_scanned'
 
-# Input file
-INPUT_FILE = DEDUP_DIR / 'set_c_union_dedup.csv'
+# Input/output paths - use session directory if provided
+if args.session_dir:
+    SESSION_DIR = Path(args.session_dir)
+    INPUT_FILE = SESSION_DIR / 'deduplicated' / 'set_c_union_dedup.csv'
+    RESULTS_DIR = SESSION_DIR / 'url_scanned'
+else:
+    # Legacy paths
+    DEDUP_DIR = BASE_DIR / 'pipeline_synthesis_2025-11-18/results/deduplicated'
+    INPUT_FILE = DEDUP_DIR / 'set_c_union_dedup.csv'
+    RESULTS_DIR = BASE_DIR / 'pipeline_synthesis_2025-11-18/results/url_scanned'
+
+RESULTS_DIR.mkdir(parents=True, exist_ok=True)
 
 # Output files
-RESULTS_DIR.mkdir(parents=True, exist_ok=True)
 OUTPUT_FILE = RESULTS_DIR / 'set_c_with_url_scan.csv'
-URL_PREP_FILE = SCANNER_DATA_DIR / 'set_c_urls.csv'
 STATS_FILE = RESULTS_DIR / 'url_scan_statistics.txt'
+
+# Scanner input file - use session ID if provided
+if args.session_id:
+    URL_PREP_FILE = SCANNER_DATA_DIR / f'set_c_urls_{args.session_id}.csv'
+else:
+    URL_PREP_FILE = SCANNER_DATA_DIR / 'set_c_urls.csv'
 
 print("="*80)
 print("URL SCANNING FOR SET C (UNION)")
 print("="*80)
-print(f"Started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+print(f"Started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+if args.session_id:
+    print(f"Session: {args.session_id}")
+if args.session_dir:
+    print(f"Output directory: {RESULTS_DIR}")
+print()
 
 # ============================================================================
 # STEP 1: LOAD SET C
@@ -95,10 +122,26 @@ try:
     print(f"\n   Once complete, re-run this script to continue with Step 4")
 
     # Check if scan results already exist
-    scan_results = sorted(SCANNER_DATA_DIR.glob('gbc_scan_results_*.csv'))
-    if scan_results:
-        latest_scan = scan_results[-1]
-        print(f"\n   Found existing scan: {latest_scan.name}")
+    if args.session_id:
+        # Look for session-specific scan result
+        scan_pattern = f'gbc_scan_results_{args.session_id}.csv'
+        scan_results = list(SCANNER_DATA_DIR.glob(scan_pattern))
+        if scan_results:
+            latest_scan = scan_results[0]
+            print(f"\n   Found session-specific scan: {latest_scan.name}")
+        else:
+            print(f"\n   No session-specific scan found: {scan_pattern}")
+            latest_scan = None
+    else:
+        # Legacy: Look for any scan result
+        scan_results = sorted(SCANNER_DATA_DIR.glob('gbc_scan_results_*.csv'))
+        if scan_results:
+            latest_scan = scan_results[-1]
+            print(f"\n   Found existing scan: {latest_scan.name}")
+        else:
+            latest_scan = None
+
+    if latest_scan:
 
         # Ask user if they want to use it
         print("\n   Do you want to use this scan result? (y/n)")
@@ -115,24 +158,19 @@ try:
 
         print("\n5. Merging scan results with Set C...")
 
-        # Prepare scan data for merge
-        scan_data = scan_df[['url', 'status', 'final_url', 'score',
-                            'is_database', 'is_portal', 'keywords_found',
-                            'content_indicators', 'bioinformatics_terms',
-                            'download_links', 'institutional', 'wayback_used']].copy()
+        # Prepare scan data for merge (using actual column names from scanner V4)
+        scan_data = scan_df[['url', 'status_code', 'final_url', 'total_score',
+                            'is_live', 'likelihood', 'indicators_found',
+                            'wayback_used']].copy()
 
-        # Rename columns with url_scan_ prefix
+        # Rename columns with url_ prefix
         scan_data = scan_data.rename(columns={
-            'status': 'url_status',
+            'status_code': 'url_status',
             'final_url': 'url_final',
-            'score': 'url_score',
-            'is_database': 'url_is_database',
-            'is_portal': 'url_is_portal',
-            'keywords_found': 'url_keywords_found',
-            'content_indicators': 'url_content_indicators',
-            'bioinformatics_terms': 'url_bioinformatics_terms',
-            'download_links': 'url_download_links',
-            'institutional': 'url_institutional',
+            'total_score': 'url_score',
+            'is_live': 'url_is_live',
+            'likelihood': 'url_likelihood',
+            'indicators_found': 'url_indicators_found',
             'wayback_used': 'url_wayback_used'
         })
 
@@ -141,10 +179,8 @@ try:
         df_c_scanned = df_c_scanned.drop(columns=['url'])
 
         # Fill NaN for resources without URLs
-        url_cols = ['url_status', 'url_final', 'url_score', 'url_is_database',
-                    'url_is_portal', 'url_keywords_found', 'url_content_indicators',
-                    'url_bioinformatics_terms', 'url_download_links', 'url_institutional',
-                    'url_wayback_used']
+        url_cols = ['url_status', 'url_final', 'url_score', 'url_is_live',
+                    'url_likelihood', 'url_indicators_found', 'url_wayback_used']
         for col in url_cols:
             if col not in df_c_scanned.columns:
                 df_c_scanned[col] = None

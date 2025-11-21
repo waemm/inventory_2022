@@ -7,9 +7,11 @@ Set B: SetFit papers (all, including baseline)
 Set C: Union of deduplicated A + B
 
 Created: 2025-11-20
+Updated: 2025-11-21 (Added session support)
 Purpose: Complete three-strategy comparison with full baseline inclusion
 """
 
+import argparse
 import pandas as pd
 import re
 from pathlib import Path
@@ -18,17 +20,31 @@ from urllib.parse import urlparse
 from difflib import SequenceMatcher
 from datetime import datetime
 
+# Parse command-line arguments
+parser = argparse.ArgumentParser(description='Deduplicate Sets A, B, and C')
+parser.add_argument('--session-dir', type=str, required=False,
+                    help='Session directory for outputs')
+args = parser.parse_args()
+
 # Paths
 BASE_DIR = Path('/Users/warren/development/GBC/inventory_2022')
 FILTERED_DIR = BASE_DIR / 'pipeline_synthesis_2025-11-18/data/filtered'
-RESULTS_DIR = BASE_DIR / 'pipeline_synthesis_2025-11-18/results/deduplicated'
 
-# Input files
+# Input files (always from filtered directory)
 INPUT_SET_A = FILTERED_DIR / 'linguistic_all_papers.csv'
 INPUT_SET_B = FILTERED_DIR / 'setfit_all_papers.csv'
 
-# Output files
+# Output paths - use session directory if provided, otherwise legacy path
+if args.session_dir:
+    SESSION_DIR = Path(args.session_dir)
+    RESULTS_DIR = SESSION_DIR / 'deduplicated'
+else:
+    # Legacy path (backward compatible)
+    RESULTS_DIR = BASE_DIR / 'pipeline_synthesis_2025-11-18/results/deduplicated'
+
 RESULTS_DIR.mkdir(parents=True, exist_ok=True)
+
+# Output files
 OUTPUT_SET_A = RESULTS_DIR / 'set_a_linguistic_dedup.csv'
 OUTPUT_SET_B = RESULTS_DIR / 'set_b_setfit_dedup.csv'
 OUTPUT_SET_C = RESULTS_DIR / 'set_c_union_dedup.csv'
@@ -37,7 +53,10 @@ STATS_FILE = RESULTS_DIR / 'deduplication_statistics.txt'
 print("="*80)
 print("UNIFIED DEDUPLICATION FOR SETS A, B, AND C")
 print("="*80)
-print(f"Started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+print(f"Started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+if args.session_dir:
+    print(f"Session: {Path(args.session_dir).name}")
+print(f"Output directory: {RESULTS_DIR}\n")
 
 # ============================================================================
 # URL SIMILARITY FUNCTIONS
@@ -340,6 +359,8 @@ def deduplicate_dataset(df, dataset_name, filter_criteria=True):
 
     if len(dup_df) > 0:
         # For duplicates, keep earliest paper and join PMIDs
+        # Convert pmid to string to handle mixed types
+        dup_df['pmid'] = dup_df['pmid'].astype(str)
         duplicate_merged = dup_df.sort_values('pmid').groupby(
             ['canonical_url', 'norm_entity']
         ).agg({

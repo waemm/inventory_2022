@@ -7,25 +7,41 @@ matching resource_url or entity name. This ensures all three sets have
 identical column structure for comparison.
 
 Created: 2025-11-20
+Updated: 2025-11-21 (Added session support)
 """
 
+import argparse
 import pandas as pd
 from pathlib import Path
 from datetime import datetime
 
+# Parse command-line arguments
+parser = argparse.ArgumentParser(description='Backfill URL scan data to Sets A and B')
+parser.add_argument('--session-dir', type=str, required=False,
+                    help='Session directory for inputs/outputs')
+args = parser.parse_args()
+
 # Paths
 BASE_DIR = Path('/Users/warren/development/GBC/inventory_2022')
-DEDUP_DIR = BASE_DIR / 'pipeline_synthesis_2025-11-18/results/deduplicated'
-SCANNED_DIR = BASE_DIR / 'pipeline_synthesis_2025-11-18/results/url_scanned'
-FINAL_DIR = BASE_DIR / 'pipeline_synthesis_2025-11-18/results/final'
 
-# Input files
-INPUT_SET_A = DEDUP_DIR / 'set_a_linguistic_dedup.csv'
-INPUT_SET_B = DEDUP_DIR / 'set_b_setfit_dedup.csv'
-INPUT_SET_C = SCANNED_DIR / 'set_c_with_url_scan.csv'
+# Input/output paths - use session directory if provided
+if args.session_dir:
+    SESSION_DIR = Path(args.session_dir)
+    INPUT_SET_A = SESSION_DIR / 'deduplicated' / 'set_a_linguistic_dedup.csv'
+    INPUT_SET_B = SESSION_DIR / 'deduplicated' / 'set_b_setfit_dedup.csv'
+    INPUT_SET_C = SESSION_DIR / 'url_scanned' / 'set_c_with_url_scan.csv'
+    FINAL_DIR = SESSION_DIR / 'final'
+else:
+    # Legacy paths
+    PIPELINE_DIR = BASE_DIR / 'pipeline_synthesis_2025-11-18/results'
+    INPUT_SET_A = PIPELINE_DIR / 'deduplicated' / 'set_a_linguistic_dedup.csv'
+    INPUT_SET_B = PIPELINE_DIR / 'deduplicated' / 'set_b_setfit_dedup.csv'
+    INPUT_SET_C = PIPELINE_DIR / 'url_scanned' / 'set_c_with_url_scan.csv'
+    FINAL_DIR = PIPELINE_DIR / 'final'
+
+FINAL_DIR.mkdir(parents=True, exist_ok=True)
 
 # Output files
-FINAL_DIR.mkdir(parents=True, exist_ok=True)
 OUTPUT_SET_A = FINAL_DIR / 'set_a_linguistic_final.csv'
 OUTPUT_SET_B = FINAL_DIR / 'set_b_setfit_final.csv'
 OUTPUT_SET_C = FINAL_DIR / 'set_c_union_final.csv'
@@ -34,7 +50,10 @@ STATS_FILE = FINAL_DIR / 'backfill_statistics.txt'
 print("="*80)
 print("BACKFILLING URL SCAN DATA TO SETS A AND B")
 print("="*80)
-print(f"Started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+print(f"Started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+if args.session_dir:
+    print(f"Session: {Path(args.session_dir).name}")
+print(f"Output directory: {FINAL_DIR}\n")
 
 # ============================================================================
 # STEP 1: LOAD ALL DATASETS

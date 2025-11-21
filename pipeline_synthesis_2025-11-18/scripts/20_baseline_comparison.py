@@ -164,16 +164,16 @@ def main():
 
         results[set_name] = {
             'name': f"Set {set_name} ({description})",
-            'total_resources': total,
-            'in_baseline': in_baseline,
-            'in_baseline_pct': (in_baseline / total * 100) if total > 0 else 0,
-            'novel_discoveries': novel,
-            'novel_pct': (novel / total * 100) if total > 0 else 0,
-            'pmid_only': pmid_only,
-            'entity_only': entity_only,
-            'both_match': both,
-            'in_baseline_pmid': in_baseline_pmid,
-            'in_baseline_entity': in_baseline_entity
+            'total_resources': int(total),
+            'in_baseline': int(in_baseline),
+            'in_baseline_pct': float(in_baseline / total * 100) if total > 0 else 0.0,
+            'novel_discoveries': int(novel),
+            'novel_pct': float(novel / total * 100) if total > 0 else 0.0,
+            'pmid_only': int(pmid_only),
+            'entity_only': int(entity_only),
+            'both_match': int(both),
+            'in_baseline_pmid': int(in_baseline_pmid),
+            'in_baseline_entity': int(in_baseline_entity)
         }
 
         print(f"   Total resources: {total}")
@@ -266,13 +266,13 @@ def main():
     print("\n5. Saving statistics...")
     stats = {
         'baseline': {
-            'total_resources': total_baseline,
-            'coverage_set_a': coverage_a,
-            'coverage_set_b': coverage_b,
-            'coverage_set_c': coverage_c,
-            'coverage_pct_a': coverage_a / total_baseline * 100 if total_baseline > 0 else 0,
-            'coverage_pct_b': coverage_b / total_baseline * 100 if total_baseline > 0 else 0,
-            'coverage_pct_c': coverage_c / total_baseline * 100 if total_baseline > 0 else 0
+            'total_resources': int(total_baseline),
+            'coverage_set_a': int(coverage_a),
+            'coverage_set_b': int(coverage_b),
+            'coverage_set_c': int(coverage_c),
+            'coverage_pct_a': float(coverage_a / total_baseline * 100) if total_baseline > 0 else 0.0,
+            'coverage_pct_b': float(coverage_b / total_baseline * 100) if total_baseline > 0 else 0.0,
+            'coverage_pct_c': float(coverage_c / total_baseline * 100) if total_baseline > 0 else 0.0
         },
         'sets': results
     }

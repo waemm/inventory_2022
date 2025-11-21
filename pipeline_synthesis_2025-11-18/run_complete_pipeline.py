@@ -2,42 +2,263 @@
 """
 Complete Bioresource Discovery Pipeline - Master Orchestrator
 
-Runs the entire pipeline from entity mapping through final URL-validated datasets.
+Runs the entire pipeline from entity mapping through final URL-validated datasets,
+with session-based execution, baseline comparison, and visualization generation.
 
-Pipeline Flow:
-1. Create paper sets (linguistic, SetFit, union)
-2. Map entities to papers
-3. Create filtered datasets (INCLUDING baseline - changed 2025-11-20)
-4. Deduplicate Sets A, B, and C
-5. URL scan Set C (optional, 75-90 min)
-6. Backfill URL data to Sets A & B
-7. Baseline comparison (optional)
-8. Generate visualizations (optional)
+================================================================================
+PIPELINE FLOW
+================================================================================
 
-Session Management (2025-11-21):
-- Each run generates unique session ID or can resume existing session
-- Outputs saved to results/sessions/{session_id}/
-- Can resume interrupted runs with --session-id
-- Can rerun from specific step with --from-step
+Step 1: Entity Mapping (03_map_papers_to_entities.py)
+    - Maps papers from Sets A, B, C to entities
+    - Duration: ~30-45 min
 
-Usage:
-    # New run (auto-generated session ID)
-    python run_complete_pipeline.py
+Step 2: Filtered Datasets (10_create_filtered_datasets.py)
+    - Creates filtered datasets with baseline entity matching
+    - Duration: ~20-30 min
 
-    # Resume interrupted run
-    python run_complete_pipeline.py --session-id 2025-11-21-095430-a3f9b
+Step 3: Deduplication (17_deduplicate_all_sets.py)
+    - Deduplicates Sets A (Linguistic), B (SetFit), C (Union)
+    - Uses union-find algorithm for URL clustering
+    - Duration: ~15-25 min
 
-    # Rerun from step 6 (baseline comparison)
-    python run_complete_pipeline.py --session-id 2025-11-21-095430-a3f9b --from-step 6
+Step 4: URL Scanning [OPTIONAL] (18_scan_urls_set_c.py)
+    - Scans URLs in Set C using bioresource_url_scanner
+    - Tests URL validity and bioresource likelihood
+    - Duration: ~75-90 min
+    - Can be skipped if URL validation not needed
 
-    # Skip baseline comparison steps
-    python run_complete_pipeline.py --skip-baseline
+Step 5: Backfill URL Data (19_backfill_url_data.py)
+    - Copies URL scan data from Set C to Sets A and B
+    - Ensures consistent column structure across all sets
+    - Duration: ~2-3 min
 
-    # List available sessions
-    python run_complete_pipeline.py --list-sessions
+Step 6: Baseline Comparison [OPTIONAL] (20_baseline_comparison.py)
+    - Compares against 2022 baseline inventory (1,948 resources)
+    - Dual-method matching: PMID + entity name
+    - Adds 3 columns: in_baseline_pmid, in_baseline_entity, in_baseline
+    - Generates report, stats JSON, and visualization data
+    - Duration: ~3-5 min
+    - Skip with --skip-baseline if not needed
 
-Created: 2025-11-20
-Updated: 2025-11-21 (Session management)
+Step 7: Generate Visualizations [OPTIONAL] (21_generate_visualizations.py)
+    - Creates PNG and HTML charts from baseline comparison
+    - 4 chart types: coverage, match types, counts, score distribution
+    - Requires matplotlib and/or plotly
+    - Duration: ~1-2 min
+    - Skip with --skip-baseline if not needed
+
+================================================================================
+SESSION MANAGEMENT (2025-11-21)
+================================================================================
+
+Session ID Format: YYYY-MM-DD-HHMMSS-xxxxx
+    Example: 2025-11-21-143022-a7k3f
+
+Session Directory Structure:
+    results/sessions/{session-id}/
+    ├── session_metadata.json          # Progress tracking
+    ├── deduplicated/                  # Step 3 output
+    ├── url_scanned/                   # Step 4 output
+    ├── final/                         # Step 5 output
+    ├── baseline_comparison/           # Step 6 output
+    └── visualizations/                # Step 7 output
+
+Features:
+    - Unique session ID per run prevents file collisions
+    - Automatic resume from last completed step
+    - Selective step rerun with --from-step
+    - Progress tracking in session_metadata.json
+    - List all sessions with --list-sessions
+
+================================================================================
+USAGE EXAMPLES
+================================================================================
+
+Basic Usage:
+-----------
+
+1. New Run (Full Pipeline)
+    $ python run_complete_pipeline.py
+
+    Creates new session with auto-generated ID
+    Runs all 7 steps
+    Output: results/sessions/{session-id}/
+
+2. New Run (Skip Baseline Steps)
+    $ python run_complete_pipeline.py --skip-baseline
+
+    Runs steps 1-5 only
+    Faster for testing or when baseline comparison not needed
+
+3. List Available Sessions
+    $ python run_complete_pipeline.py --list-sessions
+
+    Shows all sessions with:
+    - Session ID
+    - Creation timestamp
+    - Completion status
+    - Completed steps
+
+Advanced Usage:
+--------------
+
+4. Resume Interrupted Run
+    $ python run_complete_pipeline.py --session-id 2025-11-21-143022-a7k3f
+
+    Scenario: Pipeline crashed or was interrupted (Ctrl+C)
+    Behavior: Automatically skips completed steps, continues from where it stopped
+
+    Example output:
+        [✅] Step 1 already complete: Entity mapping
+        [✅] Step 2 already complete: Filtered datasets
+        [✅] Step 3 already complete: Deduplication
+        [▶] Step 4/7: URL scanning (Set C) [OPTIONAL]
+            Running: python scripts/18_scan_urls_set_c.py ...
+
+5. Rerun from Specific Step
+    $ python run_complete_pipeline.py --session-id 2025-11-21-143022-a7k3f --from-step 3
+
+    Use cases:
+    - Rerun deduplication with different parameters
+    - Regenerate visualizations after manual edits
+    - Test specific pipeline steps
+
+    Behavior: Ignores completion status, reruns from step 3 onward
+
+6. Rerun Only Baseline Comparison
+    $ python run_complete_pipeline.py --session-id 2025-11-21-143022-a7k3f --from-step 6
+
+    Use case: Regenerate baseline comparison and visualizations
+    Duration: ~5-7 min (steps 6-7 only)
+
+Common Workflows:
+----------------
+
+Workflow A: Development/Testing
+    1. Run pipeline without baseline (faster):
+       $ python run_complete_pipeline.py --skip-baseline
+
+    2. Verify deduplication results
+
+    3. Add baseline comparison later:
+       $ python run_complete_pipeline.py --session-id {id} --from-step 6
+
+Workflow B: Production Run
+    1. Run full pipeline:
+       $ python run_complete_pipeline.py
+
+    2. If interrupted, resume:
+       $ python run_complete_pipeline.py --session-id {id}
+
+    3. Review outputs in results/sessions/{id}/
+
+Workflow C: Iterative Refinement
+    1. Initial run:
+       $ python run_complete_pipeline.py
+
+    2. Manually edit deduplication parameters in script 17
+
+    3. Rerun from deduplication:
+       $ python run_complete_pipeline.py --session-id {id} --from-step 3
+
+Workflow D: Regenerate Visualizations
+    1. Edit baseline comparison logic
+
+    2. Rerun baseline+viz only (fast):
+       $ python run_complete_pipeline.py --session-id {id} --from-step 6
+
+================================================================================
+OUTPUT LOCATIONS
+================================================================================
+
+New Session (Auto-Generated ID):
+    results/sessions/2025-11-21-143022-a7k3f/
+
+Legacy Mode (Backward Compatible):
+    Individual scripts without --session-dir still output to:
+    results/deduplicated/
+    results/url_scanned/
+    results/final/
+    results/baseline_comparison/
+    results/visualizations/
+
+================================================================================
+REQUIREMENTS
+================================================================================
+
+Required Dependencies:
+    - Python 3.8+
+    - pandas
+    - numpy
+    - pathlib
+    - json
+    - datetime
+    - argparse
+    - subprocess
+
+Optional Dependencies (for visualizations):
+    - matplotlib (for PNG charts)
+    - plotly (for HTML interactive charts)
+
+    Install with: pip install matplotlib plotly
+
+External Scripts:
+    - bioresource_url_scanner (for URL scanning step)
+    - Must be configured separately
+
+================================================================================
+TROUBLESHOOTING
+================================================================================
+
+Issue: "Session ID not found"
+    Solution: Use --list-sessions to see available sessions
+              Ensure session ID is typed correctly
+
+Issue: "Step already complete" but want to rerun
+    Solution: Use --from-step N to force rerun from step N
+
+Issue: URL scanner not found
+    Solution: Either skip URL scanning (--skip-baseline) or
+              configure bioresource_url_scanner in ../bioresource_url_scanner/
+
+Issue: "matplotlib/plotly not available"
+    Solution: pip install matplotlib plotly
+              Or skip visualizations (--skip-baseline)
+
+Issue: Out of memory during deduplication
+    Solution: Run deduplication script standalone with increased memory:
+              python -Xmx8g scripts/17_deduplicate_all_sets.py --session-dir ...
+
+Issue: Session directory already exists
+    Solution: This is normal - resume uses existing directory
+              For fresh run, use new auto-generated session ID (don't specify --session-id)
+
+================================================================================
+EXIT CODES
+================================================================================
+
+0 - Success: All steps completed successfully
+1 - Error: One or more steps failed
+2 - User interrupted: Ctrl+C (can resume with same session ID)
+
+================================================================================
+CHANGELOG
+================================================================================
+
+2025-11-21: Added session management, baseline comparison, visualizations
+2025-11-20: Created master orchestrator
+2025-11-18: Pipeline synthesis project initiated
+
+================================================================================
+RELATED DOCUMENTATION
+================================================================================
+
+- PIPELINE_CHANGES_2025-11-21.md - Detailed implementation documentation
+- results/sessions/README.md - Session directory structure explanation
+- plans/2025-11-21_session_based_pipeline_with_baseline.md - Original plan
+
+For questions or issues, see documentation in pipeline_synthesis_2025-11-18/
 """
 
 import argparse

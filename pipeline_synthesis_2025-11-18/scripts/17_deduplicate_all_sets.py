@@ -1,19 +1,26 @@
 #!/usr/bin/env python3
 """
-Unified Deduplication for Sets A, B, and C
+Unified Deduplication for Sets A, B, and C with Multi-Profile Support
 
 Set A: Linguistic papers (all, including baseline)
 Set B: SetFit papers (all, including baseline)
 Set C: Union of deduplicated A + B
 
+Profiles:
+  - conservative: High precision, strict filtering
+  - balanced: Recommended default, good precision/recall
+  - aggressive: Maximum recall, accepts more false positives
+
 Created: 2025-11-20
 Updated: 2025-11-21 (Added session support)
-Purpose: Complete three-strategy comparison with full baseline inclusion
+Updated: 2025-11-25 (Added multi-profile filtering support)
+Purpose: Complete three-strategy comparison with configurable filtering profiles
 """
 
 import argparse
 import pandas as pd
 import re
+import yaml
 from pathlib import Path
 from collections import defaultdict
 from urllib.parse import urlparse
@@ -21,14 +28,45 @@ from difflib import SequenceMatcher
 from datetime import datetime
 
 # Parse command-line arguments
-parser = argparse.ArgumentParser(description='Deduplicate Sets A, B, and C')
+parser = argparse.ArgumentParser(description='Deduplicate Sets A, B, and C with multi-profile support')
 parser.add_argument('--session-dir', type=str, required=False,
                     help='Session directory for outputs')
+parser.add_argument('--profiles', type=str, default='all',
+                    help='Filtering profiles to run: conservative, balanced, aggressive, or all (default: all)')
+parser.add_argument('--config', type=str, required=False,
+                    help='Path to config file (default: unified_bioresource_pipeline/config/pipeline_config.yaml)')
 args = parser.parse_args()
 
 # Paths
 BASE_DIR = Path('/Users/warren/development/GBC/inventory_2022')
 FILTERED_DIR = BASE_DIR / 'pipeline_synthesis_2025-11-18/data/filtered'
+
+# Load filtering profiles from config
+CONFIG_PATH = Path(args.config) if args.config else BASE_DIR / 'unified_bioresource_pipeline/config/pipeline_config.yaml'
+
+if CONFIG_PATH.exists():
+    with open(CONFIG_PATH, 'r') as f:
+        config = yaml.safe_load(f)
+    FILTERING_PROFILES = config.get('filtering_profiles', {})
+    DEFAULT_PROFILE = config.get('default_profile', 'balanced')
+else:
+    print(f"Warning: Config file not found at {CONFIG_PATH}, using default profiles")
+    FILTERING_PROFILES = {
+        'balanced': {
+            'description': 'Default profile',
+            'db_keywords': ['database', 'server', 'portal', 'repository', 'archive'],
+            'linguistic_bypass_threshold': 5,
+            'setfit_threshold': 0.58,
+            'require_url': True
+        }
+    }
+    DEFAULT_PROFILE = 'balanced'
+
+# Parse which profiles to run
+if args.profiles == 'all':
+    PROFILES_TO_RUN = list(FILTERING_PROFILES.keys())
+else:
+    PROFILES_TO_RUN = [p.strip() for p in args.profiles.split(',')]
 
 # Input files (always from filtered directory)
 INPUT_SET_A = FILTERED_DIR / 'linguistic_all_papers.csv'
@@ -37,18 +75,10 @@ INPUT_SET_B = FILTERED_DIR / 'setfit_all_papers.csv'
 # Output paths - use session directory if provided, otherwise legacy path
 if args.session_dir:
     SESSION_DIR = Path(args.session_dir)
-    RESULTS_DIR = SESSION_DIR / 'deduplicated'
+    BASE_RESULTS_DIR = SESSION_DIR / 'deduplicated'
 else:
     # Legacy path (backward compatible)
-    RESULTS_DIR = BASE_DIR / 'pipeline_synthesis_2025-11-18/results/deduplicated'
-
-RESULTS_DIR.mkdir(parents=True, exist_ok=True)
-
-# Output files
-OUTPUT_SET_A = RESULTS_DIR / 'set_a_linguistic_dedup.csv'
-OUTPUT_SET_B = RESULTS_DIR / 'set_b_setfit_dedup.csv'
-OUTPUT_SET_C = RESULTS_DIR / 'set_c_union_dedup.csv'
-STATS_FILE = RESULTS_DIR / 'deduplication_statistics.txt'
+    BASE_RESULTS_DIR = BASE_DIR / 'pipeline_synthesis_2025-11-18/results/deduplicated'
 
 print("="*80)
 print("UNIFIED DEDUPLICATION FOR SETS A, B, AND C")
@@ -56,7 +86,9 @@ print("="*80)
 print(f"Started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
 if args.session_dir:
     print(f"Session: {Path(args.session_dir).name}")
-print(f"Output directory: {RESULTS_DIR}\n")
+print(f"Profiles to run: {', '.join(PROFILES_TO_RUN)}")
+print(f"Config file: {CONFIG_PATH}")
+print()
 
 # ============================================================================
 # URL SIMILARITY FUNCTIONS
@@ -234,7 +266,10 @@ def get_primary_entity(row):
 
 def cluster_similar_urls(urls, threshold=0.85):
     """
-    Cluster URLs by similarity using union-find.
+    Cluster URLs by similarity using union-find with domain blocking optimization.
+
+    Domain blocking: Only compare URLs with the same domain, reducing complexity
+    from O(n²) to O(d * k²) where d = number of domains, k = avg URLs per domain.
 
     Returns dict mapping each URL to its canonical URL (first in cluster).
     """
@@ -261,11 +296,37 @@ def cluster_similar_urls(urls, threshold=0.85):
             else:
                 parent[px] = py
 
-    # Find similar pairs and union them
-    for i in range(n):
-        for j in range(i+1, n):
-            if urls_are_similar(urls_list[i], urls_list[j], threshold):
-                union(i, j)
+    # === DOMAIN BLOCKING OPTIMIZATION ===
+    # Group URLs by full domain (netloc) - only URLs with same domain can be similar
+    # Using full_domain (e.g., "sub.example.com") rather than main domain ("example")
+    # to preserve semantic correctness while still getting massive speedup
+    UNKNOWN_DOMAIN = '__unknown__'
+    domain_groups = defaultdict(list)
+    for i, url in enumerate(urls_list):
+        components = parse_url_components(url)
+        if components:
+            # Use full domain (netloc) as blocking key for correct semantics
+            blocking_key = components['full_domain']  # e.g., "github.com", "www.example.com"
+        else:
+            blocking_key = UNKNOWN_DOMAIN
+        domain_groups[blocking_key].append(i)
+
+    # Find similar pairs within each domain group only
+    total_comparisons = 0
+    for domain, indices in domain_groups.items():
+        group_size = len(indices)
+        if group_size > 1:
+            for i_pos in range(group_size):
+                for j_pos in range(i_pos + 1, group_size):
+                    i, j = indices[i_pos], indices[j_pos]
+                    total_comparisons += 1
+                    if urls_are_similar(urls_list[i], urls_list[j], threshold):
+                        union(i, j)
+
+    naive_comparisons = n * (n - 1) // 2
+    reduction_pct = 100 * (1 - total_comparisons / naive_comparisons) if naive_comparisons > 0 else 0
+    print(f"   Domain blocking: {len(domain_groups):,} domains, {total_comparisons:,} comparisons "
+          f"(vs {naive_comparisons:,} without blocking) [{reduction_pct:.1f}% reduction]")
 
     # Build mapping from URL to canonical URL
     clusters = defaultdict(list)
@@ -283,17 +344,169 @@ def cluster_similar_urls(urls, threshold=0.85):
     return url_to_canonical
 
 # ============================================================================
+# PROFILE-BASED FILTERING FUNCTIONS
+# ============================================================================
+
+def check_keyword_match(title, keywords):
+    """Check if any keyword appears in the title (case-insensitive)."""
+    if pd.isna(title) or not title:
+        return False
+    title_lower = str(title).lower()
+    return any(kw.lower() in title_lower for kw in keywords)
+
+
+# =============================================================================
+# TITLE-BASED SCORE MODIFIERS (False Positive Reduction)
+# =============================================================================
+# Based on analysis of 200 manually reviewed papers:
+# - Papers with "database", "archive", etc. in title are 6x more likely to be legitimate
+# - Papers with "tool for", "method for", etc. WITHOUT data words are likely methodology FPs
+
+# Data resource words - presence indicates legitimate bioresource (+1 boost)
+DATA_RESOURCE_WORDS = [
+    'database', 'archive', 'repository', 'atlas', 'resource', 'commons',
+    'data management', 'data integration', 'data platform'
+]
+
+# Methodology patterns - presence WITHOUT data words indicates pure methodology paper (-1 penalty)
+METHODOLOGY_PATTERNS = [
+    r'\btool for\b',
+    r'\bmethod for\b',
+    r'\bapproach for\b',
+    r'\bframework for\b',
+    r'\bpipeline for\b',
+    r'\bworkflow for\b',
+    r'\balgorithm for\b',
+    r'\bprediction of\b',
+    r'\bpredicting\b',
+    r'\bidentifying\b',
+    r'\bdetection of\b',
+]
+
+# Pre-compile regex patterns for performance
+METHODOLOGY_PATTERNS_COMPILED = [re.compile(pattern) for pattern in METHODOLOGY_PATTERNS]
+
+
+def compute_title_score_modifier(title):
+    """
+    Compute a score modifier based on title patterns.
+
+    Returns:
+        int: Score modifier (+1 for data resource words, -1 for methodology without data words)
+        str: Reason for modifier (for logging)
+    """
+    if pd.isna(title) or not title:
+        return 0, "no_title"
+
+    title_lower = str(title).lower()
+
+    # Check for data resource words (boost)
+    has_data_word = any(word in title_lower for word in DATA_RESOURCE_WORDS)
+
+    if has_data_word:
+        return 1, "data_resource_boost"
+
+    # Check for methodology patterns (penalty only if NO data words)
+    has_methodology = any(pattern.search(title_lower) for pattern in METHODOLOGY_PATTERNS_COMPILED)
+
+    if has_methodology:
+        # Methodology word without data word = likely pure methodology paper
+        return -1, "methodology_penalty"
+
+    return 0, "neutral"
+
+
+def passes_profile_filter(row, profile):
+    """
+    Check if a paper passes the profile filter.
+
+    Papers can pass either via:
+    1. Linguistic bypass: effective_ling_score >= linguistic_bypass_threshold (bypasses keyword check)
+       - effective_ling_score = ling_score + title_modifier
+       - title_modifier: +1 for data resource words, -1 for methodology patterns
+    2. Keyword match: title contains one of the db_keywords AND (has URL if required)
+
+    Args:
+        row: DataFrame row with paper data
+        profile: Profile dict with filtering parameters
+
+    Returns:
+        bool: True if paper passes filter
+    """
+    # Get profile parameters with defaults
+    bypass_threshold = profile.get('linguistic_bypass_threshold', 6)
+    keywords = profile.get('db_keywords', ['database'])
+    require_url = profile.get('require_url', True)
+    setfit_threshold = profile.get('setfit_threshold', 0.58)
+
+    # Helper to check URL requirement
+    def has_url():
+        url_val = row.get('has_resource_url', False)
+        # Handle string representations of boolean
+        if isinstance(url_val, str):
+            return url_val.lower() in ('true', '1', 'yes')
+        return bool(url_val)
+
+    # Get title for modifier and keyword check
+    title = row.get('title', '')
+
+    # Compute title-based score modifier
+    title_modifier, modifier_reason = compute_title_score_modifier(title)
+
+    # Check linguistic bypass first (using effective score with title modifier)
+    ling_score = row.get('ling_score')
+    if pd.notna(ling_score):
+        try:
+            ling_score = float(ling_score)
+            effective_score = ling_score + title_modifier
+
+            if effective_score >= bypass_threshold:
+                # High effective score bypasses keyword filter
+                # Still need URL if required
+                if require_url:
+                    return has_url()
+                return True
+        except (ValueError, TypeError):
+            pass  # Invalid score, continue to keyword check
+
+    # Check keyword match FIRST (before SetFit threshold)
+    has_keyword = check_keyword_match(title, keywords)
+
+    # If no keyword match, filter out (no need to check other criteria)
+    if not has_keyword:
+        return False
+
+    # Has keyword - now check SetFit confidence threshold
+    # Papers without SetFit scores (NaN) pass this check (they're linguistic papers)
+    setfit_conf = row.get('setfit_confidence')
+    if pd.notna(setfit_conf):
+        try:
+            setfit_conf = float(setfit_conf)
+            if setfit_conf < setfit_threshold:
+                # Below confidence threshold - filter out
+                return False
+        except (ValueError, TypeError):
+            pass  # Invalid confidence - treat as passing (benefit of doubt)
+
+    # Check URL requirement
+    if require_url:
+        return has_url()
+
+    return True
+
+# ============================================================================
 # CORE DEDUPLICATION FUNCTION
 # ============================================================================
 
-def deduplicate_dataset(df, dataset_name, filter_criteria=True):
+def deduplicate_dataset(df, dataset_name, profile=None, filter_criteria=True):
     """
     Deduplicate a dataset using URL clustering and entity matching.
 
     Args:
         df: DataFrame to deduplicate
         dataset_name: Name for logging (e.g., "Set A")
-        filter_criteria: If True, filter for high-conf resources (db_keyword, has_url)
+        profile: Profile dict with filtering parameters (optional)
+        filter_criteria: If True, filter for resources (legacy mode if no profile)
 
     Returns:
         Deduplicated DataFrame
@@ -304,19 +517,76 @@ def deduplicate_dataset(df, dataset_name, filter_criteria=True):
 
     print(f"\n1. Input: {len(df)} papers")
 
-    # Filter for high-confidence resources if requested
+    # Filter for resources based on profile or legacy criteria
     if filter_criteria:
-        print("\n2. Filtering for high-confidence resources...")
-        print("   Criteria:")
-        print("   - db_keyword_found == True")
-        print("   - has_resource_url == True")
+        if profile:
+            # Use profile-based filtering
+            print(f"\n2. Filtering with profile: {profile.get('description', 'custom')}")
+            print(f"   Keywords: {profile.get('db_keywords', [])[:5]}...")
+            print(f"   Linguistic bypass: ling_score >= {profile.get('linguistic_bypass_threshold', 6)}")
+            print(f"   SetFit threshold: >= {profile.get('setfit_threshold', 0.58)}")
+            print(f"   Require URL: {profile.get('require_url', True)}")
 
-        filtered = df[
-            (df['db_keyword_found'] == True) &
-            (df['has_resource_url'] == True)
-        ].copy()
+            # Apply profile filter
+            mask = df.apply(lambda row: passes_profile_filter(row, profile), axis=1)
+            filtered = df[mask].copy()
 
-        print(f"   Filtered: {len(filtered)} papers")
+            # Count how many passed via bypass vs keywords (in the FILTERED set)
+            bypass_threshold = profile.get('linguistic_bypass_threshold', 6)
+            print(f"\n   Papers passing filter: {len(filtered)}")
+            if 'ling_score' in filtered.columns and len(filtered) > 0:
+                # Calculate effective scores with title modifiers (compute ONCE)
+                def get_effective_score_and_modifier(row):
+                    base = row.get('ling_score', 0)
+                    if pd.isna(base):
+                        return pd.Series({'_effective_score': 0, '_modifier': 0})
+                    modifier, _ = compute_title_score_modifier(row.get('title', ''))
+                    return pd.Series({
+                        '_effective_score': float(base) + modifier,
+                        '_modifier': modifier
+                    })
+
+                # Apply once and extract both columns
+                temp_df = filtered.apply(get_effective_score_and_modifier, axis=1)
+                filtered['_effective_score'] = temp_df['_effective_score']
+                filtered['_modifier'] = temp_df['_modifier']
+
+                bypassed_mask = filtered['_effective_score'] >= bypass_threshold
+                bypassed_count = bypassed_mask.sum()
+                keyword_count = (~bypassed_mask).sum()
+                print(f"   - Via linguistic bypass (effective_score >= {bypass_threshold}): {bypassed_count}")
+                print(f"   - Via keyword match: {keyword_count}")
+
+                # Show title modifier impact (using pre-computed modifiers)
+                boost_count = (filtered['_modifier'] == 1).sum()
+                penalty_count = (filtered['_modifier'] == -1).sum()
+                print(f"   Title modifiers applied:")
+                print(f"   - Data resource boost (+1): {boost_count} papers")
+                print(f"   - Methodology penalty (-1): {penalty_count} papers")
+
+                # Clean up temp columns
+                filtered = filtered.drop(columns=['_effective_score', '_modifier'])
+            else:
+                print(f"   - Breakdown not available (ling_score column missing or no data)")
+
+            # Handle empty filtered results
+            if len(filtered) == 0:
+                print(f"\n   WARNING: No papers passed filter for {dataset_name}")
+                print(f"   Returning empty DataFrame")
+                return pd.DataFrame()
+        else:
+            # Legacy filtering (backward compatible)
+            print("\n2. Filtering for high-confidence resources (legacy mode)...")
+            print("   Criteria:")
+            print("   - db_keyword_found == True")
+            print("   - has_resource_url == True")
+
+            filtered = df[
+                (df['db_keyword_found'] == True) &
+                (df['has_resource_url'] == True)
+            ].copy()
+
+            print(f"   Filtered: {len(filtered)} papers")
     else:
         filtered = df.copy()
         print("\n2. No filtering applied (using all papers)")
@@ -433,105 +703,219 @@ df_b = pd.read_csv(INPUT_SET_B)
 print(f"  Set A (Linguistic): {len(df_a)} papers")
 print(f"  Set B (SetFit): {len(df_b)} papers")
 
-# Deduplicate Set A
-dedup_a = deduplicate_dataset(df_a, "SET A (LINGUISTIC)", filter_criteria=True)
-dedup_a.to_csv(OUTPUT_SET_A, index=False)
-print(f"\n✓ Saved Set A: {OUTPUT_SET_A}")
+# Store results for each profile for final comparison
+all_profile_results = {}
 
-# Deduplicate Set B
-dedup_b = deduplicate_dataset(df_b, "SET B (SETFIT)", filter_criteria=True)
-dedup_b.to_csv(OUTPUT_SET_B, index=False)
-print(f"\n✓ Saved Set B: {OUTPUT_SET_B}")
+# Process each profile
+for profile_name in PROFILES_TO_RUN:
+    print(f"\n{'#'*80}")
+    print(f"# PROCESSING PROFILE: {profile_name.upper()}")
+    print(f"{'#'*80}")
 
-# Create Set C (Union of deduplicated A + B)
-print(f"\n{'='*80}")
-print(f"CREATING SET C (UNION OF DEDUPLICATED A + B)")
-print(f"{'='*80}")
+    profile = FILTERING_PROFILES.get(profile_name)
+    if not profile:
+        print(f"Warning: Profile '{profile_name}' not found in config, skipping...")
+        continue
 
-# Combine dedup_a and dedup_b
-df_c = pd.concat([dedup_a, dedup_b], ignore_index=True)
-print(f"\n1. Combined A + B: {len(df_c)} total rows")
+    # Validate required profile keys
+    required_keys = ['db_keywords', 'linguistic_bypass_threshold', 'setfit_threshold', 'require_url']
+    missing_keys = [k for k in required_keys if k not in profile]
+    if missing_keys:
+        print(f"Warning: Profile '{profile_name}' missing keys: {missing_keys}")
+        print("Using defaults for missing keys...")
 
-# Deduplicate the union
-dedup_c = deduplicate_dataset(df_c, "SET C (UNION)", filter_criteria=False)
-dedup_c.to_csv(OUTPUT_SET_C, index=False)
-print(f"\n✓ Saved Set C: {OUTPUT_SET_C}")
+    # Validate db_keywords is not empty
+    if not profile.get('db_keywords'):
+        print(f"Warning: Profile '{profile_name}' has empty db_keywords, using default")
+        profile['db_keywords'] = ['database']
+
+    print(f"Description: {profile.get('description', 'N/A')}")
+
+    # Create output directory for this profile
+    PROFILE_OUTPUT_DIR = BASE_RESULTS_DIR / profile_name
+    PROFILE_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+
+    OUTPUT_SET_A = PROFILE_OUTPUT_DIR / 'set_a_linguistic.csv'
+    OUTPUT_SET_B = PROFILE_OUTPUT_DIR / 'set_b_setfit.csv'
+    OUTPUT_SET_C = PROFILE_OUTPUT_DIR / 'set_c_final.csv'
+    STATS_FILE = PROFILE_OUTPUT_DIR / 'deduplication_stats.txt'
+
+    # Deduplicate Set A with profile
+    dedup_a = deduplicate_dataset(df_a.copy(), f"SET A (LINGUISTIC) - {profile_name}", profile=profile, filter_criteria=True)
+    dedup_a.to_csv(OUTPUT_SET_A, index=False)
+    print(f"\n✓ Saved Set A: {OUTPUT_SET_A}")
+
+    # Deduplicate Set B with profile
+    dedup_b = deduplicate_dataset(df_b.copy(), f"SET B (SETFIT) - {profile_name}", profile=profile, filter_criteria=True)
+    dedup_b.to_csv(OUTPUT_SET_B, index=False)
+    print(f"\n✓ Saved Set B: {OUTPUT_SET_B}")
+
+    # Create Set C (Union of deduplicated A + B)
+    print(f"\n{'='*80}")
+    print(f"CREATING SET C (UNION OF DEDUPLICATED A + B) - {profile_name}")
+    print(f"{'='*80}")
+
+    # Combine dedup_a and dedup_b
+    df_c = pd.concat([dedup_a, dedup_b], ignore_index=True)
+    print(f"\n1. Combined A + B: {len(df_c)} total rows")
+
+    # Deduplicate the union (no profile filter, already filtered)
+    dedup_c = deduplicate_dataset(df_c, f"SET C (UNION) - {profile_name}", profile=None, filter_criteria=False)
+    dedup_c.to_csv(OUTPUT_SET_C, index=False)
+    print(f"\n✓ Saved Set C: {OUTPUT_SET_C}")
+
+    # Store results for comparison
+    all_profile_results[profile_name] = {
+        'set_a_count': len(dedup_a),
+        'set_b_count': len(dedup_b),
+        'set_c_count': len(dedup_c),
+        'output_dir': PROFILE_OUTPUT_DIR,
+        'dedup_a': dedup_a,
+        'dedup_b': dedup_b,
+        'dedup_c': dedup_c
+    }
 
 # ============================================================================
-# GENERATE STATISTICS
+# GENERATE STATISTICS FOR EACH PROFILE
+# ============================================================================
+
+for profile_name, results in all_profile_results.items():
+    print(f"\n{'='*80}")
+    print(f"GENERATING STATISTICS - {profile_name.upper()}")
+    print(f"{'='*80}")
+
+    dedup_a = results['dedup_a']
+    dedup_b = results['dedup_b']
+    dedup_c = results['dedup_c']
+    PROFILE_OUTPUT_DIR = results['output_dir']
+    STATS_FILE = PROFILE_OUTPUT_DIR / 'deduplication_stats.txt'
+
+    stats = []
+    stats.append("="*80)
+    stats.append(f"UNIFIED DEDUPLICATION STATISTICS - {profile_name.upper()}")
+    stats.append(f"Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    stats.append("="*80)
+    stats.append("")
+
+    profile = FILTERING_PROFILES.get(profile_name, {})
+    stats.append("PROFILE CONFIGURATION:")
+    stats.append(f"  Description: {profile.get('description', 'N/A')}")
+    stats.append(f"  Keywords: {len(profile.get('db_keywords', []))} terms")
+    stats.append(f"  Linguistic bypass threshold: >= {profile.get('linguistic_bypass_threshold', 6)}")
+    stats.append(f"  SetFit threshold: >= {profile.get('setfit_threshold', 0.58)}")
+    stats.append(f"  Require URL: {profile.get('require_url', True)}")
+    stats.append("")
+
+    stats.append("INPUT DATA:")
+    stats.append(f"  Set A (Linguistic): {len(df_a):>6} papers")
+    stats.append(f"  Set B (SetFit):     {len(df_b):>6} papers")
+    stats.append("")
+
+    stats.append("DEDUPLICATED OUTPUTS:")
+    stats.append(f"  Set A: {len(dedup_a):>6} unique resources")
+    stats.append(f"  Set B: {len(dedup_b):>6} unique resources")
+    stats.append(f"  Set C: {len(dedup_c):>6} unique resources (union)")
+    stats.append("")
+
+    stats.append("OVERLAP ANALYSIS:")
+    a_pmids = set()
+    for pmids in dedup_a['pmid'].astype(str):
+        a_pmids.update(pmids.split(', '))
+
+    b_pmids = set()
+    for pmids in dedup_b['pmid'].astype(str):
+        b_pmids.update(pmids.split(', '))
+
+    overlap = a_pmids & b_pmids
+    only_a = a_pmids - b_pmids
+    only_b = b_pmids - a_pmids
+
+    stats.append(f"  Papers only in A:   {len(only_a):>6}")
+    stats.append(f"  Papers only in B:   {len(only_b):>6}")
+    stats.append(f"  Papers in both:     {len(overlap):>6}")
+    if len(a_pmids | b_pmids) > 0:
+        stats.append(f"  Overlap rate:       {(len(overlap)/(len(a_pmids | b_pmids))*100):>5.1f}%")
+    stats.append("")
+
+    stats.append("TOP RESOURCES BY ARTICLE COUNT:")
+    stats.append("\n  Set A (Linguistic):")
+    for _, row in dedup_a.nlargest(5, 'article_count').iterrows():
+        entity = row['primary_entity_long'] if pd.notna(row['primary_entity_long']) else row['primary_entity_short']
+        entity_str = str(entity)[:50] if entity else 'N/A'
+        stats.append(f"    {entity_str:50s} : {row['article_count']} papers")
+
+    stats.append("\n  Set B (SetFit):")
+    for _, row in dedup_b.nlargest(5, 'article_count').iterrows():
+        entity = row['primary_entity_long'] if pd.notna(row['primary_entity_long']) else row['primary_entity_short']
+        entity_str = str(entity)[:50] if entity else 'N/A'
+        stats.append(f"    {entity_str:50s} : {row['article_count']} papers")
+
+    stats.append("\n  Set C (Union):")
+    for _, row in dedup_c.nlargest(5, 'article_count').iterrows():
+        entity = row['primary_entity_long'] if pd.notna(row['primary_entity_long']) else row['primary_entity_short']
+        entity_str = str(entity)[:50] if entity else 'N/A'
+        stats.append(f"    {entity_str:50s} : {row['article_count']} papers")
+
+    stats.append("")
+
+    stats_text = '\n'.join(stats)
+    with open(STATS_FILE, 'w') as f:
+        f.write(stats_text)
+
+    print(stats_text)
+
+# ============================================================================
+# GENERATE PROFILE COMPARISON SUMMARY
 # ============================================================================
 
 print(f"\n{'='*80}")
-print("GENERATING STATISTICS")
+print("PROFILE COMPARISON SUMMARY")
 print(f"{'='*80}")
 
-stats = []
-stats.append("="*80)
-stats.append("UNIFIED DEDUPLICATION STATISTICS")
-stats.append(f"Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-stats.append("="*80)
-stats.append("")
+comparison_lines = []
+comparison_lines.append("# Profile Comparison Summary")
+comparison_lines.append(f"Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+comparison_lines.append("")
+comparison_lines.append("## Results by Profile")
+comparison_lines.append("")
+comparison_lines.append("| Profile | Set A | Set B | Set C (Final) | Keywords | Bypass Threshold |")
+comparison_lines.append("|---------|-------|-------|---------------|----------|------------------|")
 
-stats.append("INPUT DATA:")
-stats.append(f"  Set A (Linguistic): {len(df_a):>6} papers")
-stats.append(f"  Set B (SetFit):     {len(df_b):>6} papers")
-stats.append("")
+for profile_name, results in all_profile_results.items():
+    profile = FILTERING_PROFILES.get(profile_name, {})
+    comparison_lines.append(
+        f"| {profile_name} | {results['set_a_count']} | {results['set_b_count']} | "
+        f"{results['set_c_count']} | {len(profile.get('db_keywords', []))} | "
+        f">= {profile.get('linguistic_bypass_threshold', 6)} |"
+    )
 
-stats.append("DEDUPLICATED OUTPUTS:")
-stats.append(f"  Set A: {len(dedup_a):>6} unique resources")
-stats.append(f"  Set B: {len(dedup_b):>6} unique resources")
-stats.append(f"  Set C: {len(dedup_c):>6} unique resources (union)")
-stats.append("")
+comparison_lines.append("")
+comparison_lines.append("## Output Directories")
+comparison_lines.append("")
+for profile_name, results in all_profile_results.items():
+    comparison_lines.append(f"- **{profile_name}**: `{results['output_dir']}`")
 
-stats.append("OVERLAP ANALYSIS:")
-a_pmids = set()
-for pmids in dedup_a['pmid'].astype(str):
-    a_pmids.update(pmids.split(', '))
+comparison_lines.append("")
+comparison_lines.append("## Profile Descriptions")
+comparison_lines.append("")
+for profile_name in all_profile_results.keys():
+    profile = FILTERING_PROFILES.get(profile_name, {})
+    comparison_lines.append(f"- **{profile_name}**: {profile.get('description', 'N/A')}")
 
-b_pmids = set()
-for pmids in dedup_b['pmid'].astype(str):
-    b_pmids.update(pmids.split(', '))
+comparison_text = '\n'.join(comparison_lines)
 
-overlap = a_pmids & b_pmids
-only_a = a_pmids - b_pmids
-only_b = b_pmids - a_pmids
+# Save comparison summary
+COMPARISON_FILE = BASE_RESULTS_DIR / 'profile_comparison_summary.md'
+with open(COMPARISON_FILE, 'w') as f:
+    f.write(comparison_text)
 
-stats.append(f"  Papers only in A:   {len(only_a):>6}")
-stats.append(f"  Papers only in B:   {len(only_b):>6}")
-stats.append(f"  Papers in both:     {len(overlap):>6}")
-stats.append(f"  Overlap rate:       {(len(overlap)/(len(a_pmids | b_pmids))*100):>5.1f}%")
-stats.append("")
-
-stats.append("TOP RESOURCES BY ARTICLE COUNT:")
-stats.append("\n  Set A (Linguistic):")
-for _, row in dedup_a.nlargest(5, 'article_count').iterrows():
-    entity = row['primary_entity_long'] if pd.notna(row['primary_entity_long']) else row['primary_entity_short']
-    stats.append(f"    {entity[:50]:50s} : {row['article_count']} papers")
-
-stats.append("\n  Set B (SetFit):")
-for _, row in dedup_b.nlargest(5, 'article_count').iterrows():
-    entity = row['primary_entity_long'] if pd.notna(row['primary_entity_long']) else row['primary_entity_short']
-    stats.append(f"    {entity[:50]:50s} : {row['article_count']} papers")
-
-stats.append("\n  Set C (Union):")
-for _, row in dedup_c.nlargest(5, 'article_count').iterrows():
-    entity = row['primary_entity_long'] if pd.notna(row['primary_entity_long']) else row['primary_entity_short']
-    stats.append(f"    {entity[:50]:50s} : {row['article_count']} papers")
-
-stats.append("")
-
-stats_text = '\n'.join(stats)
-with open(STATS_FILE, 'w') as f:
-    f.write(stats_text)
-
-print(stats_text)
+print(comparison_text)
 
 print("\n" + "="*80)
 print("COMPLETE!")
 print("="*80)
-print(f"\nOutput files:")
-print(f"  Set A: {OUTPUT_SET_A}")
-print(f"  Set B: {OUTPUT_SET_B}")
-print(f"  Set C: {OUTPUT_SET_C}")
-print(f"  Stats: {STATS_FILE}")
+print(f"\nOutput directories:")
+for profile_name, results in all_profile_results.items():
+    print(f"  {profile_name}: {results['output_dir']}")
+print(f"\nProfile comparison: {COMPARISON_FILE}")
 print(f"\nCompleted: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")

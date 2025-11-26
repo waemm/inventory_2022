@@ -17,12 +17,14 @@ Phases:
     phase3 - PMID Extraction (NER union)
     phase4 - Linguistic Filtering
     phase5 - SetFit Classification
-    phase6 - Entity Mapping & Resource Creation
-    phase7 - URL Scanning & Validation
-    phase8 - Deduplication
+    phase6 - Entity Mapping & Resource Creation (includes 02b data fix)
+    phase7 - URL Scanning & Validation (includes backfill)
+    phase8 - Deduplication (multi-profile support)
+    phase9 - Baseline Comparison & Visualization
 
 Author: Pipeline Consolidation Team
 Date: 2025-11-20
+Updated: 2025-11-26 (Synced critical fixes from pipeline_synthesis)
 """
 
 import argparse
@@ -167,18 +169,21 @@ PHASES = [
         id="phase6",
         name="Entity Mapping & Resource Creation",
         scripts=[
-            "advanced_filtering_pipeline/scripts/setup/02_create_paper_sets.py",
-            "advanced_filtering_pipeline/scripts/setup/03_map_papers_to_entities.py",
-            "advanced_filtering_pipeline/scripts/deduplication/09_create_primary_resource_csv.py",
-            "advanced_filtering_pipeline/scripts/deduplication/10_add_quality_indicators.py",
-            "advanced_filtering_pipeline/scripts/deduplication/11_extract_urls.py",
+            # Create paper sets and map entities
+            "unified_bioresource_pipeline/scripts/phase5_mapping/09_create_paper_sets.py",
+            "unified_bioresource_pipeline/scripts/phase5_mapping/10_map_to_entities.py",
+            "unified_bioresource_pipeline/scripts/phase5_mapping/11_create_primary_resources.py",
+            "unified_bioresource_pipeline/scripts/phase5_mapping/12_add_quality_indicators.py",
+            "unified_bioresource_pipeline/scripts/phase5_mapping/13_extract_urls.py",
+            # CRITICAL: Merge entity/URL data back into set_c_union (fixes 1,247 paper data loss)
+            "unified_bioresource_pipeline/scripts/phase5_mapping/02b_update_set_c_with_entities.py",
         ],
         notebooks=[],
         required_inputs=[
             "advanced_paper_filtering/results/setfit_*/setfit_classified_introductions.csv"
         ],
         outputs=[
-            "advanced_filtering_pipeline/results/papers_with_urls.csv"
+            "unified_bioresource_pipeline/data/phase5_mapping/papers_with_urls.csv"
         ],
         estimated_time="5-10 minutes",
         gpu_required=False,
@@ -188,16 +193,20 @@ PHASES = [
         id="phase7",
         name="URL Scanning & Validation",
         scripts=[
-            "advanced_filtering_pipeline/scripts/scanning/prepare_gbc_urls.py",
-            "advanced_filtering_pipeline/scripts/scanning/scan_gbc_full.py",
-            "advanced_filtering_pipeline/scripts/scanning/merge_scan_scores.py",
+            "unified_bioresource_pipeline/scripts/phase6_scanning/14_prepare_urls.py",
+            "unified_bioresource_pipeline/scripts/phase6_scanning/15_scan_urls.py",
+            "unified_bioresource_pipeline/scripts/phase6_scanning/16_merge_scan_scores.py",
+            # NEW: Set C URL scanning with session support
+            "unified_bioresource_pipeline/scripts/phase6_scanning/18_scan_urls_set_c.py",
+            # NEW: Backfill URL data to sets A/B
+            "unified_bioresource_pipeline/scripts/phase6_scanning/19_backfill_url_data.py",
         ],
         notebooks=[],
         required_inputs=[
-            "advanced_filtering_pipeline/results/papers_with_urls.csv"
+            "unified_bioresource_pipeline/data/phase5_mapping/papers_with_urls.csv"
         ],
         outputs=[
-            "advanced_filtering_pipeline/results/papers_with_url_scores.csv"
+            "unified_bioresource_pipeline/data/phase6_scanning/papers_with_url_scores.csv"
         ],
         estimated_time="75-90 minutes",
         gpu_required=False,
@@ -205,22 +214,42 @@ PHASES = [
     ),
     PhaseDefinition(
         id="phase8",
-        name="Deduplication",
+        name="Deduplication (Multi-Profile)",
         scripts=[
-            "advanced_filtering_pipeline/scripts/deduplication/14_deduplicate_linguistic_improved.py",
-            "advanced_filtering_pipeline/scripts/deduplication/15_analyze_unclear_cases.py",
-            "advanced_filtering_pipeline/scripts/deduplication/16_apply_manual_merges.py",
+            # NEW: Multi-profile deduplication with title-based FP reduction
+            "unified_bioresource_pipeline/scripts/phase7_deduplication/17_deduplicate_all_sets.py",
         ],
         notebooks=[],
         required_inputs=[
-            "advanced_filtering_pipeline/results/papers_with_url_scores.csv"
+            "unified_bioresource_pipeline/data/phase6_scanning/papers_with_url_scores.csv"
         ],
         outputs=[
-            "advanced_filtering_pipeline/results/final_deduplicated_resources.csv"
+            "unified_bioresource_pipeline/data/phase7_deduplication/deduplicated_resources.csv"
         ],
         estimated_time="5 minutes + manual review",
         gpu_required=False,
-        manual_steps=True  # Requires manual merge review
+        manual_steps=True  # Requires manual merge review for unclear cases
+    ),
+    PhaseDefinition(
+        id="phase9",
+        name="Baseline Comparison & Visualization",
+        scripts=[
+            # NEW: Compare against 2022 baseline (1,948 resources)
+            "unified_bioresource_pipeline/scripts/phase8_baseline/20_baseline_comparison.py",
+            # NEW: Generate PNG/HTML charts and reports
+            "unified_bioresource_pipeline/scripts/phase8_baseline/21_generate_visualizations.py",
+        ],
+        notebooks=[],
+        required_inputs=[
+            "unified_bioresource_pipeline/data/phase7_deduplication/deduplicated_resources.csv"
+        ],
+        outputs=[
+            "unified_bioresource_pipeline/data/phase8_baseline/baseline_comparison_report.md",
+            "unified_bioresource_pipeline/data/phase8_baseline/visualizations/"
+        ],
+        estimated_time="5-10 minutes",
+        gpu_required=False,
+        manual_steps=False
     ),
 ]
 
@@ -507,9 +536,10 @@ Phases:
   phase3 - PMID Extraction (NER union)
   phase4 - Linguistic Filtering
   phase5 - SetFit Classification
-  phase6 - Entity Mapping & Resource Creation
-  phase7 - URL Scanning & Validation
-  phase8 - Deduplication
+  phase6 - Entity Mapping & Resource Creation (includes 02b data fix)
+  phase7 - URL Scanning & Validation (includes backfill)
+  phase8 - Deduplication (multi-profile support)
+  phase9 - Baseline Comparison & Visualization
         """
     )
 

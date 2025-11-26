@@ -1,6 +1,7 @@
 # Unified Bioresource Pipeline Configuration
-# Version: 1.0.0
+# Version: 1.1.0
 # Date: 2025-11-20
+# Updated: 2025-11-26 (Added phase 8/9, synced critical fixes from pipeline_synthesis)
 
 # =============================================================================
 # INPUT CONFIGURATION
@@ -178,6 +179,136 @@ deduplication:
   output_file: "data/phase7_deduplication/final_deduplicated_resources.csv"
 
 # =============================================================================
+# FILTERING PROFILES (Conservative / Balanced / Aggressive)
+# =============================================================================
+# These profiles control the filtering behavior during deduplication (Phase 7).
+# Papers can be included via:
+#   1. Keyword match: title contains one of the db_keywords
+#   2. Linguistic bypass: ling_score >= linguistic_bypass_threshold (bypasses keyword check)
+#
+# Run with: python run_pipeline.py --profiles all (default)
+#           python run_pipeline.py --profiles balanced
+#           python run_pipeline.py --profiles conservative,aggressive
+
+filtering_profiles:
+  conservative:
+    description: "High precision, minimize false positives"
+    db_keywords:
+      - database
+      - server
+      - portal
+      - repository
+      - archive
+      - atlas
+      - map
+    linguistic_bypass_threshold: 6  # Only very high ling_scores bypass keyword filter
+    setfit_threshold: 0.60
+    linguistic_high_threshold: 3
+    linguistic_low_threshold: 0
+    require_url: true
+
+  balanced:
+    description: "Recommended - good precision/recall balance"
+    db_keywords:
+      - database
+      - server
+      - portal
+      - repository
+      - archive
+      - atlas
+      - map
+      - bank
+      - wiki
+      - hub
+      - resource
+      - browser
+      - db      # catches *db names like orthodb, proteomicsdb
+      - base    # catches *base names like wormbase, pirbase
+    linguistic_bypass_threshold: 5  # Papers with ling_score >= 5 bypass keyword filter
+    setfit_threshold: 0.58
+    linguistic_high_threshold: 3
+    linguistic_low_threshold: 0
+    require_url: true
+
+  aggressive:
+    description: "Maximum recall, accepts more false positives"
+    db_keywords:
+      - database
+      - server
+      - portal
+      - repository
+      - archive
+      - atlas
+      - map
+      - bank
+      - wiki
+      - hub
+      - resource
+      - browser
+      - db
+      - base
+      - tool
+      - network
+      - collection
+      - catalog
+      - platform
+      - pedia    # catches *pedia names like vesiclepedia
+      - mine     # catches *mine names like planmine
+      - cyc      # catches *cyc names like metacyc
+    linguistic_bypass_threshold: 4  # More papers bypass keyword filter
+    setfit_threshold: 0.55
+    linguistic_high_threshold: 2
+    linguistic_low_threshold: -1
+    require_url: false
+
+# Default profile for backward compatibility
+default_profile: "balanced"
+
+# =============================================================================
+# PHASE 8: BASELINE COMPARISON & VISUALIZATION (NEW 2025-11-26)
+# =============================================================================
+baseline_comparison:
+  baseline_file: "../data/final_inventory_2022.csv"
+  baseline_resources: 1948
+
+  # Dual-method matching
+  matching:
+    pmid_matching: true
+    entity_matching: true
+    entity_similarity_threshold: 0.85
+
+  # Multi-profile support
+  profiles_to_compare: ["conservative", "balanced", "aggressive"]
+
+  # Output files
+  output_dir: "data/phase8_baseline/"
+  report_file: "baseline_comparison_report.md"
+  stats_file: "baseline_comparison_stats.json"
+
+  # Visualization settings
+  visualizations:
+    enabled: true
+    output_dir: "data/phase8_baseline/visualizations/"
+    formats: ["png", "html"]
+    charts:
+      - "recovery_by_profile"
+      - "loss_categories"
+      - "precision_recall"
+      - "pmid_vs_entity_matching"
+
+# =============================================================================
+# PHASE 5b: ENTITY/URL DATA FIX (CRITICAL - Added 2025-11-26)
+# =============================================================================
+# Script 02b_update_set_c_with_entities.py fixes a data loss bug where
+# entity and URL data was not propagated to set_c_union.csv.
+# Impact: Recovers 1,247 baseline papers (94.9% of losses)
+entity_url_fix:
+  enabled: true
+  script: "scripts/phase5_mapping/02b_update_set_c_with_entities.py"
+  creates_backup: true
+  expected_recovery: 537  # Papers that now pass dedup criteria
+
+# =============================================================================
 # PERFORMANCE SETTINGS
 # =============================================================================
 performance:
@@ -188,11 +319,13 @@ performance:
   phase5_time: "5-10 minutes"
   phase6_time: "75-90 minutes"
   phase7_time: "5 minutes + manual"
-  total_time: "8-15 hours"
+  phase8_time: "5-10 minutes"  # NEW: Baseline comparison
+  phase9_time: "5-10 minutes"  # NEW: Visualization
+  total_time: "8-16 hours"
 
   hardware:
     gpu_required: ["phase1", "phase2", "phase4"]
-    cpu_optimal: ["phase2_spacy", "phase3", "phase5", "phase6", "phase7"]
+    cpu_optimal: ["phase2_spacy", "phase3", "phase5", "phase6", "phase7", "phase8", "phase9"]
     ram_minimum: "16GB"
     storage: "10GB"
 

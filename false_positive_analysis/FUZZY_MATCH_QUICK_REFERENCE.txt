@@ -1,0 +1,133 @@
+================================================================================
+FUZZY MATCH REVIEW - QUICK REFERENCE
+================================================================================
+Date: 2025-11-27
+Status: ✅ COMPLETE
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ BOTTOM LINE                                                                  │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ Total matches analyzed:  1,545                                               │
+│ TRUE matches to filter:  282 (18.3%) → Remove from novel dataset           │
+│ FALSE positives to keep: 1,263 (81.7%) → Keep as genuinely novel           │
+│ Unique names to filter:  275                                                │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ KEY FILES                                                                    │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ 📄 fuzzy_match_reviewed.csv           Full review with Y/N decisions        │
+│ 📄 true_matches_to_filter.txt         275 names to remove from novel set   │
+│ 📄 fuzzy_match_validation_sample.csv  40 entries for manual QC             │
+│ 📋 FUZZY_MATCH_REVIEW_REPORT.md       Detailed analysis                    │
+│ 📋 FUZZY_MATCH_EXECUTIVE_SUMMARY.md   Executive summary                    │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ ACCURACY BY CONFIDENCE LEVEL                                                 │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ HIGH (edit_dist ≤ 2):     16.7% true matches (136/814)                     │
+│ MEDIUM (contains only):   20.0% true matches (146/731)                     │
+│                                                                              │
+│ Key insight: Even HIGH confidence fuzzy matches are mostly false positives  │
+│ due to acronym collisions in the bioinformatics namespace.                  │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ TRUE MATCH CATEGORIES                                                        │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ 1. Expansions (138):     "UniProt-GOA" contains "GOA"                      │
+│ 2. Versions (17):        "SCOP2" vs "scop", "SUBA" vs "suba3"             │
+│ 3. DB Suffix (16):       "MIAS" vs "miasdb", "RiceDB" vs "rice"           │
+│ 4. High Similarity (14): Long-form name similarity > 0.85                  │
+│ 5. Other (97):           Various legitimate matches                         │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ TOP 10 DATABASES TO FILTER                                                   │
+├─────────────────────────────────────────────────────────────────────────────┤
+│  1. SCOP2 → scop (version)                                                  │
+│  2. FANTOM → fantom5 (version)                                              │
+│  3. HomeoDB → homeodb2 (version)                                            │
+│  4. SUBA → suba3 (version)                                                  │
+│  5. CEA → tcea (variant)                                                    │
+│  6. MCGD → mcg (match)                                                      │
+│  7. AMI → tami (variant)                                                    │
+│  8. GFD → gfdb (match)                                                      │
+│  9. eHOMD → homd (variant)                                                  │
+│ 10. DSA → cdsa (variant)                                                    │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ EXAMPLE FALSE POSITIVES (Similar acronyms, different databases)             │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ RaMP ≠ dramp:   "Metabolomics Pathways" vs "Antimicrobial Peptides"       │
+│ MTGD ≠ tgd:     "Medicago truncatula" vs "Tetrahymena"                    │
+│ MGIS ≠ mgi:     "Musa" (banana) vs "Mouse"                                │
+│ CPDB ≠ cpd:     "Cysteine Protease" vs "Cellular Phenotype"               │
+│ GIDB ≠ dgidb:   "Gastrointestinal cancer" vs "Drug-Gene interaction"      │
+│                                                                              │
+│ These demonstrate why string similarity alone is insufficient!              │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ NEXT STEPS                                                                   │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ 1. ✅ FILTER NOVEL DATASET                                                  │
+│    Remove all 275 names in true_matches_to_filter.txt                      │
+│                                                                              │
+│ 2. 🔍 MANUAL QC (Optional but recommended)                                  │
+│    Review fuzzy_match_validation_sample.csv (40 entries)                   │
+│    Target: >90% agreement with automated review                            │
+│                                                                              │
+│ 3. 🎯 SPOT CHECK (High priority)                                            │
+│    - 89 borderline cases (long_sim 0.75-0.85)                              │
+│    - 102 high-scoring FALSE positives (verify they're different)           │
+│    - Top 20 TRUE matches (confirm filtering is appropriate)                │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ FILTERING COMMAND EXAMPLE                                                    │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ # Python example to filter novel dataset:                                   │
+│ import pandas as pd                                                          │
+│                                                                              │
+│ # Read filter list                                                           │
+│ with open('true_matches_to_filter.txt') as f:                              │
+│     filter_list = [line.strip() for line in f]                             │
+│                                                                              │
+│ # Filter novel dataset                                                       │
+│ novel_df = pd.read_csv('novel_discoveries.csv')                            │
+│ filtered_df = novel_df[~novel_df['extracted_name'].isin(filter_list)]     │
+│                                                                              │
+│ print(f"Removed {len(novel_df) - len(filtered_df)} false positives")      │
+│ filtered_df.to_csv('novel_discoveries_filtered.csv', index=False)          │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ VALIDATION STATS (for manual QC)                                             │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ Sample breakdown (40 total):                                                 │
+│   HIGH_TRUE:   10 entries (HIGH confidence TRUE matches)                    │
+│   HIGH_FALSE:  10 entries (HIGH confidence FALSE positives)                 │
+│   MEDIUM_TRUE: 10 entries (MEDIUM confidence TRUE matches)                  │
+│   MEDIUM_FALSE:10 entries (MEDIUM confidence FALSE positives)               │
+│                                                                              │
+│ Agreement calculation:                                                       │
+│   Agreement = (rows where manual_review = Y) / 40                           │
+│   Target: >90% (36+ agreements)                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ LESSONS LEARNED                                                              │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ ✓ String similarity alone is insufficient (81.7% false positive rate)      │
+│ ✓ Long-form name comparison is essential for disambiguation                │
+│ ✓ Bioinformatics has a crowded acronym namespace (many collisions)         │
+│ ✓ Version numbers and DB suffixes account for ~12% of true matches         │
+│ ✓ Legitimate expansions are the most common true match type (49%)          │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+================================================================================
+Questions? See FUZZY_MATCH_REVIEW_REPORT.md for detailed analysis
+================================================================================

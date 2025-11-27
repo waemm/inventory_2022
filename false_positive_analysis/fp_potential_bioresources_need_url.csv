@@ -1,0 +1,165 @@
+pmid,title,has_url,reason,category
+34748542,RESCRIPt: Reproducible sequence taxonomy reference database management.,False,Tool for database management - methodology without URL,DATABASE_NO_URL
+23071595,"Neurotree: a collaborative, graphical database of the academic genealogy of neuroscience.",False,Database of academic genealogy but no URL,DATABASE_NO_URL
+31932586,A database for global soil health assessment.,False,"Paper about database need/framework, no URL confirms not operational",DATABASE_NO_URL
+34716354,A curated diverse molecular database of blood-brain barrier permeability with chemical descriptors.,False,"Database mentioned but no URL, likely private/unpublished",DATABASE_NO_URL
+26523133,A Database of Gene Expression Profiles of Korean Cancer Genome.,False,"Database mentioned but no URL, not publicly accessible",DATABASE_NO_URL
+28115530,A Database of Human Immune Receptor Alleles Recovered from Population Sequencing Data.,False,"Database mentioned but no URL, not publicly accessible",DATABASE_NO_URL
+31258155,"New UV-source catalogs, UV spectral database, UV variables and science tools from the GALEX surveys.",False,"Catalog/database description, no URL for access",DATABASE_NO_URL
+34289491,The world within reach: An image database of reach-relevant environments.,False,"Image database mentioned but no URL, not accessible",DATABASE_NO_URL
+34272372,A database of submarine landslides offshore West and Southwest Iberia.,False,"Database mentioned but no URL, not publicly accessible",DATABASE_NO_URL
+30643682,A public database for the new MLST scheme for <i>Treponema pallidum</i> subsp. <i>pallidum</i>: surveillance and epidemiology of the causative agent of syphilis.,False,"Database mentioned but no URL, not accessible",DATABASE_NO_URL
+29989590,A functional trait database for Mediterranean Basin plants.,False,"Database mentioned but no URL, not accessible",DATABASE_NO_URL
+28385663,A curated gluten protein sequence database to support development of proteomics methods for determination of gluten in gluten-free foods.,False,"Database mentioned but no URL, not accessible",DATABASE_NO_URL
+32484558,Comprehensive database and evolutionary dynamics of U12-type introns.,False,"Database mentioned but no URL, not accessible",DATABASE_NO_URL
+31387779,Development of breast lesions models database.,False,"Database development paper, no URL",DATABASE_NO_URL
+28509907,A database of georeferenced nutrient chemistry data for mountain lakes of the Western United States.,False,"Database mentioned but no URL, not accessible",DATABASE_NO_URL
+29583143,A database of the coseismic effects following the 30 October 2016 Norcia earthquake in Central Italy.,False,"Database mentioned but no URL, not accessible",DATABASE_NO_URL
+33936422,A semantic database for integrated management of image and dosimetric data in low radiation dose research in medical imaging.,False,"Database mentioned but no URL, not accessible",DATABASE_NO_URL
+31832526,A long term physical and biogeochemical database of a hyper-eutrophicated Mediterranean micro-estuary.,False,"Database mentioned but no URL, not accessible",DATABASE_NO_URL
+29381146,Australia's continental-scale acoustic tracking database and its automated quality control process.,False,"Database mentioned but no URL, not accessible",DATABASE_NO_URL
+23164410,Transcriptome database resource and gene expression atlas for the rose.,False,"Database and atlas mentioned but no URL, not accessible",DATABASE_NO_URL
+34597583,Atlas of clinically distinct cell states and ecosystems across human solid tumors.,False,"Atlas/analysis study, no URL indicates not a public resource",ATLAS_NO_URL
+31474372,A Structure-Informed Atlas of Human-Virus Interactions.,False,"Atlas mentioned but no URL, not accessible",ATLAS_NO_URL
+34144929,A high-resolution cell atlas of the domestic pig lung and an online platform for exploring lung single-cell data.,False,"Atlas/platform mentioned but no URL, not accessible",ATLAS_NO_URL
+33288755,Establishment of a morphological atlas of the Caenorhabditis elegans embryo using deep-learning-based 4D segmentation.,False,"Atlas mentioned but no URL, not accessible",ATLAS_NO_URL
+24670764,A promoter-level mammalian expression atlas.,False,"Atlas mentioned but no URL, not accessible",ATLAS_NO_URL
+30857592,Functional proteomic atlas of HIV infection in primary human CD4+ T cells.,False,"Atlas mentioned but no URL, not accessible",ATLAS_NO_URL
+33813032,A knowledge base of clinical trial eligibility criteria.,False,"Knowledge base mentioned but no URL, not accessible",KB_NO_URL
+26050794,A knowledge base for Vitis vinifera functional analysis.,False,"Knowledge base mentioned but no URL, not accessible",KB_NO_URL
+27280867,A knowledge base for tracking the impact of genomics on population health.,False,"Knowledge base mentioned but no URL, not accessible",KB_NO_URL
+22110059,"pTransgenesis: a cross-species, modular transgenesis resource.",False,Resource without URL likely methodology,RESOURCE_NO_URL
+32521246,iEcology: Harnessing Large Online Resources to Generate Ecological Insights.,False,Method for harnessing resources; no URL,RESOURCE_NO_URL
+26405458,DAPPER: a data-mining resource for protein-protein interactions.,False,Data-mining resource without URL; unclear if houses data,RESOURCE_NO_URL
+21627789,RAG: an update to the RNA-As-Graphs resource.,False,"Update to resource, but unclear if houses data without URL",RESOURCE_NO_URL
+33921243,Fungal Genomic Resources for Strain Identification and Diversity Analysis of 1900 Fungal Species.,False,"Resource description/framework, no URL indicates not operational",RESOURCE_NO_URL
+30269990,An Open Resource for Non-human Primate Imaging.,False,"Resource description without URL, not operational",RESOURCE_NO_URL
+30545857,Comprehensive functional genomic resource and integrative model for the human brain.,False,"Resource description without URL, not accessible",RESOURCE_NO_URL
+22211970,A knockout mouse resource for the biomedical research community.,False,"Resource description without URL, not accessible",RESOURCE_NO_URL
+30894373,An Interactive Resource to Probe Genetic Diversity and Estimated Ancestry in Cancer Cell Lines.,False,"Resource mentioned but no URL, not accessible",RESOURCE_NO_URL
+27193236,A curated and standardized adverse drug event resource to accelerate drug safety research.,False,"Resource mentioned but no URL, not accessible",RESOURCE_NO_URL
+28267743,A large-scale targeted proteomics assay resource based on an in vitro human proteome.,False,"Assay resource mentioned but no URL, not accessible",RESOURCE_NO_URL
+23304296,ICDA: a platform for Intelligent Care Delivery Analytics.,False,Platform is an analytics tool not a data repository with no URL,REPOSITORY_NO_URL
+22554313,"Standardized representation, visualization and searchable repository of antiretroviral treatment-change episodes.",False,"Repository mentioned but no URL, not accessible",REPOSITORY_NO_URL
+30290815,malariaAtlas: an R interface to global malariometric data hosted by the Malaria Atlas Project.,False,R interface to existing resource not database itself,TITLE_CONTAINS_ATLAS
+32637811,CCPRD: A Novel Analytical Framework for the Comprehensive Proteomic Reference Database Construction of NonModel Organisms.,False,Framework for database construction not database itself,TITLE_CONTAINS_DATABASE
+26053019,HEPNet: A Knowledge Base Model of Human Energy Pool Network for Predicting the Energy Availability Status of an Individual.,False,Model for prediction not database,TITLE_CONTAINS_KNOWLEDGE_BASE
+27780248,TheSNPpit-A High Performance Database System for Managing Large Scale SNP Data.,False,Database system for managing data is infrastructure not a public database,TITLE_CONTAINS_DATABASE
+32849767,rboAnalyzer: A Software to Improve Characterization of Non-coding RNAs From Sequence Database Search Output.,False,Software for characterization no URL,TITLE_CONTAINS_DATABASE
+21930504,The BioMart interface to the eMouseAtlas gene expression database EMAGE.,False,About interface to database not database itself,TITLE_CONTAINS_DATABASE
+23293600,CoCoMac 2.0 and the future of tract-tracing databases.,False,About future of databases not database itself,TITLE_CONTAINS_DATABASE
+28637269,Announcing the Genome Atlas of Bamboo and Rattan (GABR) project: promoting research in evolution and in economically and ecologically beneficial plants.,False,Announcement about project not database,TITLE_CONTAINS_ATLAS
+32485553,SCALPEL3: A scalable open-source library for healthcare claims databases.,False,Library for healthcare claims is software,TITLE_CONTAINS_DATABASE
+25613183,Being PRO-ACTive: What can a Clinical Trial Database Reveal About ALS?,False,Paper analyzing database not database announcement,TITLE_CONTAINS_DATABASE
+32785962,The Repository Chemotion: Infrastructure for Sustainable Research in Chemistry*.,False,Repository mentioned but lacks URL; infrastructure focus,TITLE_CONTAINS_REPOSITORY
+26004672,The MARK-AGE extended database: data integration and pre-processing.,False,"Data integration/preprocessing system, not primary database",TITLE_CONTAINS_DATABASE
+29033870,Motivational Objects in Natural Scenes (MONS): A Database of >800 Objects.,False,"Psychology stimulus database, not a bioresource",TITLE_CONTAINS_DATABASE
+22908879,"FragVLib a free database mining software for generating ""Fragment-based Virtual Library"" using pocket similarity search of ligand-receptor complexes.",False,"Database mining software, not a database",TITLE_CONTAINS_DATABASE
+31411700,Sequenceserver: A Modern Graphical User Interface for Custom BLAST Databases.,False,"GUI for databases, not a database",TITLE_CONTAINS_DATABASE
+27862010,Extension of research data repository system to support direct compute access to biomedical datasets: enhancing Dataverse to support large datasets.,False,"Enhancement of repository system, not a database",TITLE_CONTAINS_REPOSITORY
+27987174,Practical Utilization of OryzaExpress and Plant Omics Data Center Databases to Explore Gene Expression Networks in Oryza Sativa and Other Plant Species.,False,"Tutorial/guide to using databases, not a database",TITLE_CONTAINS_DATABASE
+27061206,Exploring novel candidate genes from the Mouse Genome Informatics database: Potential implications for avian migration research.,False,"Exploration of database for research, not a database",TITLE_CONTAINS_DATABASE
+27153674,PhamDB: a web-based application for building Phamerator databases.,False,"Application for building databases, not a database itself",TITLE_CONTAINS_DATABASE
+22639224,LeishCyc: a guide to building a metabolic pathway database and visualization of metabolomic data.,False,"Guide for building a database, not a database",TITLE_CONTAINS_DATABASE
+26433296,Report on the development of the FAO/INFOODS user database for fish and shellfish (uFiSh) - Challenges and possible solutions.,False,Report on database development - not database paper itself,TITLE_CONTAINS_DATABASE
+33324215,Exploring the Irish National Folklore Ethnography Database (Dúchas) for Open Data Research on Traditional Medicine Use in Post-Famine Ireland: An Early Example of Citizen Science.,False,Paper exploring database for research - not database paper itself,TITLE_CONTAINS_DATABASE
+31964894,"The Chieti Affective Action Videos database, a resource for the study of emotions in psychology.",False,"Psychology video database, not a bioresource.",TITLE_CONTAINS_DATABASE
+33808985,"The mwtab Python Library for RESTful Access and Enhanced Quality Control, Deposition, and Curation of the Metabolomics Workbench Data Repository.",False,"Python library for accessing an existing repository, not the repository itself.",TITLE_CONTAINS_REPOSITORY
+30444913,Neo4j graph database realizes efficient storage performance of oilfield ontology.,False,"Technical paper on database performance, not introducing the database.",TITLE_CONTAINS_DATABASE
+28765723,Repatriation Data: More than two million species occurrence records added to the Brazilian Biodiversity Information Facility Repository (SiBBr).,False,"Data repatriation report, not the repository itself.",TITLE_CONTAINS_REPOSITORY
+28916988,GestuRe and ACtion Exemplar (GRACE) video database: stimuli for research on manners of human locomotion and iconic gestures.,False,"Video stimulus database for psychology research, not a bioresource.",TITLE_CONTAINS_DATABASE
+34041278,Panomics: New Databases for Advancing Cardiology.,False,"Commentary on new databases, not the databases themselves.",TITLE_CONTAINS_DATABASE
+25009511,"Introducing the Oxford Vocal (OxVoc) Sounds database: a validated set of non-acted affective sounds from human infants, adults, and domestic animals.",False,"Sound database for psychology research, not a bioresource.",TITLE_CONTAINS_DATABASE
+34321488,Spanish electoral archive. SEA database.,False,"Electoral archive database, not a bioresource.",TITLE_CONTAINS_DATABASE
+26483034,"Predicting Gene and Genomic Regulation in Saccharomyces cerevisiae, using the YEASTRACT Database: A Step-by-Step Guided Analysis.",False,"Tutorial for using YEASTRACT, not YEASTRACT itself.",TITLE_CONTAINS_DATABASE
+24533037,"Comparing the Chemical Structure and Protein Content of ChEMBL, DrugBank, Human Metabolome Database and the Therapeutic Target Database.",False,"Comparison paper of existing databases, not introducing a database.",TITLE_CONTAINS_DATABASE
+33686204,A global panel database of pandemic policies (Oxford COVID-19 Government Response Tracker).,False,"Policy database, not a bioresource.",TITLE_CONTAINS_DATABASE
+31581074,SEWA DB: A Rich Database for Audio-Visual Emotion and Sentiment Research in the Wild.,False,"Audio-visual emotion database, not a bioresource.",TITLE_CONTAINS_DATABASE
+29124719,"MorphoLex: A derivational morphological database for 70,000 English words.",False,"Morphological database for linguistics, not a bioresource.",TITLE_CONTAINS_DATABASE
+24158806,GPCR & company: databases and servers for GPCRs and interacting partners.,False,"Review of databases and servers, not introducing new resource.",TITLE_CONTAINS_DATABASE
+25787233,Functional dissection of virus-human crosstalk mediated by miRNAs based on the VmiReg database.,False,"Analysis based on VmiReg database, not VmiReg itself.",TITLE_CONTAINS_DATABASE
+30769289,The end user sensor tree: An end-user friendly sensor database.,False,"Sensor database for IoT, not a bioresource.",TITLE_CONTAINS_DATABASE
+22732681,PoseShop: human image database construction and personalized content synthesis.,False,"Image database for computer vision, not a bioresource.",TITLE_CONTAINS_DATABASE
+29583140,A Mediterranean coastal database for assessing the impacts of sea-level rise and associated hazards.,False,"Coastal geographic database, not a bioresource.",TITLE_CONTAINS_DATABASE
+22752950,Preparing a Minimum Information about a Flow Cytometry Experiment (MIFlowCyt) compliant manuscript using the International Society for Advancement of Cytometry (ISAC) FCS file repository (FlowRepository.org).,False,"Tutorial on using FlowRepository, not FlowRepository itself.",TITLE_CONTAINS_REPOSITORY
+22626637,The European Virus Archive: a new resource for virology research.,False,Physical archive of virus samples not a data resource,TITLE_CONTAINS_ARCHIVE
+28742065,"The research infrastructure of Chinese foundations, a database for Chinese civil society studies.",False,Database for civil society not biology/bioresources,TITLE_CONTAINS_DATABASE
+26925598,"Atlas Regeneration, Inc.",False,Company announcement not a bioresource,TITLE_CONTAINS_ATLAS
+26911524,OntoCR: A CEN/ISO-13606 clinical repository based on ontologies.,False,Repository infrastructure implementation not the resource,TITLE_CONTAINS_REPOSITORY
+29205376,Ensemble gene function prediction database reveals genes important for complex I formation in Arabidopsis thaliana.,False,Analysis study using prediction database not database announcement,TITLE_CONTAINS_DATABASE
+30059721,The European Virus Archive goes global: A growing resource.,False,Physical archive not a data repository,TITLE_CONTAINS_ARCHIVE
+27572735,Databases and Archiving for CryoEM.,False,Review of databases not a database announcement,TITLE_CONTAINS_DATABASE
+21761247,Application of China's National Forest Continuous Inventory database.,False,Application study using existing database not database announcement,TITLE_CONTAINS_DATABASE
+31013291,Request a woman scientist: A database for diversifying the public face of science.,False,Database of scientists not biological data,TITLE_CONTAINS_DATABASE
+21784346,Building an integrated neurodegenerative disease database at an academic health center.,False,Building/implementation paper not database announcement,TITLE_CONTAINS_DATABASE
+24824503,"United States National Sewage Sludge Repository at Arizona State University--a new resource and research tool for environmental scientists, engineers, and epidemiologists.",False,Physical sample repository not a data repository,TITLE_CONTAINS_REPOSITORY
+23526262,Existing data sources for clinical epidemiology: the Danish Quality Database of Mammography Screening.,False,Review of existing data source not database announcement,TITLE_CONTAINS_DATABASE
+26277116,Development of a large-scale neuroimages and clinical variables data atlas in the neuGRID4You (N4U) project.,False,Development project not database announcement,TITLE_CONTAINS_ATLAS
+21555374,SWOG Cooperative Group biorepository resource: access for scientific research studies.,False,Physical biorepository not a data repository,TITLE_CONTAINS_REPOSITORY
+22171319,A framework for intelligent data acquisition and real-time database searching for shotgun proteomics.,False,Framework for acquisition not a database,TITLE_CONTAINS_DATABASE
+35342643,Beyond Streamflow: Call for a National Data Repository of Streamflow Presence for Streams and Rivers in the United States.,False,Call for repository not database announcement,TITLE_CONTAINS_REPOSITORY
+30988492,Sixty years of tracking conservation progress using the World Database on Protected Areas.,False,Analysis using existing database not database announcement,TITLE_CONTAINS_DATABASE
+21727053,"The Israel DNA database--the establishment of a rapid, semi-automated analysis system.",False,Forensic database not a bioresource,TITLE_CONTAINS_DATABASE
+20927658,Human protein reference database and human proteinpedia as discovery resources for molecular biotechnology.,False,"Review/discussion of databases as resources, not describing the database itself",TITLE_CONTAINS_DATABASE
+34504503,The Cancer Epitope Database and Analysis Resource: A Blueprint for the Establishment of a New Bioinformatics Resource.,False,"Blueprint/plan for establishing resource, not the resource itself",TITLE_CONTAINS_DATABASE
+28692961,Places: A 10 Million Image Database for Scene Recognition.,False,Image database for computer vision - not biological database,TITLE_CONTAINS_DATABASE
+23813237,"The Chinese Lexicon Project: a repository of lexical decision behavioral responses for 2,500 Chinese characters.",False,Psychology/linguistics database - not biological database,TITLE_CONTAINS_REPOSITORY
+24325762,Molecule database framework: a framework for creating database applications with chemical structure search capability.,False,Framework for creating databases - software framework not database itself,TITLE_CONTAINS_DATABASE
+33935559,"The Atlas of Living Australia: History, current state and future directions.",False,"Historical review of atlas, not describing the resource itself",TITLE_CONTAINS_ATLAS
+28693544,McMaster Optimal Aging Portal: an evidence-based database for geriatrics-focused health professionals.,False,"Evidence-based portal for professionals, more of a curated information resource",TITLE_CONTAINS_DATABASE
+34593825,Chinese environmentally extended input-output database for 2017 and 2018.,False,Economic input-output database - not biological database,TITLE_CONTAINS_DATABASE
+34497388,A roadmap for the Human Developmental Cell Atlas.,False,Roadmap/plan for atlas - not the atlas itself,TITLE_CONTAINS_ATLAS
+31613926,"THINGS: A database of 1,854 object concepts and more than 26,000 naturalistic object images.",False,Psychology/perception database - not biological database,TITLE_CONTAINS_DATABASE
+26223238,Phylogenomics databases for facilitating functional genomics in rice.,False,Review/discussion of databases - review paper,TITLE_CONTAINS_DATABASE
+22120662,The Chado Natural Diversity module: a new generic database schema for large-scale phenotyping and genotyping data.,False,Database schema - software schema not database itself,TITLE_CONTAINS_DATABASE
+31695048,"Global soil, landuse, evapotranspiration, historical and future weather databases for SWAT Applications.",False,"Environmental/climate databases for modeling, not biological database",TITLE_CONTAINS_DATABASE
+29461473,Temporal and Fine-Grained Pedestrian Action Recognition on Driving Recorder Database.,False,Computer vision database - not biological database,TITLE_CONTAINS_DATABASE
+25062767,The Protein Data Bank archive as an open data resource.,False,Discussion of PDB as resource - review/discussion paper,TITLE_CONTAINS_ARCHIVE
+24113639,Developing an ontological explosion knowledge base for business continuity planning purposes.,False,Business continuity knowledge base - not biological database,TITLE_CONTAINS_KNOWLEDGE_BASE
+23103606,Utilisation of a thoracic oncology database to capture radiological and pathological images for evaluation of response to chemotherapy in patients with malignant pleural mesothelioma.,False,Utilization of existing database - application paper,TITLE_CONTAINS_DATABASE
+28925987,The public cancer radiology imaging collections of The Cancer Imaging Archive.,False,Description of imaging collections - collection description,TITLE_CONTAINS_ARCHIVE
+30830411,Juice Index: an integrated Sauvignon blanc grape and wine metabolomics database shows mainly seasonal differences.,False,"Study showing seasonal differences, not describing the database",TITLE_CONTAINS_DATABASE
+34491200,"Vision, challenges and opportunities for a Plant Cell Atlas.",False,Vision/perspective paper for future atlas - not the atlas itself,TITLE_CONTAINS_ATLAS
+30860498,The Subnational Human Development Database.,False,Socioeconomic development database - not biological database,TITLE_CONTAINS_DATABASE
+30465537,[The BIG Data Center's database resources].,False,Review of database resources - review paper,TITLE_CONTAINS_DATABASE
+31805179,Corrigendum: SCDevDB: A Database for Insights Into Single-Cell Gene Expression Profiles During Human Developmental Processes.,False,Corrigendum to another paper - not a primary database paper,TITLE_CONTAINS_DATABASE
+26875686,"Corrigendum: ImmuSort, a database on gene plasticity and electronic sorting for immune cells.",False,Corrigendum to another paper - not a primary database paper,TITLE_CONTAINS_DATABASE
+32811439,Correction to: GSDB: a database of 3D chromosome and genome structures reconstructed from Hi-C data.,False,Correction to another paper - not a primary database paper,TITLE_CONTAINS_DATABASE
+28570690,Correction: ExtremeDB: A Unified Web Repository of Extremophilic Archaea and Bacteria.,False,Correction to another paper - not a primary database paper,TITLE_CONTAINS_REPOSITORY
+32200647,Speech exemplar and evaluation database (SEED) for clinical training in articulatory phonetics and speech science.,False,Speech database - not biological database,TITLE_CONTAINS_DATABASE
+34849665,Corrigendum to: QSDB-a graphical Quorum Sensing Database.,False,Corrigendum to another paper - not a primary database paper,TITLE_CONTAINS_DATABASE
+31441165,Collection of antimicrobial peptides database and its derivatives: Applications and beyond.,False,Review of AMP databases - review paper,TITLE_CONTAINS_DATABASE
+30340458,Context-specific interactions in literature-curated protein interaction databases.,False,Analysis of existing databases - analysis study,TITLE_CONTAINS_DATABASE
+31024904,Defending Our Public Biological Databases as a Global Critical Infrastructure.,False,Perspective/opinion on databases - perspective paper,TITLE_CONTAINS_DATABASE
+32214931,NorthEuraLex: a wide-coverage lexical database of Northern Eurasia.,False,Linguistic database - not biological database,TITLE_CONTAINS_DATABASE
+34493865,FoGS provides a public FAQ repository for social and behavioral genomic discoveries.,False,FAQ repository - educational resource not data database,TITLE_CONTAINS_REPOSITORY
+23410935,Sequencing orphan species initiative (SOS): Filling the gaps in the 16S rRNA gene sequence database for all species with validly published names.,False,Initiative to fill gaps in existing database - project description,TITLE_CONTAINS_DATABASE
+30307985,Diachronic Atlas of Comparative Linguistics (DiACL)-A database for ancient language typology.,False,Linguistics database - not biological database,TITLE_CONTAINS_DATABASE
+25390369,MM-MDS: a multidimensional scaling database with similarity ratings for 240 object categories from the Massive Memory picture database.,False,Psychology database - not biological database,TITLE_CONTAINS_DATABASE
+28895947,"Database of multi-parametric geophysical data from the TOMO-DEC experiment on Deception Island, Antarctica.",False,Geophysical database - not biological database,TITLE_CONTAINS_DATABASE
+31975977,ChronoSphere: a graph-based EMF model repository for IT landscape models.,False,IT software model repository not biological data,TITLE_CONTAINS_REPOSITORY
+28146585,Development and validation of a Database Forensic Metamodel (DBFM).,False,Metamodel for database forensics not a bioresource,TITLE_CONTAINS_DATABASE
+26249149,Model organism databases.,False,Review of databases not a database itself,TITLE_CONTAINS_DATABASE
+33053376,A Comprehensive Subcellular Atlas of the Toxoplasma Proteome via hyperLOPIT Provides Spatial Context for Protein Functions.,False,Analysis study creating atlas not database paper,TITLE_CONTAINS_ATLAS
+22125014,Boston-NeuroTalks calendar 3.0: a talk database powered by collective intelligence.,False,Calendar database not biological data,TITLE_CONTAINS_DATABASE
+28855263,An atlas of alternative splicing profiles and functional associations reveals new regulatory programs and genes that simultaneously express multiple major isoforms.,False,Analysis creating atlas not a database paper,TITLE_CONTAINS_ATLAS
+34834856,Using Crop Databases to Explore Phenotypes: From QTL to Candidate Genes.,False,Guide on using databases not a database,TITLE_CONTAINS_DATABASE
+30535996,Database and Bioinformatic Analysis of BCL-2 Family Proteins and BH3-Only Proteins.,False,Analysis of databases not a database itself,TITLE_CONTAINS_DATABASE
+23007431,Accessing and using chemical property databases.,False,Guide to using databases not a database,TITLE_CONTAINS_DATABASE
+21357612,Database identifies FDA-approved drugs with potential to be repurposed for treatment of orphan diseases.,False,Database analysis study not a database itself,TITLE_CONTAINS_DATABASE
+24640546,Assessing the quality of life history information in publicly available databases.,False,Assessment study not a database,TITLE_CONTAINS_DATABASE
+29804262,Identification of transposons near predicted lncRNA and mRNA pools of Prunus mume using an integrative transposable element database constructed from Rosaceae plant genomes.,False,Identification study using database not the database paper,TITLE_CONTAINS_DATABASE
+32034219,A Robust Image Registration Interface for Large Volume Brain Atlas.,False,Registration interface not a database,TITLE_CONTAINS_ATLAS
+25436610,A machine reading system for assembling synthetic paleontological databases.,False,Machine reading system not a database,TITLE_CONTAINS_DATABASE
+26508759,Detecting dispersed duplications in high-throughput sequencing data using a database-free approach.,False,Detection approach not a database,TITLE_CONTAINS_DATABASE
+26812733,A Visual Interface for Querying Heterogeneous Phylogenetic Databases.,False,Query interface not a database,TITLE_CONTAINS_DATABASE
+34411131,An adaptive spark-based framework for querying large-scale NoSQL and relational databases.,False,Query framework not a database,TITLE_CONTAINS_DATABASE
+21810215,Advancements in web-database applications for rabies surveillance.,False,Review of applications not a database,TITLE_CONTAINS_DATABASE
+32304374,The Utility of the National Alzheimer's Coordinating Center's Database for the Rapid Assessment of Evolving Neuropathologic Conditions.,False,Utility assessment not a database paper,TITLE_CONTAINS_DATABASE
+26457120,Managing expectations: assessment of chemistry databases generated by automated extraction of chemical structures from patents.,False,"Assessment/evaluation paper, not a database",TITLE_CONTAINS_DATABASE
+32106809,The use of taxon-specific reference databases compromises metagenomic classification.,False,"Analysis of database use, not a database",TITLE_CONTAINS_DATABASE
+25449658,Databases and collaboration require standards for human stem cell research.,False,"Standards/commentary paper, not a database",TITLE_CONTAINS_DATABASE
+31908268,Attacks on genetic privacy via uploads to genealogical databases.,False,"Security analysis paper, not a database",TITLE_CONTAINS_DATABASE
+30243574,The Human Cell Atlas bone marrow single-cell interactive web portal.,False,"Portal mentioned but no URL, not accessible",TITLE_CONTAINS_ATLAS
+33462239,A database framework for rapid screening of structure-function relationships in PFAS chemistry.,False,"Framework description, not the database",TITLE_CONTAINS_DATABASE
+22942006,Application repository and science gateway for running molecular docking and dynamics simulations.,False,"Repository for applications, not a data repository",TITLE_CONTAINS_REPOSITORY

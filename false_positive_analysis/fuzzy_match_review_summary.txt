@@ -1,0 +1,18 @@
+FUZZY MATCH REVIEW SUMMARY
+================================================================================
+
+Total matches analyzed: 1545
+TRUE matches (to filter): 282 (18.3%)
+FALSE positives (keep as novel): 1263 (81.7%)
+
+Breakdown by confidence level:
+
+HIGH confidence:
+  Total: 814
+  TRUE: 136 (16.7%)
+  FALSE: 678 (83.3%)
+
+MEDIUM confidence:
+  Total: 731
+  TRUE: 146 (20.0%)
+  FALSE: 585 (80.0%)

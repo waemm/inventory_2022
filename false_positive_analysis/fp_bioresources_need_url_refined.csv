@@ -1,0 +1,43 @@
+pmid,title,has_url,is_bioresource,reason,category
+34748542,RESCRIPt: Reproducible sequence taxonomy reference database management.,False,N,Tool for database management - methodology without URL,DATABASE_NO_URL
+23071595,"Neurotree: a collaborative, graphical database of the academic genealogy of neuroscience.",False,Y,Database of academic genealogy but no URL,DATABASE_NO_URL
+31932586,A database for global soil health assessment.,False,Y,"Paper about database need/framework, no URL confirms not operational",DATABASE_NO_URL
+34716354,A curated diverse molecular database of blood-brain barrier permeability with chemical descriptors.,False,Y,"Database mentioned but no URL, likely private/unpublished",DATABASE_NO_URL
+26523133,A Database of Gene Expression Profiles of Korean Cancer Genome.,False,Y,"Database mentioned but no URL, not publicly accessible",DATABASE_NO_URL
+28115530,A Database of Human Immune Receptor Alleles Recovered from Population Sequencing Data.,False,Y,"Database mentioned but no URL, not publicly accessible",DATABASE_NO_URL
+31258155,"New UV-source catalogs, UV spectral database, UV variables and science tools from the GALEX surveys.",False,Y,"Catalog/database description, no URL for access",DATABASE_NO_URL
+34289491,The world within reach: An image database of reach-relevant environments.,False,Y,"Image database mentioned but no URL, not accessible",DATABASE_NO_URL
+34272372,A database of submarine landslides offshore West and Southwest Iberia.,False,Y,"Database mentioned but no URL, not publicly accessible",DATABASE_NO_URL
+30643682,A public database for the new MLST scheme for <i>Treponema pallidum</i> subsp. <i>pallidum</i>: surveillance and epidemiology of the causative agent of syphilis.,False,Y,"Database mentioned but no URL, not accessible",DATABASE_NO_URL
+29989590,A functional trait database for Mediterranean Basin plants.,False,Y,"Database mentioned but no URL, not accessible",DATABASE_NO_URL
+28385663,A curated gluten protein sequence database to support development of proteomics methods for determination of gluten in gluten-free foods.,False,Y,"Database mentioned but no URL, not accessible",DATABASE_NO_URL
+32484558,Comprehensive database and evolutionary dynamics of U12-type introns.,False,Y,"Database mentioned but no URL, not accessible",DATABASE_NO_URL
+31387779,Development of breast lesions models database.,False,Y,"Database development paper, no URL",DATABASE_NO_URL
+28509907,A database of georeferenced nutrient chemistry data for mountain lakes of the Western United States.,False,Y,"Database mentioned but no URL, not accessible",DATABASE_NO_URL
+29583143,A database of the coseismic effects following the 30 October 2016 Norcia earthquake in Central Italy.,False,Y,"Database mentioned but no URL, not accessible",DATABASE_NO_URL
+33936422,A semantic database for integrated management of image and dosimetric data in low radiation dose research in medical imaging.,False,Y,"Database mentioned but no URL, not accessible",DATABASE_NO_URL
+31832526,A long term physical and biogeochemical database of a hyper-eutrophicated Mediterranean micro-estuary.,False,Y,"Database mentioned but no URL, not accessible",DATABASE_NO_URL
+29381146,Australia's continental-scale acoustic tracking database and its automated quality control process.,False,Y,"Database mentioned but no URL, not accessible",DATABASE_NO_URL
+23164410,Transcriptome database resource and gene expression atlas for the rose.,False,Y,"Database and atlas mentioned but no URL, not accessible",DATABASE_NO_URL
+34597583,Atlas of clinically distinct cell states and ecosystems across human solid tumors.,False,Y,"Atlas/analysis study, no URL indicates not a public resource",ATLAS_NO_URL
+31474372,A Structure-Informed Atlas of Human-Virus Interactions.,False,Y,"Atlas mentioned but no URL, not accessible",ATLAS_NO_URL
+34144929,A high-resolution cell atlas of the domestic pig lung and an online platform for exploring lung single-cell data.,False,Y,"Atlas/platform mentioned but no URL, not accessible",ATLAS_NO_URL
+33288755,Establishment of a morphological atlas of the Caenorhabditis elegans embryo using deep-learning-based 4D segmentation.,False,Y,"Atlas mentioned but no URL, not accessible",ATLAS_NO_URL
+24670764,A promoter-level mammalian expression atlas.,False,Y,"Atlas mentioned but no URL, not accessible",ATLAS_NO_URL
+30857592,Functional proteomic atlas of HIV infection in primary human CD4+ T cells.,False,Y,"Atlas mentioned but no URL, not accessible",ATLAS_NO_URL
+33813032,A knowledge base of clinical trial eligibility criteria.,False,Y,"Knowledge base mentioned but no URL, not accessible",KB_NO_URL
+26050794,A knowledge base for Vitis vinifera functional analysis.,False,Y,"Knowledge base mentioned but no URL, not accessible",KB_NO_URL
+27280867,A knowledge base for tracking the impact of genomics on population health.,False,Y,"Knowledge base mentioned but no URL, not accessible",KB_NO_URL
+22110059,"pTransgenesis: a cross-species, modular transgenesis resource.",False,Y,Resource without URL likely methodology,RESOURCE_NO_URL
+32521246,iEcology: Harnessing Large Online Resources to Generate Ecological Insights.,False,Y,Method for harnessing resources; no URL,RESOURCE_NO_URL
+26405458,DAPPER: a data-mining resource for protein-protein interactions.,False,N,Data-mining resource without URL; unclear if houses data,RESOURCE_NO_URL
+21627789,RAG: an update to the RNA-As-Graphs resource.,False,Y,"Update to resource, but unclear if houses data without URL",RESOURCE_NO_URL
+33921243,Fungal Genomic Resources for Strain Identification and Diversity Analysis of 1900 Fungal Species.,False,Y,"Resource description/framework, no URL indicates not operational",RESOURCE_NO_URL
+30269990,An Open Resource for Non-human Primate Imaging.,False,Y,"Resource description without URL, not operational",RESOURCE_NO_URL
+30545857,Comprehensive functional genomic resource and integrative model for the human brain.,False,Y,"Resource description without URL, not accessible",RESOURCE_NO_URL
+22211970,A knockout mouse resource for the biomedical research community.,False,Y,"Resource description without URL, not accessible",RESOURCE_NO_URL
+30894373,An Interactive Resource to Probe Genetic Diversity and Estimated Ancestry in Cancer Cell Lines.,False,Y,"Resource mentioned but no URL, not accessible",RESOURCE_NO_URL
+27193236,A curated and standardized adverse drug event resource to accelerate drug safety research.,False,Y,"Resource mentioned but no URL, not accessible",RESOURCE_NO_URL
+28267743,A large-scale targeted proteomics assay resource based on an in vitro human proteome.,False,N,"Assay resource mentioned but no URL, not accessible",RESOURCE_NO_URL
+23304296,ICDA: a platform for Intelligent Care Delivery Analytics.,False,N,Platform is an analytics tool not a data repository with no URL,REPOSITORY_NO_URL
+22554313,"Standardized representation, visualization and searchable repository of antiretroviral treatment-change episodes.",False,N,"Repository mentioned but no URL, not accessible",REPOSITORY_NO_URL

@@ -1,0 +1,153 @@
+pmid,title,is_match,best_url,best_url_score,best_url_title_match,best_url_matched_keywords,best_url_is_live,best_url_status,urls_count
+35088001,The GWAS-MAP platform for aggregation of results of genome-wide association studies and the GWAS-MAP|homo database of 70 billion genetic associations of human traits.,N,http://www.ukbiobank.ac.uk/,13,False,,True,200,9
+34669691,RefPlantNLR is a comprehensive collection of experimentally validated plant disease resistance proteins from the NLR family.,,https://www.geneious.com,8,False,,True,200,2
+31286860,DAIRYdb: a manually curated reference database for improved taxonomy annotation of 16S rRNA gene sequences from dairy products.,,http://www.drive5.com/uchime/rdp_gold.fa,10,False,,True,200,8
+31598718,SEAweb: the small RNA Expression Atlas web application.,Y,http://sea.ims.bio/,18,False,,True,200,2
+30339215,MGH: a genome hub for the medicinal plant maca (Lepidium meyenii).,,http://ccdb.tau.ac.il/search/,11,False,,False,404,6
+30793170,SuCComBase: a manually curated repository of plant sulfur-containing compounds.,,http://plant-scc.org,15,False,,False,404,1
+23180770,ASGARD: an open-access database of annotated transcriptomes for emerging model arthropod species.,,http://arthropodgenomes.org/wiki/i5K,13,False,,False,403,5
+31267133,piRDisease v1.0: a manually curated database for piRNA associated diseases.,Y,http://piwirna2disease.org/,15,False,,False,,2
+23660284,dbWFA: a web-based database for functional annotation of Triticum aestivum transcripts.,,http://avena.pw.usda.gov/genome/,13,False,,False,,13
+23134618,C²Maps: a network pharmacology database with comprehensive disease-gene-drug connectivity relationships.,,http://www.biomedcentral.com/bmcgenomics/supplements/13/S6,18,False,,True,200,3
+31001319,FeatSNP: An Interactive Database for Brain-Specific Epigenetic Annotation of Human SNPs.,,http://www.roadmapepigenomics.org/,13,False,,False,502,1
+28556827,"""RiceAtlas, a spatial database of global rice calendars and production.""",,http://www.fao.org/faostat/en/#home,5,False,,True,200,7
+30891576,LasDB: A collective database for laboratory animal strain resources.,,http://www.wanfangdata.com.cn,11,False,,True,200,7
+30788499,FairBase: a comprehensive database of fungal A-to-I RNA editing.,,https://broadinstitute.github.io/picard,0,False,,True,200,1
+21992659,MedEval - A Swedish medical test collection with doctors and patients user groups.,,http://www.jbiomedsem.com/supplements/2/S3,18,False,,True,200,7
+33214792,ANSH: Multimodal Neuroimaging Database Including MR Spectroscopic Data From Each Continent to Advance Alzheimer's Disease Research.,,https://ida.loni.usc.edu,5,False,,True,200,3
+32935014,A Pan-Canadian Data Resource for Monitoring Child Developmental Health: The Canadian Neighbourhoods and Early Child Development (CanNECD) Database.,,https://edi.offordcentre.com/resources/bibliography-of-the-edi/,18,False,,False,403,2
+32719846,OPTIK: a database for understanding catchment areas to guide mobilization of cancer center assets.,,https://egems.academyhealth.org/articles/10.5334/egems.305/,5,False,,False,,5
+34132786,"""efam: an expanded, metaproteome-supported HMM profile database of viral protein families.""",,http://vogdb.org/,16,False,,True,200,3
+29095940,ExpressionDB: An open source platform for distributing genome-scale datasets.,,https://www.rstudio.com/products/shiny/download-server/,18,False,,True,200,14
+33552471,Establishing the South Australian Macrobenthic Traits (SAMT) database: A trait classification for functional assessments.,,https://CRAN.R‐project.org/package=vegan,5,False,,False,,2
+31529106,ApicoTFdb: the comprehensive web repository of apicomplexan transcription factors and transcription-associated co-factors.,,http://bioinfo.icgeb.res.in/PtDB/,8,False,,True,200,2
+30944336,"""MarTurtSI, a global database of stable isotope analyses of marine turtles.""",,http://www.iucnredlist.org,5,False,,False,403,1
+31073139,SLTChemDB: A database of chemical compounds present in Smokeless tobacco products.,,http://www.rdkit.org/,15,False,,True,200,2
+25243218,VibrioBase: a model for next-generation genome and annotation database development.,,http://vibrio.um.edu.my,5,False,,False,,1
+26078477,HCSD: the human cancer secretome database.,,http://www.mysql.com/,10,False,,False,403,14
+34592929,MetaGeneBank: a standardized database to study deep sequenced metagenomic data from human fecal specimen.,,http://tcm.zju.edu.cn/mgb,15,False,,False,,5
+34688246,TAGOPSIN: collating taxa-specific gene and protein functional and structural information.,,https://biodbnet-abcc.ncifcrf.gov,13,False,,True,200,3
+33627669,"""OutFin, a multi-device and multi-modal dataset for outdoor localization based on the fingerprinting approach.""",,https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=2427,16,False,,True,200,25
+21487452,"""Existing data sources for clinical epidemiology: The clinical laboratory information system (LABKA) research database at Aarhus University, Denmark.""",,http://www.scandihealth.dk/Losninger/Laboratoriesystemer.htm,10,False,,False,,3
+27185890,QuadBase2: web server for multiplexed guanine quadruplex mining and visualization.,Y,quadbase.igib.res.in,18,False,,False,,1
+32074470,CoMPARA: Collaborative Modeling Project for Androgen Receptor Activity.,Y,https://comptox.epa.gov/dashboard/dsstoxdb/batch_search,13,False,,True,200,34
+32661247,"""TAASRAD19, a high-resolution weather radar reflectivity dataset for precipitation nowcasting.""",,https://openradarscience.org/opendata/,13,False,,False,404,8
+30644852,"""GFPLAIN250m, a global high-resolution dataset of Earth's floodplains.""",,http://srtm.csi.cgiar.org/,15,False,,True,200,2
+31236561,SeQuery: an interactive graph database for visualizing the GPCR superfamily.,Y,http://cluster.phy.ntnu.edu.tw,5,False,,False,,1
+31169291,Endometriosis Knowledgebase: a gene-based resource on endometriosis.,Y,http://www.ek.bicnirrh.res.in,0,False,,False,,1
+30531985,"""ZuCo, a simultaneous EEG and eye-tracking resource for natural sentence reading.""",,http://sccn.ucsd.edu/wiki/Plugin_list_process,5,False,,True,200,3
+29531295,TryTransDB: A web-based resource for transport proteins in Trypanosomatidae.,,http://43.227.133.106/homePage.php,10,False,,False,,4
+27163938,"""MycoDB, a global database of plant response to mycorrhizal fungi.""",,http://plants.usda.gov,5,False,,True,200,4
+22576174,MicrobeDB: a locally maintainable database of microbial genomic sequences.,,http://biosql.org,13,False,,True,200,5
+30717653,MIGREW: database on molecular identification of genes for resistance in wheat.,,https://bmcbioinformatics.biomedcentral.com/articles/supplements/volume-20-supplement-1,18,False,,True,200,6
+30722040,ZincBind-the database of zinc binding sites.,,http://www.sqlite.org,5,False,,True,200,1
+32849792,MicroHapDB: A Portable and Extensible Database of All Published Microhaplotype Marker and Frequency Data.,,https://www.fbi.gov/services/laboratory/biometric-analysis/codis,13,False,,False,403,6
+31249436,MAPKDB: A MAP kinase database for signal transduction element identification.,,https://phytozome.jgi.doe.gov/pz/portal.html,13,False,,True,200,2
+33758194,"""WOODIV, a database of occurrences, functional traits, and phylogenetic data for all Euro-Mediterranean trees.""",,http://data.kew.org/sid/,16,False,,False,404,7
+31160582,"""CFTI5Med, the new release of the catalogue of strong earthquakes in Italy and in the Mediterranean area.""",,https://emidius.mi.ingv.it/CPTI15-DBMI15/index_en.htm,8,False,,True,200,15
+24303294,SysBioCube: A Data Warehouse and Integrative Data Analysis Platform Facilitating Systems Biology Studies of Disorders of Military Relevance.,,http://www.canvasxpress.org,5,False,,True,200,2
+34677393,MSCAT: A Machine Learning Assisted Catalog of Metabolomics Software Tools.,,https://www.postgresql.org/,5,False,,True,200,5
+34895295,ChemTables: a dataset for semantic classification on tables in chemical patents.,,http://webdatacommons.org/webtables/,13,False,,True,200,9
+29533392,"""GlobTherm, a global database on thermal tolerances for aquatic and terrestrial organisms.""",,http://www.catalogueoflife.org/annual-checklist/2016,13,False,,True,200,4
+32611382,Loqusdb: added value of an observations database of local genomic variation.,,http://zzz.bwh.harvard.edu/plink/data.shtml#ped,13,False,,True,200,4
+24199845,SPIEDw: a searchable platform-independent expression database web tool.,,http://www.spied.org.uk,15,False,,True,200,3
+30246068,"""PhytoMolecularTasteDB: An integrative database on the """"molecular taste"""" of Indian medicinal plants.""",,http://foodb.ca/,11,False,,True,200,2
+34720637,"""Biovera-Epi: A new database on species diversity, community composition and leaf functional traits of vascular epiphytes along gradients of elevation and forest-use intensity in Mexico.""",,https://binary.pensoft.net/file/568751,0,False,,True,200,5
+31628326,"""QM-sym, a symmetrized quantum chemistry database of 135 kilo molecules.""",,http://www.jmol.org,5,False,,True,200,2
+33318981,iSignDB: A database for smartphone signature biometrics.,,https://apps.apple.com/us/app/matlab-mobile/id370976661,0,False,,True,200,2
+33060804,"""Construction of TUATinsecta database that integrated plant and insect database for screening phytophagous insect metabolic products with medicinal potential.""",,https://togodb.org/db/tuat_insecta,16,False,,True,200,10
+29688221,"""DataTri, a database of American triatomine species occurrence.""",,http://www.splink.org.br/,5,False,,True,200,13
+30239678,"""THE-DB: a threading model database for comparative protein structure analysis of the E. coli K12 and human proteomes.""",Y,https://zhanglab.ccmb.med.umich.edu/THE-DB/,13,False,,True,200,5
+25643023,"""PRIMED: PRIMEr database for deleting and tagging all fission and budding yeast genes developed using the open-source genome retrieval script (GRS).""",,http://www.sanger.ac.uk/research/projects/genomeinformatics/sgrp.html,13,False,,False,404,2
+30204154,"""The eICU Collaborative Research Database, a freely available multi-center database for critical care research.""",,https://www.gpo.gov/fdsys/pkg/PLAW-104publ191/html/PLAW-104publ191.htm,5,False,,True,200,3
+31260041,"""Oomycete Gene Table: an online database for comparative genomic analyses of the oomycete microorganisms.""",,http://www.sbi.kmutt.ac.th/cgi-bin/gt/viewer?organism=oomycetes&build=190208,10,False,,False,,1
+28872632,"""AmphiBIO, a global database for amphibian ecological traits.""",,http://www.auburn.edu/academic/science_math/cosam/collections/reptiles_amphibians/projects/vertbodysize.htm,15,False,,False,403,2
+32548639,"""MaizeCUBIC: a comprehensive variation database for a maize synthetic population.""",,http://modem.hzau.edu.cn/,5,False,,False,,4
+25274737,"""RiceVarMap: a comprehensive database of rice genomic variations.""",,http://oryzasnp.plantbiology.msu.edu,13,False,,False,,2
+30649297,RRMdb-an evolutionary-oriented database of RNA recognition motif sequences.,Y,http://iimcb.genesilico.pl/rrm,18,False,,False,404,1
+32901023,"""InvaCost, a public database of the economic costs of biological invasions worldwide.""",,https://data.worldbank.org/indicator/PA.NUS.FCRF?end=2017&start=1960,16,False,,False,,13
+33770143,"""TBDBT: A TB DataBase Template for collection of harmonized TB clinical research data in REDCap, facilitating data standardisation for inter-study comparison and meta-analyses.""",,https://www.reportinternational.org/case-report-forms,5,False,,False,404,9
+31752429,HSF1Base: A Comprehensive Database of HSF1 (Heat Shock Factor 1) Target Genes.,,http://PANTHERdb.org/,16,False,,True,200,1
+32601290,"""The BenBioDen database, a global database for meio-, macro- and megabenthic biomass and densities.""",,http://data.eol.ucar.edu/,16,False,,True,200,6
+24993547,BigMouth: a multi-institutional dental data repository.,,http://www.adea.org/publications/library/otherresources/Pages/2007DistributionofDentistsintheUnitedStatesbyRegionandState%28December2009%29.aspx,13,False,,False,404,7
+23590173,CamMedNP: building the Cameroonian 3D structural natural products database for virtual screening.,,http://www.biomedcentral.com/1472-6882/13/88/prepub,18,False,,True,200,3
+33575627,aYChr-DB: a database of ancient human Y haplogroups.,,https://www.oagr.org.au,5,False,,False,,2
+33051443,"""GalliForm, a database of Galliformes occurrence records from the Indo-Malay and Palaearctic, 1800-2008.""",,https://www.iucnredlist.org/resources/spatial-data-download,13,False,,False,403,11
+31228650,RedoxiBase: A database for ROS homeostasis regulated proteins.,,http://bioinfo.genopole-toulouse.prd.fr,8,False,,False,,2
+30765729,DeepWeeds: A Multiclass Weed Species Image Dataset for Deep Learning.,,https://www.tensorflow.org,5,False,,True,200,4
+33026137,COSORE: A community database for continuous soil respiration and other soil-atmosphere greenhouse gas flux data.,,https://www.dataone.org,13,False,,True,200,13
+33917533,"""MetaTREE, a novel database focused on metabolic trees, predicts an important detoxification mechanism: the glutathione conjugation.""",,http://scikit-learn.org/0.21/documentation.html,5,False,,True,200,6
+29364988,Socio-affective touch expression database.,,https://osf.io/8j74m/,10,False,,True,200,2
+33904142,"""The Croatian psycholinguistic database: Estimates for 6000 nouns, verbs, adjectives and adverbs.""",,https://repozitorij.ffzg.unizg.hr/islandora/object/ffzg%3A833/datastream/DATASET1/view,18,False,,False,,10
+30106392,"""The HAM10000 dataset, a large collection of multi-source dermatoscopic images of common pigmented skin lesions.""",,https://isic-archive.com/,8,False,,True,200,4
+26220923,Curcumin Resource Database.,Y,http://www.crdb.in,11,False,,True,200,4
+26210853,Database of RNA binding protein expression and disease dynamics (READ DB).,,http://darwin.soic.iupui.edu/,15,False,,False,,1
+33024111,"""VOLCORE, a global database of visible tephra layers sampled by ocean drilling.""",,http://www.deepseadrilling.org/31/volume/dsdp31_01.pdf,5,False,,True,200,2
+31636516,Recent developments in the Inorganic Crystal Structure Database: theoretical crystal structure data and related features.,,http://openmaterialsdb.se/,11,False,,True,200,2
+25883147,The ReproGenomics Viewer: an integrative cross-species toolbox for the reproductive science community.,Y,http://rgv.genouest.org,15,False,,True,200,1
+33479245,The human O-GlcNAcome database and meta-analysis.,,https://data.glygen.org/GLY_000517,16,False,,True,200,12
+31344828,Animal Images Database: Validation of 120 Images for Human-Animal Studies.,,https://osf.io/mdpt6/,10,False,,True,200,2
+27190508,Ebolavirus Database: Gene and Protein Information Resource for Ebolaviruses.,,http://bioserver1.physics.iisc.ernet.in/EDB/,18,False,,False,,4
+32303685,High resolution temporal profiles in the Emissions Database for Global Atmospheric Research.,,https://data.giss.nasa.gov/ch4_fung/,16,False,,True,200,23
+24882917,"""Expansion of the Ligand Knowledge Base for Chelating P,P-Donor Ligands (LKB-PP).""",,http://pubs.acs.org,5,False,,False,403,1
+32994893,ATP7A Clinical Genetics Resource - A comprehensive clinically annotated database and resource for genetic variants in ATP7A gene.,,https://variantvalidator.org/,5,False,,True,200,2
+21818249,The Barcode of Life Data Portal: bridging the biodiversity informatics divide for DNA barcoding.,Y,http://bol.uvm.edu/about.php,15,False,,False,,9
+34721190,Baby's Online Live Database: An Open Platform for Developmental Science.,,https://doshisha-akachan.sona-systems.com/,10,False,,False,,5
+33776581,Freshwater insects CONUS: A database of freshwater insect occurrences and traits for the contiguous United States.,,https://www.waterqualitydata.us,11,False,,True,200,12
+24220210,The virtual skeleton database: an open access repository for biomedical research and collaboration.,,http://www.dspace.org/,5,False,,True,200,9
+30094953,Coral microbiome database: Integration of sequences reveals high diversity and relatedness of coral-associated microbes.,,https://www.bco-dmo.org/dataset/724355,13,False,,True,200,3
+34294731,"""resistancebank.org, an open-access repository for surveys of antimicrobial resistance in animals.""",,https://datahelpdesk.worldbank.org/knowledgebase/articles/906519,13,False,,True,200,20
+34183675,"""Triton, a new species-level database of Cenozoic planktonic foraminiferal occurrences.""",,http://ipt.vliz.be/eurobis/resource?r=pangaea_2747,8,False,,True,200,8
+33514754,An Indo-Pacific coral spawning database.,,https://www.esrl.noaa.gov/gmd/grad/solcalc/calcdetails.html,5,False,,True,200,4
+28350387,"""The global avian invasions atlas, a database of alien bird distributions worldwide.""",,http://www.cbd.int/decision/cop/default.shtml?id=7197,10,False,,True,200,9
+32572035,"""The Fire and Tree Mortality Database, for empirical modeling of individual tree mortality after fire.""",,https://www.mtbs.gov,5,False,,True,200,4
+31664032,"""The SCOC database, a large, open, and global database with sediment community oxygen consumption rates.""",,http://data.eol.ucar.edu/,16,False,,True,200,3
+25333954,"""The Complex Emergency Database: a global repository of small-scale surveys on nutrition, health and mortality.""",,http://www.nejm.org/doi/full/10.1056/NEJMra1109877,5,False,,False,403,9
+21836824,S66: A Well-balanced Database of Benchmark Interaction Energies Relevant to Biomolecular Structures.,,http://www.begdb.com,11,False,,True,200,2
+28858850,MortalityPredictors.org: a manually-curated database of published biomarkers of human all-cause mortality.,,http://edrn.nci.nih.gov/biomarkers,13,False,,True,200,6
+31932593,"""The Database of Cross-Linguistic Colexifications, reproducible analysis of cross-linguistic polysemies.""",Y,https://clics.clld.org/,15,False,,True,200,5
+21854560,Immunome database for marsupials and monotremes.,,http://hp580.angis.org.au/tagbase/gutentag/,15,False,,False,,6
+27830061,<i>mouseTube</i> - a database to collaboratively unravel mouse ultrasonic communication.,Y,http://mousetube.pasteur.fr,10,False,,True,200,1
+28053117,GB3.0: a platform for plant bio-design that connects functional DNA elements with associated biological data.,Y,https://gbcloning.upv.es/,0,False,,False,,6
+32167667,Arachis hypogaea gene expression atlas for fastigiata subspecies of cultivated groundnut to accelerate functional and translational genomics applications.,,https://www.bioinformatics.babraham.ac.uk/projects/fastqc/,13,False,,True,200,6
+31845400,"""Metabolite database for root, tuber, and banana crops to facilitate modern breeding in understudied crops.""",,http://www.fao.org/faostat,15,False,,True,200,5
+33024126,A salmon diet database for the North Pacific Ocean.,,https://npafc.org/inpfc/,5,False,,True,200,11
+23136506,"""DaizuBase, an integrated soybean genome database including BAC-based physical maps.""",,http://www.phytozome.net/soybean,10,False,,True,200,3
+31304213,OakEcol: A database of Oak-associated biodiversity within the UK.,,http://webarchive.nationalarchives.gov.uk/20140711133551/http://www.naturalengland.org.uk/ourwork/conservation/biodiversity/protectandmanage/habsandspeciesimportance.aspx,13,False,,True,202,11
+30015806,"""Leukocyte Tracking Database, a collection of immune cell tracks from intravital 2-photon microscopy videos.""",Y,http://www.ltdb.info/downloads/,11,False,,False,,2
+32533075,"""CIDO, a community-based ontology for coronavirus disease knowledge and data integration, sharing, and analysis.""",,https://www.iso.org/standard/74572.html,5,False,,True,200,3
+31551423,"""PalmTraits 1.0, a species-level functional trait database of palms worldwide.""",,https://www.try-db.org/,16,False,,True,200,10
+34583740,FP-ADMET: a compendium of fingerprint-based ADMET prediction models.,,https://www.R-project.org/,5,False,,True,200,2
+33462958,CannabisGDB: a comprehensive genomic database for Cannabis Sativa L.,,https://gdb.supercann.net,11,False,,False,,1
+28829434,"""ForCenS, a curated database of planktonic foraminifera census counts in marine surface sediment samples.""",,https://www.ncdc.noaa.gov/paleo-search/study/5908,5,False,,True,200,3
+33433310,ActDES - a curated Actinobacterial Database for Evolutionary Studies.,,http://tree.bio.ed.ac.uk/software/ﬁgtree/,13,False,,True,200,8
+25925571,GenoLIB: a database of biological parts derived from a library of common plasmid features.,,http://www.insdc.org/documents/feature-table,15,False,,True,200,3
+34301277,The LORIS MyeliNeuroGene rare disease database for natural history studies and clinical trial readiness.,,https://www.fda.gov/media/122425/download,15,False,,True,200,2
+28611359,Chloroplast Genomic Resource of Paris for Species Discrimination.,,http://pgrc.ipk-gatersleben.de/misa/,0,False,,True,200,1
+26110065,A TEX₈₆ surface sediment database and extended Bayesian calibration.,,http://www.whoi.edu/bayspar,15,False,,False,404,6
+26264559,leBIBIQBPP: a set of databases and a webtool for automatic phylogenetic analysis of prokaryotic sequences.,,http://umr5558-bibiserv.univ-lyon1.fr/lebibi/lebibi.cgi,10,False,,False,404,4
+32733138,Frozen Zoo: a collection of permafrost samples containing viable protists and their viruses.,,https://www.gbif.org/dataset/e11d99cb-4a96-4e9d-847e-d078cfd59f6c,13,False,,True,200,3
+32859911,Ion mobility collision cross-section atlas for known and unknown metabolite annotation in untargeted metabolomics.,,https://metabolomics.pnnl.gov/ccs/,13,False,,False,,11
+33227425,A collaborative resource platform for non-human primate neuroimaging.,,https://macatools.github.io/macapype,11,False,,True,200,30
+31882773,Database of adverse events associated with drugs and drug combinations.,,https://www.accessdata.fda.gov/scripts/cder/ob/,16,False,,True,200,6
+32733141,Fungal literature records database of the Northern West Siberia (Russia).,,https://www.gbif.org/en/data-papers,13,False,,True,200,40
+31913312,"""A global database for metacommunity ecology, integrating species, traits, environment and space.""",,https://idata.idiv.de/,11,False,,True,200,13
+23984222,The age-phenome database.,,http://age-phenome-wiki.med.ad.bgu.ac.il/index.php?title=Main_Page,10,False,,False,,4
+33580343,Introduction to the standard reference data of electron energy loss spectra and their database: eel.geri.re.kr.,,http://eel.geri.re.kr,0,False,,True,200,1
+26018427,The human transmembrane proteome.,,http://bioinfogp.cnb.csic.es/tools/venny/index.html,18,False,,True,200,7
+27531214,Cross-species Conservation of context-specific networks.,,http://services.bio.ifi.lmu.de/croco-web,18,False,,False,,2
+24453546,"""A Tenebrionid beetle's dataset (Coleoptera, Tenebrionidae) from Peninsula Valdés (Chubut, Argentina).""",,http://data.gbif.org/datasets/resource/14669/,16,False,,True,200,15
+30356876,A Web Resource for Designing Subunit Vaccine Against Major Pathogenic Species of Bacteria.,,http://webs.iiitd.edu.in/raghava/vactarbac/,15,False,,True,200,3
+32946464,An interactive retrieval system for clinical trial studies with context-dependent protocol elements.,,https://corus.kaist.edu/clips,15,False,,False,,21
+29202689,Explorative visual analytics on interval-based genomic data and their metadata.,,http://www.bioinformatics.deib.polimi.it/GeMSE/,18,False,,True,200,8
+31819066,A global database of historic and real-time flood events based on social media.,,http://www.globalfloodmonitor.org,5,False,,True,200,3
+29722888,Applying graph theory to protein structures: an Atlas of coiled coils.,,http://coiledcoils.chm.bris.ac.uk/atlas/app,15,False,,False,404,5
+21974739,New resources for functional analysis of omics data for the genus Aspergillus.,,http://www.broadinstitute.org/fetgoat/index.html,5,False,,False,404,2
+33083684,First plant cell atlas workshop report.,,http://www.plantcellatlas.org/,5,False,,True,200,3
+24985530,Bridging islands of information to establish an integrated knowledge base of drugs and health outcomes of interest.,,http://ohdsi.org,5,False,,True,200,2
+27230384,Crowdsourcing the nodulation gene network discovery environment.,,http://crowd.bioops.info/,18,False,,False,,13
+21649883,"""A comprehensive gene expression atlas of sex- and tissue-specificity in the malaria vector, Anopheles gambiae.""",,http://www.tissue-atlas.org,5,False,,True,200,1
+27199606,A database on the distribution of butterflies (Lepidoptera) in northern Belgium (Flanders and the Brussels Capital Region).,,http://www.gbif.org/dataset/7888f666-f59e-4534-8478-3a10a3bfee45,13,False,,True,200,14
+27833382,Polymorphisms and resistance mutations of hepatitis C virus on sequences in the European hepatitis C virus database.,,http://s2as02.genes.nig.ac.jp,13,False,,True,200,4
+33551658,"""The Insect database in Dokdo, Korea: An updated version in 2020.""",,https://www.gbif.org/dataset/eb47a0de-862f-44c0-be42-0e300abaaab4,13,False,,True,200,5
+31223358,[An online dynamic knowledge base in multiple languages on general medicine and primary care].,,http://3cgp.docpatient.net/,0,False,,True,200,5

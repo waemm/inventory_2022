@@ -1,0 +1,30 @@
+pmid,title,best_url,best_url_score,best_url_title_match,best_url_matched_keywords,best_url_is_live,best_url_status,urls_count
+30834332,RefSoil+: a Reference Database for Genes and Traits of Soil Plasmids.,ftp://ftp.ncbi.nlm.nih.gov/refseq/release,13.0,False,,False,,1
+29470400,RaMP: A Comprehensive Relational Database of Metabolomics Pathways for Pathway Enrichment Analysis of Genes and Metabolites.,http://rest.kegg.jp/list/pathway/hsa,50.0,True,pathway,True,200.0,4
+21992002,The BioLexicon: a large-scale terminological resource for biomedical text mining.,http://www.ebi.ac.uk/Rebholz-srv/BioLexicon/biolexicon.html,73.0,True,biolexicon,False,500.0,22
+28981643,MareyMap Online: A User-Friendly Web Application and Database Service for Estimating Recombination Rates Using Physical and Genetic Maps.,https://cran.r-project.org/web/packages/MareyMap/index.html,65.0,True,mareymap,True,200.0,3
+25281234,CanvasDB: a local database infrastructure for analysis of targeted- and whole genome re-sequencing projects.,ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20110521/,13.0,False,,False,,1
+34698276,"""MicroSalmon: A Comprehensive, Searchable Resource of Predicted MicroRNA Targets and 3'UTR Cis-Regulatory Elements in the Full-Length Sequenced Atlantic Salmon Transcriptome.""",https://www.ncbi.nlm.nih.gov/genome/annotation_euk/Salmo_salar/100/,13.0,False,,True,200.0,5
+34181736,CROssBAR: comprehensive resource of biomedical relations with knowledge graph representations.,https://www.ebi.ac.uk/Tools/crossbar/swagger-ui.html,73.0,True,crossbar,False,404.0,16
+33767203,"""NLM-Chem, a new resource for chemical entity recognition in PubMed full text literature.""",https://www.ncbi.nlm.nih.gov/research/bionlp/Data,73.0,True,nlm,True,200.0,11
+30053271,PharmacoDB: an integrative database for mining in vitro anticancer drug screening studies.,http://web.expasy.org/cellosaurus/,5.0,False,,True,200.0,1
+21466708,dbOGAP - an integrated bioinformatics resource for protein O-GlcNAcylation.,http://httpd.apache.org/,15.0,False,,True,200.0,8
+32850476,"""TickSialoFam (TSFam): A Database That Helps to Classify Tick Salivary Proteins, a Review on Tick Salivary Protein Function and Evolution, With Considerations on the Tick Sialome Switching Phenomenon.""",ftp://ftp.ncbi.nlm.nih.gov/blast/executables/legacy.NOTSUPPORTED/2.2.26/,15.0,False,,False,,5
+28096900,"""MS_HistoneDB, a manually curated resource for proteomic analysis of human and mouse histones.""",https://CRAN.R-project.org/package=pheatmap,5.0,False,,True,200.0,1
+32792559,"""ACDC, a global database of amphibian cytochrome-b sequences using reproducible curation for GenBank records.""",http://www.ncbi.nlm.nih.gov/genbank,55.0,True,genbank,True,200.0,5
+26373861,The International Mouse Strain Resource (IMSR): cataloging worldwide mouse and ES cell line resources.,http://lucene.apache.org,15.0,False,,True,200.0,5
+29989589,"""FRY, a global database of fire patch functional traits derived from space-borne burned area products.""",https://CRAN.R-project.org/package=SDMTools,13.0,False,,True,200.0,6
+21930505,Neisseria Base: a comparative genomics database for Neisseria meningitidis.,http://apache.org,15.0,False,,True,200.0,4
+28158609,An update on the Enzyme Portal: an integrative approach for exploring enzyme knowledge.,http://www.ebi.ac.uk/enzymeportal/,63.0,True,"enzyme, portal",False,500.0,15
+26255307,"""Phytochemica: a platform to explore phytochemicals of medicinal plants.""",http://www.ncbi.nlm.nih.gov/pubmed,5.0,False,,True,200.0,13
+22737123,"""SynProt: A Database for Proteins of Detergent-Resistant Synaptic Protein Preparations.""",http://www.uniprot.org,5.0,False,,True,200.0,2
+33258967,"""ncVarDB: a manually curated database for pathogenic non-coding variants and benign controls.""",https://www.omim.org/,5.0,False,,True,200.0,2
+26156871,"""TM-MC: a database of medicinal materials and chemical compounds in Northeast Asian traditional medicine.""",http://www.ncbi.nlm.nih.gov/pmc/tools/ftp,13.0,False,,True,200.0,6
+24316577,"""The NHGRI GWAS Catalog, a curated resource of SNP-trait associations.""",http://www.ebi.ac.uk/fgpt/gwas/#curationtab,55.0,True,gwas,True,200.0,4
+21659040,The Environmental Polymorphism Registry: a unique resource that facilitates translational research of environmental disease.,http://hapmap.ncbi.nlm.nih.gov/,5.0,False,,True,200.0,4
+30416602,"""An illustrated catalogue of Rudolf Sturany's type specimens in the Naturhistorisches Museum Wien, Austria (NHMW): deep-sea Eastern Mediterranean molluscs.""",https://CRAN.R-project.org/package=oceanmap,5.0,False,,True,200.0,4
+32954379,Multiple Sclerosis Atlas: A Molecular Map of Brain Lesion Stages in Progressive Multiple Sclerosis.,https://bioconductor.org/packages/org.Hs.eg.db,23.0,False,,True,200.0,7
+34762696,A resource for improved predictions of Trypanosoma and Leishmania protein three-dimensional structure.,https://www.ncbi.nlm.nih.gov/genome/,13.0,False,,True,200.0,7
+32255760,Accelerating surveillance and research of antimicrobial resistance - an online repository for sharing of antimicrobial susceptibility data associated with whole-genome sequences.,https://www.ebi.ac.uk/ena/pathogens/datahubs,13.0,False,,True,200.0,21
+32859947,A relational database to identify differentially expressed genes in the endometrium and endometriosis lesions.,ftp://ftp.ebi.ac.uk/pub/databases/genenames/new/tsv/,63.0,True,database,False,,24
+26982336,An Approach to Function Annotation for Proteins of Unknown Function (PUFs) in the Transcriptome of Indian Mulberry.,http://string-db.org/,16.0,False,,True,200.0,13

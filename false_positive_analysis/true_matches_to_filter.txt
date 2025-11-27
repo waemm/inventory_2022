@@ -1,0 +1,276 @@
+"Ligand Knowledge Base for Chelating P
+2019-nCoV
+2DE-pattern
+2P2Idb
+ACCDB
+ADReCS-Target
+AGD
+AMI
+ARCPHdb
+AREsite
+ASmiR
+ATR-FT-IR Spectra
+AVPDS
+Addgene
+Alkamid DB
+Angiogenesis/VEGF Database
+Antagomirbase
+BEable-GPS
+BIOPEP
+BRCA LOVD
+BacillusRegNet
+BambooGDB SSR
+BgeeDB
+BioImg.org
+Bradyrhizobium_MLSA
+CATH-Gene3D
+CEA
+CHAMP
+CLRP TG-43
+COKE
+CPE-DB
+CancerGD
+CanvasDB
+CapriDB
+CapsicumDB
+CarotenoidDB
+Circ2Disease
+CircaDB
+CircadiOmics
+Clone DB
+Colombia_geometrid
+ConSurf-DB
+Connectivity Scores
+CoralTBase
+Core HTA
+CovidCT
+Crohn's eQTL
+DSA
+DenvInt
+Dietary restriction gene network
+Disease Ontology
+Drug-Path
+DrugR+
+ECO IARC
+EHEC/EAEC RegNet
+EK3D
+ERP CORE
+EV@LUTIL
+EchinoBase gene nomenclature
+Equine PeptideAtlas
+EurExpress
+ExCAPE-DB
+Exo-miRExplorer
+ExpressHeart
+ExpressionData
+FANTOM
+FP-ADMET
+FRY
+Fabry-database.org
+FinaleDB
+Florabank
+FlyPrimerBank
+FragSAD
+GCM
+GDB-17
+GDBChEMBL
+GENE2D
+GFD
+GPCR-DB
+GPS-Prot
+GRIN
+GVDB
+Gene ATLAS
+Gene Expression Commons
+GeneBase
+GeneTalk
+Global database for neglected tropical diseases
+GlycoFly
+HIM
+HISTome2
+HMDB
+HOCTAR
+HPVbase
+HPVdb
+HSPW
+HYPO
+HapRice
+HomeoDB
+IARC TP53 Database
+ICSD
+IDR
+IHEC Data Portal
+IMP
+ISDB
+ISOdb
+ISOexpresso
+IgE-mediated atopic diseases transcriptome collection
+JAMIR-eQTL
+JET2 Viewer
+KMarkerDB
+KNOTTIN
+LAMP2
+LANL hemorrhagic fever virus database
+LMDB
+Laminin-database
+Lancaster Sensorimotor Norms
+Literome
+LmSmdB
+MAGIC
+MANTA
+MCGD
+MDDB
+MEGADOCK-Web
+MIAS
+MINTbase
+MIPS PlantsDB
+MMPdb
+MNHN_herbarium
+MOBCdb
+MSKKP
+MS_HistoneDB
+MScDB
+MSeqDR mvTool
+MUDDD
+MaizeQTL
+MalarImDB
+Mammalian metabolic enzymes database
+Meloidogyne_proteome
+MetNet Online
+MetaBase
+MiGD
+ModelSEED Biochemistry Database
+Mouse Genomes Project
+MycoBASE
+MycoResistance
+NBIGV-DB
+NCBI
+NGS Catalog
+NGS-Trex
+NIF
+NPASS
+NPAtlas
+Nabelek
+Neisseria Base
+NetPath FSH
+Non-B DB
+NutriChem
+OncomiR
+Organ System Heterogeneity DB
+OryzaPG-DB
+PASS2
+PGDB
+PLEAD
+PMDB
+PMIDB
+PMSDN
+POGs
+PR2
+PRIMED
+PRODORIC
+Pancreatic Expression Database
+Peptipedia
+PharmVar
+Photochemistry_DB
+PlaPPISite
+PlanExp
+PlantAPAdb
+PlantcircBase
+Platinum
+PmiRExAt
+PoPoolation DB
+Pragmatic MDR
+PreMedKB
+ProCarDB
+PubChem promiscuity
+PvP01-DB
+RAPID
+REFOLD
+RIBOi
+RKN Lethal DB
+RadishGD
+ReCount
+RedLine
+RegenDbase
+RegulatorDB
+Regulatory Circuits
+Repbase
+RepeatsDB-lite
+ResMarkerDB
+RhesusBase PopGateway
+RiceDB
+RiceMetaSysB
+RiceRelativesGD
+Rust Expression Browser
+SABRE2
+SAPD
+SCDE
+SCOP2
+SPRD
+STINGRAY
+STarMirDB
+SUBA
+SWI/SNF-Infobase
+SaccharomycesSensuStricto
+Samply.MDR
+Saponins mass spectrometry database
+Score
+Seed Pro-Nutra Care
+SeedSeq
+Seeds in Chernobyl
+Sifting Families
+SignBase
+Simple ClinVar
+SinEx DB
+Skeleton Genetics
+Spliceosome Database
+SynMap
+SysteMHC Atlas
+TMBB-DB
+TMD
+TMDB
+TMO
+TNO MIDC
+TR-DB
+TUATinsecta
+TUL Herbarium
+Togo_herbarium
+TomExpress
+URS DataBase
+UniProt-GOA
+VAMMPIRE
+VARIDT
+VICTOR
+VIS
+VOLCORE
+VSeed
+ViBrism DB
+VirtualSeed
+Virus Database
+Viruses.STRING
+WheatQTLdb
+WholeCellSimDB
+WormQTL2
+ZINC20
+antiSMASH-DB
+dbEM
+dbPTB
+eHOMD
+eQTL Catalogue
+flyDIVaS
+iHMP
+iPSCORE
+iPathDB
+lncEFdb
+lncRNAKB
+miRTargetLink
+miRToolsGallery
+ncRNAdb
+piRDisease
+proGenomes
+qPCR primers database
+rPredictorDB
+regBase
+sRNAdb
+switchgrass transcript sequence database and gene expression atlas
+wild rice germplasm database

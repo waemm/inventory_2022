@@ -1,0 +1,133 @@
+┌────────────────────────────────────────────────────────────────────────────────┐
+│             FALSE POSITIVE REVIEW CONSOLIDATION - QUICK REFERENCE              │
+│                            November 26, 2025                                   │
+└────────────────────────────────────────────────────────────────────────────────┘
+
+═══════════════════════════════════════════════════════════════════════════════
+ SUMMARY STATS
+═══════════════════════════════════════════════════════════════════════════════
+
+Total Papers:           10,529
+False Positives:         4,984 (47.3%)
+True Bioresources:       5,545 (52.7%)
+Chunks Processed:           22
+
+═══════════════════════════════════════════════════════════════════════════════
+ OUTPUT FILES (in false_positive_analysis/)
+═══════════════════════════════════════════════════════════════════════════════
+
+DATA FILES:
+  consolidated_full_review.csv        1.8 MB    10,529 papers   [ALL PAPERS]
+  consolidated_fp_only.csv            797 KB     4,984 papers   [FALSE POSITIVES]
+  consolidated_bioresources.csv       1.0 MB     5,545 papers   [TRUE BIORESOURCES]
+
+DOCUMENTATION:
+  CONSOLIDATION_INDEX.md              Quick reference index
+  CONSOLIDATION_SUMMARY.txt           Comprehensive summary
+  CONSOLIDATION_REPORT.md             Detailed analysis report
+  QUICK_REFERENCE.txt                 This file - Quick stats card
+
+STATISTICS:
+  consolidation_statistics.json       JSON with per-chunk stats
+
+═══════════════════════════════════════════════════════════════════════════════
+ TOP PERFORMERS (Lowest FP Rate)
+═══════════════════════════════════════════════════════════════════════════════
+
+Chunk 03:  4.6% FP (476 bioresources, 23 FP)
+Chunk 02:  4.8% FP (476 bioresources, 24 FP)
+Chunk 04:  8.2% FP (360 bioresources, 32 FP)
+Chunk 01:  9.0% FP (455 bioresources, 45 FP)
+
+═══════════════════════════════════════════════════════════════════════════════
+ NEEDS ATTENTION (Highest FP Rate)
+═══════════════════════════════════════════════════════════════════════════════
+
+Chunk 20: 82.1% FP (59 bioresources, 270 FP) ⚠⚠⚠
+Chunk 21: 75.4% FP (123 bioresources, 377 FP) ⚠⚠
+Chunk 13: 74.3% FP (128 bioresources, 371 FP) ⚠⚠
+
+═══════════════════════════════════════════════════════════════════════════════
+ DATA QUALITY ISSUES
+═══════════════════════════════════════════════════════════════════════════════
+
+Duplicates:              3 PMIDs appear twice (0.03%)
+Missing DB Names:        5 bioresources (0.1%)
+Invalid Values:          2 records (0.02%)
+
+═══════════════════════════════════════════════════════════════════════════════
+ CONFIDENCE DISTRIBUTION
+═══════════════════════════════════════════════════════════════════════════════
+
+High:       9,678 papers (91.9%)  ████████████████████████████████████████
+Medium:       841 papers (8.0%)   ███
+Low:            9 papers (0.1%)
+
+═══════════════════════════════════════════════════════════════════════════════
+ URL PRESENCE
+═══════════════════════════════════════════════════════════════════════════════
+
+Has URL:     6,962 papers (66.1%)  ████████████████████████████████
+No URL:      3,566 papers (33.9%)  ████████████████
+
+═══════════════════════════════════════════════════════════════════════════════
+ PYTHON QUICK START
+═══════════════════════════════════════════════════════════════════════════════
+
+# Load all papers
+import pandas as pd
+df = pd.read_csv('consolidated_full_review.csv')
+
+# Load only false positives
+fp = pd.read_csv('consolidated_fp_only.csv')
+
+# Load only bioresources
+bio = pd.read_csv('consolidated_bioresources.csv')
+
+# Load statistics
+import json
+with open('consolidation_statistics.json') as f:
+    stats = json.load(f)
+
+═══════════════════════════════════════════════════════════════════════════════
+ CSV COLUMNS (8 total)
+═══════════════════════════════════════════════════════════════════════════════
+
+1. pmid                   - PubMed ID(s)
+2. title                  - Paper title
+3. has_url                - True/False
+4. is_false_positive      - Y/N
+5. confidence             - high/medium/low
+6. reason                 - Classification reason
+7. database_name          - Short name (bioresources only)
+8. long_database_name     - Full name (bioresources only)
+
+═══════════════════════════════════════════════════════════════════════════════
+ VERIFICATION
+═══════════════════════════════════════════════════════════════════════════════
+
+✓ All 22 chunks processed successfully
+✓ Row counts verified: 4,984 + 5,545 = 10,529
+✓ No processing errors
+✓ UTF-8 encoding preserved
+✓ CSV formatting correct
+
+═══════════════════════════════════════════════════════════════════════════════
+ RECOMMENDED ACTIONS
+═══════════════════════════════════════════════════════════════════════════════
+
+1. Deduplicate 3 duplicate PMIDs
+2. Review 5 bioresources with missing database names
+3. Investigate chunks 13, 20-21 (high FP rates)
+4. Validate edge cases marked as "tools" or "platforms"
+5. Analyze FP reasons for pattern detection
+
+═══════════════════════════════════════════════════════════════════════════════
+ LOCATION
+═══════════════════════════════════════════════════════════════════════════════
+
+/Users/warren/development/GBC/inventory_2022/false_positive_analysis/
+
+═══════════════════════════════════════════════════════════════════════════════
+
+Status: ✓ CONSOLIDATION COMPLETE | Date: 2025-11-26 | Time: < 1 second

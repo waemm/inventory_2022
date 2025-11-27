@@ -1,0 +1,58 @@
+================================================================================
+FUZZY MATCH ALGORITHM CODE REVIEW - QUICK REFERENCE
+================================================================================
+
+STATUS: 🔴 NOT READY FOR PRODUCTION
+
+CRITICAL ISSUES:
+----------------
+1. SAME_DOMAIN over-matching (1,055 matches, ~70-80% FALSE POSITIVE rate)
+   - 37 different databases matched to "memprotmd" (all UK .ac.uk sites)
+   - 25 different databases matched to "morusdb" (all Chinese .edu.cn sites)
+   - Problem: Shared university domain ≠ same database
+
+2. One-to-Many mapping violation (468 baseline DBs with multiple matches)
+   - Violates uniqueness constraint
+   - Caused by SAME_DOMAIN false positives
+
+3. SAME_DOMAIN score too high (2.0 alone triggers HIGH confidence)
+   - Should be 0.5 and require other signals
+   - Generic domains (.ac.uk, .edu.cn, .nih.gov) especially problematic
+
+FALSE POSITIVE EXAMPLES:
+-----------------------
+❌ Phasing Server → memprotmd (different Oxford databases)
+❌ PMC BioC → TB Portals (different NIH databases)  
+❌ PharmMapper → MorusDB (different Chinese universities)
+❌ Breast cancer transcriptome → SysInflam HuDB (same platform, different data)
+
+ESTIMATED METRICS:
+------------------
+False Positive Rate: ~20-30% overall, ~70-80% in SAME_DOMAIN matches
+Target: <5% for production
+Gap: ~4-6x too high 🔴
+
+MUST FIX BEFORE PRODUCTION:
+---------------------------
+1. Reduce SAME_DOMAIN score: 2.0 → 0.5
+2. Add multi-signal requirement for HIGH confidence
+3. Add domain specificity (.ac.uk = 0.25, specific.domain = 0.75)
+4. Enforce one-to-one mapping (select best match)
+5. Manually validate 785 suspicious SAME_DOMAIN matches
+
+REVIEW FILES GENERATED:
+-----------------------
+Priority 1: suspicious_same_domain.csv (785 cases)
+Priority 2: review_sample_same_domain.csv (50 cases)
+Priority 3: edge_case_high_ed_match.csv (371 cases)
+Priority 4: edge_case_low_ed_no_match.csv (250 cases)
+
+TIMELINE TO PRODUCTION:
+-----------------------
+Algorithm fixes: 1-2 days
+Manual validation: 4-5 days
+Re-run and verify: 1 day
+Total: ~7-8 days
+
+RECOMMENDATION: Fix algorithm, re-run matching, then manual review.
+Do NOT use current results in production.

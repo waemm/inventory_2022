@@ -1,0 +1,71 @@
+================================================================================
+URL EXTRACTION RESULTS REVIEW - QUICK SUMMARY
+================================================================================
+Date: 2025-11-27
+Analyst: Code Review System
+
+OVERALL RESULTS
+===============
+Total papers analyzed: 1,108
+Papers with URLs found: 631 (56.9%)
+Issues flagged: 383 (60.7% of URLs found)
+
+ISSUE BREAKDOWN
+===============
+1. DEAD_HIGH_SCORE: 202 cases (32.0%)
+   - URLs that score well but are no longer accessible
+   - Likely CORRECT but databases are offline
+   - Need Internet Archive lookup or updated URLs
+
+2. LOW_SCORE: 152 cases (24.1%)
+   - URLs with very low confidence (score < 20)
+   - Many appear INCORRECT
+   - Need manual review or should be discarded
+
+3. FALSE_POSITIVE_URL: 29 cases (4.6%) ⚠️ CRITICAL
+   - Reference URLs (NCBI, EBI, KEGG, etc.) instead of actual database
+   - Some have HIGH scores (up to 73!) despite being WRONG
+   - These are the most critical errors requiring immediate attention
+
+CRITICAL CASES
+==============
+9 high-confidence FALSE POSITIVES (score ≥ 50):
+- PMID 21992002: BioLexicon → ebi.ac.uk (score: 73) ✗
+- PMID 34181736: CROssBAR → ebi.ac.uk (score: 73) ✗
+- PMID 33767203: NLM-Chem → ncbi.nlm.nih.gov (score: 73) ✗
+- PMID 28981643: MareyMap → cran.r-project.org (score: 65) ✗
+- PMID 28158609: Enzyme Portal → ebi.ac.uk (score: 63) ✗
+- PMID 32859947: Endometrium DB → ebi.ac.uk (score: 63) ✗
+- PMID 32792559: ACDC → ncbi.nlm.nih.gov (score: 55) ✗
+- PMID 24316577: GWAS Catalog → ebi.ac.uk (score: 55) ✗
+- PMID 29470400: RaMP → kegg.jp (score: 50) ✗
+
+ESTIMATED QUALITY
+=================
+High-quality URLs (score ≥ 50, not dead, not false positive): ~248 (39.3%)
+URLs needing manual review: 383 (60.7%)
+
+PRIORITY ACTIONS
+================
+[P0] Manual review of 29 false positives → Find correct URLs
+[P0] Implement reference URL blacklist → Prevent future errors
+[P0] Raise minimum score threshold → Filter low-confidence results
+[P1] Cross-validate with abstracts → Improve accuracy
+[P1] Improve context analysis → Weight "available at" phrases higher
+
+FILES GENERATED
+===============
+1. review_extraction_issues.csv - All 383 flagged cases
+2. review_extraction_summary.md - Detailed analysis with examples
+3. CRITICAL_FALSE_POSITIVES.md - Focus on 29 critical cases
+4. CODE_REVIEW_URL_EXTRACTION.md - Comprehensive technical review
+5. REVIEW_SUMMARY.txt - This quick summary
+
+RECOMMENDATION
+==============
+The URL extraction shows promise but is NOT PRODUCTION READY.
+- Only ~39% of URLs are reliable enough for automated use
+- Critical flaw: No filtering of reference database URLs
+- Estimated 2-4 days of development to fix major issues
+- After fixes, could achieve >80% precision
+================================================================================

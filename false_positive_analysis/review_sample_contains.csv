@@ -1,0 +1,31 @@
+extracted_name,baseline_name,match_type,is_match,score,reasoning,extracted_url,baseline_url,extracted_domain,baseline_domain,edit_distance
+ADReCS-Target,adrecs,"SAME_DOMAIN, contains, url_path_sim=0.87, long_sim=0.92",Y,4.0,"Score=4.0: SAME_DOMAIN, contains, url_path_sim=0.87, long_sim=0.92",http://bioinf.xmu.edu.cn/ADReCS-Target,http://bioinf.xmu.edu.cn/ADReCS,edu.cn,edu.cn,7.0
+RRMdb,rmdb,"edit_dist=1, contains",MAYBE,1.5,"Score=1.5: edit_dist=1, contains",,http://rmdb.stanford.edu,,stanford.edu,1.0
+SRMAtlas,atlas,contains,N,0.5,Score=0.5: contains,,http://zlab.umassmed.edu/atlas/web,,umassmed.edu,3.0
+miRTil,mirt,"edit_dist=2, contains",MAYBE,1.0,"Score=1.0: edit_dist=2, contains",,http://www.isical.ac.in,,ac.in,2.0
+ncrnadatabases.org,database,contains,N,0.5,Score=0.5: contains,http://www.ncrnadatabases.org,http://www.plantenergy.uwa.edu.au/applications/mpic,ncrnadatabases.org,edu.au,10.0
+Rice SNP-seek,rice,contains,N,0.5,Score=0.5: contains,http://snp-seek.irri.org,http://ricedb.plantenergy.uwa.edu.au,irri.org,edu.au,9.0
+MNHN_herbarium,herb,contains,N,0.5,Score=0.5: contains,https://science.mnhn.fr/institution/mnhn/collection/p/item/search/form,http://herb.ac.cn,mnhn.fr,ac.cn,10.0
+DIRECT,biosurveillance analytics resource directory,contains,N,0.5,Score=0.5: contains,http://www.mycancergenome.org/about/direct,http://brd.bsvgateway.org/brd,mycancergenome.org,bsvgateway.org,38.0
+Cpf1-Database,database,contains,N,0.5,Score=0.5: contains,http://www.rgenome.net/cpf1-database/,http://www.plantenergy.uwa.edu.au/applications/mpic,rgenome.net,edu.au,5.0
+se-atlas,atlas,contains,N,0.5,Score=0.5: contains,,http://zlab.umassmed.edu/atlas/web,,umassmed.edu,3.0
+SEVA,seva-db,"SAME_DOMAIN, contains, url_path_sim=1.00, long_sim=1.00",Y,4.0,"Score=4.0: SAME_DOMAIN, contains, url_path_sim=1.00, long_sim=1.00",http://seva.cnb.csic.es,http://seva.cnb.csic.es,csic.es,csic.es,3.0
+ProBiS,probis-database,"SAME_DOMAIN, contains, url_path_sim=1.00",Y,3.5,"Score=3.5: SAME_DOMAIN, contains, url_path_sim=1.00",http://probis.cmm.ki.si/database,http://probis.cmm.ki.si/database,ki.si,ki.si,9.0
+Metacommunity ecology database,database,contains,N,0.5,Score=0.5: contains,,http://www.plantenergy.uwa.edu.au/applications/mpic,,edu.au,22.0
+CardioGenBase,card,contains,N,0.5,Score=0.5: contains,,http://card.mcmaster.ca,,mcmaster.ca,9.0
+UniCarb-DB,unicarb,"SAME_DOMAIN, contains, url_path_sim=1.00",Y,3.5,"Score=3.5: SAME_DOMAIN, contains, url_path_sim=1.00",http://www.unicarb-db.org,http://www.unicarb-db.org,unicarb-db.org,unicarb-db.org,3.0
+Dye-sensitized solar cell database,database,contains,N,0.5,Score=0.5: contains,http://www.dyedb.com,http://www.plantenergy.uwa.edu.au/applications/mpic,dyedb.com,edu.au,26.0
+CoCoPUTs,tissuecocoputs,"SAME_DOMAIN, contains, url_path_sim=0.90",Y,3.5,"Score=3.5: SAME_DOMAIN, contains, url_path_sim=0.90",https://hive.biochemistry.gwu.edu/review/codon2,http://hive.biochemistry.gwu.edu/review/tissue_codon,gwu.edu,gwu.edu,6.0
+CAMPR3,camp,"SAME_DOMAIN, edit_dist=2, contains, url_path_sim=0.98",Y,4.0,"Score=4.0: SAME_DOMAIN, edit_dist=2, contains, url_path_sim=0.98",http://www.camp3.bicnirrh.res.in,http://www.camp.bicnirrh.res.in,res.in,res.in,2.0
+MycoResistance,core,contains,N,0.5,Score=0.5: contains,,http://microbiome.osu.edu,,osu.edu,10.0
+CoMPARA,comparative cellular and molecular biology of longevity database,contains,N,0.5,Score=0.5: contains,,http://genomics.brocku.ca/ccmbl,,brocku.ca,57.0
+RhesusBase PopGateway,pgat,contains,N,0.5,Score=0.5: contains,,http://nwrce.org/pgat,,nwrce.org,17.0
+MaizeQTL,eqtl,contains,N,0.5,Score=0.5: contains,http://data.maizecode.org/maize/qtl/syn10/,http://www.ebi.ac.uk/eqtl,maizecode.org,ac.uk,4.0
+BgeeDB,bgee,"db_suffix_diff, edit_dist=2, contains",Y,2.5,"Score=2.5: db_suffix_diff, edit_dist=2, contains",https://www.bioconductor.org/packages/BgeeDB/,http://bgee.org,bioconductor.org,bgee.org,2.0
+Korean NHIS Allergic Disease Database,database,contains,N,0.5,Score=0.5: contains,https://nhiss.nhis.or.kr,http://www.plantenergy.uwa.edu.au/applications/mpic,or.kr,edu.au,29.0
+RNA 3D Motif Atlas,atlas,contains,N,0.5,Score=0.5: contains,http://rna.bgsu.edu/motifs,http://zlab.umassmed.edu/atlas/web,bgsu.edu,umassmed.edu,13.0
+Seeds in Chernobyl,seed,contains,N,0.5,Score=0.5: contains,http://www.chernobylproteomics.sav.sk,"http://pubseed.theseed.org/, http://rast.nmpdr.org",sav.sk,theseed.org,14.0
+Medical schools outcomes database,database,contains,N,0.5,Score=0.5: contains,,http://www.plantenergy.uwa.edu.au/applications/mpic,,edu.au,25.0
+HISTome2,histome,"digit_only_diff, edit_dist=1, contains",Y,3.5,"Score=3.5: digit_only_diff, edit_dist=1, contains",http://www.actrec.gov.in/histome2/,"http://www.iiserpune.ac.in/ÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬ÃÂÃÂÃÂÃÂ, http://www.actrec.gov.in/histome",gov.in,ac.in,1.0
+NetPath FSH,netpath,contains,N,0.5,Score=0.5: contains,http://www.netpath.org,"http://www.netpath.org, http://www.netpath.org/pathways?path_id=NetPath_172",netpath.org,"netpath.org, http:",4.0
+Herb and Western medicine interactions database,database,contains,N,0.5,Score=0.5: contains,https://drug-herb-interaction.netlify.com,http://www.plantenergy.uwa.edu.au/applications/mpic,netlify.com,edu.au,39.0

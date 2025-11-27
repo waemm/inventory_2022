@@ -1,0 +1,163 @@
+{
+  "total_papers": 10529,
+  "false_positives": 4984,
+  "true_bioresources": 5545,
+  "fp_percentage": 47.33592933801881,
+  "chunks_processed": 22,
+  "chunk_details": [
+    {
+      "chunk": 1,
+      "total": 500,
+      "false_positives": 45,
+      "bioresources": 455,
+      "fp_percentage": 9.0
+    },
+    {
+      "chunk": 2,
+      "total": 500,
+      "false_positives": 24,
+      "bioresources": 476,
+      "fp_percentage": 4.8
+    },
+    {
+      "chunk": 3,
+      "total": 499,
+      "false_positives": 23,
+      "bioresources": 476,
+      "fp_percentage": 4.609218436873747
+    },
+    {
+      "chunk": 4,
+      "total": 392,
+      "false_positives": 32,
+      "bioresources": 360,
+      "fp_percentage": 8.16326530612245
+    },
+    {
+      "chunk": 5,
+      "total": 500,
+      "false_positives": 90,
+      "bioresources": 410,
+      "fp_percentage": 18.0
+    },
+    {
+      "chunk": 6,
+      "total": 500,
+      "false_positives": 184,
+      "bioresources": 316,
+      "fp_percentage": 36.8
+    },
+    {
+      "chunk": 7,
+      "total": 501,
+      "false_positives": 283,
+      "bioresources": 218,
+      "fp_percentage": 56.4870259481038
+    },
+    {
+      "chunk": 8,
+      "total": 501,
+      "false_positives": 339,
+      "bioresources": 162,
+      "fp_percentage": 67.66467065868264
+    },
+    {
+      "chunk": 9,
+      "total": 500,
+      "false_positives": 254,
+      "bioresources": 246,
+      "fp_percentage": 50.8
+    },
+    {
+      "chunk": 10,
+      "total": 500,
+      "false_positives": 335,
+      "bioresources": 165,
+      "fp_percentage": 67.0
+    },
+    {
+      "chunk": 11,
+      "total": 500,
+      "false_positives": 262,
+      "bioresources": 238,
+      "fp_percentage": 52.400000000000006
+    },
+    {
+      "chunk": 12,
+      "total": 499,
+      "false_positives": 312,
+      "bioresources": 187,
+      "fp_percentage": 62.525050100200396
+    },
+    {
+      "chunk": 13,
+      "total": 499,
+      "false_positives": 371,
+      "bioresources": 128,
+      "fp_percentage": 74.34869739478958
+    },
+    {
+      "chunk": 14,
+      "total": 500,
+      "false_positives": 230,
+      "bioresources": 270,
+      "fp_percentage": 46.0
+    },
+    {
+      "chunk": 15,
+      "total": 500,
+      "false_positives": 280,
+      "bioresources": 220,
+      "fp_percentage": 56.00000000000001
+    },
+    {
+      "chunk": 16,
+      "total": 500,
+      "false_positives": 285,
+      "bioresources": 215,
+      "fp_percentage": 56.99999999999999
+    },
+    {
+      "chunk": 17,
+      "total": 500,
+      "false_positives": 291,
+      "bioresources": 209,
+      "fp_percentage": 58.199999999999996
+    },
+    {
+      "chunk": 18,
+      "total": 500,
+      "false_positives": 278,
+      "bioresources": 222,
+      "fp_percentage": 55.60000000000001
+    },
+    {
+      "chunk": 19,
+      "total": 499,
+      "false_positives": 315,
+      "bioresources": 184,
+      "fp_percentage": 63.126252505010015
+    },
+    {
+      "chunk": 20,
+      "total": 329,
+      "false_positives": 270,
+      "bioresources": 59,
+      "fp_percentage": 82.06686930091185
+    },
+    {
+      "chunk": 21,
+      "total": 500,
+      "false_positives": 377,
+      "bioresources": 123,
+      "fp_percentage": 75.4
+    },
+    {
+      "chunk": 22,
+      "total": 310,
+      "false_positives": 104,
+      "bioresources": 206,
+      "fp_percentage": 33.5483870967742
+    }
+  ]
+}

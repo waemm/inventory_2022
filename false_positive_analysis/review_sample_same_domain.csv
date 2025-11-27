@@ -1,0 +1,51 @@
+extracted_name,baseline_name,match_type,is_match,score,reasoning,extracted_url,baseline_url,extracted_domain,baseline_domain,edit_distance
+Diatom Portal,mediadb,SAME_DOMAIN,Y,2.0,Score=2.0: SAME_DOMAIN,http://networks.systemsbiology.net/diatom-portal/,http://mediadb.systemsbiology.net,systemsbiology.net,systemsbiology.net,12.0
+BRCA LOVD,exposome-explorer,SAME_DOMAIN,Y,2.0,Score=2.0: SAME_DOMAIN,http://brca.iarc.fr/LOVD,http://exposome-explorer.iarc.fr,iarc.fr,iarc.fr,15.0
+Nanosized Cancer Database,nanosized cancer polymarker biochip project,"SAME_DOMAIN, url_path_sim=1.00, long_sim=0.85",Y,3.5,"Score=3.5: SAME_DOMAIN, url_path_sim=1.00, long_sim=0.85",https://serviziweb.ulss12.ve.it/firbabo,http://serviziweb.ulss12.ve.it/firbabo,ve.it,ve.it,23.0
+LANL hemorrhagic fever virus database,hemorrhagic fever virus database,"SAME_DOMAIN, contains, url_path_sim=1.00, long_sim=0.93",Y,4.0,"Score=4.0: SAME_DOMAIN, contains, url_path_sim=1.00, long_sim=0.93",http://hfv.lanl.gov,http://hfv.lanl.gov,lanl.gov,lanl.gov,5.0
+MMPdb,rna structurome database,SAME_DOMAIN,Y,2.0,Score=2.0: SAME_DOMAIN,https://mmpdb.eeob.iastate.edu/,http://structurome.bb.iastate.edu,iastate.edu,iastate.edu,21.0
+ConsRM,morusdb,SAME_DOMAIN,Y,2.0,Score=2.0: SAME_DOMAIN,https://www.xjtlu.edu.cn/biologicalsciences/con,http://morus.swu.edu.cn/morusdb,edu.cn,edu.cn,5.0
+BioSD,biosamples,"SAME_DOMAIN, long_sim=1.00",Y,2.5,"Score=2.5: SAME_DOMAIN, long_sim=1.00",http://www.ebi.ac.uk/biosamples,"http://www.ebi.ac.uk/biosamples, http://www.ebi.ac.uk/about/terms-of-use",ac.uk,ac.uk,6.0
+Togo_herbarium,florabank1,SAME_DOMAIN,Y,2.0,Score=2.0: SAME_DOMAIN,https://www.gbif.org/dataset/b05dd467-aaf8-4c67-843c-27f049057b78,"http://data.gbif.org/datasets/resource/10969/, http://projects.biodiversity.be/ifblAll",gbif.org,gbif.org,11.0
+DCMP,database of cancer mutant protein domains,"SAME_DOMAIN, url_path_sim=1.00, long_sim=1.00",Y,3.5,"Score=3.5: SAME_DOMAIN, url_path_sim=1.00, long_sim=1.00",https://dcmp.vit.ac.in/,http://dcmp.vit.ac.in,ac.in,ac.in,37.0
+FGB,sidd,"SAME_DOMAIN, url_path_sim=0.81",Y,3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.81",http://mlg.hit.edu.cn/FGB/,http://mlg.hit.edu.cn/SIDD,edu.cn,edu.cn,4.0
+ModBase,pmp,"SAME_DOMAIN, url_path_sim=1.00",Y,3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=1.00",http://www.proteinmodelportal.org/,http://www.proteinmodelportal.org,proteinmodelportal.org,proteinmodelportal.org,7.0
+e!DAL,metacrop,"SAME_DOMAIN, url_path_sim=0.84",Y,3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.84",http://edal.ipk-gatersleben.de,http://metacrop.ipk-gatersleben.de,ipk-gatersleben.de,ipk-gatersleben.de,7.0
+Murine basal ganglia database,ebrains,"SAME_DOMAIN, url_path_sim=1.00",Y,3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=1.00",https://kg.ebrains.eu,http://kg.ebrains.eu,ebrains.eu,ebrains.eu,24.0
+OligoNet,linps,SAME_DOMAIN,Y,2.0,Score=2.0: SAME_DOMAIN,https://daniellyz200608105.shinyapps.io/OligoNet/,http://mahshaaban.shinyapps.io/LINPSAPP,shinyapps.io,shinyapps.io,5.0
+K-SCD,oryzapg,SAME_DOMAIN,Y,2.0,Score=2.0: SAME_DOMAIN,http://www.cv.jinkan.kyoto-u.ac.jp/site/uploads/K-SCD.xlsm,http://oryzapg.iab.keio.ac.jp,ac.jp,ac.jp,7.0
+GDB,gdbmedchem,"SAME_DOMAIN, url_path_sim=1.00",Y,3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=1.00",http://www.gdb.unibe.ch,http://gdb.unibe.ch,unibe.ch,unibe.ch,7.0
+MultiDomainBenchmark,mdb,"SAME_DOMAIN, url_path_sim=1.00",Y,3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=1.00",http://csc.columbusstate.edu/carroll/MDB/,http://csc.columbusstate.edu/carroll/MDB,columbusstate.edu,columbusstate.edu,17.0
+FusionHub,swmd,SAME_DOMAIN,Y,2.0,Score=2.0: SAME_DOMAIN,https://fusionhub.persistent.co.in,http://www.swmd.co.in,co.in,co.in,8.0
+FlyVar,ggvd,"SAME_DOMAIN, long_sim=0.71",Y,2.5,"Score=2.5: SAME_DOMAIN, long_sim=0.71",http://www.iipl.fudan.edu.cn/FlyVar,http://animal.nwsuaf.edu.cn/GoatVar,edu.cn,edu.cn,5.0
+LncATLAS,superfly,SAME_DOMAIN,Y,2.0,Score=2.0: SAME_DOMAIN,lncatlas.crg.eu,http://superfly.crg.eu,crg.eu,crg.eu,8.0
+Plant Editosome Database,edk,"SAME_DOMAIN, url_path_sim=0.94",Y,3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.94",http://bigd.big.ac.cn/ped,http://bigd.big.ac.cn/edk,ac.cn,ac.cn,22.0
+PINOT,memprotmd,SAME_DOMAIN,Y,2.0,Score=2.0: SAME_DOMAIN,http://www.reading.ac.uk/bioinf/PINOT/PINOT_form.html,http://memprotmd.bioch.ox.ac.uk,ac.uk,ac.uk,7.0
+OMCD,mosaic,SAME_DOMAIN,Y,2.0,Score=2.0: SAME_DOMAIN,http://www.oncomir.umn.edu/omcd/,http://mosaic.cs.umn.edu,umn.edu,umn.edu,5.0
+DrugR+,drugr,"SAME_DOMAIN, edit_dist=1, contains, url_path_sim=1.00",Y,4.5,"Score=4.5: SAME_DOMAIN, edit_dist=1, contains, url_path_sim=1.00",http://www.drugr.ir,http://www.drugr.ir,drugr.ir,drugr.ir,1.0
+AQUA-MER,besc,SAME_DOMAIN,Y,2.0,Score=2.0: SAME_DOMAIN,https://aquamer.ornl.gov,http://besckb.ornl.gov,ornl.gov,ornl.gov,8.0
+MorphDB,flad,SAME_DOMAIN,Y,2.0,Score=2.0: SAME_DOMAIN,http://bioinformatics.psb.ugent.be/webtools/morphdb/morphDB/index/,http://forensic.ugent.be/FLAD,ugent.be,ugent.be,6.0
+T2DiACoD,circad,SAME_DOMAIN,Y,2.0,Score=2.0: SAME_DOMAIN,http://t2diacod.igib.res.in/,http://clingen.igib.res.in/circad,res.in,res.in,5.0
+ZebraShare,zfin,SAME_DOMAIN,Y,2.0,Score=2.0: SAME_DOMAIN,https://zfin.org/action/zebrashare,http://zfin.org,zfin.org,zfin.org,9.0
+CassavaGD,fantom5,SAME_DOMAIN,Y,2.0,Score=2.0: SAME_DOMAIN,http://cassava.psc.riken.jp/,http://fantom.gsc.riken.jp,riken.jp,riken.jp,8.0
+JGI Genome Portal,gold,"SAME_DOMAIN, url_path_sim=0.82",Y,3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.82",http://genome.jgi.doe.gov,http://gold.jgi.doe.gov,doe.gov,doe.gov,15.0
+Vaxvec,dnavaxdb,"SAME_DOMAIN, url_path_sim=0.80",Y,3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.80",http://www.violinet.org/vaxvec,http://www.violinet.org/dnavaxdb,violinet.org,violinet.org,6.0
+DbVar,dbgap,"SAME_DOMAIN, edit_dist=2, url_path_sim=0.86",Y,3.5,"Score=3.5: SAME_DOMAIN, edit_dist=2, url_path_sim=0.86",http://www.ncbi.nlm.nih.gov/dbvar,http://www.ncbi.nlm.nih.gov/gap,nih.gov,nih.gov,2.0
+RPGD,rhododendron plant genome database,"SAME_DOMAIN, url_path_sim=1.00, long_sim=1.00",Y,3.5,"Score=3.5: SAME_DOMAIN, url_path_sim=1.00, long_sim=1.00",http://bioinfor.kib.ac.cn/RPGD/,http://bioinfor.kib.ac.cn/RPGD,ac.cn,ac.cn,30.0
+LipidGO,pfsnp,SAME_DOMAIN,Y,2.0,Score=2.0: SAME_DOMAIN,http://compbio.ddns.comp.nus.edu.sg/%7elipidgo/index.php,http://pfs.nus.edu.sg,edu.sg,edu.sg,6.0
+Cattle Gene Network,qtldb,SAME_DOMAIN,Y,2.0,Score=2.0: SAME_DOMAIN,http://www.animalgenome.org/cgi-bin/host/reecylab/d,http://www.animalgenome.org/QTLdb,animalgenome.org,animalgenome.org,17.0
+Aging Atlas,synbiolgdb,SAME_DOMAIN,Y,2.0,Score=2.0: SAME_DOMAIN,https://bigd.big.ac.cn/aging/index,http://bioinformatics.ac.cn/synbiolgdb,ac.cn,ac.cn,10.0
+CMV Infection Database,cmvdb,"SAME_DOMAIN, long_sim=1.00",Y,2.5,"Score=2.5: SAME_DOMAIN, long_sim=1.00",http://shaktisahislab.com/include/CMV/,"http://shaktisahislab.com/include/CMV/, http://weislab.com/WeiDOCK/include/content/CMV",shaktisahislab.com,shaktisahislab.com,17.0
+ERA,the european radiobiological archives,"SAME_DOMAIN, url_path_sim=1.00, long_sim=0.94",Y,3.5,"Score=3.5: SAME_DOMAIN, url_path_sim=1.00, long_sim=0.94",https://era.bfs.de,http://era.bfs.de,bfs.de,bfs.de,34.0
+MetaStorm,expresso,SAME_DOMAIN,Y,2.0,Score=2.0: SAME_DOMAIN,http://bench.cs.vt.edu/MetaStorm/,http://bioinformatics.cs.vt.edu/expresso,vt.edu,vt.edu,8.0
+MGPP,mgp portal,"SAME_DOMAIN, url_path_sim=1.00, long_sim=1.00",Y,3.5,"Score=3.5: SAME_DOMAIN, url_path_sim=1.00, long_sim=1.00",https://research.nhgri.nih.gov/mnemiopsis/,http://research.nhgri.nih.gov/mnemiopsis,nih.gov,nih.gov,6.0
+ProBiS-Dock Database,probis-dock,"SAME_DOMAIN, contains, url_path_sim=1.00",Y,3.5,"Score=3.5: SAME_DOMAIN, contains, url_path_sim=1.00",http://probis-dock-database.insilab.org,http://probis-dock-database.insilab.org,insilab.org,insilab.org,9.0
+muddy_db,linps,SAME_DOMAIN,Y,2.0,Score=2.0: SAME_DOMAIN,https://muddy-db.shinyapps.io/muddy_db/,http://mahshaaban.shinyapps.io/LINPSAPP,shinyapps.io,shinyapps.io,8.0
+IntmiR,circad,SAME_DOMAIN,Y,2.0,Score=2.0: SAME_DOMAIN,rgcb.res.in/intmir,http://clingen.igib.res.in/circad,res.in,res.in,6.0
+C. elegans functional interactome,hir,"SAME_DOMAIN, url_path_sim=0.80",Y,3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.80",http://worm.biomedtzc.cn,http://human.biomedtzc.cn,biomedtzc.cn,biomedtzc.cn,31.0
+SWI/SNF-Infobase,swi/snf infobase,"SAME_DOMAIN, edit_dist=1, url_path_sim=1.00",Y,4.0,"Score=4.0: SAME_DOMAIN, edit_dist=1, url_path_sim=1.00",http://scbt.sastra.edu/swisnfdb/index.php,http://scbt.sastra.edu/swisnfdb/index.php,sastra.edu,sastra.edu,1.0
+PolyprOnline,respire,SAME_DOMAIN,Y,2.0,Score=2.0: SAME_DOMAIN,http://www.dsimb.inserm.fr/dsimb_tools/polyproline,http://www.dsimb.inserm.fr/respire,inserm.fr,inserm.fr,9.0
+PvP01-DB,pvp01,"SAME_DOMAIN, contains, url_path_sim=1.00",Y,3.5,"Score=3.5: SAME_DOMAIN, contains, url_path_sim=1.00",http://www.scfbio-iitd.res.in/PvP01,http://www.scfbio-iitd.res.in/PvP01,res.in,res.in,3.0
+DCDB,covalentindb,"SAME_DOMAIN, url_path_sim=0.82",Y,3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.82",http://www.cls.zju.edu.cn/dcdb/,http://cadd.zju.edu.cn/cidb,edu.cn,edu.cn,10.0
+IHEC Data Portal,ihec,"SAME_DOMAIN, contains, url_path_sim=1.00",Y,3.5,"Score=3.5: SAME_DOMAIN, contains, url_path_sim=1.00",http://epigenomesportal.ca/ihec,http://epigenomesportal.ca/ihec,epigenomesportal.ca,epigenomesportal.ca,12.0
+EGTC,exchangeable gene trap clones,"SAME_DOMAIN, url_path_sim=1.00, long_sim=0.87",Y,3.5,"Score=3.5: SAME_DOMAIN, url_path_sim=1.00, long_sim=0.87",http://egtc.jp,http://egtc.jp,egtc.jp,egtc.jp,25.0

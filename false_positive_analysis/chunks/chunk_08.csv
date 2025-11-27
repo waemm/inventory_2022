@@ -1,0 +1,501 @@
+pmid,title,has_resource_url,resource_url
+23761449,PosMed: Ranking genes and bioresources based on Semantic Web Association Study.,True,http://biolod.org/PosMed
+29036298,myVCF: a desktop application for high-throughput mutations data management.,True,https://apietrelli.github.io/myVCF/
+31028400,"Updated MS²PIP web server delivers fast and accurate MS² peak intensity prediction for multiple fragmentation methods, instruments and labeling techniques.",True,https://iomics.ugent.be/ms2pip/
+24564496,RMaNI: Regulatory Module Network Inference framework.,True,http://inspect.braembl.org.au/bi/inspect/rmani
+31836898,SGID: a comprehensive and interactive database of the silkworm.,False,
+24838565,DINIES: drug-target interaction network inference engine based on supervised analysis.,True,http://www.genome.jp/tools/dinies/
+33672700,PSC-db: A Structured and Searchable 3D-Database for Plant Secondary Compounds.,False,
+27105848,miRNet - dissecting miRNA-target interactions and functional associations through network-based visual analysis.,True,http://www.mirnet.ca
+31680168,TSEA-DB: a trait-tissue association map for human complex traits and diseases.,True,https://bioinfo.uth.edu/TSEADB/
+33104800,FlyRNAi.org-the database of the Drosophila RNAi screening center and transgenic RNAi project: 2021 update.,False,
+22067456,FlyRNAi.org--the database of the Drosophila RNAi screening center: 2012 update.,True,http://www.flyrnai.org
+30339216,GFDP: the gene family database in poplar.,False,
+23431356,crcTRP: a translational research platform for colorectal cancer.,False,
+29457794,Recon3D enables a three-dimensional view of gene variation in human metabolism.,True,http://vmh.life
+26590258,"MitoAge: a database for comparative analysis of mitochondrial DNA, with a special focus on animal longevity.",True,http://www.mitoage.org
+34883995,COLAEVA: Visual Analytics and Data Mining Web-Based Tool for Virtual Coaching of Older Adult Populations.,False,
+31848596,RHPCG: a database of the Regulation of the Hippo Pathway in Cancer Genome.,False,
+30820575,Update on cpnDB: a reference database of chaperonin sequences.,True,http://www.cpndb.ca
+31081014,iMKT: the integrative McDonald and Kreitman test.,True,https://imkt.uab.cat
+32421831,ToxicoDB: an integrated database to mine and visualize large-scale toxicogenomic datasets.,False,
+32061934,HMI-PRED: A Web Server for Structural Prediction of Host-Microbe Interactions Based on Interface Mimicry.,True,https://interactome.ku.edu.tr/hmi
+26635394,RBP-Var: a database of functional variants involved in regulation mediated by RNA-binding proteins.,True,http://www.rbp-var.biols.ac.cn/
+25009553,YouGenMap: a web platform for dynamic multi-comparative mapping and visualization of genetic maps.,True,http://conifergdb.miamioh.edu/yougenmap
+25540186,Knowledge-based modeling of peptides at protein interfaces: PiPreD.,True,http://www.bioinsilico.org/PIPRED
+24244640,CNVannotator: a comprehensive annotation server for copy number variation in the human genome.,True,http://bioinfo.mc.vanderbilt.edu/CNVannotator/
+26343150,"Exploring Natural Products from the Biodiversity of Pakistan for Computational Drug Discovery Studies: Collection, Optimization, Design and Development of A Chemical Database (ChemDP).",True,http://www.chemdp.com
+28039679,Q2Stress: A database for multiple cues to stress assignment in Italian.,False,
+33186463,Exploring functionally annotated transcriptional consensus regulatory elements with CONREL.,True,https://bcglab.cibio.unitn.it/conrel
+25903923,KaBOB: ontology-based semantic integration of biomedical databases.,False,
+33084862,BastionHub: a universal platform for integrating and analyzing substrates secreted by Gram-negative bacteria.,True,http://bastionhub.erc.monash.edu/
+21700574,"Overview of FEED, the feeding experiments end-user database.",False,
+33854104,"BonZeb: open-source, modular software tools for high-resolution zebrafish tracking and analysis.",False,
+25198774,PfalDB: an integrated drug target and chemical database for Plasmodium falciparum.,True,http://pfaldb.jnu.ac.in
+22139918,AutismKB: an evidence-based knowledgebase of autism genetics.,True,http://autismkb.cbi.pku.edu.cn
+30365025,SSRome: an integrated database and pipelines for exploring microsatellites in all organisms.,False,
+28472345,STOPGAP: a database for systematic target opportunity assessment by genetic association predictions.,True,http://stopgapwebapp.com
+27977206,CanProVar 2.0: An Updated Database of Human Cancer Proteome Variation.,False,
+25996941,CleavPredict: A Platform for Reasoning about Matrix Metalloproteinases Proteolytic Events.,True,http://cleavpredict.sanfordburnham.org
+32765587,ABC-GWAS: Functional Annotation of Estrogen Receptor-Positive Breast Cancer Genetic Variants.,True,http://education.knoweng.org/abc-gwas/
+24253915,MEGANTE: a web-based system for integrated plant genome annotation.,True,https://megante.dna.affrc.go.jp/
+32275651,ORANGE: A CRISPR/Cas9-based genome editing toolbox for epitope tagging of endogenous proteins in neurons.,False,
+30371760,GCDB: a glaucomatous chemogenomics database for in silico drug discovery.,True,http://cadd.pharmacy.nankai.edu.cn/gcdb/home
+21223570,A platform for processing expression of short time series (PESTS).,True,http://www.mailman.columbia.edu/academic-departments/biostatistics/research-service/software-development
+27780248,TheSNPpit-A High Performance Database System for Managing Large Scale SNP Data.,False,
+25883148,I-TASSER server: new development for protein structure and function predictions.,True,http://zhanglab.ccmb.med.umich.edu/I-TASSER
+28445744,NMRbox: A Resource for Biomolecular NMR Computation.,False,
+28402462,Omicseq: a web-based search engine for exploring omics datasets.,True,http://www.omicseq.org
+23185044,OikoBase: a genomics and developmental transcriptomics resource for the urochordate Oikopleura dioica.,True,http://www.geneontology.org/
+29426939,SeagrassDB: An open-source transcriptomics landscape for phylogenetically profiled seagrasses and aquatic plants.,True,http://115.146.91.129/index.php
+27179030,DeAnnIso: a tool for online detection and annotation of isomiRs from small RNA sequencing data.,True,http://mcg.ustc.edu.cn/bsc/deanniso/
+24861622,MORPHIN: a web tool for human disease research by projecting model organism biology onto a human integrated gene network.,True,http://www.inetbio.org/morphin
+33879798,"ODFM, an omics data resource from microorganisms associated with fermented foods.",False,
+31218882,SeqScrub: a web tool for automatic cleaning and annotation of FASTA file headers for bioinformatic applications.,True,http://bioinf.scmb.uq.edu.au/seqscrub
+32669368,CeMbio - The <i>Caenorhabditis elegans</i> Microbiome Resource.,False,
+21718467,InterMitoBase: an annotated database and analysis platform of protein-protein interactions for human mitochondria.,False,
+25122463,RLIMS-P: an online text-mining tool for literature-based extraction of protein phosphorylation information.,True,http://www.proteininformationresource.org/rlimsp/
+26010234,SEGEL: A Web Server for Visualization of Smoking Effects on Human Lung Gene Expression.,True,http://www.chengfeng.info/smoking_database.html
+28782992,PDTCM: a systems pharmacology platform of traditional Chinese medicine for psoriasis.,False,
+33177529,"DISPERSE, a trait database to assess the dispersal potential of European aquatic macroinvertebrates.",False,
+27885171,SAPFLUXNET: towards a global database of sap flow measurements.,False,
+29745832,cmFSM: a scalable CPU-MIC coordinated drug-finding tool by frequent subgraph mining.,False,
+27924039,FlyRNAi.org-the database of the Drosophila RNAi screening center and transgenic RNAi project: 2017 update.,True,http://fgr.hms.harvard.edu
+30581839,ISOdb: A Comprehensive Database of Full-Length Isoforms Generated by Iso-Seq.,False,
+34034817,PhenCards: a data resource linking human phenotype information to biomedical knowledge.,True,https://phencards.org
+33777032,VaximmutorDB: A Web-Based Vaccine Immune Factor Database and Its Application for Understanding Vaccine-Induced Immune Mechanisms.,False,
+31097708,TYGS is an automated high-throughput platform for state-of-the-art genome-based taxonomy.,False,
+28186905,HMMCAS: A Web Tool for the Identification and Domain Annotations of CAS Proteins.,True,http://i.uestc.edu.cn/hmmcas
+26813635,PMD: A Resource for Archiving and Analyzing Protein Microarray data.,True,http://www.proteinmicroarray.cn
+31375721,SPECTRUM - A MATLAB Toolbox for Proteoform Identification from Top-Down Proteomics Data.,False,
+34019636,pLannotate: engineered plasmid annotation.,True,http://plannotate.barricklab.org/
+33177631,HRRD: a manually-curated database about the regulatory relationship between HPV and host RNA.,True,http://www.hmuhrrd.com/HRRD
+24090499,InsertionMapper: a pipeline tool for the identification of targeted sequences from multidimensional high throughput sequencing data.,True,http://bo.csam.montclair.edu/du/insertionmapper
+23180760,Genomics of Drug Sensitivity in Cancer (GDSC): a resource for therapeutic biomarker discovery in cancer cells.,True,http://www.cancerRxgene.org
+29868062,ARMOUR - A Rice miRNA: mRNA Interaction Resource.,False,
+30395323,Plasmid ATLAS: plasmid visual analytics and identification in high-throughput sequencing data.,True,http://www.patlas.site
+31174603,NanoARG: a web service for detecting and contextualizing antimicrobial resistance genes from nanopore-derived metagenomes.,True,https://bench.cs.vt.edu/nanoarg
+30534599,New Insights into Human Nostril Microbiome from the Expanded Human Oral Microbiome Database (eHOMD): a Resource for the Microbiome of the Human Aerodigestive Tract.,True,http://www.ehomd.org
+28522612,GenomeVIP: a cloud platform for genomic variant discovery and interpretation.,False,
+24330842,TRAPID: an efficient online tool for the functional and comparative analysis of de novo RNA-Seq transcriptomes.,True,http://bioinformatics.psb.ugent.be/webtools/trapid/
+28387819,SLiMSearch: a framework for proteome-wide discovery and annotation of functional modules in intrinsically disordered regions.,True,http://slim.ucd.ie/slimsearch/
+32226440,PIANO: A Web Server for Pseudouridine-Site (Ψ) Identification and Functional Annotation.,True,http://piano.rnamd.com
+26394715,SEQMINER: An R-Package to Facilitate the Functional Interpretation of Sequence-Based Associations.,True,http://cran.r-project.org/web/packages/seqminer
+22513993,INRICH: interval-based enrichment analysis for genome-wide association studies.,True,http://atgu.mgh.harvard.edu/inrich/
+34570769,GRAFIMO: Variant and haplotype aware motif scanning on pangenome graphs.,False,
+25420108,Synergy: a web resource for exploring gene regulation in Synechocystis sp. PCC6803.,True,http://synergy.plantgenie.org
+21969811,G-DOC: a systems medicine platform for personalized oncology.,False,
+22217600,MCScanX: a toolkit for detection and evolutionary analysis of gene synteny and collinearity.,True,http://chibba.pgml.uga.edu/mcscan2/
+30686929,rMyCoPortal - an R package to interface with the Mycology Collections Portal.,False,
+24829452,TogoTable: cross-database annotation system using the Resource Description Framework (RDF) data model.,True,http://togotable.dbcls.jp/
+30073046,NDDN: A Cloud-Based Neuroinformation Database for Developing Neuronal Networks.,False,
+28407035,IcyTree: rapid browser-based visualization for phylogenetic trees and networks.,False,
+23660285,PhenoDigm: analyzing curated annotations to associate animal models with human diseases.,True,http://www.sanger.ac.uk/resources/databases/phenodigm
+22570420,COFACTOR: an accurate comparative algorithm for structure-based protein function annotation.,True,http://zhanglab.ccmb.med.umich.edu/COFACTOR
+33335686,ProdMX: Rapid query and analysis of protein functional domain based on compressed sparse matrices.,False,
+24512305,FADB: a food additive molecular database for in silico screening in food toxicology.,False,
+27472806,"PhyloBot: A Web Portal for Automated Phylogenetics, Ancestral Sequence Reconstruction, and Exploration of Mutational Trajectories.",True,http://www.phylobot.com
+30799505,BioMethyl: an R package for biological interpretation of DNA methylation data.,False,
+22087737,ReCount: a multi-experiment resource of analysis-ready RNA-seq gene count datasets.,False,
+21914205,GOMMA: a component-based infrastructure for managing and analyzing life science ontologies and their evolution.,True,http://dbs.uni-leipzig.de/GOMMA
+34101722,CytoPy: An autonomous cytometry analysis framework.,True,https://cytopy.readthedocs.io/
+23272111,MultiMetEval: comparative and multi-objective analysis of genome-scale metabolic models.,False,
+25196204,Vanno: a visualization-aided variant annotation tool.,True,http://cgts.cgu.edu.tw/vanno
+32392343,Oviz-Bio: a web-based platform for interactive cancer genomics data visualization.,True,https://bio.oviz.org/
+25254639,IDEPI: rapid prediction of HIV-1 antibody epitopes and other phenotypic features from sequence data using a flexible machine learning platform.,False,
+29675816,"BRC4Env, a network of Biological Resource Centres for research in environmental and agricultural sciences.",False,
+23710727,REAPR: a universal tool for genome assembly evaluation.,True,http://www.sanger.ac.uk/resources/software/reapr/
+24953454,VANESA - a software application for the visualization and analysis of networks in system biology applications.,True,http://vanesa.sf.net
+27216254,miRiaD: A Text Mining Tool for Detecting Associations of microRNAs with Diseases.,True,http://biotm.cis.udel.edu/miRiaD
+22408426,Aggregating data for computational toxicology applications: The U.S. Environmental Protection Agency (EPA) Aggregated Computational Toxicology Resource (ACToR) System.,False,
+29788498,CellAtlasSearch: a scalable search engine for single cells.,True,http://www.cellatlassearch.com
+25480116,LAILAPS: the plant science search engine.,True,http://lailaps.ipk-gatersleben.de
+21400696,Inferring protein function from homology using the Princeton Protein Orthology Database (P-POD).,False,
+30908818,RAId: Knowledge-Integrated Proteomics Web Service with Accurate Statistical Significance Assignment.,True,https://www.ncbi.nlm.nih.gov/CBBresearch/Yu/raid
+26283320,Classifying the bacterial gut microbiota of termites and cockroaches: A curated phylogenetic reference database (DictDb).,False,
+22857267,MicrobesFlux: a web platform for drafting metabolic models from the KEGG database.,True,http://tanglab.engineering.wustl.edu/static/MicrobesFlux.html
+34408730,DiTing: A Pipeline to Infer and Compare Biogeochemical Pathways From Metagenomic and Metatranscriptomic Data.,False,
+32985524,SV-HotSpot: detection and visualization of hotspots targeted by structural variants associated with gene expression.,False,
+26884807,LEAFDATA: a literature-curated database for Arabidopsis leaf development.,False,
+25113421,GlycoMaster DB: software to assist the automated identification of N-linked glycopeptides by tandem mass spectrometry.,True,http://www-novo.cs.uwaterloo.ca:8080/GlycoMasterDB
+28556827,"RiceAtlas, a spatial database of global rice calendars and production.",False,
+22323337,KMD: Korean Mutation Database for genes related to diseases.,True,http://kmd.cdc.go.kr
+25708359,ViralmiR: a support-vector-machine-based method for predicting viral microRNA precursors.,True,http://csb.cse.yzu.edu.tw/viralmir/
+34078267,NoRCE: non-coding RNA sets cis enrichment tool.,False,
+26821742,"RiboGalaxy: A browser based platform for the alignment, analysis and visualization of ribosome profiling data.",True,http://ribogalaxy.ucc.ie
+34215788,OpenHSV: an open platform for laryngeal high-speed videoendoscopy.,False,
+24367574,Switch of sensitivity dynamics revealed with DyGloSA toolbox for dynamical global sensitivity analysis as an early warning for system's critical transition.,True,http://bio.uni.lu/systems_biology/software/dyglosa
+27384129,mCSM-lig: quantifying the effects of mutations on protein-small molecule affinity in genetic disease and emergence of drug resistance.,True,http://structure.bioc.cam.ac.uk/mcsm_lig
+31765421,"MARGO (Massively Automated Real-time GUI for Object-tracking), a platform for high-throughput ethology.",False,
+26679008,ORBiT: Oak Ridge biosurveillance toolkit for public health dynamics.,False,
+33849075,iNetModels 2.0: an interactive visualization and database of multi-omics data.,True,https://inetmodels.com
+30577887,Ultra-Rapid Reporting of GENomic Targets (URGENTseq): Clinical Next-Generation Sequencing Results within 48 Hours of Sample Collection.,False,
+27706213,SeqKit: A Cross-Platform and Ultrafast Toolkit for FASTA/Q File Manipulation.,False,
+27319297,ORION: a web server for protein fold recognition and structure prediction using evolutionary hybrid profiles.,True,http://www.dsimb.inserm.fr/ORION/
+23527209,"SNPflow: a lightweight application for the processing, storing and automatic quality checking of genotyping assays.",True,http://genepi-snpflow.i-med.ac.at
+27262858,INFRAFRONTIER: a European resource for studying the functional basis of human disease.,False,
+29860484,VarAFT: a variant annotation and filtration system for human next generation sequencing data.,True,http://varaft.eu
+24237904,SNPMeta: SNP annotation and SNP metadata collection without a reference genome.,False,
+24597646,AlzPlatform: an Alzheimer's disease domain-specific chemogenomics knowledgebase for polypharmacology and target identification research.,True,http://www.cbligand.org/AD/
+32523402,"Mikan Genome Database (MiGD): integrated database of genome annotation, genomic diversity, and CAPS marker information for mandarin molecular breeding.",True,https://mikan.dna.affrc.go.jp
+32737813,FANCat: French affective norms for ten emotional categories.,False,
+26228432,"OCDB: a database collecting genes, miRNAs and drugs for obsessive-compulsive disorder.",False,
+34824199,Network medicine for disease module identification and drug repurposing with the NeDRex platform.,False,
+24772454,rCAD: A Novel Database Schema for the Comparative Analysis of RNA.,False,
+29733379,oriTfinder: a web-based tool for the identification of origin of transfers in DNA sequences of bacterial mobile genetic elements.,True,http://bioinfo-mml.sjtu.edu.cn/oriTfinder
+30553884,GITAR: An Open Source Tool for Analysis and Visualization of Hi-C Data.,True,http://genomegitar.org
+31830251,FFLtool: a web server for transcription factor and miRNA feed forward loop analysis in human.,True,http://bioinfo.life.hust.edu.cn/FFLtool/
+31374334,LABiocin database: A new database designed specifically for Lactic Acid Bacteria bacteriocins.,True,labiocin.net
+33045727,GESS: a database of global evaluation of SARS-CoV-2/hCoV-19 sequences.,True,https://wan-bioinfo.shinyapps.io/GESS/
+25210196,Proteome-wide subcellular topologies of E. coli polypeptides database (STEPdb).,False,
+31822517,SNP-CRISPR: A Web Tool for SNP-Specific Genome Editing.,True,https://www.flyrnai.org/tools/snp_crispr/
+24116839,CoCoTools: open-source software for building connectomes using the CoCoMac anatomical database.,False,
+30165481,NCycDB: a curated integrative database for fast and accurate metagenomic profiling of nitrogen cycling genes.,False,
+27016700,CD-REST: a system for extracting chemical-induced disease relation in literature.,True,http://clinicalnlptool.com/cdr
+34981039,Cov19VaxKB: A Web-based Integrative COVID-19 Vaccine Knowledge Base.,True,http://www.violinet.org/cov19vaxkb/
+27630248,GAPP: A Proteogenomic Software for Genome Annotation and Global Profiling of Post-translational Modifications in Prokaryotes.,False,
+23696674,Clinical genomic database.,True,http://research.nhgri.nih.gov/CGD/
+30888556,Elucidating the druggability of the human proteome with eFindSite.,False,
+26226151,ElemeNT: a computational tool for detecting core promoter elements.,True,http://lifefaculty.biu.ac.il/gershon-tamar/index.php/resources
+26425431,NanoE-Tox: New and in-depth database concerning ecotoxicity of nanomaterials.,False,
+32598921,VectorInfo: A web resource for medically important Indian arthropod disease vectors.,False,
+33119593,Tensorpac: An open-source Python toolbox for tensor-based phase-amplitude coupling measurement in electrophysiological brain signals.,False,
+27224977,Taxonomer: an interactive metagenomics analysis portal for universal pathogen detection and host mRNA expression profiling.,False,
+33486591,IHEC_RAAC: a online platform for identifying human enzyme classes via reduced amino acid cluster strategy.,True,http://bioinfor.imu.edu.cn/ihecraac
+26220891,GeneMatcher: a matching tool for connecting investigators with an interest in the same gene.,True,http://www.genematcher.org
+31106382,RegulationSpotter: annotation and interpretation of extratranscriptic DNA variants.,True,https://www.regulationspotter.org
+26087185,Virus-Clip: a fast and memory-efficient viral integration site detection tool at single-base resolution with annotation capability.,True,http://web.hku.hk/~dwhho/Virus-Clip.zip
+24502797,"TUIT, a BLAST-based tool for taxonomic classification of nucleotide sequences.",False,
+22563070,"GEMSiRV: a software platform for GEnome-scale metabolic model simulation, reconstruction and visualization.",True,http://sb.nhri.org.tw/GEMSiRV
+34318308,Planarian Anatomy Ontology: a resource to connect data within and across experimental platforms.,False,
+31448343,Using the MR-Base platform to investigate risk factors and drug targets for thousands of phenotypes.,False,
+31147718,RNAmod: an integrated system for the annotation of mRNA modifications.,True,https://bioinformatics.sc.cn/RNAmod
+30252043,SanXoT: a modular and versatile package for the quantitative analysis of high-throughput proteomics experiments.,True,https://wikis.cnic.es/proteomica/index.php/SSP
+"24861621, 30931480",NetworkAnalyst--integrative approaches for protein-protein interaction network analysis and visual exploration.,True,http://www.networkanalyst.ca
+28982288,MPTM: A tool for mining protein post-translational modifications from literature.,True,http://bioinformatics.ustc.edu.cn/mptm/
+32426808,MetaSanity: an integrated microbial genome evaluation and annotation pipeline.,True,https://cjneely10.github.io/year-archive/
+32353048,Nutrimedia: A novel web-based resource for the general public that evaluates the veracity of nutrition claims using the GRADE approach.,False,
+31544935,"Gephebase, a database of genotype-phenotype relationships for natural and domesticated variation in Eukaryotes.",True,http://www.gephebase.org
+31410449,ROBOKOP: an abstraction layer and user interface for knowledge graphs to support question answering.,True,http://robokop.renci.org
+24438389,"antibacTR: dynamic antibacterial-drug-target ranking integrating comparative genomics, structural analysis and experimental annotation.",True,http://bioinf.uab.cat/antibactr
+25627673,Aber-OWL: a framework for ontology-based data access in biology.,True,http://aber-owl.net
+24782522,SWISS-MODEL: modelling protein tertiary and quaternary structure using evolutionary information.,True,http://swissmodel.expasy.org/
+23632162,PlantGSEA: a gene set enrichment analysis toolkit for plant community.,True,http://structuralbiology.cau.edu.cn/PlantGSEA
+26517951,PhyreStorm: A Web Server for Fast Structural Searches Against the PDB.,True,http://www.sbg.bio.ic.ac.uk/phyrestorm/
+31796413,RNASeqR: An R Package for Automated Two-Group RNA-Seq Analysis Workflow.,True,https://bioconductor.org/packages/release/bioc/html/RNASeqR.html
+30497361,miRTissue: a web application for the analysis of miRNA-target interactions in human tissues.,True,http://tblab.pa.icar.cnr.it/mirtissue.html
+25950237,"The Phyre2 web portal for protein modeling, prediction and analysis.",True,http://www.sbg.bio.ic.ac.uk/phyre2
+25355513,Dr.VIS v2.0: an updated database of human disease-related viral integration sites in the era of high-throughput deep sequencing.,True,http://www.bioinfo.org/drvis
+25900361,Enzyme Function Initiative-Enzyme Similarity Tool (EFI-EST): A web tool for generating protein sequence similarity networks.,True,http://enzymefunction.org/
+34112240,LigTMap: ligand and structure-based target identification and activity prediction for small molecular compounds.,True,https://cbbio.online/LigTMap
+21558324,mirConnX: condition-specific mRNA-microRNA network integrator.,True,http://www.benoslab.pitt.edu/mirconnx
+27663500,FoldAtlas: a repository for genome-wide RNA structure probing data.,True,http://www.foldatlas.com
+24949626,"IIS--Integrated Interactome System: a web-based platform for the annotation, analysis and visualization of protein-metabolite-gene-drug interactions by integrating a variety of data sources and tools.",True,http://www.lge.ibi.unicamp.br/lnbio/IIS/
+30256987,AGD: Aneurysm Gene Database.,False,
+28575155,Dynamic-BM: multispecies Dynamic BodyMap database from temporal RNA-seq data.,True,http://bioinfo.ibp.ac.cn/Dynamic-BM
+31114888,"Evolview v3: a webserver for visualization, annotation, and management of phylogenetic trees.",True,https://www.evolgenius.info/evolview/
+29621297,"iCopyDAV: Integrated platform for copy number variations-Detection, annotation and visualization.",True,http://bioinf.iiit.ac.in/icopydav/
+32392342,"EnzymeMiner: automated mining of soluble enzymes with diverse structures, catalytic properties and stabilities.",True,https://loschmidt.chemi.muni.cz/enzymeminer/
+33156877,MAVSCOT: A fuzzy logic-based HIV diagnostic system with indigenous multi-lingual interfaces for rural Africa.,False,
+29873706,SPRENO: a BioC module for identifying organism terms in figure captions.,True,https://bigodatamining.github.io/software/201801/.Database
+30219840,SMMDB: a web-accessible database for small molecule modulators and their targets involved in neurological diseases.,True,http://bsbe.iiti.ac.in/bsbe/smmdb
+28053114,FEELnc: a tool for long non-coding RNA annotation and its application to the dog transcriptome.,False,
+26155959,iVAX: An integrated toolkit for the selection and optimization of antigens and the design of epitope-driven vaccines.,False,
+32122303,GenomeQC: a quality assessment tool for genome assemblies and gene structure annotations.,True,https://genomeqc.maizegdb.org/
+31199464,CoCoScore: context-aware co-occurrence scoring for text mining applications using distant supervision.,False,
+26297754,The INDEPTH Data Repository: An International Resource for Longitudinal Population and Health Data From Health and Demographic Surveillance Systems.,False,
+23197657,H-InvDB in 2013: an omics study platform for human functional gene and transcript discovery.,True,http://www.h-invitational.jp/
+22084200,AH-DB: collecting protein structure pairs before and after binding.,True,http://ahdb.ee.ncku.edu.tw/
+22689645,PBSword: a web server for searching similar protein-protein binding sites.,True,http://pbs.rnet.missouri.edu
+27401413,COMODI: an ontology to characterise differences in versions of computational models in biology.,True,http://comodi.sems.uni-rostock.de/
+30891576,LasDB: A collective database for laboratory animal strain resources.,False,
+30458802,BioGraph: a web application and a graph database for querying and analyzing bioinformatics resources.,True,http://biograph.pa.icar.cnr.it
+34415997,The Breeding Information Management System (BIMS): an online resource for crop breeding.,True,https://www.citrusgenomedb.org/
+34240464,Ligand Binding Site Comparison - LiBiSCo - a web-based tool for analyzing interactions between proteins and ligands to explore amino acid specificity within active sites.,True,https://albiorix.bioenv.gu.se/LiBiSCo/HomePage.py
+25977294,DIANA-miRPath v3.0: deciphering microRNA function with experimental support.,True,http://www.microrna.gr/miRPathv3
+22268964,ProBiS-database: precalculated binding site similarities and local pairwise alignments of PDB structures.,True,http://probis.cmm.ki.si/database
+30788499,FairBase: a comprehensive database of fungal A-to-I RNA editing.,False,
+24519378,SurvMicro: assessment of miRNA-based prognostic signatures for cancer clinical outcomes by multivariate survival analysis.,True,http://bioinformatica.mty.itesm.mx/SurvMicro
+33441136,AlzGPS: a genome-wide positioning systems platform to catalyze multi-omics for Alzheimer's drug discovery.,True,https://alzgps.lerner.ccf.org
+26861659,ScaleNet: a literature-based model of scale insect biology and systematics.,True,http://scalenet.info
+29696732,"Seshat: A Web service for accurate annotation, validation, and analysis of TP53 variants generated by conventional and next-generation sequencing.",True,http://p53.fr
+29070035,SaVanT: a web-based tool for the sample-level visualization of molecular signatures in gene expression profiles.,True,http://newpathways.mcdb.ucla.edu/savant
+30321373,KinaMetrix: a web resource to investigate kinase conformations and inhibitor space.,True,http://KinaMetrix.com
+28486666,CSTEA: a webserver for the Cell State Transition Expression Atlas.,True,http://comp-sysbio.org/cstea/
+28541490,GLANET: genomic loci annotation and enrichment tool.,True,https://glanet.readthedocs.org
+29725591,The Mu.Ta.Lig. Chemotheca: A Community-Populated Molecular Database for Multi-Target Ligands Identification and Compound-Repurposing.,True,http://chemotheca.unicz.it
+31032840,rPredictorDB: a predictive database of individual secondary structures of RNAs and their formatted plots.,False,
+32402084,MISCAST: MIssense variant to protein StruCture Analysis web SuiTe.,True,http://miscast.broadinstitute.org/
+29669592,GGDonto ontology as a knowledge-base for genetic diseases and disorders of glycan metabolism and their causative genes.,False,
+23468041,Management and dissemination of MS proteomic data with PROTICdb: example of a quantitative comparison between methods of protein extraction.,True,http://moulon.inra.fr/protic/public
+26425409,Experiences in supporting the structured collection of cancer nanotechnology data using caNanoLab.,False,
+22369265,i-rDNA: alignment-free algorithm for rapid in silico detection of ribosomal gene fragments from metagenomic sequence data sets.,True,http://metagenomics.atc.tcs.com/i-rDNA/
+32134472,iMRM: a platform for simultaneously identifying multiple kinds of RNA modifications.,True,http://www.bioml.cn/XG_iRNA/home
+22743224,GO-Elite: a flexible solution for pathway and ontology over-representation.,True,http://www.genmapp.org/go_elite
+29558135,"PACOM: A Versatile Tool for Integrating, Filtering, Visualizing, and Comparing Multiple Large Mass Spectrometry Proteomics Data Sets.",False,
+26391627,Pcetk: A pDynamo-based Toolkit for Protonation State Calculations in Proteins.,False,
+21989112,"FluReF, an automated flu virus reassortment finder based on phylogenetic trees.",True,http://lcbb.epfl.ch/software.html
+27990826,X!TandemPipeline: A Tool to Manage Sequence Redundancy for Protein Inference and Phosphosite Identification.,True,http://pappso.inra.fr/bioinfo/xtandempipeline/
+26047590,Visual annotation display (VLAD): a tool for finding functional themes in lists of genes.,True,http://proto.informatics.jax.org/prototypes/vlad/
+31760951,TS-GOEA: a web tool for tissue-specific gene set enrichment analysis based on gene ontology.,True,http://120.77.47.2:5678
+31449516,CNEr: A toolkit for exploring extreme noncoding conservation.,True,https://bioconductor.org/packages/CNEr/
+29490010,SECLAF: a webserver and deep neural network design tool for hierarchical biological sequence classification.,True,https://pitgroup.org/seclaf/
+34325658,Taxallnomy: an extension of NCBI Taxonomy that produces a hierarchically complete taxonomic tree.,True,http://bioinfo.icb.ufmg.br/taxallnomy
+28389638,IMGMD: A platform for the integration and standardisation of In silico Microbial Genome-scale Metabolic Models.,True,http://imgmd.jiangnan.edu.cn/database
+31317185,VariED: the first integrated database of gene annotation and expression profiles for variants related to human diseases.,False,
+26454874,BaMBa: towards the integrated management of Brazilian marine environmental data.,True,https://marinebiodiversity.lncc.br
+24258321,"PyGaze: an open-source, cross-platform toolbox for minimal-effort programming of eyetracking experiments.",False,
+27131362,miEAA: microRNA enrichment analysis and annotation.,True,http://www.ccb.uni-saarland.de/mieaa_tool/
+34233619,Sequoia: an interactive visual analytics platform for interpretation and feature extraction from nanopore sequencing datasets.,False,
+31714620,PEATmoss (Physcomitrella Expression Atlas Tool): a unified gene expression atlas for the model plant Physcomitrella patens.,True,https://peatmoss.online.uni-marburg.de
+28498994,ThreaDomEx: a unified platform for predicting continuous and discontinuous protein domains by multiple-threading and segment assembly.,True,http://zhanglab.ccmb.med.umich.edu/ThreaDomEx
+26302176,Finding mouse models of human lymphomas and leukemia's using the Jackson laboratory mouse tumor biology database.,True,http://tumor.informatics.jax.org
+29854184,SpindleSphere: A Web-based Platform for Large-scale Sleep Spindle Analysis and Visualization.,False,
+27825033,VirusDetect: An automated pipeline for efficient virus discovery using deep sequencing of small RNAs.,True,http://bioinfo.bti.cornell.edu/tool/VirusDetect/
+28410642,iPSCORE: A Resource of 222 iPSC Lines Enabling Functional Characterization of Genetic Variation across a Variety of Cell Types.,False,
+30864657,"MitoZ: a toolkit for animal mitochondrial genome assembly, annotation and visualization.",False,
+23029291,ThioFinder: a web-based tool for the identification of thiopeptide gene clusters in DNA sequences.,True,http://db-mml.sjtu.edu.cn/ThioFinder/
+25636267,MaxMod: a hidden Markov model based novel interface to MODELLER for improved prediction of protein 3D models.,True,http://www.immt.res.in/maxmod/
+29325066,Toppar: an interactive browser for viewing association study results.,True,http://mccarthy.well.ox.ac.uk/toppar/docs
+31853227,GBDTCDA: Predicting circRNA-disease Associations Based on Gradient Boosting Decision Tree with Multiple Biological Data Fusion.,True,http://bioinfo.snnu.edu.cn/CircR2Disease/
+30517749,ORTHOSCOPE: An Automatic Web Tool for Phylogenetically Inferring Bilaterian Orthogroups with User-Selected Taxa.,True,https://www.orthoscope.jp
+29135934,UltraPse: A Universal and Extensible Software Platform for Representing Biological Sequences.,False,
+33720028,"HOPES: An Integrative Digital Phenotyping Platform for Data Collection, Monitoring, and Machine Learning.",False,
+24210098,Metadata-driven comparative analysis tool for sequences (meta-CATS): an automated process for identifying significant sequence variations that correlate with virus attributes.,True,http://www.fludb.org
+32898474,SYLARAS: A Platform for the Statistical Analysis and Visual Display of Systemic Immunoprofiling Data and Its Application to Glioblastoma.,False,
+"23160414, 23703206",Accelerating literature curation with text-mining tools: a case study of using PubTator to curate genes in PubMed abstracts.,True,http://www.ncbi.nlm.nih.gov/CBBresearch/Lu/Demo/PubTator/
+21450055,Rice-Map: a new-generation rice genome browser.,True,http://www.ricemap.org/
+27986896,easyGWAS: A Cloud-Based Platform for Comparing the Results of Genome-Wide Association Studies.,False,
+30657872,AllerCatPro-prediction of protein allergenicity potential from the protein sequence.,True,https://allercatpro.bii.a-star.edu.sg/
+32421835,InterPred: a webtool to predict chemical autofluorescence and luminescence interference.,True,https://sandbox.ntp.niehs.nih.gov/interferences/
+24758335,EndoNet: an information resource about the intercellular signaling network.,False,
+34783553,COVID-19 Knowledge Extractor (COKE): A Curated Repository of Drug-Target Associations Extracted from the CORD-19 Corpus of Scientific Publications on COVID-19.,True,https://coke.mml.unc.edu/
+23060433,Dr. PIAS 2.0: an update of a database of predicted druggable protein-protein interactions.,True,http://www.drpias.net
+27829362,CASTIN: a system for comprehensive analysis of cancer-stromal interactome.,False,
+32503988,"HISTOBREAST, a collection of brightfield microscopy images of Haematoxylin and Eosin stained breast tissue.",False,
+29692801,"iCN718, an Updated and Improved Genome-Scale Metabolic Network Reconstruction of <i>Acinetobacter baumannii</i> AYE.",False,
+33341884,Pyfastx: a robust Python package for fast random access to sequences from plain and gzipped FASTA/Q files.,True,https://pypi.org/project/pyfastx
+29688366,BioDataome: a collection of uniformly preprocessed and automatically annotated datasets for data-driven biology.,True,http://dataome.mensxmachina.org/
+33509180,CardioNet: a manually curated database for artificial intelligence-based research on cardiovascular diseases.,False,
+24674136,TSSAR: TSS annotation regime for dRNA-seq data.,True,http://rna.tbi.univie.ac.at/TSSAR
+26983021,"GeneAnalytics: An Integrative Gene Set Analysis Tool for Next Generation Sequencing, RNAseq and Microarray Data.",False,
+26691694,Dintor: functional annotation of genomic and proteomic data.,True,http://dintor.eurac.edu
+34023887,DomainViz: intuitive visualization of consensus domain distributions across groups of proteins.,True,https://uhrigprotools.biology.ualberta.ca/domainviz
+"28472511, 31114916","WebGestalt 2017: a more comprehensive, powerful, flexible and interactive gene set enrichment analysis toolkit.",True,http://www.webgestalt.org
+31477007,SalMotifDB: a tool for analyzing putative transcription factor binding sites in salmonid genomes.,True,https://salmobase.org/apps/SalMotifDB
+22717648,wANNOVAR: annotating genetic variants for personal genomes via the web.,True,http://wannovar.usc.edu
+30052959,eModel-BDB: a database of comparative structure models of drug-target interactions from the Binding Database.,False,
+26779400,AURA 2: Empowering discovery of post-transcriptional networks.,True,http://aura.science.unitn.it
+23895370,Confero: an integrated contrast data and gene set platform for computational analysis and biological interpretation of omics data.,False,
+24091140,Fast automated protein NMR data collection and assignment by ADAPT-NMR on Bruker spectrometers.,True,http://pine.nmrfam.wisc.edu/ADAPT-NMR
+28268841,AMP: A platform for managing and mining data in the treatment of Autism Spectrum Disorder.,False,
+22583488,3DMolNavi: a web-based retrieval and navigation tool for flexible molecular shape comparison.,True,https://engineering.purdue.edu/PRECISE/3dmolnavi/index.html
+28967166,"VariantValidator: Accurate validation, mapping, and formatting of sequence variation descriptions.",True,https://variantvalidator.org/
+24949426,"Tools and databases of the KOMICS web portal for preprocessing, mining, and dissemination of metabolomics data.",False,
+29189001,Searching Online Chemical Data Repositories via the ChemAgora Portal.,False,
+30096176,BioPS: System for screening and assessment of biofuel-production potential of cyanobacteria.,True,http://www.cbrc.kaust.edu.sa/biops
+31612721,"SAAVpedia: Identification, Functional Annotation, and Retrieval of Single Amino Acid Variants for Proteogenomic Interpretation.",False,
+34075103,"KAUST Metagenomic Analysis Platform (KMAP), enabling access to massive analytics of re-annotated metagenomic data.",True,https://www.cbrc.kaust.edu.sa/aamg/kmap.start
+24225062,CoMAGC: a corpus with multi-faceted annotations of gene-cancer relations.,True,http://biopathway.org/CoMAGCunder
+22715306,Database for vegetable phytochemicals and their mechanism of action.,True,http://www/vptd.in
+28535294,HGVA: the Human Genome Variation Archive.,False,
+29272359,"BioSeq-Analysis: a platform for DNA, RNA and protein sequence analysis based on machine learning approaches.",True,http://bioinformatics.hitsz.edu.cn/BioSeq-Analysis/
+32330179,EasyParallel: A GUI platform for parallelization of STRUCTURE and NEWHYBRIDS analyses.,False,
+26384541,mpdcm: A toolbox for massively parallel dynamic causal modeling.,False,
+33258965,RegulomePA: a database of transcriptional regulatory interactions in Pseudomonas aeruginosa PAO1.,True,http://www.regulome.pcyt.unam.mx
+24022982,LTMap: a web server for assessing the potential liver toxicity by genome-wide transcriptional expression data.,True,http://tcm.zju.edu.cn/ltmap
+26860211,ksRepo: a generalized platform for computational drug repositioning.,False,
+29106469,DFAST: a flexible prokaryotic genome annotation pipeline for faster genome publication.,True,https://dfast.nig.ac.jp/
+29528364,iFeature: a Python package and web server for features extraction and selection from protein and peptide sequences.,True,http://iFeature.erc.monash.edu/
+24408217,"DevMouse, the mouse developmental methylome database and analysis tools.",True,http://www.devmouse.org/
+31690272,MoMI-G: modular multi-scale integrated genome graph browser.,False,
+30719103,RepetDB: a unified resource for transposable element references.,True,urgi.versailles.inra.fr/repetdb
+23281853,FastAnnotator--an efficient transcript annotation web tool.,True,http://fastannotator.cgu.edu.tw
+"26669964, 29322439",CircInteractome: A web tool for exploring circular RNAs and their interacting proteins and microRNAs.,True,http://circinteractome.nia.nih.gov
+32449938,PseudoChecker: an integrated online platform for gene inactivation inference.,True,http://pseudochecker.ciimar.up.pt
+26258475,"pGenN, a gene normalization tool for plant genes and proteins in scientific literature.",False,
+22610856,GENIES: gene network inference engine based on supervised analysis.,True,http://www.genome.jp/tools/genies/
+34814330,Purimeth: an integrated web-based tool for estimating and accounting for tumor purity in cancer DNA methylation studies.,True,http://purimeth.comp-epi.com/
+29280990,DPMIND: degradome-based plant miRNA-target interaction and network database.,True,http://202.195.246.60/DPMIND/
+30979097,MoleGear: A Java-Based Platform for Evolutionary De Novo Molecular Design.,False,
+31395072,MLMDA: a machine learning approach to predict and validate MicroRNA-disease associations by integrating of heterogenous information sources.,True,http://220.171.34.3:81/
+31077305,Entrezpy: a Python library to dynamically interact with the NCBI Entrez databases.,True,https://pypi.org/project/entrezpy/
+21672955,PHAST: a fast phage search tool.,True,http://phast.wishartlab.com
+29699486,Integrative analysis and machine learning on cancer genomics data using the Cancer Systems Biology Database (CancerSysDB).,False,
+31790389,CDSeq: A novel complete deconvolution method for dissecting heterogeneous samples using gene expression data.,False,
+30010738,HRPDviewer: human ribosome profiling data viewer.,True,http://cosbi4.ee.ncku.edu.tw/HRPDviewer/
+34001879,A global resource for genomic predictions of antimicrobial resistance and surveillance of Salmonella Typhi at pathogenwatch.,False,
+28296354,CATTLE (CAncer treatment treasury with linked evidence): An integrated knowledge base for personalized oncology research and practice.,False,
+32383756,TeamTat: a collaborative text annotation tool.,True,https://www.teamtat.org
+28365735,AnnoSys-implementation of a generic annotation system for schema-based data using the example of biodiversity collection data.,True,https://annosys.bgbm.fu-berlin.de/AnnoSys/AnnoSys
+31306428,ParaDB: A manually curated database containing genomic annotation for the human pathogenic fungi Paracoccidioides spp.,False,
+22621612,C-GATE - catalogue of genes affected by transposable elements.,False,
+30201843,Geppetto: a reusable modular open platform for exploring neuroscience data and models.,False,
+32568373,CandiMeth: Powerful yet simple visualization and quantification of DNA methylation at candidate genes.,False,
+33676929,GeneCaRNA: A Comprehensive Gene-centric Database of Human Non-coding RNAs in the GeneCards Suite.,False,
+29944754,iReceptor: A platform for querying and analyzing antibody/B-cell and T-cell receptor repertoire data across federated repositories.,False,
+30949694,OrganellarGenomeDRAW (OGDRAW) version 1.3.1: expanded toolkit for the graphical visualization of organellar genomes.,True,https://chlorobox.mpimp-golm.mpg.de/OGDraw.html
+22419842,GIST: Genomic island suite of tools for predicting genomic islands in genomic sequences.,True,http://www5.esu.edu/cpsc/bioinfo/software/GIST
+27485446,HiPub: translating PubMed and PMC texts to networks for knowledge discovery.,True,http://hipub.korea.ac.kr
+21984475,NAPP: the Nucleic Acid Phylogenetic Profile Database.,True,http://napp.u-psud.fr/
+24336809,NeuroPID: a predictor for identifying neuropeptide precursors from metazoan proteomes.,True,http://www.protonet.cs.huji.ac.il/neuropid
+24727366,"'In silico expression analysis', a novel PathoPlant web tool to identify abiotic and biotic stress conditions associated with specific cis-regulatory sequences.",True,http://www.pathoplant.de/expression_analysis.php
+21696594,BioGraph: unsupervised biomedical knowledge discovery via automated hypothesis generation.,True,http://www.biograph.be
+25061374,"CracidMex1: a comprehensive database of global occurrences of cracids (Aves, Galliformes) with distribution in Mexico.",False,
+26858636,BrainLiner: A Neuroinformatics Platform for Sharing Time-Aligned Brain-Behavior Data.,False,
+26407127,miRTex: A Text Mining System for miRNA-Gene Relation Extraction.,True,http://proteininformationresource.org/mirtex
+22102585,GenomeView: a next-generation genome browser.,False,
+29970001,Plant organelle RNA editing and its specificity factors: enhancements of analyses and new database features in PREPACT 3.0.,False,
+21375730,"MIR@NT@N: a framework integrating transcription factors, microRNAs and their targets to identify sub-network motifs in a meta-regulation network model.",True,http://mironton.uni.lu
+26328606,Pan-Tetris: an interactive visualisation for Pan-genomes.,True,http://bit.ly/1vVxYZT
+29961849,KREAP: an automated Galaxy platform to quantify in vitro re-epithelialization kinetics.,False,
+30566501,A survey of digitized data from U.S. fish collections in the iDigBio data aggregator.,False,
+24923820,Egas: a collaborative and interactive document curation platform.,True,http://bioinformatics.ua.pt/egas
+26398231,Pulotu: Database of Austronesian Supernatural Beliefs and Practices.,False,
+29300482,Chemotext: A Publicly Available Web Server for Mining Drug-Target-Disease Relationships in PubMed.,True,http://chemotext.mml.unc.edu
+"26442528, 28460067",Genomes to natural products PRediction Informatics for Secondary Metabolomes (PRISM).,True,http://magarveylab.ca/prism/
+33062585,The Collection of Zoosporic Eufungi at the University of Michigan (CZEUM): introducing a new repository of barcoded <i>Chytridiomyceta</i> and <i>Blastocladiomycota</i> cultures.,False,
+31805063,SparkGA2: Production-quality memory-efficient Apache Spark based genome analysis framework.,False,
+29987232,NTyroSite: Computational Identification of Protein Nitrotyrosine Sites Using Sequence Evolutionary Features.,True,https://biocomputer.bio.cuhk.edu.hk/NTyroSite/
+31315562,MCtandem: an efficient tool for large-scale peptide identification on many integrated core (MIC) architecture.,False,
+31741225,AGONOTES: A Robot Annotator for Argonaute Proteins.,True,http://i.uestc.edu.cn/agonotes/
+23577215,Molecular Optical Simulation Environment (MOSE): a platform for the simulation of light propagation in turbid media.,True,http://www.mosetm.net
+32897080,METATRYP v 2.0: Metaproteomic Least Common Ancestor Analysis for Taxonomic Inference Using Specialized Sequence Assemblies-Standalone Software and Web Servers for Marine Microorganisms and Coronaviruses.,True,https://oceanproteinportal.org
+21992659,MedEval - A Swedish medical test collection with doctors and patients user groups.,False,
+30497372,PanoromiX: a time-course network medicine platform integrating molecular assays and pathophenotypic data.,False,
+28583068,lncRNA-screen: an interactive platform for computationally screening long non-coding RNAs in large genomics datasets.,False,
+30052770,MR4Cancer: a web server prioritizing master regulators for cancer.,True,http://cis.hku.hk/MR4Cancer
+23145153,CREST--classification resources for environmental sequence tags.,True,http://apps.cbu.uib.no/crest
+22255823,MEET: motif elements estimation toolkit.,True,http://sisbio.recerca.upc.edu/R/MEET_1.0
+29618732,"KoVariome: Korean National Standard Reference Variome database of whole genomes with comprehensive SNV, indel, CNV, and SV analyses.",False,
+25311246,trieFinder: an efficient program for annotating Digital Gene Expression (DGE) tags.,True,http://research.nhgri.nih.gov/software/trieFinder/
+30553813,CellMinerCDB for Integrative Cross-Database Genomics and Pharmacogenomics Analyses of Cancer Cell Lines.,True,https://discover.nci.nih.gov/cellminercdb/
+27565795,mRAISE: an alternative algorithmic approach to ligand-based virtual screening.,True,http://www.zbh.uni-hamburg.de/mraise-dataset.html
+23884480,OncodriveCLUST: exploiting the positional clustering of somatic mutations to identify cancer genes.,True,http://bg.upf.edu/oncodriveclust
+27515514,COMAN: a web server for comprehensive metatranscriptomics analysis.,True,http://sbb.hku.hk/COMAN/
+23435658,BLIND: a set of semantic feature norms from the congenitally blind.,True,http://sesia.humnet.unipi.it/blind_data
+33657805,LM-GlycomeAtlas Ver. 2.0: An Integrated Visualization for Lectin Microarray-based Mouse Tissue Glycome Mapping Data with Lectin Histochemistry.,True,https://glycosmos.org/lm_glycomeatlas/index
+31106371,CHOPCHOP v3: expanding the CRISPR web toolbox beyond genome editing.,True,https://chopchop.cbu.uib.no
+32821910,reconCNV: interactive visualization of copy number data from high-throughput sequencing.,True,https://hub.docker.com/repository/docker/raghuc1990/reconcnv
+25881313,ANDSystem: an Associative Network Discovery System for automated literature mining in the field of biology.,False,
+33174596,MitoCarta3.0: an updated mitochondrial proteome now with sub-organelle localization and pathway annotations.,True,http://www.broadinstitute.org/mitocarta
+26078786,ChemDIS: a chemical-disease inference system based on chemical-protein interactions.,True,http://cwtung.kmu.edu.tw/chemdis
+23130999,mGOASVM: Multi-label protein subcellular localization based on gene ontology and support vector machines.,True,http://bioinfo.eie.polyu.edu.hk/mGoaSvmServer/mGOASVM.html
+30903186,BrAPI-an application programming interface for plant breeding applications.,True,https://brapi.org/
+24423189,gsGator: an integrated web platform for cross-species gene set analysis.,True,http://gsGator.ewha.ac.kr
+33214792,ANSH: Multimodal Neuroimaging Database Including MR Spectroscopic Data From Each Continent to Advance Alzheimer's Disease Research.,False,
+29603631,dinoref: A curated dinoflagellate (Dinophyceae) reference database for the 18S rRNA gene.,False,
+28843534,SalivaPRINT Toolkit - Protein profile evaluation and phenotype stratification.,False,
+29539190,"MSeqDR mvTool: A mitochondrial DNA Web and API resource for comprehensive variant annotation, universal nomenclature collation, and reference genome conversion.",True,https://mseqdr.org/mvtool.php
+24735413,ngs.plot: Quick mining and visualization of next-generation sequencing data by integrating genomic databases.,False,
+33436621,isoCirc catalogs full-length circular RNA isoforms in human transcriptomes.,False,
+"27174934, 29796670",HotSpot Wizard 2.0: automated design of site-specific mutations and smart libraries in protein engineering.,True,http://loschmidt.chemi.muni.cz/hotspotwizard
+28501650,PROBer Provides a General Toolkit for Analyzing Sequencing-Based Toeprinting Assays.,False,
+27792763,"PopSc: Computing Toolkit for Basic Statistics of Molecular Population Genetics Simultaneously Implemented in Web-Based Calculator, Python and R.",False,
+33954706,EMNUSS: a deep learning framework for secondary structure annotation in cryo-EM maps.,True,http://huanglab.phys.hust.edu.cn/EMNUSS
+26315905,EPGA2: memory-efficient de novo assembler.,False,
+21515632,PicXAA-Web: a web-based platform for non-progressive maximum expected accuracy alignment of multiple biological sequences.,True,http://gsp.tamu.edu/picxaa/
+25982732,PathRings: a web-based tool for exploration of ortholog and expression data in biological pathways.,True,http://raven.anr.udel.edu/~sunliang/PathRings
+23331614,Genecentric: a package to uncover graph-theoretic structure in high-throughput epistasis data.,True,http://bcb.cs.tufts.edu/genecentric
+25059528,BactImAS: a platform for processing and analysis of bacterial time-lapse microscopy movies.,False,
+29040649,ClusterCAD: a computational platform for type I modular polyketide synthase design.,True,https://clustercad.jbei.org
+27369567,"OntoADR a semantic resource describing adverse drug reactions to support searching, coding, and information retrieval.",False,
+25982853,ProtDCal: A program to compute general-purpose-numerical descriptors for sequences and 3D-structures of proteins.,True,http://bioinf.sce.carleton.ca/ProtDCal/
+31081035,LOMETS2: improved meta-threading server for fold-recognition and structure-based function annotation for distant-homology proteins.,True,https://zhanglab.ccmb.med.umich.edu/LOMETS/
+32935014,A Pan-Canadian Data Resource for Monitoring Child Developmental Health: The Canadian Neighbourhoods and Early Child Development (CanNECD) Database.,False,
+25414339,CFam: a chemical families database based on iterative selection of functional seeds and seed-directed compound clustering.,True,http://bidd2.cse.nus.edu.sg/cfam
+27756204,RNAdualPF: software to compute the dual partition function with sample applications in molecular evolution theory.,True,http://bioinformatics.bc.edu/clotelab/RNAdualPF
+27490165,CS-MINER: A Tool for Association Mining in Binding-Database.,True,http://www.csminer.com
+33988716,EDGAR3.0: comparative genomics and phylogenomics on a scalable infrastructure.,True,http://edgar3.computational.bio
+33346083,mrMLM v4.0.2: An R Platform for Multi-locus Genome-wide Association Studies.,True,https://bigd.big.ac.cn/biocode/tools/BT007077
+34076241,Mantis: flexible and consensus-driven genome annotation.,False,
+26697911,The Biobank Economic Modeling Tool (BEMT): Online Financial Planning to Facilitate Biobank Sustainability.,True,http://biospecimens.cancer.gov/resources/bemt.asp
+33381797,ChemGenerator: a web server for generating potential ligands for specific targets.,True,http://smiles.tcmobile.org
+23826350,Prioritizing Potentially Druggable Mutations with dGene: An Annotation Tool for Cancer Genome Sequencing Data.,False,
+31560645,"Data for Decision-Making: Exploring the Division of Nutrition, Physical Activity, and Obesity's Data, Trends, and Maps.",True,https://www.cdc.gov/nccdphp/dnpao/data-trends-maps/index.html
+34614039,virusMED: an atlas of hotspots of viral proteins.,True,https://virusmed.biocloud.top
+22480257,VESPA: software to facilitate genomic annotation of prokaryotic organisms through integration of proteomic and transcriptomic data.,True,https://www.biopilot.org/docs/Software/Vespa.php
+28515314,"The mzIdentML Data Standard Version 1.2, Supporting Advances in Proteome Informatics.",True,http://www.psidev.info/mzidentml
+32324748,OdoBD: An online database for the dragonflies and damselflies of Bangladesh.,True,http://www.odobd.org
+30649350,Xolik: finding cross-linked peptides with maximum paired scores in linear time.,True,http://bioinformatics.ust.hk/Xolik.html
+34316704,Cancer LncRNA Census 2 (CLC2): an enhanced resource reveals clinical features of cancer lncRNAs.,False,
+22693223,pKNOT v.2: the protein KNOT web server.,True,http://pknot.life.nctu.edu.tw/
+33094747,Structural-based connectivity and omic phenotype evaluations (SCOPE): a cheminformatics toolbox for investigating lipidomic changes in complex systems.,False,
+30525460,Tn-Core: A Toolbox for Integrating Tn-seq Gene Essentiality Data and Constraint-Based Metabolic Modeling.,False,
+28472340,"MiSTIC, an integrated platform for the analysis of heterogeneity in large tumour transcriptome datasets.",True,http://mistic.iric.ca
+30929112,The longitudinal integrated database for health insurance and labour market studies (LISA) and its use in medical research.,False,
+30813377,IPCT: Integrated Pharmacogenomic Platform of Human Cancer Cell Lines and Tissues.,True,http://ipct.ewostech.net
+33824393,hReg-CNCC reconstructs a regulatory network in human cranial neural crest cells and annotates variants in a developmental context.,False,
+33959747,Updates to HCOP: the HGNC comparison of orthology predictions tool.,True,https://vertebrate.genenames.org
+22517761,NGS catalog: A database of next generation sequencing studies in humans.,True,http://bioinfo.mc.vanderbilt.edu/NGS/index.html
+31606387,icSHAPE-pipe: A comprehensive toolkit for icSHAPE data analysis and evaluation.,False,
+22508222,DIVERGENOME: a bioinformatics platform to assist population genetics and genetic epidemiology studies.,False,
+32864883,DeepRescore: Leveraging Deep Learning to Improve Peptide Identification in Immunopeptidomics.,False,
+32582274,HARMONIES: A Hybrid Approach for Microbiome Networks Inference via Exploiting Sparsity.,False,
+22285826,"The Transcriptome Analysis and Comparison Explorer--T-ACE: a platform-independent, graphical tool to process large RNAseq datasets of non-model organisms.",False,
+31214154,"Geptop 2.0: An Updated, More Precise, and Faster Geptop Server for Identification of Prokaryotic Essential Genes.",True,http://cefg.uestc.cn/geptop
+26210358,VCF-Miner: GUI-based application for mining variants and annotations stored in VCF files.,True,http://bioinformaticstools.mayo.edu/research/vcf-miner/
+34563271,GenUI: interactive and extensible open source software platform for de novo molecular generation and cheminformatics.,False,
+34352075,MERIDA: a novel Boolean logic-based integer linear program for personalized cancer therapy.,False,
+29733382,"An integrative model for alternative polyadenylation, IntMAP, delineates mTOR-modulated endoplasmic reticulum stress response.",True,http://compbio.cs.umn.edu/IntMAP/
+25338717,FlaiMapper: computational annotation of small ncRNA-derived fragments using RNA-seq high-throughput data.,False,
+31830252,SSIPe: accurately estimating protein-protein binding affinity change upon mutations using evolutionary profiles in combination with an optimized physical energy function.,True,https://zhanglab.ccmb.med.umich.edu/SSIPe
+25547242,WEBnm@ v2.0: Web server and services for comparing protein flexibility.,True,http://apps.cbu.uib.no/webnma
+24683129,jsPsych: a JavaScript library for creating behavioral experiments in a Web browser.,True,http://www.jspsych.org
+23715893,IS-Dom: a dataset of independent structural domains automatically delineated from protein structures.,True,http://domserv.lab.tuat.ac.jp/IS-Dom.html
+32719846,OPTIK: a database for understanding catchment areas to guide mobilization of cancer center assets.,False,
+27378292,ConsPred: a rule-based (re-)annotation framework for prokaryotic genomes.,False,
+33827413,EzMAP: Easy Microbiome Analysis Platform.,False,
+24926252,Automated collection of imaging and phenotypic data to centralized and distributed data repositories.,False,
+29409535,DMTO: a realistic ontology for standard diabetes mellitus treatment.,True,http://bioportal.bioontology.org/ontologies/DMTO
+24951797,UCbase 2.0: ultraconserved sequences database (2014 update).,True,http://ucbase.unimore.it
+29520645,EudraVigilance Medicines Safety Database: Publicly Accessible Data for Research and Public Health Protection.,False,
+29715310,FusionHub: A unified web platform for annotation and visualization of gene fusion events in human cancer.,True,https://fusionhub.persistent.co.in
+26791506,"MG-RAST, a Metagenomics Service for Analysis of Microbial Community Structure and Function.",True,http://api.metagenomics.anl.gov/api.html
+21410990,AnyExpress: integrated toolkit for analysis of cross-platform gene expression data using a fast interval matching algorithm.,False,
+29554289,GenomeDISCO: a concordance score for chromosome conformation capture experiments using random walks on contact map graphs.,False,
+30576492,Accelerating annotation of articles via automated approaches: evaluation of the neXtA5 curation-support tool by neXtProt.,False,
+26664458,ChemDes: an integrated web-based platform for molecular descriptor and fingerprint computation.,True,http://www.scbdd.com/chemdes
+27226753,"Capturing biodiversity: linking a cyanobacteria culture collection to the ""scratchpads"" virtual research environment enhances biodiversity knowledge.",True,http://cyanobacteria.myspecies.info/
+31504165,COMBAT-TB-NeoDB: fostering tuberculosis research through integrative analysis using graph database technologies.,True,https://neodb.sanbi.ac.za
+23832245,PhosphoChain: a novel algorithm to predict kinase and phosphatase networks from high-throughput expression data.,True,http://virgo.csie.ncku.edu.tw/PhosphoChain/
+32960944,MMAP: a cloud computing platform for mining the maximum accuracy of predicting phenotypes from genotypes.,True,http://zzlab.net/MMAP
+23729471,BeEP Server: Using evolutionary information for quality assessment of protein structure models.,True,http://www.embnet.qb.fcen.uba.ar/embnet/beep.php
+22693219,GeneView: a comprehensive semantic search engine for PubMed.,True,http://bc3.informatik.hu-berlin.de/
+"28520987, 33963869",ProteoSign: an end-user online differential proteomics statistical analysis platform.,True,http://bioinformatics.med.uoc.gr/ProteoSign
+29410279,StructureFold2: Bringing chemical probing data into the computational fold of RNA structural analysis.,False,
+33964156,ptm: an R package for the study of methionine sulfoxidation and other posttranslational modifications.,True,https://metositeptm.com
+23408875,Getting more out of biomedical documents with GATE's full lifecycle open source text analytics.,False,
+26163692,C-It-Loci: a knowledge database for tissue-enriched loci.,True,http://c-it-loci.uni-frankfurt.de
+31073595,INGA 2.0: improving protein function prediction for the dark proteome.,True,https://inga.bio.unipd.it/
+27608726,COME: a robust coding potential calculation tool for lncRNA identification and characterization based on multiple features.,False,
+34132422,ivTerm-An R package for interactive visualization of functional analysis results of meta-omics data.,False,
+27974882,PLAT: An Automated Fault and Behavioural Anomaly Detection Tool for PLC Controlled Manufacturing Systems.,False,
+32589017,MS-CleanR: A Feature-Filtering Workflow for Untargeted LC-MS Based Metabolomics.,False,
+24618464,The Biological Reference Repository (BioR): a rapid and flexible system for genomics annotation.,True,http://bioinformaticstools.mayo.edu
+21622954,Swimming into peptidomimetic chemical space using pepMMsMIMIC.,True,http://mms.dsfarm.unipd.it/pepMMsMIMIC
+23452721,MethylPCA: a toolkit to control for confounders in methylome-wide association studies.,False,
+26333403,FASTR: A novel data format for concomitant representation of RNA sequence and secondary structure information.,True,http://metagenomics.atc.tcs.com/compression/fastr
+24130305,ORMAN: optimal resolution of ambiguous RNA-Seq multimappings in the presence of novel isoforms.,True,http://orman.sf.net
+32510568,CCLA: an accurate method and web server for cancer cell line authentication using gene expression profiles.,True,http://bioinfo.life.hust.edu.cn/web/CCLA/
+27508329,Connection Map for Compounds (CMC): A Server for Combinatorial Drug Toxicity and Efficacy Analysis.,True,http://cadd.tongji.edu.cn/webserver/CMCbp.jsp
+23898041,CrusView: a Java-based visualization platform for comparative genomics analyses in Brassicaceae species.,True,http://www.cmbb.arizona.edu/CrusView/
+34625425,"The Mutational Signature Comprehensive Analysis Toolkit (musicatk) for the Discovery, Prediction, and Exploration of Mutational Signatures.",False,
+25480687,AIM: a comprehensive Arabidopsis interactome module database and related interologs in plants.,True,http://probes.pw.usda.gov/AIM
+"23284085, 26412851",ChloroMitoSSRDB: open source repository of perfect and imperfect repeats in organelle genomes for evolutionary genomics.,True,http://www.mcr.org.in/chloromitossrdb
+30343671,PoSE: visualization of patterns of sequence evolution using PAML and MATLAB.,False,
+30821318,SW-Tandem: a highly efficient tool for large-scale peptide identification with parallel spectrum dot product on Sunway TaihuLight.,False,
+33256603,"Isabl Platform, a digital biobank for processing multimodal patient data.",False,
+30944313,Metascape provides a biologist-oriented resource for the analysis of systems-level datasets.,False,
+31825307,"MouseBytes, an open-access high-throughput pipeline and database for rodent touchscreen-based cognitive assessment.",True,https://touchscreencognition.org
+34019657,ProteinTools: a toolkit to analyze protein structures.,True,https://proteintools.uni-bayreuth.de
+26795595,detectMITE: A novel approach to detect miniature inverted repeat transposable elements in genomes.,False,
+29492894,DNA Multiple Sequence Alignment Guided by Protein Domains: The MSA-PAD 2.0 Method.,True,https://recasgateway.cloud.ba.infn.it/
+33378642,NeuroPAL: A Multicolor Atlas for Whole-Brain Neuronal Identification in C. elegans.,False,
+25757547,SIFTER-T: a scalable and optimized framework for the SIFTER phylogenomic method of probabilistic protein domain annotation.,True,http://labpib.fmrp.usp.br/methods/SIFTER-t/
+34592148,Anipose: A toolkit for robust markerless 3D pose estimation.,True,http://anipose.org/
+21689434,PhyloMap: an algorithm for visualizing relationships of large sequence data sets and its application to the influenza A virus genome.,True,http://www.biochem.uni-luebeck.de/public/software/phylomap.html
+24336806,NetCoffee: a fast and accurate global alignment approach to identify functionally conserved proteins in multiple networks.,False,
+26020645,UniqTag: Content-Derived Unique and Stable Identifiers for Gene Annotation.,False,
+34663069,TopProperty: Robust Metaprediction of Transmembrane and Globular Protein Features Using Deep Neural Networks.,True,https://cpclab.uni-duesseldorf.de/topsuite/
+24186831,Variobox: automatic detection and annotation of human genetic variants.,True,http://bioinformatics.ua.pt/variobox

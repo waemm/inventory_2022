@@ -1,0 +1,356 @@
+extracted_name,baseline_name,match_type,score,reasoning,extracted_url,baseline_url,edit_distance
+Virus Variation Resource,virus variation,"SAME_DOMAIN, contains, url_path_sim=0.95",3.5,"Score=3.5: SAME_DOMAIN, contains, url_path_sim=0.95",http://www.ncbi.nlm.nih.gov/genome/viruses/variation/,http://www.ncbi.nlm.nih.gov/genomes/VirusVariation,9.0
+UCSC Cancer Genomics Browser,ucsc genome browser,"SAME_DOMAIN, url_path_sim=0.81, long_sim=0.77",3.5,"Score=3.5: SAME_DOMAIN, url_path_sim=0.81, long_sim=0.77",https://genome-cancer.ucsc.edu/,http://genome.ucsc.edu,10.0
+GH19 Engineering Database,exed,"SAME_DOMAIN, url_path_sim=0.83, long_sim=0.78",3.5,"Score=3.5: SAME_DOMAIN, url_path_sim=0.83, long_sim=0.78",https://gh19ed.biocatnet.de,http://exed.biocatnet.de,22.0
+IMG,integrated microbial genomes and metagenomes,"SAME_DOMAIN, url_path_sim=0.98, long_sim=0.81",3.5,"Score=3.5: SAME_DOMAIN, url_path_sim=0.98, long_sim=0.81",http://www.hmpdacc-resources.org/img_hmp,http://www.hmpdacc-resources.org/imgm_hmp,41.0
+BAR-PLUS,bologna annotation resource,"SAME_DOMAIN, url_path_sim=0.92, long_sim=0.92",3.5,"Score=3.5: SAME_DOMAIN, url_path_sim=0.92, long_sim=0.92",http://bar.biocomp.unibo.it/bar2.0,http://bar.biocomp.unibo.it/bar3,23.0
+Daikon Marker,kazusa marker database,"SAME_DOMAIN, url_path_sim=0.84, long_sim=0.74",3.5,"Score=3.5: SAME_DOMAIN, url_path_sim=0.84, long_sim=0.74",http://marker.kazusa.or.jp/Daikon,http://marker.kazusa.or.jp,14.0
+African Compounds,nanpdb,"SAME_DOMAIN, url_path_sim=0.86",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.86",http://african-compounds.org,http://african-compounds.org/nanpdb,13.0
+CATchUP,plantexpress,"SAME_DOMAIN, url_path_sim=0.83",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.83",http://plantomics.mind.meiji.ac.jp/CATchUP,http://plantomics.mind.meiji.ac.jp/PlantExpress,10.0
+WilsonGen,indigenomes,"SAME_DOMAIN, url_path_sim=0.89",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.89",http://clingen.igib.res.in/WilsonGen/,http://clingen.igib.res.in/indigen,9.0
+MPS Database,ignm,"SAME_DOMAIN, url_path_sim=0.82",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.82",https://mps.csb.pitt.edu,http://gnmdb.csb.pitt.edu,12.0
+Breast cancer transcriptome datasets,sysinflam hudb,"SAME_DOMAIN, url_path_sim=0.84",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.84",http://breastcancer.gxbsidra.org/dm3/geneBrowser/list,http://sepsis.gxbsidra.org/dm3/geneBrowser/list,31.0
+MMV-db,cytomegalovirusdb,"SAME_DOMAIN, url_path_sim=0.96",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.96",http://www.mmvdb.dqweilab-sjtu.com/index.php,http://www.cmvdb.dqweilab-sjtu.com/index.php,13.0
+VGR,virus variation,"SAME_DOMAIN, url_path_sim=0.83",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.83",http://www.ncbi.nlm.nih.gov/genome/viruses/,http://www.ncbi.nlm.nih.gov/genomes/VirusVariation,13.0
+HIV_transcriptome,sysinflam hudb,"SAME_DOMAIN, url_path_sim=0.91",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.91",http://hiv.gxbsidra.org/dm3/geneBrowser/list,http://sepsis.gxbsidra.org/dm3/geneBrowser/list,16.0
+VRI_transcriptome,sysinflam hudb,"SAME_DOMAIN, url_path_sim=0.90",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.90",http://vri1.gxbsidra.org/dm3/geneBrowser/list,http://sepsis.gxbsidra.org/dm3/geneBrowser/list,16.0
+Seed Pro-Nutra Care,tripath,"SAME_DOMAIN, url_path_sim=0.82",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.82",http://www.gbpuat-cbsh.ac.in/departments/bi/database/seed_pro_nutra_care/,http://www.gbpuat-cbsh.ac.in/departments/bi/database/tripath,16.0
+Protein Complexes Map,hu.map,"SAME_DOMAIN, url_path_sim=0.85",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.85",http://proteincomplexes.org,http://humap2.proteincomplexes.org,18.0
+ChIP-Seq-tools,ucnebase,"SAME_DOMAIN, url_path_sim=0.81",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.81",http://ccg.vital-it.ch/chipseq/,http://ccg.vital-it.ch/UCNEbase,12.0
+IgE-mediated atopic diseases transcriptome collection,gxb,"SAME_DOMAIN, url_path_sim=0.93",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.93",http://ige.gxbsidra.org/dm3/geneBrowser/list,http://vri1.gxbsidra.org/dm3/geneBrowser/list,52.0
+NutriChem,chemprot-2.0,"SAME_DOMAIN, url_path_sim=0.83",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.83",http://cbs.dtu.dk/services/NutriChem-1.0,http://www.cbs.dtu.dk/services/ChemProt-2.0,11.0
+Complex Portal,intact,"SAME_DOMAIN, url_path_sim=0.80",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.80",http://www.ebi.ac.uk/intact/complex,http://www.ebi.ac.uk/intact,13.0
+CancerResource,mvoc,"SAME_DOMAIN, url_path_sim=0.90",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.90",http://bioinformatics.charite.de/care,http://bioinformatics.charite.de/mvoc,12.0
+National Genomics Data Center,edk,"SAME_DOMAIN, url_path_sim=0.88",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.88",https://bigd.big.ac.cn,http://bigd.big.ac.cn/edk,27.0
+TAS,citrus sinensis annotation project,"SAME_DOMAIN, url_path_sim=0.85",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.85",http://tas.hzau.edu.cn,http://citrus.hzau.edu.cn,32.0
+EnchyBASE,diseasecard,"SAME_DOMAIN, url_path_sim=0.81",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.81",http://bioinformatics.ua.pt/enchybase/,http://bioinformatics.ua.pt/diseasecard,10.0
+Medicago sativa gene index,legumeip,"SAME_DOMAIN, url_path_sim=0.84",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.84",http://plantgrn.noble.org/AGED/,http://plantgrn.noble.org/LegumeIP,22.0
+Fungal plant cell wall-degrading enzyme database,dbhimo,"SAME_DOMAIN, url_path_sim=0.88",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.88",http://pcwde.riceblast.snu.ac.kr/,http://hme.riceblast.snu.ac.kr,45.0
+Phenoscape Knowledgebase,vto,"SAME_DOMAIN, url_path_sim=0.90",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.90",http://kb.phenoscape.org,http://phenoscape.org,23.0
+TodoFirGene,transnap,"SAME_DOMAIN, url_path_sim=0.86",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.86",http://plantomics.mind.meiji.ac.jp/todomatsu/,http://plantomics.mind.meiji.ac.jp/nashi,10.0
+Arabidopsis acyl lipid mutants database,cpgr,"SAME_DOMAIN, url_path_sim=0.85",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.85",http://aralip.plantbiology.msu.edu,http://cpgr.plantbiology.msu.edu,37.0
+Plant Editosome Database,edk,"SAME_DOMAIN, url_path_sim=0.94",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.94",http://bigd.big.ac.cn/ped,http://bigd.big.ac.cn/edk,22.0
+JGI Genome Portal,gold,"SAME_DOMAIN, url_path_sim=0.82",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.82",http://genome.jgi.doe.gov,http://gold.jgi.doe.gov,15.0
+Chinese population genome database,edk,"SAME_DOMAIN, url_path_sim=0.83",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.83",http://bigd.big.ac.cn/vcg/,http://bigd.big.ac.cn/edk,32.0
+ReproGenomics Viewer,sorgodb,"SAME_DOMAIN, url_path_sim=0.88",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.88",http://rgv.genouest.org,http://sorgo.genouest.org/index.php,17.0
+PlantEAR,sorghumfdb,"SAME_DOMAIN, url_path_sim=0.82",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.82",http://structuralbiology.cau.edu.cn/plantEAR,http://structuralbiology.cau.edu.cn/sorghum/index.html,10.0
+PlateletWeb,its2,"SAME_DOMAIN, url_path_sim=0.85",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.85",http://plateletweb.bioapps.biozentrum.uni-wuerzburg.de,http://its2.bioapps.biozentrum.uni-wuerzburg.de,10.0
+PlantRegMap,tsdb,"SAME_DOMAIN, url_path_sim=0.84",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.84",http://planttfdb.cbi.pku.edu.cn/,http://tsdb.cbi.pku.edu.cn,10.0
+Inborn errors of immunity transcriptome collection,sysinflam hudb,"SAME_DOMAIN, url_path_sim=0.94",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.94",http://pid.gxbsidra.org/dm3/geneBrowser/list,http://sepsis.gxbsidra.org/dm3/geneBrowser/list,44.0
+SARS-CoV-2 Structurome,rna structurome database,"SAME_DOMAIN, url_path_sim=0.83",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.83",https://structurome.bb.iastate.edu/sars-cov-2,http://structurome.bb.iastate.edu,18.0
+ImmtorLig_DB,hspmdb,"SAME_DOMAIN, url_path_sim=0.84",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.84",http://bioinfo.imtech.res.in/bvs/immtor/,http://bioinfo.imtech.res.in/bvs/hspmdb/index.php,10.0
+GMGM,grape-crispr,"SAME_DOMAIN, url_path_sim=0.90",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.90",http://biodb.sdau.edu.cn/gmgm/,http://biodb.sdau.edu.cn/gc/index.html,11.0
+eChickAtlas,electronic mouse atlas of gene expression,"SAME_DOMAIN, url_path_sim=0.83",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.83",http://www.emouseatlas.org,http://www.emouseatlas.org/emage,32.0
+VacTarBac,humcfs,"SAME_DOMAIN, url_path_sim=0.81",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.81",http://webs.iiitd.edu.in/raghava/vactarbac/,http://webs.iiitd.edu.in/raghava/humcfs,9.0
+C. elegans functional interactome,hir,"SAME_DOMAIN, url_path_sim=0.80",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.80",http://worm.biomedtzc.cn,http://human.biomedtzc.cn,31.0
+Dietary restriction gene network,hagr,"SAME_DOMAIN, url_path_sim=0.91",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.91",http://genomics.senescence.info/diet/,http://genomics.senescence.info,29.0
+Mouse Isoform Network,misomine,"SAME_DOMAIN, url_path_sim=0.87",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.87",http://guanlab.ccmb.med.umich.edu/isoformnetwork,http://guanlab.ccmb.med.umich.edu/misomine,14.0
+Ljtrans DB,podc,"SAME_DOMAIN, url_path_sim=0.80",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.80",http://bioinf.mind.meiji.ac.jp/kanikusa/,http://bioinf.mind.meiji.ac.jp/podc,9.0
+Vibrio parahaemolyticus,bsrd,"SAME_DOMAIN, url_path_sim=0.89",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.89",http://kwanlab.bio.cuhk.edu.hk/vp,http://kwanlab.bio.cuhk.edu.hk/BSRD,21.0
+CancerLivER,denvind,"SAME_DOMAIN, url_path_sim=0.80",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.80",https://webs.iiitd.edu.in/raghava/cancerliver,http://webs.iiitd.edu.in/raghava/denvind,9.0
+Genome Warehouse,sorgsd,"SAME_DOMAIN, url_path_sim=0.83",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.83",https://ngdc.cncb.ac.cn/gwh,http://ngdc.cncb.ac.cn/sorgsd,13.0
+Bamboo Network,crofgd,"SAME_DOMAIN, url_path_sim=0.84",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.84",http://bioinformatics.cau.edu.cn/bamboo,http://bioinformatics.cau.edu.cn/croFGD,13.0
+PhenoMiner,the chinchilla research resource database,"SAME_DOMAIN, url_path_sim=0.87",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.87",http://rgd.mcw.edu,http://crrd.mcw.edu,35.0
+COVID-19 KG,isyte,"SAME_DOMAIN, url_path_sim=0.85",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.85",https://research.bioinformatics.udel.edu/covid19kg/,http://research.bioinformatics.udel.edu/iSyTE,10.0
+GAN,grape-crispr,"SAME_DOMAIN, url_path_sim=0.93",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.93",http://biodb.sdau.edu.cn/gan/,http://biodb.sdau.edu.cn/gc/index.html,10.0
+ClinicalTrials.gov,pachin,"SAME_DOMAIN, url_path_sim=0.80",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.80",http://clinicaltrials.gov/ct2/show/NCT00931216,http://clinicaltrials.gov/ct2/show/record/NCT04675918?cond=pediatric+cardiac+arrest&draw=2&rank=10,16.0
+NOD Database,the mouse genomes project,"SAME_DOMAIN, url_path_sim=0.91",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.91",http://www.sanger.ac.uk/resources/mouse/nod/,http://www.sanger.ac.uk/resources/mouse/genomes,21.0
+MIPS PlantsDB,phenodis,"SAME_DOMAIN, url_path_sim=0.81",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.81",http://mips.helmholtz-muenchen.de/plant/genomes.jsp,http://mips.helmholtz-muenchen.de/phenodis,11.0
+HPTT,pan immune repertoire database,"SAME_DOMAIN, url_path_sim=0.81",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.81",https://db.cngb.org/HPTT/,http://db.cngb.org/pird,27.0
+CellLineNavigator,cellminerhcc,"SAME_DOMAIN, url_path_sim=0.81",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.81",http://www.medicalgenomics.org/celllinenavigator,http://www.medicalgenomics.org/cellminerhcc,10.0
+CDB,cistromefinder,"SAME_DOMAIN, url_path_sim=0.82",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.82",http://cistrome.org/db,http://cistrome.org/finder,12.0
+Dendrobium_map,refseq,"SAME_DOMAIN, url_path_sim=0.84",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.84",http://www.ncbi.nlm.nih.gov/sra/,http://www.ncbi.nlm.nih.gov/refseq,13.0
+HIV_LANL,hemorrhagic fever virus database,"SAME_DOMAIN, url_path_sim=0.92",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.92",http://hiv.lanl.gov,http://hfv.lanl.gov,28.0
+PathwaysWeb,tanric,"SAME_DOMAIN, url_path_sim=0.86",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.86",http://bioinformatics.mdanderson.org/main/PathwaysWeb:Overview,http://bioinformatics.mdanderson.org/main/TANRIC:Overview,9.0
+THISP,peptideatlas,"SAME_DOMAIN, url_path_sim=0.84",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.84",http://www.peptideatlas.org/thisp/,http://www.peptideatlas.org,11.0
+HIVE,gutfeelingkb,"SAME_DOMAIN, url_path_sim=0.91",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.91",https://hive.biochemistry.gwu.edu,http://hive.biochemistry.gwu.edu/gfkb,11.0
+AR Database,lovd,"SAME_DOMAIN, url_path_sim=0.82",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.82",http://www.lovd.nl/AR,http://www.LOVD.nl,10.0
+DCDB,covalentindb,"SAME_DOMAIN, url_path_sim=0.82",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.82",http://www.cls.zju.edu.cn/dcdb/,http://cadd.zju.edu.cn/cidb,10.0
+BIG Data Center,edk,"SAME_DOMAIN, url_path_sim=0.88",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.88",http://bigd.big.ac.cn,http://bigd.big.ac.cn/edk,14.0
+TCM Database@Taiwan,tcea,"SAME_DOMAIN, url_path_sim=0.83",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.83",http://tcm.cmu.edu.tw/,http://tcea.tmu.edu.tw,15.0
+Laccase Database,fpoxdb,"SAME_DOMAIN, url_path_sim=0.81",3.0,"Score=3.0: SAME_DOMAIN, url_path_sim=0.81",http://laccase.riceblast.snu.ac.kr/,http://peroxidase.riceblast.snu.ac.kr,14.0
+EchinoBase gene nomenclature,echinobase,"SAME_DOMAIN, contains",2.5,"Score=2.5: SAME_DOMAIN, contains",https://www.echinobase.org/gene/static/geneNomenclature.jsp,http://echinobase.org,18.0
+EumicrobeDBLite,otd,"SAME_DOMAIN, long_sim=0.73",2.5,"Score=2.5: SAME_DOMAIN, long_sim=0.73",http://www.eumicrobedb.org,http://www.eumicrobedb.org/transcripts,13.0
+Phasing Server,memprotmd,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://phasingserver.stats.ox.ac.uk/,http://memprotmd.bioch.ox.ac.uk,14.0
+Bio-Analytic Resource,networx,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://bar.utoronto.ca,http://ophid.utoronto.ca/networx,17.0
+EGFR Mutant Structural Database,crustf,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://bcc.ee.cityu.edu.hk/data/EGFR.html,http://qinlab.sls.cuhk.edu.hk/CrusTF,27.0
+PlantPepDB,dbtflc,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.nipgr.ac.in/PlantPepDB/,http://www.vit.ac.in/files/database/Home.php,9.0
+PKMiner,horse single nucleotide polymorphism and expression database,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://pks.kaist.ac.kr/pkminer,http://snugenome2.snu.ac.kr/HSDB,54.0
+Gene Expression Commons,rmdb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://gexc.stanford.edu/,http://rmdb.stanford.edu,21.0
+ExpEdit,spliceaid-f,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.caspur.it/ExpEdit/,http://www.caspur.it/SpliceAidF,9.0
+Sex-Linked Cancer,mesocosm,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://becklab.github.io/SexLinked,http://aliayadi.github.io/MESOCOSM-database,15.0
+Drug Target Ontology,phare-kb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://bioportal.bioontology.org/ontologies/DTO,http://purl.bioontology.org/ontology/PHARE,17.0
+Mouse Quantitative Proteomics Knowledgebase,mrmassaydb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://mousequapro.proteincentre.com,http://mrmassaydb.proteincentre.com,37.0
+Microbiome Search Engine,synbiolgdb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://mse.ac.cn,http://bioinformatics.ac.cn/synbiolgdb,20.0
+IARC TP53 Database,eco,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://p53.iarc.fr,http://eco.iarc.fr,17.0
+Disease associated cytokine SNPs database,express,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.iupui.edu/~cytosnp,http://www.iupui.edu/ÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬ÃÂÃÂÃÂÃÂ,37.0
+Cancer Proteomics Database,cdp,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://cancerproteomics.uio.no,http://celldeathproteomics.uio.no,24.0
+Proteins API,memprotmd,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.ebi.ac.uk/proteins/api/doc,http://memprotmd.bioch.ox.ac.uk,11.0
+BastionHub,kinetochoredb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://bastionhub.erc.monash.edu/,http://lightning.med.monash.edu/kinetochoreDB2,10.0
+TMalphaDB,invfest,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://lmc.uab.cat/TMalphaDB,http://invfestdb.uab.cat,9.0
+Cardiomyocyte 2D Database,morusdb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://2d.bjmu.edu.cn,http://morus.swu.edu.cn/morusdb,21.0
+Diatom Portal,mediadb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://networks.systemsbiology.net/diatom-portal/,http://mediadb.systemsbiology.net,12.0
+Parkinson's Disease DNA Variant Browser,linps,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://pdgenetics.shinyapps.io/VariantBrowser/,http://mahshaaban.shinyapps.io/LINPSAPP,36.0
+Plant IsomiR Atlas,ddtrp,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.mcr.org.in/isomir,http://bmi.icmr.org.in/DDTRP,16.0
+PharmMapper,morusdb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://lilab.ecust.edu.cn/pharmmapper/,http://morus.swu.edu.cn/morusdb,10.0
+AlzPlatform,stemcellckb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.cbligand.org/AD/,http://www.cbligand.org/StemCellCKB,11.0
+GPCR-HetNet,odcs,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.iiia.csic.es/~ismel/GPCR-Nets/index.html,http://csbg.cnb.csic.es/odcs,10.0
+COMBAT-TB-NeoDB,hcvpro,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://neodb.sanbi.ac.za,"http://apps.sanbi.ac.za/hcvpro/, http://cbrc.kaust.edu.sa/hcvpro",14.0
+mds_ies_db,immunet,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://oxytricha.princeton.edu/mds_ies_db,http://immunet.princeton.edu,9.0
+Badger,memprotmd,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://badger.bio.ed.ac.uk/,http://memprotmd.bioch.ox.ac.uk,9.0
+Pogona Genome,agriseqdb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://genomics.canberra.edu.au,http://expression.latrobe.edu.au/agriseqdb,11.0
+lncRNA-disease association resource,synbiolgdb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://asdcd.amss.ac.cn/Software/Details/2,http://bioinformatics.ac.cn/synbiolgdb,32.0
+CoffeebEST,btoxdb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://bioinfo-02.cp.utfpr.edu.br/,http://www.gurupi.uft.edu.br/btoxdb,9.0
+PNB Valid,horse single nucleotide polymorphism and expression database,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://pnbvalid.snu.ac.kr,http://snugenome2.snu.ac.kr/HSDB,55.0
+LM-GlycomeAtlas,glycopost,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://glycosmos.org/lm_glycomeatlas/index,http://glycopost.glycosmos.org,9.0
+EU COVID-19 Diagnostics,jrc gmo-amplicons,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://covid-19-diagnostics.jrc.ec.europa.eu/,http://gmo-crl.jrc.ec.europa.eu/jrcgmoamplicons,18.0
+Glutantβase,propedia,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://bioinfo.dcc.ufmg.br/glutantbase,http://bioinfo.dcc.ufmg.br/propedia,10.0
+miRNA Target Guide,plsdb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://www.ccb.uni-saarland.de/mtguide,http://ccb-microbe.cs.uni-saarland.de/plsdb,17.0
+PRO,snp2structure,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://pir.georgetown.edu/pro/,http://apps.icbi.georgetown.edu/snp2structure,11.0
+CancerCoCoPUTs,eadb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://dnahive.fda.gov/review/cancercocoputs/,http://www.fda.gov/ScienceResearch/BioinformaticsTools/EstrogenicActivityDatabaseEADB/default.htm,13.0
+CPT Galaxy,rnaseqmetadb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://cpt.tamu.edu/galaxy-pub,http://rnaseqmetadb.ece.tamu.edu,11.0
+Yeast re-annotation resource,morusdb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://cobi.uestc.edu.cn/services/yeast/,http://morus.swu.edu.cn/morusdb,25.0
+Synteny Portal,bee,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://bioinfo.konkuk.ac.kr/synteny_portal,http://bike-bee.snu.ac.kr,13.0
+S. mansoni lncRNA Atlas,eimeriatdb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://verjolab.usp.br,http://www.coccidia.icb.usp.br/eimeriatdb,19.0
+brain-coX,suba3,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://shiny.bioinf.wehi.edu.au/freytag.s/,http://suba.plantenergy.uwa.edu.au,9.0
+ChloroMitoSSRDB,andb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.mcr.org.in/chloromitossrdb,http://arecanut.icmr.org.in,13.0
+Lancaster Sensorimotor Norms,memprotmd,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://www.lancaster.ac.uk/psychology/lsnorms/,http://memprotmd.bioch.ox.ac.uk,23.0
+Taxallnomy,propedia,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://bioinfo.icb.ufmg.br/taxallnomy,http://bioinfo.dcc.ufmg.br/propedia,10.0
+NURSA,transcriptomine,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.nursa.org,http://www.nursa.org/transcriptomine,13.0
+3Disease Browser,morusdb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://3dgb.cbi.pku.edu.cn/disease/,http://morus.swu.edu.cn/morusdb,14.0
+Structure-PPi,firedb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://structureppi.bioinfo.cnio.es/Structure,http://firedb.bioinfo.cnio.es,11.0
+Cell-culture Database,tami,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://cell-lines.toku-e.com/,http://antibiotics.toku-e.com,19.0
+World Spider Trait database,channelsdb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://spidertraits.sci.muni.cz/,http://ncbr.muni.cz/ChannelsDB,24.0
+SG-ADVISER mtDNA,isometlin,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://genomics.scripps.edu/mtdna,http://isometlin.scripps.edu,13.0
+CSI NGS Portal,cube-db,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://csibioinfo.nus.edu.sg/csingsportal,http://epsf.bmad.bii.a-star.edu.sg/cube/db/html/home.html,13.0
+Cov19VaxKB,virmugendb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.violinet.org/cov19vaxkb/,http://www.violinet.org/virmugendb,9.0
+CCPN Metabolomics,memprotmd,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.ccpn.ac.uk/metabolomics/,http://memprotmd.bioch.ox.ac.uk,13.0
+StreptomycesInforSys,birs,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.sis.biowaves.org,http://www.bioterrorism.biowaves.org,17.0
+GlycomeAtlas,oryzapg,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.rings.t.soka.ac.jp/GlycomeAtlas/GUI.html,http://oryzapg.iab.keio.ac.jp,10.0
+OWB Map,porcine translational research database,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://wheat.pw.usda.gov/ggpages/maps/OWB/,http://www.ars.usda.gov/Services/docs.htm?docid=6065,36.0
+O-GlcNAcome,rgd,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.oglcnac.mcw.edu,http://rgd.mcw.edu,10.0
+QuartataWeb,ignm,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://quartata.csb.pitt.edu,http://gnmdb.csb.pitt.edu,11.0
+sAOP,hemaexplorer,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://saop.cpr.ku.dk,http://servers.binf.ku.dk/hemaexplorer,10.0
+RegulomePA,twinsmx,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.regulome.pcyt.unam.mx,http://twinsmxofficial.unam.mx,9.0
+Worldwide Protein Data Bank,wwpdb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://www.wwpdb.org/,http://validate.wwpdb.org,22.0
+Kelp Forest Database,ucsc genome browser,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://kelpforest.ucsc.edu/,http://genome.ucsc.edu,17.0
+GlycoPattern,oncoppi,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://glycopattern.emory.edu,http://oncoppi.emory.edu,9.0
+NCI ALMANAC,tie,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://dtp.cancer.gov/ncialmanac,http://isomir.ccr.cancer.gov,10.0
+Simple ClinVar,msigdb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://simple-clinvar.broadinstitute.org/,http://www.broadinstitute.org/msigdb,12.0
+Microorganism ID Platform,transgene promoters,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://icg-test.mydisk.nsc.ru/s/qj6cfZg57g6qwzN,http://wwwmgs.bionet.nsc.ru/mgs/dbases/tgp/home.html,19.0
+Tuebingen Toolkit,maxqb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://toolkit.tuebingen.mpg.de,http://www.biochem.mpg.de/maxqb,17.0
+BioStudies,memprotmd,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.ebi.ac.uk/biostudies,http://memprotmd.bioch.ox.ac.uk,10.0
+JAX Synteny Browser,creportal,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://syntenybrowser.jax.org/,http://www.informatics.jax.org/home/recombinase,17.0
+SARS-CoV-2 Mutation-Annotated Trees Database,ucsc genome browser,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://hgdownload.soe.ucsc.edu/goldenPath/wuhCor1/UShER_SARS-CoV-2/,http://genome.ucsc.edu,35.0
+Monocyte transcriptome compendium,sysinflam hudb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://monocyte.gxbsidra.org/dm3/landing.gsp,http://sepsis.gxbsidra.org/dm3/geneBrowser/list,28.0
+Chr21 Catalog,dsigdb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://gfuncpathdb.ucdenver.edu/iddrc/chr21/home.php,http://tanlab.ucdenver.edu/DSigDB,13.0
+BacCompare,ym500,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://baccompare.imst.nsysu.edu.tw,http://ngs.ym.edu.tw/ym500,9.0
+Waterloo Exploration Database,metaprox,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://ece.uwaterloo.ca/~k29ma/exploration/,http://metaprox.uwaterloo.ca,25.0
+AraPPISite,morusdb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://systbio.cau.edu.cn/arappisite/index.html,http://morus.swu.edu.cn/morusdb,9.0
+Galaxy Sciensano,feda,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://galaxy.sciensano.be,http://feda.sciensano.be,14.0
+Hydra vulgaris transcriptome atlas,camurweb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www-labgtp.na.icar.cnr.it/Atlas,http://bioinformatics.iasi.cnr.it/camurweb,30.0
+CPTAC Assay Portal,tie,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://assays.cancer.gov,http://isomir.ccr.cancer.gov,17.0
+ceRNA database,ccgd,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.oncomir.umn.edu/cefinder/,http://ccgd-starrlab.oit.umn.edu,12.0
+Human IRES Atlas,ym500,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://cobishss0.im.nuk.edu.tw/Human_IRES_Atlas/,http://ngs.ym.edu.tw/ym500,15.0
+Pará rubber tree genome and multi-transcriptome database,pubchemqc,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://matsui-lab.riken.jp/rubber/,http://pubchemqc.riken.jp,50.0
+NCI Genomic Data Commons,tie,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://gdc.cancer.gov/,http://isomir.ccr.cancer.gov,22.0
+JAX-CKB,creportal,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://ckb.jax.org/,http://www.informatics.jax.org/home/recombinase,9.0
+CFC Database,pubchemqc,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://rarge.psc.riken.jp/chloroplast/,http://pubchemqc.riken.jp,12.0
+canSAR,memprotmd,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://cansar.icr.ac.uk,http://memprotmd.bioch.ox.ac.uk,9.0
+pCRM1exportome,nesdb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://prodata.swmed.edu/pCRM1exportome,http://prodata.swmed.edu/LRNes,13.0
+InosinomeAtlas,camurweb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://srv00.ibbe.cnr.it/editing/,http://bioinformatics.iasi.cnr.it/camurweb,13.0
+DMDD,hemophilia a database,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://dmdd.org.uk,"http://hadb.org.uk/, http://www.kcl.ac.uk/ip/petergreen/haemBdatabase.html",19.0
+Allen Mouse Brain Connectivity Atlas,allen brain atlas,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://connectivity.brain-map.org/,http://www.brain-map.org,19.0
+Computational STM image database,vms-share,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://jarvis.nist.gov/jarvisstm,http://vmsshare.nist.gov,28.0
+Botryllus Database,phytotypedb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://botryllus.cribi.unipd.it,http://phytotypedb.bio.unipd.it,16.0
+HIV-1 human interaction database,tbpp,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.ncbi.nlm.nih.gov/genome/viruses/retroviruses/hiv-1/interactions,http://TBPortals.niaid.nih.gov,30.0
+PSICQUIC,memprotmd,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.ebi.ac.uk/Tools/webservices/psicquic/view/main.xhtml,http://memprotmd.bioch.ox.ac.uk,9.0
+Digital Kyoto Collection,oryzapg,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://atlas.cac.med.kyoto-u.ac.jp,http://oryzapg.iab.keio.ac.jp,23.0
+PubChem promiscuity,isometlin,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://chemutils.florida.scripps.edu/pcpromiscuity,http://isometlin.scripps.edu,16.0
+RepeatsDB-lite,phytotypedb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://protein.bio.unipd.it/repeatsdb-lite,http://phytotypedb.bio.unipd.it,12.0
+Reference databases for metagenomics,plantpis,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://itsonedb.ba.itb.cnr.it/,http://www.plantpis.ba.itb.cnr.it,32.0
+CircadiOmics,hexevent,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://circadiomics.ics.uci.edu,http://hexevent.mmg.uci.edu,12.0
+FAO Phytate DB,afish,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.fao.org/infoods/infoods/tables-and-databases/en,http://www.fao.org/infoods/biodiversity/index_en.stm,12.0
+Imputability Database,seeqtl,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.unc.edu/∼yunmli/imputability.html,http://www.bios.unc.edu/research/genomic_software/seeQTL,19.0
+Cancer Proteogenomics,ccgd,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,z.umn.edu/canresgithub,http://ccgd-starrlab.oit.umn.edu,18.0
+CSCS,synbiolgdb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://bioinfo.cemps.ac.cn/CSCS/,http://bioinformatics.ac.cn/synbiolgdb,10.0
+LncRNAWiki,synbiolgdb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://lncrna.big.ac.cn,http://bioinformatics.ac.cn/synbiolgdb,10.0
+Clinical measurement ontologies,phare-kb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://bioportal.bioontology.org/ontologies/1583,http://purl.bioontology.org/ontology/PHARE,28.0
+EU Clinical Trials Portal,jrc gmo-amplicons,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.ema.europa.eu/ema/index.jsp?curl=pages/news_and_events/news/2017/06/news_detail_002764.jsp%26mid=WC0b01ac058004d5c1,http://gmo-crl.jrc.ec.europa.eu/jrcgmoamplicons,21.0
+Cellosaurus,smr,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://web.expasy.org/cellosaurus/,http://swissmodel.expasy.org/repository,9.0
+IVF transcriptomic dataset collection,sysinflam hudb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://ivf.gxbsidra.org/dm3/landing.gsp,http://sepsis.gxbsidra.org/dm3/geneBrowser/list,33.0
+Open annotation ontology,biotop,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://purl.org/ao/,http://purl.org/biotop,20.0
+Weinberger Collection,hippdb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://dental.nyu.edu/aboutus/rare-book-collection.html,"http://www.nyu.edu/projects/arora/hippdb, http://code.google.com/p/helidb",20.0
+Huntington's Disease Transgenic Sheep-Model Database,genesetdb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://hdsheep.cer.auckland.ac.nz/,http://genesetdb.auckland.ac.nz/haeremai.html,44.0
+Digital gene atlas of neonate common marmoset brain,pubchemqc,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://gene-atlas.bminds.brain.riken.jp/,http://pubchemqc.riken.jp,49.0
+CooVar,ortholugedb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://genome.sfu.ca/projects/coovar/,http://www.pathogenomics.sfu.ca/ortholugedb,10.0
+Cell surface protein atlas,rnaiatlas,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://wlab.ethz.ch/cspa,http://www.rnaiatlas.ethz.ch,18.0
+BLUEPRINT Data Analysis Portal,skempi,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://blueprint-data.bsc.es,http://life.bsc.es/pid/skempi2,28.0
+BioAfrica HIV Proteomics Resource,saturn,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.bioafrica.net/proteomics/HIVproteome.html,http://www.bioafrica.net/regadb,29.0
+ID-TaxER,memprotmd,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://shiny-apps.ceh.ac.uk/ID-TaxER/,http://memprotmd.bioch.ox.ac.uk,9.0
+Mat_peptide,vipr,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://www.viprbrc.org,http://www.viprbrc.org/brc/home.spg?decorator=flavi_hcv,10.0
+Microbial variome database,modern,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://depts.washington.edu/sokurel/variome,http://epic.gs.washington.edu/modERN,23.0
+Network portal,mediadb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://networks.systemsbiology.net,http://mediadb.systemsbiology.net,13.0
+Taming the BEAST,mesocosm,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://taming-the-beast.github.io/,http://aliayadi.github.io/MESOCOSM-database,13.0
+Laminin-database,atlast4ss,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.lm.lncc.br,http://www.t4ss.lncc.br,13.0
+Tabloid Proteome,toppr,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://iomics.ugent.be/tabloidproteome,http://iomics.ugent.be/toppr,12.0
+FeptideDB,micropir,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www4g.biotec.or.th/FeptideDB/,http://www4a.biotec.or.th/micropir2,9.0
+ProteinHistorian,sfld,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://lighthouse.ucsf.edu/ProteinHistorian/,http://sfld.rbvi.ucsf.edu,15.0
+RNABP-COGEST,histome,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://bioinf.iiit.ac.in/RNABPCOGEST,"http://www.iiserpune.ac.in/ÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¬ÃÂÃÂÃÂÃÂ, http://www.actrec.gov.in/histome",10.0
+OXID,hisgatlas,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://redox.ncpsb.org/OXID/,http://biokb.ncpsb.org/HisgAtlas,9.0
+Harmonizome,remedy,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://amp.pharm.mssm.edu/Harmonizome,http://remedy.mssm.edu,10.0
+EFG Database,vms-share,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://www.ctcms.nist.gov/~knc6/JVASP.html,http://vmsshare.nist.gov,10.0
+GlycomicsDB,nurbs,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.glycomics.bcf.ku.edu,http://shark.abl.ku.edu/nurbs,10.0
+CoralTBase,redoxdb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.comp.hkbu.edu.hk/~db/CoralTBase,http://biocomputer.bio.cuhk.edu.hk/RedoxDB,9.0
+PHI-DAC,tissuenet,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://tarshish.md.biu.ac.il/∼samsona,http://netbio.bgu.ac.il/tissuenet,9.0
+StemCellNet,cyanoexpress,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://stemcellnet.sysbiolab.eu,http://cyanoexpress.sysbiolab.eu,10.0
+µgreen-db,diat.barcode,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://microgreen-23sdatabase.ea.inra.fr,http://www6.inra.fr/carrtel-collection_eng/Barcoding-database,11.0
+UbiBrowser,hisgatlas,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://ubibrowser.ncpsb.org,http://biokb.ncpsb.org/HisgAtlas,9.0
+FlyPrimerBank,drscdb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.flyrnai.org/flyprimerbank,http://www.flyrnai.org/tools/single_cell/web,11.0
+DUB Database,ratemirs,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://hpcwebapps.cit.nih.gov/ESBL/Database/DUBs/,http://www.niehs.nih.gov/ratemirs,10.0
+TransAtlasDB,mesocosm,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://modupeore.github.io/TransAtlasDB/,http://aliayadi.github.io/MESOCOSM-database,10.0
+COMPARTMENTS,tissues,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://compartments.jensenlab.org,http://tissues.jensenlab.org,10.0
+Brachypodium T-DNA,img/vr,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://jgi.doe.gov/our-science/science-programs/plant-genomics/brachypodium/brachypodium-t-dna-collection/,"http://img.jgi.doe.gov/vr, http://genome.jgi.doe.gov/portal/IMG_VR",16.0
+Hormone DB,bee,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://pgl.gnu.ac.kr/hormoneDB/,http://bike-bee.snu.ac.kr,9.0
+IBVD,autism brain imaging data exchange,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.nitrc.org/projects/ibvd,http://fcon_1000.projects.nitrc.org/indi/abide,31.0
+Chloroplast 2010,fungene,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://bioinfo.bch.msu.edu/2010_LIMS,http://fungene.cme.msu.edu,16.0
+WGE,memprotmd,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.sanger.ac.uk/htgt/wge,http://memprotmd.bioch.ox.ac.uk,9.0
+ZebraShare,zfin,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://zfin.org/action/zebrashare,http://zfin.org,9.0
+miRNA_Targets,agriseqdb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://mamsap.it.deakin.edu.au/mirna_targets/,http://expression.latrobe.edu.au/agriseqdb,12.0
+LungMAP,lung cellcards,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.lungmap.net,http://www.lungmap.net/cell-cards,9.0
+ExergameOntology,biotop,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://purl.org/net/exergame/ns#,http://purl.org/biotop,13.0
+MNHN-MY,florabank1,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.gbif.org/dataset/3287044c-8c48-4ad6-81d4-4908071bc8db,"http://data.gbif.org/datasets/resource/10969/, http://projects.biodiversity.be/ifblAll",10.0
+BGH,tropgenedb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://banana-genome.cirad.fr/,http://tropgenedb.cirad.fr,9.0
+3DGB,prionhome,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://3dgb.cs.mcgill.ca/,http://libaio.biol.mcgill.ca/prion,9.0
+FlowerNet,memprotmd,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.cpib.ac.uk/anther,http://memprotmd.bioch.ox.ac.uk,9.0
+ISDB,functional antibiotic resistant metagenomic element,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://mullinslab.microbiol.washington.edu/isdb/,http://staff.washington.edu/jwallace/farme,49.0
+Alcohol and Pregnancy,agriseqdb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.ichr.uwa.edu.au/alcoholandpregnancy,http://expression.latrobe.edu.au/agriseqdb,19.0
+CDC Health Equity,dtm,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.cdc.gov/obesity/health_equity/toolkit.html,http://www.cdc.gov/nccdphp/dnpao/data-trends-maps/index.html,15.0
+FishTrace,jrc gmo-amplicons,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://fishtrace.jrc.ec.europa.eu,http://gmo-crl.jrc.ec.europa.eu/jrcgmoamplicons,15.0
+Delta,synbiolgdb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://delta.big.ac.cn,http://bioinformatics.ac.cn/synbiolgdb,9.0
+CEH-DB,rna structurome database,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.castle.cbe.iastate.edu,http://structurome.bb.iastate.edu,21.0
+MOROKOSHI,pubchemqc,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://sorghum.riken.jp,http://pubchemqc.riken.jp,9.0
+CRC T Cell,gesur,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://crctcell.cancer-pku.cn/,http://gesur.cancer-pku.cn,10.0
+NeurotoxKb,circad,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://cb.imsc.res.in/neurotoxkb/,http://clingen.igib.res.in/circad,9.0
+QuIN,creportal,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://quin.jax.org,http://www.informatics.jax.org/home/recombinase,9.0
+Connectivity Scores,mesocosm,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://jravilab.github.io/connectivity_scores,http://aliayadi.github.io/MESOCOSM-database,16.0
+COMPLEAT,iproteindb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.flyrnai.org/compleat,http://www.flyrnai.org/tools/iproteindb,9.0
+Kinase Atlas,hotresdb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://kinase-atlas.bu.edu,http://hotresdb.bu.edu,11.0
+Open TG-GATEs,ogro,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://toxico.nibio.go.jp/english/index.html,http://qtaro.abr.affrc.go.jp/ogro,11.0
+Transcriptor,additivechem,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://design.rxnfinder.org/transcriptor/,http://www.rxnfinder.org/additivechem,12.0
+GlyMap,hemaexplorer,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://glymap.glycomics.ku.dk,http://servers.binf.ku.dk/hemaexplorer,10.0
+PHYMYCO-DB,toxsign,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://phymycodb.genouest.org/,http://toxsign.genouest.org,10.0
+D3Targets,d3distalmutation,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://www.d3pharma.com/D3Targets-2019-nCoV/D3Similarity/index.php,http://www.d3pharma.com/D3DistalMutation/index.php,11.0
+HTLV-1 Database,exve,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://htlv1db.bahia.fiocruz.br/,http://exve.icc.fiocruz.br,13.0
+Phyto diab care,dbtflc,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.gbpuat-cbsh.ac.in/departments/bi/database/phytodiabcare/HOME%20PAGE/Home%20page.html,http://www.vit.ac.in/files/database/Home.php,13.0
+ISU FLUture,rna structurome database,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://influenza.cvm.iastate.edu,http://structurome.bb.iastate.edu,18.0
+Interactome INSIDER,instruct,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://interactomeinsider.yulab.org,http://instruct.yulab.org,14.0
+Coiled Coils Atlas,memprotmd,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://coiledcoils.chm.bris.ac.uk/atlas/app,http://memprotmd.bioch.ox.ac.uk,15.0
+KDB,sweetlead,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://simtk.org/projects/kdb,http://simtk.org/home/sweetlead,9.0
+SARS-CoV-2 Resources,morusdb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://bis.zju.edu.cn/overcovid/,http://morus.swu.edu.cn/morusdb,17.0
+BNER Datasets,ym500,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://iasl-btm.iis.sinica.edu.tw/BNER/Content/Re,http://ngs.ym.edu.tw/ym500,13.0
+HCO Database,intb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.evocell.org/hco,http://www.evocell.org/inTB,10.0
+Cattle Gene Network,qtldb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.animalgenome.org/cgi-bin/host/reecylab/d,http://www.animalgenome.org/QTLdb,17.0
+GBIF Dataset 255,florabank1,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://data.gbif.org/datasets/resource/255,"http://data.gbif.org/datasets/resource/10969/, http://projects.biodiversity.be/ifblAll",14.0
+miRTargetLink,plsdb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://www.ccb.uni-saarland.de/mirtargetlink2,http://ccb-microbe.cs.uni-saarland.de/plsdb,12.0
+cBinderDB,pathppi,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.rcdd.org.cn/cbinderdb/,http://proteomeview.hupo.org.cn/PathPPI/PathPPI.html,9.0
+SlideBase,hemaexplorer,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://slidebase.binf.ku.dk,http://servers.binf.ku.dk/hemaexplorer,10.0
+Cereal_AltSplice,metazseckb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://proteomics.ysu.edu/altsplice/,http://proteomics.ysu.edu/secretomes/animal/index.php,13.0
+Chorogenome,phosphat,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://chorogenome.ie-freiburg.mpg.de,http://phosphat.mpimp-golm.mpg.de,9.0
+Probiotics Database,allomaps,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://bidd2.nus.edu.sg/probio/homepage.htm,http://allomaps.bii.a-star.edu.sg,16.0
+SynapticDB,live-nflx-ii,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://synapses.clm.utexas.edu/synapticdb/,http://live.ece.utexas.edu/research/LIVE_NFLX_II/live_nflx_plus.html,12.0
+ChloroSSRdb,mitosatplant,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.compubio.in/chlorossrdb/,http://compubio.in/mitosatplant,11.0
+PhenoScanner,memprotmd,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.phenoscanner.medschl.cam.ac.uk,http://memprotmd.bioch.ox.ac.uk,11.0
+LncRNA2Function,morusdb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://mlg.hit.edu.cn/lncrna2function,http://morus.swu.edu.cn/morusdb,13.0
+Placenta_transcriptome,sysinflam hudb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://placentalendocrinology.gxbsidra.org/dm3/landing.gsp,http://sepsis.gxbsidra.org/dm3/geneBrowser/list,20.0
+ExportAid,metatropismdb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.introni.it/ExportAid/ExportAid.html,http://www.introni.it/Metastasis/metastasis.html,9.0
+BacillusRegNet,memprotmd,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://bacillus.ncl.ac.uk,http://memprotmd.bioch.ox.ac.uk,13.0
+BRONCO,horse single nucleotide polymorphism and expression database,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://infos.korea.ac.kr/bronco,http://snugenome2.snu.ac.kr/HSDB,56.0
+ATR-FT-IR Spectra,unite,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://tera.chem.ut.ee/IR_spectra/,http://unite.ut.ee,15.0
+Plant PTM Viewer,flad,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.psb.ugent.be/PlantPTMViewer,http://forensic.ugent.be/FLAD,14.0
+TUL Herbarium,npidb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://plant.depo.msu.ru/,http://npidb.belozersky.msu.ru,12.0
+Museu Goeldi Opiliones,spliceprot,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://ipt.sibbr.gov.br/goeldi/resource?r=museuparaenseemiliogoeldi-collection-aracnologiaopiliones,http://lbbc.inca.gov.br/spliceprot,17.0
+PILGRM,interacdome,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://pilgrm.princeton.edu,http://interacdome.princeton.edu,9.0
+Vertion,epilepsy-connect,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://compbio.case.edu/omics/software/vertion,http://bmhinformatics.case.edu/Epilepsyconnect/login,13.0
+PathMe,neurommsig,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://pathme.scai.fraunhofer.de/,http://neurommsig.scai.fraunhofer.de,9.0
+Blue Box Database,naps,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://bluebox.ippt.gov.pl/~hpiotrzk,http://naps.nencki.gov.pl,15.0
+LNEN_map,ucsc genome browser,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://tumormap.ucsc.edu/?p=RCG_lungNENomics/LNEN,http://genome.ucsc.edu,16.0
+GBIF Dataset 14669,florabank1,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://data.gbif.org/datasets/resource/14669/,"http://data.gbif.org/datasets/resource/10969/, http://projects.biodiversity.be/ifblAll",15.0
+TASmania,gdbmedchem,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://shiny.bioinformatics.unibe.ch/apps/tasmania/,http://gdb.unibe.ch,9.0
+hERGAPDbase,oryzapg,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.grt.kyushu-u.ac.jp/hergapdbase/,http://oryzapg.iab.keio.ac.jp,9.0
+Ostrinia_scapulalis_genome,cyanolyase,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://bipaa.genouest.org/sp/ostrinia_scapulalis/,http://cyanolyase.genouest.org,22.0
+CancerRxTissue,tbpp,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://manticore.niehs.nih.gov/cancerRxTissue,http://TBPortals.niaid.nih.gov,13.0
+ChallengeDB,live-nflx-ii,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://live.ece.utexas.edu/research/ChallengeDB/index.html,http://live.ece.utexas.edu/research/LIVE_NFLX_II/live_nflx_plus.html,12.0
+Anti-CRISPRdb,morusdb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://cefg.uestc.edu.cn/anti-CRISPRdb/,http://morus.swu.edu.cn/morusdb,9.0
+G4_database,mesocosm,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://ericlarg4.github.io/G4_database.html,http://aliayadi.github.io/MESOCOSM-database,10.0
+MetaPhOrs,phylomedb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://orthology.phylomedb.org/,http://phylomedb.org,9.0
+PacTrac,hawaiian freshwater algal database,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://nappactrac31.ctahr.hawaii.edu/default.htm,http://algae.manoa.hawaii.edu/hfwadb,30.0
+GenoSkyline,frog-kb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://genocanyon.med.yale.edu/GenoSkyline,http://frog.med.yale.edu/FrogKB,10.0
+GTB,hemophilia a database,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://gtb.biocompute.org.uk,"http://hadb.org.uk/, http://www.kcl.ac.uk/ip/petergreen/haemBdatabase.html",19.0
+Colombia_geometrid,florabank1,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://www.gbif.org/,"http://data.gbif.org/datasets/resource/10969/, http://projects.biodiversity.be/ifblAll",15.0
+Togo_herbarium,florabank1,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://www.gbif.org/dataset/b05dd467-aaf8-4c67-843c-27f049057b78,"http://data.gbif.org/datasets/resource/10969/, http://projects.biodiversity.be/ifblAll",11.0
+Bradyrhizobium_MLSA,plantannot,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://mlsa.cnpso.embrapa.br,http://www.machado.cnptia.embrapa.br/plantannot,17.0
+SpliceAid,metatropismdb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.introni.it/spliceaid.html,http://www.introni.it/Metastasis/metastasis.html,11.0
+FG_mosquito,florabank1,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.gbif.org/dataset/5a8aa2ad-261c-4f61-a98e-26dd752fe1c5,"http://data.gbif.org/datasets/resource/10969/, http://projects.biodiversity.be/ifblAll",10.0
+GeneBase,bologna annotation resource,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://apollo11.isto.unibo.it/software/,http://bar.biocomp.unibo.it/bar3,22.0
+GWIPS-viz,darned,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://gwips.ucc.ie,http://darned.ucc.ie,9.0
+VivaxGEN,agriseqdb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://vivaxgen.menzies.edu.au,http://expression.latrobe.edu.au/agriseqdb,9.0
+MMPdb,rna structurome database,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://mmpdb.eeob.iastate.edu/,http://structurome.bb.iastate.edu,21.0
+WheatD_SNP,i5k,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://avena.pw.usda.gov/wheatD/agsnp.shtml,http://i5k.nal.usda.gov,10.0
+BetaLactamaseDB,transcriptomebrowser,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://ifr48.timone.univ-mrs.fr/beta-lactamase/public/,http://tagc.univ-mrs.fr/tbrowser,16.0
+ALE-HSA21,camurweb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://bioinfo.na.iac.cnr.it/ALE-HSA21,http://bioinformatics.iasi.cnr.it/camurweb,9.0
+Allen Developing Mouse Brain Atlas,allen brain atlas,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://developingmouse.brain-map.org,http://www.brain-map.org,17.0
+Virtual Pharmacist,pathppi,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.sustc-genome.org.cn/vp,http://proteomeview.hupo.org.cn/PathPPI/PathPPI.html,15.0
+Wheat_D_markers,i5k,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://probes.pw.usda.gov/ATRJM/,http://i5k.nal.usda.gov,14.0
+HydDB,lotus base,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://services.birc.au.dk/hyddb/,http://lotus.au.dk,9.0
+ComplexPortal,memprotmd,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.ebi.ac.uk/complexportal,http://memprotmd.bioch.ox.ac.uk,9.0
+AnatomyTagger,memprotmd,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://nactem.ac.uk/anatomytagger,http://memprotmd.bioch.ox.ac.uk,12.0
+Meloidogyne_proteome,peroxibase,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://meloidogyne.inra.fr/Downloads/Meloidogyne-incognita-V2-2017,http://peroxibase.toulouse.inra.fr,17.0
+Proteasome_toolkit,phosphat,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://toolkit.tuebingen.mpg.de,http://phosphat.mpimp-golm.mpg.de,14.0
+Dokdo Insect Database,florabank1,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.GBIF.org,"http://data.gbif.org/datasets/resource/10969/, http://projects.biodiversity.be/ifblAll",18.0
+SCADS_GED,kazusa marker database,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://scads.jfcr.or.jp/db/cs/,http://marker.kazusa.or.jp,19.0
+Brazil Coleoptera Database,florabank1,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.gbif.org/dataset/8e0e9330-e1b2-475a-9891-4fa8e5c6f57f,"http://data.gbif.org/datasets/resource/10969/, http://projects.biodiversity.be/ifblAll",21.0
+NITRC,autism brain imaging data exchange,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.nitrc.org,http://fcon_1000.projects.nitrc.org/indi/abide,30.0
+Adenosiland,phytotypedb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://mms.dsfarm.unipd.it/Adenosiland/,http://phytotypedb.bio.unipd.it,10.0
+NAR_DB_2013,combrex,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.oxfordjournals.org/nar/database/a/,"http://www.oxfordjournals.org/nar/database/a/, http://nar.oxfordjournals.org",10.0
+PolyprOnline,respire,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.dsimb.inserm.fr/dsimb_tools/polyproline,http://www.dsimb.inserm.fr/respire,9.0
+Aging Atlas,synbiolgdb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://bigd.big.ac.cn/aging/index,http://bioinformatics.ac.cn/synbiolgdb,10.0
+NAR Database,combrex,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.oxfordjournals.org/nar/database/a/,"http://www.oxfordjournals.org/nar/database/a/, http://nar.oxfordjournals.org",11.0
+COVID-19 DGSL,datasets2tools,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://amp.pharm.mssm.edu/covid19/,http://amp.pharm.mssm.edu/datasets2tools,13.0
+SYNS,memprotmd,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://syns.soton.ac.uk,http://memprotmd.bioch.ox.ac.uk,9.0
+SIDER,progenomes2,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://sideeffects.embl.de,http://progenomes.embl.de,10.0
+E3 Ligase Database,ratemirs,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://esbl.nhlbi.nih.gov/Databases/KSBP2/Targets/Lists/E3-ligases/,http://www.niehs.nih.gov/ratemirs,15.0
+Interferome,agriseqdb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://interferome.its.monash.edu.au/interferome/,http://expression.latrobe.edu.au/agriseqdb,10.0
+BμG@Sbase,memprotmd,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://bugs.sgul.ac.uk/bugsbase/,http://memprotmd.bioch.ox.ac.uk,9.0
+Parallel-META,nandesyn,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://bioinfo.single-cell.cn/parallel-meta.html,http://nandesyn.single-cell.cn,11.0
+BRCA LOVD,exposome-explorer,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://brca.iarc.fr/LOVD,http://exposome-explorer.iarc.fr,15.0
+aglgenes,differentialnet,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.bgu.ac.il/aglgenes,http://netbio.bgu.ac.il/diffnet,12.0
+ePath,describeprot,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://www.pubapps.vcu.edu/epath/,http://biomine.cs.vcu.edu/servers/DESCRIBEPROT,10.0
+NBench,sc-pdb-frag,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://ahsoka.u-strasbg.fr/rbscorenbench/,http://bioinfo-pharma.u-strasbg.fr/scPDBFrag,10.0
+VirtualSeed,memprotmd,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.vseed.nottingham.ac.uk/,http://memprotmd.bioch.ox.ac.uk,10.0
+R-Syst::diatom,diat.barcode,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.rsyst.inra.fr/en,http://www6.inra.fr/carrtel-collection_eng/Barcoding-database,13.0
+Follicle Online,morusdb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://mcg.ustc.edu.cn/sdap1/follicle/index.php,http://morus.swu.edu.cn/morusdb,14.0
+TREAT-NMD DMD,umd-apc,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://umd.be/TREAT_DMD/,http://www.umd.be/APC,11.0
+LINCS Canvas Browser,escape,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.maayanlab.net/LINCS/LCB,http://www.maayanlab.net/ESCAPE,16.0
+EUROCarbDB(CCRC),pgdd,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://glycomics.ccrc.uga.edu/eurocarb/,http://chibba.agtec.uga.edu/duplication,15.0
+Maize microarray annotation database,hcvpro,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://MaizeArrayAnnot.bi.up.ac.za/,"http://apps.sanbi.ac.za/hcvpro/, http://cbrc.kaust.edu.sa/hcvpro",33.0
+eDystrophin,cyanolyase,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://edystrophin.genouest.org/,http://cyanolyase.genouest.org,10.0
+Systems Genetics Resource,mcpdb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://systems.genetics.ucla.edu,http://mcpdb.mbi.ucla.edu,23.0
+CGE Evolution Data,chemprot-2.0,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://cge.cbs.dtu.dk/services/evolution_data.php,http://www.cbs.dtu.dk/services/ChemProt-2.0,14.0
+TCGASpliceSeq,tanric,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://bioinformatics.mdanderson.org/TCGASpliceSeq,http://bioinformatics.mdanderson.org/main/TANRIC:Overview,9.0
+SEEK,interacdome,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://seek.princeton.edu/,http://interacdome.princeton.edu,10.0
+MBPA,synbiolgdb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://mbpa.bprc.ac.cn/,http://bioinformatics.ac.cn/synbiolgdb,9.0
+ProteomicsBrowser,frog-kb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://medicine.yale.edu/keck/nida/proteomicsbrowser.aspx,http://frog.med.yale.edu/FrogKB,14.0
+RhizoBindingSites,dianat-db,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,rhizobindingsites.ccg.unam.mx,http://rdu.iquimica.unam.mx/handle/20.500.12214/1186,15.0
+HIVToolbox,c-terminome,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://hivtoolbox.bio-toolkit.com,http://cterminome.bio-toolkit.com,10.0
+TCC_naming,ym500,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://ball.ling.sinica.edu.tw/namingdatabase/index.html,http://ngs.ym.edu.tw/ym500,9.0
+GoMAP,c-terminome,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.bio-toolkit.com/GoMap/project/,http://cterminome.bio-toolkit.com,10.0
+COLT-Cancer,cyclops,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://colt.ccbr.utoronto.ca/cancer,http://cyclops.ccbr.utoronto.ca,9.0
+EK-DRD,hybridmoldb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.idruglab.com/drd/index.php,http://www.idruglab.com/HybridMolDB/index.php,9.0
+NAR_DB_2021,combrex,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://www.oxfordjournals.org/nar/database/c/,"http://www.oxfordjournals.org/nar/database/a/, http://nar.oxfordjournals.org",10.0
+mitoXplorer,transcriptomebrowser,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://mitoxplorer.ibdm.univ-mrs.fr,http://tagc.univ-mrs.fr/tbrowser,14.0
+BacFITBase,dualseqdb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.tartaglialab.com/bacfitbase,http://www.tartaglialab.com/dualseq,10.0
+Exo-miRExplorer,morusdb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://rna.sysu.edu.cn/exomiRDB/,http://morus.swu.edu.cn/morusdb,13.0
+VIGLA-M,europinedb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://khaos.uma.es/melanoma/,http://www.scbi.uma.es/pindb,10.0
+HLhylVes1,maxqb,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,https://genome-public.pks.mpg.de/cgi-bin/hgTracks?db=HLhylVes1,http://www.biochem.mpg.de/maxqb,9.0
+KNOTTIN,cftr-france,SAME_DOMAIN,2.0,Score=2.0: SAME_DOMAIN,http://www.dsimb.inserm.fr/KNOTTIN/,http://cftr.iurc.montp.inserm.fr/cftr,10.0

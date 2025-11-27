@@ -1,0 +1,251 @@
+extracted_name,baseline_name,match_type,is_match,score,reasoning,extracted_long,extracted_url,extracted_domain,baseline_url,baseline_domain,same_domain,edit_distance,url_similarity,confidence
+NCIA,ncdr,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Non-Covalent Interactions Atlas,http://www.nciatlas.org,nciatlas.org,http://www.jianglab.cn/ncDR,jianglab.cn,False,2.0,0.21,LOW
+MAIC,masi,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Multi-omics Analysis of Immune-mediated Critical Illness,https://baillielab.net/maic/covid19,baillielab.net,http://www.aiddlab.com/MASI,aiddlab.com,False,2.0,0.47,LOW
+PSIMR,psmir,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,PSI:Biology-materials repository,http://psimr.asu.edu,asu.edu,http://www.bio-bigdata.com/Psmir,bio-bigdata.com,False,2.0,0.24,LOW
+MMAD,mmpi,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Mouse Models of Neurological Disorders Portal,http://mmad.nrihub.org,nrihub.org,http://clri.res.in/subramanian/databases/mmpi/index.php,res.in,False,2.0,0.11,LOW
+miRDeathDB,mirpathdb,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,miRDeathDB,,,http://mpd.bioinf.uni-sb.de,uni-sb.de,False,2.0,0.0,LOW
+MSIS,msdb,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Mycobacterium hsp65 Database,http://msis.mycobacteria.info,mycobacteria.info,http://tdb.ccmb.res.in/msdb,res.in,False,2.0,0.24,LOW
+LegumeGRP,legumeip,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Legume Genome Resources Platform,http://www.legumegrp.org,legumegrp.org,http://plantgrn.noble.org/LegumeIP,noble.org,False,2.0,0.35,LOW
+PISO,pina,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Plant ISOform sequencing database,,,http://cbg.garvan.unsw.edu.au/pina,edu.au,False,2.0,0.0,LOW
+IMACS,impc,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Insertion Marker Collection of Sz. japonicus,,,http://www.mousephenotype.org,mousephenotype.org,False,2.0,0.0,LOW
+CroCo,credo,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Cross-species Conservation of context-specific networks,http://services.bio.ifi.lmu.de/croco-web,lmu.de,http://www-cryst.bioc.cam.ac.uk/credo,ac.uk,False,2.0,0.38,LOW
+COMET,codex,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Core Outcome Measures in Effectiveness Trials,http://www.comet-initiative.org/studies/details/265?result=true,comet-initiative.org,http://codex.stemcells.cam.ac.uk,ac.uk,False,2.0,0.31,LOW
+GlyCosmos,glycomob,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,GlyCosmos Portal,,,http://www.glycomob.org,glycomob.org,False,2.0,0.0,LOW
+GenoLIB,genelab,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Genomic Library Database,,,http://genelab.nasa.gov,nasa.gov,False,2.0,0.0,LOW
+RENIS,repic,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Renal Cell Carcinoma Registry,http://renis.registry.cz,registry.cz,http://repicmod.uchicago.edu/repic,uchicago.edu,False,2.0,0.36,LOW
+EUAdb,eul1db,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,COVID-19 Test Database,,,http://euL1db.unice.fr,unice.fr,False,2.0,0.0,LOW
+TCLP,tc3a,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,TCLP,http://celllines.tron-mainz.de,tron-mainz.de,http://tc3a.org,tc3a.org,False,2.0,0.19,LOW
+DADP,dampd,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,DADP,,,http://apps.sanbi.ac.za/dampd,ac.za,False,2.0,0.0,LOW
+DoCM,dor,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,DoCM,,,http://caps.ncbs.res.in/DOR,res.in,False,2.0,0.0,LOW
+M5nr,mnm,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,M5nr,,,"http://minimotifminer.org, http://mnm.engr.uconn.edu","minimotifminer.org, http:",False,2.0,0.0,LOW
+TCSBN,tcdb,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,TCSBN,http://inetmodels.com,inetmodels.com,http://www.tcdb.org,tcdb.org,False,2.0,0.18,LOW
+ACOG,acsr,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Atlas of Genetics and Cytogenetics in Oncology and Haematology,http://atlasgeneticsoncology.org,atlasgeneticsoncology.org,http://acsr.ucsf.edu,ucsf.edu,False,2.0,0.26,LOW
+eelsdb,eendb,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Electron Energy-Loss Spectroscopy Database,https://eelsdb.eu/,eelsdb.eu,http://eendb.zfgenetics.org,zfgenetics.org,False,2.0,0.41,LOW
+DFVF,dfam,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,DFVF,,,http://dfam.org,dfam.org,False,2.0,0.0,LOW
+AtIPD,atmad,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,AtIPD,,,http://www.megabionet.org/atmad,megabionet.org,False,2.0,0.0,LOW
+STEC,stab,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Shigatox E. coli Collection,http://shigatox.net/new/,shigatox.net,http://stab.comp-sysbio.org,comp-sysbio.org,False,2.0,0.17,LOW
+AuxV,aura,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,AuxV,,,http://aura.science.unitn.it,unitn.it,False,2.0,0.0,LOW
+BIII,bind,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Bioimage Informatics Index,http://biii.eu/,biii.eu,http://download.baderlab.org/BINDTranslation,baderlab.org,False,2.0,0.14,LOW
+CLIPS,clipdb,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Clinical Trial Protocol Retrieval System,https://corus.kaist.edu/clips,kaist.edu,http://clipdb.ncrnalab.org,ncrnalab.org,False,2.0,0.2,LOW
+MRDP,mridb,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Modern Research Data Portal,https://docs.globus.org/mrdp,globus.org,http://www3.imperial.ac.uk/bioinfsupport/resources/software/mridb,ac.uk,False,2.0,0.23,LOW
+PsORF,psrn,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Plant Small ORF Database,,,http://syslab5.nchu.edu.tw/PSRN,edu.tw,False,2.0,0.0,LOW
+GID,giga,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Generalized Invariom Database,,,http://giga.nova.edu,nova.edu,False,2.0,0.0,LOW
+CPIC,cpgr,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Clinical Pharmacogenetics Implementation Consortium,https://cpicpgx.org/guidelines/guideline-for-fluoropyrimidines-and-dpyd/,cpicpgx.org,http://cpgr.plantbiology.msu.edu,msu.edu,False,2.0,0.18,LOW
+RGPDB,rgd,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Root-associated Genes and Promoters Database,,,http://rgd.mcw.edu,mcw.edu,False,2.0,0.0,LOW
+BraMRS,brains,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Brassica rapa microRNA System,http://bramrs.rna.kr,rna.kr,"http://www.brainsimagebank.ac.uk, http://dicom.nema.org","ac.uk, http:",False,2.0,0.32,LOW
+CIDO,cider,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,CIDO,,,http://mips.helmholtz-muenchen.de/cider,helmholtz-muenchen.de,False,2.0,0.0,LOW
+NAPDI,naps,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Natural Product-Drug Interaction Repository,http://www.napdi.org,napdi.org,http://naps.nencki.gov.pl,gov.pl,False,2.0,0.44,LOW
+SIB,sidd,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Swiss Institute of Bioinformatics,http://www.isb-sib.ch,isb-sib.ch,http://mlg.hit.edu.cn/SIDD,edu.cn,False,2.0,0.21,LOW
+VirusMap,virusms,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Influenza A Virus Visualization Database,,,http://virusms.erc.monash.edu,monash.edu,False,2.0,0.0,LOW
+BFDb,bfgr,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,BioFragment Database,,,http://bfgr.plantbiology.msu.edu,msu.edu,False,2.0,0.0,LOW
+PH²,phin,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,dermoscopic image database,,,http://cadd.pharmacy.nankai.edu.cn/phin,edu.cn,False,2.0,0.0,LOW
+PlantNE,plantrna,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,plant biomass database,,,http://plantrna.ibmp.cnrs.fr,cnrs.fr,False,2.0,0.0,LOW
+NiDB,nifh,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Neuroinformatics Database,,,http://www.css.cornell.edu/faculty/buckley/nifh.htm,cornell.edu,False,2.0,0.0,LOW
+PAIN,pass,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,brain-imaging repository for pain disorders,,,http://musaelab.ca/pass-database,musaelab.ca,False,2.0,0.0,LOW
+DRUMS,dramp,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Disk Repository with Update Management and Select,,,http://dramp.cpu-bioinfor.org,cpu-bioinfor.org,False,2.0,0.0,LOW
+RDmap,rdp,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Rare Disease Map,http://rdmap.nbscn.org,nbscn.org,http://rdp.cme.msu.edu,msu.edu,False,2.0,0.4,LOW
+ComPIL,comppi,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Comprehensive Metaproteomics Database,,,http://ComPPI.LinkGroup.hu,linkgroup.hu,False,2.0,0.0,LOW
+ToxoDB,toxindb,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Toxoplasma Genomics Database,,,http://www.rxnfinder.org/toxindb,rxnfinder.org,False,2.0,0.0,LOW
+JCGGDB,jcdb,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Japan Glycobiology Database,,,http://jcdb.xtbg.ac.cn,ac.cn,False,2.0,0.0,LOW
+CpGDB,cpgr,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Chloroplast Genomes Database,,,http://cpgr.plantbiology.msu.edu,msu.edu,False,2.0,0.0,LOW
+RTPDB,rtfadb,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Radiotherapy Prognosis Database,,,http://tools.ibg.deu.edu.tr/rtfa,edu.tr,False,2.0,0.0,LOW
+MycoDB,mycorrdb,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Mycorrhizal Response Database,,,http://mycorrdb.uohbif.in,uohbif.in,False,2.0,0.0,LOW
+BIONDA,bind,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Biomarker Database,http://bionda.mpc.ruhr-uni-bochum.de,ruhr-uni-bochum.de,http://download.baderlab.org/BINDTranslation,baderlab.org,False,2.0,0.12,LOW
+MDAD,mdb,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Microbe-Drug Association Database,,,http://csc.columbusstate.edu/carroll/MDB,columbusstate.edu,False,2.0,0.0,LOW
+Vaxjo,vaxar,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,vaccine adjuvant database,,,http://www.violinet.org/vaxar,violinet.org,False,2.0,0.0,LOW
+CASTp,cath,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,computed atlas of surface topography of proteins,http://sts.bioe.uic.edu/castp/,uic.edu,http://www.cathdb.info,cathdb.info,False,2.0,0.18,LOW
+CCHIC,ccsi,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Critical Care Health Informatics Collaborative,,,http://songyanglab.sysu.edu.cn/ccsi,edu.cn,False,2.0,0.0,LOW
+lncSLdb,lncedb,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Long Non-Coding RNA Subcellular Localization Database,,,http://gyanxet-beta.com/lncedb,gyanxet-beta.com,False,2.0,0.0,LOW
+dGCR,dgv,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Database of Gene Co-Regulation,,,http://gph.niid.go.jp/geograph/dengue/content/genomemap,go.jp,False,2.0,0.0,LOW
+PI1M,pina,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Polymer Informatics Database,,,http://cbg.garvan.unsw.edu.au/pina,edu.au,False,2.0,0.0,LOW
+CUBAP,cuas,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Codon Usage Bias Analysis Portal,https://cubap.byu.edu,byu.edu,http://cmb.bnu.edu.cn/alt_iso/index.php,edu.cn,False,2.0,0.51,LOW
+PCIR,pcpd,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Plant Chloroplast Inverted Repeats database,,,http://p450.biodesign.ac.cn,ac.cn,False,2.0,0.0,LOW
+BioTIME,bioimg,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,biodiversity time series database,,,http://bioimg.org,bioimg.org,False,2.0,0.0,LOW
+Circbank,circbase,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,comprehensive circRNA database,http://www.circbank.cn,circbank.cn,http://www.circbase.org,circbase.org,False,2.0,0.61,LOW
+PamulDB,pamirdb,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Pasteurella multocida genomic resource database,,,http://bioinfo.icgeb.res.in/pamirdb,res.in,False,2.0,0.0,LOW
+IRAM,ird,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,virus capsid database,,,http://www.fludb.org,fludb.org,False,2.0,0.0,LOW
+GenDiS,gendr,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,protein domain superfamilies database,,,http://genomics.senescence.info/diet,senescence.info,False,2.0,0.0,LOW
+ProMEX,prime,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,mass spectral reference database for plant proteomics,,,http://prime.psc.riken.jp,riken.jp,False,2.0,0.0,LOW
+CEEDER,cendr,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,evidence reviews database,http://www.environmentalevidence.org/ceeder,environmentalevidence.org,http://www.elegansvariation.org,elegansvariation.org,False,2.0,0.38,LOW
+CATCHR,cath,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Catalog of Assets for Translational and Clinical Health Research,,,http://www.cathdb.info,cathdb.info,False,2.0,0.0,LOW
+MGOS,mgi,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Magnaporthe oryzae annotation database,,,http://www.informatics.jax.org,jax.org,False,2.0,0.0,LOW
+MIGREW,mirev,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Wheat Resistance Genes Database,,,http://www.physio.wzw.tum.de/mirev,tum.de,False,2.0,0.0,LOW
+ImmuneDB,immunet,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Adaptive Immune Receptor Database,http://immunedb.comA,immunedb.coma,http://immunet.princeton.edu,princeton.edu,False,2.0,0.41,LOW
+MedGen,melgene,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Medical Genetics Portal,,,http://www.melgene.org,melgene.org,False,2.0,0.0,LOW
+Ewé,ewas,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Ethnobotanical Database,http://www.ewedb.com,ewedb.com,http://bigd.big.ac.cn/ewas/datahub,ac.cn,False,2.0,0.22,LOW
+cRFP,craft,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Common Repository of Fetal Bovine Serum Proteins,,,http://bionlp-corpora.sourceforge.net/CRAFT/index.shtml,sourceforge.net,False,2.0,0.0,LOW
+IMID,impc,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Integrated Molecular Interaction Database,http://www.integrativebiology.org,integrativebiology.org,http://www.mousephenotype.org,mousephenotype.org,False,2.0,0.35,LOW
+CUPP,cuas,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Conserved Unique Peptide Patterns Platform,https://cupp.info,cupp.info,http://cmb.bnu.edu.cn/alt_iso/index.php,edu.cn,False,2.0,0.32,LOW
+DAWN,daa,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Diversity Among Wheat geNomes,,,http://ageing-map.org,ageing-map.org,False,2.0,0.0,LOW
+RMgmDB,rmdb,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Rodent Malaria Genetically Modified Database,http://www.pberghei.eu,pberghei.eu,http://rmdb.stanford.edu,stanford.edu,False,2.0,0.36,LOW
+CPTAC,cpcat,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Clinical Proteomic Tumor Analysis Consortium Data Portal,,,http://actor.epa.gov/cpcat,epa.gov,False,2.0,0.0,LOW
+DEG,deer,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Database of Essential Genes,http://www.essentialgene.org,essentialgene.org,http://bsb.kiz.ac.cn:90/DEER,ac.cn:90,False,2.0,0.16,LOW
+Loqusdb,lotus-db,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Local Observations Quantitative Database,,,http://lotus-db.wbgcas.cn,wbgcas.cn,False,2.0,0.0,LOW
+NewProt,nextprot,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,New Protein Engineering Portal,http://newprot.cmbi.umcn.nl/,umcn.nl,http://www.nextprot.org,nextprot.org,False,2.0,0.44,LOW
+3DSwap,3dsnp,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,3D Domain Swapping Knowledgebase,,,http://biotech.bmi.ac.cn/3dsnp,ac.cn,False,2.0,0.0,LOW
+g2pDB,g6pd,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Genomic to Protein Database,,,http://202.120.189.88/mutdb,189.88,False,2.0,0.0,LOW
+iGMDR,igdd,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Pharmacogenetic Resource,https://igmdr.modellab.cn,modellab.cn,http://bio.njfu.edu.cn/igdd,edu.cn,False,2.0,0.27,LOW
+CCMRD,ccgd,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Carbohydrate NMR Database,http://www.ccmrd.org,ccmrd.org,http://ccgd-starrlab.oit.umn.edu,umn.edu,False,2.0,0.29,LOW
+PlantMP,plantafp,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Plant Moonlighting Proteins Database,,,http://bioinformatics.cimap.res.in/sharma/PlantAFP,res.in,False,2.0,0.0,LOW
+MedNar,medas,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Medical Deep Web Database,,,http://das.chenlulab.com,chenlulab.com,False,2.0,0.0,LOW
+mTFkb,mtb,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Mouse Transcription Factors Knowledgebase,,,http://tumor.informatics.jax.org,jax.org,False,2.0,0.0,LOW
+RTFBSDB,rtfadb,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Transcription Factor Binding Site Database,,,http://tools.ibg.deu.edu.tr/rtfa,edu.tr,False,2.0,0.0,LOW
+CoagVDb,coevdb,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Coagulation Factors Database,,,http://phylodb.unil.ch/CoevDB,unil.ch,False,2.0,0.0,LOW
+MGeND,mgdd,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Japanese Clinical Genomic Database,,,http://mgdd.pasteur.ma,pasteur.ma,False,2.0,0.0,LOW
+sdAb-DB,sdadb,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Single Domain Antibody Database,http://www.sdab-db.ca,sdab-db.ca,http://sda.denglab.org,denglab.org,False,2.0,0.48,LOW
+PlantFAdb,plantordb,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Plant Fatty Acid Database,,,http://bioinfolab.miamioh.edu/plantordb,miamioh.edu,False,2.0,0.0,LOW
+WGDB,wgvd,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Wood Gene Database,http://www.wgdb.in,wgdb.in,http://animal.nwsuaf.edu.cn/code/index.php/Wheat,edu.cn,False,2.0,0.21,LOW
+dbCRY,dbcat,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Cryptochrome Database,http://www.dbcryptochrome.org/,dbcryptochrome.org,http://dbcat.cgm.ntu.edu.tw,edu.tw,False,2.0,0.42,LOW
+BASS,bard,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Bicolor Affective Silhouettes and Shapes,https://osf.io/anej6/,osf.io,http://bard.nih.gov,nih.gov,False,2.0,0.08,LOW
+DMAK,dmd,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,DNA Methylation Annotation Knowledgebase,,,http://sbbi.unl.edu/dmd,unl.edu,False,2.0,0.0,LOW
+A2ID,a2mdb,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Aromatic-Aromatic Interactions Database,http://203.199.182.73/gnsmmg/databases/aidb/aidb.html,182.73,http://www.iictindia.org/A2MDB,iictindia.org,False,2.0,0.18,LOW
+CDEK,cdp,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Clinical Drug Experience Knowledgebase,,,http://celldeathproteomics.uio.no,uio.no,False,2.0,0.0,LOW
+SASBDB,sabdab,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Small Angle Scattering Biological Data Bank,http://www.sasbdb.org,sasbdb.org,http://opig.stats.ox.ac.uk/webapps/sabdab,ac.uk,False,2.0,0.23,LOW
+GABC,gaad,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Genome Atlas for Breast Cancer,,,http://gaad.medgenius.info,medgenius.info,False,2.0,0.0,LOW
+BioCyc,bionic,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Biocyc Database Collection,,,http://onto-apps.stanford.edu/bionic,stanford.edu,False,2.0,0.0,LOW
+MiGA,mist,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Microbial Genomes Atlas,http://microbial-genomes.org/,microbial-genomes.org,http://mistdb.com,mistdb.com,False,2.0,0.32,LOW
+ChemProps,chemprot,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Chemical Properties Database,,,http://potentia.cbs.dtu.dk/ChemProt,dtu.dk,False,2.0,0.0,LOW
+SMID,smpdb,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Socio-Moral Image Database,https://osf.io/2rqad/,osf.io,http://www.smpdb.ca,smpdb.ca,False,2.0,0.3,LOW
+ASGARD,asrd,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Annotated Transcriptomes Database,,,http://ipf.sustech.edu.cn/pub/asrd,edu.cn,False,2.0,0.0,LOW
+dbWFA,dbwgfp,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Wheat Functional Annotation Database,,,http://bioinfo.au.tsinghua.edu.cn/dbwgfp,edu.cn,False,2.0,0.0,LOW
+RVDB,rvs,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Reference Viral Database,,,http://rvs.u.hpc.mssm.edu,mssm.edu,False,2.0,0.0,LOW
+VHRD,vhldb,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Viral Host Range Database,https://viralhostrangedb.pasteur.cloud,pasteur.cloud,http://vhldb.bio.unipd.it,unipd.it,False,2.0,0.29,LOW
+MAAFS,maps,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Moral and Affective Film Set,,,http://www.mapsdatabase.com,mapsdatabase.com,False,2.0,0.0,LOW
+DENVirDB,denvind,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Dengue Virus Database,,,http://webs.iiitd.edu.in/raghava/denvind,edu.in,False,2.0,0.0,LOW
+PATRN,patric,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Pathogen-Annotated Tracking Resource Network,http://www.patrn.net,patrn.net,http://www.patricbrc.org,patricbrc.org,False,2.0,0.45,LOW
+Spfy,spwp,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Specify database,,,http://www.seed-proteome.com,seed-proteome.com,False,2.0,0.0,LOW
+ForC,foam,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Forest Carbon database,,,http://portal.nersc.gov/project/m1317/FOAM,nersc.gov,False,2.0,0.0,LOW
+GTDB,gtrd,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,GlycosylTransferase DataBase,,,http://gtrd.biouml.org,biouml.org,False,2.0,0.0,LOW
+MPIC,mppi,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Molecular Prognostic Indicators in Cirrhosis,http://www.mpic-app.org,mpic-app.org,http://bis.zju.edu.cn/mppi,edu.cn,False,2.0,0.19,LOW
+ATAV,atmad,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,ATAV,http://atavdb.org/,atavdb.org,http://www.megabionet.org/atmad,megabionet.org,False,2.0,0.4,LOW
+OncoPaD,oncoppi,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Oncology Panel Designer,http://www.intogen.org/oncopad,intogen.org,http://oncoppi.emory.edu,emory.edu,False,2.0,0.33,LOW
+RR3DD,rrdb,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,RNA 3D structural classification Database,,,http://huanglab.phys.hust.edu.cn/RRDbenchmark,edu.cn,False,2.0,0.0,LOW
+WoRMS,wom,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,World Register of Marine Species,,,http://webofmicrobes.org,webofmicrobes.org,False,2.0,0.0,LOW
+OASIS,oas,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Open Affective Standardized Image Set,https://db.tt/yYTZYCga,db.tt,http://opig.stats.ox.ac.uk/webapps/oas,ac.uk,False,2.0,0.13,LOW
+BioNØT,bionic,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Biomedical Negated sentences database,http://bionot.askhermes.org/,askhermes.org,http://onto-apps.stanford.edu/bionic,stanford.edu,False,2.0,0.16,LOW
+MDMPR,mdp,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Mouse Developmental and Metabolic Phenotype Repository,,,http://mdp.unimore.it,unimore.it,False,2.0,0.0,LOW
+snoDB,snopy,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,snoRNA Database,,,http://snoopy.med.miyazaki-u.ac.jp,ac.jp,False,2.0,0.0,LOW
+oTAED,otd,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Omega-Transaminase Engineering Database,,,http://www.eumicrobedb.org/transcripts,eumicrobedb.org,False,2.0,0.0,LOW
+efam,efg,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Expanded Metaproteome-Supported HMM Profile Database,,,http://csb.shu.edu.cn/efg,edu.cn,False,2.0,0.0,LOW
+CGAP,cgmd,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Chloroplast Genome Analysis Platform,http://www.herbbol.org:8000/chloroplast,herbbol.org:8000,http://cgmd.in,cgmd.in,False,2.0,0.06,LOW
+SAMT,sagd,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,South Australian Macrobenthic Traits Database,,,http://bioinfo.life.hust.edu.cn/SAGD,edu.cn,False,2.0,0.0,LOW
+COSMOS,cosmic,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,COSMOS,,,http://cancer.sanger.ac.uk,ac.uk,False,2.0,0.0,LOW
+IRNdb,ird,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Immunologically Relevant Non-coding RNA Database,http://irndb.org,irndb.org,http://www.fludb.org,fludb.org,False,2.0,0.67,LOW
+dbTMM,dbtss,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Tohoku Medical Megabank Database,,,http://dbtss.hgc.jp,hgc.jp,False,2.0,0.0,LOW
+FuncPEP,funcoup,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Functional Peptide Database,,,http://funcoup.sbc.su.se,su.se,False,2.0,0.0,LOW
+DIPOS,dibs,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Database of Interacting Proteins in Oryza Sativa,,,http://dibs.enzim.ttk.mta.hu,mta.hu,False,2.0,0.0,LOW
+PlantPReS,plantpis,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Plant Proteome Response to Stress Database,http://www.proteome.ir,proteome.ir,http://www.plantpis.ba.itb.cnr.it,cnr.it,False,2.0,0.3,LOW
+PeMtb,pe-db,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Peptide Mycobacterium Tuberculosis Database,http://www.pemtb-amu.org,pemtb-amu.org,http://pedb.vib.be,vib.be,False,2.0,0.33,LOW
+MitiGate,mirgate,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Mitigation Gateway Database,,,"http://mirgate.bioinfo.cnio.es, http://mirgate.bioinfo.cnio.es/API","cnio.es, http:",False,2.0,0.0,LOW
+YeasTSS,yeastip,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Yeast Transcription Start Site Database,http://www.yeastss.org,yeastss.org,http://genome.jouy.inra.fr/yeastip,inra.fr,False,2.0,0.26,LOW
+ePGA,epd,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Electronic Pharmacogenomics Assistant,http://www.epga.gr/,epga.gr,http://epd.epfl.ch,epfl.ch,False,2.0,0.33,LOW
+tcTKB,tcdb,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Targeted Cancer Toxicity Knowledge Base,,,http://www.tcdb.org,tcdb.org,False,2.0,0.0,LOW
+NeuroPAL,neuropep,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Neuronal Polychromatic Atlas of Landmarks,,,http://isyslab.info/NeuroPep,isyslab.info,False,2.0,0.0,LOW
+BioR,bind,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Biological Reference Repository,http://bioinformaticstools.mayo.edu,mayo.edu,http://download.baderlab.org/BINDTranslation,baderlab.org,False,2.0,0.25,LOW
+IPCT,ipgb,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Integrated Pharmacogenomic Platform of Cancer Tissues,http://ipct.ewostech.net,ewostech.net,http://www.igb.cnr.it/ipgb,cnr.it,False,2.0,0.12,LOW
+cpnDB,cpd,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Chaperonin Database,http://www.cpndb.ca,cpndb.ca,http://www.ebi.ac.uk/fg/sym,ac.uk,False,2.0,0.17,LOW
+ToxicoDB,toxindb,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Toxicogenomics Database,,,http://www.rxnfinder.org/toxindb,rxnfinder.org,False,2.0,0.0,LOW
+ODFM,odcs,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Omics Data from Fermented Foods Microorganisms,,,http://csbg.cnb.csic.es/odcs,csic.es,False,2.0,0.0,LOW
+HRRD,hrgrn,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,HPV-RNA Regulatory Database,http://www.hmuhrrd.com/HRRD,hmuhrrd.com,http://plantgrn.noble.org/hrgrn,noble.org,False,2.0,0.3,LOW
+NDDN,ndb,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Neuroinformation Database for Developing Networks,,,http://ndb.rice.edu,rice.edu,False,2.0,0.0,LOW
+ACToR,acsr,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Aggregated Computational Toxicology Resource,,,http://acsr.ucsf.edu,ucsf.edu,False,2.0,0.0,LOW
+STEPdb,stagdb,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Subcellular Topologies of E. coli Polypeptides Database,,,http://coralsnp.science.psu.edu/galaxy,psu.edu,False,2.0,0.0,LOW
+COMODI,commode,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Computational Model Differences Ontology,http://comodi.sems.uni-rostock.de/,uni-rostock.de,http://commode.i-med.ac.at,ac.at,False,2.0,0.4,LOW
+CLC2,cld,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Cancer LncRNA Census,,,http://www.chineselexicaldatabase.com,chineselexicaldatabase.com,False,2.0,0.0,LOW
+HGVA,hgpd,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Human Genome Variation Archive,,,http://www.HGPD.jp,hgpd.jp,False,2.0,0.0,LOW
+GeneCaRNA,genecards,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Gene-centric RNA Database,,,http://www.genecards.org,genecards.org,False,2.0,0.0,LOW
+ANSH,andb,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Alzheimer Neuroimaging Spectroscopic Hub,,,http://arecanut.icmr.org.in,org.in,False,2.0,0.0,LOW
+EDGAR,edr,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Efficient Database framework for comparative Genome Analyses using BLAST score Ratios,http://edgar3.computational.bio,computational.bio,http://edr.research.bcm.edu,bcm.edu,False,2.0,0.32,LOW
+virusMED,virusms,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Viral Protein Hotspots Atlas,https://virusmed.biocloud.top,biocloud.top,http://virusms.erc.monash.edu,monash.edu,False,2.0,0.42,LOW
+IrGO,ird,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Iranian Traditional Medicine General Ontology,http://ir-go.net/,ir-go.net,http://www.fludb.org,fludb.org,False,2.0,0.22,LOW
+FishTEDB,fishdb,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Fish Transposable Elements Database,http://www.fishtedb.org/,fishtedb.org,http://fishdb.ihb.ac.cn,ac.cn,False,2.0,0.5,LOW
+CFDB,cfgp,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Cystic Fibrosis Database,http://www.inetflow.it/CFDB,inetflow.it,http://cfgp.snu.ac.kr,ac.kr,False,2.0,0.13,LOW
+EDEn,eddb,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Electroceutical Design Environment Database,,,http://eddb.cbi.pku.edu.cn,edu.cn,False,2.0,0.0,LOW
+Pheno4J,phenom,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Gene to Phenotype Graph Database,,,http://phenom.ccbr.utoronto.ca,utoronto.ca,False,2.0,0.0,LOW
+ENSAT,ena,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,ENSAT Adrenal Cancer Registry,,,http://www.ebi.ac.uk/ena,ac.uk,False,2.0,0.0,LOW
+SPRD,spwp,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Surface Plasmon Resonance Database,http://www.sprdatabase.info,sprdatabase.info,http://www.seed-proteome.com,seed-proteome.com,False,2.0,0.42,LOW
+POS,podc,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Personalized Oncology Suite,http://www.icbi.at/POS,icbi.at,http://bioinf.mind.meiji.ac.jp/podc,ac.jp,False,2.0,0.36,LOW
+dBBQs,dbtss,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Database of Bacterial Quality Scores,http://arc-gem.uams.edu/dbbqs,uams.edu,http://dbtss.hgc.jp,hgc.jp,False,2.0,0.12,LOW
+ZFAP,zfin,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Zebrafish Anatomy Portal,http://www.zfap.org,zfap.org,http://zfin.org,zfin.org,False,2.0,0.75,LOW
+CCDBT,ccnet,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Collaborative Chemistry Database Tool,,,http://structuralbiology.cau.edu.cn/gossypium,edu.cn,False,2.0,0.0,LOW
+DSA,dsld,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Digital Slide Archive,,,http://dsld.nlm.nih.gov/dsld,nih.gov,False,2.0,0.0,LOW
+PNC,pnrd,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Philadelphia Neurodevelopmental Cohort,,,http://structuralbiology.cau.edu.cn/PNRD,edu.cn,False,2.0,0.0,LOW
+BIP,bind,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Brassica Information Portal,,,http://download.baderlab.org/BINDTranslation,baderlab.org,False,2.0,0.0,LOW
+POJ,podc,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Portal of Juglandaceae,,,http://bioinf.mind.meiji.ac.jp/podc,ac.jp,False,2.0,0.0,LOW
+PCxN,pcpd,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Pathway Coexpression Network,http://pcxn.org/,pcxn.org,http://p450.biodesign.ac.cn,ac.cn,False,2.0,0.21,LOW
+BSE,bsrd,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Basis Set Exchange,,,http://kwanlab.bio.cuhk.edu.hk/BSRD,edu.hk,False,2.0,0.0,LOW
+AIR,aicd,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Atlas of Inflammation Resolution,https://air.bio.informatik.uni-rostock.de,uni-rostock.de,http://956023.ichengyun.net/AICD/index.php,ichengyun.net,False,2.0,0.14,LOW
+PHND,phin,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Pashtu Handwritten Numerals Database,,,http://cadd.pharmacy.nankai.edu.cn/phin,edu.cn,False,2.0,0.0,LOW
+CNE,cnvd,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Coronavirus Network Explorer,https://digitalinsights.qiagen.com/coronavirus-network-explorer,qiagen.com,http://bioinfo.hrbmu.edu.cn/CNVD,edu.cn,False,2.0,0.3,LOW
+MARA,masi,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Multiple Antibiotic Resistance Annotator,http://mara.spokade.com,spokade.com,http://www.aiddlab.com/MASI,aiddlab.com,False,2.0,0.38,LOW
+FERN,fed,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Fern Ethnomedicinal Plant Database,,,http://www.bioacademy.gr/bioinformatics/projects/ProteinFusion/index.htm,bioacademy.gr,False,2.0,0.0,LOW
+Hemap,hetop,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Hematologic Malignancy Map,,,http://hetop.eu,hetop.eu,False,2.0,0.0,LOW
+EWET,ewas,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Echinococcus Genetic Analysis Collection,,,http://bigd.big.ac.cn/ewas/datahub,ac.cn,False,2.0,0.0,LOW
+SWO,swmd,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Software Ontology,http://softwareontology.wordpress.com,wordpress.com,http://www.swmd.co.in,co.in,False,2.0,0.3,LOW
+HVP,hvdb,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Human Variome Project,http://www.humanvariomeproject.org,humanvariomeproject.org,http://hvdb.dqweilab-sjtu.com/index.php,dqweilab-sjtu.com,False,2.0,0.18,LOW
+HBS,hbfp,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Healthy Brain Study,https://www.healthybrainstudy.nl/en/data-and-methods/access,healthybrainstudy.nl,http://bmbl.bmi.osumc.edu/HBFP,osumc.edu,False,2.0,0.06,LOW
+GREAT,greg,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Genome Regulatory Architecture Tools,https://absynth.issb.genopole.fr/GREAT,genopole.fr,http://mora-lab.github.io/projects/greg.html,github.io,False,2.0,0.3,LOW
+TM-MC,tmrec,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Traditional Medicine Materials and Compounds,,,http://bioinfo.hrbmu.edu.cn/TMREC,edu.cn,False,2.0,0.0,LOW
+TeSS,teaas,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Training eSupport System,https://tess.elixir-europe.org,elixir-europe.org,http://www.teaas.cn/index.php,teaas.cn,False,2.0,0.27,LOW
+NPRDD,npcdb,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,National Platform for Rare Diseases Data Registry,,,http://npcdb.snu.ac.kr,ac.kr,False,2.0,0.0,LOW
+STEP,strap,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Safety and Toxicity of Excipients for Paediatrics,,,http://strap.nci.nih.gov,nih.gov,False,2.0,0.0,LOW
+PMDM,pmbd,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Portal of Medical Data Models,https://medical-data-models.org,medical-data-models.org,http://pmbd.genome-mining.cn/home,genome-mining.cn,False,2.0,0.24,LOW
+CEDAT,cega,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Complex Emergency Database,,,http://cega.ezlab.org,ezlab.org,False,2.0,0.0,LOW
+KRKB,krgdb,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Korean Rare Disease Knowledge Base,http://www.snubi.org/software/raredisease/,snubi.org,http://coda.nih.go.kr/coda/KRGDB/index.jsp,go.kr,False,2.0,0.25,LOW
+mirCoX,mirex,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,miRNA-mRNA Expression Correlations Database,http://wrenlab.org/mirCoX/,wrenlab.org,http://www.combio.pl/mirex,combio.pl,False,2.0,0.36,LOW
+EOL,eogd,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Encyclopedia of Life,http://eol.org,eol.org,http://ciliates.ihb.ac.cn/database/home,ac.cn,False,2.0,0.1,LOW
+BRM,brad,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Bioinformatics Resource Manager,http://www.sysbio.org/dataresources/brm.stm,sysbio.org,http://brassicadb.org/brad,brassicadb.org,False,2.0,0.39,LOW
+OTUX,otd,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,V-region Specific OTU Database,,,http://www.eumicrobedb.org/transcripts,eumicrobedb.org,False,2.0,0.0,LOW
+FORUM,foam,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Forum for Relationships in Unified Metabolomics,https://forum-webapp.semantic-metabolomics.fr,semantic-metabolomics.fr,http://portal.nersc.gov/project/m1317/FOAM,nersc.gov,False,2.0,0.08,LOW
+iMonDB,imtrdb,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Instrument Monitoring Database,,,http://bioinfodbs.kantiana.ru/ImtRDB,kantiana.ru,False,2.0,0.0,LOW
+ReCCaP,remap,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Repository for Caribbean Cancer Publications,,,http://remap.univ-amu.fr,univ-amu.fr,False,2.0,0.0,LOW
+PRED+CT,predicts,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Patient Repository for EEG Data plus Computational Tools,,,http://www.predicts.org.uk,org.uk,False,2.0,0.0,LOW
+UnoViS,univio,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Unobtrusive Vital Signs Database,,,http://univio.psc.riken.jp,riken.jp,False,2.0,0.0,LOW
+DABAM,daa,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Database of X-ray Mirrors Metrology,,,http://ageing-map.org,ageing-map.org,False,2.0,0.0,LOW
+TsTKb,tsdb,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Target-Specific Toxicity Knowledgebase,,,http://tsdb.cbi.pku.edu.cn,edu.cn,False,2.0,0.0,LOW
+PIIP,pina,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Pathology Image Informatics Platform,http://pathiip.org,pathiip.org,http://cbg.garvan.unsw.edu.au/pina,edu.au,False,2.0,0.11,LOW
+SOLID,soytd,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Similar Object and Lure Image Database,,,http://artemis.cyverse.org/soykb_dev/SoyTD,cyverse.org,False,2.0,0.0,LOW
+miRFANs,mirtrans,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,MicroRNA Function Annotation System,,,"http://mcube.nju.edu.cn/jwang/lab/soft/mirtrans/, http://120.27.239.192/mirtrans",edu.cn,False,2.0,0.0,LOW
+ACDC,acidb,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Amphibian Cytochrome-b Database for Curation,,,"http://AciDB.cl, http://gitlab.com/Hawkline451/acidb","acidb.cl, http:",False,2.0,0.0,LOW
+CanDL,card,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Cancer Driver Log,,,http://card.mcmaster.ca,mcmaster.ca,False,2.0,0.0,LOW
+CiteAb,cipemab,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Antibody Citation Database,,,http://www.citogenetica.ufes.br,ufes.br,False,2.0,0.0,LOW
+PlanNET,planex,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Planarian Interactome Network,https://compgen.bio.ub.edu/PlanNET,ub.edu,http://planex.plantbioinformatics.org,plantbioinformatics.org,False,2.0,0.21,LOW
+JED,jet2,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Japan Endoscopy Database,,,http://www.jet2viewer.upmc.fr,upmc.fr,False,2.0,0.0,LOW
+ABCkb,abcmdb,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Aliment to Bodily Condition Knowledgebase,https://abckb.charlotte.edu,charlotte.edu,http://abcm2.hegelab.org,hegelab.org,False,2.0,0.33,LOW
+IPSI,ipgb,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Italian Present-day Stress Indicators Database,,,http://www.igb.cnr.it/ipgb,cnr.it,False,2.0,0.0,LOW
+THE-DB,thpdb,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Threading Model Database,,,http://crdd.osdd.net/raghava/thpdb,osdd.net,False,2.0,0.0,LOW
+EpiK,epd,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Epidemiological Knowledge Base,,,http://epd.epfl.ch,epfl.ch,False,2.0,0.0,LOW
+MAREA,mace,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Accelerometer-based Gait Event Database,,,http://mace.sookmyung.ac.kr,ac.kr,False,2.0,0.0,LOW
+PGRx,pgdd,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Pharmacogenomics Research Network Database,,,http://chibba.agtec.uga.edu/duplication,uga.edu,False,2.0,0.0,LOW
+GENSAT,genfam,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Gene Expression Nervous System Atlas Database,,,"http://mandadilab.webfactional.com/home/, http://mandadilab.webfactional.com/home/dload",webfactional.com,False,2.0,0.0,LOW
+CELL5M,cellx,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Community Elevation and Land-use database for 5-minute grid cells,,,http://cellx.sourceforge.net,sourceforge.net,False,2.0,0.0,LOW
+HASP,hand,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Hemagglutinin Structural Visualization Database,,,http://www.handdatabase.org,handdatabase.org,False,2.0,0.0,LOW
+HADA,hand,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Hereditary Angioedema Database,,,http://www.handdatabase.org,handdatabase.org,False,2.0,0.0,LOW
+PPNID,ppim,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Plant-Parasitic Nematode Identification Database,,,http://comp-sysbio.org/ppim,comp-sysbio.org,False,2.0,0.0,LOW
+BIOPYDB,biopepdb,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Biochemical Pathway Database,,,http://bis.zju.edu.cn/biopepdbr,edu.cn,False,2.0,0.0,LOW
+DREIMT,dream,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Drug Repositioning for Immunomodulation Therapy,http://www.dreimt.org,dreimt.org,http://bio-big-data.cn:8080/DREAM,bio-big-data.cn:8080,False,2.0,0.22,LOW
+NaPLeS,naps,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Natural Products Likeness Scorer,,,http://naps.nencki.gov.pl,gov.pl,False,2.0,0.0,LOW
+DALIA,daa,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Disease Alleles in Arab Population,,,http://ageing-map.org,ageing-map.org,False,2.0,0.0,LOW
+AMASS,amadis,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Atomic Model and Structure Statistics Database,,,http://gift2disease.net/GIFTED,gift2disease.net,False,2.0,0.0,LOW
+COSORE,core,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Continuous Soil Respiration Database,,,http://microbiome.osu.edu,osu.edu,False,2.0,0.0,LOW
+CEED,cega,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Complex Emotion Expression Database,,,http://cega.ezlab.org,ezlab.org,False,2.0,0.0,LOW
+DEST,deer,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Drosophila Evolution over Space and Time,,,http://bsb.kiz.ac.cn:90/DEER,ac.cn:90,False,2.0,0.0,LOW
+HVPC,hvdb,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Human Virome Protein Cluster Database,,,http://hvdb.dqweilab-sjtu.com/index.php,dqweilab-sjtu.com,False,2.0,0.0,LOW
+AACT,aair,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Aggregate Analysis of ClinicalTrials.gov,,,http://aair.cimed.ike.liu.se,liu.se,False,2.0,0.0,LOW
+DARC,daa,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Database of Aligned Ribosomal Complexes,http://darcsite.genzentrum.lmu.de/darc/,lmu.de,http://ageing-map.org,ageing-map.org,False,2.0,0.22,LOW
+BSMC,bsrd,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Bristol Sponge Microbiome Collection,,,http://kwanlab.bio.cuhk.edu.hk/BSRD,edu.hk,False,2.0,0.0,LOW
+NeuroGT,neurogem,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Neurogenic Tagging Atlas,,,http://chibi.ubc.ca/neurogem,ubc.ca,False,2.0,0.0,LOW
+TransPortal,transportdb,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Transporter Portal,,,http://www.membranetransport.org/transportDB2,membranetransport.org,False,2.0,0.0,LOW
+IBP,ibin,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,India Biodiversity Portal,,,http://www.nabg-nbaii.res.in/barcode,res.in,False,2.0,0.0,LOW
+Greengenes,graingenes,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Greengenes Taxonomy Database,,,"http://wheat.pw.usda.gov, http://graingenes.org","usda.gov, http:",False,2.0,0.0,LOW
+READ DB,redidb,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,RNA Binding Protein Expression and Disease Dynamics Database,,,http://srv00.recas.ba.infn.it/redidb/index.html,infn.it,False,2.0,0.0,LOW
+GCOD,gc4s,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,GeneChip Oncology Database,,,http://www.sing-group.org/gc4s,sing-group.org,False,2.0,0.0,LOW
+TAED,tardb,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,The Adaptive Evolution Database,,,http://www.biosequencing.cn/TarDB,biosequencing.cn,False,2.0,0.0,LOW
+MetaTREE,metaref,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Metabolic Tree Database,,,http://metaref.org,metaref.org,False,2.0,0.0,LOW
+MALD,m6add,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Massive Auditory Lexical Decision Database,,,http://m6add.edbc.org,edbc.org,False,2.0,0.0,LOW
+NoGO,norm,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Negative Gene Ontology Database,,,http://www.nirs.go.jp/db/anzendb/NORMDB/ENG/index.php,go.jp,False,2.0,0.0,LOW
+IMSR,impc,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,International Mouse Strain Resource,,,http://www.mousephenotype.org,mousephenotype.org,False,2.0,0.0,LOW
+SAliBASE,salmobase,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Simulated Alignment Database,,,http://www.salmobase.org,salmobase.org,False,2.0,0.0,LOW
+JCGA,jcdb,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Japanese Cancer Genome Atlas,,,http://jcdb.xtbg.ac.cn,ac.cn,False,2.0,0.0,LOW
+HARP,hand,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Hansen's Disease Resistance Pathway Database,https://harp-leprosy.org,harp-leprosy.org,http://www.handdatabase.org,handdatabase.org,False,2.0,0.44,LOW
+HTAN,htd,edit_dist=2,N,0.5,Score=0.5: edit_dist=2,Human Tumor Atlas Network,,,http://htd.cbi.pku.edu.cn,edu.cn,False,2.0,0.0,LOW

@@ -1,0 +1,501 @@
+pmid,title,has_url,is_false_positive,confidence,reason,database_name,long_database_name
+28595657,brain-coX: investigating and visualising gene co-expression in seven human brain transcriptomic datasets.,True,N,high,Resource name brain-coX is a platform for exploring co-expression data,brain-coX,Brain Co-Expression Explorer
+24632500,comTAR: a web tool for the prediction and characterization of conserved microRNA targets in plants.,True,Y,high,Tool for prediction despite name pattern - focuses on computational prediction method,,
+32101277,Rhapsody: predicting the pathogenicity of human missense variants.,True,Y,high,"Title emphasizes ""predicting"" - methodology tool, not data repository",,
+32119082,V-SVA: an R Shiny application for detecting and annotating hidden sources of variation in single-cell RNA-seq data.,True,Y,high,Application/tool for analysis not a data repository,,
+25495116,AKE - the Accelerated k-mer Exploration web-tool for rapid taxonomic classification and visualization.,True,Y,high,Explicitly described as tool for classification - methodology not database,,
+28407033,BioCIDER: a Contextualisation InDEx for biological Resources discovery.,True,Y,medium,Discovery tool for finding resources not itself a resource,,
+32302568,The Human Tumor Atlas Network: Charting Tumor Transitions across Space and Time at Single-Cell Resolution.,False,N,high,Atlas network - a data resource initiative for tumor mapping,HTAN,Human Tumor Atlas Network
+28070014,Lung Gene Expression Analysis (LGEA): an integrative web portal for comprehensive gene expression data analysis in lung development.,True,N,high,Portal that houses and allows exploration of lung gene expression data,LGEA,Lung Gene Expression Analysis
+25388105,The Eukaryotic Pathogen Databases: a functional genomic resource integrating data from human and veterinary parasites.,True,N,high,Explicitly named databases - data resource,EuPathDB,Eukaryotic Pathogen Databases
+22441797,Ovarian Kaleidoscope database: ten years and beyond.,False,N,high,Database keyword in title - ten year update indicates established resource,Ovarian Kaleidoscope,Ovarian Kaleidoscope Database
+21619487,"The Therapeutic Target Database: an internet resource for the primary targets of approved, clinical trial and experimental drugs.",False,N,high,Database keyword - therapeutic target data resource,TTD,Therapeutic Target Database
+21464846,pkDACLASS: Open source software for analyzing MALDI-TOF data.,True,Y,high,Software for analyzing data not a data repository,,
+35008196,Review of the Geant4-DNA Simulation Toolkit for Radiobiological Applications at the Cellular and DNA Level.,False,Y,high,Review paper of a toolkit - not a bioresource,,
+26551295,ChromClust: A semi-supervised chromatin clustering toolkit for mining histone modifications interplay.,False,Y,high,Toolkit for analysis - methodology tool not database,,
+23426256,propy: a tool to generate various modes of Chou's PseAAC.,False,Y,high,Tool for generating features - methodology not database,,
+24731071,MUBII-TB-DB: a database of mutations associated with antibiotic resistance in Mycobacterium tuberculosis.,False,N,high,DB suffix overrides lack of URL - mutation database,MUBII-TB-DB,Mycobacterium tuberculosis Drug Resistance Database
+24225317,The transporter classification database.,True,N,high,Database keyword - classification database for transporters,TCDB,Transporter Classification Database
+30358842,VianniaTopes: a database of predicted immunogenic peptides for Leishmania (Viannia) species.,False,N,high,Database keyword - predicted peptide data resource,VianniaTopes,Viannia Immunogenic Peptides Database
+29915188,GeNets: a unified web platform for network-based genomic analyses.,False,Y,high,Platform for analysis - tool not database,,
+23325628,PPInterFinder--a mining tool for extracting causal relations on human proteins from literature.,True,Y,high,Mining tool for text extraction - not a data repository,,
+33858509,QSAR-Co-X: an open source toolkit for multitarget QSAR modelling.,False,Y,high,Toolkit for modeling - methodology tool,,
+23707729,"Collection, verification, sharing and dissemination of data: the CONTRAST experience.",False,Y,high,Paper about data management experience not a database resource,,
+30500875,PPaxe: easy extraction of protein occurrence and interactions from the scientific literature.,True,Y,high,Tool for extraction from literature - text mining tool not database,,
+31885041,DTI-CDF: a cascade deep forest model towards the prediction of drug-target interactions based on hybrid features.,False,Y,high,Prediction model - methodology not database,,
+24564956,BRCA-Monet: a breast cancer specific drug treatment mode-of-action network for treatment effective prediction using large scale microarray database.,False,Y,high,Prediction tool using databases not itself a database,,
+23815181,NGS-Trex: Next Generation Sequencing Transcriptome profile explorer.,True,N,high,Explorer platform for transcriptome profiles - houses expression data,NGS-Trex,Next Generation Sequencing Transcriptome Profile Explorer
+22070195,"PESCADOR, a web-based tool to assist text-mining of biointeractions extracted from PubMed queries.",True,Y,high,Text-mining tool not a data repository,,
+30767777,BioVR: a platform for virtual reality assisted biological data integration and visualization.,False,Y,high,Platform for visualization - tool not database,,
+23635042,BioUSeR: a semantic-based tool for retrieving Life Science web resources driven by text-rich user requirements.,False,Y,high,Retrieval tool for finding resources not itself a resource,,
+21184613,"MIND-BEST: Web server for drugs and target discovery; design, synthesis, and assay of MAO-B inhibitors and theoretical-experimental study of G3PDH protein from Trichomonas gallinae.",True,Y,high,Web server for drug discovery - tool/method not database,,
+33936482,EffiCare: Better Prognostic Models via Resource-Efficient Health Embeddings.,False,Y,high,Prognostic model methodology paper not database,,
+28055900,MDTE DB: a database for microRNAs derived from Transposable element.,False,N,high,DB suffix indicates database - microRNA data resource,MDTE DB,MicroRNA from Transposable Element Database
+26210853,Database of RNA binding protein expression and disease dynamics (READ DB).,False,N,high,Database keyword and DB suffix - RNA binding protein data,READ DB,RNA Binding Protein Expression and Disease Dynamics Database
+25038066,In-depth characterization of the cerebrospinal fluid (CSF) proteome displayed through the CSF proteome resource (CSF-PR).,True,N,high,Proteome resource for CSF data,CSF-PR,Cerebrospinal Fluid Proteome Resource
+22369513,Analysis of 16S rRNA environmental sequences using MEGAN.,True,Y,high,Paper about using MEGAN tool - not the database itself,,
+24090431,SFARI Gene 2.0: a community-driven knowledgebase for the autism spectrum disorders (ASDs).,True,N,high,Knowledgebase keyword and version number - autism gene data,SFARI Gene,Simons Foundation Autism Research Initiative Gene Database
+21949842,REST: a toolkit for resting-state functional magnetic resonance imaging data processing.,True,Y,high,Toolkit for data processing - analysis tool not database,,
+25404643,"The RD5000 database: facilitating clinical, genetic, and therapeutic studies on inherited retinal diseases.",False,N,high,Database keyword - retinal disease data resource,RD5000,Retinal Disease 5000 Database
+29094410,"Autophagic compound database: A resource connecting autophagy-modulating compounds, their potential targets and relevant diseases.",True,N,high,Database keyword - autophagy compound data resource,Autophagic Compound Database,Autophagic Compound Database
+30535305,PopViz: a webserver for visualizing minor allele frequencies and damage prediction scores of human genetic variations.,True,Y,medium,Webserver for visualization but focuses on prediction scores - borderline tool,,
+23756628,ROCK: a resource for integrative breast cancer data analysis.,False,Y,high,Resource for analysis - integration tool not database,,
+27378288,"AMIGO2, a toolbox for dynamic modeling, optimization and control in systems biology.",False,Y,high,Toolbox for modeling - methodology tool,,
+27723837,RNAMethPre: A Web Server for the Prediction and Query of mRNA m6A Sites.,True,Y,medium,"Despite query capability, primarily prediction web server",,
+21335611,"B2G-FAR, a species-centered GO annotation repository.",True,N,high,Repository keyword - GO annotation data resource,B2G-FAR,Blast2GO Functional Annotation Repository
+27822119,The Danish Ventral Hernia Database - a valuable tool for quality assessment and research.,False,N,high,Database keyword - clinical hernia data resource,DVHD,Danish Ventral Hernia Database
+24830558,The G protein-coupled receptor heterodimer network (GPCR-HetNet) and its hub components.,True,N,high,Network data resource with hub components,GPCR-HetNet,G Protein-Coupled Receptor Heterodimer Network
+32012179,The Complex Emotion Expression Database: A validated stimulus set of trained actors.,False,N,high,Database keyword - emotion expression stimulus data,CEED,Complex Emotion Expression Database
+30352937,BacCapSeq: a Platform for Diagnosis and Characterization of Bacterial Infections.,False,Y,high,Platform for diagnosis - methodology/tool not database,,
+23794918,FORMIDABEL: The Belgian Ants Database.,True,N,high,Database keyword - Belgian ant occurrence data,FORMIDABEL,Belgian Ants Database
+33024111,"VOLCORE, a global database of visible tephra layers sampled by ocean drilling.",False,N,high,Database keyword - tephra layer geological data,VOLCORE,Visible Tephra Layers Core Database
+34388963,OVarFlow: a resource optimized GATK 4 based Open source Variant calling workFlow.,False,Y,high,Workflow for variant calling - pipeline tool not database,,
+21558322,DRAR-CPI: a server for identifying drug repositioning potential and adverse drug reactions via the chemical-protein interactome.,True,Y,high,Server for identifying/predicting - tool not database,,
+30582189,ACCDB: A collection of chemistry databases for broad computational purposes.,False,N,high,DB suffix - collection of chemistry databases,ACCDB,Annotated Chemistry Compound Database
+21277861,NL MIND-BEST: a web server for ligands and proteins discovery--theoretic-experimental study of proteins of Giardia lamblia and new compounds active against Plasmodium falciparum.,True,Y,high,Web server for discovery - tool not database,,
+24558441,Human transporter database: comprehensive knowledge and discovery tools in the human transporter genes.,True,N,high,Database keyword - human transporter gene data,HTD,Human Transporter Database
+31836830,Cosolvent Analysis Toolkit (CAT): a robust hotspot identification platform for cosolvent simulations of proteins to expand the druggable proteome.,False,Y,high,Toolkit for analysis - simulation tool not database,,
+24480175,miRClassify: an advanced web server for miRNA family classification and annotation.,True,Y,high,Web server for classification - tool not database,,
+26719890,SW#db: GPU-Accelerated Exact Sequence Similarity Database Search.,False,Y,high,"Despite DB in name, this is a search algorithm/tool not a database",,
+26597459,Coev-web: a web platform designed to simulate and evaluate coevolving positions along a phylogenetic tree.,True,Y,high,Platform for simulation - methodology tool not database,,
+28961756,4D nucleome Analysis Toolbox: analysis of Hi-C data with abnormal karyotype and time series capabilities.,False,Y,high,Toolbox for analysis - tool not database,,
+27155864,Neuron-Miner: An Advanced Tool for Morphological Search and Retrieval in Neuroscientific Image Databases.,False,Y,high,Tool for searching databases not itself a database,,
+30942869,TranscriptAchilles: a genome-wide platform to predict isoform biomarkers of gene essentiality in cancer.,False,Y,high,Platform to predict - prediction tool not database,,
+22870325,miRSystem: an integrated system for characterizing enriched functions and pathways of microRNA targets.,True,N,high,System that houses integrated microRNA target data,miRSystem,MicroRNA System
+32570388,Integrating the Comparative Toxicogenomic Database in a Human Pharmacogenomic Resource.,False,Y,high,Paper about integrating databases not a database itself,,
+26315902,database.bio: a web application for interpreting human variations.,True,Y,medium,Application for interpretation - tool despite database in name,,
+31691385,The Clinical Genome and Ancestry Report: An interactive web application for prioritizing clinically implicated variants from genome sequencing data with ancestry composition.,True,Y,high,Application for prioritizing variants - reporting tool not database,,
+25819075,LOTUS-DB: an integrative and interactive database for Nelumbo nucifera study.,True,N,high,DB suffix - lotus plant genomics database,LOTUS-DB,Nelumbo nucifera Database
+31594943,"ClimCKmap, a spatially, temporally and climatically explicit distribution database for the Italian fauna.",True,N,high,Database keyword - Italian fauna distribution data,ClimCKmap,Climate Italian Fauna Distribution Map
+26501190,HLADR: a database system for enhancing the discovery of biomarkers for predicting human leukocyte antigen-mediated idiosyncratic adverse drug reactions.,False,Y,high,Database system for prediction - tool not data repository,,
+31614716,"DockNmine, a Web Portal to Assemble and Analyse Virtual and Experimental Interaction Data.",False,Y,high,Portal to assemble and analyze - tool not database,,
+27669338,ChemDataExtractor: A Toolkit for Automated Extraction of Chemical Information from the Scientific Literature.,True,Y,high,Toolkit for extraction - text mining tool not database,,
+33590697,"TaxonTableTools: A comprehensive, platform-independent graphical user interface software to explore and visualise DNA metabarcoding data.",True,Y,high,Software to explore data - visualization tool not database,,
+26585775,Allele Frequencies Net Database: Improvements for storage of individual genotypes and analysis of existing data.,False,N,high,Database keyword - allele frequency data resource,Allele Frequencies Net,Allele Frequencies Net Database
+26076725,"MetaPathways v2.5: quantitative functional, taxonomic and usability improvements.",False,Y,high,Software pipeline improvements - tool not database,,
+26586797,DIANA-miRGen v3.0: accurate characterization of microRNA promoters and their regulators.,True,N,high,Version number and characterization resource - microRNA promoter data,DIANA-miRGen,DNA Intelligent Analysis miRNA Gene Database
+28961906,CRISPR-DAV: CRISPR NGS data analysis and visualization pipeline.,True,Y,high,Pipeline for analysis - tool not database,,
+31707700,Progress in Allosteric Database.,True,N,high,Database keyword - allosteric site data resource,ASD,Allosteric Database
+24417251,SUBTLEX-UK: a new and improved word frequency database for British English.,False,N,high,Database keyword - word frequency linguistic data,SUBTLEX-UK,UK Subtitle-based Word Frequency Database
+29529024,LAILAPS-QSM: A RESTful API and JAVA library for semantic query suggestions.,False,Y,high,API library for queries - software tool not database,,
+26586804,<mds_ies_db>: a database of ciliate genome rearrangements.,True,N,high,Database keyword and DB suffix - ciliate genome data,mds_ies_db,Macronuclear Destined Sequence Internally Eliminated Sequence Database
+34406119,"Multi-syndrome, multi-gene risk modeling for individuals with a family history of cancer with the novel R package PanelPRO.",True,Y,high,R package for risk modeling - tool not database,,
+29790904,Exploring drug space with ChemMaps.com.,True,N,high,Map resource for exploring drug chemical space,ChemMaps,Chemical Maps
+26311606,Connected brains and minds--The UMCD repository for brain connectivity matrices.,True,N,high,Repository keyword - brain connectivity data,UMCD,University of Minnesota Connectome Database
+33252190,GRIN database: A unified and manually curated repertoire of GRIN variants.,True,N,high,Database keyword - GRIN variant data resource,GRIN,Glutamate Receptor Ionotropic NMDA Database
+23943281,3D brain atlas reconstructor service--online repository of three-dimensional models of brain structures.,False,N,high,Repository keyword - 3D brain structure models,3D Brain Atlas,3D Brain Atlas Reconstructor
+31636516,Recent developments in the Inorganic Crystal Structure Database: theoretical crystal structure data and related features.,False,N,high,Database keyword - crystal structure data resource,ICSD,Inorganic Crystal Structure Database
+30564269,RDAD: A Machine Learning System to Support Phenotype-Based Rare Disease Diagnosis.,True,Y,high,System to support diagnosis - machine learning tool not database,,
+34469576,Drosophila Evolution over Space and Time (DEST): A New Population Genomics Resource.,False,N,high,Genomics resource - population data for Drosophila,DEST,Drosophila Evolution over Space and Time
+25417204,"Genomation: a toolkit to summarize, annotate and visualize genomic intervals.",True,Y,high,Toolkit to summarize and visualize - tool not database,,
+30040077,"MANTA2, update of the Mongo database for the analysis of transcription factor binding site alterations.",False,N,high,Database keyword with version - transcription factor binding data,MANTA,Mutation Analysis for Transcription factor Binding Alterations
+32744259,FragMAX: the fragment-screening platform at the MAX IV Laboratory.,False,Y,high,Screening platform - experimental facility not data repository,,
+32719477,A multilevel statistical toolkit to study animal social networks: the Animal Network Toolkit Software (ANTs) R package.,False,Y,high,Toolkit/R package for analysis - tool not database,,
+33140413,Technical note: A report on the Forensic Anthropology Database for Assessing Methods Accuracy.,False,N,high,Database keyword - forensic anthropology measurement data,FADAMA,Forensic Anthropology Database for Assessing Methods Accuracy
+25646545,Ring-Hydroxylating Oxygenase database: a database  of bacterial aromatic ring-hydroxylating oxygenases in  the management of bioremediation and biocatalysis of  aromatic compounds.,False,N,high,Database keyword - oxygenase enzyme data,RHO Database,Ring-Hydroxylating Oxygenase Database
+30639314,MapMan4: A Refined Protein Classification and Annotation Framework Applicable to Multi-Omics Data Analysis.,False,Y,high,Framework for classification - tool not database,,
+25883147,The ReproGenomics Viewer: an integrative cross-species toolbox for the reproductive science community.,True,N,high,Viewer that houses integrated reproductive genomics data,ReproGenomics Viewer,Reproductive Genomics Viewer
+22827839,Seqcrawler: biological data indexing and browsing platform.,False,Y,high,Platform for indexing and browsing - search tool not database,,
+26314578,MGFM: a novel tool for detection of tissue and cell specific marker genes from microarray gene expression data.,True,Y,high,Tool for detection - analysis tool not database,,
+22130590,An infrastructure for ontology-based information systems in biomedicine: RICORDO case study.,True,Y,high,Infrastructure for information systems - not a database,,
+23702556,Genomic region operation kit for flexible processing of deep sequencing data.,True,Y,high,Kit for processing data - tool not database,,
+28388623,FZUImageReg: A toolbox for medical image registration and dose fusion in cervical cancer radiotherapy.,False,Y,high,Toolbox for image registration - tool not database,,
+32936830,The Twitter parliamentarian database: Analyzing Twitter politics across 26 countries.,False,N,high,Database keyword - Twitter political data,Twitter Parliamentarian Database,Twitter Parliamentarian Database
+31647030,Comparison of cytosine base editors and development of the BEable-GPS database for targeting pathogenic SNVs.,False,N,high,Database keyword - base editing target data,BEable-GPS,Base Editor Pathogenic SNV Guidance and Prediction System
+28938003,OXSA: An open-source magnetic resonance spectroscopy analysis toolbox in MATLAB.,False,Y,high,Toolbox for analysis - tool not database,,
+21280038,Flybrain neuron database: a comprehensive database system of the Drosophila brain neurons.,False,N,high,Database keyword - Drosophila neuron data,Flybrain,Flybrain Neuron Database
+21707396,ClickMD: an intuitive web-oriented molecular dynamics platform.,False,Y,high,Platform for molecular dynamics - simulation tool not database,,
+26323715,BigBWA: approaching the Burrows-Wheeler aligner to Big Data technologies.,False,Y,high,Aligner tool - methodology not database,,
+23110536,GAMESS as a free quantum-mechanical platform for drug research.,False,Y,high,Platform for quantum mechanics - computational tool not database,,
+22426342,BioQ: tracing experimental origins in public genomic databases using a novel data provenance model.,True,Y,high,Tool for tracing provenance in databases not itself a database,,
+25619994,ENVIRONMENTS and EOL: identification of Environment Ontology terms in text and the annotation of the Encyclopedia of Life.,True,Y,high,Tool for identification and annotation - text mining not database,,
+22159132,Human Protein Reference Database and Human Proteinpedia as resources for phosphoproteome analysis.,False,Y,high,Paper about using databases for analysis not the databases themselves,,
+22332237,Phylogenomic analysis of bacterial and archaeal sequences with AMPHORA2.,True,Y,high,Tool for phylogenomic analysis - analysis tool not database,,
+27317001,BRET: NanoLuc-Based Bioluminescence Resonance Energy Transfer Platform to Monitor Protein-Protein Interactions in Live Cells.,False,Y,high,Platform for monitoring - experimental assay not database,,
+29896176,The Human Virome Protein Cluster Database (HVPC): A Human Viral Metagenomic Database for Diversity and Function Annotation.,False,N,high,Database keyword - human virome protein cluster data,HVPC,Human Virome Protein Cluster Database
+29579071,HMMER Cut-off Threshold Tool (HMMERCTTER): Supervised classification of superfamily protein sequences with a reliable cut-off threshold.,False,Y,high,Tool for classification - methodology tool not database,,
+25526212,CoffeebEST: an integrated resource for Coffea spp expressed sequence tags.,True,N,high,Resource for EST data - coffee genomics data,CoffeebEST,Coffee Expressed Sequence Tag Database
+28365732,Better living through ontologies at the Immune Epitope Database.,True,N,high,Database keyword - immune epitope data resource,IEDB,Immune Epitope Database
+25897329,"Creation of a free, Internet-accessible database: the Multiple Target Ligand Database.",True,N,high,Database keyword - multi-target ligand data,MTLD,Multiple Target Ligand Database
+31778148,Struo: a pipeline for building custom databases for common metagenome profilers.,True,Y,high,Pipeline for building databases - tool not database itself,,
+22807434,Teaching the fluctuation test in silico by using mutate: a program to distinguish between the adaptive and spontaneous mutation hypotheses.,True,Y,high,Educational program for teaching - tool not database,,
+26375206,"The Cambridge Centre for Ageing and Neuroscience (Cam-CAN) data repository: Structural and functional MRI, MEG, and cognitive data from a cross-sectional adult lifespan sample.",False,N,high,Repository keyword - neuroimaging data resource,Cam-CAN,Cambridge Centre for Ageing and Neuroscience
+22438982,The database for aggregate analysis of ClinicalTrials.gov (AACT) and subsequent regrouping by clinical specialty.,False,N,high,Database keyword - clinical trials data,AACT,Aggregate Analysis of ClinicalTrials.gov
+23110969,MP-T: improving membrane protein alignment for structure prediction.,True,Y,high,Tool for alignment - methodology not database,,
+28632398,The Mitochondrial Protein Atlas: A Database of Experimentally Verified Information on the Human Mitochondrial Proteome.,False,N,high,Atlas and database keywords - mitochondrial protein data,MPA,Mitochondrial Protein Atlas
+33909569,PAN: Personalized Annotation-Based Networks for the Prediction of Breast Cancer Relapse.,False,Y,high,Prediction method - methodology not database,,
+23929679,CONFECT: conformations from an expert collection of torsion patterns.,False,N,high,Collection of torsion patterns - conformational data,CONFECT,Conformations from Expert Collection of Torsions
+31109313,The STELLAR trial protocol: a prospective multicentre trial for Richter's syndrome consisting of a randomised trial investigation CHOP-R with or without acalabrutinib for newly diagnosed RS and a single-arm platform study for evaluation of novel agents in relapsed disease.,True,Y,high,Clinical trial protocol not a database,,
+26055102,BioAcoustica: a free and open repository and analysis platform for bioacoustics.,True,N,high,Repository keyword - bioacoustic sound data,BioAcoustica,BioAcoustica
+33099010,ERP CORE: An open resource for human event-related potential research.,False,N,high,Resource keyword - event-related potential data,ERP CORE,Event-Related Potential Core
+28066963,Phenotiki: an open software and hardware platform for affordable and easy image-based phenotyping of rosette-shaped plants.,True,Y,high,Software and hardware platform for phenotyping - tool not database,,
+22493695,"The Digital Fish Library: using MRI to digitize, database, and document the morphological diversity of fish.",True,N,high,Library/database keyword - digital fish morphology data,DFL,Digital Fish Library
+32797156,SPRINT: a Cas13a-based platform for detection of small molecules.,False,Y,high,Platform for detection - experimental method not database,,
+29432475,High-Throughput Tabular Data Processor - Platform independent graphical tool for processing large data sets.,False,Y,high,Tool for processing data - methodology tool not database,,
+28559010,OpenMS - A platform for reproducible analysis of mass spectrometry data.,False,Y,high,Platform for analysis - software tool not database,,
+32681912,ExoceRNA atlas: A database of cancer ceRNAs in human blood exosomes.,True,N,high,Atlas and database keywords - exosome ceRNA data,ExoceRNA,Exosome Competing Endogenous RNA Atlas
+31507268,Application of a Blockchain Platform to Manage and Secure Personal Genomic Data: A Case Study of LifeCODE.ai in China.,False,Y,high,Paper about platform application - not database itself,,
+22199388,Artemis: an integrated platform for visualization and analysis of high-throughput sequence-based experimental data.,True,Y,high,Platform for visualization and analysis - tool not database,,
+27072794,JBrowse: a dynamic web platform for genome visualization and analysis.,False,Y,high,Platform for visualization - genome browser tool not database,,
+21848450,Development of a chemotherapy regimen interaction database for the mobile internet: detecting interactions with psychotropics through OncoRx-MI.,False,Y,high,Tool for detecting interactions using database not the database itself,,
+25100688,Drug/Cell-line Browser: interactive canvas visualization of cancer drug/cell-line viability assay datasets.,True,N,high,Browser for exploring drug-cell line data - data visualization resource,DCB,Drug Cell-line Browser
+31738401,SPDI: data model for variants and applications at NCBI.,True,N,high,Data model and variant resource at NCBI,SPDI,Sequence Position Deletion Insertion
+22522342,ScreenTroll: a searchable database to compare genome-wide yeast screens.,False,N,high,Database keyword - yeast screen comparison data,ScreenTroll,ScreenTroll
+30520940,ARGDIT: a validation and integration toolkit for Antimicrobial Resistance Gene Databases.,False,Y,high,Toolkit for validation - tool not database itself,,
+23940251,Badger--an accessible genome exploration environment.,True,N,high,Environment for genome exploration - genome data browser,Badger,Bacterial and Archaeal Database with Genome Exploration Resource
+32391910,Biospytial: spatial graph-based computing for ecological Big Data.,False,Y,high,Computing platform - computational tool not database,,
+26424855,missMethyl: an R package for analyzing data from Illumina's HumanMethylation450 platform.,True,Y,high,R package for analysis - tool not database,,
+23703210,Vienna-PTM web server: a toolkit for MD simulations of protein post-translational modifications.,True,Y,high,Toolkit for simulations - computational tool not database,,
+29989589,"FRY, a global database of fire patch functional traits derived from space-borne burned area products.",False,N,high,Database keyword - fire patch trait data,FRY,Fire Patch Functional Traits Database
+30942867,MGS-Fast: Metagenomic shotgun data fast annotation using microbial gene catalogs.,False,Y,high,Tool for annotation - analysis tool not database,,
+23267176,OntoMaton: a bioportal powered ontology widget for Google Spreadsheets.,False,Y,high,Widget tool for Google Spreadsheets - tool not database,,
+22009674,The DARC site: a database of aligned ribosomal complexes.,True,N,high,Database keyword - ribosomal complex structure data,DARC,Database of Aligned Ribosomal Complexes
+34727496,The Open Reaction Database.,False,N,high,Database keyword - chemical reaction data,ORD,Open Reaction Database
+33803957,"Gravitational Experimental Platform for Animal Models, a New Platform at ESA's Terrestrial Facilities to Study the Effects of Micro- and Hypergravity on Aquatic and Rodent Animal Models.",False,Y,high,Experimental facility platform - not a data repository,,
+30416387,<i>TFmapper</i>: A Tool for Searching Putative Factors Regulating Gene Expression Using ChIP-seq Data.,True,Y,high,Tool for searching - analysis tool not database,,
+26624108,Making future taxonomy of Niphargus (Crustacea: Amphipoda: Niphargidae) in the Middle East easier: DELTA database of Middle East species with description of four new species from Iran.,False,N,high,Database keyword - DELTA taxonomic database,DELTA,Descriptive Language for Taxonomy
+29036289,VICTOR: genome-based phylogeny and classification of prokaryotic viruses.,True,N,high,Resource for virus phylogeny and classification,VICTOR,Virus Classification and Tree Building Online Resource
+21930505,Neisseria Base: a comparative genomics database for Neisseria meningitidis.,False,N,high,Base suffix - Neisseria genomics database,Neisseria Base,Neisseria Comparative Genomics Database
+29785463,The North American Forest Database: going beyond national-level forest resource assessment statistics.,False,N,high,Database keyword - forest resource data,NAFD,North American Forest Database
+23362456,PAPTi: a peptide aptamer interference toolkit for perturbation of protein-protein interaction networks.,False,Y,high,Toolkit for perturbation - experimental tool not database,,
+32823674,The Bristol Sponge Microbiome Collection: A Unique Repository of Deep-Sea Microorganisms and Associated Natural Products.,False,N,high,Repository keyword - sponge microbiome strain collection,BSMC,Bristol Sponge Microbiome Collection
+30150755,XCMS-MRM and METLIN-MRM: a cloud library and public resource for targeted analysis of small molecules.,True,N,high,Library and resource keywords - metabolite MRM data,XCMS-MRM,XCMS Multiple Reaction Monitoring
+21284836,MM-ChIP enables integrative analysis of cross-platform and between-laboratory ChIP-chip or ChIP-seq data.,False,Y,high,Tool that enables analysis - methodology not database,,
+27111506,irCLIP platform for efficient characterization of protein-RNA interactions.,False,Y,high,Platform for experimental characterization - method not database,,
+35474959,NeuroGT: A brain atlas of neurogenic tagging CreER drivers for birthdate-based classification and manipulation of mouse neurons.,False,N,high,Atlas keyword - neurogenic tagging driver data,NeuroGT,Neurogenic Tagging Atlas
+26238452,SerpentinaDB: a database of plant-derived molecules of Rauvolfia serpentina.,False,N,high,DB suffix - plant molecule database,SerpentinaDB,Rauvolfia Serpentina Molecule Database
+26446988,LymAnalyzer: a tool for comprehensive analysis of next generation sequencing data of T cell receptors and immunoglobulins.,False,Y,high,Tool for analysis - methodology tool not database,,
+33479245,The human O-GlcNAcome database and meta-analysis.,True,N,high,Database keyword - O-GlcNAc modification data,O-GlcNAcome,O-GlcNAcylation Database
+23766289,"Depth: a web server to compute depth, cavity sizes, detect potential small-molecule ligand-binding cavities and predict the pKa of ionizable residues in proteins.",True,Y,high,Web server for computation and prediction - tool not database,,
+23947436,Gentrepid V2.0: a web server for candidate disease gene prediction.,True,Y,high,Web server for prediction - tool not database,,
+28827824,Limb-Enhancer Genie: An accessible resource of accurate enhancer predictions in the developing limb.,False,Y,medium,Resource of predictions - prediction tool outputs not curated database,,
+34039271,Lantern: an integrative repository of functional annotations for lncRNAs in the human genome.,False,N,high,Repository keyword - lncRNA annotation data,Lantern,LncRNA Annotation Repository
+33137173,Global Substance Registration System: consistent scientific descriptions for substances related to health.,True,N,high,Registration system - substance data resource,GSRS,Global Substance Registration System
+30886413,SIRIUS 4: a rapid tool for turning tandem mass spectra into metabolite structure information.,True,Y,high,Tool for structure identification - analysis tool not database,,
+32221612,QuartataWeb: Integrated Chemical-Protein-Pathway Mapping for Polypharmacology and Chemogenomics.,True,N,high,Web resource for integrated mapping - chemical-protein data,QuartataWeb,Quartata Web
+32670259,MicroGMT: A Mutation Tracker for SARS-CoV-2 and Other Microbial Genome Sequences.,False,Y,high,Tracker tool for mutations - analysis tool not database,,
+33118813,ZINC20-A Free Ultralarge-Scale Chemical Database for Ligand Discovery.,True,N,high,Database keyword - chemical compound database,ZINC20,ZINC Is Not Commercial
+25559128,MUFOLD-DB: a processed protein structure database for protein structure prediction and analysis.,True,N,high,DB suffix - protein structure database,MUFOLD-DB,Multi-source Fold Recognition Database
+29447341,ChemDistiller: an engine for metabolite annotation in mass spectrometry.,False,Y,high,Engine for annotation - tool not database,,
+30793173,CausalTAB: the PSI-MITAB 2.8 updated format for signalling data representation and dissemination.,True,N,high,Data format resource for signaling data,CausalTAB,Causal Interaction Format
+23181507,"CloudMan as a platform for tool, data, and analysis distribution.",False,Y,high,Platform for distribution - infrastructure tool not database,,
+32581636,Biologer: an open platform for collecting biodiversity data.,False,Y,high,Platform for collecting data - data collection tool not repository,,
+21943292,EnzymeDetector: an integrated enzyme function prediction tool and database.,True,N,high,Tool and database - enzyme function data resource,EnzymeDetector,Enzyme Function Prediction Database
+30304367,MetaOmics: analysis pipeline and browser-based software suite for transcriptomic meta-analysis.,False,Y,high,Pipeline and software for analysis - tool not database,,
+25414328,INFRAFRONTIER--providing mutant mouse resources as research tools for the international scientific community.,True,N,high,Resource infrastructure for mutant mice - mouse strain repository,INFRAFRONTIER,Infrastructure for Mouse Phenotyping Resources
+28505334,DIRECTION: a machine learning framework for predicting and characterizing DNA methylation and hydroxymethylation in mammalian genomes.,True,Y,high,Framework for predicting - prediction tool not database,,
+31329252,sAOP: linking chemical stressors to adverse outcomes pathway networks.,True,N,high,Resource linking chemicals to pathways - AOP data,sAOP,Systems Adverse Outcome Pathway
+30208877,"Global Abortion Policies Database: a new approach to strengthening knowledge on laws, policies, and human rights standards.",False,N,high,Database keyword - abortion policy data,GAPD,Global Abortion Policies Database
+31392322,Protein Homeostasis Database: protein quality control in E.coli.,True,N,high,Database keyword - protein quality control data,PHDB,Protein Homeostasis Database
+30937844,SMITE: A toolbox for creating Psychophysics Toolbox and PsychoPy experiments with SMI eye trackers.,False,Y,high,Toolbox for creating experiments - software tool not database,,
+33119075,Phosphomatics: interactive interrogation of substrate-kinase networks in global phosphoproteomics datasets.,True,N,high,Interactive resource for phosphoproteomics networks,Phosphomatics,Phosphorylation Informatics
+29170835,Entomopathogen ID: a curated sequence resource for entomopathogenic fungi.,False,N,high,Resource keyword - entomopathogenic fungi sequence data,Entomopathogen ID,Entomopathogen Identification Resource
+29866037,Disbiome database: linking the microbiome to disease.,False,N,high,Database keyword - microbiome-disease association data,Disbiome,Disease-Microbiome Database
+21265623,The European radiobiological archives: online access to data from radiobiological experiments.,True,N,high,Archives keyword - radiobiological experimental data,ERA,European Radiobiological Archives
+32375409,EffHunter: A Tool for Prediction of Effector Protein Candidates in Fungal Proteomic Databases.,False,Y,high,Tool for prediction - analysis tool not database,,
+32841606,The Gut Virome Database Reveals Age-Dependent Patterns of Virome Diversity in the Human Gut.,False,N,high,Database keyword - gut virome data,GVD,Gut Virome Database
+31236093,Raman Open Database: first interconnected Raman-X-ray diffraction open-access resource for material identification.,True,N,high,Database and resource keywords - Raman spectroscopy data,ROD,Raman Open Database
+28507049,Models in Translational Oncology: A Public Resource Database for Preclinical Cancer Research.,False,N,high,Database keyword - cancer model data,MITO,Models in Translational Oncology
+31267134,Phytochelatin database: a resource for phytochelatin complexes of nutritional and environmental metals.,False,N,high,Database keyword - phytochelatin complex data,Phytochelatin Database,Phytochelatin Database
+28961923,PhyloGeoTool: interactively exploring large phylogenies in an epidemiological context.,False,Y,high,Tool for exploring - visualization tool not database,,
+30230343,Flexible and Fast Mapping of Peptides to a Proteome with ProteoMapper.,True,Y,high,Tool for mapping peptides - analysis tool not database,,
+23085876,The UCSF-FDA TransPortal: a public drug transporter database.,False,N,high,Database keyword - drug transporter data,TransPortal,Transporter Portal
+27684958,MetaPhinder-Identifying Bacteriophage Sequences in Metagenomic Data Sets.,True,Y,high,Tool for identifying sequences - analysis tool not database,,
+23027632,Neuromechanic: a computational platform for simulation and analysis of the neural control of movement.,True,Y,high,Platform for simulation - computational tool not database,,
+34048578,GalaxyHeteromer: protein heterodimer structure prediction by template-based and ab initio docking.,True,Y,high,Tool for prediction - structure prediction tool not database,,
+24573880,TSLP signaling pathway map: a platform for analysis of TSLP-mediated signaling.,True,N,high,Pathway map platform - signaling pathway data resource,TSLP Pathway Map,Thymic Stromal Lymphopoietin Signaling Pathway Map
+21653517,genBlastG: using BLAST searches to build homologous gene models.,True,Y,high,Tool using BLAST - gene prediction tool not database,,
+22121156,Using Sybil for interactive comparative genomics of microbes on the web.,True,Y,high,Paper about using Sybil tool - not database itself,,
+27153664,Combenefit: an interactive platform for the analysis and visualization of drug combinations.,False,Y,high,Platform for analysis - tool not database,,
+31344828,Animal Images Database: Validation of 120 Images for Human-Animal Studies.,False,N,high,Database keyword - animal image stimulus data,AID,Animal Images Database
+32236975,The Adolescent Data Hub: The Largest Catalog of Open Access Data on Adolescents Living in Low- and Middle-Income Countries.,False,N,high,Hub and catalog keywords - adolescent data aggregation,ADH,Adolescent Data Hub
+24572313,Brillouin-zone database on the Bilbao Crystallographic Server.,True,N,high,Database keyword - crystallographic zone data,Brillouin-zone Database,Brillouin-zone Database
+28334266,Phenopolis: an open platform for harmonization and analysis of genetic and phenotypic data.,True,N,high,Platform that houses integrated genetic-phenotypic data,Phenopolis,Phenotype-Genotype Database
+26433296,Report on the development of the FAO/INFOODS user database for fish and shellfish (uFiSh) - Challenges and possible solutions.,False,Y,high,Report on database development - not database paper itself,,
+25171179,SoilGrids1km--global soil information based on automated mapping.,True,N,high,Grid resource with soil property data,SoilGrids,Soil Property Grids
+30779739,A component overlapping attribute clustering (COAC) algorithm for single-cell RNA sequencing data analysis and potential pathobiological implications.,False,Y,high,Algorithm paper - methodology not database,,
+26519405,PGSB/MIPS Plant Genome Information Resources and Concepts for the Analysis of Complex Grass Genomes.,False,Y,high,Paper about resources and concepts - review not database,,
+29444388,The virtual microscopy database-sharing digital microscope images for research and education.,False,N,high,Database keyword - microscopy image data,VMD,Virtual Microscopy Database
+26158448,Genome Modeling System: A Knowledge Management Platform for Genomics.,False,Y,high,Platform for knowledge management - infrastructure tool not database,,
+29048461,SliceMap: an algorithm for automated brain region annotation.,False,Y,high,Algorithm for annotation - tool not database,,
+29328995,FilTer BaSe: A web accessible chemical database for small compound libraries.,True,N,high,Database keyword and Base suffix - chemical compound database,FilTer BaSe,Filter Base
+22110242,Bioinformatics Training Network (BTN): a community resource for bioinformatics trainers.,False,Y,high,Training network resource - educational not data repository,,
+27932923,"India Biodiversity Portal: An integrated, interactive and participatory biodiversity informatics platform.",False,N,high,Portal keyword - biodiversity occurrence data,IBP,India Biodiversity Portal
+23962734,Modeling visual working memory with the MemToolbox.,True,Y,high,Toolbox for modeling - analysis tool not database,,
+30371894,The Virtual Metabolic Human database: integrating human and gut microbiome metabolism with nutrition and disease.,True,N,high,Database keyword - metabolic pathway data,VMH,Virtual Metabolic Human
+31650686,BlastGUI: A Python-based Cross-platform Local BLAST Visualization Software.,False,Y,high,Visualization software - tool not database,,
+33975779,SchistoCyte Atlas: A Single-Cell Transcriptome Resource for Adult Schistosomes.,False,N,high,Atlas and resource keywords - schistosome single-cell data,SchistoCyte Atlas,Schistosome Single-Cell Atlas
+33904719,Cheetah: A Computational Toolkit for Cybergenetic Control.,False,Y,high,Toolkit for control - computational tool not database,,
+23256945,GalenOWL: Ontology-based drug recommendations discovery.,False,Y,high,Tool for discovery - recommendation system not database,,
+32097405,Tximeta: Reference sequence checksums for provenance identification in RNA-seq.,True,Y,high,Tool for provenance - software package not database,,
+22768229,MetaboSearch: tool for mass-based metabolite identification using multiple databases.,True,Y,high,Tool for searching databases - search tool not database itself,,
+32791826,"MovableType Software for Fast Free Energy-Based Virtual Screening: Protocol Development, Deployment, Validation, and Assessment.",True,Y,high,Software for virtual screening - tool not database,,
+29037173,"TaxMapper: an analysis tool, reference database and workflow for metatranscriptome analysis of eukaryotic microorganisms.",True,Y,medium,"Tool and workflow, though includes reference database component",,
+22214541,GuiTope: an application for mapping random-sequence peptides to protein sequences.,False,Y,high,Application for mapping - tool not database,,
+23475683,Update on allele nomenclature for human cytochromes P450 and the Human Cytochrome P450 Allele (CYP-allele) Nomenclature Database.,True,N,high,Database keyword - CYP allele nomenclature data,CYP-allele,Human Cytochrome P450 Allele Nomenclature Database
+30414111,Using BUSCO to Assess Insect Genomic Resources.,False,Y,high,Paper about using BUSCO tool - not database,,
+29879128,Thigh muscle segmentation of chemical shift encoding-based water-fat magnetic resonance images: The reference database MyoSegmenTUM.,True,N,high,Reference database keyword - muscle segmentation data,MyoSegmenTUM,Myology Segmentation Technical University Munich
+21635747,"ngs_backbone: a pipeline for read cleaning, mapping and SNP calling using next generation sequence.",True,Y,high,Pipeline tool - analysis workflow not database,,
+28413726,gb4gv: a genome browser for <i>geminivirus</i>.,True,N,high,Genome browser - geminivirus genome data resource,gb4gv,Genome Browser for Geminiviruses
+23736528,BeCAS: biomedical concept recognition services and visualization.,True,Y,high,Service for recognition - text mining tool not database,,
+25330480,The LISS--a public database of common imaging signs of lung diseases for computer-aided detection and diagnosis research and medical education.,False,N,high,Database keyword - lung disease imaging sign data,LISS,Lung Imaging Signs Database
+25701574,Annocript: a flexible pipeline for the annotation of transcriptomes able to identify putative long noncoding RNAs.,False,Y,high,Pipeline for annotation - tool not database,,
+22736059,IDPredictor: predict database links in biomedical database.,False,Y,high,Tool to predict links - prediction tool not database,,
+26787666,GeneValidator: identify problems with protein-coding gene predictions.,True,Y,high,Tool to identify problems - validation tool not database,,
+33914774,"MR. Estimator, a toolbox to determine intrinsic timescales from subsampled spiking activity.",False,Y,high,Toolbox for analysis - tool not database,,
+27190508,Ebolavirus Database: Gene and Protein Information Resource for Ebolaviruses.,False,N,high,Database keyword - Ebolavirus genomic data,EVD,Ebolavirus Database
+30286773,The 3D Genome Browser: a web-based browser for visualizing 3D genome organization and long-range chromatin interactions.,True,N,high,Browser for 3D genome data - chromatin interaction resource,3D Genome Browser,3D Genome Browser
+26602690,Aging Chart: a community resource for rapid exploratory pathway analysis of age-related processes.,True,N,high,Resource keyword - aging pathway data,Aging Chart,Aging Chart
+23640335,CMCompare webserver: comparing RNA families via covariance models.,True,Y,high,Webserver for comparing - comparison tool not database,,
+31560649,The CELLmicrocosmos Tools: A Small History of Java-Based Cell and Membrane Modelling Open Source Software Development.,True,Y,high,Software tools paper - not database,,
+30300376,HCF-CRS: A Hybrid Content based Fuzzy Conformal Recommender System for providing recommendations with confidence.,False,Y,high,Recommender system - tool not database,,
+23435068,Genetic Simulation Resources: a website for the registration and discovery of genetic data simulators.,True,N,high,Website for registration and discovery of simulators,GSR,Genetic Simulation Resources
+26357913,Genetic properties of the MAGIC maize population: a new platform for high definition QTL mapping in Zea mays.,False,Y,high,Population resource paper - not a data repository platform,,
+23028676,mMass as a software tool for the annotation of cyclic peptide tandem mass spectra.,True,Y,high,Software tool for annotation - tool not database,,
+24334415,"HapRice, an SNP haplotype database and a web tool for rice.",True,N,high,Database keyword - rice SNP haplotype data,HapRice,Rice Haplotype Database
+22312429,NGS QC Toolkit: a toolkit for quality control of next generation sequencing data.,True,Y,high,Toolkit for quality control - tool not database,,
+24913605,QMachine: commodity supercomputing in web browsers.,False,Y,high,Computing platform - infrastructure tool not database,,
+25143288,GlycoPattern: a web platform for glycan array mining.,True,N,high,Platform for mining glycan array data,GlycoPattern,Glycan Pattern Mining Platform
+25481009,ICMA: an integrated cardiac modeling and analysis platform.,True,Y,high,Platform for modeling and analysis - tool not database,,
+22693437,"Exploring massive, genome scale datasets with the GenometriCorr package.",False,Y,high,Package for exploring datasets - tool not database,,
+29561219,The network of Shanghai Stroke Service System (4S): A public health-care web-based database using automatic extraction of electronic medical records.,True,N,high,Database keyword - stroke patient clinical data,Shanghai 4S,Shanghai Stroke Service System
+21333005,TRAM (Transcriptome Mapper): database-driven creation and analysis of transcriptome maps from multiple sources.,True,Y,high,"Tool for creation and analysis, despite using databases",,
+29344888,Perseus: A Bioinformatics Platform for Integrative Analysis of Proteomics Data in Cancer Research.,False,Y,high,Platform for integrative analysis - tool not database,,
+25979774,pFind-Alioth: A novel unrestricted database search algorithm to improve the interpretation of high-resolution MS/MS data.,False,Y,high,Search algorithm - methodology not database,,
+21303863,GeneTUKit: a software for document-level gene normalization.,True,Y,high,Software for normalization - text mining tool not database,,
+33253147,Brain Modeling ToolKit: An open source software suite for multiscale modeling of brain circuits.,False,Y,high,Toolkit for modeling - software tool not database,,
+32303685,High resolution temporal profiles in the Emissions Database for Global Atmospheric Research.,False,N,high,Database keyword - atmospheric emissions data,EDGAR,Emissions Database for Global Atmospheric Research
+24047532,FishMicrosat: a microsatellite database of commercially important fishes and shellfishes of the Indian subcontinent.,False,N,high,Database keyword - fish microsatellite data,FishMicrosat,Fish Microsatellite Database
+28545463,CVE: an R package for interactive variant prioritisation in precision oncology.,True,Y,high,R package for prioritization - tool not database,,
+31725859,"Extension modules for storage, visualization and querying of genomic, genetic and breeding data in Tripal databases.",True,Y,high,Extension modules for databases - infrastructure tool not database,,
+22912854,mMWeb--an online platform for employing multiple ecological niche modeling algorithms.,False,Y,high,Platform for modeling algorithms - tool not database,,
+33320180,Novel methods included in SpolLineages tool for fast and precise prediction of Mycobacterium tuberculosis complex spoligotype families.,False,Y,high,Tool for prediction - methodology not database,,
+25534952,"NMR spectroscopic search module for Spektraris, an online resource for plant natural product identification--Taxane diterpenoids from Taxus × media cell suspension cultures as a case study.",False,Y,high,Search module and case study - not database paper,,
+33623035,"The DecNef collection, fMRI data from closed-loop decoded neurofeedback experiments.",False,N,high,Collection keyword - fMRI neurofeedback data,DecNef,Decoded Neurofeedback Collection
+33888059,GRAPES-DD: exploiting decision diagrams for index-driven search in biological graph databases.,False,Y,high,Tool for search in databases - search algorithm not database,,
+32678893,OPUS-TASS: a protein backbone torsion angles and secondary structure predictor based on ensemble neural networks.,False,Y,high,Predictor tool - methodology not database,,
+32241255,EpiMOLAS: an intuitive web-based framework for genome-wide DNA methylation analysis.,True,Y,high,Framework for analysis - tool not database,,
+27540265,CSAM: Compressed SAM format.,False,Y,high,File format specification - not database,,
+24882917,"Expansion of the Ligand Knowledge Base for Chelating P,P-Donor Ligands (LKB-PP).",False,N,high,Knowledge Base in title - ligand data resource,LKB-PP,"Ligand Knowledge Base for Chelating P,P-Donor Ligands"
+30271296,"""Plutchik"": artificial intelligence chatbot for searching NCBI databases.",False,Y,high,Chatbot for searching databases - search tool not database,,
+23702710,CYCLONE--a utility for de novo sequencing of microbial cyclic peptides.,True,Y,high,Utility for sequencing - tool not database,,
+24661210,UCLA's Molecular Screening Shared Resource: enhancing small molecule discovery with functional genomics and new technology.,False,Y,high,Screening facility resource - not data repository,,
+29034288,The TNO Multiband Image Data Collection.,False,N,high,Collection keyword - multiband image data,TNO MIDC,TNO Multiband Image Data Collection
+28464063,The Plant Orthology Browser: An Orthology and Gene-Order Visualizer for Plant Comparative Genomics.,False,Y,high,Browser/visualizer tool - not database,,
+31034468,FunSPU: A versatile and adaptive multiple functional annotation-based association test of whole-genome sequencing data.,False,Y,high,Association test method - statistical tool not database,,
+22551073,LDGIdb: a database of gene interactions inferred from long-range strong linkage disequilibrium between pairs of SNPs.,False,N,high,Database keyword - gene interaction data,LDGIdb,Linkage Disequilibrium Gene Interaction Database
+22527514,The Protein Structure Initiative Structural Biology Knowledgebase Technology Portal: a structural biology web resource.,True,N,high,Portal and knowledgebase keywords - structural biology resource,SBKB,Structural Biology Knowledgebase
+32508888,Estimating Conformational Traits in Dairy Cattle With DeepAPS: A Two-Step Deep Learning Automated Phenotyping and Segmentation Approach.,True,Y,high,Approach for phenotyping - methodology not database,,
+32871007,SARS2020: an integrated platform for identification of novel coronavirus by a consensus sequence-function model.,True,Y,high,Platform for identification - prediction tool not database,,
+22134646,An improved Greengenes taxonomy with explicit ranks for ecological and evolutionary analyses of bacteria and archaea.,False,N,high,Taxonomy database - bacterial taxonomy resource,Greengenes,Greengenes Taxonomy Database
+27153605,pileup.js: a JavaScript library for interactive and in-browser visualization of genomic data.,False,Y,high,JavaScript library for visualization - tool not database,,
+33257864,Readfish enables targeted nanopore sequencing of gigabase-sized genomes.,False,Y,high,Tool for targeted sequencing - methodology not database,,
+29218563,A Practical Guide to iSPOT Modeling: An Integrative Structural Biology Platform.,False,Y,high,Guide to modeling platform - methodology paper not database,,
+33047381,SynPharm and the guide to pharmacology database: A toolset for conferring drug control on engineered proteins.,False,Y,high,Toolset for drug control - methodology not database,,
+34616633,Struo2: efficient metagenome profiling database construction for ever-expanding microbial genome datasets.,False,Y,high,Tool for database construction - not database itself,,
+27256313,CART-a chemical annotation retrieval toolkit.,False,Y,high,Toolkit for retrieval - tool not database,,
+31637666,NavWell: A simplified virtual-reality platform for spatial navigation and memory experiments.,False,Y,high,Platform for experiments - experimental tool not database,,
+21498547,The Laccase Engineering Database: a classification and analysis system for laccases and related multicopper oxidases.,True,N,high,Database keyword - laccase enzyme data,LCED,Laccase Engineering Database
+30586411,BRCA Challenge: BRCA Exchange as a global resource for variants in BRCA1 and BRCA2.,True,N,high,Resource keyword - BRCA variant data,BRCA Exchange,BRCA Variant Exchange
+21217121,R/mpMap: a computational platform for the genetic analysis of multiparent recombinant inbred lines.,True,Y,high,Computational platform for analysis - tool not database,,
+22923294,The GlycomeAtlas tool for visualizing and querying glycome data.,True,N,high,Atlas keyword and tool for querying glycome data,GlycomeAtlas,Glycome Atlas
+25573919,RNA-Rocket: an RNA-Seq analysis resource for infectious disease research.,True,N,high,Resource keyword - RNA-Seq analysis platform with data,RNA-Rocket,RNA-Seq Analysis Resource
+33685498,DECIMER-Segmentation: Automated extraction of chemical structure depictions from scientific literature.,True,Y,high,Tool for extraction - image analysis tool not database,,
+22208852,MotifMap: integrative genome-wide maps of regulatory motif sites for model species.,True,N,high,Map keyword - regulatory motif site data,MotifMap,Regulatory Motif Map
+29562324,ALPHA: a toolkit for Automated Local PHylogenomic Analyses.,False,Y,high,Toolkit for analysis - tool not database,,
+29351600,GTC: how to maintain huge genotype collections in a compressed form.,True,Y,high,Tool for maintaining collections - compression tool not database,,
+29051230,iPhemap: an atlas of phenotype to genotype relationships of human iPSC models of neurological diseases.,False,N,high,Atlas keyword - iPSC phenotype-genotype data,iPhemap,Induced Pluripotent Stem Cell Phenotype Map
+24174541,P-MITE: a database for plant miniature inverted-repeat transposable elements.,True,N,high,Database keyword - plant MITE data,P-MITE,Plant Miniature Inverted-repeat Transposable Element Database
+30375473,A new cerebral vessel benchmark dataset (CAPUT) for validation of image-based aneurysm deformation estimation algorithms.,False,N,high,Dataset keyword - cerebral vessel imaging benchmark data,CAPUT,Cerebral Aneurysm Patient-specific Dataset
+23190929,Autworks: a cross-disease network biology application for Autism and related disorders.,True,N,high,Application that houses autism network biology data,Autworks,Autism Network Biology Application
+30184055,Glutton: a tool for generating structural ensembles of partly disordered proteins from chemical shifts.,False,Y,high,Tool for generating structures - computational tool not database,,
+28141874,"Metabox: A Toolbox for Metabolomic Data Analysis, Interpretation and Integrative Exploration.",True,Y,high,Toolbox for analysis - tool not database,,
+24799434,The personal genome browser: visualizing functions of genetic variants.,True,Y,high,Browser for visualization - tool not database,,
+34635675,"SMAP-HydroBlocks, a 30-m satellite-based soil moisture dataset for the conterminous US.",True,N,high,Dataset keyword - soil moisture data,SMAP-HydroBlocks,Soil Moisture Active Passive HydroBlocks
+31893376,Quantifying Metabolic Transfer Mediated by Extracellular Vesicles Using Exo-MFA: An Integrated Empirical and Computational Platform.,False,Y,high,Platform for metabolic flux analysis - methodology not database,,
+24069606,SeedSeq: off-target transcriptome database.,False,N,high,Database keyword - off-target transcriptome data,SeedSeq,Seed Sequence Database
+29635306,Pleiotropic mapping and annotation selection in genome-wide association studies with penalized Gaussian mixture models.,True,Y,high,Mapping method - statistical methodology not database,,
+25123904,Cordova: web-based management of genetic variation data.,False,Y,high,Management tool - software for managing data not database,,
+25422678,STRAP PTM: Software Tool for Rapid Annotation and Differential Comparison of Protein Post-Translational Modifications.,False,Y,high,Software tool for annotation - analysis tool not database,,
+34627149,Manual Annotation Studio (MAS): a collaborative platform for manual functional annotation of viral and microbial genomes.,False,Y,high,Platform for annotation - annotation tool not database,,
+26685306,PaxtoolsR: pathway analysis in R using Pathway Commons.,True,Y,high,R package for analysis - tool not database,,
+23679342,LIPS database with LIPService: a microscopic image database of intracellular structures in Arabidopsis guard cells.,False,N,high,Database keyword - Arabidopsis cell image data,LIPS,Localization of Intracellular Proteins in guard cells
+30521566,Citizen Social Lab: A digital platform for human behavior experimentation within a citizen science framework.,False,Y,high,Platform for experimentation - experimental framework not database,,
+21441431,PlaNet: combined sequence and expression comparisons across plant networks derived from seven species.,True,N,high,Network resource - plant gene network data,PlaNet,Plant Network
+21930507,BioMart Central Portal: an open database network for the biological community.,False,N,high,Database network portal - data access infrastructure,BioMart,Biological Mart
+31649739,CircCode: A Powerful Tool for Identifying circRNA Coding Ability.,False,Y,high,Tool for identifying - prediction tool not database,,
+23275696,DB Dehydrogenase: an online integrated structural database on enzyme dehydrogenase.,True,N,high,Database keyword and DB in name - dehydrogenase structure data,DB Dehydrogenase,Dehydrogenase Database
+33858322,ChIP-BIT2: a software tool to detect weak binding events using a Bayesian integration approach.,False,Y,high,Software tool to detect - analysis tool not database,,
+26325041,Nuclear Receptor Signaling Atlas: Opening Access to the Biology of Nuclear Receptor Signaling Pathways.,True,N,high,Atlas keyword - nuclear receptor signaling data,NURSA,Nuclear Receptor Signaling Atlas
+27734896,3Disease Browser: A Web server for integrating 3D genome and disease-associated chromosome rearrangement data.,True,N,high,Browser that houses integrated 3D genome disease data,3Disease Browser,3D Genome Disease Browser
+30321295,SCALOP: sequence-based antibody canonical loop structure annotation.,False,Y,high,Tool for annotation - annotation method not database,,
+29136092,microRPM: a microRNA prediction model based only on plant small RNA sequencing data.,True,Y,high,Prediction model - methodology not database,,
+30963208,Mapping the diversity of microbial lignin catabolism: experiences from the eLignin database.,True,N,high,Database keyword - lignin degradation enzyme data,eLignin,Lignin Catabolism Database
+23369392,"Laboratory-based surveillance in the molecular era: the TYPENED model, a joint data-sharing platform for clinical and public health laboratories.",False,Y,high,Data-sharing platform model - infrastructure not database,,
+29092928,The ISB Cancer Genomics Cloud: A Flexible Cloud-Based Platform for Cancer Genomics Research.,True,N,high,Cloud platform that provides access to cancer genomics data,ISB-CGC,Institute for Systems Biology Cancer Genomics Cloud
+30862647,"GenTree, an integrated resource for analyzing the evolution and function of primate-specific coding genes.",False,N,high,Resource keyword - primate gene evolution data,GenTree,Gene Tree
+22227717,Common atlas format and 3D brain atlas reconstructor: infrastructure for constructing 3D brain atlases.,False,Y,high,Infrastructure tool - tool for constructing atlases not atlas itself,,
+27228153,TissueMiner: A multiscale analysis toolkit to quantify how cellular processes create tissue dynamics.,False,Y,high,Toolkit for analysis - tool not database,,
+25911152,"PEIMAN 1.0: Post-translational modification Enrichment, Integration and Matching ANalysis.",True,Y,high,Tool for enrichment analysis - analysis tool not database,,
+25765346,Structure-PPi: a module for the annotation of cancer-related single-nucleotide variants at protein-protein interfaces.,True,N,high,Module that annotates variants at interfaces - variant annotation resource,Structure-PPi,Structure Protein-Protein Interface
+30797940,"Unioverse: A phylogenomic resource for reconstructing the evolution of freshwater mussels (Bivalvia, Unionoida).",False,N,high,Resource keyword - mussel phylogenomic data,Unioverse,Unionoid Evolution Resource
+28365756,node.dating: dating ancestors in phylogenetic trees in R.,False,Y,high,R tool for dating ancestors - analysis tool not database,,
+25706643,Scripps Genome ADVISER: Annotation and Distributed Variant Interpretation SERver.,True,Y,high,Server for interpretation - analysis server not database,,
+22053076,deepBlockAlign: a tool for aligning RNA-seq profiles of read block patterns.,True,Y,high,Tool for aligning - analysis tool not database,,
+24884810,"GO2MSIG, an automated GO based multi-species gene set generator for gene set enrichment analysis.",True,Y,high,Generator tool for gene sets - tool not database,,
+27733501,The human-induced pluripotent stem cell initiative-data resources for cellular genetics.,True,N,high,Data resources initiative - iPSC cellular genetics data,HipSci,Human Induced Pluripotent Stem Cell Initiative
+33308153,In silico trial to test COVID-19 candidate vaccines: a case study with UISS platform.,False,Y,high,In silico trial platform - simulation tool not database,,
+21216786,LPS-annotate: complete annotation of compositionally biased regions in the protein knowledgebase.,True,Y,high,Tool for annotation - annotation tool not database,,
+33226064,pdm_utils: a SEA-PHAGES MySQL phage database management toolkit.,True,Y,high,Toolkit for database management - tool not database itself,,
+33067440,Harmonised LUCAS in-situ land cover and use database for field surveys from 2006 to 2018 in the European Union.,False,N,high,Database keyword - land cover survey data,LUCAS,Land Use/Cover Area frame Survey
+29171165,ReadTools: A universal toolkit for handling sequence data from different sequencing platforms.,False,Y,high,Toolkit for handling data - tool not database,,
+28610787,SpolSimilaritySearch - A web tool to compare and search similarities between spoligotypes of Mycobacterium tuberculosis complex.,True,Y,high,Web tool to compare - comparison tool not database,,
+23368702,FitSearch: a robust way to interpret a yeast fitness profile in terms of drug's mode-of-action.,True,Y,high,Tool to interpret fitness profiles - analysis tool not database,,
+22611131,Gossamer--a resource-efficient de novo assembler.,True,Y,high,Assembler tool - assembly tool not database,,
+31796753,"Eyasi Plateau Paleontological Expedition, Laetoli, Tanzania, fossil specimen database 1998-2005.",False,N,high,Database keyword - paleontological specimen data,Eyasi Plateau Database,Eyasi Plateau Paleontological Database
+29530617,Neural Parallel Engine: A toolbox for massively parallel neural signal processing.,False,Y,high,Toolbox for signal processing - tool not database,,
+32994893,ATP7A Clinical Genetics Resource - A comprehensive clinically annotated database and resource for genetic variants in ATP7A gene.,False,N,high,Database and resource keywords - ATP7A variant data,ATP7A CGR,ATP7A Clinical Genetics Resource
+33227814,GP4: an integrated Gram-Positive Protein Prediction Pipeline for subcellular localization mimicking bacterial sorting.,True,Y,high,Pipeline for prediction - prediction tool not database,,
+32556167,"Watchdog 2.0: New developments for reusability, reproducibility, and workflow execution.",True,Y,high,Workflow tool - pipeline execution tool not database,,
+26958160,OpenHealth Platform for Interactive Contextualization of Population Health Open Data.,True,Y,high,Platform for contextualization - data integration tool not database,,
+28775673,The Image Data Resource: A Bioimage Data Integration and Publication Platform.,False,N,high,Resource and platform keywords - bioimage data repository,IDR,Image Data Resource
+30555515,PlantEAR: Functional Analysis Platform for Plant EAR Motif-Containing Proteins.,True,N,high,Platform for functional analysis with EAR motif protein data,PlantEAR,Plant EAR Motif Analysis Resource
+26578576,EMDataBank unified data resource for 3DEM.,False,N,high,Data resource keyword - 3D electron microscopy data,EMDataBank,Electron Microscopy Data Bank
+28988138,MouseTox: An online toxicity assessment tool for small molecules through Enalos Cloud platform.,True,Y,high,Tool for toxicity assessment - prediction tool not database,,
+29297289,dBBQs: dataBase of Bacterial Quality scores.,True,N,high,Database keyword and Base in name - bacterial quality score data,dBBQs,Database of Bacterial Quality Scores
+31219564,"AmyloWiki: an integrated database for Bacillus velezensis FZB42, the model strain for plant growth-promoting Bacilli.",False,N,high,Database keyword - Bacillus strain data,AmyloWiki,Bacillus Amyloliquefaciens Wiki
+22981871,The Zebrafish Anatomy Portal: a novel integrated resource to facilitate zebrafish research.,True,N,high,Portal and resource keywords - zebrafish anatomy data,ZFAP,Zebrafish Anatomy Portal
+30634902,GOTrapper: a tool to navigate through branches of gene ontology hierarchy.,False,Y,high,Tool to navigate - browsing tool not database,,
+22321436,"Construction of a robust, large-scale, collaborative database for raw data in computational chemistry: the Collaborative Chemistry Database Tool (CCDBT).",False,N,high,Database keyword - computational chemistry raw data,CCDBT,Collaborative Chemistry Database Tool
+29092945,"The Digital Slide Archive: A Software Platform for Management, Integration, and Analysis of Histology for Cancer Research.",False,N,high,Archive keyword - histology image data platform,DSA,Digital Slide Archive
+25053745,sapFinder: an R/Bioconductor package for detection of variant peptides in shotgun proteomics experiments.,True,Y,high,Package for detection - analysis tool not database,,
+23390137,ELECANS--an integrated model development environment for multiscale cancer systems biology.,True,Y,high,Environment for model development - tool not database,,
+25840117,The Philadelphia Neurodevelopmental Cohort: A publicly available resource for the study of normal and abnormal brain development in youth.,False,N,high,Resource keyword - neurodevelopmental cohort data,PNC,Philadelphia Neurodevelopmental Cohort
+28387820,GalaxyHomomer: a web server for protein homo-oligomer structure prediction from a monomer sequence or structure.,True,Y,high,Web server for prediction - prediction tool not database,,
+28158609,An update on the Enzyme Portal: an integrative approach for exploring enzyme knowledge.,False,N,high,Portal keyword - enzyme knowledge resource,Enzyme Portal,Enzyme Portal
+28529710,Introducing the Brassica Information Portal: Towards integrating genotypic and phenotypic Brassica crop data.,False,N,high,Portal keyword - Brassica crop data integration,BIP,Brassica Information Portal
+33737718,LASCA: loop and significant contact annotation pipeline.,False,Y,high,Pipeline for annotation - analysis pipeline not database,,
+25429973,SNP-Seek database of SNPs derived from 3000 rice genomes.,True,N,high,Database keyword - rice SNP data,SNP-Seek,Rice SNP Database
+31346170,FDA-ARGOS is a database with public quality-controlled reference genomes for diagnostic use and regulatory science.,False,N,high,Database keyword - reference genome data for diagnostics,FDA-ARGOS,FDA Antimicrobial Resistance Genome Ontology System
+28821228,SG-ADVISER mtDNA: a web server for mitochondrial DNA annotation with data from 200 samples of a healthy aging cohort.,True,N,high,Web server with mitochondrial DNA annotation data,SG-ADVISER mtDNA,Scripps Genome Annotation and Distributed Variant Interpretation Server for Mitochondrial DNA
+25891375,The Center for Integrated Molecular Brain Imaging (Cimbi) database.,False,N,high,Database keyword - brain imaging data,Cimbi,Center for Integrated Molecular Brain Imaging Database
+28375006,Fragment Database FDB-17.,True,N,high,Database keyword - molecular fragment data,FDB-17,Fragment Database 17
+23929030,WebRASP: a server for computing energy scores to assess the accuracy and stability of RNA 3D structures.,True,Y,high,Server for computing scores - computational tool not database,,
+30938757,Structural variant analysis for linked-read sequencing data with gemtools.,False,Y,high,Tool for analysis - analysis tool not database,,
+33256642,Epistemonikos: a comprehensive database of systematic reviews for health decision-making.,False,N,high,Database keyword - systematic review data,Epistemonikos,Epistemonikos
+27384127,aMAP is a validated pipeline for registration and segmentation of high-resolution mouse brain data.,False,Y,high,Pipeline for registration - image analysis tool not database,,
+31363752,PathwayMatcher: proteoform-centric network construction enables fine-granularity multiomics pathway mapping.,False,Y,high,Tool for network construction - analysis tool not database,,
+29473246,Variant pathogenicity evaluation in the community-driven Inherited Neuropathy Variant Browser.,False,N,high,Browser keyword - inherited neuropathy variant data,INVB,Inherited Neuropathy Variant Browser
+24132929,gCMAP: user-friendly connectivity mapping with R.,True,Y,high,R tool for connectivity mapping - analysis tool not database,,
+30219839,Drug Target Commons 2.0: a community platform for systematic analysis of drug-target interaction profiles.,False,N,high,Platform that houses drug-target interaction data,DTC,Drug Target Commons
+23842809,nhmmer: DNA homology search with profile HMMs.,True,Y,high,Tool for homology search - search tool not database,,
+34348131,The COVIDome Explorer researcher portal.,False,N,high,Portal keyword - COVID-19 research data portal,COVIDome,COVID-19 Multi-omics Explorer
+33755048,TALE: Transformer-based protein function Annotation with joint sequence-Label Embedding.,False,Y,high,Annotation method - machine learning tool not database,,
+32786900,Bioactive Conformational Ensemble Server and Database. A Public Framework to Speed Up <i>In Silico</i> Drug Discovery.,True,N,high,Server and database keywords - bioactive conformation data,BCE,Bioactive Conformational Ensemble
+29149267,Taiwan Biobank: making cross-database convergence possible in the Big Data era.,False,N,high,Biobank keyword - Taiwanese biobank data,Taiwan Biobank,Taiwan Biobank
+34124887,HologLev: A Hybrid Magnetic Levitation Platform Integrated with Lensless Holographic Microscopy for Density-Based Cell Analysis.,False,Y,high,Experimental platform - instrument not database,,
+28968872,PySCeSToolbox: a collection of metabolic pathway analysis tools.,False,Y,high,Collection of analysis tools - toolbox not database,,
+23681121,DrugMap Central: an on-line query and visualization tool to facilitate drug repositioning studies.,True,N,high,Tool for querying drug mapping data - drug repositioning data resource,DMC,DrugMap Central
+25667547,FUN-L: gene prioritization for RNAi screens.,True,Y,high,Tool for prioritization - analysis tool not database,,
+29501921,A clinician friendly data warehouse oriented toward narrative reports: Dr. Warehouse.,True,N,high,Data warehouse keyword - clinical report data,Dr. Warehouse,Doctor Warehouse
+32194971,Portal of Juglandaceae: A comprehensive platform for Juglandaceae study.,False,N,high,Portal and platform keywords - Juglandaceae genomics data,POJ,Portal of Juglandaceae
+24180668,Path2Models: large-scale generation of computational models from biochemical pathway maps.,True,Y,high,Tool for generation of models - model generation tool not database,,
+31629530,The Veterans Precision Oncology Data Commons: Transforming VA data into a national resource for research in precision oncology.,False,N,high,Data Commons keyword - VA oncology data resource,VPODC,Veterans Precision Oncology Data Commons
+33082925,Tianxia120: A Multimodal Medical Data Collection Bioinformatic System for Proactive Health Management in Internet of Medical Things.,False,N,high,Data collection system - medical data resource,Tianxia120,Tianxia120
+37645130,"Promoting citizen science in the energy sector: Generation Solar, an open database of small-scale solar photovoltaic installations.",False,N,high,Database keyword - solar installation data,Generation Solar,Generation Solar
+33830752,AUTOSTERE: Systematic Search for Scaffold Replacement Opportunities within Structural Databases.,False,Y,high,Tool for search - search tool not database,,
+31757212,"TACITuS: transcriptomic data collector, integrator, and selector on big data platform.",False,Y,high,Tool for collecting and integrating - data aggregation tool not database,,
+21818249,The Barcode of Life Data Portal: bridging the biodiversity informatics divide for DNA barcoding.,False,N,high,Portal keyword - DNA barcode data,BOLD,Barcode of Life Data System
+21310745,GeneReporter--sequence-based document retrieval and annotation.,True,Y,high,Tool for retrieval - literature mining tool not database,,
+22555647,AMS 4.0: consensus prediction of post-translational modifications in protein sequences.,False,Y,high,Prediction tool - methodology not database,,
+33215063,COVID-19 antibody therapeutics tracker: a global online database of antibody therapeutics for the prevention and treatment of COVID-19.,True,N,high,Database keyword - COVID-19 antibody therapeutic data,COVID-19 Antibody Tracker,COVID-19 Antibody Therapeutics Tracker
+28582591,"A tool for integrating genetic and mass spectrometry-based peptide data: Proteogenomics Viewer: PV: A genome browser-like tool, which includes MS data visualization and peptide identification parameters.",True,N,high,Viewer that integrates proteogenomics data,PV,Proteogenomics Viewer
+34721190,Baby's Online Live Database: An Open Platform for Developmental Science.,False,N,high,Database keyword - developmental science data,BOLD,Baby's Online Live Database
+33112870,"Prometheus, an omics portal for interkingdom comparative genomic analyses.",False,N,high,Portal keyword - comparative genomics data,Prometheus,Prometheus
+33784373,Bioinformatics tools developed to support BioCompute Objects.,True,Y,high,Tools to support standard - infrastructure tools not database,,
+28917032,CFS MATLAB toolbox: An experiment builder for continuous flash suppression (CFS) task.,True,Y,high,Toolbox for building experiments - experimental tool not database,,
+32481589,CSI NGS Portal: An Online Platform for Automated NGS Data Analysis and Sharing.,True,N,high,Portal keyword - NGS data analysis and sharing platform,CSI NGS Portal,Computational Systems and Informatics NGS Portal
+29782006,Neurovascular Network Explorer 2.0: A Simple Tool for Exploring and Sharing a Database of Optogenetically-evoked Vasomotion in Mouse Cortex In Vivo.,False,N,high,Tool for exploring database of vasomotion data,NNE,Neurovascular Network Explorer
+31918660,A crustacean annotated transcriptome (CAT) database.,True,N,high,Database keyword - crustacean transcriptome data,CAT,Crustacean Annotated Transcriptome
+23921808,The CRAPome: a contaminant repository for affinity purification-mass spectrometry data.,True,N,high,Repository keyword - mass spec contaminant data,CRAPome,Contaminant Repository for Affinity Purification
+25392412,The Addgene repository: an international nonprofit plasmid and data resource.,True,N,high,Repository and resource keywords - plasmid data,Addgene,Addgene
+22127861,RNA CoSSMos: Characterization of Secondary Structure Motifs--a searchable database of secondary structure motifs in RNA three-dimensional structures.,True,N,high,Database keyword - RNA structure motif data,RNA CoSSMos,RNA Characterization of Secondary Structure Motifs
+23359817,HIPdb: a database of experimentally validated HIV inhibiting peptides.,True,N,high,Database keyword and db suffix - HIV inhibiting peptide data,HIPdb,HIV Inhibiting Peptide Database
+32155235,Modeling Infectious Diseases in Healthcare Network (MInD-Healthcare) Framework for Describing and Reporting Multidrug-resistant Organism and Healthcare-Associated Infections Agent-based Modeling Methods.,False,Y,high,Modeling framework - methodology not database,,
+28476106,Geminivirus data warehouse: a database enriched with machine learning approaches.,False,N,high,Data warehouse and database keywords - geminivirus data,GDW,Geminivirus Data Warehouse
+22217156,BuildSummary: using a group-based approach to improve the sensitivity of peptide/protein identification in shotgun proteomics.,True,Y,high,Tool for protein identification - analysis tool not database,,
+27797761,Isomorphic semantic mapping of variant call format (VCF2RDF).,True,Y,high,Tool for mapping format - conversion tool not database,,
+28632399,Prokaryotic Contig Annotation Pipeline Server: Web Application for a Prokaryotic Genome Annotation Pipeline Based on the Shiny App Package.,False,Y,high,Pipeline server for annotation - annotation tool not database,,
+29884752,Comparative Annotation Toolkit (CAT)-simultaneous clade and personal genome annotation.,False,Y,high,Toolkit for annotation - annotation tool not database,,
+34885724,SugarDrawer: A Web-Based Database Search Tool with Editing Glycan Structures.,False,Y,high,Tool for database search - search tool not database itself,,
+29724079,Virtual Fly Brain - Using OWL to support the mapping and genetic dissection of the &lt;i&gt;Drosophila&lt;/i&gt; brain.,True,N,high,Virtual brain resource - Drosophila brain anatomy and expression data,VFB,Virtual Fly Brain
+24475928,geneCommittee: a web-based tool for extensively testing the discriminatory power of biologically relevant gene sets in microarray data classification.,True,Y,high,Web-based tool for testing - analysis tool not database,,
+30668641,InterMineR: an R package for InterMine databases.,True,Y,high,R package for accessing databases - tool not database itself,,
+32308816,Non-Negative Matrix Factorization for Drug Repositioning: Experiments with the repoDB Dataset.,False,Y,high,Method paper using dataset - methodology not database,,
+32238171,Automated gene data integration with Databio.,True,Y,high,Tool for integration - data integration tool not database,,
+27933521,GeneNetwork: A Toolbox for Systems Genetics.,False,N,high,Network toolbox that houses systems genetics data,GeneNetwork,GeneNetwork
+28629436,Disease Compass- a navigation system for disease knowledge based on ontology and linked data techniques.,False,Y,high,Navigation system - browsing tool not database,,
+25428375,The RCSB Protein Data Bank: views of structural biology for basic and applied research and education.,True,N,high,Data Bank keyword - protein structure data,PDB,Protein Data Bank
+32058012,The MCRA toolbox of models and data to support chemical mixture risk assessment.,False,Y,high,Toolbox of models - risk assessment tool not database,,
+31552413,Alliance of Genome Resources Portal: unified model organism research platform.,True,N,high,Portal keyword - model organism genome data,AGR,Alliance of Genome Resources
+31152870,Ramanome technology platform for label-free screening and sorting of microbial cell factories at single-cell resolution.,False,Y,high,Technology platform - experimental method not database,,
+32463383,Fungal metabarcoding data integration framework for the MycoDiversity DataBase (MDDB).,False,N,high,Database keyword - fungal metabarcoding data,MDDB,MycoDiversity DataBase
+28289699,"A database for reproducible manipulation research: CapriDB - Capture, Print, Innovate.",False,N,high,Database keyword - manipulation research data,CapriDB,Capture Print Innovate Database
+29554099,The Pathway Coexpression Network: Revealing pathway relationships.,True,N,high,Network resource - pathway coexpression data,PCxN,Pathway Coexpression Network
+32966562,Bacnet: a user-friendly platform for building multi-omics websites.,False,Y,high,Platform for building websites - web development tool not database,,
+30497362,GLOSSary: the GLobal Ocean 16S subunit web accessible resource.,False,N,high,Resource keyword - ocean 16S rRNA data,GLOSSary,Global Ocean Subunit rRNA Sequence Resource
+33036314,Recent Techniques in Nutrient Analysis for Food Composition Database.,False,Y,high,Review of techniques - methodology review not database,,
+27899611,The ExAC browser: displaying reference data information from over 60 000 exomes.,True,N,high,Browser displaying exome data,ExAC,Exome Aggregation Consortium
+33776581,Freshwater insects CONUS: A database of freshwater insect occurrences and traits for the contiguous United States.,False,N,high,Database keyword - freshwater insect occurrence data,FI-CONUS,Freshwater Insects Contiguous United States
+21904439,DEB: A web interface for RNA-seq digital gene expression analysis.,True,Y,high,Web interface for analysis - analysis tool not database,,
+27605105,ReliableGenome: annotation of genomic regions with high/low variant calling concordance.,False,Y,high,Tool for annotation - annotation tool not database,,
+26960151,The GPlates Portal: Cloud-Based Interactive 3D Visualization of Global Geophysical and Geological Data in a Web Browser.,False,Y,high,Portal for visualization - visualization tool not database,,
+28582481,FunGAP: Fungal Genome Annotation Pipeline using evidence-based gene model evaluation.,False,Y,high,Pipeline for annotation - annotation tool not database,,
+30835466,DAKB-GPCRs: An Integrated Computational Platform for Drug Abuse Related GPCRs.,False,N,high,Platform keyword - GPCR drug abuse data,DAKB-GPCRs,Drug Abuse Knowledge Base for GPCRs
+31600445,"New Basis Set Exchange: An Open, Up-to-Date Resource for the Molecular Sciences Community.",False,N,high,Exchange and resource keywords - basis set data,BSE,Basis Set Exchange
+26640690,"GenomeTester4: a toolkit for performing basic set operations - union, intersection and complement on k-mer lists.",False,Y,high,Toolkit for operations - computational tool not database,,
+29949999,Onto2Vec: joint vector-based representation of biological entities and their ontology-based annotations.,False,Y,high,Vector representation method - methodology not database,,
+26912804,GeneGazer: A Toolkit Integrating Two Pipelines for Personalized Profiling and Biosignature Identification.,False,Y,high,Toolkit for profiling - analysis tool not database,,
+30918944,FusionLearn: a biomarker selection algorithm on cross-platform data.,True,Y,high,Algorithm for biomarker selection - methodology not database,,
+22726705,QuartetS-DB: a large-scale orthology database for prokaryotes and eukaryotes inferred by evolutionary evidence.,True,N,high,Database keyword and DB suffix - orthology data,QuartetS-DB,Quartet-based Sequence Database
+26587057,Chemozart: a web-based 3D molecular structure editor and visualizer platform.,True,Y,high,Editor and visualizer platform - tool not database,,
+32427333,webPSN v2.0: a webserver to infer fingerprints of structural communication in biomacromolecules.,True,Y,high,Webserver to infer - analysis tool not database,,
+30856198,3D Tune-In Toolkit: An open-source library for real-time binaural spatialisation.,False,Y,high,Toolkit for spatialisation - audio library tool not database,,
+26318051,Open Science CBS Neuroimaging Repository: Sharing ultra-high-field MR images of the brain.,False,N,high,Repository keyword - neuroimaging data,CBS NIR,CBS Neuroimaging Repository
+25230706,Personalized Oncology Suite: integrating next-generation sequencing data and whole-slide bioimages.,True,N,high,Suite for integrating personalized oncology data,POS,Personalized Oncology Suite
+23557111,CUDASW++ 3.0: accelerating Smith-Waterman protein database search by coupling CPU and GPU SIMD instructions.,False,Y,high,Tool for database search - search algorithm not database,,
+30821703,ZOO: an automatic data-collection system for high-throughput structure analysis in protein microcrystallography.,False,Y,high,System for data collection - experimental automation not database,,
+32155140,Hybrid Automata Library: A flexible platform for hybrid modeling with real-time visualization.,False,Y,high,Library for modeling - modeling tool not database,,
+34364002,An angiosperm NLR Atlas reveals that NLR gene reduction is associated with ecological specialization and signal transduction component deletion.,True,N,high,Atlas keyword - angiosperm NLR gene data,ANNA,Angiosperm NLR Atlas
+22976082,An RNA Mapping DataBase for curating RNA structure mapping experiments.,True,N,high,Database keyword - RNA structure mapping data,RMDB,RNA Mapping DataBase
+32893032,The Atlas of Inflammation Resolution (AIR).,True,N,high,Atlas keyword - inflammation resolution data,AIR,Atlas of Inflammation Resolution
+24220210,The virtual skeleton database: an open access repository for biomedical research and collaboration.,False,N,high,Database and repository keywords - skeletal imaging data,VSD,Virtual Skeleton Database
+28432568,"The MUSOS (MUsic SOftware System) Toolkit: A computer-based, open source application for testing memory for melodies.",False,Y,high,Toolkit for testing - experimental software not database,,
+31064348,The SYNBREED chicken diversity panel: a global resource to assess chicken diversity at high genomic resolution.,False,N,high,Resource keyword - chicken diversity panel data,SYNBREED,Synergistic Plant and Animal Breeding
+25887563,CodingQuarry: highly accurate hidden Markov model gene prediction in fungal genomes using RNA-seq transcripts.,False,Y,high,Tool for gene prediction - prediction tool not database,,
+32877456,PHND: Pashtu Handwritten Numerals Database and deep learning benchmark.,False,N,high,Database keyword - handwritten numeral image data,PHND,Pashtu Handwritten Numerals Database
+28017738,Validation of the radiobiology toolkit TOPAS-nBio in simple DNA geometries.,False,Y,high,Validation paper of toolkit - not database,,
+25959571,"Standardizing terms, definitions and concepts for describing and interpreting unwanted immunogenicity of biopharmaceuticals: recommendations of the Innovative Medicines Initiative ABIRISK consortium.",True,Y,high,Standardization recommendations - guidelines not database,,
+34641400,"MetaClass, a Comprehensive Classification System for Predicting the Occurrence of Metabolic Reactions Based on the MetaQSAR Database.",False,Y,high,Classification system for prediction - methodology not database,,
+25779921,MetaNET--a web-accessible interactive platform for biological metabolic network analysis.,True,Y,high,Platform for analysis - analysis tool not database,,
+33324215,Exploring the Irish National Folklore Ethnography Database (Dúchas) for Open Data Research on Traditional Medicine Use in Post-Famine Ireland: An Early Example of Citizen Science.,False,Y,high,Paper exploring database for research - not database paper itself,,
+22720055,Leukemia gene atlas--a public platform for integrative exploration of genome-wide molecular data.,True,N,high,Atlas and platform keywords - leukemia genomics data,LGA,Leukemia Gene Atlas
+30355619,The NCI Transcriptional Pharmacodynamics Workbench: A Tool to Examine Dynamic Expression Profiling of Therapeutic Response in the NCI-60 Cell Line Panel.,True,N,high,Workbench tool with expression profiling data,TPW,Transcriptional Pharmacodynamics Workbench
+32307725,"A database for inventory of proteoform profiles: ""2DE-pattern"".",True,N,high,Database keyword - proteoform profile data,2DE-pattern,Two-Dimensional Electrophoresis Pattern Database
+32188029,Affinity-Bead Assisted Mass Spectrometry (Affi-BAMS): A Multiplexed Microarray Platform for Targeted Proteomics.,False,Y,high,Experimental platform - mass spec method not database,,
+27388620,"The Minho Word Pool: Norms for imageability, concreteness, and subjective frequency for 3,800 Portuguese words.",True,N,high,Pool keyword - Portuguese word norms data,MWP,Minho Word Pool
+33941085,The Coronavirus Network Explorer: mining a large-scale knowledge graph for effects of SARS-CoV-2 on host cell function.,True,N,high,Explorer for mining knowledge graph - coronavirus network data,CNE,Coronavirus Network Explorer
+25495537,solGS: a web-based tool for genomic selection.,True,Y,high,Tool for genomic selection - analysis tool not database,,
+21546552,The BioExtract Server: a web-based bioinformatic workflow platform.,False,Y,high,Workflow platform - infrastructure tool not database,,
+32386544,The Allen Mouse Brain Common Coordinate Framework: A 3D Reference Atlas.,True,N,high,Atlas and framework keywords - mouse brain reference atlas,CCF,Common Coordinate Framework
+28270862,The polypharmacology browser: a web-based multi-fingerprint target prediction tool using ChEMBL bioactivity data.,True,Y,high,Browser/prediction tool - tool not database,,
+32651388,Searching large-scale scRNA-seq databases via unbiased cell embedding with Cell BLAST.,False,Y,high,Tool for searching databases - search tool not database,,
+21383924,The Antimicrobial Index: a comprehensive literature-based antimicrobial database and reference work.,True,N,high,Index and database keywords - antimicrobial reference data,AMI,Antimicrobial Index
+28705636,A review of bioinformatics platforms for comparative genomics. Recent developments of the EDGAR 2.0 platform and its utility for taxonomic and phylogenetic studies.,False,Y,high,Review of platforms - review paper not database,,
+30094953,Coral microbiome database: Integration of sequences reveals high diversity and relatedness of coral-associated microbes.,False,N,high,Database keyword - coral microbiome sequence data,CMD,Coral Microbiome Database
+25087538,Description and analysis of design and intended use for Epidemiologic Dynamic Data Collection Platform in China.,False,Y,high,Paper about platform design - not database itself,,
+26624790,SpinCouple: Development of a Web Tool for Analyzing Metabolite Mixtures via Two-Dimensional J-Resolved NMR Database.,True,N,high,Tool with NMR database component - metabolite NMR data,SpinCouple,Spin Coupling NMR Database
+24177720,"MetaboNetworks, an interactive Matlab-based toolbox for creating, customizing and exploring sub-networks from KEGG.",True,Y,high,Toolbox for creating networks - tool not database,,
+22303335,MIRNA-DISTILLER: A Stand-Alone Application to Compile microRNA Data from Databases.,True,Y,high,Application to compile from databases - tool not database itself,,
+25704554,Introgression browser: high-throughput whole-genome SNP visualization.,False,Y,high,Browser for visualization - visualization tool not database,,
+29087446,ndexr-an R package to interface with the network data exchange.,True,Y,high,R package to interface - tool not database,,

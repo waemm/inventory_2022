@@ -1,0 +1,501 @@
+pmid,title,has_url,is_false_positive,confidence,reason,database_name,long_database_name
+26626150,MERAV: a tool for comparing gene expression across human tissues and cell types.,True,Y,high,Tool for comparing/analyzing data,,
+30772429,VGSC2: Second generation vector graph toolkit of genome synteny and collinearity.,True,Y,high,Toolkit is a tool for visualization,,
+25521507,cisMEP: an integrated repository of genomic epigenetic profiles and cis-regulatory modules in Drosophila.,False,N,high,Repository keyword indicates database,cisMEP,integrated repository of genomic epigenetic profiles
+23209562,Wiki-pi: a web-server of annotated human protein-protein interactions to aid in discovery of protein function.,True,Y,high,Web server is a tool; no database suffix,,
+30956140,exceRpt: A Comprehensive Analytic Platform for Extracellular RNA Profiling.,True,Y,high,Platform for analysis is a tool,,
+27297497,VDJviz: a versatile browser for immunogenomics data.,False,Y,high,Browser tool; no URL strengthens false positive,,
+26542446,EnzDP: improved enzyme annotation for metabolic network reconstruction based on domain composition profiles.,True,Y,high,Tool for annotation/reconstruction,,
+25433696,LigDig: a web server for querying ligand-protein interactions.,True,Y,high,Web server for querying is a tool,,
+34788279,MGEnrichment: A web application for microglia gene list enrichment analysis.,True,Y,high,Web application for analysis is a tool,,
+27130330,G-DOC Plus - an integrative bioinformatics platform for precision medicine.,True,Y,high,Integration platform is a tool,,
+29989146,PHYLACINE 1.2: The Phylogenetic Atlas of Mammal Macroecology.,False,N,high,Atlas keyword indicates database,PHYLACINE,Phylogenetic Atlas of Mammal Macroecology
+27151202,CSM-lig: a web server for assessing and comparing protein-small molecule affinities.,True,Y,high,Web server for assessment is a tool,,
+27651835,XMetDB: an open access database for xenobiotic metabolism.,False,N,high,DB suffix indicates database,XMetDB,xenobiotic metabolism database
+23158523,"InSilico DB genomic datasets hub: an efficient starting point for analyzing genome-wide studies in GenePattern, Integrative Genomics Viewer, and R/Bioconductor.",True,N,high,DB suffix + hub indicates database,InSilico DB,InSilico genomic datasets database
+23803467,GRN2SBML: automated encoding and annotation of inferred gene regulatory networks complying with SBML.,True,Y,high,Tool for encoding/annotation,,
+29788413,ezTag: tagging biomedical concepts via interactive learning.,True,Y,high,Tool for tagging is methodology,,
+32324217,MusiteDeep: a deep-learning based webserver for protein post-translational modification site prediction and visualization.,True,Y,high,Prediction tool methodology,,
+29724163,EuGI: a novel resource for studying genomic islands to facilitate horizontal gene transfer detection in eukaryotes.,True,N,high,Resource keyword indicates database,EuGI,genomic islands resource
+33999207,PERCEPTRON: an open-source GPU-accelerated proteoform identification pipeline for top-down proteomics.,True,Y,high,Pipeline is a methodology tool,,
+28719998,Beta-lactamase database (BLDB) - structure and function.,True,N,high,Database keyword + DB suffix,BLDB,Beta-lactamase database
+29474519,ViCTree: an automated framework for taxonomic classification from protein sequences.,True,Y,high,Framework for classification is methodology,,
+26666970,MycoCAP - Mycobacterium Comparative Analysis Platform.,True,Y,medium,Platform for analysis is typically a tool,,
+26975659,NetDecoder: a network biology platform that decodes context-specific biological networks and gene activities.,True,Y,medium,Platform for decoding/analysis is a tool,,
+27391578,SwissSimilarity: A Web Tool for Low to Ultra High Throughput Ligand-Based Virtual Screening.,True,Y,high,Web tool for screening is methodology,,
+22645168,AS-EAST: a functional annotation tool for putative proteins encoded by alternatively spliced transcripts.,True,Y,high,Tool for annotation is methodology,,
+34115214,WheatQTLdb: a QTL database for wheat.,False,N,high,Database keyword + db suffix,WheatQTLdb,wheat QTL database
+34688246,TAGOPSIN: collating taxa-specific gene and protein functional and structural information.,False,N,medium,Collating information suggests database but no URL,TAGOPSIN,taxa-specific gene and protein information database
+23866767,AcuTrials®: an online database of randomized controlled trials and systematic reviews of acupuncture.,False,N,high,Database keyword,AcuTrials,randomized controlled trials and systematic reviews of acupuncture database
+32810405,BRIDGE: An Open Platform for Reproducible High-Throughput Free Energy Simulations.,False,Y,high,Platform for simulations is a tool; no URL,,
+24573881,"AnaLysis of Expression on human chromosome 21, ALE-HSA21: a pilot integrated web resource.",True,N,high,Web resource for expression data,ALE-HSA21,Analysis of Expression on human chromosome 21
+24312569,Real-time fMRI pattern decoding and neurofeedback using FRIEND: an FSL-integrated BCI toolbox.,False,Y,high,Toolbox is a tool; no URL,,
+23180575,Vivaldi: visualization and validation of biomacromolecular NMR structures from the PDB.,True,Y,high,Tool for visualization and validation,,
+21513511,Ultra-fast sequence clustering from similarity networks with SiLiX.,True,Y,high,Method for clustering,,
+31696928,PCIR: a database of Plant Chloroplast Inverted Repeats.,False,N,high,Database keyword,PCIR,Plant Chloroplast Inverted Repeats database
+27158917,"Interactive Exploration, Analysis, and Visualization of Complex Phenome-Genome Datasets with ASPIREdb.",True,N,high,db suffix indicates database,ASPIREdb,Phenome-Genome database
+24493591,CellGeo: a computational platform for the analysis of shape changes in cells with complex geometries.,False,Y,high,Platform for analysis is a tool; no URL,,
+26481321,BubbleGUM: automatic extraction of phenotype molecular signatures and comprehensive visualization of multiple Gene Set Enrichment Analyses.,True,Y,high,Tool for extraction and visualization,,
+32442279,"Fluxer: a web application to compute, analyze and visualize genome-scale metabolic flux networks.",True,Y,high,Web application to compute/analyze is a tool,,
+31917259,Gclust: A Parallel Clustering Tool for Microbial Genomic Data.,True,Y,high,Tool for clustering is methodology,,
+27083180,SEARCHBreast: a new resource to locate and share surplus archival material from breast cancer animal models to help address the 3Rs.,True,N,high,Resource for sharing materials,SEARCHBreast,surplus archival material from breast cancer animal models resource
+30147447,BioTIME: A database of biodiversity time series for the Anthropocene.,False,N,high,Database keyword,BioTIME,biodiversity time series database
+31924845,SWAV: a web-based visualization browser for sliding window analysis.,True,Y,high,Browser/visualization tool,,
+21586582,iPBA: a tool for protein structure comparison using sequence alignment strategies.,True,Y,high,Tool for comparison is methodology,,
+29473009,COREMIC: a web-tool to search for a niche associated CORE MICrobiome.,True,Y,high,Web-tool for searching is methodology,,
+21372341,Key2Ann: a tool to process sequence sets by replacing database identifiers with a human-readable annotation.,True,Y,high,Tool to process/replace is methodology,,
+22829735,RAmiRNA: Software suite for generation of SVMbased prediction models of mature miRNAs.,True,Y,high,Software for prediction is methodology,,
+26044860,The NITRC image repository.,True,N,high,Repository keyword indicates database,NITRC,neuroimaging image repository
+32436933,iWhale: a computational pipeline based on Docker and SCons for detection and annotation of somatic variants in cancer WES data.,True,Y,high,Pipeline for detection is methodology,,
+28365742,WikiGenomes: an open web application for community consumption and curation of gene annotation data in Wikidata.,True,N,medium,Platform for curation of annotation data,WikiGenomes,gene annotation data resource
+24444495,Igloo-Plot: a tool for visualization of multidimensional datasets.,True,Y,high,Tool for visualization is methodology,,
+31261733,3D-PP: A Tool for Discovering Conserved Three-Dimensional Protein Patterns.,True,Y,high,Tool for discovering patterns is methodology,,
+33243176,CAPRIB: a user-friendly tool to study amino acid changes and selection for the exploration of intra-genus evolution.,False,Y,high,Tool for studying is methodology; no URL,,
+33196823,CellMiner Cross-Database (CellMinerCDB) version 1.2: Exploration of patient-derived cancer cell line pharmacogenomics.,False,N,high,Database in name + version number,CellMinerCDB,CellMiner Cross-Database
+28449106,"MicrobiomeAnalyst: a web-based tool for comprehensive statistical, visual and meta-analysis of microbiome data.",True,Y,high,Tool for analysis is methodology,,
+21904425,SSPred: A prediction server based on SVM for the identification and classification of proteins involved in bacterial secretion systems.,True,Y,high,Prediction server is methodology tool,,
+29659710,SnapperDB: a database solution for routine sequencing analysis of bacterial isolates.,False,N,high,DB suffix + database keyword,SnapperDB,sequencing analysis database
+24300438,ISRNA: an integrative online toolkit for short reads from high-throughput sequencing data.,True,Y,high,Toolkit is a tool,,
+25378306,Plastid-LCGbase: a collection of evolutionarily conserved plastid-associated gene pairs.,True,N,high,Base suffix + collection indicates database,Plastid-LCGbase,plastid-associated gene pairs database
+27318307,Comprehensive analysis of the N-glycan biosynthetic pathway using bioinformatics to generate UniCorn: A theoretical N-glycan structure database.,True,N,high,Database keyword,UniCorn,theoretical N-glycan structure database
+23451388,GMOMETHODS: the European Union database of reference methods for GMO analysis.,False,N,high,Database keyword,GMOMETHODS,European Union database of reference methods for GMO analysis
+31775760,MySeq: privacy-protecting browser-based personal Genome analysis for genomics education and exploration.,False,Y,high,Browser tool for analysis; no URL,,
+26498826,HiFive: a tool suite for easy and efficient HiC and 5C data analysis.,True,Y,high,Tool suite for analysis is methodology,,
+22171801,The Zebrafish Neurophenome Database (ZND): a dynamic open-access resource for zebrafish neurophenotypic data.,True,N,high,Database keyword + ZND abbreviation,ZND,Zebrafish Neurophenome Database
+28460065,SBSPKSv2: structure-based sequence analysis of polyketide synthases and non-ribosomal peptide synthetases.,True,Y,high,Tool for structure-based analysis,,
+24574118,Canto: an online tool for community literature curation.,True,Y,high,Tool for curation is methodology,,
+28453684,MAPPI-DAT: data management and analysis for protein-protein interaction data from the high-throughput MAPPIT cell microarray platform.,False,Y,high,Tool for data management/analysis; no URL,,
+26589277,SomVarIUS: somatic variant identification from unpaired tissue samples.,True,Y,high,Tool for identification is methodology,,
+31106342,MutationDistiller: user-driven identification of pathogenic DNA variants.,True,Y,high,Tool for identification is methodology,,
+22843230,CYP-nsSNP: a specialized database focused on effect of non-synonymous SNPs on function of CYPs.,True,N,high,Database keyword,CYP-nsSNP,CYP non-synonymous SNP database
+25378312,T3DB: the toxic exposome database.,True,N,high,DB suffix + database keyword,T3DB,toxic exposome database
+30630411,CoMetGeNe: mining conserved neighborhood patterns in metabolic and genomic contexts.,True,Y,high,Tool for mining patterns is methodology,,
+25577391,ASPicDB: a database web tool for alternative splicing analysis.,False,N,high,DB suffix + database keyword,ASPicDB,alternative splicing database
+21602510,"GProX, a user-friendly platform for bioinformatics analysis and visualization of quantitative proteomics data.",False,Y,high,Platform for analysis is a tool; no URL,,
+33893803,ADMETlab 2.0: an integrated online platform for accurate and comprehensive predictions of ADMET properties.,True,Y,high,Platform for predictions is methodology tool,,
+32978617,CrossICC: iterative consensus clustering of cross-platform gene expression data without adjusting batch effect.,True,Y,high,Tool for clustering/analysis,,
+22149888,"hERGCentral: a large database to store, retrieve, and analyze compound-human Ether-à-go-go related gene channel interactions to facilitate cardiotoxicity assessment in drug development.",True,N,high,Database keyword,hERGCentral,hERG channel interactions database
+21977986,ProDiGe: Prioritization Of Disease Genes with multitask machine learning from positive and unlabeled examples.,True,Y,high,Tool for prioritization using machine learning,,
+22121216,"OriDB, the DNA replication origin database updated and extended.",True,N,high,DB suffix + database keyword,OriDB,DNA replication origin database
+26044712,"CATNAP: a tool to compile, analyze and tally neutralizing antibody panels.",True,Y,high,Tool to compile/analyze is methodology,,
+29961853,MrBait: universal identification and design of targeted-enrichment capture probes.,True,Y,high,Tool for identification and design,,
+27924041,Exposome-Explorer: a manually-curated database on biomarkers of exposure to dietary and environmental factors.,True,N,high,Database keyword,Exposome-Explorer,biomarkers of exposure database
+21593126,HMMER web server: interactive sequence similarity searching.,True,Y,high,Web server for searching is a tool,,
+33554860,"shinyDepMap, a tool to identify targetable cancer genes and their functional connections from Cancer Dependency Map data.",True,Y,high,Tool to identify is methodology,,
+29728050,ProLego: tool for extracting and visualizing topological modules in protein structures.,True,Y,high,Tool for extracting/visualizing is methodology,,
+25326329,GBshape: a genome browser database for DNA shape annotations.,True,N,high,Database keyword + browser combo,GBshape,genome browser database for DNA shape annotations
+32163221,A toolbox for brain network construction and classification (BrainNetClass).,False,Y,high,Toolbox is a tool; no URL,,
+24289158,wKinMut: an integrated tool for the analysis and interpretation of mutations in human protein kinases.,True,Y,high,Tool for analysis and interpretation,,
+21500218,MDAnalysis: a toolkit for the analysis of molecular dynamics simulations.,True,Y,high,Toolkit for analysis is methodology,,
+31023147,Circbank: a comprehensive database for circRNA with standard nomenclature.,True,N,high,Bank suffix + database keyword,Circbank,comprehensive circRNA database
+24609470,OMIGA: Optimized Maker-Based Insect Genome Annotation.,True,Y,high,Tool for annotation,,
+34622387,StackHCV: a web-based integrative machine-learning framework for large-scale identification of hepatitis C virus NS5B inhibitors.,True,Y,high,Framework for identification is methodology,,
+29454060,AOP-DB: A database resource for the exploration of Adverse Outcome Pathways through integrated association networks.,False,N,high,DB suffix + database keyword,AOP-DB,Adverse Outcome Pathways database
+27864762,"In Silico Methods for Cell Annotation, Quantification of Gene Expression, and Cell Geometry at Single-Cell Resolution Using 3DCellAtlas.",False,Y,high,Methods paper; no database,,
+33502982,VIS30K: A Collection of Figures and Tables From IEEE Visualization Conference Publications.,False,N,medium,Collection of figures/tables; likely database but no URL,VIS30K,collection of IEEE Visualization figures and tables
+32814975,FuSe: a tool to move RNA-Seq analyses from chromosomal/gene loci to functional grouping of mRNA transcripts.,True,Y,high,Tool to move/analyze is methodology,,
+27485441,NET-GE: a web-server for NETwork-based human gene enrichment.,True,Y,high,Web-server for enrichment is a tool,,
+29931246,MolArt: a molecular structure annotation and visualization tool.,True,Y,high,Tool for annotation and visualization,,
+25878034,NGS-eval: NGS Error analysis and novel sequence VAriant detection tooL.,True,Y,high,Tool for analysis and detection,,
+23920715,Diavideos: a diabetes health video portal.,False,N,medium,Portal suggests database but no resource URL,Diavideos,diabetes health video portal
+33279968,"Gene Circuit Explorer (GeneEx): an interactive web-app for visualizing, simulating and analyzing gene regulatory circuits.",True,Y,high,Web-app for visualizing/analyzing is a tool,,
+32673477,Pred-Skin: A Web Portal for Accurate Prediction of Human Skin Sensitizers.,False,Y,high,Portal for prediction is methodology; no URL,,
+25159034,MendeLIMS: a web-based laboratory information management system for clinical genome sequencing.,True,Y,high,Management system is a tool not a database,,
+30472416,AncestryPainter: A Graphic Program for Displaying Ancestry Composition of Populations and Individuals.,True,Y,high,Program for displaying is visualization tool,,
+23104888,MycPermCheck: the Mycobacterium tuberculosis permeability prediction tool for small molecules.,True,Y,high,Prediction tool is methodology,,
+31657565,LFQ-Analyst: An Easy-To-Use Interactive Web Platform To Analyze and Visualize Label-Free Proteomics Data Preprocessed with MaxQuant.,True,Y,high,Platform to analyze/visualize is a tool,,
+26142271,SchizConnect: Mediating neuroimaging databases on schizophrenia and related disorders for large-scale integration.,True,N,medium,Mediating databases suggests database hub,SchizConnect,neuroimaging databases hub for schizophrenia
+27316337,PGA: an R/Bioconductor package for identification of novel peptides using a customized database derived from RNA-Seq.,True,Y,high,R package for identification is methodology tool,,
+30714190,Creation of a Curated Aquatic Toxicology Database: EnviroTox.,False,N,high,Database keyword,EnviroTox,Curated Aquatic Toxicology Database
+32392295,CausalMGM: an interactive web-based causal discovery tool.,True,Y,high,Tool for discovery is methodology,,
+21545712,"SNiPlay: a web-based tool for detection, management and analysis of SNPs. Application to grapevine diversity projects.",True,Y,high,Tool for detection and analysis,,
+32248122,RSwitch: A Novel Bioinformatics Database on Riboswitches as Antibacterial Drug Targets.,False,N,high,Database keyword,RSwitch,Riboswitches database
+21575196,PRIN: a predicted rice interactome network.,True,N,high,Network resource is a database,PRIN,predicted rice interactome network
+24875471,"PTHGRN: unraveling post-translational hierarchical gene regulatory networks using PPI, ChIP-seq and gene expression data.",True,Y,high,Tool for unraveling/constructing networks,,
+28572580,UROPA: a tool for Universal RObust Peak Annotation.,False,Y,high,Tool for annotation; no URL,,
+32160038,AptaBlocks Online: A Web-Based Toolkit for the In Silico Design of Oligonucleotide Sticky Bridges.,False,Y,high,Toolkit for design; no URL,,
+26504140,GenoWAP: GWAS signal prioritization through integrated analysis of genomic functional annotation.,True,Y,high,Tool for prioritization through analysis,,
+28467460,MGmapper: Reference based mapping and taxonomy annotation of metagenomics sequence reads.,True,Y,high,Tool for mapping and annotation,,
+27142836,iMap4: An open source toolbox for the statistical fixation mapping of eye movement data with linear mixed modeling.,False,Y,high,Toolbox is a tool; no URL,,
+27153675,TreeDom: a graphical web tool for analysing domain architecture evolution.,True,Y,high,Tool for analyzing is methodology,,
+34772921,Mesmerize is a dynamically adaptable user-friendly analysis platform for 2D and 3D calcium imaging data.,False,Y,high,Platform for analysis is a tool; no URL,,
+22581768,PEP-FOLD: an updated de novo structure prediction server for both linear and disulfide bonded cyclic peptides.,True,Y,high,Prediction server is methodology tool,,
+30137425,TranSurVeyor: an improved database-free algorithm for finding non-reference transpositions in high-throughput sequencing data.,False,Y,high,Algorithm for finding is methodology; no URL,,
+34297749,TREND database: Retinal images of healthy young subjects visualized by a portable digital non-mydriatic fundus camera.,False,N,high,Database keyword,TREND,retinal images database
+24338423,ReSeqTools: an integrated toolkit for large-scale next-generation sequencing based resequencing analysis.,False,Y,high,Toolkit is a tool; no URL,,
+29218876,OWL-NETS: Transforming OWL Representations for Improved Network Inference.,False,Y,high,Tool for transforming; no URL,,
+26434581,mirPRo-a novel standalone program for differential expression and variation analysis of miRNAs.,False,Y,high,Program for analysis is a tool; no URL,,
+28362818,VivaxGEN: An open access platform for comparative analysis of short tandem repeat genotyping data in Plasmodium vivax populations.,True,N,medium,Platform that houses genotyping data,VivaxGEN,Plasmodium vivax genotyping platform
+33627669,"OutFin, a multi-device and multi-modal dataset for outdoor localization based on the fingerprinting approach.",False,N,medium,Dataset suggests database but no URL,OutFin,outdoor localization dataset
+30799499,PamulDB: a comprehensive genomic resource for the study of human- and animal-pathogenic Pasteurella multocida.,False,N,high,DB suffix + resource keyword,PamulDB,Pasteurella multocida genomic resource database
+31106360,"LanceletDB: an integrated genome database for lancelet, comparing domain types and combination in orthologues among lancelet and other species.",False,N,high,DB suffix + database keyword,LanceletDB,integrated lancelet genome database
+32976679,Spage2vec: Unsupervised representation of localized spatial gene expression signatures.,False,Y,high,Method for representation; no URL,,
+33767203,"NLM-Chem, a new resource for chemical entity recognition in PubMed full text literature.",False,N,high,Resource for entity recognition data,NLM-Chem,chemical entity recognition resource
+32663312,HRT Atlas v1.0 database: redefining human and mouse housekeeping genes and candidate reference transcripts by mining massive RNA-seq datasets.,True,N,high,Atlas + database keyword + version number,HRT Atlas,housekeeping and reference transcripts atlas database
+33512655,Supporting international networks through platforms for standardised data collection-the European Registries for Rare Endocrine Conditions (EuRRECa) model.,True,N,medium,Registries for data collection,EuRRECa,European Registries for Rare Endocrine Conditions
+34034647,GWENA: gene co-expression networks analysis and extended modules characterization in a single Bioconductor package.,True,Y,high,R package for analysis is a tool,,
+"21459847, 31045208","The IntFOLD server: an integrated web resource for protein fold recognition, 3D model quality assessment, intrinsic disorder prediction, domain prediction and ligand binding site prediction.",True,Y,high,Server for prediction is methodology tool,,
+32735312,PyRice: a Python package for querying Oryza sativa databases.,False,Y,high,Python package for querying is a tool; no URL,,
+27670777,FAMSA: Fast and accurate multiple sequence alignment of huge protein families.,True,Y,high,Tool for sequence alignment is methodology,,
+24532728,GUILDify: a web server for phenotypic characterization of genes through biological data integration and network-based prioritization algorithms.,True,Y,high,Web server for prioritization is a tool,,
+31070716,ResPRE: high-accuracy protein contact prediction by coupling precision matrix with deep residual neural networks.,True,Y,high,Prediction tool is methodology,,
+29069412,"MEBS, a software platform to evaluate large (meta)genomic collections according to their metabolic machinery: unraveling the sulfur cycle.",False,Y,high,Software platform for evaluation; no URL,,
+31799609,"RNA-Puzzles toolkit: a computational resource of RNA 3D structure benchmark datasets, structure manipulation, and evaluation tools.",False,Y,high,Toolkit is a tool; no URL,,
+22689642,BIPS: BIANA Interolog Prediction Server. A tool for protein-protein interaction inference.,True,Y,high,Prediction server is methodology tool,,
+34725485,MISpheroID: a knowledgebase and transparency tool for minimum information in spheroid identity.,False,N,high,Knowledgebase keyword,MISpheroID,minimum information in spheroid identity knowledgebase
+22826541,RILogo: visualizing RNA-RNA interactions.,True,Y,high,Tool for visualizing is methodology,,
+22178299,"SimTB, a simulation toolbox for fMRI data under a model of spatiotemporal separability.",True,Y,high,Toolbox for simulation is a tool,,
+31318422,IRAM: virus capsid database and analysis resource.,False,N,high,Database keyword + resource,IRAM,virus capsid database
+21757464,"PDBpaint, a visualization webservice to tag protein structures with sequence annotations.",True,Y,high,Webservice for visualization is a tool,,
+23943635,BLAD: a comprehensive database of widely circulated beta-lactamases.,True,N,high,Database keyword,BLAD,beta-lactamases database
+30287268,The Anorexia Nervosa Genetics Initiative (ANGI): Overview and methods.,True,N,medium,Initiative collecting genetic data,ANGI,Anorexia Nervosa Genetics Initiative
+26384564,Beegle: from literature mining to disease-gene discovery.,True,Y,high,Tool for mining and discovery,,
+27153697,FRAGSION: ultra-fast protein fragment library generation by IOHMM sampling.,True,Y,high,Tool for library generation,,
+32400867,Revenant: a database of resurrected proteins.,False,N,high,Database keyword,Revenant,resurrected proteins database
+34264745,"Benchmarking and Testing Machine Learning Approaches with BARRA:CuRDa, a <i>Curated RNA-Seq Database</i> for Cancer Research.",True,N,high,Database keyword in name,BARRA:CuRDa,Curated RNA-Seq Database for Cancer Research
+27479659,TepiTool: A Pipeline for Computational Prediction of T Cell Epitope Candidates.,True,Y,high,Pipeline for prediction is methodology,,
+32921303,ANDDigest: a new web-based module of ANDSystem for the search of knowledge in the scientific literature.,True,Y,high,Module for search is a tool,,
+29583068,HLPI-Ensemble: Prediction of human lncRNA-protein interactions based on ensemble strategy.,True,Y,high,Prediction tool is methodology,,
+32463229,PINE: An Automation Tool to Extract and Visualize Protein-Centric Functional Networks.,False,Y,high,Tool to extract/visualize; no URL,,
+26263006,GDSCalc: A Web-Based Application for Evaluating Discrete Graph Dynamical Systems.,False,Y,high,Application for evaluating; no URL,,
+33978761,The Dockstore: enhancing a community platform for sharing reproducible and accessible computational protocols.,True,N,high,Store suffix + platform for sharing workflows,Dockstore,computational protocols repository
+34907160,XDeathDB: a visualization platform for cell death molecular interactions.,True,N,high,DB suffix + platform for data,XDeathDB,cell death molecular interactions database
+31616466,"""EviMass"": A Literature Evidence-Based Miner for Human Microbial Associations.",True,Y,high,Miner tool for extracting associations,,
+32857502,PypKa: A Flexible Python Module for Poisson-Boltzmann-Based p<i>K</i><sub>a</sub> Calculations.,False,Y,high,Python module for calculations; no URL,,
+21609949,BioProfiling.de: analytical web portal for high-throughput cell biology.,True,N,medium,Portal for accessing analytical data,BioProfiling.de,high-throughput cell biology analytical portal
+21826555,VSDMIP 1.5: an automated structure- and ligand-based virtual screening platform with a PyMOL graphical user interface.,False,Y,high,Platform for virtual screening is a tool; no URL,,
+30500839,Agronomic Linked Data (AgroLD): A knowledge-based system to enable integrative biology in agronomy.,True,N,high,Knowledge-based system with linked data,AgroLD,Agronomic Linked Data
+31052310,DynaStI: A Dynamic Retention Time Database for Steroidomics.,True,N,high,Database keyword,DynaStI,Dynamic Retention Time Database for Steroidomics
+25262644,CEM-designer: design of custom expression microarrays in the post-ENCODE Era.,True,Y,high,Tool for design,,
+28057566,SemanticSCo: A platform to support the semantic composition of services for gene expression analysis.,False,Y,high,Platform for composition is a tool; no URL,,
+30551257,CytoML for cross-platform cytometry data sharing.,False,Y,high,Tool for data sharing; no URL,,
+30943284,GenDiS database update with improved approach and features to recognize homologous sequences of protein domain superfamilies.,False,N,high,Database keyword + update,GenDiS,protein domain superfamilies database
+28229138,Eawag-Soil in enviPath: a new resource for exploring regulatory pesticide soil biodegradation pathways and half-life data.,False,N,high,Resource for exploring data,Eawag-Soil,pesticide soil biodegradation pathways resource
+31412866,ETM-DB: integrated Ethiopian traditional herbal medicine and phytochemicals database.,True,N,high,DB suffix + database keyword,ETM-DB,Ethiopian traditional herbal medicine database
+23614390,Peppy: proteogenomic search software.,True,Y,high,Search software is a tool,,
+27492285,SoyNet: a database of co-functional networks for soybean Glycine max.,True,N,high,Database keyword,SoyNet,soybean co-functional networks database
+24389116,Automatic sorting of toxicological information into the IUCLID (International Uniform Chemical Information Database) endpoint-categories making use of the semantic search engine Go3R.,True,Y,high,Search engine tool for sorting,,
+29800349,"GDA, a web-based tool for Genomics and Drugs integrated analysis.",True,Y,high,Tool for integrated analysis,,
+22069465,Segtor: rapid annotation of genomic coordinates and single nucleotide variations using segment trees.,True,Y,high,Tool for annotation,,
+32308908,SeizureBank: A Repository of Analysis-ready Seizure Signal Data.,False,N,high,Bank suffix + repository keyword,SeizureBank,seizure signal data repository
+28025344,GeneBase 1.1: a tool to summarize data from NCBI gene datasets and its application to an update of human gene statistics.,True,N,high,Base suffix + tool describes functionality,GeneBase,gene datasets summary database
+29718141,PVCbase: an integrated web resource for the PVC bacterial proteomes.,True,N,high,Base suffix + web resource,PVCbase,PVC bacterial proteomes resource
+30447998,BioJupies: Automated Generation of Interactive Notebooks for RNA-Seq Data Analysis in the Cloud.,True,Y,high,Tool for automated generation of notebooks,,
+29257129,"Verification of Arabidopsis stock collections using SNPmatch, a tool for genotyping high-plexed samples.",True,Y,high,Tool for genotyping,,
+33737026,GCsnap: Interactive Snapshots for the Comparison of Protein-Coding Genomic Contexts.,False,Y,high,Tool for comparison; no URL,,
+34023895,LigAdvisor: a versatile and user-friendly web-platform for drug design.,True,Y,high,Platform for drug design is a tool,,
+22685450,ProMEX - a mass spectral reference database for plant proteomics.,False,N,high,Database keyword + reference,ProMEX,mass spectral reference database for plant proteomics
+30273353,meaRtools: An R package for the analysis of neuronal networks recorded on microelectrode arrays.,True,Y,high,R package for analysis is a tool,,
+34273183,DAMA: the global Distribution of Alien Mammals database.,False,N,high,Database keyword,DAMA,global Distribution of Alien Mammals database
+27306108,GPS-Lipid: a robust tool for the prediction of multiple lipid modification sites.,True,Y,high,Tool for prediction,,
+31391056,"Architecture and usability of OntoKeeper, an ontology evaluation tool.",False,Y,high,Evaluation tool; no URL,,
+34544908,GAMUT: A genomics big data management tool.,False,Y,high,Management tool; no URL,,
+21922594,SpliceAid 2: a database of human splicing factors expression data and RNA target motifs.,True,N,high,Database keyword + version number,SpliceAid,human splicing factors expression database
+29126218,LIBRA-WA: a web application for ligand binding site detection and protein function recognition.,True,Y,high,Web application for detection is a tool,,
+23846595,JBioWH: an open-source Java framework for bioinformatics data integration.,False,Y,high,Framework is a tool; no URL,,
+29643843,SIPSim: A Modeling Toolkit to Predict Accuracy and Aid Design of DNA-SIP Experiments.,False,Y,high,Toolkit for prediction/modeling; no URL,,
+31164211,OntoSIDES: Ontology-based student progress monitoring on the national evaluation system of French Medical Schools.,False,Y,high,Monitoring system is a tool; no URL,,
+28203720,HpQTL: a geometric morphometric platform to compute the genetic architecture of heterophylly.,False,Y,high,Platform to compute; no URL,,
+28700230,LigQ: A Webserver to Select and Prepare Ligands for Virtual Screening.,True,Y,high,Webserver to select/prepare is a tool,,
+30519231,BAC-BROWSER: The Tool for Visualization and Analysis of Prokaryotic Genomes.,True,Y,high,Tool for visualization and analysis,,
+26155308,The Chemical Validation and Standardization Platform (CVSP): large-scale automated validation of chemical structure datasets.,True,Y,high,Platform for validation is a tool,,
+34930955,"GuPPy, a Python toolbox for the analysis of fiber photometry data.",False,Y,high,Toolbox is a tool; no URL,,
+30118475,ggsashimi: Sashimi plot revised for browser- and annotation-independent splicing visualization.,False,Y,high,Tool for visualization; no URL,,
+28544559,PipeCraft: Flexible open-source toolkit for bioinformatics analysis of custom high-throughput amplicon sequencing data.,False,Y,high,Toolkit is a tool; no URL,,
+24931489,"An iCRISPR platform for rapid, multiplexable, and inducible genome editing in human pluripotent stem cells.",False,Y,high,Platform for genome editing is a tool; no URL,,
+28482028,Web3DMol: interactive protein structure visualization based on WebGL.,True,Y,high,Tool for visualization,,
+22981419,nSTAT: open-source neural spike train analysis toolbox for Matlab.,False,Y,high,Toolbox is a tool; no URL,,
+29618009,Constructing lightweight and flexible pipelines using Plugin-Based Microbiome Analysis (PluMA).,True,Y,high,Framework for constructing pipelines is a tool,,
+29790950,"The research data management platform (RDMP): A novel, process driven, open-source tool for the management of longitudinal cohorts of clinical data.",False,Y,high,Platform for management is a tool; no URL,,
+21994224,Pyicos: a versatile toolkit for the analysis of high-throughput sequencing data.,True,Y,high,Toolkit for analysis is a tool,,
+33097734,"SignBase, a collection of geometric signs on mobile objects in the Paleolithic.",False,N,high,Base suffix + collection,SignBase,Paleolithic geometric signs collection
+31802128,RAACBook: a web server of reduced amino acid alphabet for sequence-dependent inference by using Chou's five-step rule.,True,Y,high,Web server for inference is a tool,,
+25267794,The Cancer Genomics Hub (CGHub): overcoming cancer through the power of torrential data.,True,N,high,Hub indicates database repository,CGHub,Cancer Genomics Hub
+26021595,ADAPT-NMR 3.0: utilization of BEST-type triple-resonance NMR experiments to accelerate the process of data collection and assignment.,False,Y,high,Tool for data collection; no URL,,
+22813356,LXtoo: an integrated live Linux distribution for the bioinformatics community.,True,Y,high,Linux distribution is a tool,,
+30564458,"ComPath: an ecosystem for exploring, analyzing, and curating mappings across pathway databases.",True,Y,high,Ecosystem for exploring/analyzing is a tool,,
+22553363,ZINCPharmer: pharmacophore search of the ZINC database.,True,Y,high,Search tool for database,,
+28807036,T-Time: a data repository of T cell and calcium release-activated calcium channel activation imagery.,True,N,high,Repository keyword,T-Time,T cell activation imagery repository
+28721381,Introducing SEARCHBreast: a virtual resource to facilitate sharing of surplus animal material developed for breast cancer research.,False,N,high,Resource for sharing material,SEARCHBreast,breast cancer animal material resource
+21984760,"MyBioNet: interactively visualize, edit and merge biological networks on the web.",True,Y,high,Tool to visualize/edit/merge is methodology,,
+29113997,ImaEdge - a platform for quantitative analysis of the spatiotemporal dynamics of cortical proteins during cell polarization.,False,Y,high,Platform for analysis is a tool; no URL,,
+32922207,The CEEDER database of evidence reviews: An open-access evidence service for researchers and decision-makers.,True,N,high,Database keyword,CEEDER,evidence reviews database
+32934016,TheCellVision.org: A Database for Visualizing and Mining High-Content Cell Imaging Projects.,False,N,high,Database keyword,TheCellVision,high-content cell imaging database
+23737450,webPDBinder: a server for the identification of ligand binding sites on protein structures.,True,Y,high,Server for identification is a tool,,
+33305318,PED in 2021: a major update of the protein ensemble database for intrinsically disordered proteins.,True,N,high,Database keyword + update + version,PED,protein ensemble database
+30064362,HiCcompare: an R-package for joint normalization and comparison of HI-C datasets.,True,Y,high,R package for comparison is a tool,,
+34319727,ProBiS-Dock Database: A Web Server and Interactive Web Repository of Small Ligand-Protein Binding Sites for Drug Design.,True,N,high,Database keyword + repository,ProBiS-Dock Database,Small Ligand-Protein Binding Sites Database
+33305317,HMPDACC: a Human Microbiome Project Multi-omic data resource.,True,N,high,Data resource indicates database,HMPDACC,Human Microbiome Project Multi-omic data resource
+28472432,"agriGO v2.0: a GO analysis toolkit for the agricultural community, 2017 update.",True,Y,high,Toolkit for analysis is a tool,,
+33713107,MetaPrism: A versatile toolkit for joint taxa/gene analysis of metagenomic sequencing data.,False,Y,high,Toolkit for analysis is a tool; no URL,,
+24456567,The CTSA Consortium's Catalog of Assets for Translational and Clinical Health Research (CATCHR).,False,N,medium,Catalog suggests database but no URL,CATCHR,Catalog of Assets for Translational and Clinical Health Research
+31960894,sismonr: simulation of in silico multi-omic networks with adjustable ploidy and post-transcriptional regulation in R.,True,Y,high,Tool for simulation,,
+31647099,"Pathway Commons 2019 Update: integration, analysis and exploration of pathway data.",True,N,high,Database update + Commons implies repository,Pathway Commons,pathway data resource
+34715518,GeneCoNet: A web application server for constructing cancer patient-specific gene correlation networks with prognostic gene pairs.,True,Y,high,Server for constructing networks is a tool,,
+22787465,GabiPD - The GABI Primary Database integrates plant proteomic data with gene-centric information.,False,N,high,Database keyword,GabiPD,GABI Primary Database
+22537014,EuFishBioMed (COST Action BM0804): a European network to promote the use of small fishes in biomedical research.,True,N,medium,Network/initiative for research,EuFishBioMed,European network for small fishes in biomedical research
+28594829,"Mendel,MD: A user-friendly open-source web tool for analyzing WES and WGS in the diagnosis of patients with Mendelian disorders.",True,Y,high,Tool for analyzing,,
+31829415,Expanding the capillary electrophoresis-based glucose unit database of the GUcal app.,True,N,high,Database keyword + app for data,GUcal,glucose unit database
+32392583,"M6A2Target: a comprehensive database for targets of m6A writers, erasers and readers.",True,N,high,Database keyword,M6A2Target,m6A targets database
+29788290,BAGEL4: a user-friendly web server to thoroughly mine RiPPs and bacteriocins.,True,Y,high,Web server to mine is a tool,,
+23710289,NRF2-ome: an integrated web resource to discover protein interaction and regulatory networks of NRF2.,False,N,high,Web resource for discovering networks,NRF2-ome,NRF2 interaction and regulatory networks resource
+26774237,A new e-learning platform for radiology education (RadEd).,False,Y,high,E-learning platform is a tool; no URL,,
+24928667,OutbreakTools: a new platform for disease outbreak analysis using the R software.,False,Y,high,Platform for analysis is a tool; no URL,,
+22074346,MGOS: development of a community annotation database for Magnaporthe oryzae.,False,N,high,Database keyword,MGOS,Magnaporthe oryzae annotation database
+32235513,PIDS: A User-Friendly Plant DNA Fingerprint Database Management System.,False,Y,high,Management system is a tool; no URL,,
+27627442,EpiGeNet: A Graph Database of Interdependencies Between Genetic and Epigenetic Events in Colorectal Cancer.,False,N,high,Database keyword,EpiGeNet,genetic and epigenetic events graph database
+33074335,mMGE: a database for human metagenomic extrachromosomal mobile genetic elements.,True,N,high,Database keyword,mMGE,metagenomic extrachromosomal mobile genetic elements database
+28053165,proGenomes: a resource for consistent functional and taxonomic annotations of prokaryotic genomes.,True,N,high,Resource indicates database,proGenomes,prokaryotic genome annotations resource
+29186950,Descriptor Data Bank (DDB): A Cloud Platform for Multiperspective Modeling of Protein-Ligand Interactions.,False,N,high,Data Bank keyword + Bank suffix,DDB,Descriptor Data Bank
+27864814,"nodeGame: Real-time, synchronous, online experiments in the browser.",True,Y,high,Platform for experiments is a tool,,
+26896848,MGFD: the maize gene families database.,True,N,high,Database keyword,MGFD,maize gene families database
+28275836,[se-atlas - the health service information platform for people with rare diseases : Supporting research on medical care institutions and support groups].,False,N,medium,Atlas + platform for information,se-atlas,health service information platform for rare diseases
+27575624,OpenMS: a flexible open-source software platform for mass spectrometry data analysis.,True,Y,high,Software platform for analysis is a tool,,
+21596791,rBioNet: A COBRA toolbox extension for reconstructing high-quality biochemical networks.,False,Y,high,Toolbox extension is a tool; no URL,,
+28315408,StemTextSearch: Stem cell gene database with evidence from abstracts.,True,N,high,Database keyword,StemTextSearch,stem cell gene database
+26315904,LIBRA: LIgand Binding site Recognition Application.,True,Y,high,Application for recognition is a tool,,
+26564970,pubmed.mineR: an R package with text-mining algorithms to analyse PubMed abstracts.,True,Y,high,R package for analysis is a tool,,
+27187206,SoFIA: a data integration framework for annotating high-throughput datasets.,False,Y,high,Framework for integration is a tool; no URL,,
+33027504,PredHPI: an integrated web server platform for the detection and visualization of host-pathogen interactions using sequence-based methods.,True,Y,high,Server for detection is a tool,,
+33233537,"HumiR: Web Services, Tools and Databases for Exploring Human microRNA Data.",False,N,medium,Databases plural suggests database resource,HumiR,human microRNA databases
+30522456,OMCD: OncomiR Cancer Database.,True,N,high,Database keyword + DB abbreviation,OMCD,OncomiR Cancer Database
+29172865,MAMMOTh: A new database for curated mathematical models of biomolecular systems.,True,N,high,Database keyword,MAMMOTh,curated mathematical models database
+33751366,TRIPODD: a Novel Fluorescence Imaging Platform for In Situ Quantification of Drug Distribution and Therapeutic Response.,False,Y,high,Imaging platform is a tool; no URL,,
+34279599,AVPIden: a new scheme for identification and functional prediction of antiviral peptides based on machine learning approaches.,True,Y,high,Scheme for identification/prediction is methodology,,
+23735058,AllerTOP--a server for in silico prediction of allergens.,True,Y,high,Server for prediction is methodology,,
+23671333,IgBLAST: an immunoglobulin variable domain sequence analysis tool.,True,Y,high,Tool for analysis,,
+23256920,"CpGAVAS, an integrated web server for the annotation, visualization, analysis, and GenBank submission of completely sequenced chloroplast genome sequences.",True,Y,high,Web server for annotation/analysis is a tool,,
+26840129,"MutAid: Sanger and NGS Based Integrated Pipeline for Mutation Identification, Validation and Annotation in Human Molecular Genetics.",False,Y,high,Pipeline for identification is methodology; no URL,,
+24830957,iBIOMES Lite: summarizing biomolecular simulation data in limited settings.,False,Y,high,Tool for summarizing; no URL,,
+33526072,GeneWalk identifies relevant gene functions for a biological context using network representation learning.,False,Y,high,Tool that identifies using method; no URL,,
+31368353,OSkirc: a web tool for identifying prognostic biomarkers in kidney renal clear cell carcinoma.,True,Y,high,Tool for identifying,,
+22693220,"CellBase, a comprehensive collection of RESTful web services for retrieving relevant biological information from heterogeneous sources.",True,N,high,Base suffix + collection of data,CellBase,comprehensive biological information collection
+27151197,PathwAX: a web server for network crosstalk based pathway annotation.,True,Y,high,Web server for annotation is a tool,,
+27174935,tRNAscan-SE On-line: integrating search and context for analysis of transfer RNA genes.,True,Y,high,Tool for search and analysis,,
+22434844,"Argo: an integrative, interactive, text mining-based workbench supporting curation.",True,Y,high,Workbench for curation is a tool,,
+33110420,MDACP: A Pathogen Genome and Metagenome Analysis Cloud Platform.,False,Y,high,Platform for analysis is a tool; no URL,,
+29678128,SpirPep: an in silico digestion-based platform to assist bioactive peptides discovery from a genome-wide database.,True,Y,high,Platform to assist discovery is a tool,,
+30794647,IMACEL: A cloud-based bioimage analysis platform for morphological analysis and image classification.,False,Y,high,Platform for analysis is a tool; no URL,,
+25150822,LRRsearch: An asynchronous server-based application for the prediction of leucine-rich repeat motifs and an integrative database of NOD-like receptors.,True,N,medium,Application + integrative database combined,LRRsearch,leucine-rich repeat motifs and NOD-like receptors database
+23677614,aLeaves facilitates on-demand exploration of metazoan gene family trees on MAFFT sequence alignment server with enhanced interactivity.,True,Y,high,Tool that facilitates exploration,,
+32503412,PS4DR: a multimodal workflow for identification and prioritization of drugs based on pathway signatures.,False,Y,high,Workflow for identification is methodology; no URL,,
+29800320,PaintOmics 3: a web resource for the pathway analysis and visualization of multi-omics data.,True,N,medium,Web resource for analysis could be database,PaintOmics,pathway analysis and visualization resource
+31419935,VIST - a Variant-Information Search Tool for precision oncology.,True,Y,high,Search tool is methodology,,
+21515631,miRanalyzer: an update on the detection and analysis of microRNAs in high-throughput sequencing experiments.,True,Y,high,Tool for detection and analysis,,
+27769238,BCM: toolkit for Bayesian analysis of Computational Models using samplers.,False,Y,high,Toolkit for analysis is a tool; no URL,,
+25928765,coMET: visualisation of regional epigenome-wide association scan results and DNA co-methylation patterns.,True,Y,high,Tool for visualization,,
+25877469,[TOPICS-MDS: a versatile resource for generating scientific and social knowledge for elderly care].,False,N,medium,Resource for generating knowledge; uncertain,TOPICS-MDS,elderly care knowledge resource
+33787851,OMAmer: tree-driven and alignment-free protein assignment to subfamilies outperforms closest sequence approaches.,False,Y,high,Method for assignment; no URL,,
+26658293,EPIMIC: A Simple Homemade Computer Program for Real-Time EPIdemiological Surveillance and Alert Based on MICrobiological Data.,True,Y,high,Program for surveillance is a tool,,
+28929973,Vermont: a multi-perspective visual interactive platform for mutational analysis.,False,Y,high,Platform for analysis is a tool; no URL,,
+25797062,PTGBase: an integrated database to study tandem duplicated genes in plants.,False,N,high,Base suffix + database keyword,PTGBase,tandem duplicated genes database
+25953080,CerebralWeb: a Cytoscape.js plug-in to visualize networks stratified by subcellular localization.,True,Y,high,Plug-in for visualization is a tool,,
+33208742,"QM-symex, update of the QM-sym database with excited state information for 173 kilo molecules.",False,N,high,Database keyword + update,QM-symex,excited state molecules database
+27150811,StructMAn: annotation of single-nucleotide polymorphisms in the structural context.,True,Y,high,Tool for annotation,,
+32657416,MutCombinator: identification of mutated peptides allowing combinatorial mutations using nucleotide-based graph search.,True,Y,high,Tool for identification using search,,
+23479348,"EDAM: an ontology of bioinformatics operations, types of data and identifiers, topics and formats.",True,N,high,Ontology is a database of terms,EDAM,bioinformatics operations ontology
+30639259,HTiP: High-Throughput Immunomodulator Phenotypic Screening Platform to Reveal IAP Antagonists as Anti-cancer Immune Enhancers.,False,Y,high,Screening platform is a tool; no URL,,
+23327649,Kerfuffle: a web tool for multi-species gene colocalization analysis.,True,Y,high,Tool for analysis,,
+22747501,PePPER: a webserver for prediction of prokaryote promoter elements and regulons.,True,Y,high,Webserver for prediction is methodology,,
+34037702,SimText: a text mining framework for interactive analysis and visualization of similarities among biomedical entities.,True,Y,high,Framework for analysis is a tool,,
+27189608,A web resource for mining HLA associations with adverse drug reactions: HLA-ADR.,True,N,high,Resource for mining associations data,HLA-ADR,HLA adverse drug reactions associations resource
+23630176,BioBlend: automating pipeline analyses within Galaxy and CloudMan.,True,Y,high,Tool for automating pipelines,,
+32616517,LEMMI: a continuous benchmarking platform for metagenomics classifiers.,False,Y,high,Platform for benchmarking is a tool; no URL,,
+29897411,comoRbidity: an R package for the systematic analysis of disease comorbidities.,False,Y,high,R package for analysis is a tool; no URL,,
+34365010,SILO: A Computational Method for Detecting Copy Number Gain in Clinical Specimens Analyzed on a Next-Generation Sequencing Platform.,False,Y,high,Method for detecting; no URL,,
+21975133,Biblio-MetReS: a bibliometric network reconstruction application and server.,True,Y,high,Application for reconstruction is a tool,,
+24048354,Toxygates: interactive toxicity analysis on a hybrid microarray and linked data platform.,False,Y,high,Platform for analysis is a tool; no URL,,
+29860391,CASTp 3.0: computed atlas of surface topography of proteins.,True,N,high,Atlas keyword + version number,CASTp,computed atlas of surface topography of proteins
+24110966,PH² - a dermoscopic image database for research and benchmarking.,False,N,high,Database keyword,PH²,dermoscopic image database
+22125388,HGT-Gen: a tool for generating a phylogenetic tree with horizontal gene transfer.,True,Y,high,Tool for generating is methodology,,
+28877673,LAIT: a local ancestry inference toolkit.,False,Y,high,Toolkit is a tool; no URL,,
+22505817,Vaxjo: a web-based vaccine adjuvant database and its application for analysis of vaccine adjuvants and their uses in vaccine development.,False,N,high,Database keyword,Vaxjo,vaccine adjuvant database
+26133872,ChiMS: Open-source instrument control software platform on LabVIEW for imaging/depth profiling mass spectrometers.,False,Y,high,Software platform for control; no URL,,
+24618462,The Bio-Community Perl toolkit for microbial ecology.,True,Y,high,Toolkit is a tool,,
+31338829,PlantNE: a global database of plant biomass from nitrogen-addition experiments.,False,N,high,Database keyword,PlantNE,plant biomass database
+33378370,FLIMJ: An open-source ImageJ toolkit for fluorescence lifetime image data analysis.,False,Y,high,Toolkit for analysis is a tool; no URL,,
+32637989,TreeSAPP: the Tree-based Sensitive and Accurate Phylogenetic Profiler.,False,Y,high,Profiler is a tool; no URL,,
+27131357,"PHYLOViZ Online: web-based tool for visualization, phylogenetic inference, analysis and sharing of minimum spanning trees.",True,Y,high,Tool for visualization and analysis,,
+26357328,RBioCloud: A Light-Weight Framework for Bioconductor and R-based Jobs on the Cloud.,True,Y,high,Framework for running jobs is a tool,,
+33381819,Padhoc: a computational pipeline for pathway reconstruction on the fly.,False,Y,high,Pipeline for reconstruction is methodology; no URL,,
+22952662,TARGETgene: a tool for identification of potential therapeutic targets in cancer.,True,Y,high,Tool for identification,,
+31308550,EPIC: software toolkit for elution profile-based inference of protein complexes.,True,Y,high,Toolkit for inference is methodology,,
+22369494,UASIS: Universal Automatic SNP Identification System.,True,Y,high,System for identification is methodology,,
+34418567,IMProv: A Resource for Cross-link-Driven Structure Modeling that Accommodates Protein Dynamics.,False,N,high,Resource for modeling data,IMProv,cross-link-driven structure modeling resource
+30652568,CAFE MOCHA: An Integrated Platform for Discovering Clinically Relevant Molecular Changes in Cancer-An Example of Distant Metastasis- and Recurrence-Linked Classifiers in Head and Neck Squamous Cell Carcinoma.,False,Y,high,Platform for discovering is a tool; no URL,,
+28212856,"ProBiS tools (algorithm, database, and web servers) for predicting and modeling of biologically interesting proteins.",True,N,medium,Tools + database combined,ProBiS,protein prediction database and tools
+32328193,MSpectraAI: a powerful platform for deciphering proteome profiling of multi-tumor mass spectrometry data by using deep neural networks.,False,Y,high,Platform for deciphering is a tool; no URL,,
+25009129,StemSearch: RNA search tool based on stem identification and indexing.,True,Y,high,Search tool is methodology,,
+22616108,ApiNATOMY: a novel toolkit for visualizing multiscale anatomy schematics with phenotype-related information.,True,Y,high,Toolkit for visualizing is a tool,,
+34791104,Prototheca-ID: a web-based application for molecular identification of Prototheca species.,True,Y,high,Application for identification is a tool,,
+28619054,HGPEC: a Cytoscape app for prediction of novel disease-gene and disease-disease associations and evidence collection based on a random walk on heterogeneous network.,False,Y,high,App for prediction is methodology; no URL,,
+27632579,MetaStorm: A Public Resource for Customizable Metagenomics Annotation.,True,N,high,Resource for annotations,MetaStorm,metagenomics annotation resource
+23797110,FijiWings: an open source toolkit for semiautomated morphometric analysis of insect wings.,False,Y,high,Toolkit for analysis is a tool; no URL,,
+23912507,"Neuroinformatics Database (NiDB)--a modular, portable database for the storage, analysis, and sharing of neuroimaging data.",False,N,high,Database keyword,NiDB,Neuroinformatics Database
+34940189,"Alientoma, a Dynamic Database for Alien Insects in Greece and Its Use by Citizen Scientists in Mapping Alien Species.",False,N,high,Database keyword,Alientoma,alien insects database
+32320656,CytoMAP: A Spatial Analysis Toolbox Reveals Features of Myeloid Cell Organization in Lymphoid Tissues.,False,Y,high,Toolbox is a tool; no URL,,
+26447887,TRANSIT--A Software Tool for Himar1 TnSeq Analysis.,False,Y,high,Software tool for analysis; no URL,,
+25062914,tmBioC: improving interoperability of text-mining tools with BioC.,True,Y,high,Tool for improving interoperability,,
+21630457,ProteoConnections: a bioinformatics platform to facilitate proteome and phosphoproteome analyses.,False,Y,high,Platform for analyses is a tool; no URL,,
+31114876,"BEERE: a web server for biomedical entity expansion, ranking and explorations.",True,Y,high,Web server for expansion/ranking is a tool,,
+25075290,BioJS: an open source standard for biological visualisation - its status in 2014.,True,Y,high,Standard for visualization is a tool,,
+33839304,"NLM-Gene, a richly annotated gold standard dataset for gene entities that addresses ambiguity and multi-species gene recognition.",True,N,high,Dataset indicates database,NLM-Gene,gene entities gold standard dataset
+23259794,"RNAmap2D - calculation, visualization and analysis of contact and distance maps for RNA and protein-RNA complex structures.",True,Y,high,Tool for calculation/visualization,,
+27867422,"ClassyFire: automated chemical classification with a comprehensive, computable taxonomy.",True,Y,high,Tool for automated classification,,
+21992029,Genome-wide prediction of splice-modifying SNPs in human genes using a new analysis pipeline called AASsites.,True,Y,high,Pipeline for prediction is methodology,,
+24363378,SplicePlot: a utility for visualizing splicing quantitative trait loci.,True,Y,high,Utility for visualizing is a tool,,
+32492257,bitacora: A comprehensive tool for the identification and annotation of gene families in genome assemblies.,False,Y,high,Tool for identification and annotation; no URL,,
+24792156,XTMS: pathway design in an eXTended metabolic space.,True,Y,high,Tool for pathway design,,
+30416381,BERMP: a cross-species classifier for predicting m<sup>6</sup>A sites by integrating a deep learning algorithm and a random forest approach.,True,Y,high,Classifier for prediction is methodology,,
+21596789,"GenPlay, a multipurpose genome analyzer and browser.",True,Y,high,Analyzer and browser are tools,,
+34788621,NyuWa Genome resource: A deep whole-genome sequencing-based variation profile and reference panel for the Chinese population.,False,N,high,Resource + reference panel indicates database,NyuWa Genome,Chinese population variation profile and reference panel
+27846806,GEN3VA: aggregation and analysis of gene expression signatures from related studies.,True,Y,high,Tool for aggregation and analysis,,
+21938634,Using cisTargetX to predict transcriptional targets and networks in Drosophila.,True,Y,high,Tool to predict is methodology,,
+26051157,WormGUIDES: an interactive single cell developmental atlas and tool for collaborative multidimensional data exploration.,False,N,medium,Atlas keyword suggests database but also tool,WormGUIDES,single cell developmental atlas
+29504895,FunGeneNet: a web tool to estimate enrichment of functional interactions in experimental gene sets.,True,Y,high,Tool to estimate enrichment,,
+26306458,MSIseq: Software for Assessing Microsatellite Instability from Catalogs of Somatic Mutations.,False,Y,high,Software for assessing is a tool; no URL,,
+27153728,IsomiR Bank: a research resource for tracking IsomiRs.,True,N,high,Bank suffix + resource keyword,IsomiR Bank,IsomiRs research resource
+21715386,KOBAS 2.0: a web server for annotation and identification of enriched pathways and diseases.,True,Y,high,Web server for annotation is a tool,,
+21487452,"Existing data sources for clinical epidemiology: The clinical laboratory information system (LABKA) research database at Aarhus University, Denmark.",False,N,high,Database keyword,LABKA,clinical laboratory information system research database
+26069265,Change-O: a toolkit for analyzing large-scale B cell immunoglobulin repertoire sequencing data.,True,Y,high,Toolkit for analyzing is a tool,,
+30367585,Arena-Idb: a platform to build human non-coding RNA interaction networks.,True,N,medium,Platform to build networks but also houses interaction data,Arena-Idb,non-coding RNA interaction networks platform
+32145577,Development and application of the thermodynamic database PRODATA dedicated to the monitoring of mining activities from exploration to remediation.,False,N,high,Database keyword,PRODATA,thermodynamic database for mining activities
+21541350,jMOTU and Taxonerator: turning DNA Barcode sequences into annotated operational taxonomic units.,True,Y,high,Tool for turning sequences into units,,
+28472372,ProteinsPlus: a web portal for structure analysis of macromolecules.,True,Y,high,Portal for analysis is a tool,,
+32468536,Drugena: A Fully Automated Immunoinformatics Platform for the Design of Antibody-Drug Conjugates Against Neurodegenerative Diseases.,False,Y,high,Platform for design is a tool; no URL,,
+30865284,PleioNet: a web-based visualization tool for exploring pleiotropy across complex traits.,True,Y,high,Tool for exploring/visualization,,
+25740497,Sal-Site: research resources for the Mexican axolotl.,False,N,medium,Research resources suggests database but no URL,Sal-Site,Mexican axolotl research resources
+22373396,Populous: a tool for building OWL ontologies from templates.,False,Y,high,Tool for building; no URL,,
+24838562,ProTox: a web server for the in silico prediction of rodent oral toxicity.,True,Y,high,Web server for prediction is methodology,,
+22098775,TRENTOOL: a Matlab open source toolbox to analyse information flow in time series data with transfer entropy.,False,Y,high,Toolbox for analysis is a tool; no URL,,
+25902408,"Pain and Interoception Imaging Network (PAIN): A multimodal, multisite, brain-imaging repository for chronic somatic and visceral pain disorders.",False,N,high,Repository keyword,PAIN,brain-imaging repository for pain disorders
+25496383,CompPhy: a web-based collaborative platform for comparing phylogenies.,True,Y,high,Platform for comparing is a tool,,
+27185890,QuadBase2: web server for multiplexed guanine quadruplex mining and visualization.,False,N,high,Base suffix + server for mining data,QuadBase2,guanine quadruplex database
+29974823,Health Equity Assessment Toolkit Plus (HEAT Plus): software for exploring and comparing health inequalities using uploaded datasets.,False,Y,high,Software for exploring is a tool; no URL,,
+32074470,CoMPARA: Collaborative Modeling Project for Androgen Receptor Activity.,False,N,medium,Project collecting modeling data; uncertain,CoMPARA,Collaborative Modeling Project for Androgen Receptor Activity
+30101336,"LipidFinder on LIPID MAPS: peak filtering, MS searching and statistical analysis for lipidomics.",True,Y,high,Tool for filtering/searching/analysis,,
+25882753,The PLORAS Database: A data repository for Predicting Language Outcome and Recovery After Stroke.,False,N,high,Database keyword + repository,PLORAS,language outcome and recovery database
+33756618,"WCO-Lite version 1.1: an online nomenclatural catalogue of harvestmen of the world (Arachnida, Opiliones) curated in TaxonWorks.",True,N,high,Catalogue indicates database + version,WCO-Lite,harvestmen nomenclatural catalogue
+23272737,"OPTIMAS-DW: a comprehensive transcriptomics, metabolomics, ionomics, proteomics and phenomics data resource for maize.",True,N,high,Data resource indicates database,OPTIMAS-DW,maize multi-omics data resource
+"27799466, 30407573",IMG/VR: a database of cultured and uncultured DNA Viruses and retroviruses.,True,N,high,Database keyword,IMG/VR,DNA viruses and retroviruses database
+25632109,"PhenoMiner: a quantitative phenotype database for the laboratory rat, Rattus norvegicus. Application in hypertension and renal disease.",True,N,high,Database keyword,PhenoMiner,rat quantitative phenotype database
+26739209,SuccinSite: a computational tool for the prediction of protein succinylation sites by exploiting the amino acid patterns and properties.,True,Y,high,Tool for prediction,,
+22180410,PopDrowser: the Population Drosophila Browser.,True,Y,high,Browser is a tool,,
+27513885,Defining and Detecting Complex Peak Relationships in Mass Spectral Data: The Mz.unity Algorithm.,True,Y,high,Algorithm for detecting is methodology,,
+23390370,SurfaceomeDB: a cancer-orientated database for genes encoding cell surface proteins.,False,N,high,DB suffix + database keyword,SurfaceomeDB,cell surface proteins database
+30587115,ACES: a machine learning toolbox for clustering analysis and visualization.,False,Y,high,Toolbox is a tool; no URL,,
+29028892,"Nephele: a cloud platform for simplified, standardized and reproducible microbiome data analysis.",True,Y,high,Platform for analysis is a tool,,
+30767086,Dimorphite-DL: an open-source program for enumerating the ionization states of drug-like small molecules.,True,Y,high,Program for enumerating is methodology,,
+22486148,Design and implementation of a web directory for medical education (WDME): a tool to facilitate research in medical education.,True,N,medium,Directory suggests database for medical education,WDME,web directory for medical education
+32966035,Pain Chemogenomics Knowledgebase (Pain-CKB) for Systems Pharmacology Target Mapping and Physiologically Based Pharmacokinetic Modeling Investigation of Opioid Drug-Drug Interactions.,False,N,high,Knowledgebase keyword,Pain-CKB,Pain Chemogenomics Knowledgebase
+28578698,dictyExpress: a web-based platform for sequence data management and analytics in Dictyostelium and beyond.,False,Y,high,Platform for management/analytics is a tool; no URL,,
+24170806,SporeWeb: an interactive journey through the complete sporulation cycle of Bacillus subtilis.,True,N,medium,Web resource for exploring sporulation data,SporeWeb,Bacillus subtilis sporulation cycle resource
+33689914,MutVis: Automated framework for analysis and visualization of mutational signatures in pathogenic bacterial strains.,False,Y,high,Framework for analysis/visualization; no URL,,
+26511083,GOTA: GO term annotation of biomedical literature.,True,Y,high,Tool for annotation,,
+32661247,"TAASRAD19, a high-resolution weather radar reflectivity dataset for precipitation nowcasting.",False,N,high,Dataset indicates database,TAASRAD19,weather radar reflectivity dataset
+32215567,CRiSP: accurate structure prediction of disulfide-rich peptides with cystine-specific sequence alignment and machine learning.,True,Y,high,Tool for prediction,,
+28824589,Fast and Simple Analysis of MiSeq Amplicon Sequencing Data with MetaAmp.,True,Y,high,Tool for analysis,,
+32717064,Transcriptor: a comprehensive platform for annotation of the enzymatic functions of transcripts.,True,N,medium,Platform for annotation that houses data,Transcriptor,transcript enzymatic functions annotation platform
+24599084,The CO-Regulation Database (CORD): a tool to identify coordinately expressed genes.,True,N,high,Database keyword,CORD,CO-Regulation Database
+25422781,"Remodeling Cildb, a popular database for cilia and links for ciliopathies.",False,N,high,Database keyword + db suffix,Cildb,cilia database
+24894505,SMaSH: a benchmarking toolkit for human genome variant calling.,False,Y,high,Toolkit for benchmarking is a tool; no URL,,
+32117445,CHG: A Systematically Integrated Database of Cancer Hallmark Genes.,False,N,high,Database keyword,CHG,Cancer Hallmark Genes Database
+21513519,MI-GWAS: a SAS platform for the analysis of inherited and maternal genetic effects in genome-wide association studies using log-linear models.,True,Y,high,Platform for analysis is a tool,,
+21385461,"LabKey Server: an open source platform for scientific data integration, analysis and collaboration.",True,Y,high,Platform for integration/analysis is a tool,,
+32735679,Planet Microbe: a platform for marine microbiology to discover and analyze interconnected 'omics and environmental data.,True,N,medium,Platform for discovering/analyzing that houses data,Planet Microbe,marine microbiology omics platform
+29069344,DEEPre: sequence-based enzyme EC number prediction by deep learning.,True,Y,high,Tool for prediction,,
+24829450,PRISM: a web server and repository for prediction of protein-protein interactions and modeling their 3D complexes.,True,N,medium,Server + repository combined,PRISM,protein-protein interactions repository
+34557218,"ggVennDiagram: An Intuitive, Easy-to-Use, and Highly Customizable R Package to Generate Venn Diagram.",True,Y,high,R package to generate diagrams is a tool,,
+32521246,iEcology: Harnessing Large Online Resources to Generate Ecological Insights.,False,Y,high,Method for harnessing resources; no URL,,
+31804670,ImPLoc: a multi-instance deep learning model for the prediction of protein subcellular localization based on immunohistochemistry images.,False,Y,high,Prediction model is methodology; no URL,,
+28025337,"On-the-fly selection of cell-specific enhancers, genes, miRNAs and proteins across the human body using SlideBase.",True,N,high,Base suffix suggests database,SlideBase,cell-specific molecular features database
+28165111,MotifNet: a web-server for network motif analysis.,True,Y,high,Web-server for analysis is a tool,,
+29369293,CardioClassifier: disease- and gene-specific computational decision support for clinical genome interpretation.,True,Y,high,Tool for decision support/interpretation,,
+24930140,"miR-PREFeR: an accurate, fast and easy-to-use plant miRNA prediction tool using small RNA-Seq data.",False,Y,high,Prediction tool; no URL,,
+25938432,Tn-seq explorer: a tool for analysis of high-throughput sequencing data of transposon mutant libraries.,True,Y,high,Tool for analysis,,
+34029094,DeepFrag: An Open-Source Browser App for Deep-Learning Lead Optimization.,True,Y,high,App for optimization is a tool,,
+31794006,eCAMI: simultaneous classification and motif identification for enzyme annotation.,False,Y,high,Tool for classification/identification; no URL,,
+28155633,Multi-CAR: a tool of contig scaffolding using multiple references.,True,Y,high,Tool for scaffolding,,
+29106441,"Orchid: a novel management, annotation and machine learning framework for analyzing cancer mutations.",False,Y,high,Framework for management/analysis; no URL,,
+"27144897, 30963486",STarMirDB: A database of microRNA binding sites.,True,N,high,DB suffix + database keyword,STarMirDB,microRNA binding sites database
+27903890,Pharos: Collating protein information to shed light on the druggable genome.,True,N,high,Resource collating protein information,Pharos,druggable genome protein information resource
+31092193,PathMe: merging and exploring mechanistic pathway knowledge.,True,N,medium,Resource for exploring pathway knowledge,PathMe,mechanistic pathway knowledge resource
+30535239,PDX Finder: A portal for patient-derived tumor xenograft model discovery.,True,N,high,Portal/Finder for model discovery data,PDX Finder,patient-derived tumor xenograft model portal
+27153724,Cas-Database: web-based genome-wide guide RNA library design for gene knockout screens using CRISPR-Cas9.,True,N,high,Database keyword,Cas-Database,CRISPR guide RNA library database
+31305071,WinProphet: A User-Friendly Pipeline Management System for Proteomics Data Analysis Based on Trans-Proteomic Pipeline.,True,Y,high,Management system for pipelines is a tool,,
+22140171,Introducing EzTaxon-e: a prokaryotic 16S rRNA gene sequence database with phylotypes that represent uncultured species.,True,N,high,Database keyword,EzTaxon-e,prokaryotic 16S rRNA gene sequence database
+26209310,SHIELD: an integrative gene expression database for inner ear research.,False,N,high,Database keyword,SHIELD,inner ear gene expression database
+25969449,GalaxyPepDock: a protein-peptide docking tool based on interaction similarity and energy optimization.,True,Y,high,Tool for docking is methodology,,
+25086503,High-resolution structure determination by continuous-rotation data collection in MicroED.,False,Y,high,Method paper; no database,,
+31510693,hicGAN infers super resolution Hi-C data with generative adversarial networks.,False,Y,high,Method for inference; no URL,,
+21258060,"WIST: toolkit for rapid, customized LIMS development.",True,Y,high,Toolkit for LIMS development is a tool,,
+31504195,VisFeature: a stand-alone program for visualizing and analyzing statistical features of biological sequences.,False,Y,high,Program for visualizing/analyzing; no URL,,
+35011609,KANPHOS: A Database of Kinase-Associated Neural Protein Phosphorylation in the Brain.,False,N,high,Database keyword,KANPHOS,Kinase-Associated Neural Protein Phosphorylation Database
+26400039,"PathwaysWeb: a gene pathways API with directional interactions, expanded gene ontology, and versioning.",True,N,medium,API + Web suggests web service database,PathwaysWeb,gene pathways database
+23323735,SyntTax: a web server linking synteny to prokaryotic taxonomy.,True,Y,high,Web server for linking is a tool,,
+26801957,ELASPIC web-server: proteome-wide structure-based prediction of mutation effects on protein stability and binding affinity.,True,Y,high,Web-server for prediction is methodology,,
+31626280,CSMD: a computational subtraction-based microbiome discovery pipeline for species-level characterization of clinical metagenomic samples.,False,Y,high,Pipeline for discovery is methodology; no URL,,
+24237261,Mercator: a fast and simple web server for genome scale functional annotation of plant sequence data.,True,Y,high,Web server for annotation is a tool,,
+28906116,"PhID: An Open-Access Integrated Pharmacology Interactions Database for Drugs, Targets, Diseases, Genes, Side-Effects, and Pathways.",False,N,high,Database keyword,PhID,Pharmacology Interactions Database
+27087305,PGP repository: a plant phenomics and genomics data publication infrastructure.,True,N,high,Repository keyword,PGP,plant phenomics and genomics repository
+31091262,Mutplot: An easy-to-use online tool for plotting complex mutation data with flexibility.,True,Y,high,Tool for plotting,,
+30825368,Aggrescan3D standalone package for structure-based prediction of protein aggregation properties.,False,Y,high,Package for prediction is methodology; no URL,,
+32315327,"Dataflow programming for the analysis of molecular dynamics with AViS, an analysis and visualization software application.",True,Y,high,Software for analysis/visualization,,
+22805179,"EvolMarkers: a database for mining exon and intron markers for evolution, ecology and conservation studies.",False,N,high,Database keyword,EvolMarkers,exon and intron markers database
+23815231,WEP: a high-performance analysis pipeline for whole-exome data.,True,Y,high,Pipeline for analysis is methodology,,
+27121261,PTIR: Predicted Tomato Interactome Resource.,True,N,high,Resource indicates database,PTIR,Predicted Tomato Interactome Resource
+29110634,"JS-MS: a cross-platform, modular javascript viewer for mass spectrometry signals.",False,Y,high,Viewer is a tool; no URL,,
+22531214,NuST: analysis of the interplay between nucleoid organization and gene expression.,True,Y,high,Tool for analysis,,
+32399560,UniRule: a unified rule resource for automatic annotation in the UniProt Knowledgebase.,True,N,high,Resource for rules/annotation,UniRule,unified rule resource for UniProt
+21803806,"Gee Fu: a sequence version and web-services database tool for genomic assembly, genome feature and NGS data.",True,N,medium,Database tool suggests database,Gee Fu,genomic assembly database
+21624158,HyQue: evaluating hypotheses using Semantic Web technologies.,True,Y,high,Tool for evaluating hypotheses,,
+25644271,Transposome: a toolkit for annotation of transposable element families from unassembled sequence reads.,True,Y,high,Toolkit for annotation is a tool,,
+27097021,Inforna 2.0: A Platform for the Sequence-Based Design of Small Molecules Targeting Structured RNAs.,False,Y,high,Platform for design is a tool; no URL,,
+26746786,"Integrating 400 million variants from 80,000 human samples with extensive annotations: towards a knowledge base to analyze disease cohorts.",True,N,high,Knowledge base indicates database,RVS,variant annotations knowledge base
+24403538,Allerdictor: fast allergen prediction using text classification techniques.,True,Y,high,Tool for prediction,,
+31106372,Yvis: antibody high-density alignment visualization and analysis platform with an integrated database.,True,N,medium,Platform with integrated database,Yvis,antibody alignment database
+30908487,"Searching algorithm for Type IV effector proteins (S4TE) 2.0: Improved tools for Type IV effector prediction, analysis and comparison in proteobacteria.",True,Y,high,Tool for prediction and analysis,,
+32881948,PortaDrop: A portable digital microfluidic platform providing versatile opportunities for Lab-On-A-Chip applications.,False,Y,high,Platform for lab applications is hardware; no URL,,
+28203233,Exo-miRExplorer: A Comprehensive Resource for Exploring and Comparatively Analyzing Exogenous MicroRNAs.,True,N,high,Resource for exploring data,Exo-miRExplorer,exogenous microRNAs resource
+30908262,SNeCT: Scalable Network Constrained Tucker Decomposition for Multi-Platform Data Profiling.,False,Y,high,Method for decomposition; no URL,,
+25505092,NMRFAM-SPARKY: enhanced software for biomolecular NMR spectroscopy.,True,Y,high,Software for spectroscopy is a tool,,
+29425325,Selenzyme: enzyme selection tool for pathway design.,True,Y,high,Tool for selection,,
+25659145,UFSRAT: Ultra-fast Shape Recognition with Atom Types--the discovery of novel bioactive small molecular scaffolds for FKBP12 and 11βHSD1.,True,Y,high,Tool for shape recognition/discovery,,
+28475590,Benchmarking desktop and mobile handwriting across COTS devices: The e-BioSign biometric database.,False,N,high,Database keyword,e-BioSign,biometric handwriting database
+25697908,CapsidMaps: protein-protein interaction pattern discovery platform for the structural analysis of virus capsids using Google Maps.,True,Y,high,Platform for discovery/analysis is a tool,,
+23729469,PELE web server: atomistic study of biomolecular systems at your fingertips.,True,Y,high,Web server for study is a tool,,
+32777825,APRICOT: Advanced Platform for Reproducible Infrastructures in the Cloud via Open Tools.,False,Y,high,Platform for infrastructures is a tool; no URL,,
+33750951,Demonstrating the utility of flexible sequence queries against indexed short reads with FlexTyper.,False,Y,high,Tool for queries; no URL,,
+27153572,Visual Omics Explorer (VOE): a cross-platform portal for interactive data visualization.,True,Y,high,Portal for visualization is a tool,,
+31764940,SCGid: a consensus approach to contig filtering and genome prediction from single-cell sequencing libraries of uncultured eukaryotes.,False,Y,high,Tool for filtering and prediction; no URL,,
+22834945,Condor-COPASI: high-throughput computing for biochemical networks.,False,Y,high,Tool for computing; no URL,,
+25580224,The Cytoscape app article collection.,False,Y,high,Article collection about apps; no database,,
+31070723,Graphical data mining of cancer mechanisms with SEMA.,True,Y,high,Tool for data mining,,
+32495578,[TCMATCOV--a bioinformatics platform to predict efficacy of TCM against COVID-19].,False,Y,high,Platform to predict is a tool; no URL,,
+34514416,SCISSOR™: a single-cell inferred site-specific omics resource for tumor microenvironment association study.,True,N,high,Resource indicates database,SCISSOR,single-cell site-specific omics resource
+30304355,LION LBD: a literature-based discovery system for cancer biology.,True,N,medium,System for discovery that houses literature data,LION LBD,literature-based discovery system
+32393170,methCancer-gen: a DNA methylome dataset generator for user-specified cancer type based on conditional variational autoencoder.,False,Y,high,Generator tool for datasets; no URL,,
+30586417,ROCA - An ArcGIS toolbox for road alignment identification and horizontal curve radii computation.,True,Y,high,Toolbox for computation is a tool,,
+24034841,IDOMAL: the malaria ontology revisited.,True,N,high,Ontology is a database,IDOMAL,malaria ontology
+22292078,SPPS: a sequence-based method for predicting probability of protein-protein interaction partners.,True,Y,high,Method for predicting,,
+21385030,SubMAP: aligning metabolic pathways with subnetwork mappings.,True,Y,high,Tool for aligning,,
+28334101,RefBool: a reference-based algorithm for discretizing gene expression data.,False,Y,high,Algorithm for discretizing; no URL,,
+32795611,DPHL: A DIA Pan-human Protein Mass Spectrometry Library for Robust Biomarker Discovery.,True,N,high,Library indicates database,DPHL,DIA Pan-human Protein Mass Spectrometry Library
+30272244,Ribose-Map: a bioinformatics toolkit to map ribonucleotides embedded in genomic DNA.,False,Y,high,Toolkit to map is methodology; no URL,,
+34710512,Development of a database and standardized approach for rpoB sequence-based subtyping and identification of aerobic spore-forming Bacillales.,True,N,high,Database keyword,FoodMicrobeTracker,rpoB sequence database for Bacillales
+34614189,metaGEM: reconstruction of genome scale metabolic models directly from metagenomes.,False,Y,high,Tool for reconstruction; no URL,,
+27807468,The FARSEEING real-world fall repository: a large-scale collaborative database to collect and share sensor signals from real-world falls.,False,N,high,Repository + database keywords,FARSEEING,real-world fall sensor signals repository
+22272252,LipidXplorer: a software for consensual cross-platform lipidomics.,True,Y,high,Software for lipidomics analysis,,
+24925766,L.U.St: a tool for approximated maximum likelihood supertree reconstruction.,False,Y,high,Tool for reconstruction; no URL,,
+29617954,AGORA: organellar genome annotation from the amino acid and nucleotide references.,True,Y,high,Tool for annotation,,
+33787871,Wormicloud: a new text summarization tool based on word clouds to explore the C. elegans literature.,True,Y,high,Tool for text summarization,,
+28410421,phylo-node: A molecular phylogenetic toolkit using Node.js.,False,Y,high,Toolkit is a tool; no URL,,
+28369246,PARTIE: a partition engine to separate metagenomic and amplicon projects in the Sequence Read Archive.,False,Y,high,Engine to separate is a tool; no URL,,
+34339812,PharmDE: A new expert system for drug-excipient compatibility evaluation.,True,Y,high,Expert system for evaluation is a tool,,
+31511901,regBase: whole genome base-wise aggregation and functional prediction for human non-coding regulatory variants.,False,N,high,Base suffix indicates database,regBase,non-coding regulatory variants database
+22844100,HapZipper: sharing HapMap populations just got easier.,False,Y,high,Tool for sharing; no URL,,
+32640981,HEnRY: a DZIF LIMS tool for the collection and documentation of biomaterials in multicentre studies.,False,Y,high,LIMS tool; no URL,,
+25426929,"ALLocator: an interactive web platform for the analysis of metabolomic LC-ESI-MS datasets, enabling semi-automated, user-revised compound annotation and mass isotopomer ratio analysis.",True,Y,high,Platform for analysis is a tool,,
+21828087,"OrganismTagger: detection, normalization and grounding of organism entities in biomedical documents.",True,Y,high,Tool for detection/normalization,,
+22879444,Phenol-Explorer 2.0: a major update of the Phenol-Explorer database integrating data on polyphenol metabolism and pharmacokinetics in humans and experimental animals.,True,N,high,Database keyword + update + version,Phenol-Explorer,polyphenol metabolism and pharmacokinetics database
+33431000,rMSIcleanup: an open-source tool for matrix-related peak annotation in mass spectrometry imaging and its application to silver-assisted laser desorption/ionization.,False,Y,high,Tool for annotation; no URL,,

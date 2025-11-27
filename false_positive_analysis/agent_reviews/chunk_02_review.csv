@@ -1,0 +1,501 @@
+pmid,title,has_url,is_false_positive,confidence,reason
+26794641,A brain imaging repository of normal structural MRI across the life course: Brain Images of Normal Subjects (BRAINS).,True,N,high,Contains database/repository keyword indicating data resource
+31728519,SyntDB: defining orthologues of human long noncoding RNAs across primates.,True,N,high,Contains database/repository keyword indicating data resource
+32813752,SVAD: A genetic database curates non-ischemic sudden cardiac death-associated variants.,True,N,high,Contains database/repository keyword indicating data resource
+"22903802, 32016318",VariBench: a benchmark database for variations.,True,N,high,Contains database/repository keyword indicating data resource
+26708988,HitPredict version 4: comprehensive reliability scoring of physical protein-protein interactions from more than 100 species.,True,N,low,Has URL and biological data terms but title unclear
+26073932,Pedican: an online gene resource for pediatric cancers with literature evidence.,True,N,high,Contains database/repository keyword indicating data resource
+25220766,LabeledIn: cataloging labeled indications for human drugs.,True,N,high,Contains database/repository keyword indicating data resource
+23203985,Dfam: a database of repetitive DNA based on profile hidden Markov models.,True,N,high,Contains database/repository keyword indicating data resource
+"23066107, 26590405",TSGene: a web resource for tumor suppressor genes.,True,N,high,Contains database/repository keyword indicating data resource
+29036653,miRCarta: a central repository for collecting miRNA candidates.,True,N,high,Contains database/repository keyword indicating data resource
+25450223,Haemophilus influenzae Genome Database (HIGDB): a single point web resource for Haemophilus influenzae.,True,N,high,Contains database/repository keyword indicating data resource
+24178034,IDEAL in 2014 illustrates interaction networks composed of intrinsically disordered proteins and their binding partners.,True,N,low,Has URL and biological data terms but title unclear
+21993301,"Polbase: a repository of biochemical, genetic and structural information about DNA polymerases.",True,N,high,Contains database/repository keyword indicating data resource
+"25414356, 27899674, 31777944",CDD: NCBI's conserved domain database.,True,N,high,Contains database/repository keyword indicating data resource
+"23203986, 31733063",Genome3D: a UK collaborative project to annotate genomic sequences with predicted 3D structures based on SCOP and CATH domains.,True,N,low,Has URL and biological data terms but title unclear
+33045741,LncSEA: a platform for long non-coding RNA related sets and enrichment analysis.,True,Y,medium,Methodology/tool paper despite having URL
+26567549,GEneSTATION 1.0: a synthetic resource of diverse evolutionary and functional genomic data for studying the evolution of pregnancy-associated tissues and phenotypes.,True,N,high,Contains database/repository keyword indicating data resource
+21943338,"TIGER: Toolbox for integrating genome-scale metabolic models, expression data, and transcriptional regulatory networks.",False,Y,high,No URL provided - unlikely to be a data resource
+33581334,OGP: A Repository of Experimentally Characterized O-glycoproteins to Facilitate Studies on O-glycosylation.,True,N,high,Contains database/repository keyword indicating data resource
+"26432830, 30398659","MitoMiner v3.1, an update on the mitochondrial proteomics database.",True,N,high,Contains database/repository keyword indicating data resource
+24712981,SFGD: a comprehensive platform for mining functional information from soybean transcriptome data and its use in identifying acyl-lipid metabolism pathways.,True,Y,medium,Methodology/tool paper despite having URL
+"27789701, 30272209",Updates in Rhea - an expert curated resource of biochemical reactions.,True,N,high,Contains database/repository keyword indicating data resource
+29774137,Saudi anti-human cancer plants database (SACPD): A collection of plants with anti-human cancer activities.,True,N,high,Contains database/repository keyword indicating data resource
+25480115,"Sinbase: an integrated database to study genomics, genetics and comparative genomics in Sesamum indicum.",True,N,high,Contains database/repository keyword indicating data resource
+24323624,SABRE2: a database connecting plant EST/full-length cDNA clones with Arabidopsis information.,True,N,high,Contains database/repository keyword indicating data resource
+24066126,SurvExpress: an online biomarker validation tool and database for cancer gene expression data using survival analysis.,True,N,high,Contains database/repository keyword indicating data resource
+28850115,"RefEx, a reference gene expression dataset as a web tool for the functional analysis of genes.",True,Y,medium,Methodology/tool paper despite having URL
+34774049,DREAM: a database of experimentally supported protein-coding RNAs and drug associations in human cancer.,True,N,high,Contains database/repository keyword indicating data resource
+25614757,"WallProtDB, a database resource for plant cell wall proteomics.",True,N,high,Contains database/repository keyword indicating data resource
+32681639,"Autophagy and Tumor Database: ATdb, a novel database connecting autophagy and tumor.",True,N,high,Contains database/repository keyword indicating data resource
+"26503249, 29688378",BDB: biopanning data bank.,True,N,high,Contains database/repository keyword indicating data resource
+21498548,Allie: a database and a search service of abbreviations and long forms.,True,N,high,Contains database/repository keyword indicating data resource
+"25273105, 30380106",OrthoInspector 2.0: Software and database updates.,True,N,high,Contains database/repository keyword indicating data resource
+31599098,PSMD: An extensive database for pan-species microsatellite investigation and marker development.,True,N,high,Contains database/repository keyword indicating data resource
+27097230,SignaFish: A Zebrafish-Specific Signaling Pathway Resource.,True,N,high,Contains database/repository keyword indicating data resource
+31642484,SilkDB 3.0: visualizing and exploring multiple levels of data for silkworm.,True,N,high,Contains database/repository keyword indicating data resource
+23193256,"ESTHER, the database of the α/β-hydrolase fold superfamily of proteins: tools to explore diversity of functions.",True,N,high,Contains database/repository keyword indicating data resource
+22916227,CLEARPOND: cross-linguistic easy-access resource for phonological and orthographic neighborhood densities.,True,N,high,Contains database/repository keyword indicating data resource
+25943471,The SwissLipids knowledgebase for lipid biology.,True,N,high,Contains database/repository keyword indicating data resource
+33985427,TarDB: an online database for plant miRNA targets and miRNA-triggered phased siRNAs.,True,N,high,Contains database/repository keyword indicating data resource
+24244721,"Meta-analysis using a novel database, miRStress, reveals miRNAs that are frequently associated with the radiation and hypoxia stress-responses.",True,N,high,Contains database/repository keyword indicating data resource
+23846596,T2D@ZJU: a knowledgebase integrating heterogeneous connections associated with type 2 diabetes mellitus.,True,N,high,Contains database/repository keyword indicating data resource
+26424082,RegNetwork: an integrated database of transcriptional and post-transcriptional regulatory networks in human and mouse.,True,N,high,Contains database/repository keyword indicating data resource
+"22439011, 25425035",microPIR: an integrated database of microRNA target sites within human promoter sequences.,True,N,high,Contains database/repository keyword indicating data resource
+22559792,ADMET evaluation in drug discovery. 11. PharmacoKinetics Knowledge Base (PKKB): a comprehensive database of pharmacokinetic and toxic properties for drugs.,True,N,high,Contains database/repository keyword indicating data resource
+24525374,lncRNAMap: a map of putative regulatory functions in the long non-coding transcriptome.,True,Y,low,Unclear from title but likely not a primary data resource
+30408350,Investigation of RNA-RNA Interactions Using the RISE Database.,False,N,high,Contains database/repository keyword indicating data resource
+22698731,The insulin-like growth factor mutation database (IGFmdb).,True,N,high,Contains database/repository keyword indicating data resource
+24923822,MorusDB: a resource for mulberry genomics and genome biology.,True,N,high,Contains database/repository keyword indicating data resource
+"30453895, 32009518",RATEmiRs: the rat atlas of tissue-specific and enriched miRNAs database.,True,N,high,Contains database/repository keyword indicating data resource
+28724888,CrossCheck: an open-source web tool for high-throughput screen data analysis.,True,Y,medium,Methodology/tool paper despite having URL
+29178828,CrusTF: a comprehensive resource of transcriptomes for evolutionary and functional studies of crustacean transcription factors.,True,N,high,Contains database/repository keyword indicating data resource
+27581336,IBIS: an OR ready open-source platform for image-guided neurosurgery.,False,Y,high,Methodology/tool paper with no URL
+34156447,mPPI: a database extension to visualize structural interactome in a one-to-many manner.,True,N,high,Contains database/repository keyword indicating data resource
+25428349,"OMIM.org: Online Mendelian Inheritance in Man (OMIM®), an online catalog of human genes and genetic disorders.",True,N,high,Contains database/repository keyword indicating data resource
+29126123,PedAM: a database for Pediatric Disease Annotation and Medicine.,True,N,high,Contains database/repository keyword indicating data resource
+"22009673, 30407568",ICEberg: a web-based resource for integrative and conjugative elements found in Bacteria.,True,N,high,Contains database/repository keyword indicating data resource
+32655358,BETA: A Large Benchmark Database Toward SSVEP-BCI Application.,True,N,high,Contains database/repository keyword indicating data resource
+24225319,DNASU plasmid and PSI:Biology-Materials repositories: resources to accelerate biological research.,True,N,high,Contains database/repository keyword indicating data resource
+31886476,Bringing data from curated pathway resources to Cytoscape with OmniPath.,True,N,high,Contains database/repository keyword indicating data resource
+"30329036, 33080015",GeneLab: Omics database for spaceflight experiments.,True,N,high,Contains database/repository keyword indicating data resource
+29069414,The BioStudies database-one stop shop for all data supporting a life sciences study.,True,N,high,Contains database/repository keyword indicating data resource
+34316271,Virtual Herbarium ALTB: collection of vascular plants of the Altai Mountain Country.,True,N,high,Contains database/repository keyword indicating data resource
+"26527733, 29082924","Norine, the knowledgebase dedicated to non-ribosomal peptides, is now open to crowdsourcing.",True,N,high,Contains database/repository keyword indicating data resource
+31599923,BiomeNet: a database for construction and analysis of functional interaction networks for any species with a sequenced genome.,True,N,high,Contains database/repository keyword indicating data resource
+34330336,HumGut: a comprehensive human gut prokaryotic genomes collection filtered by metagenome data.,True,N,high,Contains database/repository keyword indicating data resource
+30418591,HumanNet v2: human gene networks for disease research.,True,N,low,Has URL and biological data terms but title unclear
+27242503,Building the Ferretome.,True,Y,low,Unclear from title but likely not a primary data resource
+22427539,The SMART Platform: early experience enabling substitutable applications for electronic health records.,True,Y,low,Unclear from title but likely not a primary data resource
+28053162,POSTAR: a platform for exploring post-transcriptional regulation coordinated by RNA-binding proteins.,True,Y,medium,Methodology/tool paper despite having URL
+"30364969, 31584095",EWAS Atlas: a curated knowledgebase of epigenome-wide association studies.,True,N,high,Contains database/repository keyword indicating data resource
+"27797767, 30598108",miRNAmeConverter: an R/bioconductor package for translating mature miRNA names to different miRBase versions.,True,Y,medium,Methodology/tool paper despite having URL
+26989148,Wikidata as a semantic framework for the Gene Wiki initiative.,True,Y,medium,Methodology/tool paper despite having URL
+31114901,Simple ClinVar: an interactive web server to explore and retrieve gene and disease variants aggregated in ClinVar database.,True,N,high,Contains database/repository keyword indicating data resource
+23193289,"PANTHER in 2013: modeling the evolution of gene function, and other gene attributes, in the context of phylogenetic trees.",True,N,low,Has URL and biological data terms but title unclear
+24569397,PCMdb: pancreatic cancer methylation database.,True,N,high,Contains database/repository keyword indicating data resource
+"23180791, 25428351, 30395283","OrthoDB: a hierarchical catalog of animal, fungal and bacterial orthologs.",True,N,high,Contains database/repository keyword indicating data resource
+23196988,NURBS: a database of experimental and predicted nuclear receptor binding sites of mouse.,True,N,high,Contains database/repository keyword indicating data resource
+25990557,DSigDB: drug signatures database for gene set analysis.,True,N,high,Contains database/repository keyword indicating data resource
+"32550548, 34530999",VitiVar: A locus specific database of vitiligo associated genes and variations.,True,N,high,Contains database/repository keyword indicating data resource
+33080028,Peryton: a manual collection of experimentally supported microbe-disease associations.,True,N,high,Contains database/repository keyword indicating data resource
+30266409,"PlaD: A Transcriptomics Database for Plant Defense Responses to Pathogens, Providing New Insights into Plant Immune System.",True,N,high,Contains database/repository keyword indicating data resource
+24312499,PaGenBase: a pattern gene database for the global and dynamic understanding of gene function.,True,N,high,Contains database/repository keyword indicating data resource
+32620074,TeaCoN: a database of gene co-expression network for tea plant (Camellia sinensis).,True,N,high,Contains database/repository keyword indicating data resource
+29316788,SynBioHub: A Standards-Enabled Design Repository for Synthetic Biology.,True,N,high,Contains database/repository keyword indicating data resource
+21930248,HCVpro: hepatitis C virus protein interaction database.,True,N,high,Contains database/repository keyword indicating data resource
+23175606,WholeCellKB: model organism databases for comprehensive whole-cell models.,True,N,high,Contains database/repository keyword indicating data resource
+25030112,DBSecSys: a database of Burkholderia mallei secretion systems.,True,N,high,Contains database/repository keyword indicating data resource
+31404401,miRDRN-miRNA disease regulatory network: a tool for exploring disease and tissue-specific microRNA regulatory networks.,True,Y,medium,Methodology/tool paper despite having URL
+23448274,PASmiR: a literature-curated database for miRNA molecular regulation in plant response to abiotic stress.,True,N,high,Contains database/repository keyword indicating data resource
+29385418,DIBS: a repository of disordered binding sites mediating interactions with ordered proteins.,True,N,high,Contains database/repository keyword indicating data resource
+23071556,MK4MDD: a multi-level knowledge base and analysis platform for major depressive disorder.,True,Y,medium,Methodology/tool paper despite having URL
+28974472,Stress2TF: a manually curated database of TF regulation in plant response to stress.,True,N,high,Contains database/repository keyword indicating data resource
+24344970,CVDHD: a cardiovascular disease herbal database for drug discovery and network pharmacology.,True,N,high,Contains database/repository keyword indicating data resource
+22545773,MASiVEdb: the Sirevirus Plant Retrotransposon Database.,True,N,high,Contains database/repository keyword indicating data resource
+27153700,dbDSM: a manually curated database for deleterious synonymous mutations.,True,N,high,Contains database/repository keyword indicating data resource
+27472917,CicerTransDB 1.0: a resource for expression and functional study of chickpea transcription factors.,True,N,high,Contains database/repository keyword indicating data resource
+31210271,Chickspress: a resource for chicken gene expression.,True,N,high,Contains database/repository keyword indicating data resource
+22363733,PrionHome: a database of prions and other sequences relevant to prion phenomena.,True,N,high,Contains database/repository keyword indicating data resource
+"25399418, 28881964, 29106550","The OMA orthology database in 2015: function predictions, better plant support, synteny view and other improvements.",True,N,high,Contains database/repository keyword indicating data resource
+"24194598, 26531826, 29140473, 29253085, 31701148",JASPAR 2014: an extensively expanded and updated open-access database of transcription factor binding profiles.,True,N,high,Contains database/repository keyword indicating data resource
+31494246,SliceIt: A genome-wide resource and visualization tool to design CRISPR/Cas9 screens for editing protein-RNA interaction sites in the human genome.,True,N,high,Contains database/repository keyword indicating data resource
+34113986,Tfcancer: a manually curated database of transcription factors associated with human cancers.,True,N,high,Contains database/repository keyword indicating data resource
+24165882,YeastNet v3: a public database of data-specific and integrated functional gene networks for Saccharomyces cerevisiae.,True,N,high,Contains database/repository keyword indicating data resource
+25477388,BioAssay Research Database (BARD): chemical biology and probe-development enabled by structured metadata and result types.,True,N,high,Contains database/repository keyword indicating data resource
+24618344,Drug2Gene: an exhaustive resource to explore effectively the drug-target relation network.,True,N,high,Contains database/repository keyword indicating data resource
+31797632,PGxMine: Text mining for curation of PharmGKB.,True,Y,low,Unclear from title but likely not a primary data resource
+26590402,"EffectiveDB--updates and novel features for a better annotation of bacterial secreted proteins and Type III, IV, VI secretion systems.",True,N,high,Contains database/repository keyword indicating data resource
+29036655,MFIB: a repository of protein complexes with mutual folding induced by binding.,True,N,high,Contains database/repository keyword indicating data resource
+22120663,INOH: ontology-based highly structured database of signal transduction pathways.,True,N,high,Contains database/repository keyword indicating data resource
+27337171,TarNet: An Evidence-Based Database for Natural Medicine Research.,True,N,high,Contains database/repository keyword indicating data resource
+27102089,Gene-set activity toolbox (GAT): A platform for microarray-based cancer diagnosis using an integrative gene-set analysis approach.,True,Y,medium,Methodology/tool paper despite having URL
+25301850,PDB-wide collection of binding data: current status of the PDBbind database.,True,N,high,Contains database/repository keyword indicating data resource
+28454513,MYCbase: a database of functional sites and biochemical properties of Myc in both normal and cancer cells.,True,N,high,Contains database/repository keyword indicating data resource
+24678985,ClearedLeavesDB: an online database of cleared plant leaf images.,True,N,high,Contains database/repository keyword indicating data resource
+32754757,CerealsDB-new tools for the analysis of the wheat genome: update 2020.,True,N,high,Contains database/repository keyword indicating data resource
+29161430,MethBank 3.0: a database of DNA methylomes across a variety of species.,True,N,high,Contains database/repository keyword indicating data resource
+22800758,"'MicroRNA Targets', a new AthaMap web-tool for genome-wide identification of miRNA targets in Arabidopsis thaliana.",True,Y,medium,Methodology/tool paper despite having URL
+27164589,CVD2014-A Database for Evaluating No-Reference Video Quality Assessment Algorithms.,True,N,high,Contains database/repository keyword indicating data resource
+28592293,Plasmobase: a comparative database of predicted domain architectures for Plasmodium genomes.,True,N,high,Contains database/repository keyword indicating data resource
+29186578,"The Planteome database: an integrated resource for reference ontologies, plant genomics and phenomics.",True,N,high,Contains database/repository keyword indicating data resource
+22301074,Manual GO annotation of predictive protein signatures: the InterPro approach to GO curation.,True,N,low,Has URL and biological data terms but title unclear
+33471060,Cellinker: a platform of ligand-receptor interactions for intercellular communication analysis.,True,Y,low,Unclear from title but likely not a primary data resource
+23837716,"KONAGAbase: a genomic and transcriptomic database for the diamondback moth, Plutella xylostella.",True,N,high,Contains database/repository keyword indicating data resource
+26527726,MouseNet v2: a database of gene networks for studying the laboratory mouse and eight other model vertebrates.,True,N,high,Contains database/repository keyword indicating data resource
+23110173,"SEED servers: high-performance access to the SEED genomes, annotations, and metabolic models.",True,Y,low,Unclear from title but likely not a primary data resource
+"23180763, 25392407, 31740968",The Standard European Vector Architecture (SEVA): a coherent platform for the analysis and deployment of complex prokaryotic phenotypes.,True,Y,medium,Methodology/tool paper despite having URL
+32777640,"MiDAS 3: An ecosystem-specific reference database, taxonomy and knowledge platform for activated sludge and anaerobic digesters reveals species-level microbiome composition of activated sludge.",False,Y,medium,Contains database keyword but also methodology pattern and no URL
+"29077811, 29145629, 29186351, 31691815, 31802127, 32486891",Reactome enhanced pathway visualization.,True,Y,low,Unclear from title but likely not a primary data resource
+27789703,Prokaryotic Virus Orthologous Groups (pVOGs): a resource for comparative genomics and protein family annotation.,True,N,high,Contains database/repository keyword indicating data resource
+21731755,PanSNPdb: the Pan-Asian SNP genotyping database.,True,N,high,Contains database/repository keyword indicating data resource
+25392419,AHTPDB: a comprehensive platform for analysis and presentation of antihypertensive peptides.,True,N,medium,Platform that may house data with URL
+33010177,SC2disease: a manually curated database of single-cell transcriptome for human diseases.,True,N,high,Contains database/repository keyword indicating data resource
+27507885,ADPriboDB: The database of ADP-ribosylated proteins.,True,N,high,Contains database/repository keyword indicating data resource
+26644461,ALCOdb: Gene Coexpression Database for Microalgae.,True,N,high,Contains database/repository keyword indicating data resource
+"23042674, 25378313",LNCipedia: a database for annotated human lncRNA transcript sequences and structures.,True,N,high,Contains database/repository keyword indicating data resource
+22039163,CELLPEDIA: a repository for human cell information for cell studies and differentiation analyses.,True,N,high,Contains database/repository keyword indicating data resource
+32487016,ncRI: a manually curated database for experimentally validated non-coding RNAs in inflammation.,True,N,high,Contains database/repository keyword indicating data resource
+32392296,CoCoCoNet: conserved and comparative co-expression across a diverse set of species.,True,Y,low,Unclear from title but likely not a primary data resource
+33084904,DualSeqDB: the host-pathogen dual RNA sequencing database for infection processes.,True,N,high,Contains database/repository keyword indicating data resource
+31713618,LncTarD: a manually-curated database of experimentally-supported functional lncRNA-target regulations in human diseases.,True,N,high,Contains database/repository keyword indicating data resource
+23180792,PIECE: a database for plant gene structure comparison and evolution.,True,N,high,Contains database/repository keyword indicating data resource
+33095866,VARAdb: a comprehensive variation annotation database for human.,True,N,high,Contains database/repository keyword indicating data resource
+32890396,CoV3D: a database of high resolution coronavirus protein structures.,True,N,high,Contains database/repository keyword indicating data resource
+22096236,ProOpDB: Prokaryotic Operon DataBase.,True,N,high,Contains database/repository keyword indicating data resource
+24234447,UniCarbKB: building a knowledge platform for glycoproteomics.,True,Y,medium,Methodology/tool paper despite having URL
+29040563,Ten years of CAZypedia: a living encyclopedia of carbohydrate-active enzymes.,True,Y,low,Unclear from title but likely not a primary data resource
+22080559,"The Aspergillus Genome Database (AspGD): recent developments in comprehensive multispecies curation, comparative genomics and community resources.",True,N,high,Contains database/repository keyword indicating data resource
+34345532,"CanImmunother: a manually curated database for identification of cancer immunotherapies associating with biomarkers, targets, and clinical effects.",True,N,high,Contains database/repository keyword indicating data resource
+"29156001, 33237278",DGIdb 3.0: a redesign and expansion of the drug-gene interaction database.,True,N,high,Contains database/repository keyword indicating data resource
+34120586,NUCOME: A comprehensive database of nucleosome organization referenced landscapes in mammalian genomes.,True,N,high,Contains database/repository keyword indicating data resource
+24608034,BCL2DB: database of BCL-2 family members and BH3-only proteins.,True,N,high,Contains database/repository keyword indicating data resource
+33275967,ncRNAVar: A Manually Curated Database for Identification of Noncoding RNA Variants Associated with Human Diseases.,True,N,high,Contains database/repository keyword indicating data resource
+22039151,ALFRED: an allele frequency resource for research and teaching.,True,N,high,Contains database/repository keyword indicating data resource
+30357379,EndoDB: a database of endothelial cell transcriptomics data.,True,N,high,Contains database/repository keyword indicating data resource
+32079733,MtSSPdb: The <i>Medicago truncatula</i> Small Secreted Peptide Database.,True,N,high,Contains database/repository keyword indicating data resource
+33219670,MolluscDB: an integrated functional and evolutionary genomics database for the hyper-diverse animal phylum Mollusca.,True,N,high,Contains database/repository keyword indicating data resource
+22127860,IndelFR: a database of indels in protein structures and their flanking regions.,True,N,high,Contains database/repository keyword indicating data resource
+31725861,PCOSBase: a manually curated database of polycystic ovarian syndrome.,True,N,high,Contains database/repository keyword indicating data resource
+27800578,SCEGRAM: An image database for semantic and syntactic inconsistencies in scenes.,True,N,high,Contains database/repository keyword indicating data resource
+25593348,"PlasmoGEM, a database supporting a community resource for large-scale experimental genetics in malaria parasites.",True,N,high,Contains database/repository keyword indicating data resource
+27392072,YCRD: Yeast Combinatorial Regulation Database.,True,N,high,Contains database/repository keyword indicating data resource
+33084905,MeDAS: a Metazoan Developmental Alternative Splicing database.,True,N,high,Contains database/repository keyword indicating data resource
+31642469,PhenoModifier: a genetic modifier database for elucidating the genetic basis of human phenotypic variation.,True,N,high,Contains database/repository keyword indicating data resource
+30874591,PAmiRDB: A web resource for plant miRNAs targeting viruses.,True,N,high,Contains database/repository keyword indicating data resource
+31598699,QTLbase: an integrative resource for quantitative trait loci across multiple human molecular phenotypes.,True,N,high,Contains database/repository keyword indicating data resource
+32047897,TRlnc: a comprehensive database for human transcriptional regulatory information of lncRNAs.,True,N,high,Contains database/repository keyword indicating data resource
+27905517,G4IPDB: A database for G-quadruplex structure forming nucleic acid interacting proteins.,True,N,high,Contains database/repository keyword indicating data resource
+33045751,LncExpDB: an expression database of human long non-coding RNAs.,True,N,high,Contains database/repository keyword indicating data resource
+33137193,"AcrHub: an integrative hub for investigating, predicting and mapping anti-CRISPR proteins.",True,Y,medium,Methodology/tool paper despite having URL
+27899608,TFBSbank: a platform to dissect the big data of protein-DNA interaction in human and model species.,True,N,low,Has URL and biological data terms but title unclear
+23846747,CoDNaS: a database of conformational diversity in the native state of proteins.,True,N,high,Contains database/repository keyword indicating data resource
+24214993,CPLM: a database of protein lysine modifications.,True,N,high,Contains database/repository keyword indicating data resource
+"24885522, 27924020, 33219661",LincSNP: a database of linking disease-associated SNPs to human large intergenic non-coding RNAs.,True,N,high,Contains database/repository keyword indicating data resource
+33079992,PLncDB V2.0: a comprehensive encyclopedia of plant long noncoding RNAs.,True,N,high,Contains database/repository keyword indicating data resource
+30380112,Translocatome: a novel resource for the analysis of protein translocation between cellular organelles.,True,N,high,Contains database/repository keyword indicating data resource
+32105730,ncEP: A Manually Curated Database for Experimentally Validated ncRNA-encoded Proteins or Peptides.,True,N,high,Contains database/repository keyword indicating data resource
+24735618,TCMSP: a database of systems pharmacology for drug discovery from herbal medicines.,True,N,high,Contains database/repository keyword indicating data resource
+31665425,TFBSshape: an expanded motif database for DNA shape features of transcription factor binding sites.,True,N,high,Contains database/repository keyword indicating data resource
+27580718,EURISCO: The European search catalogue for plant genetic resources.,True,N,high,Contains database/repository keyword indicating data resource
+27164438,BrucellaBase: Genome information resource.,True,N,high,Contains database/repository keyword indicating data resource
+30684219,"NeuroMuscleDB: a Database of Genes Associated with Muscle Development, Neuromuscular Diseases, Ageing, and Neurodegeneration.",True,N,high,Contains database/repository keyword indicating data resource
+31139565,HNCDB: An Integrated Gene and Drug Database for Head and Neck Cancer.,True,N,high,Contains database/repository keyword indicating data resource
+31602478,PmiREN: a comprehensive encyclopedia of plant miRNAs.,True,Y,low,Unclear from title but likely not a primary data resource
+24214998,COLOMBOS v2.0: an ever expanding collection of bacterial expression compendia.,True,N,high,Contains database/repository keyword indicating data resource
+31809863,PsyMuKB: An Integrative De Novo Variant Knowledge Base for Developmental Disorders.,True,Y,low,Unclear from title but likely not a primary data resource
+"26602691, 33313828",PSORTdb: expanding the bacteria and archaea protein subcellular localization database to better reflect diversity in cell envelope structures.,True,N,high,Contains database/repository keyword indicating data resource
+33068433,CovalentInDB: a comprehensive database facilitating the discovery of covalent inhibitors.,True,N,high,Contains database/repository keyword indicating data resource
+23482072,Tetrahymena functional genomics database (TetraFGD): an integrated resource for Tetrahymena functional genomics.,True,N,high,Contains database/repository keyword indicating data resource
+33308175,"ILDGDB: a manually curated database of genomics, transcriptomics, proteomics and drug information for interstitial lung diseases.",True,N,high,Contains database/repository keyword indicating data resource
+21801404,"Comprehensive, atomic-level characterization of structurally characterized protein-protein interactions: the PICCOLO database.",True,N,high,Contains database/repository keyword indicating data resource
+33993461,TUPDB: Target-Unrelated Peptide Data Bank.,True,N,high,Contains database/repository keyword indicating data resource
+27530928,NLDB: a database for 3D protein-ligand interactions in enzymatic reactions.,True,N,high,Contains database/repository keyword indicating data resource
+21760913,HelmCoP: an online resource for helminth functional genomics and drug and vaccine targets prioritization.,True,N,high,Contains database/repository keyword indicating data resource
+26208906,TANRIC: An Interactive Open Platform to Explore the Function of lncRNAs in Cancer.,True,Y,low,Unclear from title but likely not a primary data resource
+29892516,SEVENS: a database for comprehensive GPCR genes obtained from genomes: -Update to 68 eukaryotes.,True,N,high,Contains database/repository keyword indicating data resource
+23093603,The Online Protein Processing Resource (TOPPR): a database and analysis platform for protein processing events.,True,N,high,Contains database/repository keyword indicating data resource
+26342387,DENdb: database of integrated human enhancers.,True,N,high,Contains database/repository keyword indicating data resource
+29040693,AmyPro: a database of proteins with validated amyloidogenic regions.,True,N,high,Contains database/repository keyword indicating data resource
+33798715,COnVIDa: COVID-19 multidisciplinary data collection and dashboard.,True,N,high,Contains database/repository keyword indicating data resource
+31722398,"Allele frequency net database (AFND) 2020 update: gold-standard data classification, open access genotype data and new query tools.",True,N,high,Contains database/repository keyword indicating data resource
+30379998,dbCPM: a manually curated database for exploring the cancer passenger mutations.,True,N,high,Contains database/repository keyword indicating data resource
+33045745,SilencerDB: a comprehensive database of silencers.,True,N,high,Contains database/repository keyword indicating data resource
+22424087,PupDB: a database of pupylated proteins.,True,N,high,Contains database/repository keyword indicating data resource
+26074488,CancerHSP: anticancer herbs database of systems pharmacology.,True,N,high,Contains database/repository keyword indicating data resource
+32337573,MPTherm: database for membrane protein thermodynamics for understanding folding and stability.,True,N,high,Contains database/repository keyword indicating data resource
+33126250,MloDisDB: a manually curated database of the relations between membraneless organelles and diseases.,True,N,high,Contains database/repository keyword indicating data resource
+30184150,TRCirc: a resource for transcriptional regulation information of circRNAs.,True,N,high,Contains database/repository keyword indicating data resource
+31958638,BoMiProt: A database of bovine milk proteins.,True,N,high,Contains database/repository keyword indicating data resource
+30065744,miRVIT: A Novel miRNA Database and Its Application to Uncover <i>Vitis</i> Responses to <i>Flavescence dorée</i> Infection.,True,N,high,Contains database/repository keyword indicating data resource
+27794553,"FuzDB: database of fuzzy complexes, a tool to develop stochastic structure-function relationships for protein complexes and higher-order assemblies.",True,N,high,Contains database/repository keyword indicating data resource
+26160459,CGMD: An integrated database of cancer genes and markers.,True,N,high,Contains database/repository keyword indicating data resource
+30669929,AutophagySMDB: a curated database of small molecules that modulate protein targets regulating autophagy.,True,N,high,Contains database/repository keyword indicating data resource
+30127348,PPInS: a repository of protein-protein interaction sitesbase.,True,N,high,Contains database/repository keyword indicating data resource
+28651001,PpTFDB: A pigeonpea transcription factor database for exploring functional genomics in legumes.,True,N,high,Contains database/repository keyword indicating data resource
+31598693,"EuRBPDB: a comprehensive resource for annotation, functional and oncological investigation of eukaryotic RNA binding proteins (RBPs).",True,N,high,Contains database/repository keyword indicating data resource
+30329098,LncBook: a curated knowledgebase of human long non-coding RNAs.,True,N,high,Contains database/repository keyword indicating data resource
+25336619,PAIDB v2.0: exploration and analysis of pathogenicity and resistance islands.,True,N,high,Contains database/repository keyword indicating data resource
+30335166,RPFdb v2.0: an updated database for genome-wide information of translated mRNA generated from ribosome profiling.,True,N,high,Contains database/repository keyword indicating data resource
+22139932,"HmtDB, a genomic resource for mitochondrion-based human variability studies.",True,N,high,Contains database/repository keyword indicating data resource
+35559777,MESOCOSM: A mesocosm database management system for environmental nanosafety.,True,N,high,Contains database/repository keyword indicating data resource
+34361108,alfaNET: A Database of Alfalfa-Bacterial Stem Blight Protein-Protein Interactions Revealing the Molecular Features of the Disease-causing Bacteria.,True,N,high,Contains database/repository keyword indicating data resource
+23239846,RadishBase: a database for genomics and genetics of radish.,True,N,high,Contains database/repository keyword indicating data resource
+30371817,SEdb: a comprehensive human super-enhancer database.,True,N,high,Contains database/repository keyword indicating data resource
+25725063,PreDREM: a database of predicted DNA regulatory motifs from 349 human cell and tissue samples.,True,N,high,Contains database/repository keyword indicating data resource
+"26097510, 33952332",SANCDB: a South African natural compound database.,True,N,high,Contains database/repository keyword indicating data resource
+24531082,SMAL: A Resource of Spontaneous Mutation Accumulation Lines.,True,N,high,Contains database/repository keyword indicating data resource
+"24271385, 27794041","NGSmethDB: an updated genome resource for high quality, single-cytosine resolution methylomes.",True,N,high,Contains database/repository keyword indicating data resource
+27209279,DNetDB: The human disease network database based on dysfunctional regulation mechanism.,True,N,high,Contains database/repository keyword indicating data resource
+21936021,dbHCCvar: a comprehensive database of human genetic variations in hepatocellular carcinoma.,True,N,high,Contains database/repository keyword indicating data resource
+"28150246, 29145615",iPTMnet: Integrative Bioinformatics for Studying PTM Networks.,True,Y,low,Unclear from title but likely not a primary data resource
+24470572,ChEpiMod: a knowledgebase for chemical modulators of epigenome reader domains.,True,N,high,Contains database/repository keyword indicating data resource
+21177657,mESAdb: microRNA expression and sequence analysis database.,True,N,high,Contains database/repository keyword indicating data resource
+23129220,"SNObase, a database for S-nitrosation modification.",True,N,high,Contains database/repository keyword indicating data resource
+26476450,PlantPAN 2.0: an update of plant promoter analysis navigator for reconstructing transcriptional regulatory networks in plants.,True,Y,low,Unclear from title but likely not a primary data resource
+33166392,LitCovid: an open database of COVID-19 literature.,True,N,high,Contains database/repository keyword indicating data resource
+24146757,SIDD: a semantically integrated database towards a global view of human disease.,True,N,high,Contains database/repository keyword indicating data resource
+24589857,iLIR: A web resource for prediction of Atg8-family interacting proteins.,False,Y,medium,Contains database keyword but also methodology pattern and no URL
+30247654,HACER: an atlas of human active enhancers to interpret regulatory variants.,True,N,high,Contains database/repository keyword indicating data resource
+25392424,Expediting topology data gathering for the TOPDB database.,True,N,high,Contains database/repository keyword indicating data resource
+31584089,PhaSepDB: a database of liquid-liquid phase separation related proteins.,True,N,high,Contains database/repository keyword indicating data resource
+27822553,mockrobiota: a Public Resource for Microbiome Bioinformatics Benchmarking.,True,N,high,Contains database/repository keyword indicating data resource
+31642496,Gene4Denovo: an integrated database and analytic platform for de novo mutations in humans.,True,N,high,Contains database/repository keyword indicating data resource
+"26433226, 30715167, 33010178","BacWGSTdb, a database for genotyping and source tracking bacterial pathogens.",True,N,high,Contains database/repository keyword indicating data resource
+29860480,dbCRSR: a manually curated database for regulation of cancer radiosensitivity.,True,N,high,Contains database/repository keyword indicating data resource
+22009677,PhenoM: a database of morphological phenotypes caused by mutation of essential genes in Saccharomyces cerevisiae.,True,N,high,Contains database/repository keyword indicating data resource
+30738202,MtBrowse: An integrative genomics browser for human mitochondrial DNA.,True,N,low,Has URL and biological data terms but title unclear
+31841142,GlyMDB: Glycan Microarray Database and analysis toolset.,True,N,high,Contains database/repository keyword indicating data resource
+24958384,The gene expression database for mouse development (GXD): putting developmental expression information at your fingertips.,False,N,high,Contains database/repository keyword indicating data resource
+24203703,"CottonGen: a genomics, genetics and breeding database for cotton research.",True,N,high,Contains database/repository keyword indicating data resource
+22067445,"SCRIPDB: a portal for easy access to syntheses, chemicals and reactions in patents.",True,N,high,Contains database/repository keyword indicating data resource
+33511767,FAWMine: An integrated database and analysis platform for fall armyworm genomics.,True,N,high,Contains database/repository keyword indicating data resource
+29198880,AureoWiki ̵ The repository of the Staphylococcus aureus research and annotation community.,True,N,high,Contains database/repository keyword indicating data resource
+27138013,StreptoBase: An Oral Streptococcus mitis Group Genomic Resource and Analysis Platform.,True,N,high,Contains database/repository keyword indicating data resource
+22659240,CancerProView: a graphical image database of cancer-related genes and proteins.,True,N,high,Contains database/repository keyword indicating data resource
+26424083,MGDB: a comprehensive database of genes involved in melanoma.,True,N,high,Contains database/repository keyword indicating data resource
+22084198,PLEXdb: gene expression resources for plants and plant pathogens.,True,N,high,Contains database/repository keyword indicating data resource
+25336620,The Biobanking Analysis Resource Catalogue (BARCdb): a new research tool for the analysis of biobank samples.,False,Y,medium,Contains database keyword but also methodology pattern and no URL
+32858223,hTFtarget: A Comprehensive Database for Regulations of Human Transcription Factors and Their Targets.,True,N,high,Contains database/repository keyword indicating data resource
+33515030,HVIDB: a comprehensive database for human-virus protein-protein interactions.,True,N,high,Contains database/repository keyword indicating data resource
+31160594,"PathoPhenoDB, linking human pathogens to their phenotypes in support of infectious disease research.",True,N,high,Contains database/repository keyword indicating data resource
+28327601,BCIP: a gene-centered platform for identifying potential regulatory genes in breast cancer.,True,Y,medium,Methodology/tool paper despite having URL
+22102771,EuDBase: An online resource for automated EST analysis pipeline (ESTFrontier) and database for red seaweed Eucheuma denticulatum.,True,N,high,Contains database/repository keyword indicating data resource
+26657893,"HRGRN: A Graph Search-Empowered Integrative Database of Arabidopsis Signaling Transduction, Metabolism and Gene Regulation Networks.",True,N,high,Contains database/repository keyword indicating data resource
+22024348,HNOCDB: a comprehensive database of genes and miRNAs relevant to head and neck and oral cancer.,True,N,high,Contains database/repository keyword indicating data resource
+30423142,miRBase: from microRNA sequences to function.,True,N,low,Has URL and biological data terms but title unclear
+34464437,lncExplore: a database of pan-cancer analysis and systematic functional annotation for lncRNAs from RNA-sequencing data.,True,N,high,Contains database/repository keyword indicating data resource
+29036329,m6AVar: a database of functional variants involved in m6A modification.,True,N,high,Contains database/repository keyword indicating data resource
+"23143270, 27606777",The ConsensusPathDB interaction database: 2013 update.,True,N,high,Contains database/repository keyword indicating data resource
+28890946,OncoKB: A Precision Oncology Knowledge Base.,True,Y,low,Unclear from title but likely not a primary data resource
+28967693,HUMA: A platform for the analysis of genetic variation in humans.,True,Y,medium,Methodology/tool paper despite having URL
+27924038,FARNA: knowledgebase of inferred functions of non-coding RNA transcripts.,True,N,high,Contains database/repository keyword indicating data resource
+34314366,dbMCS: A Database for Exploring the Mutation Markers of Anti-Cancer Drug Sensitivity.,True,N,high,Contains database/repository keyword indicating data resource
+25932650,TMREC: A Database of Transcription Factor and MiRNA Regulatory Cascades in Human Diseases.,True,N,high,Contains database/repository keyword indicating data resource
+31581093,DORMAN: Database of Reconstructed MetAbolic Networks.,True,N,high,Contains database/repository keyword indicating data resource
+29228298,SeedStor: A Germplasm Information Management System and Public Database.,True,N,high,Contains database/repository keyword indicating data resource
+32542382,PRMdb: A Repository of Predicted RNA Modifications in Plants.,True,N,high,Contains database/repository keyword indicating data resource
+22833564,NESdb: a database of NES-containing CRM1 cargoes.,True,N,high,Contains database/repository keyword indicating data resource
+33068412,RASP: an atlas of transcriptome-wide RNA secondary structure probing data.,True,N,high,Contains database/repository keyword indicating data resource
+25627341,SynBioLGDB: a resource for experimentally validated logic gates in synthetic biology.,True,N,high,Contains database/repository keyword indicating data resource
+26573482,"WIDDE: a Web-Interfaced next generation database for genetic diversity exploration, with a first application in cattle.",True,N,high,Contains database/repository keyword indicating data resource
+23046413,PAGED: a pathway and gene-set enrichment database to enable molecular phenotype discoveries.,True,N,high,Contains database/repository keyword indicating data resource
+30476229,ENPD - A Database of Eukaryotic Nucleic Acid Binding Proteins: Linking Gene Regulations to Proteins.,True,N,high,Contains database/repository keyword indicating data resource
+22102581,ProRepeat: an integrated repository for studying amino acid tandem repeats in proteins.,True,N,high,Contains database/repository keyword indicating data resource
+32510549,DenvInD: dengue virus inhibitors database for clinical and molecular research.,True,N,high,Contains database/repository keyword indicating data resource
+31832668,AcetoBase: a functional gene repository and database for formyltetrahydrofolate synthetase sequences.,True,N,high,Contains database/repository keyword indicating data resource
+32608478,"RNAWRE: a resource of writers, readers and erasers of RNA modifications.",True,N,high,Contains database/repository keyword indicating data resource
+29045713,SCPortalen: human and mouse single-cell centric database.,True,N,high,Contains database/repository keyword indicating data resource
+22123737,hiPathDB: a human-integrated pathway database with facile visualization.,True,N,high,Contains database/repository keyword indicating data resource
+31171447,"SynGO: An Evidence-Based, Expert-Curated Knowledge Base for the Synapse.",True,Y,low,Unclear from title but likely not a primary data resource
+24297255,iPfam: a database of protein family and domain interactions found in the Protein Data Bank.,True,N,high,Contains database/repository keyword indicating data resource
+22080556,"CoryneRegNet 6.0--Updated database content, new analysis methods and novel features focusing on community demands.",True,N,high,Contains database/repository keyword indicating data resource
+29106599,ASpedia: a comprehensive encyclopedia of human alternative splicing.,True,Y,low,Unclear from title but likely not a primary data resource
+"22135302, 27899673",DiseaseMeth: a human disease methylation database.,True,N,high,Contains database/repository keyword indicating data resource
+31725863,GRONS: a comprehensive genetic resource of nicotine and smoking.,True,N,high,Contains database/repository keyword indicating data resource
+28732212,UALCAN: A Portal for Facilitating Tumor Subgroup Gene Expression and Survival Analyses.,True,N,high,Contains database/repository keyword indicating data resource
+29370821,PhenoDis: a comprehensive database for phenotypic characterization of rare cardiac diseases.,True,N,high,Contains database/repository keyword indicating data resource
+22140108,CharProtDB: a database of experimentally characterized protein annotations.,True,N,high,Contains database/repository keyword indicating data resource
+31584099,gutMDisorder: a comprehensive database for dysbiosis of the gut microbiota in disorders and interventions.,True,N,high,Contains database/repository keyword indicating data resource
+25392425,Rfam 12.0: updates to the RNA families database.,True,N,high,Contains database/repository keyword indicating data resource
+33068436,tsRBase: a comprehensive database for expression and function of tsRNAs in multiple species.,True,N,high,Contains database/repository keyword indicating data resource
+24297257,NECTAR: a database of codon-centric missense variant annotations.,True,N,high,Contains database/repository keyword indicating data resource
+30733462,PFDB: A standardized protein folding database with temperature correction.,True,N,high,Contains database/repository keyword indicating data resource
+33645624,"An update of KAIKObase, the silkworm genome database.",True,N,high,Contains database/repository keyword indicating data resource
+32025315,CitGVD: a comprehensive database of citrus genomic variations.,True,N,high,Contains database/repository keyword indicating data resource
+30268934,GAAD: A Gene and Autoimmiune Disease Association Database.,True,N,high,Contains database/repository keyword indicating data resource
+29931156,RBPMetaDB: a comprehensive annotation of mouse RNA-Seq datasets with perturbations of RNA-binding proteins.,True,N,high,Contains database/repository keyword indicating data resource
+22110032,DAMPD: a manually curated antimicrobial peptide database.,True,N,high,Contains database/repository keyword indicating data resource
+25058394,IthaGenes: an interactive database for haemoglobin variations and epidemiology.,True,N,high,Contains database/repository keyword indicating data resource
+23897986,EADB: an estrogenic activity database for assessing potential endocrine activity.,True,N,high,Contains database/repository keyword indicating data resource
+29069402,SEECancer: a resource for somatic events in evolution of cancer genome.,True,N,high,Contains database/repository keyword indicating data resource
+25404137,SuperFly: a comparative database for quantified spatio-temporal gene expression patterns in early dipteran embryos.,True,N,high,Contains database/repository keyword indicating data resource
+23292601,PRIMe Update: innovative content for plant metabolomics and integration of gene expression and metabolite accumulation.,True,N,low,Has URL and biological data terms but title unclear
+27511743,VHLdb: A database of von Hippel-Lindau protein interactors and mutations.,True,N,high,Contains database/repository keyword indicating data resource
+29059366,SBCDDB: Sleeping Beauty Cancer Driver Database for gene discovery in mouse models of human cancers.,True,N,high,Contains database/repository keyword indicating data resource
+23452239,Establishment of the Lotus japonicus Gene Expression Atlas (LjGEA) and its use to explore legume seed maturation.,True,N,high,Contains database/repository keyword indicating data resource
+34736471,BDdb: a comprehensive platform for exploration and utilization of birth defect multi-omics data.,True,N,high,Contains database/repository keyword indicating data resource
+33995899,DRscDB: A single-cell RNA-seq resource for data mining and data comparison across species.,True,N,high,Contains database/repository keyword indicating data resource
+33245777,3DIV update for 2021: a comprehensive resource of 3D genome and 3D cancer genome.,True,N,high,Contains database/repository keyword indicating data resource
+27899581,"HmtDB 2016: data update, a better performing query system and human mitochondrial DNA haplogroup predictor.",True,N,high,Contains database/repository keyword indicating data resource
+25805861,SRD: a Staphylococcus regulatory RNA database.,True,N,high,Contains database/repository keyword indicating data resource
+32496513,gutMEGA: a database of the human gut MEtaGenome Atlas.,True,N,high,Contains database/repository keyword indicating data resource
+26590264,MutationAligner: a resource of recurrent mutation hotspots in protein domains in cancer.,True,N,high,Contains database/repository keyword indicating data resource
+29112749,PGG.Population: a database for understanding the genomic diversity and genetic ancestry of human populations.,True,N,high,Contains database/repository keyword indicating data resource
+24363285,Plant Genome DataBase Japan (PGDBj): a portal website for the integration of plant genome-related databases.,True,N,high,Contains database/repository keyword indicating data resource
+23110448,YeastIP: a database for identification and phylogeny of Saccharomycotina yeasts.,True,N,high,Contains database/repository keyword indicating data resource
+31640730,NARD: whole-genome reference panel of 1779 Northeast Asians improves imputation accuracy of rare and low-frequency variants.,True,Y,low,Unclear from title but likely not a primary data resource
+30245835,PGD: Pineapple Genomics Database.,True,N,high,Contains database/repository keyword indicating data resource
+24700709,The Developmental Brain Disorders Database (DBDB): a curated neurogenetics knowledge base with clinical and research applications.,True,N,high,Contains database/repository keyword indicating data resource
+29992323,CeleryDB: a genomic database for celery.,True,N,high,Contains database/repository keyword indicating data resource
+28704505,CSmiRTar: Condition-Specific microRNA targets database.,True,N,high,Contains database/repository keyword indicating data resource
+34536568,SmProt: A Reliable Repository with Comprehensive Annotation of Small Proteins Identified from Ribosome Profiling.,True,N,high,Contains database/repository keyword indicating data resource
+30357367,CORUM: the comprehensive resource of mammalian protein complexes-2019.,True,N,high,Contains database/repository keyword indicating data resource
+25414355,rrnDB: improved tools for interpreting rRNA gene abundance in bacteria and archaea and a new foundation for future development.,True,N,high,Contains database/repository keyword indicating data resource
+"22782549, 25399423",dbSNO: a database of cysteine S-nitrosylation.,True,N,high,Contains database/repository keyword indicating data resource
+23493402,"CathaCyc, a metabolic pathway database built from Catharanthus roseus RNA-Seq data.",True,N,high,Contains database/repository keyword indicating data resource
+31696235,MGnify: the microbiome analysis resource in 2020.,True,N,high,Contains database/repository keyword indicating data resource
+30476305,LncACTdb 2.0: an updated database of experimentally supported ceRNA interactions curated from low- and high-throughput experiments.,True,N,high,Contains database/repository keyword indicating data resource
+24994456,BorreliaBase: a phylogeny-centered browser of Borrelia genomes.,True,Y,low,Unclear from title but likely not a primary data resource
+33539279,BSGatlas: a unified <i>Bacillus subtilis</i> genome and transcriptome annotation atlas with enhanced information access.,True,N,high,Contains database/repository keyword indicating data resource
+"22039153, 25361970, 30321395",PomBase: a comprehensive online resource for fission yeast.,True,N,high,Contains database/repository keyword indicating data resource
+26504143,PDID: database of molecular-level putative protein-drug interactions in the structural human proteome.,True,N,high,Contains database/repository keyword indicating data resource
+26464443,RMBase: a resource for decoding the landscape of RNA modifications from high-throughput sequencing data.,True,N,high,Contains database/repository keyword indicating data resource
+25332394,lncRNAdb v2.0: expanding the reference database for functional long noncoding RNAs.,True,N,high,Contains database/repository keyword indicating data resource
+31586405,MatrisomeDB: the ECM-protein knowledge database.,True,N,high,Contains database/repository keyword indicating data resource
+31670377,NPInter v4.0: an integrated database of ncRNA interactions.,True,N,high,Contains database/repository keyword indicating data resource
+28605773,"BioM2MetDisease: a manually curated database for associations between microRNAs, metabolites, small molecules and metabolic diseases.",True,N,high,Contains database/repository keyword indicating data resource
+27582018,ANGIOGENES: knowledge database for protein-coding and noncoding RNA genes in endothelial cells.,True,N,high,Contains database/repository keyword indicating data resource
+29106613,3DIV: A 3D-genome Interaction Viewer and database.,True,N,high,Contains database/repository keyword indicating data resource
+24253300,"InvFEST, a database integrating information of polymorphic inversions in the human genome.",True,N,high,Contains database/repository keyword indicating data resource
+33849445,TANTIGEN 2.0: a knowledge base of tumor T cell antigens and epitopes.,True,Y,low,Unclear from title but likely not a primary data resource
+22058132,PlantNATsDB: a comprehensive database of plant natural antisense transcripts.,True,N,high,Contains database/repository keyword indicating data resource
+31094220,AmyCo: the amyloidoses collection.,True,N,high,Contains database/repository keyword indicating data resource
+25414335,ProteomeScout: a repository and analysis resource for post-translational modifications and proteins.,True,N,high,Contains database/repository keyword indicating data resource
+31605615,LeGOO: An Expertized Knowledge Database for the Model Legume Medicago truncatula.,True,N,high,Contains database/repository keyword indicating data resource
+24185698,LSD 2.0: an update of the leaf senescence database.,True,N,high,Contains database/repository keyword indicating data resource
+29433427,MethCNA: a database for integrating genomic and epigenomic data in human cancer.,True,N,high,Contains database/repository keyword indicating data resource
+27553277,Cysteinome: The first comprehensive database for proteins with targetable cysteine and their covalent inhibitors.,True,N,high,Contains database/repository keyword indicating data resource
+28025349,viruSITE-integrated database for viral genomics.,True,N,high,Contains database/repository keyword indicating data resource
+26699919,ECGene: A Literature-Based Knowledgebase of Endometrial Cancer Genes.,True,N,high,Contains database/repository keyword indicating data resource
+30329142,CancerSEA: a cancer single-cell state atlas.,True,N,high,Contains database/repository keyword indicating data resource
+30053266,TC3A: The Cancer 3' UTR Atlas.,True,N,high,Contains database/repository keyword indicating data resource
+26578555,"SugarBindDB, a resource of glycan-mediated host-pathogen interactions.",True,N,high,Contains database/repository keyword indicating data resource
+"22135289, 24319143",MMDB: 3D structures and macromolecular interactions.,True,N,high,Contains database/repository keyword indicating data resource
+"24297256, 27899644",NCBI's Database of Genotypes and Phenotypes: dbGaP.,True,N,high,Contains database/repository keyword indicating data resource
+30357418,Editome Disease Knowledgebase (EDK): a curated knowledgebase of editome-disease associations in human.,True,N,high,Contains database/repository keyword indicating data resource
+25725060,"MnTEdb, a collective resource for mulberry transposable elements.",True,N,high,Contains database/repository keyword indicating data resource
+31979981,CPAD 2.0: a repository of curated experimental data on aggregating proteins and peptides.,True,N,high,Contains database/repository keyword indicating data resource
+"24174543, 26953092",Hemolytik: a database of experimentally determined hemolytic and non-hemolytic peptides.,True,N,high,Contains database/repository keyword indicating data resource
+30395310,"Vesiclepedia 2019: a compendium of RNA, proteins, lipids and metabolites in extracellular vesicles.",True,N,low,Has URL and biological data terms but title unclear
+26138588,SmedGD 2.0: The Schmidtea mediterranea genome database.,True,N,high,Contains database/repository keyword indicating data resource
+29934697,Chinese lexical database (CLD) : A large-scale lexical database for simplified Mandarin Chinese.,True,N,high,Contains database/repository keyword indicating data resource
+30985146,ProteinExplorer: A Repository-Scale Resource for Exploration of Protein Detection in Public Mass Spectrometry Data Sets.,True,N,high,Contains database/repository keyword indicating data resource
+24475242,MetaMetaDB: a database and analytic system for investigating microbial habitability.,True,N,high,Contains database/repository keyword indicating data resource
+25725059,LocSigDB: a database of protein localization signals.,True,N,high,Contains database/repository keyword indicating data resource
+27799467,OGEE v2: an update of the online gene essentiality database with special focus on differentially essential genes in human cancer cell lines.,True,N,high,Contains database/repository keyword indicating data resource
+30357353,piRTarBase: a database of piRNA targeting sites and their roles in gene regulation.,True,N,high,Contains database/repository keyword indicating data resource
+22397531,AtPAN: an integrated system for reconstructing transcriptional regulatory networks in Arabidopsis thaliana.,True,Y,low,Unclear from title but likely not a primary data resource
+27701074,"CeNDR, the Caenorhabditis elegans natural diversity resource.",True,N,high,Contains database/repository keyword indicating data resource
+24170407,PRALINE: a versatile multiple sequence alignment toolkit.,True,N,low,Has URL and biological data terms but title unclear
+24952385,ShrimpGPAT: a gene and protein annotation tool for knowledge sharing and gene discovery in shrimp.,True,Y,medium,Methodology/tool paper despite having URL
+24939193,'RetinoGenetics': a comprehensive mutation database for genes related to inherited retinal degeneration.,True,N,high,Contains database/repository keyword indicating data resource
+25982315,GraP: platform for functional genomics analysis of Gossypium raimondii.,True,Y,medium,Methodology/tool paper despite having URL
+23262288,"LepChorionDB, a database of Lepidopteran chorion proteins and a set of tools useful for the identification of chorion proteins in Lepidopteran proteomes.",True,N,high,Contains database/repository keyword indicating data resource
+33685383,lncRNADetector: a bioinformatics pipeline for long non-coding RNA identification and MAPslnc: a repository of medicinal and aromatic plant lncRNAs.,True,N,high,Contains database/repository keyword indicating data resource
+"23599415, 24304896",Preliminary evaluation of the CellFinder literature curation pipeline for gene expression in kidney cells and anatomical parts.,True,Y,medium,Methodology/tool paper despite having URL
+30285246,CRISPRlnc: a manually curated database of validated sgRNAs for lncRNAs.,True,N,high,Contains database/repository keyword indicating data resource
+32540200,BGVD: An Integrated Database for Bovine Sequencing Variations and Selective Signatures.,True,N,high,Contains database/repository keyword indicating data resource
+33693667,"UbiNet 2.0: a verified, classified, annotated and updated database of E3 ubiquitin ligase-substrate interactions.",True,N,high,Contains database/repository keyword indicating data resource
+33529633,CRMarker: A manually curated comprehensive resource of cancer RNA markers.,True,N,high,Contains database/repository keyword indicating data resource
+22134927,hUbiquitome: a database of experimentally verified ubiquitination cascades in humans.,True,N,high,Contains database/repository keyword indicating data resource
+31648227,MANET 3.0: Hierarchy and modularity in evolving metabolic networks.,True,Y,low,Unclear from title but likely not a primary data resource
+33219693,AtMAD: Arabidopsis thaliana multi-omics association database.,True,N,high,Contains database/repository keyword indicating data resource
+32008039,EPSD: a well-annotated data resource of protein phosphorylation sites in eukaryotes.,True,N,high,Contains database/repository keyword indicating data resource
+23144492,MSDB: a user-friendly program for reporting distribution and building databases of microsatellites from genome sequences.,True,N,high,Contains database/repository keyword indicating data resource
+"22369646, 27766951, 27987168",Soybean Knowledge Base (SoyKB): a web resource for soybean translational genomics.,True,N,high,Contains database/repository keyword indicating data resource
+25294826,MethBank: a database integrating next-generation sequencing single-base-resolution DNA methylation programming data.,True,N,high,Contains database/repository keyword indicating data resource
+34733322,Gene4HL: An Integrated Genetic Database for Hearing Loss.,True,N,high,Contains database/repository keyword indicating data resource
+28595571,CottonFGD: an integrated functional genomics database for cotton.,True,N,high,Contains database/repository keyword indicating data resource
+22086948,MetaCrop 2.0: managing and exploring information about crop plant metabolism.,True,Y,low,Unclear from title but likely not a primary data resource
+21272355,"Animal model integration to AutDB, a genetic database for autism.",False,N,high,Contains database/repository keyword indicating data resource
+25792605,TeloPIN: a database of telomeric proteins interaction network in mammalian cells.,True,N,high,Contains database/repository keyword indicating data resource
+26322998,CTDB: An Integrated Chickpea Transcriptome Database for Functional and Applied Genomics.,True,N,high,Contains database/repository keyword indicating data resource
+24209780,CEG: a database of essential gene clusters.,True,N,high,Contains database/repository keyword indicating data resource
+24302289,EDdb: a web resource for eating disorder and its application to identify an extended adipocytokine signaling pathway related to eating disorder.,True,N,high,Contains database/repository keyword indicating data resource
+"29069501, 33179747",jMorp: Japanese Multi Omics Reference Panel.,True,Y,low,Unclear from title but likely not a primary data resource
+34060634,DrugComb update: a more comprehensive drug sensitivity data repository and analysis portal.,True,N,high,Contains database/repository keyword indicating data resource
+23094086,miRandola: extracellular circulating microRNAs database.,True,N,high,Contains database/repository keyword indicating data resource
+28529077,PLMD: An updated data resource of protein lysine modifications.,True,N,high,Contains database/repository keyword indicating data resource
+26656885,Kiwifruit Information Resource (KIR): a comparative platform for kiwifruit genomics.,True,N,high,Contains database/repository keyword indicating data resource
+22070882,Crystallography Open Database (COD): an open-access collection of crystal structures and platform for world-wide collaboration.,True,N,high,Contains database/repository keyword indicating data resource
+25075616,SNP@lincTFBS: an integrated database of polymorphisms in human LincRNA transcription factor binding sites.,True,N,high,Contains database/repository keyword indicating data resource
+29455297,Pan European Phenological database (PEP725): a single point of access for European data.,True,N,high,Contains database/repository keyword indicating data resource
+34389843,Nabe: an energetic database of amino acid mutations in protein-nucleic acid binding interfaces.,True,N,high,Contains database/repository keyword indicating data resource
+23203890,OrysPSSP: a comparative platform for small secreted proteins from rice and other plants.,True,Y,medium,Methodology/tool paper despite having URL
+33125652,Navigating the Global Protein-Protein Interaction Landscape Using iRefWeb.,True,N,low,Has URL and biological data terms but title unclear
+30481257,SkeletalVis: an exploration and meta-analysis data portal of cross-species skeletal transcriptomics data.,True,N,high,Contains database/repository keyword indicating data resource
+23314754,"STIFDB2: an updated version of plant stress-responsive transcription factor database with additional stress signals, stress-responsive transcription factor binding sites and stress-responsive genes in Arabidopsis and rice.",True,N,high,Contains database/repository keyword indicating data resource
+"24297252, 26582926, 30418610",eggNOG v4.0: nested orthology inference across 3686 organisms.,True,Y,low,Unclear from title but likely not a primary data resource
+29761470,Navigating the i5k Workspace@NAL: A Resource for Arthropod Genomes.,False,N,high,Contains database/repository keyword indicating data resource
+31612325,PlantAFP: a curated database of plant-origin antifungal peptides.,True,N,high,Contains database/repository keyword indicating data resource
+28184254,NPCARE: database of natural products and fractional extracts for cancer regulation.,True,N,high,Contains database/repository keyword indicating data resource
+31783725,HKPocket: human kinase pocket database for drug design.,True,N,high,Contains database/repository keyword indicating data resource
+26251998,PhenomeCentral: a portal for phenotypic and genotypic matchmaking of patients with rare genetic diseases.,True,N,high,Contains database/repository keyword indicating data resource
+29069520,"RNArchitecture: a database and a classification system of RNA families, with a focus on structural information.",True,N,high,Contains database/repository keyword indicating data resource
+27940610,RPAN: rice pan-genome browser for ∼3000 rice genomes.,True,Y,low,Unclear from title but likely not a primary data resource
+30053269,PITDB: a database of translated genomic elements.,True,N,high,Contains database/repository keyword indicating data resource
+29186335,The OncoPPi Portal: an integrative resource to explore and prioritize protein-protein interactions for cancer target discovery.,True,N,high,Contains database/repository keyword indicating data resource
+31629694,PerMemDB: A database for eukaryotic peripheral membrane proteins.,True,N,high,Contains database/repository keyword indicating data resource
+28158643,PlantExpress: A Database Integrating OryzaExpress and ArthaExpress for Single-species and Cross-species Gene Expression Network Analyses with Microarray-Based Transcriptome Data.,True,N,high,Contains database/repository keyword indicating data resource
+29917040,MPD: a pathogen genome and metagenome database.,True,N,high,Contains database/repository keyword indicating data resource
+31637139,ncRNA2MetS: a manually curated database for non-coding RNAs associated with metabolic syndrome.,True,N,high,Contains database/repository keyword indicating data resource
+32179762,"Hepamine - A Liver Disease Microarray Database, Visualization Platform and Data-Mining Resource.",True,N,high,Contains database/repository keyword indicating data resource
+24150938,GEISHA: an evolving gene expression resource for the chicken embryo.,True,N,high,Contains database/repository keyword indicating data resource
+23500449,"The DEER database: a bridge connecting drugs, environmental effects, and regulations.",True,N,high,Contains database/repository keyword indicating data resource
+31813695,Using research to guide practice: The Physiotherapy Evidence Database (PEDro).,False,N,high,Contains database/repository keyword indicating data resource
+26452372,WaspAtlas: a Nasonia vitripennis gene database and analysis platform.,True,N,high,Contains database/repository keyword indicating data resource
+"26578570, 30496475",PlanMine--a mineable resource of planarian biology and biodiversity.,True,N,high,Contains database/repository keyword indicating data resource
+33264401,"A new decade and new data at SoyBase, the USDA-ARS soybean genetics and genomics database.",True,N,high,Contains database/repository keyword indicating data resource
+24275491,PhylomeDB v4: zooming into the plurality of evolutionary histories of a genome.,True,N,high,Contains database/repository keyword indicating data resource
+30367574,CamurWeb: a classification software and a large knowledge base for gene expression data of cancer.,True,N,low,Has URL and biological data terms but title unclear
+31620162,MPIC: Molecular Prognostic Indicators in Cirrhosis Database for Clinical Context-Specific &lt;i&gt;in Silico&lt;/i&gt; Prognostic Biomarker Validation.,True,N,high,Contains database/repository keyword indicating data resource
+23798489,eFG: an electronic resource for Fusarium graminearum.,True,N,high,Contains database/repository keyword indicating data resource
+"29126216, 33245774","PAGER 2.0: an update to the pathway, annotated-list and gene-signature electronic repository for Human Network Biology.",True,N,high,Contains database/repository keyword indicating data resource
+24816183,TuberQ: a Mycobacterium tuberculosis protein druggability database.,True,N,high,Contains database/repository keyword indicating data resource
+23935057,"metabolicMine: an integrated genomics, genetics and proteomics data warehouse for common metabolic disease research.",True,N,low,Has URL and biological data terms but title unclear
+25951377,DeTEXT: A Database for Evaluating Text Extraction from Biomedical Literature Figures.,True,N,high,Contains database/repository keyword indicating data resource
+33237329,MobiDB: intrinsically disordered proteins in 2021.,True,N,high,Contains database/repository keyword indicating data resource
+27650316,DBSecSys 2.0: a database of Burkholderia mallei and Burkholderia pseudomallei secretion systems.,True,N,high,Contains database/repository keyword indicating data resource
+22022467,HIVsirDB: a database of HIV inhibiting siRNAs.,True,N,high,Contains database/repository keyword indicating data resource
+26481352,DIDA: A curated and annotated digenic diseases database.,True,N,high,Contains database/repository keyword indicating data resource
+31844835,GenFam: A web application and database for gene family-based classification and functional enrichment analysis.,True,N,high,Contains database/repository keyword indicating data resource
+29997612,CDG: An Online Server for Detecting Biologically Closest Disease-Causing Genes and its Application to Primary Immunodeficiency.,True,N,low,Has URL and biological data terms but title unclear
+24675620,TIBS: a web database to browse gene expression in irritable bowel syndrome.,True,N,high,Contains database/repository keyword indicating data resource
+23825543,LAMP: A Database Linking Antimicrobial Peptides.,True,N,high,Contains database/repository keyword indicating data resource
+25475113,CBMAR: a comprehensive β-lactamase molecular annotation resource.,True,N,high,Contains database/repository keyword indicating data resource
+31945268,Using the MINT Database to Search Protein Interactions.,False,N,high,Contains database/repository keyword indicating data resource
+"27076336, 30887928",A Cohesive and Integrated Platform for Immunogenicity Prediction.,True,Y,medium,Methodology/tool paper despite having URL
+33147622,KNIndex: a comprehensive database of physicochemical properties for k-tuple nucleotides.,True,N,high,Contains database/repository keyword indicating data resource
+27017950,NeisseriaBase: a specialised Neisseria genomic resource and analysis platform.,True,N,high,Contains database/repository keyword indicating data resource
+21177659,TMPad: an integrated structural database for helix-packing folds in transmembrane proteins.,True,N,high,Contains database/repository keyword indicating data resource
+31906603,RNAInter in 2020: RNA interactome repository with increased coverage and annotation.,True,N,high,Contains database/repository keyword indicating data resource
+29045725,StemMapper: a curated gene expression database for stem cell lineage analysis.,True,N,high,Contains database/repository keyword indicating data resource
+24270047,ProfileDB: a resource for proteomics and cross-omics biomarker discovery.,True,N,high,Contains database/repository keyword indicating data resource
+28592645,Inbred Strain Variant Database (ISVdb): A Repository for Probabilistically Informed Sequence Differences Among the Collaborative Cross Strains and Their Founders.,True,N,high,Contains database/repository keyword indicating data resource
+30364956,HMDD v3.0: a database for experimentally supported human microRNA-disease associations.,True,N,high,Contains database/repository keyword indicating data resource
+27681445,MPD3: a useful medicinal plants database for drug designing.,True,N,high,Contains database/repository keyword indicating data resource
+33174603,Datanator: an integrated database of molecular data for quantitatively modeling cellular behavior.,True,N,high,Contains database/repository keyword indicating data resource
+30289549,CellMarker: a manually curated resource of cell markers in human and mouse.,True,N,high,Contains database/repository keyword indicating data resource
+24001185,inTB - a data integration platform for molecular and clinical epidemiological analysis of tuberculosis.,True,Y,medium,Methodology/tool paper despite having URL
+25378336,The GOA database: gene Ontology annotation updates for 2015.,True,N,high,Contains database/repository keyword indicating data resource
+28013278,ThaleMine: A Warehouse for Arabidopsis Data Integration and Discovery.,True,N,low,Has URL and biological data terms but title unclear
+30371819,MoonDB 2.0: an updated database of extreme multifunctional and moonlighting proteins.,True,N,high,Contains database/repository keyword indicating data resource
+33084874,OGEE v3: Online GEne Essentiality database with increased coverage of organisms and human cell lines.,True,N,high,Contains database/repository keyword indicating data resource
+33938221,D3DistalMutation: a Database to Explore the Effect of Distal Mutations on Enzyme Activity.,True,N,high,Contains database/repository keyword indicating data resource
+31978081,All of gene expression (AOE): An integrated index for public gene expression databases.,True,N,high,Contains database/repository keyword indicating data resource
+27543076,RNALocate: a resource for RNA subcellular localizations.,True,N,high,Contains database/repository keyword indicating data resource
+32976581,STAB: a spatio-temporal cell atlas of the human brain.,True,N,high,Contains database/repository keyword indicating data resource
+33965348,GGVD: A goat genome variation database for tracking the dynamic evolutionary process of selective signatures and ancient introgressions.,True,N,high,Contains database/repository keyword indicating data resource
+24705206,FixPred: a resource for correction of erroneous protein sequences.,True,N,high,Contains database/repository keyword indicating data resource
+33221926,HumanMetagenomeDB: a public repository of curated and standardized metadata for human metagenomes.,True,N,high,Contains database/repository keyword indicating data resource
+25260589,FOAM (Functional Ontology Assignments for Metagenomes): a Hidden Markov Model (HMM) database with environmental focus.,True,N,high,Contains database/repository keyword indicating data resource
+30365026,Victors: a web-based knowledge base of virulence factors in human and animal pathogens.,True,Y,low,Unclear from title but likely not a primary data resource
+30380087,SymMap: an integrative database of traditional Chinese medicine enhanced by symptom mapping.,True,N,high,Contains database/repository keyword indicating data resource
+"25414345, 30445555",The SUPERFAMILY 1.75 database in 2014: a doubling of data.,True,N,high,Contains database/repository keyword indicating data resource
+32183712,CuAS: a database of annotated transcripts generated by alternative splicing in cucumbers.,True,N,high,Contains database/repository keyword indicating data resource
+31123286,AICD: an integrated anti-inflammatory compounds database for drug discovery.,True,N,high,Contains database/repository keyword indicating data resource
+26110276,BGD: a database of bat genomes.,True,N,high,Contains database/repository keyword indicating data resource
+30668638,CMEP: a database for circulating microRNA expression profiling.,True,N,high,Contains database/repository keyword indicating data resource
+24441647,"An Overview of the Challenges in Designing, Integrating, and Delivering BARD: A Public Chemical-Biology Resource and Query Portal for Multiple Organizations, Locations, and Disciplines.",False,N,high,Contains database/repository keyword indicating data resource
+23874618,NanoMiner - integrative human transcriptomics data resource for nanoparticle research.,True,N,high,Contains database/repository keyword indicating data resource
+"24270788, 26590263",Lynx: a database and knowledge extraction engine for integrative medicine.,True,N,high,Contains database/repository keyword indicating data resource
+23143109,HemaExplorer: a database of mRNA expression profiles in normal and malignant haematopoiesis.,True,N,high,Contains database/repository keyword indicating data resource
+23815411,Analysis and consensus of currently available intrinsic protein disorder annotation sources in the MobiDB database.,False,N,high,Contains database/repository keyword indicating data resource
+24678734,Research resource: EPSLiM: ensemble predictor for short linear motifs in nuclear hormone receptors.,True,N,high,Contains database/repository keyword indicating data resource
+29126285,ReMap 2018: an updated atlas of regulatory regions from an integrative analysis of DNA-binding ChIP-seq experiments.,True,N,high,Contains database/repository keyword indicating data resource
+25326239,DEOP: a database on osmoprotectants and associated pathways.,True,N,high,Contains database/repository keyword indicating data resource
+32780568,How to Illuminate the Dark Proteome Using the Multi-omic OpenProt Resource.,True,N,high,Contains database/repository keyword indicating data resource
+26519404,Gramene: A Resource for Comparative Analysis of Plants Genomes and Pathways.,False,N,high,Contains database/repository keyword indicating data resource
+"22075997, 24293645, 26590256",STITCH 3: zooming in on protein-chemical interactions.,True,N,low,Has URL and biological data terms but title unclear

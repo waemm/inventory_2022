@@ -17,7 +17,7 @@ The **Unified Bioresource Pipeline** is a complete, reproducible end-to-end syst
 - **🤖 Multiple ML Models:** RoBERTa, PyCaret, spaCy, SetFit
 - **📊 Comprehensive Validation:** URL scanning, linguistic filtering, deduplication
 - **📝 Complete Documentation:** Every script, model, and decision documented
-- **🚀 Production Ready:** Used to generate 974 validated bioresources
+- **🚀 Production Ready:** Used to generate 1,945 validated bioresources
 
 ---
 
@@ -83,7 +83,24 @@ The **Unified Bioresource Pipeline** is a complete, reproducible end-to-end syst
 │ Time: 5 minutes + manual review                           │
 └───────────────────────────────────────────────────────────┘
     ↓
-~974 Unique Validated Bioresources ✅
+┌───────────────────────────────────────────────────────────┐
+│ PHASE 8: URL RECOVERY (NEW)                              │
+│ • Identify records missing URLs (~25%)                   │
+│ • Search abstracts & fulltext (EPMC API)                 │
+│ • Prepare web search chunks for agents                   │
+│ • Merge agent results back                               │
+│ Time: ~5 min (automated) + agent web search              │
+└───────────────────────────────────────────────────────────┘
+    ↓
+┌───────────────────────────────────────────────────────────┐
+│ PHASE 9: FINALIZATION                                     │
+│ • Merge recovered URLs into inventory                    │
+│ • Add final quality indicators                           │
+│ • Generate final bioresource output                      │
+│ Time: 5-10 minutes                                        │
+└───────────────────────────────────────────────────────────┘
+    ↓
+~1,945 Unique Validated Bioresources ✅
 ```
 
 ---
@@ -158,10 +175,23 @@ unified_bioresource_pipeline/
 │   │   ├── 14_prepare_urls.py
 │   │   ├── 15_scan_urls.py
 │   │   └── 16_merge_scan_scores.py
-│   └── phase7_deduplication/
-│       ├── 17_deduplicate_linguistic.py
-│       ├── 18_analyze_unclear_cases.py
-│       └── 19_apply_manual_merges.py
+│   ├── phase7_deduplication/
+│   │   ├── 17_deduplicate_linguistic.py
+│   │   ├── 18_analyze_unclear_cases.py
+│   │   └── 19_apply_manual_merges.py
+│   ├── phase8_url_recovery/          # NEW - URL recovery for missing URLs
+│   │   ├── url_patterns.py           # Shared patterns & exclusions
+│   │   ├── 28_identify_missing_urls.py
+│   │   ├── 29_fetch_abstracts.py
+│   │   ├── 30_search_abstracts_urls.py
+│   │   ├── 31_fetch_fulltext.py
+│   │   ├── 32_search_fulltext_urls.py
+│   │   ├── 33_consolidate_recovery.py
+│   │   ├── 34_merge_websearch_results.py
+│   │   └── run_phase8.py             # Phase orchestrator
+│   └── phase9_finalization/
+│       ├── 22_filter_novel_resources.py
+│       └── ...
 │
 ├── notebooks/
 │   ├── phase1_classification/
@@ -254,6 +284,8 @@ The pipeline can resume from any phase:
 | **Phase 5** | SetFit introductions (16k) | `--from phase5` |
 | **Phase 6** | Papers with entities | `--from phase6` |
 | **Phase 7** | Papers with URL scores | `--from phase7` |
+| **Phase 8** | Deduplicated resources | `--from phase8` ⭐ NEW |
+| **Phase 9** | URL-recovered resources | `--from phase9` |
 
 **Most Common:** Resume from **Phase 3** (PMID extraction) if you already have NER results.
 
@@ -272,7 +304,9 @@ The pipeline can resume from any phase:
 | Phase 5 | 5-10 min | ✗ No |
 | Phase 6 | 75-90 min | ✗ No |
 | Phase 7 | 5 min + manual | ✗ No |
-| **TOTAL** | **8-15 hours** | GPU phases: 7-15 hrs |
+| Phase 8 | ~5 min + agents | ✗ No |
+| Phase 9 | 5-10 min | ✗ No |
+| **TOTAL** | **8-16 hours** | GPU phases: 7-15 hrs |
 
 ### Hardware Requirements
 
@@ -425,6 +459,24 @@ cat logs/pipeline/phase*_*_*.log
 
 ## Version History
 
+**v1.2.0** (2025-11-29)
+- Phase 10 Data Quality Improvements:
+  - Script 23: Name disambiguation using URL subdomains (e.g., GXB → GXB (breastcancer))
+  - Script 23: Auto-capitalize short names, sanitize non-ASCII chars (ø→o, é→e, μ→mu)
+  - Script 23: Recover names from URL when NER produced encoding issues
+  - Script 24: Block repository URLs (bitbucket, gitlab, sourceforge)
+  - Script 24: Block file download URLs (.pdf, .xlsx, .zip, .tar.gz)
+  - Added audit trail columns: best_name_original, name_modification_flags, url_validation
+- Final inventory: 1,945 resources (up from 1,365)
+
+**v1.1.0** (2025-11-28)
+- Added Phase 8: URL Recovery
+  - 7 new scripts for recovering URLs from abstracts/fulltext
+  - Agent-based web search with strict output spec
+  - Automated merge of agent results
+- Phase 9: Finalization (renamed from Phase 8)
+- Updated documentation
+
 **v1.0.0** (2025-11-20)
 - Initial unified pipeline release
 - 18 scripts organized by phase
@@ -467,6 +519,6 @@ For questions or issues:
 ---
 
 **Status:** ✅ Production Ready
-**Last Updated:** 2025-11-20
+**Last Updated:** 2025-11-29
 **Tested On:** 149,943 papers (EPMC 2011-2021)
-**Output:** 974 validated unique bioresources
+**Output:** 1,945 validated unique bioresources (with data quality improvements)

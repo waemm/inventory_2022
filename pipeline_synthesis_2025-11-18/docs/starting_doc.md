@@ -586,6 +586,7 @@ Of 1,108 papers processed via EPMC fulltext:
 
 | Date | Version | Changes | Documentation |
 |------|---------|---------|---------------|
+| 2025-11-29 | v2.4 | Phase 10 data quality: name disambiguation, URL blocking, audit trail | [unified_bioresource_pipeline/docs/workflow_and_stats.md](../../unified_bioresource_pipeline/docs/workflow_and_stats.md) |
 | 2025-11-27 | v2.3 | URL recovery, fulltext extraction, final consolidation | [false_positive_analysis/README.md](../../false_positive_analysis/README.md) |
 | 2025-11-27 | v2.2 | False positive analysis, improved fuzzy matching, URL normalization | [false_positive_analysis/README.md](../../false_positive_analysis/README.md) |
 | 2025-11-24 | v2.1 | Automated URL scanner, baseline investigation | [SESSION_SUMMARY_2025-11-24.md](../SESSION_SUMMARY_2025-11-24.md) |
@@ -595,6 +596,78 @@ Of 1,108 papers processed via EPMC fulltext:
 
 ---
 
-**Last Updated**: 2025-11-27
+## Phase 10: Finalization & Data Quality (2025-11-29)
+
+### Overview
+
+Phase 10 transforms novel bioresources into a final database-ready format with comprehensive data quality improvements. This phase was implemented to address systematic issues discovered in NER output and ensure the final inventory is production-ready.
+
+### Key Scripts
+
+| Script | Purpose | Location |
+|--------|---------|----------|
+| `22_filter_novel_resources.py` | Filter to only FINAL novel resources | `unified_bioresource_pipeline/scripts/phase9_finalization/` |
+| `23_transform_columns.py` | Name sanitization, disambiguation, column mapping | `unified_bioresource_pipeline/scripts/phase9_finalization/` |
+| `24_check_urls_with_geo.py` | URL validation, blocking, geolocation | `unified_bioresource_pipeline/scripts/phase9_finalization/` |
+| `25_fetch_epmc_metadata.py` | EPMC metadata (authors, grants, citations) | `unified_bioresource_pipeline/scripts/phase9_finalization/` |
+| `26_process_countries.py` | Country extraction from affiliations | `unified_bioresource_pipeline/scripts/phase9_finalization/` |
+| `27_generate_final_inventory.py` | Final CSV generation | `unified_bioresource_pipeline/scripts/phase9_finalization/` |
+| `run_phase9.py` | Orchestrator script | `unified_bioresource_pipeline/scripts/phase9_finalization/` |
+
+### Data Quality Features
+
+**Name Processing (Script 23):**
+- Auto-capitalize short names (≤6 chars all lowercase)
+- Clean pipe-separated names (use first value)
+- Remove HTML tags from names
+- Sanitize non-ASCII characters (ø→o, é→e, μ→mu, etc.)
+- **Disambiguate duplicate names** using URL subdomains (e.g., GXB → GXB (breastcancer))
+- Recover names from URL when original had encoding issues (CHARS_SANITIZED mismatch)
+
+**URL Validation (Script 24):**
+- Block repository hosting URLs (bitbucket.org, gitlab.com, sourceforge.net)
+- Block file download URLs (.pdf, .xlsx, .zip, .tar.gz, etc.)
+- Block aggregator pages (oxfordjournals.org, mozilla.org)
+- Mark github.io URLs for review
+- Wayback Machine fallback for dead URLs
+
+### Audit Trail
+
+Three new columns track all modifications:
+- `best_name_original` - Original name before any changes
+- `name_modification_flags` - Comma-separated flags (CAPITALIZED, DISAMBIGUATED, CHARS_SANITIZED, etc.)
+- `url_validation` - 'ok', 'review', or 'blocked'
+
+### Latest Run Statistics (2025-11-28)
+
+| Metric | Value |
+|--------|-------|
+| Final resources | 1,945 |
+| Excluded (no URL) | 648 |
+| URLs blocked | 21 |
+| Names disambiguated | 65 |
+| Names capitalized | 657 |
+| Names from URL | 153 |
+| Wayback rescued | 805 |
+
+### Documentation
+
+| Document | Location | Description |
+|----------|----------|-------------|
+| Workflow & Stats | `unified_bioresource_pipeline/docs/workflow_and_stats.md` | Complete pipeline documentation |
+| Data Quality Report | `unified_bioresource_pipeline/docs/DATA_QUALITY_REPORT_2025-11-28.md` | Issue analysis and fixes |
+| Pipeline README | `unified_bioresource_pipeline/README.md` | Quick start guide |
+
+### Running Phase 10
+
+```bash
+python unified_bioresource_pipeline/scripts/phase9_finalization/run_phase9.py \
+    --set-c pipeline_synthesis_2025-11-18/results/deduplicated/aggressive/set_c_final.csv \
+    --final false_positive_analysis/FINAL_novel_bioresources_with_urls.csv
+```
+
+---
+
+**Last Updated**: 2025-11-29
 **Maintainer**: Pipeline Synthesis Team
 **License**: See LICENSE file in repository root

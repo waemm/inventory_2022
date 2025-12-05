@@ -1,13 +1,58 @@
 # Biodata Inventory ML Pipeline - AI Agent Reference Guide
 
 **Created**: 2025-10-22
-**Last Updated**: 2025-11-25 (Title-based score modifiers for FP reduction)
-**Status**: ✅ **V2 PRODUCTION READY** + ⚠️ **PHASE 4 HAS CRITICAL BUG** + ✅ **SPACY FULL HYBRID READY** + ✅ **UNIFIED PIPELINE COMPLETE**
+**Last Updated**: 2025-12-05 (Phase 9 finalization complete)
+**Status**: ✅ **UNIFIED PIPELINE PRODUCTION READY** - Session-based architecture complete
 **Purpose**: Quick onboarding and navigation hub for AI agents
 
 ---
 
-## 🎯 Executive Summary
+## 🚀 START HERE: Unified Pipeline (2025-12-05)
+
+**The unified pipeline is the canonical implementation.** All other sections below are legacy reference.
+
+### Current Status
+- **Session:** `2025-12-04-111420-z381s`
+- **Final Inventory:** 1,510 bioresources with validated URLs
+- **All 10 Phase 6/9 scripts:** Session-compliant and code-reviewed
+
+### Quick Start
+```bash
+cd unified_bioresource_pipeline
+
+# Check pipeline status
+python run_pipeline.py --status
+
+# Run from specific phase
+python run_pipeline.py --session-dir 2025-12-04-111420-z381s --from phase9
+```
+
+### Key Documentation (Unified Pipeline)
+
+| Document | Purpose |
+|----------|---------|
+| [`unified_bioresource_pipeline/docs/PIPELINE_EXECUTION_GUIDE.md`](../unified_bioresource_pipeline/docs/PIPELINE_EXECUTION_GUIDE.md) | Complete execution guide |
+| [`unified_bioresource_pipeline/docs/PHASE9_COMPLETE_2025-12-05.md`](../unified_bioresource_pipeline/docs/PHASE9_COMPLETE_2025-12-05.md) | Phase 9 completion summary |
+| [`unified_bioresource_pipeline/docs/SCRIPT_AUDIT_CRITERIA.md`](../unified_bioresource_pipeline/docs/SCRIPT_AUDIT_CRITERIA.md) | Script compliance checklist |
+| [`unified_bioresource_pipeline/README.md`](../unified_bioresource_pipeline/README.md) | Pipeline overview |
+
+### Session Directory Structure
+```
+{session_id}/
+├── 02_ner/           # NER union results
+├── 03_linguistic/    # Linguistic scoring
+├── 04_setfit/        # SetFit classification
+├── 05_mapping/       # Paper sets & entity mapping
+├── 06_scanning/      # URL scanning
+├── 07_deduplication/ # Dedup by profile (aggressive/balanced/conservative)
+├── 08_url_recovery/  # URL recovery from fulltext
+└── 09_finalization/  # Final inventory ← OUTPUT
+    └── final_inventory.csv
+```
+
+---
+
+## 🎯 Executive Summary (Legacy)
 
 Sophisticated ML pipeline using biomedical BERT models to automatically identify and extract biodata resources from scientific literature. Processes EuropePMC query results through classification and NER to generate comprehensive inventories.
 

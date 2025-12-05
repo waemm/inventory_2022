@@ -1,0 +1,24 @@
+pmid,current_best_name,issue_category,evidence_from_title,evidence_from_url,best_common,best_full,suggested_name,confidence,notes
+39874126,Database (202),HAS_BRACKETS,BbGSD,202,,database,BbGSD,HIGH,Clear resource name found in paper title
+35900159,PLCO (episphere),HAS_BRACKETS,FAIR,Episphere,plco,,FAIR,HIGH,Clear resource name found in paper title
+40677986,CA,VERY_SHORT,,Cirrhosiscare,ca,,Cirrhosiscare,MEDIUM,Name derived from URL domain
+35445695,3d (biocomp),HAS_BRACKETS,,Biocomp,3d,,Biocomp,MEDIUM,Name derived from URL domain
+37356905,PI,VERY_SHORT,Missense3D-PPI,Missense3d,pi,,Missense3D-PPI,HIGH,Clear resource name found in paper title
+39250076,OF (venomzone),HAS_BRACKETS,,Venomzone,of,,Venomzone,MEDIUM,Name derived from URL domain
+39686909,Expression Atlas (cannatlas),HAS_BRACKETS,,Cannatlas,,expression atlas,expression atlas,MEDIUM,best_full appears more appropriate
+36483087,HE,VERY_SHORT,TVIR,Tvir,he,,TVIR,HIGH,Clear resource name found in paper title
+"34893873, 38015436",Modomics (iimcb),HAS_BRACKETS,MODOMICS,Iimcb,modomics,,MODOMICS,HIGH,Clear resource name found in paper title
+35701419,Chip-hub (biobigdata),HAS_BRACKETS,,Biobigdata,,chip-hub,chip-hub,MEDIUM,best_full appears more appropriate
+34718752,EWAS (ngdc),HAS_BRACKETS,EWAS,Ngdc,ewas,,EWAS,HIGH,Clear resource name found in paper title
+37356904,GUTBUG (metabiosys),HAS_BRACKETS,GutBug,Metabiosys,gutbug,,GutBug,HIGH,Clear resource name found in paper title
+38995543,Channelsdb (channelsdb2),HAS_BRACKETS,,Channelsdb2,,channelsdb | moleonline,Channelsdb2,MEDIUM,Name derived from URL domain
+37930866,IMG (genome),HAS_BRACKETS,IMG,Genome,img/pr,,IMG,HIGH,Clear resource name found in paper title
+36243963,PAT (bioinfo),HAS_BRACKETS,PAT,Bioinfo,pat,,PAT,HIGH,Clear resource name found in paper title
+38277370,STRING (biocomputo),HAS_BRACKETS,PhyloString,Biocomputo,string,phylostring,PhyloString,HIGH,Clear resource name found in paper title
+35263335,RDB (covdb),HAS_BRACKETS,RDB,Covdb,rdb,coronavirus resistance database | cov-rdb,RDB,HIGH,Clear resource name found in paper title
+34591957,GEN (ngdc),HAS_BRACKETS,GEN,Ngdc,gen,gene expression nebulas,GEN,HIGH,Clear resource name found in paper title
+34755877,IID (ophid),HAS_BRACKETS,IID,Ophid,iid,,IID,HIGH,Clear resource name found in paper title
+35788654,LBD (bis),HAS_BRACKETS,LBD,Bis,lbd,,LBD,HIGH,Clear resource name found in paper title
+39180399,Ddinter (ddinter2),HAS_BRACKETS,,Ddinter2,,ddinter,ddinter,MEDIUM,best_full appears more appropriate
+34773623,Qprimerdb (biodb),HAS_BRACKETS,,Biodb,,qprimerdb,qprimerdb,MEDIUM,best_full appears more appropriate
+36757087,ECCDNA (lcbb),HAS_BRACKETS,,Lcbb,eccdna,eccdna atlas,eccdna,MEDIUM,best_common appears more appropriate

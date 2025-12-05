@@ -1,0 +1,104 @@
+================================================================================
+BEST_NAME QC - ROWS 1001-1510: NOTABLE EXAMPLES
+================================================================================
+
+HIGH PRIORITY CASES (Require Review)
+================================================================================
+
+1. PMID 35881481 - URL as Resource Name
+   Current:  "Https://structural-server.kinametrix.com/."
+   Issue:    SUSPICIOUS_CHARS (starts with "Https://", ends with ".")
+   Evidence: None from title/URL
+   Action:   MANUAL REVIEW - Extract proper name from paper content
+
+2. PMID 40261741 - Two-Character Name
+   Current:  "KC"
+   Issue:    VERY_SHORT (2 characters)
+   Alternative: "kc" (from best_common)
+   Evidence: best_common available
+   Action:   VERIFY - Is "KC" or "kc" the correct form?
+
+================================================================================
+BRACKET DISAMBIGUATION EXAMPLES (Generally Good - Keep As-Is)
+================================================================================
+
+Multiple Instances of Same Resource:
+-----------------------------------
+• Mouse Genome Informatics (informatics)  [PMID 38531069]
+• Mouse Genome Informatics (tools)        [PMID 35735230]
+  → Different interfaces/tools for same resource
+
+• Reactome (plantreactome)                [PMID 35037224]
+• Reactome (dar)                          [PMID 36289281]
+  → Different Reactome instances/mirrors
+
+Instance/Version Disambiguation:
+-------------------------------
+• BASE (synbi2024)                        [PMID 39478454]
+  → Year/version in brackets
+
+• Channelsdb (channelsdb2)                [PMID 37956324]
+  → Version 2 clarification
+
+• ACMG (clingen)                          [PMID 39546087]
+  → Hosted/integrated instance
+
+• ECCDNA (lcbb)                           [PMID 39693568]
+  → Host institution in brackets
+
+• Alphafold (ekhidna2)                    [PMID 40400345]
+  → Specific deployment/mirror
+
+Generic Resource Disambiguation:
+-------------------------------
+• PDB (yzhang)                            [PMID 36453831]
+  → User/lab-specific instance
+
+• GUTBUG (metabiosys)                     [PMID 39944117]
+  → Project/context identifier
+
+• Ensembl (covid-19)                      [PMID 34634797]
+  → COVID-19 specific version
+
+• Genbank (submit)                        [PMID 35230423]
+• Genbank (online-group-1-intron-database) [PMID 39968379]
+  → Different GenBank interfaces/tools
+
+• SEER (loyal-brand-611803)               [PMID 37773106]
+  → Instance identifier
+
+• MDDB (bioexcel-cv19)                    [PMID 37953362]
+  → COVID-19 project instance
+
+================================================================================
+PATTERN ANALYSIS
+================================================================================
+
+Bracket Usage Patterns:
+1. Version/Year:        (synbi2024), (channelsdb2)
+2. Host Institution:    (lcbb), (mgbase)
+3. Project Context:     (covid-19), (bioexcel-cv19), (metabiosys)
+4. Interface Type:      (submit), (informatics), (tools)
+5. Mirror/Deployment:   (plantreactome), (dar), (ekhidna2)
+6. User/Lab:            (yzhang)
+7. Instance ID:         (loyal-brand-611803)
+
+Recommendation: KEEP bracket notation - serves legitimate disambiguation purpose
+
+================================================================================
+QUALITY METRICS
+================================================================================
+
+Issues by Severity:
+  CRITICAL (EMPTY, NUMERIC_ONLY):           0 cases  ✓
+  HIGH (VERY_SHORT, SUSPICIOUS_CHARS):      2 cases  ✓✓
+  MEDIUM (HAS_BRACKETS, SHORT_LOWERCASE):  18 cases  (mostly legitimate)
+
+Resolution Confidence:
+  HIGH (clear alternatives):    8/20  (40.0%)
+  MEDIUM (reasonable options): 12/20  (60.0%)
+  LOW (needs research):         0/20   (0.0%)
+
+Overall Assessment: EXCELLENT DATA QUALITY (96.1% clean)
+
+================================================================================

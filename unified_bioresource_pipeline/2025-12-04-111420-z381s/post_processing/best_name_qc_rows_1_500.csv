@@ -1,0 +1,19 @@
+pmid,current_best_name,issue_category,evidence_from_title,evidence_from_url,best_common,best_full,suggested_name,confidence,notes
+34634793,Prokaryotes (lpsn),HAS_BRACKETS,TYGS; LPSN,lpsn; lpsn,,prokaryotes,TYGS,HIGH,Name contains parentheses - needs cleanup; Title evidence: TYGS; LPSN; URL evidence: lpsn; lpsn
+37244568,DB,VERY_SHORT,C4S,c4s; c4s,db,,C4S,HIGH,Name is suspiciously short (1-2 chars); Title evidence: C4S; URL evidence: c4s; c4s
+39677536,FAIR (eppi),HAS_BRACKETS,FAIR,eppi; eppi; eppi-vis,fair,,FAIR,HIGH,Name contains parentheses - needs cleanup; Title evidence: FAIR; URL evidence: eppi; eppi; eppi-vis
+39319582,G4,VERY_SHORT,G4LDB,g4ldb,g4,,G4LDB,HIGH,Name is suspiciously short (1-2 chars); Title evidence: G4LDB; URL evidence: g4ldb
+36494623,AMICA (bioapps),HAS_BRACKETS,,bioapps; bioapps; app,amica,,AMICA,HIGH,Name contains parentheses - needs cleanup; URL evidence: bioapps; bioapps; app
+39905665,3d (brainportal),HAS_BRACKETS,DHARANI,brainportal; brainportal; publicview,3d,,DHARANI,HIGH,Name contains parentheses - needs cleanup; Title evidence: DHARANI; URL evidence: brainportal; brainportal; publicview
+37953304,DO,VERY_SHORT,DO-KB,disease-ontology; disease-ontology,do,,DO-KB,HIGH,Name is suspiciously short (1-2 chars); Title evidence: DO-KB; URL evidence: disease-ontology; disease-ontology
+37870448,023,NUMERIC_ONLY,ASD2023,mdl; mdl; asd,023,,ASD2023,HIGH,Name is only numbers - invalid; Title evidence: ASD2023; URL evidence: mdl; mdl; asd
+37889037,BASE (slkb),HAS_BRACKETS,SLKB,slkb; slkb,base,,SLKB,HIGH,Name contains parentheses - needs cleanup; Title evidence: SLKB; URL evidence: slkb; slkb
+38757367,GO,VERY_SHORT,,huggingface; huggingface; spaces,go,,huggingface,LOW,Name is suspiciously short (1-2 chars); URL evidence: huggingface; huggingface; spaces
+36857575,KBASE (narrative),HAS_BRACKETS,DRAM,narrative; narrative; narrative,kbase,,DRAM,HIGH,Name contains parentheses - needs cleanup; Title evidence: DRAM; URL evidence: narrative; narrative; narrative
+36464767,MM,VERY_SHORT,CMM-,cmm; cmm,mm,,CMM-,HIGH,Name is suspiciously short (1-2 chars); Title evidence: CMM-; URL evidence: cmm; cmm
+39999010,PM,VERY_SHORT,NPM,bigomics; bigomics; omics-playground,pm,,NPM,HIGH,Name is suspiciously short (1-2 chars); Title evidence: NPM; URL evidence: bigomics; bigomics; omics-playground
+39288310,AG,VERY_SHORT,,spoke; spoke; neighborhood,ag,,spoke,LOW,Name is suspiciously short (1-2 chars); URL evidence: spoke; spoke; neighborhood
+37566336,EX,VERY_SHORT,CPB-LEX,tinyurl; tinyurl,ex,,CPB-LEX,HIGH,Name is suspiciously short (1-2 chars); Title evidence: CPB-LEX; URL evidence: tinyurl; tinyurl
+39959838,Catalog (tianzelab),HAS_BRACKETS,,tianzelab; tianzelab; pandaspgs,,catalog,Catalog,HIGH,Name contains parentheses - needs cleanup; URL evidence: tianzelab; tianzelab; pandaspgs
+38801081,Toolbox (mtb),HAS_BRACKETS,,mtb; mtb; seqcat,,toolbox,Toolbox,HIGH,Name contains parentheses - needs cleanup; URL evidence: mtb; mtb; seqcat
+35275211,Database (csdb),HAS_BRACKETS,,csdb; csdb; database,,database,Database,HIGH,Name contains parentheses - needs cleanup; URL evidence: csdb; csdb; database

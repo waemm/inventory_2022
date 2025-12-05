@@ -1,0 +1,21 @@
+pmid,current_best_name,issue_category,evidence_from_title,evidence_from_url,best_common,best_full,suggested_name,confidence,notes
+39478454,BASE (synbi2024),HAS_BRACKETS,BASE,ac,base,,BASE,HIGH,Clear name in title | Issues: HAS_BRACKETS
+37956324,Channelsdb (channelsdb2),HAS_BRACKETS,,ceitec,,channelsdb | alphafold,channelsdb | alphafold,MEDIUM,best_full available | Issues: HAS_BRACKETS
+39546087,ACMG (clingen),HAS_BRACKETS,BRCAIndica,res,acmg | brca,brcaindica,BRCAIndica,HIGH,Clear name in title | Issues: HAS_BRACKETS
+39693568,ECCDNA (lcbb),HAS_BRACKETS,,edu,eccdna,sceccdnadb,eccdna,HIGH,best_common available | Issues: HAS_BRACKETS
+39530242,Molluscdb (mgbase),HAS_BRACKETS,,qnlm,,molluscdb,molluscdb,MEDIUM,best_full available | Issues: HAS_BRACKETS
+38531069,Mouse Genome Informatics (informatics),HAS_BRACKETS,,jax,,mouse genome informatics,mouse genome informatics,MEDIUM,best_full available | Issues: HAS_BRACKETS
+40400345,Alphafold (ekhidna2),HAS_BRACKETS,,helsinki,,alphafold,alphafold,MEDIUM,best_full available | Issues: HAS_BRACKETS
+35388368,Aop-wiki (aopwiki),HAS_BRACKETS,,bigcat bioinformatics,,aop-wiki,aop-wiki,MEDIUM,best_full available | Issues: HAS_BRACKETS
+34634797,Ensembl (covid-19),HAS_BRACKETS,,ensembl,,ensembl,ensembl,MEDIUM,best_full available | Issues: HAS_BRACKETS
+36453831,PDB (yzhang),HAS_BRACKETS,CovBinderInPDB,nyu,pdb,covbinderinpdb,CovBinderInPDB,HIGH,Clear name in title | Issues: HAS_BRACKETS
+39944117,GUTBUG (metabiosys),HAS_BRACKETS,GutBugDB,ac,gutbug,gutbugdb,GutBugDB,HIGH,Clear name in title | Issues: HAS_BRACKETS
+35230423,Genbank (submit),HAS_BRACKETS,,nih,,genbank,genbank,MEDIUM,best_full available | Issues: HAS_BRACKETS
+35037224,Reactome (plantreactome),HAS_BRACKETS,,gramene,,reactome | pubchem,reactome | pubchem,MEDIUM,best_full available | Issues: HAS_BRACKETS
+36289281,Reactome (dar),HAS_BRACKETS,,unibo,,reactome,reactome,MEDIUM,best_full available | Issues: HAS_BRACKETS
+35881481,Https://structural-server.kinametrix.com/.,SUSPICIOUS_CHARS,,kinametrix,,https://structural-server.kinametrix.com/.,https://structural-server.kinametrix.com/.,MEDIUM,best_full available | Issues: SUSPICIOUS_CHARS
+35735230,Mouse Genome Informatics (tools),HAS_BRACKETS,,synapse,,mouse genome informatics | https://tools.nf.synapse.org/.,mouse genome informatics | https://tools.nf.synapse.org/.,MEDIUM,best_full available | Issues: HAS_BRACKETS
+40261741,KC,VERY_SHORT,,berkeley,kc,cancer epidemiol biomarkers prev 2020;29:1887-903 | https://doi.org/10.1158/1055-9965.epi-19-1346 | kc-assay,kc,HIGH,best_common available | Issues: VERY_SHORT
+39968379,Genbank (online-group-1-intron-database),HAS_BRACKETS,,onrender,,genbank | https://www.ebi.ac.uk/biostudies/studies/s-bsst1399,genbank | https://www.ebi.ac.uk/biostudies/studies/s-bsst1399,MEDIUM,best_full available | Issues: HAS_BRACKETS
+37773106,SEER (loyal-brand-611803),HAS_BRACKETS,,framer,seer | lcss,lscc)-specific,seer | lcss,HIGH,best_common available | Issues: HAS_BRACKETS
+37953362,MDDB (bioexcel-cv19),HAS_BRACKETS,,bsc,mddb,bioexcel,mddb,HIGH,best_common available | Issues: HAS_BRACKETS

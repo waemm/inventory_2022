@@ -1,0 +1,82 @@
+================================================================================
+BEST_NAME QC - ROWS 1001-1510: QUICK REFERENCE
+================================================================================
+
+ANALYSIS COMPLETE ✓
+Date: 2025-12-05
+Rows Analyzed: 510 (rows 1001-1510, final chunk to end of file)
+
+HEADLINE RESULTS
+================================================================================
+Issues Found:         20 / 510  (3.9%)  ← BEST PERFORMANCE OF ALL CHUNKS
+Clean Rows:          490 / 510  (96.1%)
+Critical Issues:       2         (VERY_SHORT, SUSPICIOUS_CHARS)
+Medium Issues:        18         (HAS_BRACKETS - mostly legitimate)
+
+COMPARISON WITH OTHER CHUNKS
+================================================================================
+Rows 1-500:          42 issues  (8.4%)
+Rows 501-1000:       20 issues  (4.0%)
+Rows 1001-1510:      20 issues  (3.9%)  ← THIS CHUNK (BEST)
+
+ISSUE BREAKDOWN
+================================================================================
+HAS_BRACKETS:        18 cases   (90.0%) - Legitimate disambiguations
+SUSPICIOUS_CHARS:     1 case    (5.0%)  - URL as name (HIGH PRIORITY)
+VERY_SHORT:           1 case    (5.0%)  - "KC" 2-char name (HIGH PRIORITY)
+EMPTY:                0 cases
+NUMERIC_ONLY:         0 cases
+SHORT_LOWERCASE:      0 cases
+
+CONFIDENCE LEVELS
+================================================================================
+HIGH:                 8 cases   (40.0%) - Clear alternatives available
+MEDIUM:              12 cases   (60.0%) - Reasonable alternatives
+LOW:                  0 cases   (0.0%)  - All issues have solutions
+
+CRITICAL CASES REQUIRING REVIEW
+================================================================================
+
+1. PMID 35881481
+   Current: "Https://structural-server.kinametrix.com/."
+   Issue:   URL used as name, suspicious characters
+   Action:  MANUAL REVIEW - Extract proper resource name from paper
+
+2. PMID 40261741
+   Current: "KC"
+   Issue:   Very short (2 chars)
+   Suggested: "kc" (from best_common)
+   Action:  VERIFY correct capitalization
+
+BRACKET PATTERN ASSESSMENT
+================================================================================
+Status: LEGITIMATE - Serves disambiguation purpose
+Examples:
+  • Mouse Genome Informatics (informatics) vs (tools)
+  • Reactome (plantreactome) vs (dar)
+  • Genbank (submit) vs (online-group-1-intron-database)
+  • BASE (synbi2024), Alphafold (ekhidna2)
+
+Recommendation: KEEP bracket notation
+
+OUTPUT FILES
+================================================================================
+1. best_name_qc_rows_1001_1510.csv
+   → Full results with all flagged entries
+
+2. BEST_NAME_QC_ROWS_1001_1510_SUMMARY.md
+   → Comprehensive analysis report
+
+3. BEST_NAME_QC_ROWS_1001_1510_EXAMPLES.txt
+   → Notable cases and patterns
+
+4. BEST_NAME_QC_ROWS_1001_1510_QUICK_REF.txt
+   → This file
+
+QUALITY GRADE: A- (EXCELLENT)
+================================================================================
+
+All files located at:
+/Users/warren/development/GBC/inventory_2022/unified_bioresource_pipeline/
+2025-12-04-111420-z381s/post_processing/
+

@@ -1,0 +1,86 @@
+================================================================================
+BEST_NAME QC - QUICK FIX CHECKLIST (Rows 1-500)
+================================================================================
+
+IMMEDIATE FIXES (Do Now - 1 case)
+----------------------------------
+[ ] PMID 37870448: 023 → ASD2023
+    Paper: "ASD2023: towards the integrating landscapes..."
+    URL: http://mdl.shsmu.edu.cn/ASD
+    FIX: Change to "ASD2023"
+
+HIGH PRIORITY FIXES (Review & Apply - 6 cases)
+-----------------------------------------------
+[ ] PMID 37244568: DB → C4S
+    Evidence: Title clearly says "C4S"
+
+[ ] PMID 39319582: G4 → G4LDB
+    Evidence: Title clearly says "G4LDB"
+
+[ ] PMID 37953304: DO → DO-KB
+    Evidence: Title clearly says "DO-KB"
+
+[ ] PMID 36464767: MM → CMM-
+    Evidence: Title starts with "CMM-"
+
+[ ] PMID 39999010: PM → NPM
+    Evidence: Title mentions "NPM"
+
+[ ] PMID 37566336: EX → CPB-LEX
+    Evidence: Title clearly says "CPB-LEX"
+
+NEEDS MANUAL REVIEW (Low Confidence - 2 cases)
+-----------------------------------------------
+[ ] PMID 38757367: GO → ???
+    Paper: "Mutual annotation-based prediction... with Domain2GO"
+    Current "GO" is too generic
+    REVIEW NEEDED: Should be "Domain2GO"?
+
+[ ] PMID 39288310: AG → ???
+    Paper: "Biomedical knowledge graph-optimized prompt..."
+    URL: spoke.rbvi.ucsf.edu
+    REVIEW NEEDED: Should be "SPOKE"?
+
+BRACKETED NAMES - CLEANUP (9 cases)
+------------------------------------
+Policy Decision Needed: Keep brackets or remove?
+
+High Confidence Corrections:
+[ ] PMID 34634793: Prokaryotes (lpsn) → TYGS or LPSN
+    Paper mentions BOTH "TYGS and LPSN" - may need 2 entries
+
+[ ] PMID 39905665: 3d (brainportal) → DHARANI
+    Title clearly says "DHARANI"
+
+[ ] PMID 36857575: KBASE (narrative) → kb_DRAM or DRAM
+    Paper about "kb_DRAM" tool, not KBase platform
+
+[ ] PMID 37889037: BASE (slkb) → SLKB
+    Title clearly says "SLKB"
+
+Simple Bracket Removal:
+[ ] PMID 39677536: FAIR (eppi) → FAIR
+[ ] PMID 36494623: AMICA (bioapps) → AMICA
+
+Generic Names (Need Investigation):
+[ ] PMID 39959838: Catalog (tianzelab) → ???
+[ ] PMID 38801081: Toolbox (mtb) → ???
+[ ] PMID 35275211: Database (csdb) → ???
+
+SUMMARY
+-------
+Total Issues: 18 out of 500 rows (3.6%)
+  - 1 CRITICAL (numeric only)
+  - 8 HIGH (very short names)
+  - 9 MEDIUM (bracketed names)
+
+Confidence:
+  - 16 HIGH confidence fixes (safe to apply with review)
+  - 2 LOW confidence (need expert review)
+
+Files:
+  - Detailed CSV: best_name_qc_rows_1_500.csv
+  - Full Report: BEST_NAME_QC_SUMMARY.md
+  - This Checklist: QUICK_FIX_CHECKLIST.txt
+
+================================================================================

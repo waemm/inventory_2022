@@ -1,0 +1,62 @@
+pmid,current_best_name,issue_category,evidence_from_title,evidence_from_url,best_common,best_full,suggested_name,confidence,notes
+34634793,Prokaryotes (lpsn),HAS_BRACKETS,TYGS; LPSN,lpsn; lpsn,,prokaryotes,TYGS,HIGH,Name contains parentheses - needs cleanup; Title evidence: TYGS; LPSN; URL evidence: lpsn; lpsn
+37244568,DB,VERY_SHORT,C4S,c4s; c4s,db,,C4S,HIGH,Name is suspiciously short (1-2 chars); Title evidence: C4S; URL evidence: c4s; c4s
+39677536,FAIR (eppi),HAS_BRACKETS,FAIR,eppi; eppi; eppi-vis,fair,,FAIR,HIGH,Name contains parentheses - needs cleanup; Title evidence: FAIR; URL evidence: eppi; eppi; eppi-vis
+39319582,G4,VERY_SHORT,G4LDB,g4ldb,g4,,G4LDB,HIGH,Name is suspiciously short (1-2 chars); Title evidence: G4LDB; URL evidence: g4ldb
+36494623,AMICA (bioapps),HAS_BRACKETS,,bioapps; bioapps; app,amica,,AMICA,HIGH,Name contains parentheses - needs cleanup; URL evidence: bioapps; bioapps; app
+39905665,3d (brainportal),HAS_BRACKETS,DHARANI,brainportal; brainportal; publicview,3d,,DHARANI,HIGH,Name contains parentheses - needs cleanup; Title evidence: DHARANI; URL evidence: brainportal; brainportal; publicview
+37953304,DO,VERY_SHORT,DO-KB,disease-ontology; disease-ontology,do,,DO-KB,HIGH,Name is suspiciously short (1-2 chars); Title evidence: DO-KB; URL evidence: disease-ontology; disease-ontology
+37870448,023,NUMERIC_ONLY,ASD2023,mdl; mdl; asd,023,,ASD2023,HIGH,Name is only numbers - invalid; Title evidence: ASD2023; URL evidence: mdl; mdl; asd
+37889037,BASE (slkb),HAS_BRACKETS,SLKB,slkb; slkb,base,,SLKB,HIGH,Name contains parentheses - needs cleanup; Title evidence: SLKB; URL evidence: slkb; slkb
+38757367,GO,VERY_SHORT,,huggingface; huggingface; spaces,go,,huggingface,LOW,Name is suspiciously short (1-2 chars); URL evidence: huggingface; huggingface; spaces
+36857575,KBASE (narrative),HAS_BRACKETS,DRAM,narrative; narrative; narrative,kbase,,DRAM,HIGH,Name contains parentheses - needs cleanup; Title evidence: DRAM; URL evidence: narrative; narrative; narrative
+36464767,MM,VERY_SHORT,CMM-,cmm; cmm,mm,,CMM-,HIGH,Name is suspiciously short (1-2 chars); Title evidence: CMM-; URL evidence: cmm; cmm
+39999010,PM,VERY_SHORT,NPM,bigomics; bigomics; omics-playground,pm,,NPM,HIGH,Name is suspiciously short (1-2 chars); Title evidence: NPM; URL evidence: bigomics; bigomics; omics-playground
+39288310,AG,VERY_SHORT,,spoke; spoke; neighborhood,ag,,spoke,LOW,Name is suspiciously short (1-2 chars); URL evidence: spoke; spoke; neighborhood
+37566336,EX,VERY_SHORT,CPB-LEX,tinyurl; tinyurl,ex,,CPB-LEX,HIGH,Name is suspiciously short (1-2 chars); Title evidence: CPB-LEX; URL evidence: tinyurl; tinyurl
+39959838,Catalog (tianzelab),HAS_BRACKETS,,tianzelab; tianzelab; pandaspgs,,catalog,Catalog,HIGH,Name contains parentheses - needs cleanup; URL evidence: tianzelab; tianzelab; pandaspgs
+38801081,Toolbox (mtb),HAS_BRACKETS,,mtb; mtb; seqcat,,toolbox,Toolbox,HIGH,Name contains parentheses - needs cleanup; URL evidence: mtb; mtb; seqcat
+35275211,Database (csdb),HAS_BRACKETS,,csdb; csdb; database,,database,Database,HIGH,Name contains parentheses - needs cleanup; URL evidence: csdb; csdb; database
+39874126,Database (202),HAS_BRACKETS,BbGSD,202,,database,BbGSD,HIGH,Clear resource name found in paper title
+35900159,PLCO (episphere),HAS_BRACKETS,FAIR,Episphere,plco,,FAIR,HIGH,Clear resource name found in paper title
+40677986,CA,VERY_SHORT,,Cirrhosiscare,ca,,Cirrhosiscare,MEDIUM,Name derived from URL domain
+35445695,3d (biocomp),HAS_BRACKETS,,Biocomp,3d,,Biocomp,MEDIUM,Name derived from URL domain
+37356905,PI,VERY_SHORT,Missense3D-PPI,Missense3d,pi,,Missense3D-PPI,HIGH,Clear resource name found in paper title
+39250076,OF (venomzone),HAS_BRACKETS,,Venomzone,of,,Venomzone,MEDIUM,Name derived from URL domain
+39686909,Expression Atlas (cannatlas),HAS_BRACKETS,,Cannatlas,,expression atlas,expression atlas,MEDIUM,best_full appears more appropriate
+36483087,HE,VERY_SHORT,TVIR,Tvir,he,,TVIR,HIGH,Clear resource name found in paper title
+"34893873, 38015436",Modomics (iimcb),HAS_BRACKETS,MODOMICS,Iimcb,modomics,,MODOMICS,HIGH,Clear resource name found in paper title
+35701419,Chip-hub (biobigdata),HAS_BRACKETS,,Biobigdata,,chip-hub,chip-hub,MEDIUM,best_full appears more appropriate
+34718752,EWAS (ngdc),HAS_BRACKETS,EWAS,Ngdc,ewas,,EWAS,HIGH,Clear resource name found in paper title
+37356904,GUTBUG (metabiosys),HAS_BRACKETS,GutBug,Metabiosys,gutbug,,GutBug,HIGH,Clear resource name found in paper title
+38995543,Channelsdb (channelsdb2),HAS_BRACKETS,,Channelsdb2,,channelsdb | moleonline,Channelsdb2,MEDIUM,Name derived from URL domain
+37930866,IMG (genome),HAS_BRACKETS,IMG,Genome,img/pr,,IMG,HIGH,Clear resource name found in paper title
+36243963,PAT (bioinfo),HAS_BRACKETS,PAT,Bioinfo,pat,,PAT,HIGH,Clear resource name found in paper title
+38277370,STRING (biocomputo),HAS_BRACKETS,PhyloString,Biocomputo,string,phylostring,PhyloString,HIGH,Clear resource name found in paper title
+35263335,RDB (covdb),HAS_BRACKETS,RDB,Covdb,rdb,coronavirus resistance database | cov-rdb,RDB,HIGH,Clear resource name found in paper title
+34591957,GEN (ngdc),HAS_BRACKETS,GEN,Ngdc,gen,gene expression nebulas,GEN,HIGH,Clear resource name found in paper title
+34755877,IID (ophid),HAS_BRACKETS,IID,Ophid,iid,,IID,HIGH,Clear resource name found in paper title
+35788654,LBD (bis),HAS_BRACKETS,LBD,Bis,lbd,,LBD,HIGH,Clear resource name found in paper title
+39180399,Ddinter (ddinter2),HAS_BRACKETS,,Ddinter2,,ddinter,ddinter,MEDIUM,best_full appears more appropriate
+34773623,Qprimerdb (biodb),HAS_BRACKETS,,Biodb,,qprimerdb,qprimerdb,MEDIUM,best_full appears more appropriate
+36757087,ECCDNA (lcbb),HAS_BRACKETS,,Lcbb,eccdna,eccdna atlas,eccdna,MEDIUM,best_common appears more appropriate
+39478454,BASE (synbi2024),HAS_BRACKETS,BASE,ac,base,,BASE,HIGH,Clear name in title | Issues: HAS_BRACKETS
+37956324,Channelsdb (channelsdb2),HAS_BRACKETS,,ceitec,,channelsdb | alphafold,channelsdb | alphafold,MEDIUM,best_full available | Issues: HAS_BRACKETS
+39546087,ACMG (clingen),HAS_BRACKETS,BRCAIndica,res,acmg | brca,brcaindica,BRCAIndica,HIGH,Clear name in title | Issues: HAS_BRACKETS
+39693568,ECCDNA (lcbb),HAS_BRACKETS,,edu,eccdna,sceccdnadb,eccdna,HIGH,best_common available | Issues: HAS_BRACKETS
+39530242,Molluscdb (mgbase),HAS_BRACKETS,,qnlm,,molluscdb,molluscdb,MEDIUM,best_full available | Issues: HAS_BRACKETS
+38531069,Mouse Genome Informatics (informatics),HAS_BRACKETS,,jax,,mouse genome informatics,mouse genome informatics,MEDIUM,best_full available | Issues: HAS_BRACKETS
+40400345,Alphafold (ekhidna2),HAS_BRACKETS,,helsinki,,alphafold,alphafold,MEDIUM,best_full available | Issues: HAS_BRACKETS
+35388368,Aop-wiki (aopwiki),HAS_BRACKETS,,bigcat bioinformatics,,aop-wiki,aop-wiki,MEDIUM,best_full available | Issues: HAS_BRACKETS
+34634797,Ensembl (covid-19),HAS_BRACKETS,,ensembl,,ensembl,ensembl,MEDIUM,best_full available | Issues: HAS_BRACKETS
+36453831,PDB (yzhang),HAS_BRACKETS,CovBinderInPDB,nyu,pdb,covbinderinpdb,CovBinderInPDB,HIGH,Clear name in title | Issues: HAS_BRACKETS
+39944117,GUTBUG (metabiosys),HAS_BRACKETS,GutBugDB,ac,gutbug,gutbugdb,GutBugDB,HIGH,Clear name in title | Issues: HAS_BRACKETS
+35230423,Genbank (submit),HAS_BRACKETS,,nih,,genbank,genbank,MEDIUM,best_full available | Issues: HAS_BRACKETS
+35037224,Reactome (plantreactome),HAS_BRACKETS,,gramene,,reactome | pubchem,reactome | pubchem,MEDIUM,best_full available | Issues: HAS_BRACKETS
+36289281,Reactome (dar),HAS_BRACKETS,,unibo,,reactome,reactome,MEDIUM,best_full available | Issues: HAS_BRACKETS
+35881481,Https://structural-server.kinametrix.com/.,SUSPICIOUS_CHARS,,kinametrix,,https://structural-server.kinametrix.com/.,https://structural-server.kinametrix.com/.,MEDIUM,best_full available | Issues: SUSPICIOUS_CHARS
+35735230,Mouse Genome Informatics (tools),HAS_BRACKETS,,synapse,,mouse genome informatics | https://tools.nf.synapse.org/.,mouse genome informatics | https://tools.nf.synapse.org/.,MEDIUM,best_full available | Issues: HAS_BRACKETS
+40261741,KC,VERY_SHORT,,berkeley,kc,cancer epidemiol biomarkers prev 2020;29:1887-903 | https://doi.org/10.1158/1055-9965.epi-19-1346 | kc-assay,kc,HIGH,best_common available | Issues: VERY_SHORT
+39968379,Genbank (online-group-1-intron-database),HAS_BRACKETS,,onrender,,genbank | https://www.ebi.ac.uk/biostudies/studies/s-bsst1399,genbank | https://www.ebi.ac.uk/biostudies/studies/s-bsst1399,MEDIUM,best_full available | Issues: HAS_BRACKETS
+37773106,SEER (loyal-brand-611803),HAS_BRACKETS,,framer,seer | lcss,lscc)-specific,seer | lcss,HIGH,best_common available | Issues: HAS_BRACKETS
+37953362,MDDB (bioexcel-cv19),HAS_BRACKETS,,bsc,mddb,bioexcel,mddb,HIGH,best_common available | Issues: HAS_BRACKETS

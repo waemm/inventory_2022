@@ -127,21 +127,47 @@ Overall: COMPLIANT / NEEDS_FIXES
 
 ---
 
-## Scripts Pending Audit (2025-12-05)
+## Scripts Pending Audit
 
-| Script | Phase | Status |
-|--------|-------|--------|
-| `19_backfill_url_data.py` | Phase 6 | Pending |
-| `25_fetch_epmc_metadata.py` | Phase 9 | Pending |
-| `27_generate_final_inventory.py` | Phase 9 | Pending |
+*No scripts pending - all Phase 6 and Phase 9 scripts are compliant.*
 
 ---
 
-## Previously Audited Scripts
+## Audited Scripts
 
 | Script | Phase | Status | Date |
 |--------|-------|--------|------|
-| `18_scan_urls_set_c.py` | Phase 6 | COMPLIANT (after fixes) | 2025-12-05 |
 | `14_prepare_urls.py` | Phase 6 | COMPLIANT | 2025-12-04 |
 | `15_scan_urls.py` | Phase 6 | COMPLIANT | 2025-12-04 |
 | `16_merge_scan_scores.py` | Phase 6 | COMPLIANT | 2025-12-04 |
+| `18_scan_urls_set_c.py` | Phase 6 | COMPLIANT (after fixes) | 2025-12-05 |
+| `19_backfill_url_data.py` | Phase 6 | COMPLIANT (after fixes) | 2025-12-05 |
+| `23_transform_columns.py` | Phase 9 | COMPLIANT (after fixes) | 2025-12-05 |
+| `24_check_urls_with_geo.py` | Phase 9 | COMPLIANT (after fixes) | 2025-12-05 |
+| `25_fetch_epmc_metadata.py` | Phase 9 | COMPLIANT | 2025-12-05 |
+| `26_process_countries.py` | Phase 9 | COMPLIANT (after fixes) | 2025-12-05 |
+| `27_generate_final_inventory.py` | Phase 9 | COMPLIANT | 2025-12-05 |
+
+---
+
+## Phase 9 Execution Flow (Updated 2025-12-05)
+
+```
+07_deduplication/{profile}/set_c_final.csv
+    ↓
+Script 23: Transform columns
+    → 09_finalization/transformed_resources.csv
+    ↓
+Script 24: Check URLs with geo
+    → 09_finalization/url_checked_resources.csv
+    → 09_finalization/excluded_no_url.csv
+    ↓
+Script 25: Fetch EPMC metadata
+    → 09_finalization/metadata_enriched_resources.csv
+    ↓
+Script 26: Process countries
+    → 09_finalization/countries_processed_resources.csv
+    ↓
+Script 27: Generate final inventory
+    → 09_finalization/final_inventory.csv ✅
+```

@@ -1,0 +1,162 @@
+original_record_num,record_index,database_name,long_database_name,pmids,found_urls,url_source,match_quality,notes
+4655,2115,ghs,,40288852,NOT_FOUND,not_available,,No URLs found in abstracts
+4668,2128,,incorporating artificial intelligence,39208265,NOT_FOUND,not_available,,No URLs found in abstracts
+4670,2130,cengen,neuronal gene expression map and network,38421866,NOT_FOUND,not_available,,No URLs found in abstracts
+4671,2131,cfdna,,37455222,NOT_FOUND,not_available,,No URLs found in abstracts
+4673,2133,fsrf | eemsr,,37422490,NOT_FOUND,not_available,,No URLs found in abstracts
+4674,2134,its-1_5.8s_its-2,its-2-rrna | primertc,38733216,NOT_FOUND,not_available,,No URLs found in abstracts
+4675,2135,key,,35538374,NOT_FOUND,not_available,,No URLs found in abstracts
+4678,2137,pfam | lbd,,34424339,NOT_FOUND,not_available,,No URLs found in abstracts
+4679,2138,epo,,36095527,NOT_FOUND,not_available,,No URLs found in abstracts
+4680,2139,silva | rdp | gtdb,ribosomal database project | and genome taxonomy database,37258857,NOT_FOUND,not_available,,No URLs found in abstracts
+4681,2140,mimic | cms,,36996758,NOT_FOUND,not_available,,No URLs found in abstracts
+4684,2143,pdb,alphafold | autodock,38160287,NOT_FOUND,not_available,,No URLs found in abstracts
+4685,2144,tacn,,37537703,NOT_FOUND,not_available,,No URLs found in abstracts
+4686,2145,kegg | omim,,38733902,NOT_FOUND,not_available,,No URLs found in abstracts
+4691,2150,padel,,39602490,NOT_FOUND,not_available,,No URLs found in abstracts
+4692,2151,,retinanet,39176574,NOT_FOUND,not_available,,No URLs found in abstracts
+4697,2156,mrcmpsp | hqpso,,37898683,NOT_FOUND,not_available,,No URLs found in abstracts
+4698,2157,fedex,,35916224,NOT_FOUND,not_available,,No URLs found in abstracts
+4704,2162,cleo | geo | egeo,e.g.</i,36326108,NOT_FOUND,not_available,,No URLs found in abstracts
+4716,2172,bps,the health and environmental sciences | drugbank.ca,38636673,NOT_FOUND,not_available,,No URLs found in abstracts
+4717,2173,,latent dirichlet allocation,39341246,NOT_FOUND,not_available,,No URLs found in abstracts
+4718,2174,edhfr,,35835118,NOT_FOUND,not_available,,No URLs found in abstracts
+4725,2180,,ziehl-neelsen method was used to prepare 362 slides,40521234,NOT_FOUND,not_available,,No URLs found in abstracts
+4729,2184,,genome taxonomy database,35049120,NOT_FOUND,not_available,,No URLs found in abstracts
+4730,2185,cut&run,,40013513,NOT_FOUND,not_available,,No URLs found in abstracts
+4733,2187,eko-35,efflux knockout-35,36065018,NOT_FOUND,not_available,,No URLs found in abstracts
+4738,2191,,ineurons,39636867,NOT_FOUND,not_available,,No URLs found in abstracts
+4740,2193,orf50,,40013795,NOT_FOUND,not_available,,No URLs found in abstracts
+4742,2195,hiapp,,36638829,NOT_FOUND,not_available,,No URLs found in abstracts
+4745,2197,tcga,the cancer genome atlas,39227745,NOT_FOUND,not_available,,No URLs found in abstracts
+4748,2200,,cervical cell copy-pasting,38113684,NOT_FOUND,not_available,,No URLs found in abstracts
+4756,2207,tcga | cosmic | hpa | depmap,international cancer genome consortium | the cancer genome atlas | cbioportal | human protein atlas | gene expression profiling interactive analysis 2,37540443,NOT_FOUND,not_available,,No URLs found in abstracts
+4757,2208,gmp,,39817820,NOT_FOUND,not_available,,No URLs found in abstracts
+4760,2211,csap,,37278513,NOT_FOUND,not_available,,No URLs found in abstracts
+4762,2213,,kinview | prokino,35525549,NOT_FOUND,not_available,,No URLs found in abstracts
+4764,2214,imfp,,37376953,NOT_FOUND,not_available,,No URLs found in abstracts
+4765,2215,prrsv,,39310279,NOT_FOUND,not_available,,No URLs found in abstracts
+4766,2216,lore,clinvar,39998433,NOT_FOUND,not_available,,No URLs found in abstracts
+4770,2220,,som)-based deep reinforcement learning,40473689,NOT_FOUND,not_available,,No URLs found in abstracts
+4773,2222,,coral reef arks,40588537,NOT_FOUND,not_available,,No URLs found in abstracts
+4774,2223,nue,,37967146,NOT_FOUND,not_available,,No URLs found in abstracts
+4778,2227,,tfexplorer,40015273,NOT_FOUND,not_available,,No URLs found in abstracts
+4781,2229,,open&savepidlmru,37017258,NOT_FOUND,not_available,,No URLs found in abstracts
+4782,2230,moc,,38393600,NOT_FOUND,not_available,,No URLs found in abstracts
+4784,2232,bc5cdr,biobert,36755230,NOT_FOUND,not_available,,No URLs found in abstracts
+4785,2233,elp,,36526018,NOT_FOUND,not_available,,No URLs found in abstracts
+4788,2236,,microbial electrolysis cell,35297316,NOT_FOUND,not_available,,No URLs found in abstracts
+4789,2237,,analytic hierarchy process,36575300,NOT_FOUND,not_available,,No URLs found in abstracts
+4795,2243,,mcgowan,40245534,NOT_FOUND,not_available,,No URLs found in abstracts
+4796,2244,bevs,,40065540,NOT_FOUND,not_available,,No URLs found in abstracts
+4797,2245,qsrr,,40393240,NOT_FOUND,not_available,,No URLs found in abstracts
+4805,2251,,human cell atlas adipose bionetwork,40360756,NOT_FOUND,not_available,,No URLs found in abstracts
+4813,2258,,cell transcriptome atlas,36002881,NOT_FOUND,not_available,,No URLs found in abstracts
+4815,2260,pnatdb | pronab,,37117054,NOT_FOUND,not_available,,No URLs found in abstracts
+4818,2263,dmrt1,,36330680,NOT_FOUND,not_available,,No URLs found in abstracts
+4822,2266,snomed-ct | hpo | lkb,electronic health records | linked knowledge base,39787917,NOT_FOUND,not_available,,No URLs found in abstracts
+4823,2267,,thermomutdb | fireprotdb | prothermdb,38084013,NOT_FOUND,not_available,,No URLs found in abstracts
+4824,2268,tcm-pcdl,,38428081,NOT_FOUND,not_available,,No URLs found in abstracts
+4825,2269,srl,,37772729,NOT_FOUND,not_available,,No URLs found in abstracts
+4826,2270,arm | dsp | pid | spi,digital signal processing,35544520,NOT_FOUND,not_available,,No URLs found in abstracts
+4828,2271,,topological phonon database,38723072,NOT_FOUND,not_available,,No URLs found in abstracts
+4829,2272,rrbs,,37805667,NOT_FOUND,not_available,,No URLs found in abstracts
+4830,2273,,tawrky33,37248640,NOT_FOUND,not_available,,No URLs found in abstracts
+4833,2276,,global strategy for plant conservation | national cryogenebank facility at icar-nbpgr,39870154,NOT_FOUND,not_available,,No URLs found in abstracts
+4834,2277,pfas,,38477530,NOT_FOUND,not_available,,No URLs found in abstracts
+4835,2278,lig | μm,,38985448,NOT_FOUND,not_available,,No URLs found in abstracts
+4836,2279,$,,34889452,NOT_FOUND,not_available,,No URLs found in abstracts
+4844,2287,ald,,37937382,NOT_FOUND,not_available,,No URLs found in abstracts
+4849,2292,0.970,,39362938,NOT_FOUND,not_available,,No URLs found in abstracts
+4850,2293,$ | g$,thermomutdb,35021190,NOT_FOUND,not_available,,No URLs found in abstracts
+4856,2297,ddpcr,,37183971,NOT_FOUND,not_available,,No URLs found in abstracts
+4858,2299,hoxabβ,,35758619,NOT_FOUND,not_available,,No URLs found in abstracts
+4861,2301,mdt,china gastrointestinal cancer surgery union | china gastrointestinal cancer surgery union platform,38413078,NOT_FOUND,not_available,,No URLs found in abstracts
+4862,2302,,brassitol,37659415,NOT_FOUND,not_available,,No URLs found in abstracts
+4863,2303,dqn,,36299577,NOT_FOUND,not_available,,No URLs found in abstracts
+4865,2305,mybs3,,36578210,NOT_FOUND,not_available,,No URLs found in abstracts
+4868,2308,huf | r-cd,,39216206,NOT_FOUND,not_available,,No URLs found in abstracts
+4870,2310,esa,,38855791,NOT_FOUND,not_available,,No URLs found in abstracts
+4873,2312,moru | easa-,,39576796,NOT_FOUND,not_available,,No URLs found in abstracts
+4877,2315,mii,german medical informatics initiative,35612145,NOT_FOUND,not_available,,No URLs found in abstracts
+4878,2316,pfgdh,,39118353,NOT_FOUND,not_available,,No URLs found in abstracts
+4882,2320,,south american mycorrhizal database,38594221,NOT_FOUND,not_available,,No URLs found in abstracts
+4884,2322,pride | jpost | iprox,proteomexchange | peptideatlas | panorama,36529941,NOT_FOUND,not_available,,No URLs found in abstracts
+4885,2323,rgc | mea,,40658718,NOT_FOUND,not_available,,No URLs found in abstracts
+4886,2324,,maizegdb,38577974,NOT_FOUND,not_available,,No URLs found in abstracts
+4887,2325,,human protein atlas,40462185,NOT_FOUND,not_available,,No URLs found in abstracts
+4888,2326,mpih,,35972994,NOT_FOUND,not_available,,No URLs found in abstracts
+4890,2328,,hvgelp96,37971941,NOT_FOUND,not_available,,No URLs found in abstracts
+4893,2331,cdsa,,37922939,NOT_FOUND,not_available,,No URLs found in abstracts
+4894,2332,,experimental,38856904,NOT_FOUND,not_available,,No URLs found in abstracts
+4897,2335,rca | tmb,,36628764,NOT_FOUND,not_available,,No URLs found in abstracts
+4902,2339,vlps,,39840069,NOT_FOUND,not_available,,No URLs found in abstracts
+4904,2340,sia,,37841229,NOT_FOUND,not_available,,No URLs found in abstracts
+4906,2342,angpt,,40118721,NOT_FOUND,not_available,,No URLs found in abstracts
+4910,2346,mup,,35596782,NOT_FOUND,not_available,,No URLs found in abstracts
+4913,2348,hgcab,,38922750,NOT_FOUND,not_available,,No URLs found in abstracts
+4914,2349,eftra | cdnm,,36596235,NOT_FOUND,not_available,,No URLs found in abstracts
+4915,2350,bigg,structrecon | metanetx | pubchem,38758924,NOT_FOUND,not_available,,No URLs found in abstracts
+4922,2357,tdms | dobe | dda,,39004851,NOT_FOUND,not_available,,No URLs found in abstracts
+4924,2359,,scifinder | china knowledge resource integrated,39922392,NOT_FOUND,not_available,,No URLs found in abstracts
+4927,2362,tmb | rca | oxtmb,,36940568,NOT_FOUND,not_available,,No URLs found in abstracts
+4937,2369,vg@au,,35892461,NOT_FOUND,not_available,,No URLs found in abstracts
+4944,2376,,mirna-125a-5p,39316855,NOT_FOUND,not_available,,No URLs found in abstracts
+4946,2378,mcc,,36367858,NOT_FOUND,not_available,,No URLs found in abstracts
+4948,2380,hfgt | mbse,,36335143,NOT_FOUND,not_available,,No URLs found in abstracts
+4952,2383,,mapreduce,35958380,NOT_FOUND,not_available,,No URLs found in abstracts
+4956,2386,tmbb-db | ompdb | tmbbs | lglgyrf,,37432995,NOT_FOUND,not_available,,No URLs found in abstracts
+4957,2387,,cpdzyme,38153911,NOT_FOUND,not_available,,No URLs found in abstracts
+4958,2388,,annotale,34598657,NOT_FOUND,not_available,,No URLs found in abstracts
+4961,2391,dlisc | dlisc-sers,nss@peg@3cooh,40185683,NOT_FOUND,not_available,,No URLs found in abstracts
+4967,2396,,metalpdb,36270040,NOT_FOUND,not_available,,No URLs found in abstracts
+4969,2398,shprh,,38072328,NOT_FOUND,not_available,,No URLs found in abstracts
+4971,2400,avpdb | dbaasp,,40153158,NOT_FOUND,not_available,,No URLs found in abstracts
+4976,2405,rrofgd,,38760710,NOT_FOUND,not_available,,No URLs found in abstracts
+4977,2406,hmf,,35385607,NOT_FOUND,not_available,,No URLs found in abstracts
+4978,2407,dmd,,39186704,NOT_FOUND,not_available,,No URLs found in abstracts
+4981,2410,hpv6,,37499306,NOT_FOUND,not_available,,No URLs found in abstracts
+4982,2411,intact,,37450164,NOT_FOUND,not_available,,No URLs found in abstracts
+4984,2413,n-b,,34894367,NOT_FOUND,not_available,,No URLs found in abstracts
+4985,2414,,floraweb,37646947,NOT_FOUND,not_available,,No URLs found in abstracts
+4989,2417,,swaveform | human genome diversity project,37024526,NOT_FOUND,not_available,,No URLs found in abstracts
+4990,2418,nat | inaat,,36746023,NOT_FOUND,not_available,,No URLs found in abstracts
+4991,2419,symplex,,40203090,NOT_FOUND,not_available,,No URLs found in abstracts
+4992,2420,ssg,,36402024,NOT_FOUND,not_available,,No URLs found in abstracts
+4995,2423,,national institutes of health,39547804,NOT_FOUND,not_available,,No URLs found in abstracts
+4998,2426,,steinhardt museum of natural history in tel aviv university holds an interesting collection of orthopterans with a focus on local endemics,39646166,NOT_FOUND,not_available,,No URLs found in abstracts
+5002,2430,,97103v2,35746868,NOT_FOUND,not_available,,No URLs found in abstracts
+5003,2431,,citespace,36910227,NOT_FOUND,not_available,,No URLs found in abstracts
+5004,2432,udg | rs7412,rs429358,38565025,NOT_FOUND,not_available,,No URLs found in abstracts
+5005,2433,cpa,,40023203,NOT_FOUND,not_available,,No URLs found in abstracts
+5006,2434,rdb,,39646391,NOT_FOUND,not_available,,No URLs found in abstracts
+5007,2435,,genome aggregate database,40121539,NOT_FOUND,not_available,,No URLs found in abstracts
+5008,2436,muthtp | tmsnp,,35894475,NOT_FOUND,not_available,,No URLs found in abstracts
+5012,2440,mcf,,37500408,NOT_FOUND,not_available,,No URLs found in abstracts
+5020,2447,djmta,,37779230,NOT_FOUND,not_available,,No URLs found in abstracts
+5023,2449,fasmid,ccsbase,40597534,NOT_FOUND,not_available,,No URLs found in abstracts
+5028,2454,habcde,bristol university docking engine,37828771,NOT_FOUND,not_available,,No URLs found in abstracts
+5030,2456,shap,,39762115,NOT_FOUND,not_available,,No URLs found in abstracts
+5031,2457,acmg,mastermind,40417484,NOT_FOUND,not_available,,No URLs found in abstracts
+5037,2461,ppgsp-8,,38697424,NOT_FOUND,not_available,,No URLs found in abstracts
+5039,2463,,global pharmacopoeia genome database(gpgd,38812215,NOT_FOUND,not_available,,No URLs found in abstracts
+5042,2466,mpnet | xlnet,electronic health records | biobert,39631489,NOT_FOUND,not_available,,No URLs found in abstracts
+5046,2470,,linkedin,36879020,NOT_FOUND,not_available,,No URLs found in abstracts
+5048,2472,pnatdb,protein-nucleic acid thermodynamics database,36272818,NOT_FOUND,not_available,,No URLs found in abstracts
+5054,2478,gag,,35306322,NOT_FOUND,not_available,,No URLs found in abstracts
+5058,2480,cd-prime,,36715415,NOT_FOUND,not_available,,No URLs found in abstracts
+5060,2482,bclov4,,34978789,NOT_FOUND,not_available,,No URLs found in abstracts
+5061,2483,,science citation index expanded | citespace,36224012,NOT_FOUND,not_available,,No URLs found in abstracts
+5062,2484,,citespace | vosviewer,37960750,NOT_FOUND,not_available,,No URLs found in abstracts
+5063,2485,,santa maria supersequence,40008775,NOT_FOUND,not_available,,No URLs found in abstracts
+5064,2486,cuaac | spaac,,39795895,NOT_FOUND,not_available,,No URLs found in abstracts
+5072,2492,cod,,38813150,NOT_FOUND,not_available,,No URLs found in abstracts
+5073,2493,cfps | ncaa,,35569121,NOT_FOUND,not_available,,No URLs found in abstracts
+5075,2495,time,,40402455,NOT_FOUND,not_available,,No URLs found in abstracts
+5076,2496,bpe,,36109852,NOT_FOUND,not_available,,No URLs found in abstracts
+5079,2499,,linkedomicskb | human protein atlas,39812750,NOT_FOUND,not_available,,No URLs found in abstracts
+5081,2501,t-dnas,,36896468,NOT_FOUND,not_available,,No URLs found in abstracts
+5082,2502,fewrel,,37289767,NOT_FOUND,not_available,,No URLs found in abstracts
+5083,2503,,2023machine,37519196,NOT_FOUND,not_available,,No URLs found in abstracts
+5085,2504,,ostreopsis and gambierdiscus,37748671,NOT_FOUND,not_available,,No URLs found in abstracts
+5087,2505,,endocrine-disrupting chemicals,37748672,NOT_FOUND,not_available,,No URLs found in abstracts

@@ -1,0 +1,38 @@
+{
+  "script": "26_process_countries",
+  "timestamp": "2025-12-05T13:44:56.774411",
+  "session": "2025-12-04-111420-z381s",
+  "input_rows": 1510,
+  "country_format": "full",
+  "affiliation_countries": {
+    "rows_with_countries": 1459,
+    "unique_countries": 64,
+    "country_list": [
+      "Andorra",
+      "Argentina",
+      "Australia",
+      "Austria",
+      "Bangladesh",
+      "Belgium",
+      "Benin",
+      "Brazil",
+      "Canada",
+      "China",
+      "Colombia",
+      "Comoros",
+      "Denmark",
+      "Estonia",
+      "Ethiopia",
+      "Finland",
+      "France",
+      "Georgia",
+      "Germany",
+      "Greece"
+    ]
+  },
+  "url_countries": {
+    "rows_with_countries": 0,
+    "unique_countries": 0,
+    "country_list": []
+  }
+}

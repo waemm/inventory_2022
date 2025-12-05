@@ -1,0 +1,51 @@
+================================================================================
+NER UNION VALIDATION QUICK SUMMARY
+Session: 2025-12-04-111420-z381s
+================================================================================
+
+OVERALL RESULT: PASS (7/7 checks)
+
+FILE METRICS:
+  ner_union.csv:        2.25 MB (48,163 data rows)
+  ner_union_pmids.txt:  175.93 KB (20,017 unique PMIDs)
+
+DATA STATISTICS:
+  Total Entities:       48,163
+  Unique PMIDs:         20,017
+  Entity Types:         2 (COM: 70.33%, FUL: 29.67%)
+  Data Integrity:       99.81%
+
+SOURCE DISTRIBUTION:
+  statistical:          31,404 (65.20%)
+  v2_bert:              9,445 (19.61%)
+  ruler:                7,314 (15.19%)
+
+CONFIDENCE SCORES:
+  Perfect (1.0):        38,718 (80.39%)
+  Mean Confidence:      0.9615
+  Range:                0.3571 to 1.0
+
+VALIDATION CHECKS:
+  [✓] Files exist and non-empty
+  [✓] Required columns present
+  [✓] No completely empty rows
+  [✓] Valid source values only
+  [✓] PMID consistency 100%
+  [✓] Valid entity types only
+  [✓] Data quality acceptable (>99%)
+
+MINOR NOTES:
+  - 99 rows with null publication_id (0.21%) - acceptable
+  - 348 rows with null entity_text (0.72%) - acceptable
+  - spacy_hybrid not in sources - normal
+
+QUALITY ASSESSMENT:
+  Structural Integrity:   EXCELLENT
+  Data Completeness:      EXCELLENT (99.81%)
+  Entity Validity:        EXCELLENT (100%)
+  Confidence Scores:      EXCELLENT (mean 0.96)
+
+STATUS: PRODUCTION-READY
+
+For detailed report, see: NER_UNION_VALIDATION_REPORT.md
+================================================================================

@@ -1,19 +1,34 @@
 #!/usr/bin/env python3
 """
-SetFit Inference Script - Phase 1
-==================================
-Run SetFit inference on 20,816 medium-score papers using trained model from Google Drive.
+SetFit Inference Script - Phase 4
 
-Input:
-    - advanced_paper_filtering/results/setfit_2025-11-17-134146/setfit_introduction_classifier/
-    - advanced_paper_filtering/data/results/medium_score_papers.csv
+Run SetFit inference on medium-score papers using trained model.
 
-Output:
-    - results/setfit_inference/setfit_classified_introductions.csv
-    - results/setfit_inference/setfit_classified_usage.csv
-    - results/setfit_inference/setfit_inference_summary.txt
+Usage:
+    # Session-based (PREFERRED):
+    python 08_setfit_inference.py --session-dir results/2025-12-04-143052-abc12
+
+    # Legacy mode:
+    python 08_setfit_inference.py --auto
+
+    # Custom paths:
+    python 08_setfit_inference.py \
+        --input-file data/medium_score_papers.csv \
+        --model-dir models/setfit_model \
+        --output-dir data/setfit_output
+
+Session Mode:
+    When --session-dir is provided:
+    - Reads from: {session_dir}/03_linguistic/medium_score_papers.csv
+    - Model from: models/setfit_introduction_classifier/ (or --model-dir)
+    - Outputs to: {session_dir}/04_setfit/
+
+Author: Pipeline Automation
+Date: 2025-11-17
+Updated: 2025-12-04 (added session-dir support)
 """
 
+import argparse
 import os
 import sys
 import time
@@ -22,8 +37,19 @@ import numpy as np
 from pathlib import Path
 from datetime import datetime
 
-# Add parent directory to path
-sys.path.insert(0, str(Path(__file__).parent.parent.parent))
+# Requires: lib/session_utils.py (run from unified_bioresource_pipeline directory)
+# Add lib to path for session utilities
+SCRIPT_DIR = Path(__file__).resolve().parent
+PIPELINE_ROOT = SCRIPT_DIR.parent.parent
+sys.path.insert(0, str(PIPELINE_ROOT))
+
+# Import from lib - will fail loudly if lib not found
+from lib.session_utils import get_session_path, validate_session_dir
+
+# Default model location
+DEFAULT_MODEL_DIR = PIPELINE_ROOT / "models" / "setfit_introduction_classifier"
+# Legacy model location
+LEGACY_MODEL_DIR = PIPELINE_ROOT.parent / "advanced_paper_filtering" / "results" / "setfit_2025-11-17-134146" / "setfit_introduction_classifier"
 
 def load_setfit_model(model_dir):
     """Load trained SetFit model"""
@@ -251,23 +277,149 @@ def generate_summary(stats, intro_df, usage_df, output_dir, elapsed_time):
     print(f"  Medium confidence: {stats['usage_medium']:,}")
     print("=" * 80)
 
+def parse_args():
+    """Parse command line arguments."""
+    parser = argparse.ArgumentParser(
+        description="Phase 4: SetFit Inference on medium-score papers",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+Examples:
+  # Session-based mode (PREFERRED):
+  python 08_setfit_inference.py --session-dir results/2025-12-04-143052-abc12
+
+  # Legacy mode (auto-detect):
+  python 08_setfit_inference.py --auto
+
+  # Custom paths:
+  python 08_setfit_inference.py \\
+      --input-file data/medium_score_papers.csv \\
+      --model-dir models/setfit_model \\
+      --output-dir data/setfit_output
+        """
+    )
+
+    # Session mode arguments
+    parser.add_argument("--session-dir", type=Path,
+                        help="Session directory path (e.g., results/2025-12-04-143052-abc12)")
+
+    # Input/output arguments
+    parser.add_argument("--input-file", type=Path, help="Path to medium-score papers CSV")
+    parser.add_argument("--model-dir", type=Path, help="Path to trained SetFit model directory")
+    parser.add_argument("--output-dir", type=Path, help="Output directory for results")
+    parser.add_argument("--auto", action="store_true", help="Auto-detect files in legacy paths")
+
+    # Inference options
+    parser.add_argument("--batch-size", type=int, default=32, help="Batch size for inference (default: 32)")
+
+    return parser.parse_args()
+
+
+def find_model_dir():
+    """Find SetFit model directory, checking multiple locations."""
+    # Check default location in pipeline
+    if DEFAULT_MODEL_DIR.exists():
+        return DEFAULT_MODEL_DIR
+
+    # Check legacy location
+    if LEGACY_MODEL_DIR.exists():
+        return LEGACY_MODEL_DIR
+
+    return None
+
+
 def main():
     """Main execution"""
+    args = parse_args()
     start_time = time.time()
 
     print("=" * 80)
-    print("SETFIT INFERENCE - PHASE 1")
+    print("SETFIT INFERENCE - PHASE 4")
     print("=" * 80)
     print(f"Started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print()
 
-    # Define paths
-    base_dir = Path(__file__).parent.parent.parent
-    model_dir = base_dir / "advanced_paper_filtering/results/setfit_2025-11-17-134146/setfit_introduction_classifier"
-    papers_file = base_dir / "advanced_paper_filtering/data/results/medium_score_papers.csv"
-    output_dir = Path(__file__).parent.parent / "results/setfit_inference"
+    # Determine input/output paths
+    if args.session_dir:
+        # SESSION MODE (PREFERRED)
+        print("MODE: Session-based")
+        print(f"Session: {args.session_dir}\n")
 
-    print(f"Base directory: {base_dir}")
+        # Validate session directory
+        session_path = Path(args.session_dir).resolve()
+        if not session_path.exists():
+            print(f"ERROR: Session directory not found: {session_path}")
+            sys.exit(1)
+
+        # Validate session structure
+        try:
+            validate_session_dir(session_path, required_phases=['03_linguistic'])
+        except ValueError as e:
+            print(f"ERROR: Invalid session directory: {e}")
+            sys.exit(1)
+
+        papers_file = get_session_path(args.session_dir, '03_linguistic', 'medium_score_papers.csv')
+        output_dir = get_session_path(args.session_dir, '04_setfit')
+
+        # Model directory (use provided or find)
+        if args.model_dir:
+            model_dir = args.model_dir
+        else:
+            model_dir = find_model_dir()
+            if model_dir is None:
+                print(f"ERROR: SetFit model not found in:")
+                print(f"  - {DEFAULT_MODEL_DIR}")
+                print(f"  - {LEGACY_MODEL_DIR}")
+                print("\nPlease provide --model-dir or copy model to one of the above locations")
+                sys.exit(1)
+
+    elif args.input_file:
+        # LEGACY: Explicit paths
+        print("MODE: Legacy (explicit paths)")
+        papers_file = args.input_file
+        output_dir = args.output_dir if args.output_dir else PIPELINE_ROOT / "results" / "setfit_inference"
+        model_dir = args.model_dir if args.model_dir else find_model_dir()
+
+        if model_dir is None:
+            print("ERROR: SetFit model not found. Please provide --model-dir")
+            sys.exit(1)
+
+    elif args.auto:
+        # LEGACY: Auto-detect
+        print("MODE: Legacy (auto-detect)")
+        base_dir = PIPELINE_ROOT.parent
+
+        # Try to find papers file in various locations
+        candidate_paths = [
+            base_dir / "advanced_paper_filtering" / "data" / "results" / "medium_score_papers.csv",
+            PIPELINE_ROOT / "data" / "phase3_linguistic" / "medium_score_papers.csv",
+        ]
+        papers_file = None
+        for path in candidate_paths:
+            if path.exists():
+                papers_file = path
+                break
+
+        if papers_file is None:
+            print("ERROR: Could not find medium_score_papers.csv")
+            print("Searched:")
+            for p in candidate_paths:
+                print(f"  - {p}")
+            sys.exit(1)
+
+        output_dir = PIPELINE_ROOT / "results" / "setfit_inference"
+        model_dir = find_model_dir()
+
+        if model_dir is None:
+            print("ERROR: SetFit model not found. Please provide --model-dir")
+            sys.exit(1)
+
+    else:
+        print("ERROR: Must provide --session-dir, --input-file, or use --auto")
+        sys.exit(1)
+
+    # Create output directory
+    output_dir.mkdir(parents=True, exist_ok=True)
+
     print(f"Model directory: {model_dir}")
     print(f"Papers file: {papers_file}")
     print(f"Output directory: {output_dir}")
@@ -291,7 +443,7 @@ def main():
     texts = prepare_texts(df)
 
     # Step 4: Run inference
-    predictions, confidence = run_inference(model, texts)
+    predictions, confidence = run_inference(model, texts, batch_size=args.batch_size)
 
     # Step 5: Categorize by confidence
     stats = categorize_by_confidence(predictions, confidence)
@@ -304,7 +456,20 @@ def main():
     generate_summary(stats, intro_df, usage_df, str(output_dir), elapsed)
 
     print(f"\nTotal execution time: {elapsed:.1f} seconds ({elapsed/60:.1f} minutes)")
-    print("\n✓ Phase 1 complete!")
+
+    # Next step guidance
+    print("\n" + "=" * 80)
+    print("NEXT STEP")
+    print("=" * 80)
+    if args.session_dir:
+        print(f"\nRun Phase 5 - Create Paper Sets:")
+        print(f"  python scripts/phase5_mapping/09_create_paper_sets.py --session-dir {args.session_dir}")
+    else:
+        print("\nRun Phase 5 - Create Paper Sets")
+
+    print("\n✓ Phase 4 complete!")
+    return 0
+
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

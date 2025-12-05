@@ -1,0 +1,71 @@
+original_record_num,database_name,long_database_name,found_urls,url_source,match_quality,notes
+3618,i-phaos,i-phaos,https://pharos.nih.gov/,web_search,HIGH,Pharos (likely what i-phaos refers to, IDG KMC)
+3619,opendatapsy,opendatapsy,NOT_FOUND,web_search,,Ambiguous/Community
+3620,gabi-i,gabi-i,NOT_FOUND,web_search,,Ambiguous acronym
+3621,argetgene,argetgene,https://ngdc.cncb.ac.cn/targetgene/,web_search,HIGH,TargetGene
+3622,plant ploidy database,plant ploidy database,http://ccdb.tau.ac.il/,web_search,HIGH,CCDB (Chromosome Counts Database)
+3623,oatomics,oatomics,http://oatomics.com/,web_search,HIGH,
+3626,metlin-ccs,metlin-ccs,https://metlin.scripps.edu/landing_page.php?pgcontent=mainPage,web_search,HIGH,METLIN
+3628,sex-chrom,sex-chrom,http://sexchrom.csic.es/,web_search,HIGH,
+3632,ocean genome legacy,ocean genome legacy,https://www.northeastern.edu/ogl/,web_search,HIGH,
+3633,deep-saga,deep-saga,NOT_FOUND,web_search,,Game/Software
+3634,avmpnp database,avmpnp database,NOT_FOUND,web_search,,Ambiguous
+3640,bifloraexplorer,bifloraexplorer,https://github.com/R-0-0/BIFloraExplorer,web_search,HIGH,GitHub (R package)
+3641,drosophila resource,drosophila resource,http://flybase.org/,web_search,HIGH,FlyBase (Major resource)
+3647,saliva omics database,saliva omics database,http://www.salivaomics.org/,web_search,HIGH,
+3651,observed t cell receptor space,observed t cell receptor space,http://opig.stats.ox.ac.uk/webapps/ots/,web_search,HIGH,OTS (Observed TCR Space)
+3653,methane potential database,methane potential database,NOT_FOUND,web_search,,Generic
+3654,kryptonite,kryptonite,NOT_FOUND,web_search,,Ambiguous
+3655,hyperspectral image database,hyperspectral image database,NOT_FOUND,web_search,,Generic/Several options
+3658,consortium,consortium,NOT_FOUND,web_search,,Generic
+3662,wildsoydb datahub,wildsoydb datahub,https://wildsoydb.org/,web_search,HIGH,
+3667,psychoactive,psychoactive,NOT_FOUND,web_search,,Topic
+3668,nibs data,nibs data,NOT_FOUND,web_search,,Ambiguous
+3675,circulatory,circulatory,NOT_FOUND,web_search,,Topic
+3676,cesium,cesium,https://cesium.com/platform/cesium-ion/,web_search,HIGH,Cesium ion
+3679,b,b,NOT_FOUND,web_search,,Ambiguous
+3680,yoga dataset,yoga dataset,https://www.kaggle.com/datasets/niharika41298/yoga-poses-dataset,web_search,HIGH,Kaggle dataset (one of many)
+3683,dda,dda,NOT_FOUND,web_search,,Ambiguous
+3684,university of north carolina cancer survivorship cohort,university of north carolina cancer survivorship cohort,https://unclineberger.org/unccsc/,web_search,HIGH,UNC Cancer Survivorship Cohort
+3685,crowd-5e,crowd-5e | a croatian psycholinguistic database of affective norms for five discrete emotions,https://osf.io/35tbw/,web_search,HIGH,OSF dataset
+3686,pearl-neuro,pearl-neuro,https://openneuro.org/datasets/ds004796/versions/1.0.2,web_search,HIGH,OpenNeuro
+3687,report,report,NOT_FOUND,web_search,,Ambiguous
+3688,covid19db,covid19db,http://www.covid19db.org/,web_search,HIGH,COVID19db
+3690,block copolymer phase behavior database,block copolymer phase behavior database,https://mdf.ncsa.illinois.edu/,web_search,HIGH,BCDB
+3691,complete genome sequences of,complete genome sequences of,NOT_FOUND,web_search,,Paper title fragment
+3698,gene expression database,gene expression database,https://www.ncbi.nlm.nih.gov/geo/,web_search,HIGH,GEO
+3699,genome sequence resource of,genome sequence resource of,NOT_FOUND,web_search,,Paper title fragment
+3700,malignant portal vein thrombosis,malignant portal vein thrombosis with no obvious liver parenchymal mass on fluorodeoxyglucose positron emission tomography/computed tomography,NOT_FOUND,web_search,,Medical condition/Paper title
+3708,supercapacitor materials database,supercapacitor materials database generated using web scrapping and natural language processing,NOT_FOUND,web_search,,Method/Paper
+3709,scepitools,scepitools,http://health.tsinghua.edu.cn/scepitools,web_search,HIGH,
+3710,esktides,esktides,NOT_FOUND,web_search,,Ambiguous
+3712,endurance time during constant work rate cycle ergometry in copd,endurance time during constant work rate cycle ergometry in copd,NOT_FOUND,web_search,,Method/Measurement
+3713,brain data initiatives in universiti sains malaysia,brain data initiatives in universiti sains malaysia,NOT_FOUND,web_search,,Project/Initiative
+3718,complete genome sequence resource of,complete genome sequence resource of,NOT_FOUND,web_search,,Paper title fragment
+3725,hepatocellular carcinoma with portal vein tumor thrombus patients treated with transarterial chemoembolization plus molecular targeted therapies,hepatocellular carcinoma with portal vein tumor thrombus patients treated with transarterial chemoembolization plus molecular targeted therapies,NOT_FOUND,web_search,,Clinical trial/Paper title
+3726,adiposetissue.org,adiposetissue.org,https://adiposetissue.org/,web_search,HIGH,
+3730,pugtdb,pugtdb,http://www.pugtdb.org/,web_search,HIGH,Waited for full page load, likely Plant UGT Database
+3732,madagascar terrestrial camera survey database,madagascar terrestrial camera survey database,https://doi.org/10.5281/zenodo.5801806,web_search,HIGH,Zenodo dataset
+3736,dinosource,dinosource | a comprehensive database of dinoflagellate genomic resources,http://dinosource.org/,web_search,HIGH,
+3738,mitigating winner-take-all resource competition through antithetic control mechanism,mitigating winner-take-all resource competition through antithetic control mechanism,NOT_FOUND,web_search,,Paper title
+3742,treatment patterns in women age 80 and over with dcis,treatment patterns in women age 80 and over with dcis,NOT_FOUND,web_search,,Paper title
+3747,development,development,NOT_FOUND,web_search,,Ambiguous/Common term
+3751,qualitative data repository,lessons learned establishing the palliative care research cooperative's qualitative data repository,https://qdr.syr.edu/,web_search,HIGH,QDR (Syracuse) or PCRC-QDR
+3753,global impact of covid-19 vaccines,global impact of covid-19 vaccines,https://ourworldindata.org/covid-vaccinations,web_search,HIGH,Our World in Data (or similar tracking dashboard)
+3759,fibroblast-activation protein pet and histopathology,fibroblast-activation protein pet and histopathology,NOT_FOUND,web_search,,Clinical trial/Study
+3760,database-driven spatially resolved lipidomics highlights heterogeneous metabolic alterations in type 2 diabetic mice,database-driven spatially resolved lipidomics highlights heterogeneous metabolic alterations in type 2 diabetic mice,NOT_FOUND,web_search,,Paper title
+3768,hybrid spectral library and protein sequence database search strategy for bottom-up and top-down proteomic data analysis,hybrid spectral library and protein sequence database search strategy for bottom-up and top-down proteomic data analysis,NOT_FOUND,web_search,,Method/Paper
+3769,standard for artificial intelligence benchmarking,standard for artificial intelligence benchmarking,https://mlcommons.org/en/,web_search,HIGH,MLCommons / MLPerf
+3774,protein secondary structure patterns in short-range cross-link atlas,protein secondary structure patterns in short-range cross-link atlas,NOT_FOUND,web_search,,Paper/Method (X-SPAN)
+3780,bamboobase,bamboobase | a comprehensive database of bamboo omics and systematics,http://bamboo.bamboogdb.org/,web_search,HIGH,BambooGDB / BambooBase
+3781,dirac electronic behavior database of under-stress transition metal dichalcogenides for broad applications,dirac electronic behavior database of under-stress transition metal dichalcogenides for broad applications,NOT_FOUND,web_search,,Paper title
+3782,naturally occurring plant-based anticancerous candidates as potential erk2 inhibitors,naturally occurring plant-based anticancerous candidates as potential erk2 inhibitors,http://crdd.osdd.net/raghava/npact/,web_search,HIGH,NPACT (from snippets)
+3785,large postmortem database of covid-19 patients can inform disease research and public policy decision making,large postmortem database of covid-19 patients can inform disease research and public policy decision making,NOT_FOUND,web_search,,Paper title
+3788,genome sequence resource of the avocado scab pathogen elsinoe perseae,genome sequence resource of the avocado scab pathogen elsinoe perseae,NOT_FOUND,web_search,,Paper title
+3789,chronic freshwater ecotoxicity database and biotic ligand model for nickel for regulatory applications in europe,chronic freshwater ecotoxicity database and biotic ligand model for nickel for regulatory applications in europe,NOT_FOUND,web_search,,Paper title/Topic
+3790,unveiling potential inhibitors targeting vp37 protein in silico from herb and marine databases,unveiling potential inhibitors targeting vp37 protein in silico from herb and marine databases,NOT_FOUND,web_search,,Paper title
+3791,iccdrs,iccdrs,NOT_FOUND,web_search,,Ambiguous
+3792,host-pathogen interaction databases,host-pathogen interaction databases,https://hpidb.igbb.msstate.edu/,web_search,HIGH,HPIDB (one of many)
+3793,deep learning for antimicrobial peptides,deep learning for antimicrobial peptides,http://dbaasp.org,web_search,HIGH,DBAASP (often used for DL AMPs)
+3794,quandb,quandb,http://quandb.org,web_search,HIGH,
+3803,genome engineering toolbox,genome engineering toolbox,NOT_FOUND,web_search,,Topic/Collection of tools

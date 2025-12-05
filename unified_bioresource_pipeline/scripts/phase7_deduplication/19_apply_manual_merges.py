@@ -2,34 +2,67 @@
 """
 Apply Manual Merge Groups to Create Final Deduplicated Dataset
 
-Takes the manually edited linguistic_unclear_cases_with_similarity.csv
-where user has assigned merge groups (single letters or any identifier),
-and merges papers with the same merge_group_id.
+Takes the unclear_cases_with_similarity.csv (from script 18) where user has
+assigned merge groups (single letters or any identifier), and merges papers
+with the same merge_group_id.
 
 Papers without merge_group_id are kept as singles.
+
+Usage:
+    python 19_apply_manual_merges.py --session-dir 2025-12-04-111420-z381s [--profile balanced]
 """
 
+import argparse
+import sys
 import pandas as pd
 import re
 from pathlib import Path
 
-# Paths
-BASE_DIR = Path('/Users/warren/development/GBC/inventory_2022')
-RESULTS_DIR = BASE_DIR / 'pipeline_synthesis_2025-11-18/results'
-FILTERED_DIR = BASE_DIR / 'pipeline_synthesis_2025-11-18/data/filtered'
+# Add lib to path for session utilities
+SCRIPT_DIR = Path(__file__).resolve().parent
+PIPELINE_DIR = SCRIPT_DIR.parent.parent
+sys.path.insert(0, str(PIPELINE_DIR))
 
-# Inputs
-UNCLEAR_CASES_FILE = RESULTS_DIR / 'linguistic_unclear_cases_with_similarity.csv'
-ORIGINAL_DEDUP_FILE = RESULTS_DIR / 'linguistic_high_conf_dedup.csv'
-FILTERED_DATA_FILE = FILTERED_DIR / 'linguistic_excluding_baseline.csv'
+from lib.session_utils import validate_session_dir, get_session_path
 
-# Outputs
-OUTPUT_FILE = RESULTS_DIR / 'linguistic_high_conf_dedup_final.csv'
-MERGE_REPORT = RESULTS_DIR / 'manual_merge_report.txt'
+def parse_args():
+    parser = argparse.ArgumentParser(
+        description='Apply manual merge groups to create final deduplicated dataset'
+    )
+    parser.add_argument('--session-dir', type=str, required=True,
+                        help='Session directory (e.g., 2025-12-04-111420-z381s)')
+    parser.add_argument('--profile', type=str, default='balanced',
+                        choices=['conservative', 'balanced', 'aggressive'],
+                        help='Deduplication profile to process (default: balanced)')
+    return parser.parse_args()
+
+args = parse_args()
+
+# Validate session directory
+SESSION_DIR = PIPELINE_DIR / args.session_dir
+validate_session_dir(SESSION_DIR, required_phases=['07_deduplication'])
+
+# Paths - all relative to session directory
+DEDUP_DIR = SESSION_DIR / '07_deduplication' / args.profile
+
+# Inputs - from session directory
+UNCLEAR_CASES_FILE = DEDUP_DIR / 'unclear_cases_with_similarity.csv'
+ORIGINAL_DEDUP_FILE = DEDUP_DIR / 'set_c_final.csv'
+# For full paper data, use the mapping output
+FILTERED_DATA_FILE = SESSION_DIR / '05_mapping' / 'union_papers_with_urls.csv'
+
+# Outputs - to session directory
+OUTPUT_FILE = DEDUP_DIR / 'set_c_final_with_merges.csv'
+MERGE_REPORT = DEDUP_DIR / 'manual_merge_report.txt'
 
 print("="*80)
 print("Apply Manual Merge Groups - Final Deduplication")
 print("="*80)
+print(f"\nSession: {args.session_dir}")
+print(f"Profile: {args.profile}")
+print(f"Input (unclear cases):  {UNCLEAR_CASES_FILE}")
+print(f"Input (original dedup): {ORIGINAL_DEDUP_FILE}")
+print(f"Output: {OUTPUT_FILE}")
 
 # ============================================================================
 # LOAD DATA

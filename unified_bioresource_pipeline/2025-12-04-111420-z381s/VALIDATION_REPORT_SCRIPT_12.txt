@@ -1,0 +1,99 @@
+================================================================================
+VALIDATION REPORT: SCRIPT 12 QUALITY INDICATORS
+================================================================================
+Session: 2025-12-04-111420-z381s
+Date: 2025-12-04
+File: union_papers_with_quality_indicators.csv
+Path: /Users/warren/development/GBC/inventory_2022/unified_bioresource_pipeline/2025-12-04-111420-z381s/05_mapping/
+
+================================================================================
+VALIDATION RESULTS
+================================================================================
+
+1. FILE STRUCTURE VALIDATION
+   [PASS] File exists: YES
+   [PASS] Total rows: 7,594 (expected: 7,594)
+   [PASS] Total columns: 21 (expected: 21)
+   [PASS] File size: 12M
+
+2. DATA INTEGRITY VALIDATION
+   [PASS] Duplicate PMIDs: 0 (expected: 0)
+   [PASS] Unique PMIDs: 7,594
+   [PASS] Row count matches expected: YES
+
+3. NEW QUALITY INDICATOR COLUMNS
+   [PASS] entity_from_title: PRESENT
+   [PASS] db_keyword_found: PRESENT
+   [PASS] db_keyword_score: PRESENT
+   [PASS] title_entity_in_ner: PRESENT
+   [PASS] very_high_conf: PRESENT
+
+4. QUALITY INDICATOR PERCENTAGES
+   [PASS] Entity from title: 4,335 (57.1%) - Expected: 57.1%
+   [PASS] DB keywords found: 3,200 (42.1%) - Expected: 42.1%
+   [PASS] Title matches primary: 2,507 (33.0%) - Expected: 33.0%
+   [PASS] Very high confidence: 1,211 (15.9%) - Expected: 15.9%
+
+5. QUALITY INDICATOR CORRELATION
+   [PASS] very_high_conf papers: 1,211
+          - All have entity_from_title: 100.0%
+          - All have db_keyword_found=True: 100.0%
+          - All have title_entity_in_ner=True: 100.0%
+   [PASS] Correlation logic is correct: YES
+
+6. SAMPLE VALIDATION (High-Confidence Papers)
+   [PASS] PMID 38470883: AagingBase (comprehensive database of anti-aging peptides)
+   [PASS] PMID 36399478: MatrisomeDB (ECM-protein knowledge database)
+   [PASS] PMID 35385099: Breedbase (digital ecosystem for modern plant breeding)
+   [PASS] PMID 39404857: DeOri 10.0 (Database of Eukaryotic Replication Origins)
+   [PASS] PMID 40919338: Ozboneviz (Australian FAIR 3D imagery and collections)
+
+================================================================================
+QUALITY INDICATOR DISTRIBUTION
+================================================================================
+
+Combination of Indicators:
+  All three indicators present: 1,211 papers (15.9%) - HIGHEST CONFIDENCE
+  Entity from title only: 931 papers (12.3%)
+  DB keyword only: 1,092 papers (14.4%)
+  No indicators: 2,167 papers (28.5%)
+
+DB Keyword Score Distribution:
+  Score 0 (no keywords): 4,394 papers (57.9%)
+  Score 1-3 (low match): 917 papers (12.1%)
+  Score 4-6 (medium-high match): 2,153 papers (28.3%)
+  Score 7-15 (very high match): 130 papers (1.7%)
+
+================================================================================
+DATA QUALITY ASSESSMENT
+================================================================================
+
+Strengths:
+  ✓ Perfect data integrity with no duplicates
+  ✓ All expected columns present and properly formatted
+  ✓ Quality indicator percentages exactly match expected values
+  ✓ High-confidence papers are legitimate bioresource announcements
+  ✓ Correlation between indicators is logical and consistent
+  ✓ Quality metrics clearly distinguish papers by confidence level
+
+Data Profile:
+  ✓ 57.1% of papers have entities extracted from titles
+  ✓ 42.1% of papers match database keywords (biological resource markers)
+  ✓ 33.0% have title entities that match NER extraction
+  ✓ 15.9% meet all three criteria (very high confidence)
+  ✓ 28.5% have no quality indicators (potentially false positives or methods papers)
+
+================================================================================
+FINAL VALIDATION RESULT
+================================================================================
+
+OVERALL: PASS
+
+All validation checks passed successfully. The quality indicator output meets
+all expected criteria for structure, data integrity, and statistical accuracy.
+
+Recommendation: PROCEED with pipeline execution
+
+The file is ready for downstream processing steps.
+
+================================================================================

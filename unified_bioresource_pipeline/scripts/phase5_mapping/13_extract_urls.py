@@ -1,38 +1,99 @@
 #!/usr/bin/env python3
 """
-Extract URLs from abstracts and identify bioresource websites.
+Phase 5: Extract URLs from Abstracts and Identify Bioresource Websites
 
-Adds 4 columns to each filtered dataset:
-1. all_urls - All URLs detected (comma-separated)
+Extracts URLs from paper abstracts and scores them to identify primary bioresource URLs.
+
+Adds 4 columns to the dataset:
+1. all_urls - All URLs detected (pipe-separated)
 2. resource_url - Primary bioresource URL (filtered, scored)
 3. has_resource_url - Boolean (True if resource_url exists)
 4. url_context - Text surrounding primary URL (for validation)
+
+Usage:
+    # Session-based (PREFERRED):
+    python 13_extract_urls.py --session-dir results/2025-12-04-143052-abc12
+
+    # Legacy mode (auto-detect):
+    python 13_extract_urls.py --auto
+
+    # Custom paths (legacy):
+    python 13_extract_urls.py \
+        --input-file data/union_papers_with_primary_resources.csv \
+        --output-file data/union_papers_with_urls.csv
+
+Session Mode:
+    When --session-dir is provided:
+    - Reads from: {session_dir}/05_mapping/union_papers_with_primary_resources.csv
+    - Outputs to: {session_dir}/05_mapping/union_papers_with_urls.csv (NEW FILE)
+
+Author: Pipeline Automation
+Date: 2025-11-18
+Updated: 2025-12-04 (added session-dir support, argparse, NEW file output)
 """
 
+import argparse
 import pandas as pd
 import re
+import sys
+import json
 from pathlib import Path
 from urllib.parse import urlparse
+from datetime import datetime
 
-# Paths
-BASE_DIR = Path('/Users/warren/development/GBC/inventory_2022')
-FILTERED_DIR = BASE_DIR / 'pipeline_synthesis_2025-11-18/data/filtered'
+# Requires: lib/session_utils.py (run from unified_bioresource_pipeline directory)
+# Add lib to path for session utilities
+SCRIPT_DIR = Path(__file__).resolve().parent
+PIPELINE_ROOT = SCRIPT_DIR.parent.parent
+sys.path.insert(0, str(PIPELINE_ROOT))
 
-# Input files
-FILES = [
-    'baseline_by_pmid.csv',
-    'baseline_by_entity_match.csv',
-    'linguistic_excluding_baseline.csv',
-    'setfit_excluding_baseline.csv'
-]
+# Import from lib - will fail loudly if lib not found
+from lib.session_utils import get_session_path, validate_session_dir
 
-print("="*80)
-print("URL Extraction and Bioresource Website Identification")
-print("="*80)
+# Legacy paths
+PROJECT_ROOT = SCRIPT_DIR.parent.parent.parent  # inventory_2022
+LEGACY_INPUT_FILE = PROJECT_ROOT / 'pipeline_synthesis_2025-11-18/data/union_papers_with_primary_resources.csv'
+LEGACY_OUTPUT_FILE = PROJECT_ROOT / 'pipeline_synthesis_2025-11-18/data/union_papers_with_urls.csv'
 
 # ============================================================================
 # CONFIGURATION
 # ============================================================================
+
+
+def parse_args():
+    """Parse command line arguments."""
+    parser = argparse.ArgumentParser(
+        description="Phase 5: Extract URLs from abstracts and identify bioresource websites",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+Examples:
+  # Session-based mode (PREFERRED):
+  python 13_extract_urls.py --session-dir results/2025-12-04-143052-abc12
+
+  # Legacy mode (auto-detect):
+  python 13_extract_urls.py --auto
+
+  # Custom paths (legacy):
+  python 13_extract_urls.py \\
+      --input-file data/union_papers_with_primary_resources.csv \\
+      --output-file data/union_papers_with_urls.csv
+        """
+    )
+
+    # Session mode arguments
+    parser.add_argument("--session-dir", type=Path,
+                        help="Session directory path (e.g., results/2025-12-04-143052-abc12)")
+
+    # Legacy mode arguments
+    parser.add_argument("--input-file", type=Path,
+                        help="Path to input CSV with primary resources")
+    parser.add_argument("--output-file", type=Path,
+                        help="Path to output CSV with URLs (NEW FILE, not in-place)")
+    parser.add_argument("--auto", action="store_true",
+                        help="Auto-detect files in legacy paths")
+
+    return parser.parse_args()
+
 
 # Domains to exclude (not bioresources)
 EXCLUDE_DOMAINS = [
@@ -299,74 +360,188 @@ def process_urls(row):
         }
 
 # ============================================================================
-# PROCESS FILES
+# MAIN FUNCTION
 # ============================================================================
 
-print(f"\nProcessing {len(FILES)} files...\n")
 
-for filename in FILES:
-    print(f"Processing: {filename}")
+def main():
+    """Main function to extract URLs and identify bioresource websites."""
+    args = parse_args()
 
-    filepath = FILTERED_DIR / filename
+    print("=" * 80)
+    print("Phase 5: URL Extraction and Bioresource Website Identification")
+    print("=" * 80)
+    print(f"Started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    print()
 
-    # Load file
-    df = pd.read_csv(filepath)
-    print(f"  Loaded: {len(df)} papers")
+    # ============================================================================
+    # DETERMINE INPUT/OUTPUT PATHS
+    # ============================================================================
+
+    if args.session_dir:
+        print("Mode: Session-based")
+        print(f"Session directory: {args.session_dir}")
+        print()
+
+        # Validate session directory
+        try:
+            validate_session_dir(args.session_dir, required_phases=['05_mapping'])
+        except ValueError as e:
+            print(f"ERROR: {e}")
+            sys.exit(1)
+
+        # Session-based paths - read from Script 12 output (quality indicators)
+        input_file = get_session_path(args.session_dir, '05_mapping', 'union_papers_with_quality_indicators.csv')
+        output_file = get_session_path(args.session_dir, '05_mapping', 'union_papers_with_urls.csv')
+
+    elif args.auto:
+        print("Mode: Legacy (auto-detect)")
+        print()
+
+        # Use legacy paths with auto-detection
+        input_file = LEGACY_INPUT_FILE
+        output_file = LEGACY_OUTPUT_FILE
+
+        if not input_file.exists():
+            print(f"ERROR: Legacy input file not found: {input_file}")
+            sys.exit(1)
+
+    elif args.input_file and args.output_file:
+        print("Mode: Custom paths")
+        print()
+
+        input_file = args.input_file
+        output_file = args.output_file
+
+    else:
+        print("ERROR: Must provide either --session-dir, --auto, or both --input-file and --output-file")
+        sys.exit(1)
+
+    # ============================================================================
+    # VALIDATE INPUT FILE
+    # ============================================================================
+
+    if not input_file.exists():
+        print(f"ERROR: Input file not found: {input_file}")
+        sys.exit(1)
+
+    print(f"Input file:  {input_file}")
+    print(f"Output file: {output_file}")
+    print()
+
+    # ============================================================================
+    # LOAD INPUT DATA
+    # ============================================================================
+
+    print("Loading input data...")
+    try:
+        df = pd.read_csv(input_file)
+        print(f"  Loaded: {len(df):,} papers")
+    except Exception as e:
+        print(f"ERROR: Failed to load input file: {e}")
+        sys.exit(1)
+
+    # Verify required columns
+    required_cols = ['abstract']
+    missing_cols = [col for col in required_cols if col not in df.columns]
+    if missing_cols:
+        print(f"ERROR: Input file missing required columns: {missing_cols}")
+        sys.exit(1)
+
+    print()
+
+    # ============================================================================
+    # EXTRACT URLs
+    # ============================================================================
+
+    print("Extracting URLs from abstracts...")
+    print("  This may take a few minutes...")
+    print()
 
     # Process URLs for each row
     url_results = df.apply(process_urls, axis=1)
 
-    # Convert to DataFrame and merge
+    # Convert to DataFrame
     url_df = pd.DataFrame(url_results.tolist())
 
-    # Add new columns
+    # Add new columns to original DataFrame
     df['all_urls'] = url_df['all_urls']
     df['resource_url'] = url_df['resource_url']
     df['has_resource_url'] = url_df['has_resource_url']
     df['url_context'] = url_df['url_context']
 
-    # Save updated file
-    df.to_csv(filepath, index=False)
+    # ============================================================================
+    # STATISTICS
+    # ============================================================================
 
-    # Stats
     total_with_urls = (df['all_urls'] != '').sum()
     total_with_resource = df['has_resource_url'].sum()
 
-    print(f"  URLs found: {total_with_urls}")
-    print(f"  Resource URLs: {total_with_resource}")
-    print(f"  Saved: {filepath}")
+    print("URL Extraction Statistics:")
+    print(f"  Total papers:           {len(df):,}")
+    print(f"  Papers with URLs:       {total_with_urls:,} ({total_with_urls/len(df)*100:.1f}%)")
+    print(f"  Papers with resource:   {total_with_resource:,} ({total_with_resource/len(df)*100:.1f}%)")
     print()
 
+    # ============================================================================
+    # SAVE OUTPUT (NEW FILE)
+    # ============================================================================
+
+    print(f"Saving output to NEW file: {output_file}")
+
+    # Ensure output directory exists
+    output_file.parent.mkdir(parents=True, exist_ok=True)
+
+    try:
+        df.to_csv(output_file, index=False)
+        print(f"  Successfully saved: {len(df):,} rows")
+        print(f"  Added 4 new columns:")
+        print(f"    - all_urls")
+        print(f"    - resource_url")
+        print(f"    - has_resource_url")
+        print(f"    - url_context")
+    except Exception as e:
+        print(f"ERROR: Failed to save output file: {e}")
+        sys.exit(1)
+
+    print()
+
+    # ============================================================================
+    # SAVE STATISTICS
+    # ============================================================================
+
+    stats_file = output_file.parent / 'url_extraction_statistics.json'
+    stats = {
+        'timestamp': datetime.now().isoformat(),
+        'input_file': str(input_file),
+        'output_file': str(output_file),
+        'total_papers': len(df),
+        'papers_with_urls': int(total_with_urls),
+        'papers_with_resource_urls': int(total_with_resource),
+        'resource_url_percentage': round(total_with_resource/len(df)*100, 2),
+    }
+
+    try:
+        with open(stats_file, 'w') as f:
+            json.dump(stats, f, indent=2)
+        print(f"Statistics saved: {stats_file}")
+    except Exception as e:
+        print(f"WARNING: Failed to save statistics: {e}")
+
+    print()
+    print("=" * 80)
+    print("COMPLETE!")
+    print("=" * 80)
+    print(f"Finished: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    print()
+    print(f"Output file: {output_file}")
+    print(f"  - Original input file preserved (NOT modified in-place)")
+    print(f"  - New file created with URL columns added")
+
+
 # ============================================================================
-# SUMMARY STATISTICS
+# ENTRY POINT
 # ============================================================================
 
-print("="*80)
-print("SUMMARY")
-print("="*80)
-
-summary_data = []
-
-for filename in FILES:
-    filepath = FILTERED_DIR / filename
-    df = pd.read_csv(filepath)
-
-    summary_data.append({
-        'File': filename,
-        'Total Papers': len(df),
-        'Papers with URLs': (df['all_urls'] != '').sum(),
-        'Papers with Resource URLs': df['has_resource_url'].sum(),
-        'Resource URL %': f"{(df['has_resource_url'].sum() / len(df) * 100):.1f}%"
-    })
-
-summary_df = pd.DataFrame(summary_data)
-print("\n" + summary_df.to_string(index=False))
-
-print("\n" + "="*80)
-print("COMPLETE!")
-print("="*80)
-print("\nAll files updated with 4 new columns:")
-print("  - all_urls")
-print("  - resource_url")
-print("  - has_resource_url")
-print("  - url_context")
+if __name__ == "__main__":
+    main()

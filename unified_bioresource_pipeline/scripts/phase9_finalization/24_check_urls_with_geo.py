@@ -15,20 +15,27 @@ Updated: 2025-11-28 (added URL pattern validation)
 
 import argparse
 import json
-import os
 import re
 import socket
 import sys
+import time
+from collections import defaultdict
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime
+from pathlib import Path
 from typing import Dict, List, NamedTuple, Optional, Tuple, Union
-from collections import defaultdict
-import time
 
 import pandas as pd
 import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
+
+# Add lib imports
+SCRIPT_DIR = Path(__file__).resolve().parent
+PROJECT_ROOT = SCRIPT_DIR.parent.parent
+sys.path.insert(0, str(PROJECT_ROOT))
+
+from lib.session_utils import get_session_path, validate_session_dir
 
 
 # ============================================================================
@@ -92,8 +99,7 @@ def validate_url_pattern(url: str) -> str:
 
 class Args(NamedTuple):
     """Command-line arguments"""
-    input_file: str
-    output_dir: str
+    session_dir: Path
     workers: int
     timeout: int
     skip_geo: bool
@@ -114,18 +120,20 @@ class URLResult(NamedTuple):
 def get_args() -> Args:
     """Parse command-line arguments"""
     parser = argparse.ArgumentParser(
-        description='Check URL status with geolocation and Wayback fallback'
+        description='Check URL status with geolocation and Wayback fallback',
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+Examples:
+  python 24_check_urls_with_geo.py --session-dir 2025-12-04-111420-z381s
+  python 24_check_urls_with_geo.py --session-dir 2025-12-04-111420-z381s --workers 20 --skip-wayback
+        """
     )
 
     parser.add_argument(
-        '--input',
+        '--session-dir',
+        type=str,
         required=True,
-        help='Path to transformed_resources.csv'
-    )
-    parser.add_argument(
-        '-o', '--output-dir',
-        required=True,
-        help='Output directory (finalization folder)'
+        help='Session directory path'
     )
     parser.add_argument(
         '--workers',
@@ -153,8 +161,7 @@ def get_args() -> Args:
     args = parser.parse_args()
 
     return Args(
-        input_file=args.input,
-        output_dir=args.output_dir,
+        session_dir=Path(args.session_dir).resolve(),
         workers=args.workers,
         timeout=args.timeout,
         skip_geo=args.skip_geo,
@@ -360,10 +367,32 @@ def main() -> None:
     """Main function"""
     args = get_args()
 
+    # Validate session directory
+    SESSION_DIR = args.session_dir
+
+    if not SESSION_DIR.exists():
+        print(f"ERROR: Session directory not found: {SESSION_DIR}")
+        sys.exit(1)
+
+    try:
+        validate_session_dir(SESSION_DIR, required_phases=['09_finalization'])
+    except ValueError as e:
+        print(f"ERROR: Invalid session directory: {e}")
+        sys.exit(1)
+
+    # Input/output paths
+    input_file = get_session_path(SESSION_DIR, '09_finalization', 'transformed_resources.csv')
+    output_dir = get_session_path(SESSION_DIR, '09_finalization')
+
+    if not input_file.exists():
+        print(f"ERROR: Input file not found: {input_file}")
+        sys.exit(1)
+
     print(f"Phase 9 - Script 24: Check URLs with Geolocation")
-    print(f"=" * 50)
-    print(f"Input: {args.input_file}")
-    print(f"Output directory: {args.output_dir}")
+    print(f"=" * 80)
+    print(f"Session: {SESSION_DIR.name}")
+    print(f"Input: {input_file.relative_to(SESSION_DIR)}")
+    print(f"Output directory: {output_dir.relative_to(SESSION_DIR)}")
     print(f"Workers: {args.workers}")
     print(f"Timeout: {args.timeout}s")
     print(f"Skip geo: {args.skip_geo}")
@@ -372,7 +401,7 @@ def main() -> None:
 
     # Load input
     print("Loading transformed resources...")
-    df = pd.read_csv(args.input_file)
+    df = pd.read_csv(input_file)
     print(f"  Loaded {len(df)} rows")
     print()
 
@@ -455,6 +484,7 @@ def main() -> None:
     stats = {
         'script': '24_check_urls_with_geo',
         'timestamp': datetime.now().isoformat(),
+        'session': SESSION_DIR.name,
         'runtime_seconds': round(elapsed, 1),
         'input_rows': len(df),
         'unique_urls_checked': len(url_results),
@@ -480,13 +510,13 @@ def main() -> None:
     print()
 
     # Save outputs
-    output_file = os.path.join(args.output_dir, 'url_checked_resources.csv')
+    output_file = output_dir / 'url_checked_resources.csv'
     included_df.to_csv(output_file, index=False)
-    print(f"Saved URL-checked resources to: {output_file}")
+    print(f"Saved URL-checked resources to: {output_file.relative_to(SESSION_DIR)}")
 
-    excluded_file = os.path.join(args.output_dir, 'excluded_no_url.csv')
+    excluded_file = output_dir / 'excluded_no_url.csv'
     excluded_df.to_csv(excluded_file, index=False)
-    print(f"Saved excluded resources to: {excluded_file}")
+    print(f"Saved excluded resources to: {excluded_file.relative_to(SESSION_DIR)}")
 
     # Save detailed URL check results
     url_results_list = [
@@ -501,22 +531,22 @@ def main() -> None:
         }
         for r in url_results.values()
     ]
-    url_results_file = os.path.join(args.output_dir, 'url_check_results.csv')
+    url_results_file = output_dir / 'url_check_results.csv'
     pd.DataFrame(url_results_list).to_csv(url_results_file, index=False)
-    print(f"Saved URL check details to: {url_results_file}")
+    print(f"Saved URL check details to: {url_results_file.relative_to(SESSION_DIR)}")
 
     # Save URLs needing review in a separate file
     review_df = included_df[included_df['url_validation'] == 'review'].copy()
     if len(review_df) > 0:
-        review_file = os.path.join(args.output_dir, 'urls_for_review.csv')
+        review_file = output_dir / 'urls_for_review.csv'
         review_cols = ['ID', 'best_name', 'extracted_url', 'url_validation', 'extracted_url_status']
         review_df[review_cols].to_csv(review_file, index=False)
-        print(f"Saved URLs needing review to: {review_file}")
+        print(f"Saved URLs needing review to: {review_file.relative_to(SESSION_DIR)}")
 
-    stats_file = os.path.join(args.output_dir, 'script_24_stats.json')
+    stats_file = output_dir / 'script_24_stats.json'
     with open(stats_file, 'w') as f:
         json.dump(stats, f, indent=2)
-    print(f"Saved statistics to: {stats_file}")
+    print(f"Saved statistics to: {stats_file.relative_to(SESSION_DIR)}")
 
     print()
     print(f"Done! {len(included_df)} resources with valid URLs, {len(excluded_df)} excluded")

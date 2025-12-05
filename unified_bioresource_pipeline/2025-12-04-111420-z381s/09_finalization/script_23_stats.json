@@ -1,0 +1,46 @@
+{
+  "script": "23_transform_columns",
+  "timestamp": "2025-12-05T13:05:16.869399",
+  "session": "2025-12-04-111420-z381s",
+  "profile": "aggressive",
+  "input_rows": 5096,
+  "output_rows": 5096,
+  "columns_mapped": {
+    "ID": 5096,
+    "best_name": 5096,
+    "best_common": 2215,
+    "best_full": 3205,
+    "extracted_url": 2086,
+    "article_count": 5096
+  },
+  "sanitization": {
+    "total_rows": 5096,
+    "rows_modified": 2000,
+    "flag_counts": {
+      "CAPITALIZED": 1729,
+      "CHARS_SANITIZED": 20,
+      "DISAMBIGUATED": 66,
+      "SHORT_NAME_FLAGGED": 35,
+      "SHORT_NAME_NO_URL": 12,
+      "SHORT_NAME_REPLACED": 25,
+      "NAME_RECOVERED_FROM_URL": 1,
+      "HTML_REMOVED": 20,
+      "PIPE_CLEANED": 338,
+      "POPULATED_FROM_URL": 7
+    },
+    "disambiguated_count": 66
+  },
+  "placeholder_columns": [
+    "extracted_url_status",
+    "extracted_url_country",
+    "extracted_url_coordinates",
+    "wayback_url",
+    "publication_date",
+    "affiliation",
+    "authors",
+    "grant_ids",
+    "grant_agencies",
+    "num_citations",
+    "affiliation_countries"
+  ]
+}

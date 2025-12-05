@@ -541,3 +541,47 @@ BLOCKED_URL_PATTERNS = [
 | HTML removed | 5 |
 | URLs blocked | 21 |
 | URLs flagged for review | 19 |
+
+---
+
+## Post-Processing QC (2025-12-01)
+
+An additional post-processing step was implemented to catch remaining data quality issues not handled by the Phase 9 scripts.
+
+### Location
+
+`unified_bioresource_pipeline/post_processing/`
+
+### Methodology
+
+Agent-based analysis scans the `best_name` column for:
+- Empty/missing names
+- Numeric-only names (e.g., "265")
+- Very short names (1-2 chars)
+- Short lowercase generic words
+- Names with brackets (disambiguation artifacts)
+- Wrong extractions (name doesn't match title/URL)
+
+### Results (Session 2025-12-01-104909)
+
+| Metric | Value |
+|--------|-------|
+| Total rows analyzed | 1,688 |
+| Issues flagged | 111 (6.6%) |
+| Auto-fixed (HIGH confidence) | 29 |
+| Auto-fixed (MEDIUM confidence) | 66 |
+| Auto-fixed (LOW confidence) | 10 |
+| Needs manual review | 6 |
+
+### Output Files
+
+- `post_processing/results/final_inventory_QC_FIXED.csv` - Corrected inventory
+- `post_processing/results/fixes_applied.csv` - Audit log of all changes
+- `post_processing/results/best_name_qc_ALL.csv` - Full QC findings
+
+### Flags Added
+
+- `QC_FIX_HIGH` - High confidence correction applied
+- `QC_FIX_MEDIUM` - Medium confidence correction applied
+- `QC_FIX_LOW` - Low confidence correction applied
+- `NEEDS_MANUAL_REVIEW` - Could not auto-fix, requires human review

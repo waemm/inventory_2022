@@ -7,14 +7,15 @@ Purpose: Extract country codes from affiliation text and standardize
 
 Authors: AI Assistant
 Date: 2025-11-27
+Updated: 2025-12-05 (Session-based refactor)
 """
 
 import argparse
 import json
-import os
 import re
 import sys
 from datetime import datetime
+from pathlib import Path
 from typing import List, NamedTuple, Set
 
 import pandas as pd
@@ -25,29 +26,37 @@ except ImportError:
     print("Error: pycountry package required. Install with: pip install pycountry")
     sys.exit(1)
 
+# Add lib imports
+SCRIPT_DIR = Path(__file__).resolve().parent
+PROJECT_ROOT = SCRIPT_DIR.parent.parent
+sys.path.insert(0, str(PROJECT_ROOT))
+
+from lib.session_utils import get_session_path, validate_session_dir
+
 
 class Args(NamedTuple):
     """Command-line arguments"""
-    input_file: str
-    output_dir: str
+    session_dir: Path
     country_format: str
 
 
 def get_args() -> Args:
     """Parse command-line arguments"""
     parser = argparse.ArgumentParser(
-        description='Extract country codes from affiliations'
+        description='Extract country codes from affiliations',
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+Examples:
+  python 26_process_countries.py --session-dir 2025-12-04-111420-z381s
+  python 26_process_countries.py --session-dir 2025-12-04-111420-z381s --format alpha-2
+        """
     )
 
     parser.add_argument(
-        '--input',
+        '--session-dir',
+        type=str,
         required=True,
-        help='Path to metadata_enriched_resources.csv'
-    )
-    parser.add_argument(
-        '-o', '--output-dir',
-        required=True,
-        help='Output directory (finalization folder)'
+        help='Session directory path'
     )
     parser.add_argument(
         '--format',
@@ -59,8 +68,7 @@ def get_args() -> Args:
     args = parser.parse_args()
 
     return Args(
-        input_file=args.input,
-        output_dir=args.output_dir,
+        session_dir=Path(args.session_dir).resolve(),
         country_format=args.format
     )
 
@@ -163,16 +171,39 @@ def main() -> None:
     """Main function"""
     args = get_args()
 
+    # Validate session directory
+    SESSION_DIR = args.session_dir
+
+    if not SESSION_DIR.exists():
+        print(f"ERROR: Session directory not found: {SESSION_DIR}")
+        sys.exit(1)
+
+    try:
+        validate_session_dir(SESSION_DIR, required_phases=['09_finalization'])
+    except ValueError as e:
+        print(f"ERROR: Invalid session directory: {e}")
+        sys.exit(1)
+
+    # Input/output paths
+    input_file = get_session_path(SESSION_DIR, '09_finalization', 'metadata_enriched_resources.csv')
+    output_dir = get_session_path(SESSION_DIR, '09_finalization')
+
+    if not input_file.exists():
+        print(f"ERROR: Input file not found: {input_file}")
+        print(f"  This script requires Script 25 (fetch_epmc_metadata) to run first.")
+        sys.exit(1)
+
     print(f"Phase 9 - Script 26: Process Countries")
-    print(f"=" * 50)
-    print(f"Input: {args.input_file}")
-    print(f"Output directory: {args.output_dir}")
+    print(f"=" * 80)
+    print(f"Session: {SESSION_DIR.name}")
+    print(f"Input: {input_file.relative_to(SESSION_DIR)}")
+    print(f"Output directory: {output_dir.relative_to(SESSION_DIR)}")
     print(f"Country format: {args.country_format}")
     print()
 
     # Load input
     print("Loading metadata-enriched resources...")
-    df = pd.read_csv(args.input_file)
+    df = pd.read_csv(input_file)
     print(f"  Loaded {len(df)} rows")
     print()
 
@@ -212,6 +243,7 @@ def main() -> None:
     stats = {
         'script': '26_process_countries',
         'timestamp': datetime.now().isoformat(),
+        'session': SESSION_DIR.name,
         'input_rows': len(df),
         'country_format': args.country_format,
         'affiliation_countries': {
@@ -232,14 +264,14 @@ def main() -> None:
     print()
 
     # Save outputs
-    output_file = os.path.join(args.output_dir, 'countries_processed_resources.csv')
+    output_file = output_dir / 'countries_processed_resources.csv'
     df.to_csv(output_file, index=False)
-    print(f"Saved countries-processed resources to: {output_file}")
+    print(f"Saved countries-processed resources to: {output_file.relative_to(SESSION_DIR)}")
 
-    stats_file = os.path.join(args.output_dir, 'script_26_stats.json')
+    stats_file = output_dir / 'script_26_stats.json'
     with open(stats_file, 'w') as f:
         json.dump(stats, f, indent=2)
-    print(f"Saved statistics to: {stats_file}")
+    print(f"Saved statistics to: {stats_file.relative_to(SESSION_DIR)}")
 
     print()
     print(f"Done! Processed countries for {len(df)} resources")

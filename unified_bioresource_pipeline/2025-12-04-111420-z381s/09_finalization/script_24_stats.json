@@ -1,0 +1,18 @@
+{
+  "script": "24_check_urls_with_geo",
+  "timestamp": "2025-12-05T13:12:39.576141",
+  "session": "2025-12-04-111420-z381s",
+  "runtime_seconds": 352.6,
+  "input_rows": 5096,
+  "unique_urls_checked": 2072,
+  "live_urls": 1514,
+  "wayback_rescued": 0,
+  "url_validation": {
+    "blocked": 6,
+    "review_needed": 39,
+    "ok": 5051
+  },
+  "included_rows": 1510,
+  "excluded_rows": 3586,
+  "exclusion_rate": 70.37
+}

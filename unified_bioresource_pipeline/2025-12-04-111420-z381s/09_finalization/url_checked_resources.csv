@@ -1,0 +1,1511 @@
+ID,best_name,best_name_prob,best_common,best_common_prob,best_full,best_full_prob,article_count,extracted_url,extracted_url_status,extracted_url_country,extracted_url_coordinates,wayback_url,publication_date,affiliation,authors,grant_ids,grant_agencies,num_citations,affiliation_countries,best_name_original,name_modification_flags,url_validation
+"34718743, 39470737",bacdive,0.0,,0.0,bacdive,0.0,2,https://bacdive.dsmz.de,200,,,,,,,,,,,bacdive,,ok
+"36624665, 39535036",CANSAR,0.0,cansar,0.0,,0.0,2,https://cansar.ai,200,,,,,,,,,,,cansar,CAPITALIZED,ok
+"36300620, 37881892, 39417505",KEGG,0.0,kegg,0.0,,0.0,3,https://www.kegg.jp,200,,,,,,,,,,,kegg,CAPITALIZED,ok
+"36408920, 39552041",uniprot,0.0,,0.0,uniprot,0.0,2,https://www.uniprot.org/,200,,,,,,,,,,,uniprot,,ok
+35891797,crispr-surfaceome,0.9071792,,0.9071792,crispr-surfaceome,0.9071792,1,https://crispr-surfaceome.siais.shanghaitech.edu.cn/home,200,,,,,,,,,,,crispr-surfaceome,,ok
+37811871,m7ghub,0.99676806,m7ghub,0.99676806,,0.99676806,1,http://www.rnamd.org/m7GHub2,200,,,,,,,,,,,m7ghub,,ok
+36040109,g-dirt,0.9966478,g-dirt,0.9966478,,0.9966478,1,http://webtools.nbpgr.ernet.in/gdirt/,200,,,,,,,,,,,g-dirt,,ok
+35662469,openpip,0.99598205,,0.99598205,openpip,0.99598205,1,http://openpip.baderlab.org/,200,,,,,,,,,,,openpip,,ok
+36161321,cell taxonomy,0.9946529,,0.9946529,cell taxonomy,0.9946529,1,https://ngdc.cncb.ac.cn/celltaxonomy,200,,,,,,,,,,,cell taxonomy,,ok
+35148171,genome nexus,0.99448127,,0.99448127,genome nexus,0.99448127,1,https://www.genomenexus.org,200,,,,,,,,,,,genome nexus,,ok
+39475723,BAKREP,0.99031544,,0.99031544,bakrep,0.99031544,1,https://bakrep.computational.bio,200,,,,,,,,,,,bakrep,CAPITALIZED,ok
+35348648,diseases,0.98903394,,0.98903394,diseases,0.98903394,1,https://diseases.jensenlab.org,200,,,,,,,,,,,diseases,,ok
+38845051,reproductive chemical database,0.98803204,,0.98803204,reproductive chemical database,0.98803204,1,https://yu.life.sjtu.edu.cn/ChenLab/RCDB,200,,,,,,,,,,,reproductive chemical database,,ok
+37749421,idlas-nl,0.9868391,,0.9868391,idlas-nl,0.9868391,1,http://www.mpi.nl/idlas-nl,200,,,,,,,,,,,idlas-nl,,ok
+36755570,phagetailfinder,0.9864357,,0.9864357,phagetailfinder,0.9864357,1,http://www.microbiome-bigdata.com/PHISDetector/index/tools/PhageTailFinder,200,,,,,,,,,,,phagetailfinder,,ok
+37169224,small molecule antiviral compound collection,0.9826298,,0.9826298,small molecule antiviral compound collection,0.9826298,1,https://smacc.mml.unc.edu,200,,,,,,,,,,,small molecule antiviral compound collection,,ok
+35389344,protist.guru,0.9823803,,0.9823803,protist.guru,0.9823803,1,http://protist.guru/,200,,,,,,,,,,,protist.guru,,ok
+39558185,plant metabolic network,0.9792689,,0.9792689,plant metabolic network,0.9792689,1,https://plantcyc.org,200,,,,,,,,,,,plant metabolic network,,ok
+34648031,inxight drugs,0.9607316,,0.9607316,inxight drugs,0.9607316,1,https://drugs.ncats.io,200,,,,,,,,,,,inxight drugs,,ok
+40179105,playbook workflow builder,0.9575088,,0.9575088,playbook workflow builder,0.9575088,1,https://playbook-workflow-builder.cloud/,200,,,,,,,,,,,playbook workflow builder,,ok
+40996709,gene loss db,0.95452684,,0.95452684,gene loss db,0.95452684,1,https://geneloss.org/,200,,,,,,,,,,,gene loss db,,ok
+37605747,curcumin chalcone derivatives database,0.9495553,,0.9495553,curcumin chalcone derivatives database,0.9495553,1,https://srampogu-ccdd-ccdd-8uldk8.streamlit.app/,200,,,,,,,,,,,curcumin chalcone derivatives database,,ok
+39910485,SORFDB,0.941405,,0.941405,sorfdb,0.941405,1,https://sorfdb.computational.bio,200,,,,,,,,,,,sorfdb,CAPITALIZED,ok
+38628370,kinase-associated neural phospho-signaling,0.94127434,,0.94127434,kinase-associated neural phospho-signaling,0.94127434,1,https://kanphos.jp,200,,,,,,,,,,,kinase-associated neural phospho-signaling,,ok
+37183478,yeast mitochondrial posttranslational modification,0.9273263,,0.9273263,yeast mitochondrial posttranslational modification,0.9273263,1,http://compbio.fmph.uniba.sk/y-mtptm/,200,,,,,,,,,,,yeast mitochondrial posttranslational modification,,ok
+36932341,mare-mage,0.92450774,,0.92450774,mare-mage,0.92450774,1,http://mare-mage.weebly.com/,200,,,,,,,,,,,mare-mage,,ok
+40580317,circadian ontogenetic metabolomics atlas,0.9242804,,0.9242804,circadian ontogenetic metabolomics atlas,0.9242804,1,https://coma.metabolomics.fgu.cas.cz,200,,,,,,,,,,,circadian ontogenetic metabolomics atlas,,ok
+38022697,EDAVE,0.9141477,edave,0.9141477,,0.9141477,1,https://edave.pum.edu.pl/,200,,,,,,,,,,,edave,CAPITALIZED,ok
+39874782,goose multi-omics database,0.9072239,,0.9072239,goose multi-omics database,0.9072239,1,http://goosedb.com/,200,,,,,,,,,,,goose multi-omics database,,ok
+38709877,ISOVIS,0.9063657,,0.9063657,isovis,0.9063657,1,https://isomix.org/isovis/,200,,,,,,,,,,,isovis,CAPITALIZED,ok
+36318236,mhc motif atlas,0.9032981,,0.9032981,mhc motif atlas,0.9032981,1,http://mhcmotifatlas.org/,200,,,,,,,,,,,mhc motif atlas,,ok
+35690280,exrnadisease,0.8973258,,0.8973258,exrnadisease,0.8973258,1,http://www.origin-gene.cn/database/exRNAdisease/,200,,,,,,,,,,,exrnadisease,,ok
+36512929,OSADHI,0.8950489,osadhi,0.8950489,,0.8950489,1,https://neist.res.in/osadhi/,200,,,,,,,,,,,osadhi,CAPITALIZED,ok
+38868205,sarcoma_cellminercdb,0.8832515,,0.8832515,sarcoma_cellminercdb,0.8832515,1,https://discover.nci.nih.gov/SarcomaCellMinerCDB,200,,,,,,,,,,,sarcoma_cellminercdb,,ok
+"37716955, 37897355",a3d,0.86590374,a3d,0.86590374,,0.86590374,2,http://biocomp.chem.uw.edu.pl/A3D2/yeast,200,,,,,,,,,,,a3d,,ok
+36209954,tumor-specific neoantigen database,0.8629695,,0.8629695,tumor-specific neoantigen database,0.8629695,1,https://pgx.zju.edu.cn/tsnadb/,200,,,,,,,,,,,tumor-specific neoantigen database,,ok
+38917415,protein interaction explorer,0.8602503,,0.8602503,protein interaction explorer,0.8602503,1,https://ippidb.pasteur.fr/targetcentric/,200,,,,,,,,,,,protein interaction explorer,,ok
+37216585,conserved unique peptide patterns,0.85037714,,0.85037714,conserved unique peptide patterns,0.85037714,1,https://cupp.info/,200,,,,,,,,,,,conserved unique peptide patterns,,ok
+36698975,CUCUME,0.84332544,cucume,0.84332544,,0.84332544,1,http://cucume.cn/,200,,,,,,,,,,,cucume,CAPITALIZED,ok
+36322519,global jukebox,0.8351905,,0.8351905,global jukebox,0.8351905,1,https://theglobaljukebox.org/?songsofearth,200,,,,,,,,,,,global jukebox,,ok
+38444537,wolfberry genome database,0.79521847,,0.79521847,wolfberry genome database,0.79521847,1,https://cosbi7.ee.ncku.edu.tw/Wolfberry/,200,,,,,,,,,,,wolfberry genome database,,ok
+38662570,CORDAX,0.78051543,cordax,0.78051543,,0.78051543,1,https://cordax.switchlab.org/,200,,,,,,,,,,,cordax,CAPITALIZED,ok
+37294807,mash native,0.7468378,,0.7468378,mash native,0.7468378,1,https://labs.wisc.edu/gelab/MASH_Explorer/MASHSoftware.php,200,,,,,,,,,,,mash native,,ok
+35857806,pocketome,0.7059669,,0.7059669,pocketome,0.7059669,1,https://eliot.moldiscovery.com,200,,,,,,,,,,,pocketome,,ok
+36170113,MANE,0.6811143,mane,0.6811143,,0.6811143,1,https://texmst.ibms.sinica.edu.tw/,200,,,,,,,,,,,mane,CAPITALIZED,ok
+36520398,microscope,0.6379231,,0.6379231,microscope,0.6379231,1,https://mage.genoscope.cns.fr/microscope,200,,,,,,,,,,,microscope,,ok
+35134830,vivarium,0.5917026,,0.5917026,vivarium,0.5917026,1,https://vivarium-collective.github.io,200,,,,,,,,,,,vivarium,,review
+39977983,atomevo-odor,0.99909943,,0.99909943,atomevo-odor,0.99909943,1,http://cslodordatabase.7fx.cn/,200,,,,,,,,,,,atomevo-odor,,ok
+39407093,be-datahive,0.99819183,,0.99819183,be-datahive,0.99819183,1,https://be-datahive.com/,200,,,,,,,,,,,be-datahive,,ok
+37646949,b-chrom,0.9973228,,0.9973228,b-chrom,0.9973228,1,http://www.bchrom.csic.es,200,,,,,,,,,,,b-chrom,,ok
+38769057,REME,0.9955338,reme,0.9955338,,0.9955338,1,https://reme.biodesign.ac.cn/,200,,,,,,,,,,,reme,CAPITALIZED,ok
+37713619,therapeutic target database,0.98831636,,0.98831636,therapeutic target database,0.98831636,1,https://idrblab.org/ttd/,200,,,,,,,,,,,therapeutic target database,,ok
+40140766,methylmap,0.9855161,,0.9855161,methylmap,0.9855161,1,https://methylmap.bioinf.be,200,,,,,,,,,,,methylmap,,ok
+40466944,readretro web,0.9844299,,0.9844299,readretro web,0.9844299,1,https://readretro.net,200,,,,,,,,,,,readretro web,,ok
+39526369,MOTUS,0.9836894,motus,0.9836894,,0.9836894,1,https://motus-db.org,200,,,,,,,,,,,motus,CAPITALIZED,ok
+37994706,pathdip 5,0.9775495,,0.9775495,pathdip 5,0.9775495,1,https://ophid.utoronto.ca/pathDIP,200,,,,,,,,,,,pathdip 5,,ok
+37861121,colabfit exchange,0.9730178,,0.9730178,colabfit exchange,0.9730178,1,https://colabfit.org,200,,,,,,,,,,,colabfit exchange,,ok
+38613393,interactive tree of life,0.9714848,,0.9714848,interactive tree of life,0.9714848,1,https://itol.embl.de,200,,,,,,,,,,,interactive tree of life,,ok
+37846051,SEMLA,0.97073555,semla,0.97073555,,0.97073555,1,https://ludvigla.github.io/semla/,200,,,,,,,,,,,semla,CAPITALIZED,review
+36847450,haptools,0.9699472,,0.9699472,haptools,0.9699472,1,https://haptools.readthedocs.io,200,,,,,,,,,,,haptools,,ok
+37467208,hgsuite hyperbrowser,0.9256403,,0.9256403,hgsuite hyperbrowser,0.9256403,1,https://hyperbrowser.uio.no/hgsuite,200,,,,,,,,,,,hgsuite hyperbrowser,,ok
+35639735,bioexcel building blocks workflows,0.8990058,,0.8990058,bioexcel building blocks workflows,0.8990058,1,https://mmb.irbbarcelona.org/biobb-wfs,200,,,,,,,,,,,bioexcel building blocks workflows,,ok
+39673270,immunosenescence inventory,0.80353606,,0.80353606,immunosenescence inventory,0.80353606,1,https://ngdc.cncb.ac.cn/iaa/home,200,,,,,,,,,,,immunosenescence inventory,,ok
+40433754,pesticide,0.7880507,,0.7880507,pesticide,0.7880507,1,https://dpai.ccnu.edu.cn/digpesticide/,200,,,,,,,,,,,pesticide,,ok
+39470740,vista enhancer browser,0.706325,,0.706325,vista enhancer browser,0.706325,1,https://enhancer.lbl.gov,200,,,,,,,,,,,vista enhancer browser,,ok
+39525087,microsatellites explorer,0.6334635,,0.6334635,microsatellites explorer,0.6334635,1,https://www.microsatellitesexplorer.com,200,,,,,,,,,,,microsatellites explorer,,ok
+"36416266, 39470701",MOBIDB,0.0,mobidb,0.0,,0.0,2,https://mobidb.org/,200,,,,,,,,,,,mobidb,CAPITALIZED,ok
+36243988,brain catalog,0.0,,0.0,brain catalog,0.0,1,https://ngdc.cncb.ac.cn/braincatalog,200,,,,,,,,,,,brain catalog,,ok
+34606616,HUARDB,0.0,huardb,0.0,,0.0,1,https://huarc.net/database,200,,,,,,,,,,,huardb,CAPITALIZED,ok
+35411390,oligogenic diseases database,0.0,,0.0,oligogenic diseases database,0.0,1,https://olida.ibsquare.be,200,,,,,,,,,,,oligogenic diseases database,,ok
+40181386,clc-db,0.0,clc-db,0.0,,0.0,1,https://compbio.sjtu.edu.cn/services/clc-db,200,,,,,,,,,,,clc-db,,ok
+38870722,an interactive online platform for photosensory and bio-functional proteins in optogenetic systems,0.0,,0.0,an interactive online platform for photosensory and bio-functional proteins in optogenetic systems,0.0,1,https://idrblab.org/optics/,200,,,,,,,,,,,an interactive online platform for photosensory and bio-functional proteins in optogenetic systems,,ok
+34643709,kincore,0.0,,0.0,kincore,0.0,1,http://dunbrack.fccc.edu/kincore,200,,,,,,,,,,,kincore,,ok
+39609715,cidalsdb,0.0,,0.0,cidalsdb,0.0,1,https://cidalsdb.streamlit.app/,200,,,,,,,,,,,cidalsdb,,ok
+37791887,multifacetedprotdb,0.0,,0.0,multifacetedprotdb,0.0,1,https://multifacetedprotdb.biocomp.unibo.it/,200,,,,,,,,,,,multifacetedprotdb,,ok
+37710163,pear genomics database,0.0,,0.0,pear genomics database,0.0,1,http://pyrusgdb.sdau.edu.cn,200,,,,,,,,,,,pear genomics database,,ok
+38530613,database of therapeutic antibody developability,0.0,,0.0,database of therapeutic antibody developability,0.0,1,http://i.uestc.edu.cn/DOTAD/,200,,,,,,,,,,,database of therapeutic antibody developability,,ok
+39776220,insect cytochrome p450 database,0.0,,0.0,insect cytochrome p450 database,0.0,1,http://www.insectp450.net/,200,,,,,,,,,,,insect cytochrome p450 database,,ok
+37351774,canis mitosnp,0.0,,0.0,canis mitosnp,0.0,1,https://canismitosnp.pl,200,,,,,,,,,,,canis mitosnp,,ok
+39842990,tfinder,0.0,tfinder,0.0,,0.0,1,https://tfinder-ipmc.streamlit.app,200,,,,,,,,,,,tfinder,,ok
+35388171,ECCDNA,0.0,eccdna,0.0,,0.0,1,http://www.eccdnadb.org,200,,,,,,,,,,,eccdna,CAPITALIZED,ok
+34634793,prokaryotes (lpsn),0.0,,0.0,prokaryotes,0.0,1,https://lpsn.dsmz.de,200,,,,,,,,,,,prokaryotes,DISAMBIGUATED,ok
+36453866,exome database of interspersed repeats,0.0,,0.0,exome database of interspersed repeats,0.0,1,https://osf.io/m3gvx/,200,,,,,,,,,,,exome database of interspersed repeats,,ok
+36453996,MIRDIP,0.0,mirdip,0.0,,0.0,1,https://ophid.utoronto.ca/mirDIP,200,,,,,,,,,,,mirdip,CAPITALIZED,ok
+38048333,hybriddbrpred,0.0,,0.0,hybriddbrpred,0.0,1,http://biomine.cs.vcu.edu/servers/hybridDBRpred/,200,,,,,,,,,,,hybriddbrpred,,ok
+39657122,open targets platform,0.0,,0.0,open targets platform,0.0,1,https://platform.opentargets.org,200,,,,,,,,,,,open targets platform,,ok
+39436012,ipd-mhc,0.99903697,ipd-mhc,0.99903697,,0.99903697,1,http://www.ebi.ac.uk/ipd/mhc/,200,,,,,,,,,,,ipd-mhc,,ok
+37099369,e-rna,0.99864054,e-rna,0.99864054,,0.99864054,1,http://www.e-rna.org,200,,,,,,,,,,,e-rna,,ok
+34581824,cplm 4.0,0.99841774,cplm 4.0,0.99841774,,0.99841774,1,http://cplm.biocuckoo.cn/,200,,,,,,,,,,,cplm 4.0,,ok
+39657145,PMP,0.9982768,pmp,0.9982768,,0.9982768,1,https://apps.thesgc.org/pmp/,200,,,,,,,,,,,pmp,CAPITALIZED,ok
+37750380,pdb-bre,0.99817145,pdb-bre,0.99817145,,0.99817145,1,http://bliulab.net/PDB-BRE,200,,,,,,,,,,,pdb-bre,,ok
+36350631,bv-brc,0.9979748,bv-brc,0.9979748,,0.9979748,1,https://www.bv-brc.org/,200,,,,,,,,,,,bv-brc,,ok
+38644519,ev-comm,0.99793816,ev-comm,0.99793816,,0.99793816,1,http://sdc.iue.ac.cn/evs/list/,200,,,,,,,,,,,ev-comm,,ok
+40133788,AIA,0.9979358,aia,0.9979358,,0.9979358,1,https://amiactive.ccen.ufpb.br/,200,,,,,,,,,,,aia,CAPITALIZED,ok
+38471316,CMSSD,0.99783057,cmssd,0.99783057,,0.99783057,1,http://tcmssd.ratcm.cn,200,,,,,,,,,,,cmssd,CAPITALIZED,ok
+39385626,plabdab-nano,0.99768776,,0.99768776,plabdab-nano,0.99768776,1,https://opig.stats.ox.ac.uk/webapps/plabdab-nano/,200,,,,,,,,,,,plabdab-nano,,ok
+37328705,uni-gbsa,0.99765253,,0.99765253,uni-gbsa,0.99765253,1,https://hermite.dp.tech,200,,,,,,,,,,,uni-gbsa,,ok
+34761257,scov2-md,0.9976216,,0.9976216,scov2-md,0.9976216,1,http://www.scov2-md.org,200,,,,,,,,,,,scov2-md,,ok
+37244568,DB,0.9975942,db,0.9975942,,0.9975942,1,https://c4s.site,200,,,,,,,,,,,db,"SHORT_NAME_FLAGGED,CAPITALIZED",ok
+39676654,chitars 8.0,0.9975846,,0.9975846,chitars 8.0,0.9975846,1,http://biosrv.org/chitars,200,,,,,,,,,,,chitars 8.0,,ok
+36222566,meta-boa,0.99757975,meta-boa,0.99757975,,0.99757975,1,https://complimet.ca/meta-boa,200,,,,,,,,,,,meta-boa,,ok
+36988160,prosmorf-pred,0.99748874,,0.99748874,prosmorf-pred,0.99748874,1,http://www.nii.ac.in/prosmorfpred.html,200,,,,,,,,,,,prosmorf-pred,,ok
+34469540,diana-mited,0.99741673,,0.99741673,diana-mited,0.99741673,1,http://www.microrna.gr/mited,200,,,,,,,,,,,diana-mited,,ok
+37337236,AMHRED,0.9973326,amhred,0.9973326,,0.9973326,1,https://camhred.org/,200,,,,,,,,,,,amhred,CAPITALIZED,ok
+37953323,ncrnadrug,0.99724466,,0.99724466,ncrnadrug,0.99724466,1,http://www.jianglab.cn/ncRNADrug,200,,,,,,,,,,,ncrnadrug,,ok
+39413200,NAIRDB,0.99720335,nairdb,0.99720335,,0.99720335,1,https://nairdb.genesilico.pl,200,,,,,,,,,,,nairdb,CAPITALIZED,ok
+36929933,sbgc-hm,0.9971841,,0.9971841,sbgc-hm,0.9971841,1,https://www.wzubio.com/sbgc,200,,,,,,,,,,,sbgc-hm,,ok
+38865432,ipad-db,0.9968591,ipad-db,0.9968591,,0.9968591,1,http://www.lamee.cn/ipad-db/,200,,,,,,,,,,,ipad-db,,ok
+37123454,anisonet,0.99673676,,0.99673676,anisonet,0.99673676,1,https://www.caniso.net,200,,,,,,,,,,,anisonet,,ok
+35696018,genome2or,0.9966544,,0.9966544,genome2or,0.9966544,1,https://cord.ihuman.shanghaitech.edu.cn,200,,,,,,,,,,,genome2or,,ok
+36215037,HICHIP,0.9965234,hichip,0.9965234,,0.9965234,1,http://health.tsinghua.edu.cn/hichipdb/,200,,,,,,,,,,,hichip,CAPITALIZED,ok
+38659008,insaflu,0.99647963,,0.99647963,insaflu,0.99647963,1,https://insaflu.insa.pt/,200,,,,,,,,,,,insaflu,,ok
+34657153,t4sefinder,0.9964712,,0.9964712,t4sefinder,0.9964712,1,https://tool2-mml.sjtu.edu.cn/T4SEfinder_TAPE/,200,,,,,,,,,,,t4sefinder,,ok
+37669275,trackplot,0.9963226,,0.9963226,trackplot,0.9963226,1,https://anaconda.org/bioconda/trackplot,200,,,,,,,,,,,trackplot,,ok
+38783102,castpfold,0.9963082,,0.9963082,castpfold,0.9963082,1,https://cfold.bme.uic.edu/castpfold/,200,,,,,,,,,,,castpfold,,ok
+40328764,osmlanduse,0.99627554,,0.99627554,osmlanduse,0.99627554,1,https://osmlanduse.org,200,,,,,,,,,,,osmlanduse,,ok
+35438150,LTDB,0.99618566,ltdb,0.99618566,,0.99618566,1,http://www.pltdb-hust.com,200,,,,,,,,,,,ltdb,CAPITALIZED,ok
+35289353,hla3d,0.9961513,hla3d,0.9961513,,0.9961513,1,http://www.hla3d.cn/,200,,,,,,,,,,,hla3d,,ok
+37860104,ORALL,0.99612594,orall,0.99612594,,0.99612594,1,https://proteomics.se/forall/,200,,,,,,,,,,,orall,CAPITALIZED,ok
+40067093,ioarchlinux,0.99588853,,0.99588853,ioarchlinux,0.99588853,1,https://bioarchlinux.org,200,,,,,,,,,,,ioarchlinux,,ok
+36700083,DLIP,0.9954866,dlip,0.9954866,,0.9954866,1,https://skb-insilico.com/dlip,200,,,,,,,,,,,dlip,CAPITALIZED,ok
+37689762,ontoavida,0.99547946,o,0.99547946,,0.99547946,1,http://www.obofoundry.org/ontology/ontoavida.html,200,,,,,,,,,,,o,SHORT_NAME_REPLACED,ok
+37823705,fl-circas,0.99517787,,0.99517787,fl-circas,0.99517787,1,https://cosbi.ee.ncku.edu.tw/FL-circAS/,200,,,,,,,,,,,fl-circas,,ok
+41158063,ENTRAF,0.9951624,entraf,0.9951624,,0.9951624,1,https://entraf.iimas.unam.mx,200,,,,,,,,,,,entraf,CAPITALIZED,ok
+40151429,LIPBD,0.9950924,lipbd,0.9950924,,0.9950924,1,https://www.researchdata.scot/accessing-data/,200,,,,,,,,,,,lipbd,CAPITALIZED,ok
+39470721,GDP,0.9950263,gdp,0.9950263,,0.9950263,1,https://BioGDP.com,200,,,,,,,,,,,gdp,CAPITALIZED,ok
+37947313,FRBASE,0.9949348,frbase,0.9949348,,0.9949348,1,http://proteininformatics.org/mkumar/afrbase/,200,,,,,,,,,,,frbase,CAPITALIZED,ok
+39922822,polarity-jam,0.99472,,0.99472,polarity-jam,0.99472,1,http://www.polarityjam.com,200,,,,,,,,,,,polarity-jam,,ok
+39660955,sg-ml-plap,0.99460125,sg-ml-plap,0.99460125,,0.99460125,1,http://www.nii.ac.in/sg-ml-plap.html,200,,,,,,,,,,,sg-ml-plap,,ok
+39663244,penvariant,0.99399334,,0.99399334,penvariant,0.99399334,1,https://openvariant.readthedocs.io,200,,,,,,,,,,,penvariant,,ok
+35670735,brassicaceae genome resource,0.9938773,,0.9938773,brassicaceae genome resource,0.9938773,1,http://www.tbgr.org.cn,200,,,,,,,,,,,brassicaceae genome resource,,ok
+36713195,-lacfampred,0.993813,,0.993813,β-lacfampred,0.993813,1,http://proteininformatics.org/mkumar/blacfampred,200,,,,,,,,,,,β-lacfampred,CHARS_SANITIZED,ok
+34718728,eukaryotic pathogen,0.9934106,,0.9934106,eukaryotic pathogen,0.9934106,1,https://veupathdb.org,200,,,,,,,,,,,eukaryotic pathogen,,ok
+36440758,ribo-uorf,0.9933963,,0.9933963,ribo-uorf,0.9933963,1,http://rnainformatics.org.cn/RiboUORF,200,,,,,,,,,,,ribo-uorf,,ok
+37069545,ynbiotools,0.99329084,,0.99329084,ynbiotools,0.99329084,1,https://synbiotools.lifesynther.com/,200,,,,,,,,,,,ynbiotools,,ok
+37855672,lipid maps,0.9932388,lipid maps,0.9932388,,0.9932388,1,http://www.lipidmaps.org,200,,,,,,,,,,,lipid maps,,ok
+39702552,estrogene2,0.99295545,,0.99295545,estrogene2,0.99295545,1,https://estrogeneii.web.app/,200,,,,,,,,,,,estrogene2,,ok
+38426331,iresist,0.9929542,,0.9929542,iresist,0.9929542,1,https://hiresist.ahc.umn.edu/,200,,,,,,,,,,,iresist,,ok
+36456919,rchidbase,0.99295145,,0.99295145,rchidbase,0.99295145,1,https://cosbi.ee.ncku.edu.tw/orchidbase5/,200,,,,,,,,,,,rchidbase,,ok
+39341494,EPREP,0.99229556,eprep,0.99229556,,0.99229556,1,http://www.geprep.org.cn/,200,,,,,,,,,,,eprep,CAPITALIZED,ok
+36179089,ITEDB,0.99208426,itedb,0.99208426,,0.99208426,1,https://citedb.cn/,200,,,,,,,,,,,itedb,CAPITALIZED,ok
+39677536,FAIR (eppi),0.99197817,fair,0.99197817,,0.99197817,1,https://eppi.ioe.ac.uk/eppi-vis/Fair,200,,,,,,,,,,,fair,"CAPITALIZED,DISAMBIGUATED",ok
+37246709,SFKIT,0.99181277,sfkit,0.99181277,,0.99181277,1,https://sfkit.org,200,,,,,,,,,,,sfkit,CAPITALIZED,ok
+39319582,g4,0.99169075,g4,0.99169075,,0.99169075,1,http://www.g4ldb.com,200,,,,,,,,,,,g4,SHORT_NAME_FLAGGED,ok
+37144459,g:profiler,0.9910741,,0.9910741,g:profiler,0.9910741,1,https://biit.cs.ut.ee/gprofiler,200,,,,,,,,,,,g:profiler,,ok
+35199148,localpdb,0.9908091,,0.9908091,localpdb,0.9908091,1,https://labstructbioinf.github.io/localpdb/,200,,,,,,,,,,,localpdb,,review
+39540421,mirnatissueatlas,0.99073744,,0.99073744,mirnatissueatlas,0.99073744,1,https://www.ccb.uni-saarland.de/tissueatlas2025,200,,,,,,,,,,,mirnatissueatlas,,ok
+37382560,ego-csm,0.99071884,ego-csm,0.99071884,,0.99071884,1,https://biosig.lab.uq.edu.au/lego_csm,200,,,,,,,,,,,ego-csm,,ok
+39237206,fungtion,0.9906234,,0.9906234,fungtion,0.9906234,1,https://step3.erc.monash.edu/Fungtion/,200,,,,,,,,,,,fungtion,,ok
+39550226,NMIX,0.990502,nmix,0.990502,,0.990502,1,https://tubic.org/Nm,200,,,,,,,,,,,nmix,CAPITALIZED,ok
+39565917,pf-haploatlas,0.99016833,,0.99016833,pf-haploatlas,0.99016833,1,https://apps.malariagen.net/pf-haploatlas,200,,,,,,,,,,,pf-haploatlas,,ok
+39436044,pneumobrowse 2,0.9897526,,0.9897526,pneumobrowse 2,0.9897526,1,https://veeninglab.com/pneumobrowse,200,,,,,,,,,,,pneumobrowse 2,,ok
+39425047,MULEA,0.98958206,mulea,0.98958206,,0.98958206,1,https://cran.r-project.org/web/packages/mulea/,200,,,,,,,,,,,mulea,CAPITALIZED,ok
+38736683,NMPID,0.98954093,nmpid,0.98954093,,0.98954093,1,https://www.rnmpid.org,200,,,,,,,,,,,nmpid,CAPITALIZED,ok
+39128019,xpomics,0.9891872,,0.9891872,xpomics,0.9891872,1,http://www.biomedical-web.com/expomics,200,,,,,,,,,,,xpomics,,ok
+36328151,lantcadb,0.98918,,0.98918,lantcadb,0.98918,1,https://bioinfor.nefu.edu.cn/PlantCADB/,200,,,,,,,,,,,lantcadb,,ok
+35580059,econdary metabolite transcriptomic pipeline,0.9890834,,0.9890834,econdary metabolite transcriptomic pipeline,0.9890834,1,https://sema-trap.ziemertlab.com,200,,,,,,,,,,,econdary metabolite transcriptomic pipeline,,ok
+35674373,NASOLO,0.9890721,nasolo,0.9890721,,0.9890721,1,https://rnasolo.cs.put.poznan.pl,200,,,,,,,,,,,nasolo,CAPITALIZED,ok
+39246384,2cdb,0.9889897,2cdb,0.9889897,,0.9889897,1,http://pengyonglab.com/c2cdb,200,,,,,,,,,,,2cdb,,ok
+38411627,plantfun,0.9889824,,0.9889824,plantfun,0.9889824,1,https://rocesv.github.io/PlantFUNCO,200,,,,,,,,,,,plantfun,,review
+34933331,TMNP,0.9882448,tmnp,0.9882448,,0.9882448,1,http://www.bcxnfz.top/TMNP,200,,,,,,,,,,,tmnp,CAPITALIZED,ok
+36548389,TMINT,0.988079,tmint,0.988079,,0.988079,1,https://ptmint.sjtu.edu.cn/,200,,,,,,,,,,,tmint,CAPITALIZED,ok
+36991341,elltrackvis,0.9880716,,0.9880716,elltrackvis,0.9880716,1,http://scbeom.github.io/ctv_tutorial,200,,,,,,,,,,,elltrackvis,,review
+37725369,plm-blast,0.98807067,,0.98807067,plm-blast,0.98807067,1,https://toolkit.tuebingen.mpg.de/tools/plmblast,200,,,,,,,,,,,plm-blast,,ok
+36723167,MRTIST,0.9878675,mrtist,0.9878675,,0.9878675,1,https://nmrtist.org,200,,,,,,,,,,,mrtist,CAPITALIZED,ok
+40037544,np-tcmtarget,0.9874786,,0.9874786,np-tcmtarget,0.9874786,1,http://www.bcxnfz.top/NP-TCMtarget,200,,,,,,,,,,,np-tcmtarget,,ok
+35639928,GATOM,0.98729,gatom,0.98729,,0.98729,1,https://ctlab.itmo.ru/shiny/gatom,200,,,,,,,,,,,gatom,CAPITALIZED,ok
+"36281025, 39956358",dockground,0.98697156,,0.98697156,dockground,0.98697156,2,http://dockground.compbio.ku.edu,200,,,,,,,,,,,dockground,,ok
+38000392,systemhc atlas,0.9866274,,0.9866274,systemhc atlas,0.9866274,1,https://systemhc.sjtu.edu.cn,200,,,,,,,,,,,systemhc atlas,,ok
+36494623,AMICA (bioapps),0.98657876,amica,0.98657876,,0.98657876,1,https://bioapps.maxperutzlabs.ac.at/app/amica,200,,,,,,,,,,,amica,"CAPITALIZED,DISAMBIGUATED",ok
+35697698,ACovPepDB,0.98642665,a,0.98642665,,0.98642665,1,http://i.uestc.edu.cn/ACovPepDB/,200,,,,,,,,,,,a,SHORT_NAME_REPLACED,ok
+37391755,PragMeta,0.9863058,h,0.9863058,,0.9863058,1,http://www.PragMeta.org,200,,,,,,,,,,,h,SHORT_NAME_REPLACED,ok
+37308034,mi-system,0.98618877,,0.98618877,mi-system,0.98618877,1,https://misystem.cgm.ntu.edu.tw/,200,,,,,,,,,,,mi-system,,ok
+35484563,bmc caller,0.9861846,,0.9861846,bmc caller,0.9861846,1,https://bmc-caller.prl.msu.edu,200,,,,,,,,,,,bmc caller,,ok
+38966006,cyclopep builder,0.98616,,0.98616,cyclopep builder,0.98616,1,http://cyclopep.com/,200,,,,,,,,,,,cyclopep builder,,ok
+34586379,multiomix,0.9861575,,0.9861575,multiomix,0.9861575,1,https://www.multiomix.org,200,,,,,,,,,,,multiomix,,ok
+38886530,haddock2,0.9860785,haddock2,0.9860785,,0.9860785,1,https://wenmr.science.uu.nl/haddock2.4,200,,,,,,,,,,,haddock2,,ok
+35446912,graph theoretical analysis of task-related functional dynamics,0.9859549,,0.9859549,graph theoretical analysis of task-related functional dynamics,0.9859549,1,https://www.nitrc.org/projects/gat_fd,200,,,,,,,,,,,graph theoretical analysis of task-related functional dynamics,,ok
+35713762,emoji-sp,0.9857685,,0.9857685,emoji-sp,0.9857685,1,https://osf.io/dtfjv/,200,,,,,,,,,,,emoji-sp,,ok
+40240925,red-ld,0.9854816,red-ld,0.9854816,,0.9854816,1,https://compgen.dib.uth.gr/PRED-LD/,200,,,,,,,,,,,red-ld,,ok
+39724366,rice online expression profiles array database version,0.9850325,,0.9850325,rice online expression profiles array database version,0.9850325,1,https://roadv2.khu.ac.kr,200,,,,,,,,,,,rice online expression profiles array database version,,ok
+36399494,pdcm finder,0.98464394,,0.98464394,pdcm finder,0.98464394,1,http://www.cancermodels.org,200,,,,,,,,,,,pdcm finder,,ok
+37986220,plant reactome,0.98423195,,0.98423195,plant reactome,0.98423195,1,https://plantreactome.gramene.org,200,,,,,,,,,,,plant reactome,,ok
+38491365,euronbridge,0.9842142,,0.9842142,euronbridge,0.9842142,1,http://neuronbridge.janelia.org,200,,,,,,,,,,,euronbridge,,ok
+36869285,package,0.98408973,h,0.98408973,,0.98408973,1,https://CRAN.R-project.org/package=dbGaPCheckup,200,,,,,,,,,,,h,SHORT_NAME_REPLACED,ok
+38597606,job dispatcher,0.98404247,,0.98404247,job dispatcher,0.98404247,1,https://www.ebi.ac.uk/jdispatcher,200,,,,,,,,,,,job dispatcher,,ok
+36321651,RBP,0.9839633,rbp,0.9839633,,0.9839633,1,https://rnabiology.ircm.qc.ca/RBPImage/,200,,,,,,,,,,,rbp,CAPITALIZED,ok
+38933486,mycodiversity,0.9830637,,0.9830637,mycodiversity,0.9830637,1,https://mycodiversity.liacs.nl,200,,,,,,,,,,,mycodiversity,,ok
+39585730,EFSE,0.9830594,efse,0.9830594,,0.9830594,1,https://www.bioconductor.org/packages/release/bioc/html/lefser.html,200,,,,,,,,,,,efse,CAPITALIZED,ok
+35916725,anexplorer,0.98293835,,0.98293835,anexplorer,0.98293835,1,http://panexplorer.southgreen.fr,200,,,,,,,,,,,anexplorer,,ok
+39517109,cat bridge,0.982758,,0.982758,cat bridge,0.982758,1,https://catbridge.work,200,,,,,,,,,,,cat bridge,,ok
+34297061,IRANNO,0.98188496,iranno,0.98188496,,0.98188496,1,https://ophid.utoronto.ca/miRAnno/,200,,,,,,,,,,,iranno,CAPITALIZED,ok
+37925500,cf2chem,0.981407,,0.981407,cf2chem,0.981407,1,https://mcf.lifesynther.com,200,,,,,,,,,,,cf2chem,,ok
+39493756,idbview,0.98139584,,0.98139584,idbview,0.98139584,1,https://idbview.com,200,,,,,,,,,,,idbview,,ok
+34718746,g4ldb 2.2,0.98139375,g4ldb 2.2,0.98139375,,0.98139375,1,http://www.g4ldb.com,200,,,,,,,,,,,g4ldb 2.2,,ok
+40170100,BIP,0.9813546,bip,0.9813546,,0.9813546,1,https://www.bip-earth.com,200,,,,,,,,,,,bip,CAPITALIZED,ok
+40599243,darling,0.9807079,,0.9807079,darling,0.9807079,1,https://www.darling-miner.org/,200,,,,,,,,,,,darling,,ok
+37817115,dispersenn2,0.9797712,,0.9797712,dispersenn2,0.9797712,1,https://dispersenn2.readthedocs.io/en/latest/,200,,,,,,,,,,,dispersenn2,,ok
+35199146,tamp-db,0.9796215,,0.9796215,tamp-db,0.9796215,1,https://stamp.switchlab.org,200,,,,,,,,,,,tamp-db,,ok
+34529036,iodynamo,0.9795607,,0.9795607,iodynamo,0.9795607,1,http://www.biodynamo.org,200,,,,,,,,,,,iodynamo,,ok
+35230424,dsdbase,0.97927564,dsdbase,0.97927564,,0.97927564,1,http://caps.ncbs.res.in/dsdbase2,200,,,,,,,,,,,dsdbase,,ok
+36764355,inparanoid,0.97916293,,0.97916293,inparanoid,0.97916293,1,https://inparanoidb.sbc.su.se/,200,,,,,,,,,,,inparanoid,,ok
+35552372,DGI,0.97901106,dgi,0.97901106,,0.97901106,1,https://odgi.readthedocs.io,200,,,,,,,,,,,dgi,CAPITALIZED,ok
+39399372,VCAB,0.97814965,vcab,0.97814965,,0.97814965,1,https://fraternalilab.cs.ucl.ac.uk/VCAb/,200,,,,,,,,,,,vcab,CAPITALIZED,ok
+36652461,MODERN,0.9781194,modern,0.9781194,,0.9781194,1,http://encodeproject.org,200,,,,,,,,,,,modern,CAPITALIZED,ok
+36239113,NBLAST,0.9773624,nblast,0.9773624,,0.9773624,1,http://nbitglobal.com/nblast,200,,,,,,,,,,,nblast,CAPITALIZED,ok
+37991246,ormulationai,0.97705907,,0.97705907,ormulationai,0.97705907,1,https://formulationai.computpharm.org/,200,,,,,,,,,,,ormulationai,,ok
+36474475,steodip,0.9768949,,0.9768949,steodip,0.9768949,1,http://ophid.utoronto.ca/OsteoDIP,200,,,,,,,,,,,steodip,,ok
+39441070,covalentindb 2,0.97661906,,0.97661906,covalentindb 2,0.97661906,1,http://cadd.zju.edu.cn/cidb/,200,,,,,,,,,,,covalentindb 2,,ok
+39402285,avr/i,0.97647125,avr/i/ssapdb,0.97647125,,0.97647125,1,https://bblserver.org.in/avrissa/,200,,,,,,,,,,,avr/i/ssapdb,HTML_REMOVED,ok
+34634794,cedr atlas,0.9757525,,0.9757525,cedr atlas,0.9757525,1,https://ngdc.cncb.ac.cn/cedr,200,,,,,,,,,,,cedr atlas,,ok
+36008829,fpocket,0.97561,,0.97561,fpocket,0.97561,1,http://durrantlab.com/fpocketweb,200,,,,,,,,,,,fpocket,,ok
+37425046,etcm v2.0,0.97441036,,0.97441036,etcm v2.0,0.97441036,1,http://www.tcmip.cn/ETCM2/front/#/,200,,,,,,,,,,,etcm v2.0,,ok
+35952423,nei-mpdb,0.97425866,nei-mpdb,0.97425866,,0.97425866,1,https://neist.res.in/neimpdb/,200,,,,,,,,,,,nei-mpdb,,ok
+36847339,things-data,0.97196287,,0.97196287,things-data,0.97196287,1,https://things-initiative.org,200,,,,,,,,,,,things-data,,ok
+35289834,EVUP,0.9719043,evup,0.9719043,,0.9719043,1,http://www.revup-classifier.ca,200,,,,,,,,,,,evup,CAPITALIZED,ok
+36882166,ndex iquery,0.9710183,,0.9710183,ndex iquery,0.9710183,1,https://www.ndexbio.org/iquery,200,,,,,,,,,,,ndex iquery,,ok
+36243971,metalloenzyme data bank and analysis,0.9699864,,0.9699864,metalloenzyme data bank and analysis,0.9699864,1,https://medba.ddtmlab.org,200,,,,,,,,,,,metalloenzyme data bank and analysis,,ok
+39097091,RNET,0.9694458,rnet,0.9694458,,0.9694458,1,https://irnet.missouri.edu,200,,,,,,,,,,,rnet,CAPITALIZED,ok
+38063081,mlosmetadb,0.96875346,,0.96875346,mlosmetadb,0.96875346,1,http://mlos.leloir.org.ar,200,,,,,,,,,,,mlosmetadb,,ok
+39215721,annoduf,0.9682133,a,0.9682133,,0.9682133,1,http://bts.ibab.ac.in/annoduf.php,200,,,,,,,,,,,a,SHORT_NAME_REPLACED,ok
+35913188,salmonet2,0.96761936,,0.96761936,salmonet2,0.96761936,1,http://salmonet.org/,200,,,,,,,,,,,salmonet2,,ok
+40272881,overture,0.9675332,,0.9675332,overture,0.9675332,1,http://www.overture.bio,200,,,,,,,,,,,overture,,ok
+38709889,shapewarp-web,0.96746343,,0.96746343,shapewarp-web,0.96746343,1,https://shapewarp.incarnatolab.com,200,,,,,,,,,,,shapewarp-web,,ok
+37027007,ACDB,0.9671377,acdb,0.9671377,,0.9671377,1,https://ngdc.cncb.ac.cn/macdb,200,,,,,,,,,,,acdb,CAPITALIZED,ok
+39111721,disease trend analysis platform,0.9669578,,0.9669578,disease trend analysis platform,0.9669578,1,http://bioinfor.imu.edu.cn/dtapcc,200,,,,,,,,,,,disease trend analysis platform,,ok
+39380204,SINGLE,0.966812,single,0.966812,,0.966812,1,https://smart-db.cn,200,,,,,,,,,,,single,CAPITALIZED,ok
+38680873,traditional chinese medicine modernization,0.96663946,,0.96663946,traditional chinese medicine modernization,0.96663946,1,https://www.tcmm.net.cn/,200,,,,,,,,,,,traditional chinese medicine modernization,,ok
+35908389,pfas-tox database,0.96640664,,0.96640664,pfas-tox database,0.96640664,1,https://pfastoxdatabase.org,200,,,,,,,,,,,pfas-tox database,,ok
+37806555,open biomedical imaging archive,0.9658639,,0.9658639,open biomedical imaging archive,0.9658639,1,https://ngdc.cncb.ac.cn/obia,200,,,,,,,,,,,open biomedical imaging archive,,ok
+39240653,CPEDIA,0.9657324,cpedia,0.9657324,,0.9657324,1,https://www.rcpediadb.org,200,,,,,,,,,,,cpedia,CAPITALIZED,ok
+34634810,signalink3,0.9648586,,0.9648586,signalink3,0.9648586,1,http://signalink.org/,200,,,,,,,,,,,signalink3,,ok
+34755867,pdbe-kb,0.9648401,,0.9648401,pdbe-kb,0.9648401,1,https://pdbe-kb.org,200,,,,,,,,,,,pdbe-kb,,ok
+38532317,OSAP,0.9640285,osap,0.9640285,,0.9640285,1,https://cosap.bio,200,,,,,,,,,,,osap,CAPITALIZED,ok
+35609985,enrichmir,0.96376956,,0.96376956,enrichmir,0.96376956,1,https://ethz-ins.org/enrichMiR/,200,,,,,,,,,,,enrichmir,,ok
+36265769,ctrr-ncrna,0.96269685,,0.96269685,ctrr-ncrna,0.96269685,1,http://ctrr.bioinf.org.cn/,200,,,,,,,,,,,ctrr-ncrna,,ok
+36254161,alzheimer's cell atlas,0.96241856,,0.96241856,alzheimer's cell atlas,0.96241856,1,https://taca.lerner.ccf.org/,200,,,,,,,,,,,alzheimer's cell atlas,,ok
+36412325,acinetobase,0.9619025,,0.9619025,acinetobase,0.9619025,1,https://acinetobase.vib.be/,200,,,,,,,,,,,acinetobase,,ok
+34918744,exorbase 2,0.9616755,,0.9616755,exorbase 2,0.9616755,1,http://www.exoRBase.org,200,,,,,,,,,,,exorbase 2,,ok
+37953349,evlncrnas 3,0.96161586,,0.96161586,evlncrnas 3,0.96161586,1,https://www.sdklab-biophysics-dzu.net/EVLncRNAs3/,200,,,,,,,,,,,evlncrnas 3,,ok
+36477806,domain database,0.9610677,,0.9610677,domain database,0.9610677,1,https://www.ncbi.nlm.nih.gov/Structure/cdd/cdd.shtml,200,,,,,,,,,,,domain database,,ok
+37290059,protein-ligand binding database,0.96098447,,0.96098447,protein-ligand binding database,0.96098447,1,https://plbd.org/,200,,,,,,,,,,,protein-ligand binding database,,ok
+39107888,LOCUAZ,0.96088153,locuaz,0.96088153,,0.96088153,1,https://locuaz.readthedocs.io/,200,,,,,,,,,,,locuaz,CAPITALIZED,ok
+36688705,othresher,0.96047425,,0.96047425,othresher,0.96047425,1,https://anaconda.org/bioconda/gothresher,200,,,,,,,,,,,othresher,,ok
+36621552,visiomode,0.96014965,,0.96014965,visiomode,0.96014965,1,http://www.visiomode.org,200,,,,,,,,,,,visiomode,,ok
+37052519,eye biomarker database,0.9597785,,0.9597785,eye biomarker database,0.9597785,1,http://www.eyeseeworld.com/ebd/index.html,200,,,,,,,,,,,eye biomarker database,,ok
+39794695,enchamrking,0.95973957,,0.95973957,enchamrking,0.95973957,1,https://erasmusmc-bioinformatics.github.io/benchAMRking/,200,,,,,,,,,,,enchamrking,,review
+40268235,BEAGLE,0.95969826,beagle,0.95969826,,0.95969826,1,https://beagle2.bio.uniroma2.it,200,,,,,,,,,,,beagle,CAPITALIZED,ok
+37870463,pancanqtlv2.0,0.9596496,,0.9596496,pancanqtlv2.0,0.9596496,1,https://hanlaboratory.com/PancanQTLv2/,200,,,,,,,,,,,pancanqtlv2.0,,ok
+38537199,FOPGDB,0.9590582,f,0.9590582,,0.9590582,1,http://www.fopgdb.site,200,,,,,,,,,,,f,"SHORT_NAME_REPLACED,CAPITALIZED",ok
+36950105,covid-19base,0.95827276,,0.95827276,covid-19base,0.95827276,1,https://covidbase-v3.vercel.app/,200,,,,,,,,,,,covid-19base,,ok
+40257906,molecules,0.95767677,,0.95767677,molecules,0.95767677,1,http://corgenerf.com,200,,,,,,,,,,,molecules,,ok
+36005855,IPIDMS,0.95766056,ipidms,0.95766056,,0.95766056,1,https://CRAN.R-project.org/package=LipidMS,200,,,,,,,,,,,ipidms,CAPITALIZED,ok
+39329270,ptmd 2.0,0.95752543,ptmd 2.0,0.95752543,,0.95752543,1,https://ptmd.biocuckoo.cn/,200,,,,,,,,,,,ptmd 2.0,,ok
+40323307,OLS,0.9558373,ols,0.9558373,,0.9558373,1,https://www.ebi.ac.uk/ols4,200,,,,,,,,,,,ols,CAPITALIZED,ok
+39968378,ditome disease knowledgebase,0.95562553,,0.95562553,ditome disease knowledgebase,0.95562553,1,https://ngdc.cncb.ac.cn/edk/,200,,,,,,,,,,,ditome disease knowledgebase,,ok
+36864624,AGC,0.95451295,agc,0.95451295,,0.95451295,1,https://anaconda.org/bioconda/agc,200,,,,,,,,,,,agc,CAPITALIZED,ok
+36467581,AGMD,0.9540582,agmd,0.9540582,,0.9540582,1,http://www.unimd.org/magmd,200,,,,,,,,,,,agmd,CAPITALIZED,ok
+37086947,metal-binding protein atlas,0.9535531,,0.9535531,metal-binding protein atlas,0.9535531,1,http://bioinfor.imu.edu.cn/mbpa,200,,,,,,,,,,,metal-binding protein atlas,,ok
+39704703,ssmutpa,0.95346546,,0.95346546,ssmutpa,0.95346546,1,https://CRAN.R-project.org/package=ssMutPA,200,,,,,,,,,,,ssmutpa,,ok
+38613887,HOSMAP,0.953189,hosmap,0.953189,,0.953189,1,https://huggingface.co/spaces/Bio-Add/PhosMap,200,,,,,,,,,,,hosmap,CAPITALIZED,ok
+39988118,o-glcnacatlas 4.0,0.9529997,,0.9529997,o-glcnacatlas 4.0,0.9529997,1,https://oglcnac.org/atlas/,200,,,,,,,,,,,o-glcnacatlas 4.0,,ok
+37820365,codd-pred,0.95275307,,0.95275307,codd-pred,0.95275307,1,http://codd.iddd.group/,200,,,,,,,,,,,codd-pred,,ok
+38868513,cbd2,0.9526921,cbd2,0.9526921,,0.9526921,1,http://www.eyeseeworld.com/cbd,200,,,,,,,,,,,cbd2,,ok
+36169226,allomaps 2,0.95266736,,0.95266736,allomaps 2,0.95266736,1,http://allomaps.bii.a-star.edu.sg,200,,,,,,,,,,,allomaps 2,,ok
+35610420,bio_cycle,0.95225745,bio_cycle,0.95225745,,0.95225745,1,http://circadiomics.ics.uci.edu/,200,,,,,,,,,,,bio_cycle,,ok
+37823598,distribution of prokaryotic protein families,0.95143914,,0.95143914,distribution of prokaryotic protein families,0.95143914,1,http://bioinfo.qd.sdu.edu.cn/GDPF/,200,,,,,,,,,,,distribution of prokaryotic protein families,,ok
+40677242,flyphonedb2,0.95135516,,0.95135516,flyphonedb2,0.95135516,1,https://www.flyrnai.org/tools/fly_phone_v2/,200,,,,,,,,,,,flyphonedb2,,ok
+39363510,CROSS,0.9501869,cross,0.9501869,,0.9501869,1,http://ciec.gene.ac/,200,,,,,,,,,,,cross,CAPITALIZED,ok
+35609995,prankweb,0.94999397,,0.94999397,prankweb,0.94999397,1,https://prankweb.cz/,200,,,,,,,,,,,prankweb,,ok
+37897352,TADB,0.9495823,tadb,0.9495823,,0.9495823,1,https://bioinfo-mml.sjtu.edu.cn/TADB3/,200,,,,,,,,,,,tadb,CAPITALIZED,ok
+39546046,psatdb 2.0,0.94927025,,0.94927025,psatdb 2.0,0.94927025,1,https://bioinfo.icgeb.res.in/psatdb/,200,,,,,,,,,,,psatdb 2.0,,ok
+39247978,aars online,0.94885236,,0.94885236,aars online,0.94885236,1,http://www.aars.online,200,,,,,,,,,,,aars online,,ok
+37386732,EDH,0.9486301,edh,0.9486301,,0.9486301,1,http://www.redhdatabase.com/,200,,,,,,,,,,,edh,CAPITALIZED,ok
+38213027,oryza climtools,0.9484127,,0.9484127,oryza climtools,0.9484127,1,https://gramene.org/CLIMtools/oryza_v1.0/,200,,,,,,,,,,,oryza climtools,,ok
+38319109,agnodice,0.9483583,,0.9483583,agnodice,0.9483583,1,https://dianalab.e-ce.uth.gr/agnodice,200,,,,,,,,,,,agnodice,,ok
+35266505,raphgonet,0.94816977,,0.94816977,raphgonet,0.94816977,1,https://forge.ibisc.univ-evry.fr/vbourgeais/GraphGONet.git,200,,,,,,,,,,,raphgonet,,ok
+38346982,crop-gpa,0.9480996,,0.9480996,crop-gpa,0.9480996,1,https://crop-gpa.aielab.net,200,,,,,,,,,,,crop-gpa,,ok
+35025997,LPSDB,0.94782484,lpsdb,0.94782484,,0.94782484,1,http://bio-comp.org.cn/llpsdbv2,200,,,,,,,,,,,lpsdb,CAPITALIZED,ok
+39163546,genetically modified mice information database,0.9477143,,0.9477143,genetically modified mice information database,0.9477143,1,http://www.gmmid.cn,200,,,,,,,,,,,genetically modified mice information database,,ok
+39237205,assessment,0.9476514,c,0.9476514,,0.9476514,1,https://dockground.compbio.ku.edu/assessment/,200,,,,,,,,,,,c,SHORT_NAME_REPLACED,ok
+34415321,AMMA,0.94720596,amma,0.94720596,,0.94720596,1,https://bioconda.github.io/recipes/gamma/README.html,200,,,,,,,,,,,amma,CAPITALIZED,review
+39905665,3d (brainportal),0.946572,3d,0.946572,,0.946572,1,https://brainportal.humanbrain.in/publicview/index.html,200,,,,,,,,,,,3d,"SHORT_NAME_FLAGGED,DISAMBIGUATED",ok
+39380205,NPHOS,0.94634765,nphos,0.94634765,,0.94634765,1,http://www.bio-add.org/Nphos/,200,,,,,,,,,,,nphos,CAPITALIZED,ok
+39673440,rmadillo,0.94493157,,0.94493157,rmadillo,0.94493157,1,https://datashield.org/,200,,,,,,,,,,,rmadillo,,ok
+36806692,mgnify genomes,0.94413793,,0.94413793,mgnify genomes,0.94413793,1,https://www.ebi.ac.uk/metagenomics/browse/genomes/,200,,,,,,,,,,,mgnify genomes,,ok
+36333292,national center biobank network,0.94411916,,0.94411916,national center biobank network,0.94411916,1,http://www2.ncbiobank.org/Index_en,200,,,,,,,,,,,national center biobank network,,ok
+40135505,multiorgan,0.94335175,,0.94335175,multiorgan,0.94335175,1,https://labs-laboratory.com/mutate,200,,,,,,,,,,,multiorgan,,ok
+35610055,DALI,0.9422605,dali,0.9422605,,0.9422605,1,http://ekhidna2.biocenter.helsinki.fi/dali,200,,,,,,,,,,,dali,CAPITALIZED,ok
+39921902,cobrexa 2,0.9413826,cobrexa 2,0.9413826,,0.9413826,1,https://cobrexa.github.io/COBREXA.jl/,200,,,,,,,,,,,cobrexa 2,,review
+36592044,RALINE,0.9410632,raline,0.9410632,,0.9410632,1,http://praline.tartaglialab.com,200,,,,,,,,,,,raline,CAPITALIZED,ok
+35804320,getsequenceinfo,0.93996584,,0.93996584,getsequenceinfo,0.93996584,1,http://calamar.univ-ag.fr/c3i/galaxy_karubionet.html,200,,,,,,,,,,,getsequenceinfo,,ok
+36401317,arinemetagenomedb,0.93993455,,0.93993455,arinemetagenomedb,0.93993455,1,https://webapp.ufz.de/marmdb/,200,,,,,,,,,,,arinemetagenomedb,,ok
+40056431,genome editing meta-database,0.93966055,,0.93966055,genome editing meta-database,0.93966055,1,https://bonohu.hiroshima-u.ac.jp/gem/,200,,,,,,,,,,,genome editing meta-database,,ok
+36305834,ferrdb v2,0.9392091,,0.9392091,ferrdb v2,0.9392091,1,http://www.zhounan.org/ferrdb/,200,,,,,,,,,,,ferrdb v2,,ok
+36266726,ASA,0.9380268,asa,0.9380268,,0.9380268,1,http://www.splicedb.net/casa/,200,,,,,,,,,,,asa,CAPITALIZED,ok
+39240325,saambe-mem,0.9379887,saambe-mem,0.9379887,,0.9379887,1,http://compbio.clemson.edu/SAAMBE-MEM/,200,,,,,,,,,,,saambe-mem,,ok
+35958127,mycowiki,0.9375636,,0.9375636,i>myco</i>wiki,0.9375636,1,http://mycowiki.uni-goettingen.de,200,,,,,,,,,,,i>myco</i>wiki,HTML_REMOVED,ok
+38172657,eusedata,0.93677354,,0.93677354,eusedata,0.93677354,1,https://bioconductor.org/packages/ReUseData/,200,,,,,,,,,,,eusedata,,ok
+39875867,marigold,0.9365792,,0.9365792,marigold,0.9365792,1,https://downeslab.github.io/marigold/,200,,,,,,,,,,,marigold,,review
+35040932,LZCODE,0.93623775,lzcode,0.93623775,,0.93623775,1,http://www.alzcode.xyz,200,,,,,,,,,,,lzcode,CAPITALIZED,ok
+34755868,fusiongdb 2,0.93621594,,0.93621594,fusiongdb 2,0.93621594,1,https://compbio.uth.edu/FusionGDB2/,200,,,,,,,,,,,fusiongdb 2,,ok
+39470724,single-cell lineage tracing database,0.93584245,,0.93584245,single-cell lineage tracing database,0.93584245,1,https://scltdb.com,200,,,,,,,,,,,single-cell lineage tracing database,,ok
+37953304,DO,0.9355439,do,0.9355439,,0.9355439,1,https://disease-ontology.org/,200,,,,,,,,,,,do,"SHORT_NAME_FLAGGED,CAPITALIZED",ok
+37207341,abalign,0.93323743,,0.93323743,abalign,0.93323743,1,http://cao.labshare.cn/abalign/,200,,,,,,,,,,,abalign,,ok
+37260078,diana-mirpath,0.932973,,0.932973,diana-mirpath,0.932973,1,http://www.microrna.gr/miRPathv4,200,,,,,,,,,,,diana-mirpath,,ok
+38878855,nucmap 2.0,0.93223774,,0.93223774,nucmap 2.0,0.93223774,1,https://ngdc.cncb.ac.cn/nucmap,200,,,,,,,,,,,nucmap 2.0,,ok
+37904256,chess 3,0.93211204,chess 3,0.93211204,,0.93211204,1,http://ccb.jhu.edu/chess,200,,,,,,,,,,,chess 3,,ok
+34865074,protein data bank,0.9309692,,0.9309692,protein data bank,0.9309692,1,https://pdbj.org,200,,,,,,,,,,,protein data bank,,ok
+34747480,nanobase.org,0.9306735,,0.9306735,nanobase.org,0.9306735,1,https://nanobase.org/,200,,,,,,,,,,,nanobase.org,,ok
+35701399,rembrandt,0.9297202,rembrandt,0.9297202,,0.9297202,1,https://www.nitrc.org/projects/rembrandt_brain/,200,,,,,,,,,,,rembrandt,,ok
+40308064,3d-genome database,0.9263225,,0.9263225,3d-genome database,0.9263225,1,http://www.3d-gdp.com/,200,,,,,,,,,,,3d-genome database,,ok
+37871106,NAR,0.92605454,nar,0.92605454,,0.92605454,1,https://nardbstatus.kalis-amts.de,200,,,,,,,,,,,nar,CAPITALIZED,ok
+39487448,amphibian genomics consortium,0.9249423,,0.9249423,amphibian genomics consortium,0.9249423,1,https://mvs.unimelb.edu.au/amphibian-genomics-consortium,200,,,,,,,,,,,amphibian genomics consortium,,ok
+34935889,eocancerprognosticdatasetsretriever,0.9238925,,0.9238925,eocancerprognosticdatasetsretriever,0.9238925,1,https://metacpan.org/pod/App::geoCancerPrognosticDatasetsRetriever,200,,,,,,,,,,,eocancerprognosticdatasetsretriever,,ok
+35753693,DIGEST,0.92303157,digest,0.92303157,,0.92303157,1,https://digest-validation.net,200,,,,,,,,,,,digest,CAPITALIZED,ok
+38412834,decomprolute,0.92251146,,0.92251146,decomprolute,0.92251146,1,http://pnnl-compbio.github.io/decomprolute,200,,,,,,,,,,,decomprolute,,review
+38718922,alpha&esmhfolds,0.92238265,,0.92238265,alpha&esmhfolds,0.92238265,1,https://alpha-esmhfolds.biocomp.unibo.it/,200,,,,,,,,,,,alpha&esmhfolds,,ok
+38306039,alzheimer datalens,0.92116463,,0.92116463,alzheimer datalens,0.92116463,1,https://alzdatalens.partners.org,200,,,,,,,,,,,alzheimer datalens,,ok
+38506570,marine biodiversity database,0.92093754,,0.92093754,marine biodiversity database,0.92093754,1,https://www.godac.jamstec.go.jp/bismal/e/,200,,,,,,,,,,,marine biodiversity database,,ok
+35561166,hacksig,0.9204515,,0.9204515,hacksig,0.9204515,1,https://CRAN.R-project.org/package=hacksig,200,,,,,,,,,,,hacksig,,ok
+38084919,scatac-seq preprocessing and imputation evaluation system,0.9201765,,0.9201765,scatac-seq preprocessing and imputation evaluation system,0.9201765,1,https://sapiensdb.com,200,,,,,,,,,,,scatac-seq preprocessing and imputation evaluation system,,ok
+39412445,david ortholog,0.9191821,,0.9191821,david ortholog,0.9191821,1,https://davidbioinformatics.nih.gov/ortholog.jsp,200,,,,,,,,,,,david ortholog,,ok
+40163697,ISSTA,0.9160276,issta,0.9160276,,0.9160276,1,https://kbds.re.kr/hissta/,200,,,,,,,,,,,issta,CAPITALIZED,ok
+39475188,mvoc 4,0.91462284,mvoc 4,0.91462284,,0.91462284,1,http://bioinformatics.charite.de/mvoc,200,,,,,,,,,,,mvoc 4,,ok
+39530220,funcoup 6,0.9141488,,0.9141488,funcoup 6,0.9141488,1,https://funcoup.org,200,,,,,,,,,,,funcoup 6,,ok
+36910986,imppat 2.0,0.91312736,imppat 2.0,0.91312736,,0.91312736,1,https://cb.imsc.res.in/imppat/,200,,,,,,,,,,,imppat 2.0,,ok
+37018146,CCDB,0.9130824,ccdb,0.9130824,,0.9130824,1,http://www.xiejjlab.bio/eccDB,200,,,,,,,,,,,ccdb,CAPITALIZED,ok
+36373969,amp-db,0.9107058,amp-db,0.9107058,,0.9107058,1,https://rampdb.nih.gov/,200,,,,,,,,,,,amp-db,,ok
+40123802,BGMDB,0.9086901,bgmdb,0.9086901,,0.9086901,1,http://bgmdb.online/bgmdb,200,,,,,,,,,,,bgmdb,CAPITALIZED,ok
+37956338,driverdbv4,0.90863395,,0.90863395,driverdbv4,0.90863395,1,http://driverdb.bioinfomics.org/,200,,,,,,,,,,,driverdbv4,,ok
+38653491,COVEP,0.9040315,covep,0.9040315,,0.9040315,1,https://pgx.zju.edu.cn/covepiab/,200,,,,,,,,,,,covep,CAPITALIZED,ok
+38135744,PYSODB,0.90155387,pysodb,0.90155387,,0.90155387,1,https://protocols-pysodb.readthedocs.io/,200,,,,,,,,,,,pysodb,CAPITALIZED,ok
+38440907,genebe.net,0.9006561,,0.9006561,genebe.net,0.9006561,1,https://genebe.net,200,,,,,,,,,,,genebe.net,,ok
+35950764,hpv induced cancer resource,0.9002012,,0.9002012,hpv induced cancer resource,0.9002012,1,https://thincr.ca/,200,,,,,,,,,,,hpv induced cancer resource,,ok
+34918453,TKO,0.8991042,t,0.8991042,,0.8991042,1,http://tko.hms.harvard.edu/,200,,,,,,,,,,,t,"SHORT_NAME_REPLACED,CAPITALIZED",ok
+36271888,ev-add,0.8982838,ev-add,0.8982838,,0.8982838,1,http://www.evdnadatabase.com,200,,,,,,,,,,,ev-add,,ok
+34751395,lncrnawiki 2,0.89827645,,0.89827645,lncrnawiki 2,0.89827645,1,https://ngdc.cncb.ac.cn/lncrnawiki,200,,,,,,,,,,,lncrnawiki 2,,ok
+39806295,SOLU,0.8967837,solu,0.8967837,,0.8967837,1,https://platform.solugenomics.com,200,,,,,,,,,,,solu,CAPITALIZED,ok
+37291365,mrbase2,0.8955931,,0.8955931,mrbase2,0.8955931,1,https://webs.iiitd.edu.in/raghava/hmrbase2,200,,,,,,,,,,,mrbase2,,ok
+40996703,microbe directory,0.89496976,,0.89496976,microbe directory,0.89496976,1,http://www.themicrobedirectory.com/,200,,,,,,,,,,,microbe directory,,ok
+35882976,gene updater,0.8949547,,0.8949547,gene updater,0.8949547,1,https://share.streamlit.io/kuanrongchan/date-to-gene-converter/main/date_gene_tool.py,200,,,,,,,,,,,gene updater,,ok
+34751405,data bank of japan,0.89469856,,0.89469856,data bank of japan,0.89469856,1,https://www.ddbj.nig.ac.jp,200,,,,,,,,,,,data bank of japan,,ok
+37897359,circrnadisease,0.89258915,,0.89258915,circrnadisease,0.89258915,1,http://cgga.org.cn/circRNADisease/,200,,,,,,,,,,,circrnadisease,,ok
+37791884,microbial signal transduction,0.8893572,,0.8893572,microbial signal transduction,0.8893572,1,https://mistdb.com,200,,,,,,,,,,,microbial signal transduction,,ok
+37140053,pae viewer,0.88916665,,0.88916665,pae viewer,0.88916665,1,http://www.subtiwiki.uni-goettingen.de/v4/paeViewerDemo,200,,,,,,,,,,,pae viewer,,ok
+39773409,fast_qc,0.8879758,fast_qc,0.8879758,,0.8879758,1,https://dfast.ddbj.nig.ac.jp/dqc/submit/,200,,,,,,,,,,,fast_qc,,ok
+35015132,orghumbase,0.8878426,,0.8878426,orghumbase,0.8878426,1,https://www.sorghumbase.org,200,,,,,,,,,,,orghumbase,,ok
+34954787,ignorapp,0.88698184,,0.88698184,ignorapp,0.88698184,1,https://apps.cytoscape.org/apps/signorapp,200,,,,,,,,,,,ignorapp,,ok
+38601265,OER,0.8869409,oer,0.8869409,,0.8869409,1,https://www.inchi-trust.org/oer/,200,,,,,,,,,,,oer,CAPITALIZED,ok
+38443821,RIGON,0.8866247,rigon,0.8866247,,0.8866247,1,https://cran.r-project.org/web/packages/tRigon,200,,,,,,,,,,,rigon,CAPITALIZED,ok
+37681739,soybean,0.8847507,,0.8847507,soybean,0.8847507,1,https://soyatlas.venanciogroup.uenf.br/,200,,,,,,,,,,,soybean,,ok
+36525367,CPATH,0.8838884,cpath,0.8838884,,0.8838884,1,http://ncpath.pianlab.cn/,200,,,,,,,,,,,cpath,CAPITALIZED,ok
+37855663,ribocentre-switch,0.88159496,,0.88159496,ribocentre-switch,0.88159496,1,https://riboswitch.ribocentre.org,200,,,,,,,,,,,ribocentre-switch,,ok
+39826711,microbial genome database for comparative,0.8815013,,0.8815013,microbial genome database for comparative,0.8815013,1,https://mbgd.nibb.ac.jp/,200,,,,,,,,,,,microbial genome database for comparative,,ok
+35859338,codon statistics,0.88077784,,0.88077784,codon statistics,0.88077784,1,http://codonstatsdb.unr.edu,200,,,,,,,,,,,codon statistics,,ok
+34751399,riority index,0.8793257,,0.8793257,riority index,0.8793257,1,http://pi.well.ox.ac.uk,200,,,,,,,,,,,riority index,,ok
+35385099,breedbase,0.8793213,,0.8793213,breedbase,0.8793213,1,https://breedbase.org/,200,,,,,,,,,,,breedbase,,ok
+40253701,gas-j,0.8785647,gas-j,0.8785647,,0.8785647,1,http://gasj.ncgm.go.jp,200,,,,,,,,,,,gas-j,,ok
+36196656,lantrna,0.87786466,,0.87786466,lantrna,0.87786466,1,http://plantrna.ibmp.cnrs.fr/,200,,,,,,,,,,,lantrna,,ok
+39392404,ARKG,0.87492174,arkg,0.87492174,,0.87492174,1,https://tarkg.ddtmlab.org,200,,,,,,,,,,,arkg,CAPITALIZED,ok
+37070190,haplogrep,0.8745681,,0.8745681,haplogrep,0.8745681,1,https://haplogrep.i-med.ac.at,200,,,,,,,,,,,haplogrep,,ok
+37106367,LAASDB,0.8734492,laasdb,0.8734492,,0.8734492,1,http://zzdlab.com/PlaASDB/ASDB/index.html,200,,,,,,,,,,,laasdb,CAPITALIZED,ok
+38468111,pbrowse,0.8730799,,0.8730799,pbrowse,0.8730799,1,http://browser.proteo.cloud/,200,,,,,,,,,,,pbrowse,,ok
+36539202,syntenet,0.87142754,,0.87142754,syntenet,0.87142754,1,https://bioconductor.org/packages/syntenet,200,,,,,,,,,,,syntenet,,ok
+34850118,prgdb 4.0,0.8704098,,0.8704098,prgdb 4.0,0.8704098,1,http://prgdb.org/prgdb4/,200,,,,,,,,,,,prgdb 4.0,,ok
+40293718,icrust2,0.8696034,,0.8696034,icrust2,0.8696034,1,https://anaconda.org/bioconda/picrust2,200,,,,,,,,,,,icrust2,,ok
+35799352,ariboss,0.86488885,ariboss,0.86488885,,0.86488885,1,http://hariboss.pasteur.cloud,200,,,,,,,,,,,ariboss,,ok
+39924294,ATSUBP,0.8646032,atsubp,0.8646032,,0.8646032,1,https://kaabil.net/AtSubP2/,200,,,,,,,,,,,atsubp,CAPITALIZED,ok
+38532297,YCOM,0.8634037,ycom,0.8634037,,0.8634037,1,https://pycom.brunel.ac.uk,200,,,,,,,,,,,ycom,CAPITALIZED,ok
+39237879,cortexa,0.8604782,,0.8604782,cortexa,0.8604782,1,https://cortexa-rna.com/,200,,,,,,,,,,,cortexa,,ok
+40504102,pra-ge-atlas,0.85791,,0.85791,pra-ge-atlas,0.85791,1,http://pra-ge-atlas.valmei.es,200,,,,,,,,,,,pra-ge-atlas,,ok
+36146935,rna aptamer 3d-structural modeling,0.8573872,,0.8573872,rna aptamer 3d-structural modeling,0.8573872,1,https://rnaapt3d.medals.jp,200,,,,,,,,,,,rna aptamer 3d-structural modeling,,ok
+37665017,open genes,0.85732245,,0.85732245,open genes,0.85732245,1,https://open-genes.org/,200,,,,,,,,,,,open genes,,ok
+36961332,oldcomp,0.85537297,,0.85537297,oldcomp,0.85537297,1,https://foldcomp.foldseek.com,200,,,,,,,,,,,oldcomp,,ok
+38835776,ONET,0.8547754,onet,0.8547754,,0.8547754,1,https://monet.mdanderson.org/,200,,,,,,,,,,,onet,CAPITALIZED,ok
+38661218,damietta server,0.8542417,,0.8542417,damietta server,0.8542417,1,https://damietta.de/,200,,,,,,,,,,,damietta server,,ok
+40133792,heligeom,0.8532693,,0.8532693,heligeom,0.8532693,1,https://heligeom.galaxy.ibpc.fr,200,,,,,,,,,,,heligeom,,ok
+39259175,enchstab,0.8531404,,0.8531404,enchstab,0.8531404,1,https://loschmidt.chemi.muni.cz/benchstab,200,,,,,,,,,,,enchstab,,ok
+37811890,trftarget 2.0,0.8502243,,0.8502243,trftarget 2.0,0.8502243,1,http://trftarget.net/,200,,,,,,,,,,,trftarget 2.0,,ok
+35524573,ymptom annotation made simple,0.8496413,,0.8496413,ymptom annotation made simple,0.8496413,1,https://www.genecascade.org/SAMS/,200,,,,,,,,,,,ymptom annotation made simple,,ok
+41171287,rosbase1,0.8490183,rosbase1,0.8490183,,0.8490183,1,https://rosbase.bits-hyderabad.ac.in/,200,,,,,,,,,,,rosbase1,,ok
+35274687,variomes,0.8488683,,0.8488683,variomes,0.8488683,1,https://candy.hesge.ch/Variomes,200,,,,,,,,,,,variomes,,ok
+36707995,gmwi-w,0.84729475,gmwi-w,0.84729475,,0.84729475,1,https://gmwi-webtool.github.io/,200,,,,,,,,,,,gmwi-w,,review
+39283925,pathlinkr,0.841241,,0.841241,pathlinkr,0.841241,1,https://bioconductor.org/packages/pathlinkR/,200,,,,,,,,,,,pathlinkr,,ok
+40236778,database,0.8392124,,0.8392124,database,0.8392124,1,https://idrblab.org/mdipid/,200,,,,,,,,,,,database,,ok
+38646468,ENALOS,0.83882654,enalos,0.83882654,,0.83882654,1,http://www.enaloscloud.novamechanics.com/sabydoma/safenanoscope/,200,,,,,,,,,,,enalos,CAPITALIZED,ok
+35481632,membranome 3.0,0.8382141,,0.8382141,membranome 3.0,0.8382141,1,https://membranome.org,200,,,,,,,,,,,membranome 3.0,,ok
+38806182,eactomegsa,0.83581215,,0.83581215,eactomegsa,0.83581215,1,https://www.reactome.org/gsa,200,,,,,,,,,,,eactomegsa,,ok
+39441075,bio-analytic resource for,0.8356328,,0.8356328,bio-analytic resource for,0.8356328,1,https://bar.utoronto.ca,200,,,,,,,,,,,bio-analytic resource for,,ok
+37624923,APEX,0.83319896,apex,0.83319896,,0.83319896,1,https://archaea.i2bc.paris-saclay.fr/vapex/,200,,,,,,,,,,,apex,CAPITALIZED,ok
+36864613,UTR,0.8324485,utr,0.8324485,,0.8324485,1,https://pypi.org/project/peaks2utr,200,,,,,,,,,,,utr,CAPITALIZED,ok
+39253058,cpepmatch webserver,0.8323073,,0.8323073,cpepmatch webserver,0.8323073,1,https://t38webservices.nat.tum.de/cpepmatch/,200,,,,,,,,,,,cpepmatch webserver,,ok
+37246642,CAID,0.8321458,caid,0.8321458,,0.8321458,1,https://caid.idpcentral.org,200,,,,,,,,,,,caid,CAPITALIZED,ok
+36441743,shimming toolbox,0.8311398,,0.8311398,shimming toolbox,0.8311398,1,https://shimming-toolbox.org,200,,,,,,,,,,,shimming toolbox,,ok
+38914571,project2-dngisws9d7xkygjcvnue8u,0.8305048,a,0.8305048,,0.8305048,1,https://project2-dngisws9d7xkygjcvnue8u.streamlit.app/,200,,,,,,,,,,,a,SHORT_NAME_REPLACED,ok
+39470715,PANEL,0.8297691,panel,0.8297691,,0.8297691,1,https://www.evomicslab.org/db/ScRAPdb/,200,,,,,,,,,,,panel,CAPITALIZED,ok
+34999748,imosa2,0.8285729,imosa2,0.8285729,,0.8285729,1,http://elbo-spice.cs.tau.ac.il/shiny/MIMOSA2shiny/,200,,,,,,,,,,,imosa2,,ok
+37870448,023,0.8248588,023,0.8248588,,0.8248588,1,http://mdl.shsmu.edu.cn/ASD,200,,,,,,,,,,,023,,ok
+36688700,cistrome explorer,0.8229243,,0.8229243,cistrome explorer,0.8229243,1,http://cisvis.gehlenborglab.org/,200,,,,,,,,,,,cistrome explorer,,ok
+38109500,desiccation,0.8223852,d,0.8223852,,0.8223852,1,http://desiccation.novogene.com,200,,,,,,,,,,,d,SHORT_NAME_REPLACED,ok
+37510385,anchsatdb,0.82213485,,0.82213485,anchsatdb,0.82213485,1,https://bioinfo.usu.edu/ranchSATdb/,200,,,,,,,,,,,anchsatdb,,ok
+35238331,ultibac,0.82195556,,0.82195556,ultibac,0.82195556,1,https://www.bioconductor.org/packages/release/bioc/html/MultiBaC.html,200,,,,,,,,,,,ultibac,,ok
+35762265,METAPR,0.8203146,metapr,0.8203146,,0.8203146,1,https://shiny.metapr2.org,200,,,,,,,,,,,metapr,CAPITALIZED,ok
+34591960,regeneration roadmap,0.81821424,,0.81821424,regeneration roadmap,0.81821424,1,https://ngdc.cncb.ac.cn/regeneration/index,200,,,,,,,,,,,regeneration roadmap,,ok
+37889037,BASE (slkb),0.81574017,base,0.81574017,,0.81574017,1,https://slkb.osubmi.org,200,,,,,,,,,,,base,"CAPITALIZED,DISAMBIGUATED",ok
+39101783,enomespy,0.81547374,,0.81547374,enomespy,0.81547374,1,https://genomespy.app/,200,,,,,,,,,,,enomespy,,ok
+39827990,xergenedb,0.81484467,,0.81484467,xergenedb,0.81484467,1,https://exergenedb.com,200,,,,,,,,,,,xergenedb,,ok
+38725076,RGNET,0.8126918,rgnet,0.8126918,,0.8126918,1,https://ARGNet.hku.hk,200,,,,,,,,,,,rgnet,CAPITALIZED,ok
+39395186,atlas of e3,0.8077688,,0.8077688,atlas of e3,0.8077688,1,https://eliahdb.org,200,,,,,,,,,,,atlas of e3,,ok
+40494643,TRADIS,0.8071871,tradis,0.8071871,,0.8071871,1,https://diana.cpg.org.au/,200,,,,,,,,,,,tradis,CAPITALIZED,ok
+39198917,IPDB,0.80551934,ipdb,0.80551934,,0.80551934,1,https://genomeinterpretation.org/vipdb,200,,,,,,,,,,,ipdb,CAPITALIZED,ok
+39073878,tidycoverage,0.8010018,,0.8010018,tidycoverage,0.8010018,1,https://www.bioconductor.org/packages/tidyCoverage,200,,,,,,,,,,,tidycoverage,,ok
+39963994,deconer,0.8004432,,0.8004432,deconer,0.8004432,1,https://ngdc.cncb.ac.cn/biocode/tool/7577,200,,,,,,,,,,,deconer,,ok
+36882183,HAGAA,0.79944056,hagaa,0.79944056,,0.79944056,1,http://phage.xialab.info/,200,,,,,,,,,,,hagaa,CAPITALIZED,ok
+38738618,a4d,0.7982256,d,0.7982256,,0.7982256,1,https://biocomp.chem.uw.edu.pl/a4d/,200,,,,,,,,,,,d,SHORT_NAME_REPLACED,ok
+37484460,gene space database,0.794467,,0.794467,gene space database,0.794467,1,https://viscumalbum.pflanzenproteomik.de/,200,,,,,,,,,,,gene space database,,ok
+35552640,food-derived bioactive peptides,0.7944541,,0.7944541,food-derived bioactive peptides,0.7944541,1,http://www.cqudfbp.net/,200,,,,,,,,,,,food-derived bioactive peptides,,ok
+36699350,DEBASE,0.7920786,debase,0.7920786,,0.7920786,1,https://odebase.org,200,,,,,,,,,,,debase,CAPITALIZED,ok
+37216609,AGES,0.7920509,ages,0.7920509,,0.7920509,1,https://archeogenomics.eu/,200,,,,,,,,,,,ages,CAPITALIZED,ok
+37828369,ampprimerbank,0.79098356,,0.79098356,ampprimerbank,0.79098356,1,https://lampprimerbank.mathematik.uni-marburg.de,200,,,,,,,,,,,ampprimerbank,,ok
+37317043,conformation-based decoys database,0.7848528,,0.7848528,conformation-based decoys database,0.7848528,1,http://cadd.zju.edu.cn/tocodecoy/,200,,,,,,,,,,,conformation-based decoys database,,ok
+36264141,AGSCOT,0.7832726,agscot,0.7832726,,0.7832726,1,https://hub.docker.com/repository/docker/ikmb/magscot,200,,,,,,,,,,,agscot,CAPITALIZED,ok
+38709879,PGS,0.782748,pgs,0.782748,,0.782748,1,https://imputationserver.sph.umich.edu,200,,,,,,,,,,,pgs,CAPITALIZED,ok
+36993970,sequence,0.7805559,,0.7805559,sequence,0.7805559,1,http://uctcrdb.cn/,200,,,,,,,,,,,sequence,,ok
+37399102,naenrich,0.7804042,,0.7804042,naenrich,0.7804042,1,https://idrblab.org/rnaenr/,200,,,,,,,,,,,naenrich,,ok
+39345285,eventer,0.7773472,,0.7773472,eventer,0.7773472,1,https://eventerneuro.netlify.app/,200,,,,,,,,,,,eventer,,ok
+39558187,rice genome annotation project,0.7746558,,0.7746558,rice genome annotation project,0.7746558,1,https://rice.uga.edu,200,,,,,,,,,,,rice genome annotation project,,ok
+35771624,b-cov,0.7745284,b-cov,0.7745284,,0.7745284,1,https://web.iitm.ac.in/bioinfo2/ab-cov/home,200,,,,,,,,,,,b-cov,,ok
+36083565,marpolbase expression,0.77373886,,0.77373886,marpolbase expression,0.77373886,1,https://marchantia.info/mbex/,200,,,,,,,,,,,marpolbase expression,,ok
+35560008,disorders of sex development atlas,0.773591,,0.773591,disorders of sex development atlas,0.773591,1,http://dsd.geneworks.cn,200,,,,,,,,,,,disorders of sex development atlas,,ok
+38886186,HCC,0.7723284,hcc,0.7723284,,0.7723284,1,http://lifeome.net/database/hccdb2,200,,,,,,,,,,,hcc,CAPITALIZED,ok
+39657135,rodentgpomics,0.7722482,,0.7722482,rodentgpomics,0.7722482,1,http://RodentGPOmics.njau.edu.cn:8888/Rodent/index/homePage,200,,,,,,,,,,,rodentgpomics,,ok
+37952226,lion localizer,0.7705925,,0.7705925,lion localizer,0.7705925,1,https://lionlocalizer.org,200,,,,,,,,,,,lion localizer,,ok
+38597878,data bank,0.76990795,,0.76990795,data bank,0.76990795,1,https://www.rcsb.org/,200,,,,,,,,,,,data bank,,ok
+38843230,bioinformatics,0.7696011,,0.7696011,bioinformatics,0.7696011,1,https://dentalbioinformatics.com/,200,,,,,,,,,,,bioinformatics,,ok
+39171722,automcs navigator,0.76853955,,0.76853955,automcs navigator,0.76853955,1,https://cellknowledge.com.cn/mcsdb/autophagy.html,200,,,,,,,,,,,automcs navigator,,ok
+38757367,GO,0.76621664,go,0.76621664,,0.76621664,1,https://huggingface.co/spaces/HUBioDataLab/Domain2GO,200,,,,,,,,,,,go,"SHORT_NAME_FLAGGED,CAPITALIZED",ok
+35616100,simple standard for sharing,0.7656061,,0.7656061,simple standard for sharing,0.7656061,1,http://w3id.org/sssom/spec,200,,,,,,,,,,,simple standard for sharing,,ok
+35197510,survival genie,0.7647927,,0.7647927,survival genie,0.7647927,1,https://bbisr.shinyapps.winship.emory.edu/SurvivalGenie/,200,,,,,,,,,,,survival genie,,ok
+35179562,CIG,0.7620288,cig,0.7620288,,0.7620288,1,https://pcig.vhio.net,200,,,,,,,,,,,cig,CAPITALIZED,ok
+36857575,KBASE (narrative),0.7615151,kbase,0.7615151,,0.7615151,1,https://narrative.kbase.us/narrative/129480,200,,,,,,,,,,,kbase,"CAPITALIZED,DISAMBIGUATED",ok
+38549946,ERITS,0.7613045,erits,0.7613045,,0.7613045,1,http://merits.unimelb-biotools.cloud.edu.au/,200,,,,,,,,,,,erits,CAPITALIZED,ok
+37943830,SRPLOT,0.7591234,srplot,0.7591234,,0.7591234,1,http://www.bioinformatics.com.cn/SRplot,200,,,,,,,,,,,srplot,CAPITALIZED,ok
+38776380,TPCN,0.7532603,t,0.7532603,,0.7532603,1,http://www.tpcn.pro/,200,,,,,,,,,,,t,"SHORT_NAME_REPLACED,CAPITALIZED",ok
+36464767,MM,0.7509415,mm,0.7509415,,0.7509415,1,https://cmm.minorlab.org,200,,,,,,,,,,,mm,"SHORT_NAME_FLAGGED,CAPITALIZED",ok
+39999010,PM,0.7505836,pm,0.7505836,,0.7505836,1,https://bigomics.ch/omics-playground,200,,,,,,,,,,,pm,"SHORT_NAME_FLAGGED,CAPITALIZED",ok
+35639952,metapone,0.7503315,,0.7503315,metapone,0.7503315,1,https://bioconductor.org/packages/devel/bioc/html/metapone.html,200,,,,,,,,,,,metapone,,ok
+34571541,rossmann-toolbox,0.7491558,,0.7491558,rossmann-toolbox,0.7491558,1,https://lbs.cent.uw.edu.pl/rossmann-toolbox,200,,,,,,,,,,,rossmann-toolbox,,ok
+37605971,disturbances,0.74806195,,0.74806195,disturbances,0.74806195,1,https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/FOREST/DISTURBANCES/DEFID2/,200,,,,,,,,,,,disturbances,,ok
+40080702,ipidfun,0.74614394,,0.74614394,ipidfun,0.74614394,1,https://lipidfun.bioinfomics.org/,200,,,,,,,,,,,ipidfun,,ok
+39288310,AG,0.74611765,ag,0.74611765,,0.74611765,1,https://spoke.rbvi.ucsf.edu/neighborhood.html,200,,,,,,,,,,,ag,"SHORT_NAME_FLAGGED,CAPITALIZED",ok
+39101502,diffprotacs,0.74204236,,0.74204236,diffprotacs,0.74204236,1,https://bailab.siais.shanghaitech.edu.cn/service/DiffPROTACs-generated.tgz,200,,,,,,,,,,,diffprotacs,,ok
+35687095,OCEAN,0.74081177,ocean,0.74081177,,0.74081177,1,https://tara-oceans.mio.osupytheas.fr/ocean-gene-atlas/,200,,,,,,,,,,,ocean,CAPITALIZED,ok
+39820318,phenotyping and regional analysis of histology,0.7402153,,0.7402153,phenotyping and regional analysis of histology,0.7402153,1,https://www.pathologyreports.ai/,200,,,,,,,,,,,phenotyping and regional analysis of histology,,ok
+36448715,INER,0.7369875,iner,0.7369875,,0.7369875,1,https://bailab.siais.shanghaitech.edu.cn/services/ppi-miner,200,,,,,,,,,,,iner,CAPITALIZED,ok
+39348154,of genes related to repeat,0.7345372,,0.7345372,of genes related to repeat,0.7345372,1,http://omicslab.genetics.ac.cn/dred,200,,,,,,,,,,,of genes related to repeat,,ok
+35039090,clingen variant curation interface,0.7336335,,0.7336335,clingen variant curation interface,0.7336335,1,https://curation.clinicalgenome.org,200,,,,,,,,,,,clingen variant curation interface,,ok
+35748708,practical haplotype graph,0.7326072,,0.7326072,practical haplotype graph,0.7326072,1,https://de.cyverse.org/de/,200,,,,,,,,,,,practical haplotype graph,,ok
+35701407,neurophysiology,0.73211074,,0.73211074,neurophysiology,0.73211074,1,http://www.synapse.org/TDBRAIN,200,,,,,,,,,,,neurophysiology,,ok
+36394265,REAT,0.7318086,reat,0.7318086,,0.7318086,1,https://bioconductor.org/packages/rGREAT/,200,,,,,,,,,,,reat,CAPITALIZED,ok
+34983060,edtator,0.7315787,,0.7315787,edtator,0.7315787,1,https://ohnlp.github.io/MedTator,200,,,,,,,,,,,edtator,,review
+36596370,PAPRED,0.72532076,papred,0.72532076,,0.72532076,1,https://procarb.org/gpapred/,200,,,,,,,,,,,papred,CAPITALIZED,ok
+37526283,JGI,0.7206341,jgi,0.7206341,,0.7206341,1,https://plantgeneatlas.jgi.doe.gov,200,,,,,,,,,,,jgi,CAPITALIZED,ok
+37356898,operon finder,0.7162218,,0.7162218,operon finder,0.7162218,1,https://www.iitg.ac.in/spkanaujia/operonfinder.html,200,,,,,,,,,,,operon finder,,ok
+35980167,reference implementation,0.71213704,,0.71213704,reference implementation,0.71213704,1,https://b2ri-documentation.readthedocs.io,200,,,,,,,,,,,reference implementation,,ok
+35037201,LEGUME,0.7065933,legume,0.7065933,,0.7065933,1,https://legumeinfo.org,200,,,,,,,,,,,legume,CAPITALIZED,ok
+36852842,world archives of species,0.70487607,,0.70487607,world archives of species,0.70487607,1,http://wasp-project.net/,200,,,,,,,,,,,world archives of species,,ok
+37566336,EX,0.70425534,ex,0.70425534,,0.70425534,1,https://tinyurl.com/4este73c,200,,,,,,,,,,,ex,"SHORT_NAME_FLAGGED,CAPITALIZED",ok
+39959838,catalog (tianzelab),0.70319784,,0.70319784,catalog,0.70319784,1,https://tianzelab.github.io/pandaspgs/,200,,,,,,,,,,,catalog,DISAMBIGUATED,review
+40102678,metavision3d,0.70252156,a,0.70252156,,0.70252156,1,https://metavision3d.rc.ufl.edu,200,,,,,,,,,,,a,SHORT_NAME_REPLACED,ok
+35111182,gene reference,0.69723177,,0.69723177,gene reference,0.69723177,1,https://integrape.eu/resources/genes-genomes/,200,,,,,,,,,,,gene reference,,ok
+36648443,symbol nomenclature,0.69357383,,0.69357383,symbol nomenclature,0.69357383,1,https://www.ncbi.nlm.nih.gov/glycans/sialic.html,200,,,,,,,,,,,symbol nomenclature,,ok
+37930837,metabolic roadmap,0.69299257,,0.69299257,metabolic roadmap,0.69299257,1,http://idrblab.org/intede/,200,,,,,,,,,,,metabolic roadmap,,ok
+39401061,virusseq,0.6880766,,0.6880766,virusseq,0.6880766,1,https://virusseq-dataportal.ca/,200,,,,,,,,,,,virusseq,,ok
+39520544,indcompare,0.68690896,,0.68690896,indcompare,0.68690896,1,https://pypi.org/project/bindcompare/,200,,,,,,,,,,,indcompare,,ok
+35809063,naloops,0.685988,,0.685988,naloops,0.685988,1,https://rnaloops.cs.put.poznan.pl,200,,,,,,,,,,,naloops,,ok
+35839778,ancer proteomic map,0.6859143,,0.6859143,ancer proteomic map,0.6859143,1,https://cellmodelpassports.sanger.ac.uk,200,,,,,,,,,,,ancer proteomic map,,ok
+36309134,MPAD,0.6838334,m,0.6838334,,0.6838334,1,https://web.iitm.ac.in/bioinfo2/mpad,200,,,,,,,,,,,m,"SHORT_NAME_REPLACED,CAPITALIZED",ok
+39240327,bio2byte,0.6837252,,0.6837252,bio2byte,0.6837252,1,https://bio2byte.be/b2btools/,200,,,,,,,,,,,bio2byte,,ok
+37131131,comparative gene cluster analysis toolbox,0.6777363,,0.6777363,comparative gene cluster analysis toolbox,0.6777363,1,https://cagecat.bioinformatics.nl,200,,,,,,,,,,,comparative gene cluster analysis toolbox,,ok
+36318251,ulfatlas,0.677113,,0.677113,ulfatlas,0.677113,1,https://sulfatlas.sb-roscoff.fr/,200,,,,,,,,,,,ulfatlas,,ok
+37933855,NCBI,0.67708087,ncbi,0.67708087,,0.67708087,1,https://www.ncbi.nlm.nih.gov/geo/,200,,,,,,,,,,,ncbi,CAPITALIZED,ok
+37285317,nanoflow repository,0.67625225,,0.67625225,nanoflow repository,0.67625225,1,https://ldh.clinicalgenome.org/ldh/ui/about,200,,,,,,,,,,,nanoflow repository,,ok
+40133783,phyre2,0.6689121,phyre2,0.6689121,,0.6689121,1,https://www.sbg.bio.ic.ac.uk/phyre2/,200,,,,,,,,,,,phyre2,,ok
+38801081,toolbox (mtb),0.6688775,,0.6688775,toolbox,0.6688775,1,https://mtb.bioinf.med.uni-goettingen.de/SeqCAT/,200,,,,,,,,,,,toolbox,DISAMBIGUATED,ok
+36732606,xplorer,0.668182,,0.668182,xplorer,0.668182,1,http://exposome-explorer.iarc.fr/,200,,,,,,,,,,,xplorer,,ok
+38914788,SEMA,0.666579,sema,0.666579,,0.666579,1,http://www.SEMA3.com,200,,,,,,,,,,,sema,CAPITALIZED,ok
+38385146,directory of,0.6628398,,0.6628398,directory of,0.6628398,1,https://aw.iimas.unam.mx/cdbprom/,200,,,,,,,,,,,directory of,,ok
+38872612,rnacmap3,0.662152,,0.662152,rnacmap3,0.662152,1,https://ngdc.cncb.ac.cn/omix/release/OMIX003037,200,,,,,,,,,,,rnacmap3,,ok
+35501320,nucleome,0.6583295,,0.6583295,nucleome,0.6583295,1,https://data.4dnucleome.org/,200,,,,,,,,,,,nucleome,,ok
+38395961,dompekeys,0.65803605,d,0.65803605,,0.65803605,1,https://dompekeys.exscalate.eu,200,,,,,,,,,,,d,SHORT_NAME_REPLACED,ok
+38837557,biofacquim,0.65470004,biofacquim,0.65470004,,0.65470004,1,http://www.biomx-db.com,200,,,,,,,,,,,biofacquim,,ok
+37647638,iseasegps,0.65366155,,0.65366155,iseasegps,0.65366155,1,https://diseasegps.sjtu.edu.cn,200,,,,,,,,,,,iseasegps,,ok
+35147037,ppi-hotspot,0.65333396,,0.65333396,ppi-hotspot,0.65333396,1,https://ppihotspot.limlab.dnsalias.org,200,,,,,,,,,,,ppi-hotspot,,ok
+36399499,targets,0.65202034,,0.65202034,targets,0.65202034,1,https://platform.opentargets.org/,200,,,,,,,,,,,targets,,ok
+36736440,ncr2metasta,0.651428,,0.651428,ncr2metasta,0.651428,1,http://ncr2met.wchoda.com,200,,,,,,,,,,,ncr2metasta,,ok
+35275211,database (csdb),0.6487917,,0.6487917,database,0.6487917,1,http://csdb.glycoscience.ru/database/core/search_conf.html,200,,,,,,,,,,,database,DISAMBIGUATED,ok
+37140058,DEPICTER2,0.6477342,d,0.6477342,,0.6477342,1,http://biomine.cs.vcu.edu/servers/DEPICTER2/,200,,,,,,,,,,,d,SHORT_NAME_REPLACED,ok
+34747477,swiss portal,0.64624584,,0.64624584,swiss portal,0.64624584,1,https://spica.unil.ch,200,,,,,,,,,,,swiss portal,,ok
+37387129,coriolis,0.6447331,,0.6447331,coriolis,0.6447331,1,http://score-group.org/?id=smarten,200,,,,,,,,,,,coriolis,,ok
+35806459,tritikbdb,0.63862395,i,0.63862395,,0.63862395,1,http://bioinfo.usu.edu/tritikbdb/,200,,,,,,,,,,,i,SHORT_NAME_REPLACED,ok
+35150127,feature database,0.63608944,,0.63608944,feature database,0.63608944,1,http://www.oncoimmunobank.cn/index.php,200,,,,,,,,,,,feature database,,ok
+39874126,database (202),0.6346039,,0.6346039,database,0.6346039,1,http://202.203.179.115:3838/oarsnpdb,200,,,,,,,,,,,database,DISAMBIGUATED,ok
+35900159,PLCO (episphere),0.6335528,plco,0.6335528,,0.6335528,1,https://episphere.github.io/plco,200,,,,,,,,,,,plco,"CAPITALIZED,DISAMBIGUATED",review
+40677986,CA,0.63026655,ca,0.63026655,,0.63026655,1,http://www.cirrhosiscare.ca,200,,,,,,,,,,,ca,"SHORT_NAME_FLAGGED,CAPITALIZED",ok
+34986603,TLAS,0.6259917,tlas,0.6259917,,0.6259917,1,https://www.xjtlu.edu.cn/biologicalsciences/m5c-atlas,200,,,,,,,,,,,tlas,CAPITALIZED,ok
+35222847,animal gut microbiome,0.6234842,,0.6234842,animal gut microbiome,0.6234842,1,http://addagma.omicsbio.info/,200,,,,,,,,,,,animal gut microbiome,,ok
+37738400,workflow for,0.6228523,,0.6228523,workflow for,0.6228523,1,https://cgc.sbgenomics.com,200,,,,,,,,,,,workflow for,,ok
+35445695,3d (biocomp),0.620854,3d,0.620854,,0.620854,1,http://biocomp.chem.uw.edu.pl/A3D2/hproteome,200,,,,,,,,,,,3d,"SHORT_NAME_FLAGGED,DISAMBIGUATED",ok
+35124170,transcriptome atlas,0.61804026,,0.61804026,transcriptome atlas,0.61804026,1,https://www.eye-transcriptome.com,200,,,,,,,,,,,transcriptome atlas,,ok
+37130913,kuanrongchan-stages-stages-vpgh46,0.6104207,s,0.6104207,,0.6104207,1,https://kuanrongchan-stages-stages-vpgh46.streamlitapp.com/,200,,,,,,,,,,,s,SHORT_NAME_REPLACED,ok
+34432052,3'aqtl-atlas,0.60245585,,0.60245585,3'aqtl-atlas,0.60245585,1,https://wlcb.oit.uci.edu/3aQTLatlas,200,,,,,,,,,,,3'aqtl-atlas,,ok
+40351053,DICED,0.5968401,d,0.5968401,,0.5968401,1,https://diced.lerner.ccf.org/,200,,,,,,,,,,,d,"SHORT_NAME_REPLACED,CAPITALIZED",ok
+37646935,ltr retrotransposon reference,0.5854581,,0.5854581,ltr retrotransposon reference,0.5854581,1,https://inpactordb.github.io,200,,,,,,,,,,,ltr retrotransposon reference,,review
+37181487,reference atlas,0.5850432,,0.5850432,reference atlas,0.5850432,1,https://portal.hubmapconsortium.org,200,,,,,,,,,,,reference atlas,,ok
+38285683,histify,0.5834216,y,0.5834216,,0.5834216,1,https://histify.streamlit.app/&,200,,,,,,,,,,,y,SHORT_NAME_REPLACED,ok
+37356905,PI,0.5821912,pi,0.5821912,,0.5821912,1,http://missense3d.bc.ic.ac.uk,200,,,,,,,,,,,pi,"SHORT_NAME_FLAGGED,CAPITALIZED",ok
+39963423,nmdc edge,0.57217634,nmdc edge,0.57217634,,0.57217634,1,https://nmdc-edge.org,200,,,,,,,,,,,nmdc edge,,ok
+40054149,uls2,0.5616229,uls2,0.5616229,,0.5616229,1,https://uls23.grand-challenge.org,200,,,,,,,,,,,uls2,,ok
+36268860,chemical probes,0.5546943,,0.5546943,chemical probes,0.5546943,1,https://www.chemicalprobes.org/,200,,,,,,,,,,,chemical probes,,ok
+36896476,GENOME,0.55207914,genome,0.55207914,,0.55207914,1,http://yeyn.group:96/,200,,,,,,,,,,,genome,CAPITALIZED,ok
+37624922,ep2,0.54475605,ep2,0.54475605,,0.54475605,1,https://mildpiggy.github.io/DEP2/,200,,,,,,,,,,,ep2,,review
+39497074,GPCR,0.5439645,gpcr,0.5439645,,0.5439645,1,https://gpcrbs.bigdata.jcmsc.cn,200,,,,,,,,,,,gpcr,CAPITALIZED,ok
+40054813,intrinsic,0.54216754,,0.54216754,intrinsic,0.54216754,1,https://caid.idpcentral.org/portal,200,,,,,,,,,,,intrinsic,,ok
+34570238,tissue atlas,0.5377422,,0.5377422,tissue atlas,0.5377422,1,https://www.ccb.uni-saarland.de/tissueatlas2,200,,,,,,,,,,,tissue atlas,,ok
+39237105,KOMET,0.53391826,komet,0.53391826,,0.53391826,1,https://komet.readthedocs.io,200,,,,,,,,,,,komet,CAPITALIZED,ok
+39225545,commons,0.5270166,,0.5270166,commons,0.5270166,1,https://pdc.cancer.gov,200,,,,,,,,,,,commons,,ok
+35641682,database,0.51916826,,0.51916826,database,0.51916826,1,https://osf.io/sfbm6/?view_only=e22a521e2a7d44c6b3343e11b88f39e3,200,,,,,,,,,,,database,,ok
+39250076,OF (venomzone),0.5101058,of,0.5101058,,0.5101058,1,https://venomzone.expasy.org/10897,200,,,,,,,,,,,of,"SHORT_NAME_FLAGGED,CAPITALIZED,DISAMBIGUATED",ok
+39686909,expression atlas (cannatlas),0.49095777,,0.49095777,expression atlas,0.49095777,1,https://cannatlas.venanciogroup.uenf.br/,200,,,,,,,,,,,expression atlas,DISAMBIGUATED,ok
+38310806,CSSL,0.46620265,c,0.46620265,,0.46620265,1,http://www.tmliang.cn/CSSL/,200,,,,,,,,,,,c,SHORT_NAME_REPLACED,ok
+36483087,HE,0.43522054,he,0.43522054,,0.43522054,1,http://tvir.bio2db.com,200,,,,,,,,,,,he,"SHORT_NAME_FLAGGED,CAPITALIZED",ok
+"35898309, 37676599",cars-db,0.0,,0.0,cars-db,0.0,2,http://carsdb.ppmclab.com,200,,,,,,,,,,,cars-db,,ok
+"34554251, 39558172",oncosplicing,0.0,,0.0,oncosplicing,0.0,2,http://www.oncosplicing.com,200,,,,,,,,,,,oncosplicing,,ok
+"34669946, 39526380",webtwas,0.0,,0.0,webtwas,0.0,2,http://www.webtwas.net,200,,,,,,,,,,,webtwas,,ok
+"35609987, 38842945",alphaknot,0.0,,0.0,alphaknot | alphafold,0.0,2,https://alphaknot.cent.uw.edu.pl/,200,,,,,,,,,,,alphaknot | alphafold,PIPE_CLEANED,ok
+"36395823, 39558158",GPCRDB,0.0,gpcrdb,0.0,,0.0,2,https://gpcrdb.org,200,,,,,,,,,,,gpcrdb,CAPITALIZED,ok
+"36243961, 39271119",drugmap,0.0,,0.0,drugmap,0.0,2,https://idrblab.org/drugmap/,200,,,,,,,,,,,drugmap,,ok
+"34893873, 38015436",modomics (iimcb),0.0,modomics,0.0,,0.0,2,https://iimcb.genesilico.pl/modomics/,200,,,,,,,,,,,modomics,DISAMBIGUATED,ok
+"34664671, 39441067",subtiwiki,0.0,,0.0,subtiwiki,0.0,2,http://subtiwiki.uni-goettingen.de/,200,,,,,,,,,,,subtiwiki,,ok
+37666818,CRUSTY,0.0,crusty,0.0,,0.0,1,https://crusty.humanitas.it/,200,,,,,,,,,,,crusty,CAPITALIZED,ok
+36028515,RSDB,0.0,rsdb,0.0,rare skin disease database,0.0,1,https://rsdb.cmdm.tw,200,,,,,,,,,,,rsdb,CAPITALIZED,ok
+40419450,na-db,0.0,na-db,0.0,,0.0,1,http://nadb.idruglab.cn/,200,,,,,,,,,,,na-db,,ok
+39633021,biodolphin,0.0,,0.0,biodolphin,0.0,1,http://www.biodolphin.chemistry.gatech.edu,200,,,,,,,,,,,biodolphin,,ok
+40140942,strchive,0.0,,0.0,strchive,0.0,1,http://strchive.org/,200,,,,,,,,,,,strchive,,ok
+39862439,hemascope,0.0,,0.0,hemascope,0.0,1,https://zhenyiwangthu.github.io/HemaScope_Tutorial/,200,,,,,,,,,,,hemascope,,review
+40108206,shdb-af,0.0,shdb-af,0.0,,0.0,1,https://physionet.org/content/shdb-af/,200,,,,,,,,,,,shdb-af,,ok
+38518981,rnairport,0.0,,0.0,rnairport,0.0,1,http://www.rnairport.com/leader5P/,200,,,,,,,,,,,rnairport,,ok
+35504357,ODISEA,0.0,odisea,0.0,organ-disease annotations,0.0,1,https://netbio.bgu.ac.il/odisea,200,,,,,,,,,,,odisea,CAPITALIZED,ok
+38371639,alliumdb,0.0,,0.0,alliumdb,0.0,1,https://allium.qau.edu.cn,200,,,,,,,,,,,alliumdb,,ok
+37142846,MSP,0.0,msp,0.0,,0.0,1,https://classic.wikipathways.org/index.php/Pathway:WP5353,200,,,,,,,,,,,msp,CAPITALIZED,ok
+37159240,TRSRD,0.0,trsrd,0.0,,0.0,1,http://trsrd.wpengxs.cn,200,,,,,,,,,,,trsrd,CAPITALIZED,ok
+37831073,RAVAR,0.0,ravar,0.0,,0.0,1,http://www.ravar.bio,200,,,,,,,,,,,ravar,CAPITALIZED,ok
+37831083,pharmgwas,0.0,,0.0,pharmgwas,0.0,1,https://ngdc.cncb.ac.cn/pharmgwas,200,,,,,,,,,,,pharmgwas,,ok
+37831087,dna damage atlas,0.0,,0.0,dna damage atlas,0.0,1,http://www.bioinformaticspa.com/DDA/,200,,,,,,,,,,,dna damage atlas,,ok
+37831097,PRMD,0.0,prmd,0.0,,0.0,1,http://bioinformatics.sc.cn/PRMD,200,,,,,,,,,,,prmd,CAPITALIZED,ok
+39535052,bitterdb,0.0,,0.0,bitterdb,0.0,1,http://bitterdb.agri.huji.ac.il,200,,,,,,,,,,,bitterdb,,ok
+37831118,ADCDB,0.0,adcdb,0.0,,0.0,1,https://idrblab.org/adcdb/,200,,,,,,,,,,,adcdb,CAPITALIZED,ok
+37093842,mtsviewer,0.0,,0.0,mtsviewer,0.0,1,https://neurobioinfo.github.io/MTSvieweR/,200,,,,,,,,,,,mtsviewer,,review
+38978014,mrclinkdb,0.0,,0.0,mrclinkdb,0.0,1,https://www.cellknowledge.com.cn/mrclinkdb/,200,,,,,,,,,,,mrclinkdb,,ok
+40272360,invertiadb,0.0,,0.0,invertiadb,0.0,1,https://invertiadb.netlify.app/homepage.html,200,,,,,,,,,,,invertiadb,,ok
+37962376,JASPAR,0.0,jaspar,0.0,,0.0,1,https://jaspar.elixir.no/,200,,,,,,,,,,,jaspar,CAPITALIZED,ok
+40583840,insecttfdb,0.0,,0.0,insecttfdb,0.0,1,http://www.insecttfdb.com/,200,,,,,,,,,,,insecttfdb,,ok
+35193506,SEASEQ,0.0,seaseq,0.0,,0.0,1,https://platform.stjude.cloud/workflows/seaseq,200,,,,,,,,,,,seaseq,CAPITALIZED,ok
+35586731,mutaxome,0.0,,0.0,mutaxome,0.0,1,http://www.vidyalab.rf.gd/,200,,,,,,,,,,,mutaxome,,ok
+35701419,chip-hub (biobigdata),0.0,,0.0,chip-hub,0.0,1,https://biobigdata.nju.edu.cn/ChIPHub/,200,,,,,,,,,,,chip-hub,DISAMBIGUATED,ok
+39420631,sctwas atlas,0.0,,0.0,sctwas atlas,0.0,1,https://ngdc.cncb.ac.cn/sctwas/,200,,,,,,,,,,,sctwas atlas,,ok
+34996997,dunescan,0.0,,0.0,dunescan,0.0,1,https://www.dunescan.org,200,,,,,,,,,,,dunescan,,ok
+35849014,GEMO,0.0,gemo,0.0,,0.0,1,https://gemo.southgreen.fr/,200,,,,,,,,,,,gemo,CAPITALIZED,ok
+35930941,SPECDB,0.0,specdb,0.0,,0.0,1,https://github.rpi.edu/RPIBioinformatics/SpecDB,200,,,,,,,,,,,specdb,CAPITALIZED,ok
+35849028,probioquest,0.0,,0.0,probioquest,0.0,1,http://kwanlab.bio.cuhk.edu.hk/PBQ/,200,,,,,,,,,,,probioquest,,ok
+38011719,asynpep-db,0.0,,0.0,asynpep-db,0.0,1,https://asynpepdb.ppmclab.com/,200,,,,,,,,,,,asynpep-db,,ok
+34751388,CEBS,0.0,cebs,0.0,,0.0,1,https://cebs.niehs.nih.gov/cebs/,200,,,,,,,,,,,cebs,CAPITALIZED,ok
+34751403,viroiddb,0.0,,0.0,viroiddb,0.0,1,https://viroids.org,200,,,,,,,,,,,viroiddb,,ok
+36094905,cottonomics,0.0,cottonomics,0.0,,0.0,1,http://cotton.zju.edu.cn/,200,,,,,,,,,,,cottonomics,,ok
+34718689,arts-db,0.0,arts-db | arts,0.0,,0.0,1,https://arts-db.ziemertlab.com/,200,,,,,,,,,,,arts-db | arts,PIPE_CLEANED,ok
+34718696,-pi 2.0,0.0,,0.0,-pi 2.0 | proteome-pi 2.0,0.0,1,http://isoelectricpointdb2.org,200,,,,,,,,,,,-pi 2.0 | proteome-pi 2.0,PIPE_CLEANED,ok
+35685362,dbesslnc,0.0,,0.0,dbesslnc,0.0,1,https://esslnc.pufengdu.org,200,,,,,,,,,,,dbesslnc,,ok
+34718710,natural products atlas,0.0,,0.0,natural products atlas,0.0,1,https://www.npatlas.org,200,,,,,,,,,,,natural products atlas,,ok
+35685370,disphasedb,0.0,,0.0,disphasedb,0.0,1,http://disphasedb.leloir.org.ar,200,,,,,,,,,,,disphasedb,,ok
+34718715,ONCODB,0.0,oncodb,0.0,,0.0,1,http://oncodb.org,200,,,,,,,,,,,oncodb,CAPITALIZED,ok
+34718719,metazexp,0.0,,0.0,metazexp,0.0,1,https://bioinfo.njau.edu.cn/metazExp,200,,,,,,,,,,,metazexp,,ok
+34718720,brainbase,0.0,,0.0,brainbase | a curated knowledgebase for brain diseases,0.0,1,https://ngdc.cncb.ac.cn/brainbase,200,,,,,,,,,,,brainbase | a curated knowledgebase for brain diseases,PIPE_CLEANED,ok
+34718726,rnainter,0.0,,0.0,rnainter,0.0,1,http://www.rnainter.org,200,,,,,,,,,,,rnainter,,ok
+37651464,RIVET,0.0,rivet,0.0,,0.0,1,https://rivet.ucsd.edu/,200,,,,,,,,,,,rivet,CAPITALIZED,ok
+34718734,RPS,0.0,rps,0.0,,0.0,1,http://rps.renlab.org,200,,,,,,,,,,,rps,CAPITALIZED,ok
+34718740,rnaphasep,0.0,,0.0,rnaphasep,0.0,1,http://www.rnaphasep.cn,200,,,,,,,,,,,rnaphasep,,ok
+34718741,qptmplants,0.0,,0.0,qptmplants,0.0,1,http://qptmplants.omicsbio.info,200,,,,,,,,,,,qptmplants,,ok
+34718745,compodynamics,0.0,,0.0,compodynamics,0.0,1,https://ngdc.cncb.ac.cn/compodynamics/,200,,,,,,,,,,,compodynamics,,ok
+34718752,EWAS (ngdc),0.0,ewas,0.0,,0.0,1,https://ngdc.cncb.ac.cn/ewas,200,,,,,,,,,,,ewas,"CAPITALIZED,DISAMBIGUATED",ok
+36029479,SLOAD,0.0,sload,0.0,,0.0,1,http://www.tmliang.cn/SLOAD,200,,,,,,,,,,,sload,CAPITALIZED,ok
+38519883,hihisiv,0.0,hihisiv,0.0,,0.0,1,https://hihisiv.github.io,200,,,,,,,,,,,hihisiv,,review
+37340239,datapipe,0.0,,0.0,datapipe,0.0,1,https://pipe.jspsych.org,200,,,,,,,,,,,datapipe,,ok
+38814806,BNGL,0.0,bngl,0.0,bnglviz,0.0,1,https://bnglviz.github.io/,200,,,,,,,,,,,bngl,CAPITALIZED,review
+37602392,telobase,0.0,,0.0,telobase,0.0,1,http://cfb.ceitec.muni.cz/telobase/,200,,,,,,,,,,,telobase,,ok
+40338521,cancerppd2,0.0,,0.0,cancerppd2 | cancerppd,0.0,1,http://webs.iiitd.edu.in/raghava/cancerppd2/,200,,,,,,,,,,,cancerppd2 | cancerppd,PIPE_CLEANED,ok
+38552697,funcphos-str,0.0,,0.0,funcphos-str | alphafold,0.0,1,http://funcptm.jysw.suda.edu.cn/str,200,,,,,,,,,,,funcphos-str | alphafold,PIPE_CLEANED,ok
+37897338,plantpan,0.0,,0.0,plantpan,0.0,1,http://PlantPAN.itps.ncku.edu.tw/,200,,,,,,,,,,,plantpan,,ok
+37897342,SPIRE,0.0,spire,0.0,,0.0,1,https://motu-tool.org/,200,,,,,,,,,,,spire,CAPITALIZED,ok
+37897356,cov2var,0.0,,0.0,cov2var,0.0,1,http://biomedbdc.wchscu.cn/COV2Var/,200,,,,,,,,,,,cov2var,,ok
+37897357,HHCDB,0.0,hhcdb,0.0,,0.0,1,http://hhcdb.edbc.org/,200,,,,,,,,,,,hhcdb,CAPITALIZED,ok
+37897364,plantpad,0.0,,0.0,plantpad,0.0,1,http://plantpad.samlab.cn,200,,,,,,,,,,,plantpad,,ok
+39126203,SODCOD,0.0,sodcod,0.0,,0.0,1,https://fujisawagroup.github.io/SoDCoDweb/,200,,,,,,,,,,,sodcod,CAPITALIZED,review
+35013825,nowinbrain,0.0,,0.0,"nowinbrain | a large, systematic",0.0,1,http://www.nowinbrain.org,200,,,,,,,,,,,"nowinbrain | a large, systematic",PIPE_CLEANED,ok
+36717789,GENTLE,0.0,gentle,0.0,,0.0,1,https://share.streamlit.io/dhiego22/gentle/main/gentle.py,200,,,,,,,,,,,gentle,CAPITALIZED,ok
+37225696,expressanalyst,0.0,,0.0,expressanalyst,0.0,1,http://www.expressanalyst.ca,200,,,,,,,,,,,expressanalyst,,ok
+38470883,aagingbase,0.0,,0.0,aagingbase,0.0,1,https://project.iith.ac.in/cgntlab/aagingbase/,200,,,,,,,,,,,aagingbase,,ok
+35947748,SUMMER,0.0,summer,0.0,,0.0,1,http://njmu-edu.cn:3838/SUMMER/,200,,,,,,,,,,,summer,CAPITALIZED,ok
+39535874,SOYOD,0.0,soyod,0.0,,0.0,1,https://bis.zju.edu.cn/soyod,200,,,,,,,,,,,soyod,CAPITALIZED,ok
+35325188,chip-atlas,0.0,,0.0,chip-atlas,0.0,1,https://chip-atlas.org,200,,,,,,,,,,,chip-atlas,,ok
+35489057,proteinsplus,0.0,,0.0,proteinsplus,0.0,1,https://proteins.plus,200,,,,,,,,,,,proteinsplus,,ok
+38389029,LASTU,0.0,lastu,0.0,,0.0,1,https://osf.io/j8v6b/,200,,,,,,,,,,,lastu,CAPITALIZED,ok
+40518950,virulenthunter,0.0,,0.0,virulenthunter,0.0,1,http://www.unimd.org/VirulentHunter,200,,,,,,,,,,,virulenthunter,,ok
+34850103,QTLDB,0.0,qtldb | corrdb,0.0,,0.0,1,https://www.animalgenome.org/QTLdb,200,,,,,,,,,,,qtldb | corrdb,"PIPE_CLEANED,CAPITALIZED",ok
+34850110,consensuspathdb,0.0,,0.0,consensuspathdb,0.0,1,http://consensuspathdb.org,200,,,,,,,,,,,consensuspathdb,,ok
+34850112,pharmacodb,0.0,,0.0,pharmacodb,0.0,1,https://pharmacodb.ca/,200,,,,,,,,,,,pharmacodb,,ok
+34850116,PLSDB,0.0,plsdb,0.0,,0.0,1,https://www.ccb.uni-saarland.de/plsdb,200,,,,,,,,,,,plsdb,CAPITALIZED,ok
+38028612,DASES,0.0,dases,0.0,,0.0,1,http://www.hxdsjzx.cn/DASES,200,,,,,,,,,,,dases,CAPITALIZED,ok
+34850121,expression atlas,0.0,,0.0,expression atlas,0.0,1,https://www.ebi.ac.uk/gxa,200,,,,,,,,,,,expression atlas,,ok
+34850127,mirgenedb,0.0,,0.0,mirgenedb,0.0,1,http://www.mirgenedb.org/,200,,,,,,,,,,,mirgenedb,,ok
+34850133,prodoric,0.0,prodoric,0.0,,0.0,1,https://www.prodoric.de,200,,,,,,,,,,,prodoric,,ok
+40027488,HTIRDB,0.0,htirdb,0.0,,0.0,1,https://yanglab.hzau.edu.cn/HTIRDB#/,200,,,,,,,,,,,htirdb,CAPITALIZED,ok
+37356899,ribogalaxy,0.0,,0.0,ribogalaxy,0.0,1,https://riboseq.org/,200,,,,,,,,,,,ribogalaxy,,ok
+37356903,cavityplus,0.0,,0.0,cavityplus,0.0,1,http://pkumdl.cn:8000/cavityplus/,200,,,,,,,,,,,cavityplus,,ok
+37356904,GUTBUG (metabiosys),0.0,gutbug,0.0,,0.0,1,https://metabiosys.iiserb.ac.in/gutbug,200,,,,,,,,,,,gutbug,"CAPITALIZED,DISAMBIGUATED",ok
+36062570,rmdisease,0.0,,0.0,rmdisease,0.0,1,http://www.rnamd.org/rmdisease2,200,,,,,,,,,,,rmdisease,,ok
+34669962,ubibrowser,0.0,,0.0,ubibrowser,0.0,1,http://ubibrowser.ncpsb.org.cn,200,,,,,,,,,,,ubibrowser,,ok
+36947346,quantimage,0.0,,0.0,quantimage,0.0,1,https://medgift.github.io/quantimage-v2-info/,200,,,,,,,,,,,quantimage,,review
+36930969,cycpeptmpdb,0.0,,0.0,cycpeptmpdb,0.0,1,http://cycpeptmpdb.com,200,,,,,,,,,,,cycpeptmpdb,,ok
+38864430,AMLDB,0.0,amldb,0.0,,0.0,1,https://project.iith.ac.in/cgntlab/amldb,200,,,,,,,,,,,amldb,CAPITALIZED,ok
+40224325,CNSA,0.0,cnsa,0.0,china national genebank sequence archive,0.0,1,https://db.cngb.org/cnsa/,200,,,,,,,,,,,cnsa,CAPITALIZED,ok
+38995543,channelsdb (channelsdb2),0.0,,0.0,channelsdb | moleonline,0.0,1,https://channelsdb2.biodata.ceitec.cz/,200,,,,,,,,,,,channelsdb | moleonline,"PIPE_CLEANED,DISAMBIGUATED",ok
+39470706,HSCGD,0.0,hscgd,0.0,,0.0,1,http://www.hscgd.com,200,,,,,,,,,,,hscgd,CAPITALIZED,ok
+39470718,ncplantdb,0.0,,0.0,ncplantdb | plant ncrna database,0.0,1,https://bis.zju.edu.cn/ncPlantDB,200,,,,,,,,,,,ncplantdb | plant ncrna database,PIPE_CLEANED,ok
+37275273,crypticproteindb,0.0,,0.0,crypticproteindb,0.0,1,https://www.maherlab.com/crypticproteindb,200,,,,,,,,,,,crypticproteindb,,ok
+39470730,bgc atlas,0.0,,0.0,bgc atlas,0.0,1,https://bgc-atlas.cs.uni-tuebingen.de,200,,,,,,,,,,,bgc atlas,,ok
+39470732,VDGE,0.0,vdge,0.0,,0.0,1,https://ngdc.cncb.ac.cn/vdge,200,,,,,,,,,,,vdge,CAPITALIZED,ok
+40502930,diabetesomic,0.0,,0.0,diabetesomic,0.0,1,https://bio.liclab.net/diabetesOmicdb/,200,,,,,,,,,,,diabetesomic,,ok
+35227289,psnpbind,0.0,,0.0,psnpbind,0.0,1,https://psnpbind.org,200,,,,,,,,,,,psnpbind,,ok
+37258913,TSNAD,0.0,tsnad | tsnadb,0.0,,0.0,1,https://pgx.zju.edu.cn/tsnadb,200,,,,,,,,,,,tsnad | tsnadb,"PIPE_CLEANED,CAPITALIZED",ok
+40601261,plmsearch,0.0,,0.0,plmsearch | plmalign,0.0,1,https://dmiip.sjtu.edu.cn/PLMSearch,200,,,,,,,,,,,plmsearch | plmalign,PIPE_CLEANED,ok
+35112706,molecular subtyping resource,0.0,,0.0,molecular subtyping resource,0.0,1,https://mousr.qub.ac.uk/,200,,,,,,,,,,,molecular subtyping resource,,ok
+38602506,stride-db,0.0,stride-db,0.0,,0.0,1,https://stridedb.igib.res.in,200,,,,,,,,,,,stride-db,,ok
+37340940,MEMOR,0.0,memor,0.0,,0.0,1,http://www.memor.be,200,,,,,,,,,,,memor,CAPITALIZED,ok
+38913867,genbase,0.0,,0.0,genbase,0.0,1,https://ngdc.cncb.ac.cn/genbase,200,,,,,,,,,,,genbase,,ok
+37930842,SCAN,0.0,scan,0.0,spatiotemporal cloud atlas for neural cells,0.0,1,http://47.98.139.124:8799,200,,,,,,,,,,,scan,CAPITALIZED,ok
+35833709,xenopus,0.0,,0.0,xenopus,0.0,1,http://www.xenbase.org/entry/zahn.do,200,,,,,,,,,,,xenopus,,ok
+37930866,IMG (genome),0.0,img/pr,0.0,,0.0,1,https://genome.jgi.doe.gov/portal/IMG_PR,200,,,,,,,,,,,img/pr,"HTML_REMOVED,CAPITALIZED,DISAMBIGUATED",ok
+38176651,glycomb,0.0,,0.0,glycomb,0.0,1,https://glycomb.glycosmos.org,200,,,,,,,,,,,glycomb,,ok
+38619046,ppi3d,0.0,ppi3d,0.0,,0.0,1,https://bioinformatics.lt/ppi3d,200,,,,,,,,,,,ppi3d,,ok
+39700425,funcoup,0.0,,0.0,funcoup,0.0,1,https://apps.cytoscape.org/apps/funcoup,200,,,,,,,,,,,funcoup,,ok
+36177882,ribocentre,0.0,,0.0,ribocentre,0.0,1,https://www.ribocentre.org,200,,,,,,,,,,,ribocentre,,ok
+39028752,miami-ad,0.0,miami-ad,0.0,,0.0,1,https://miami-ad.org/,200,,,,,,,,,,,miami-ad,,ok
+39897104,onko_drugcombscreen,0.0,,0.0,onko_drugcombscreen,0.0,1,https://gitlab.gwdg.de/MedBioinf/mtb/onko_drugcombscreen,200,,,,,,,,,,,onko_drugcombscreen,,ok
+37881887,dichropipeline,0.0,,0.0,dichropipeline | circular dichroism,0.0,1,https://pcddb.cryst.bbk.ac.uk/,200,,,,,,,,,,,dichropipeline | circular dichroism,PIPE_CLEANED,ok
+39192607,autoinhibited protein database,0.0,,0.0,autoinhibited protein database,0.0,1,http://ssbio.cau.ac.kr/databases/AiPD,200,,,,,,,,,,,autoinhibited protein database,,ok
+34850907,JASPAR,0.0,jaspar,0.0,,0.0,1,http://jaspar.genereg.net/,200,,,,,,,,,,,jaspar,CAPITALIZED,ok
+38783079,IEDB,0.0,iedb,0.0,,0.0,1,https://nextgen-tools.iedb.org,200,,,,,,,,,,,iedb,CAPITALIZED,ok
+39258239,oligom-cancer,0.0,,0.0,oligom-cancer,0.0,1,http://oligo.sysbio.org.cn,200,,,,,,,,,,,oligom-cancer,,ok
+37030102,EPEK,0.0,epek,0.0,ectopic pregnancy expression knowledgebase,0.0,1,https://cb.imsc.res.in/epek,200,,,,,,,,,,,epek,CAPITALIZED,ok
+36653322,ENCD,0.0,encd,0.0,,0.0,1,http://www.bio-server.cn/ENCD/,200,,,,,,,,,,,encd,CAPITALIZED,ok
+38783339,molmoda,0.0,,0.0,molmoda,0.0,1,https://durrantlab.com/molmoda,200,,,,,,,,,,,molmoda,,ok
+40257905,localizatome,0.0,,0.0,localizatome,0.0,1,https://localizatome.embrys.jp/,200,,,,,,,,,,,localizatome,,ok
+35637632,plantcircbase,0.0,,0.0,plantcircbase,0.0,1,http://ibi.zju.edu.cn/plantcircbase/,200,,,,,,,,,,,plantcircbase,,ok
+37489036,gromacs,0.0,gromacs,0.0,pygromods,0.0,1,https://youtu.be/I4OKc6uVx1M.Communicated,200,,,,,,,,,,,gromacs,,ok
+38685101,QUANDB,0.0,quandb,0.0,,0.0,1,https://quandb.cmdrg.com/,200,,,,,,,,,,,quandb,CAPITALIZED,ok
+40126909,rnaprodb,0.0,,0.0,rnaprodb,0.0,1,https://rnaprodb.usc.edu/,200,,,,,,,,,,,rnaprodb,,ok
+36719094,ITCM,0.0,itcm,0.0,,0.0,1,http://itcm.biotcm.net,200,,,,,,,,,,,itcm,CAPITALIZED,ok
+36243959,twas atlas,0.0,,0.0,twas atlas,0.0,1,https://ngdc.cncb.ac.cn/twas/,200,,,,,,,,,,,twas atlas,,ok
+36243962,RABC,0.0,rabc,0.0,rheumatoid arthritis bioinformatics center,0.0,1,http://www.onethird-lab.com/RABC/,200,,,,,,,,,,,rabc,CAPITALIZED,ok
+36243963,PAT (bioinfo),0.0,pat,0.0,,0.0,1,http://bioinfo.qd.sdu.edu.cn/PAT/,200,,,,,,,,,,,pat,"CAPITALIZED,DISAMBIGUATED",ok
+36243964,isomirdb,0.0,,0.0,isomirdb,0.0,1,https://www.ccb.uni-saarland.de/isomirdb,200,,,,,,,,,,,isomirdb,,ok
+38832633,chemfree,0.0,,0.0,chemfree,0.0,1,http://chemfree.agroda.cn/chemfree/,200,,,,,,,,,,,chemfree,,ok
+36243967,AQUILA,0.0,aquila,0.0,,0.0,1,https://aquila.cheunglab.org,200,,,,,,,,,,,aquila,CAPITALIZED,ok
+36243972,HGNC,0.0,hgnc,0.0,,0.0,1,http://www.genenames.org,200,,,,,,,,,,,hgnc,CAPITALIZED,ok
+36243973,pertorg,0.0,,0.0,pertorg,0.0,1,http://www.inbirg.com/pertorg/,200,,,,,,,,,,,pertorg,,ok
+36243982,amylograph,0.0,,0.0,amylograph,0.0,1,http://AmyloGraph.com/,200,,,,,,,,,,,amylograph,,ok
+38865431,eukaryome,0.0,eukaryome,0.0,,0.0,1,http://www.eukaryome.org,200,,,,,,,,,,,eukaryome,,ok
+38701592,DTNPD,0.0,dtnpd,0.0,,0.0,1,http://dtnpd.lyhbio.com,200,,,,,,,,,,,dtnpd,CAPITALIZED,ok
+37178003,mbrole3,0.0,mbrole3 | mbrole,0.0,,0.0,1,http://csbg.cnb.csic.es/mbrole3,200,,,,,,,,,,,mbrole3 | mbrole,PIPE_CLEANED,ok
+39373502,ORITDB,0.0,oritdb,0.0,,0.0,1,https://bioinfo-mml.sjtu.edu.cn/oriTDB2/,200,,,,,,,,,,,oritdb,CAPITALIZED,ok
+35670730,silkbase,0.0,,0.0,silkbase,0.0,1,https://silkbase.ab.a.u-tokyo.ac.jp,200,,,,,,,,,,,silkbase,,ok
+35441360,plavimop,0.0,,0.0,plavimop,0.0,1,https://plavimop.prd.fr/en/motions,200,,,,,,,,,,,plavimop,,ok
+39373530,MOLBIC,0.0,molbic,0.0,,0.0,1,https://idrblab.org/MolBiC/,200,,,,,,,,,,,molbic,CAPITALIZED,ok
+39373542,phagedive,0.0,,0.0,phagedive,0.0,1,https://phagedive.dsmz.de,200,,,,,,,,,,,phagedive,,ok
+38980370,repurposedrugs,0.0,,0.0,repurposedrugs,0.0,1,https://repurposedrugs.org/,200,,,,,,,,,,,repurposedrugs,,ok
+35556129,srnabench,0.0,,0.0,srnabench | srnatoolbox,0.0,1,https://arn.ugr.es/srnatoolbox/,200,,,,,,,,,,,srnabench | srnatoolbox,PIPE_CLEANED,ok
+39095083,nmdtxdb,0.0,,0.0,nmdtxdb,0.0,1,https://shiny.dieterichlab.org/app/NMDtxDB,200,,,,,,,,,,,nmdtxdb,,ok
+37260077,armadillo,0.0,,0.0,armadillo,0.0,1,https://armadillo.dhvi.duke.edu,200,,,,,,,,,,,armadillo,,ok
+38587201,metaboanalyst,0.0,,0.0,metaboanalyst,0.0,1,https://www.metaboanalyst.ca,200,,,,,,,,,,,metaboanalyst,,ok
+38587202,FEVER,0.0,fever,0.0,,0.0,1,https://fever.sk8.inrae.fr/,200,,,,,,,,,,,fever,CAPITALIZED,ok
+38587206,rnahugs,0.0,,0.0,rnahugs,0.0,1,https://rnahugs.cs.put.poznan.pl/,200,,,,,,,,,,,rnahugs,,ok
+37178209,smartwoodid,0.0,,0.0,smartwoodid,0.0,1,https://hdl.handle.net/20.500.12624/SmartWoodID_first_edition,200,,,,,,,,,,,smartwoodid,,ok
+36178800,groovdb,0.0,,0.0,groovdb,0.0,1,https://groov.bio,200,,,,,,,,,,,groovdb,,ok
+37522378,BIOLIP,0.0,biolip,0.0,biolip2,0.0,1,https://zhanggroup.org/BioLiP,200,,,,,,,,,,,biolip,CAPITALIZED,ok
+35474383,kmerkeys,0.0,,0.0,kmerkeys,0.0,1,https://kmerkeys.dgi-stanford.org,200,,,,,,,,,,,kmerkeys,,ok
+40160219,QARLES,0.0,qarles,0.0,,0.0,1,https://qarles.org,200,,,,,,,,,,,qarles,CAPITALIZED,ok
+37112801,DRAVP,0.0,dravp,0.0,,0.0,1,http://dravp.cpu-bioinfor.org/,200,,,,,,,,,,,dravp,CAPITALIZED,ok
+35179566,integrated genome browser,0.0,,0.0,integrated genome browser,0.0,1,https://bioviz.org,200,,,,,,,,,,,integrated genome browser,,ok
+40045664,stexplore,0.0,,0.0,stexplore,0.0,1,http://120.77.47.2:3000/,200,,,,,,,,,,,stexplore,,ok
+37833838,microminer,0.0,,0.0,microminer,0.0,1,https://proteins.plus/,200,,,,,,,,,,,microminer,,ok
+35654801,CDCDB,0.0,cdcdb,0.0,,0.0,1,https://icc.ise.bgu.ac.il/medical_ai/CDCDB/,200,,,,,,,,,,,cdcdb,CAPITALIZED,ok
+36474016,PQSAR,0.0,pqsar,0.0,pepqsar,0.0,1,http://i.uestc.edu.cn/PQsarDB,200,,,,,,,,,,,pqsar,CAPITALIZED,ok
+36162726,NCFO,0.0,ncfo,0.0,,0.0,1,http://www.jianglab.cn/ncFO/,200,,,,,,,,,,,ncfo,CAPITALIZED,ok
+36162821,cohesindb,0.0,,0.0,cohesindb,0.0,1,https://cohesindb.iqb.u-tokyo.ac.jp,200,,,,,,,,,,,cohesindb,,ok
+37850400,ARIC,0.0,aric,0.0,,0.0,1,https://precision.heart.org/duke-ninds,200,,,,,,,,,,,aric,CAPITALIZED,ok
+35523906,plantmwpidb,0.0,,0.0,plantmwpidb,0.0,1,https://plantmwpidb.com/,200,,,,,,,,,,,plantmwpidb,,ok
+39423319,BIOTRY,0.0,biotry,0.0,,0.0,1,http://www.synbiohealth.cn/biotry,200,,,,,,,,,,,biotry,CAPITALIZED,ok
+39423320,SMCVDB,0.0,smcvdb,0.0,,0.0,1,http://smcvdb.rcb.ac.in:4321/,200,,,,,,,,,,,smcvdb,CAPITALIZED,ok
+37145977,mycotoxindb,0.0,,0.0,mycotoxindb,0.0,1,http://www.mycotoxin-db.com/,200,,,,,,,,,,,mycotoxindb,,ok
+37555633,covidpro,0.0,,0.0,covidpro,0.0,1,https://www.guomics.com/covidPro/,200,,,,,,,,,,,covidpro,,ok
+40471992,kinasefusiondb,0.0,,0.0,kinasefusiondb,0.0,1,https://compbio.uth.edu/KinaseFusionDB,200,,,,,,,,,,,kinasefusiondb,,ok
+36130266,HTCA,0.0,htca,0.0,,0.0,1,http://www.htcatlas.org,200,,,,,,,,,,,htca,CAPITALIZED,ok
+35818996,OMIC,0.0,omic,0.0,,0.0,1,http://www.healthinformaticslab.org/supp/resources.php,200,,,,,,,,,,,omic,CAPITALIZED,ok
+40144382,micedegdb,0.0,,0.0,micedegdb,0.0,1,https://www.sysbio.ru/MiceDEGdb,200,,,,,,,,,,,micedegdb,,ok
+38309384,stonemod,0.0,,0.0,stonemod,0.0,1,https://www.stonemod.org,200,,,,,,,,,,,stonemod,,ok
+37850635,gcpathogen,0.0,,0.0,gcpathogen,0.0,1,https://nmdc.cn/gcpathogen/,200,,,,,,,,,,,gcpathogen,,ok
+37850638,themarker,0.0,,0.0,themarker,0.0,1,https://idrblab.org/themarker,200,,,,,,,,,,,themarker,,ok
+37850641,sctea-db,0.0,,0.0,sctea-db,0.0,1,http://www.scTEA-db.org,200,,,,,,,,,,,sctea-db,,ok
+37850642,methmotif,0.0,,0.0,methmotif,0.0,1,https://methmotif.org,200,,,,,,,,,,,methmotif,,ok
+39226898,splicevardb,0.0,,0.0,splicevardb,0.0,1,https://splicevardb.org,200,,,,,,,,,,,splicevardb,,ok
+34606614,PRONAB,0.0,pronab,0.0,,0.0,1,https://web.iitm.ac.in/bioinfo2/pronab/,200,,,,,,,,,,,pronab,CAPITALIZED,ok
+37850649,ageannomo,0.0,,0.0,ageannomo,0.0,1,https://relab.xidian.edu.cn/AgeAnnoMO/#/,200,,,,,,,,,,,ageannomo,,ok
+37850657,cellcommunet,0.0,,0.0,cellcommunet,0.0,1,http://www.inbirg.com/cellcommunet/,200,,,,,,,,,,,cellcommunet,,ok
+34508353,GRAND,0.0,grand,0.0,,0.0,1,https://grand.networkmedicine.org,200,,,,,,,,,,,grand,CAPITALIZED,ok
+34508354,scapadb,0.0,,0.0,scapadb,0.0,1,http://www.bmibig.cn/scAPAdb,200,,,,,,,,,,,scapadb,,ok
+36408909,tmodbase,0.0,,0.0,tmodbase,0.0,1,https://www.tmodbase.com/,200,,,,,,,,,,,tmodbase,,ok
+39341795,scancerrna,0.0,,0.0,scancerrna,0.0,1,http://www.scancerrna.com/BioMarker,200,,,,,,,,,,,scancerrna,,ok
+34918130,riken plant metabolome metadatabase,0.0,,0.0,riken plant metabolome metadatabase,0.0,1,http://metabobank.riken.jp/pmm/db/plantMetabolomics,200,,,,,,,,,,,riken plant metabolome metadatabase,,ok
+38244111,myelodb,0.0,,0.0,myelodb,0.0,1,https://project.iith.ac.in/cgntlab/myelodb/,200,,,,,,,,,,,myelodb,,ok
+38522645,NNDB,0.0,nndb,0.0,,0.0,1,https://rna.urmc.rochester.edu/NNDB,200,,,,,,,,,,,nndb,CAPITALIZED,ok
+37572440,virhostlncr,0.0,,0.0,virhostlncr,0.0,1,http://ciods.in/VirhostlncR/,200,,,,,,,,,,,virhostlncr,,ok
+37572442,ALPACA,0.0,alpaca,0.0,,0.0,1,https://www.ba.ic.cnr.it/softwareic/alpaca/,200,,,,,,,,,,,alpaca,CAPITALIZED,ok
+40996714,gexplore,0.0,,0.0,gexplore,0.0,1,https://genome.science.sfu.ca/gexplore,200,,,,,,,,,,,gexplore,,ok
+39341994,DRCTDB,0.0,drctdb,0.0,,0.0,1,https://singlecellatlas.top/DRCTDB,200,,,,,,,,,,,drctdb,CAPITALIZED,ok
+39931895,naturar,0.0,,0.0,naturar,0.0,1,https://naturar.quimica.unlp.edu.ar,200,,,,,,,,,,,naturar,,ok
+37589022,dblipro,0.0,,0.0,dblipro,0.0,1,http://lipid.cloudna.cn/home,200,,,,,,,,,,,dblipro,,ok
+37244984,EGA,0.0,ega,0.0,danmac5,0.0,1,https://identifiers.org/ega,200,,,,,,,,,,,ega,CAPITALIZED,ok
+38686803,swissdock,0.0,,0.0,swissdock | autodock,0.0,1,https://www.swissdock.ch/,200,,,,,,,,,,,swissdock | autodock,PIPE_CLEANED,ok
+38686808,chemodots,0.0,,0.0,chemodots,0.0,1,https://chemodots.marseille.inserm.fr/,200,,,,,,,,,,,chemodots,,ok
+35754095,DOPI,0.0,dopi,0.0,the database of pollinator interactions,0.0,1,https://www.dopi.org.uk/,200,,,,,,,,,,,dopi,CAPITALIZED,ok
+39325859,mpravardb,0.0,,0.0,mpravardb,0.0,1,https://mpravardb.rc.ufl.edu,200,,,,,,,,,,,mpravardb,,ok
+36245702,tcm2covid,0.0,tcm2covid,0.0,,0.0,1,http://zhangy-lab.cn/tcm2covid/,200,,,,,,,,,,,tcm2covid,,ok
+39112918,multiple endocrine neoplasia,0.0,,0.0,multiple endocrine neoplasia,0.0,1,https://clingen.igib.res.in/MAPVar/,200,,,,,,,,,,,multiple endocrine neoplasia,,ok
+35639514,AMBP,0.0,ambp,0.0,aquaculture molecular breeding platform,0.0,1,http://mgb.qnlm.ac,200,,,,,,,,,,,ambp,CAPITALIZED,ok
+37523674,justrna,0.0,,0.0,justrna,0.0,1,http://JustRNA.itps.ncku.edu.tw,200,,,,,,,,,,,justrna,,ok
+35639517,PADLOC,0.0,padloc,0.0,,0.0,1,https://padloc.otago.ac.nz,200,,,,,,,,,,,padloc,CAPITALIZED,ok
+34459872,FIVEX,0.0,fivex | eqtl,0.0,,0.0,1,https://fivex.sph.umich.edu,200,,,,,,,,,,,fivex | eqtl,"PIPE_CLEANED,CAPITALIZED",ok
+38752486,kinomemeta,0.0,,0.0,kinomemeta,0.0,1,https://kinomemeta.alphama.com.cn/,200,,,,,,,,,,,kinomemeta,,ok
+38277370,STRING (biocomputo),0.0,string,0.0,phylostring,0.0,1,https://biocomputo.ibt.unam.mx/phylostring/,200,,,,,,,,,,,string,"CAPITALIZED,DISAMBIGUATED",ok
+39866619,UVREK,0.0,uvrek,0.0,,0.0,1,https://cb.imsc.res.in/uvrek/,200,,,,,,,,,,,uvrek,CAPITALIZED,ok
+38719747,rememprot,0.0,,0.0,rememprot,0.0,1,https://rememprot.ciods.in/,200,,,,,,,,,,,rememprot,,ok
+37851409,mosaicatcher,0.0,,0.0,mosaicatcher,0.0,1,https://snakemake.github.io/snakemake-workflow-catalog/?usage=friendsofstrandseq/mosaicatcher-pipeline,200,,,,,,,,,,,mosaicatcher,,review
+40276250,MTD,0.0,mtd,0.0,,0.0,1,https://mtd.biodesign.ac.cn/,200,,,,,,,,,,,mtd,CAPITALIZED,ok
+36950350,plantltrdb,0.0,,0.0,plantltrdb,0.0,1,https://bioinformatics.um6p.ma/PlantLTRdb,200,,,,,,,,,,,plantltrdb,,ok
+37867975,plantchrs,0.0,,0.0,plantchrs,0.0,1,http://www.functionalgenomics.cn/PlantCHRs/,200,,,,,,,,,,,plantchrs,,ok
+38965703,spadahc,0.0,,0.0,spadahc,0.0,1,https://spadahc.ciberisciii.es/,200,,,,,,,,,,,spadahc,,ok
+36147666,peakcnv,0.0,,0.0,peakcnv | copy number variation,0.0,1,https://rdrr.io/github/mahdieh1/PeakCNV,200,,,,,,,,,,,peakcnv | copy number variation,PIPE_CLEANED,ok
+35639770,gecoviz,0.0,,0.0,gecoviz,0.0,1,https://gecoviz.cgmlab.org,200,,,,,,,,,,,gecoviz,,ok
+37818860,plantdatahub,0.0,,0.0,plantdatahub,0.0,1,https://git.nfdi4plants.org,200,,,,,,,,,,,plantdatahub,,ok
+39883249,DSCI,0.0,dsci,0.0,database of synthetic biology components for innate immunity,0.0,1,https://dsci.renlab.cn/,200,,,,,,,,,,,dsci,CAPITALIZED,ok
+37589496,autophagynet,0.0,,0.0,autophagynet,0.0,1,http://autophagynet.org,200,,,,,,,,,,,autophagynet,,ok
+35820040,humanmine,0.0,,0.0,humanmine,0.0,1,https://www.humanmine.org,200,,,,,,,,,,,humanmine,,ok
+39227914,RAICHU,0.0,raichu,0.0,,0.0,1,https://pypi.org/project/raichu,200,,,,,,,,,,,raichu,CAPITALIZED,ok
+36016718,denovoprofiling,0.0,,0.0,denovoprofiling,0.0,1,http://denovoprofiling.xielab.net,200,,,,,,,,,,,denovoprofiling,,ok
+37638765,scplantdb,0.0,,0.0,scplantdb,0.0,1,https://biobigdata.nju.edu.cn/scplantdb,200,,,,,,,,,,,scplantdb,,ok
+39080561,multioviz,0.0,,0.0,multioviz,0.0,1,https://multioviz.ccv.brown.edu/,200,,,,,,,,,,,multioviz,,ok
+35426945,drugcvar,0.0,,0.0,drugcvar,0.0,1,http://drugcvar.omicsbio.info,200,,,,,,,,,,,drugcvar,,ok
+36655761,fungiexp,0.0,,0.0,fungiexp,0.0,1,https://bioinfo.njau.edu.cn/fungiExp,200,,,,,,,,,,,fungiexp,,ok
+37229202,lm-dti,0.0,lm-dti,0.0,,0.0,1,http://www.lirmed.com:5038/lm_dti,200,,,,,,,,,,,lm-dti,,ok
+37819033,lncrnadisease,0.0,,0.0,lncrnadisease,0.0,1,http://www.rnanut.net/lncrnadisease,200,,,,,,,,,,,lncrnadisease,,ok
+37819042,MAMI,0.0,mami,0.0,,0.0,1,https://bioinfo.biols.ac.cn/mami/,200,,,,,,,,,,,mami,CAPITALIZED,ok
+37950115,VITAFA,0.0,vitafa,0.0,vienna talking faces,0.0,1,https://osf.io/9jtzx/,200,,,,,,,,,,,vitafa,CAPITALIZED,ok
+40489639,cell mapping toolkit,0.0,,0.0,cell mapping toolkit,0.0,1,https://cellmaps-pipeline.readthedocs.io/,200,,,,,,,,,,,cell mapping toolkit,,ok
+37311148,geniepool,0.0,,0.0,geniepool,0.0,1,https://geniepool.link,200,,,,,,,,,,,geniepool,,ok
+39441072,enterobase,0.0,,0.0,enterobase,0.0,1,https://enterobase.warwick.ac.uk,200,,,,,,,,,,,enterobase,,ok
+36999902,GENEO,0.0,geneo,0.0,,0.0,1,https://neo.engr.uconn.edu/,200,,,,,,,,,,,geneo,CAPITALIZED,ok
+37016293,GELFAP,0.0,gelfap,0.0,gastrodia,0.0,1,http://www.gzybioinformatics.cn/Gelv2,200,,,,,,,,,,,gelfap,CAPITALIZED,ok
+36049666,TIGER,0.0,tiger,0.0,tumor immunotherapy gene expression resource,0.0,1,http://tiger.canceromics.org/,200,,,,,,,,,,,tiger,CAPITALIZED,ok
+37933854,human ageing genomic resources,0.0,,0.0,human ageing genomic resources,0.0,1,https://genomics.senescence.info/,200,,,,,,,,,,,human ageing genomic resources,,ok
+37933857,PPGR,0.0,ppgr,0.0,,0.0,1,https://ngdc.cncb.ac.cn/ppgr/,200,,,,,,,,,,,ppgr,CAPITALIZED,ok
+37933860,bloodspot,0.0,,0.0,bloodspot,0.0,1,http://www.bloodspot.eu,200,,,,,,,,,,,bloodspot,,ok
+35263335,RDB (covdb),0.0,rdb,0.0,coronavirus resistance database | cov-rdb,0.0,1,https://covdb.stanford.edu,200,,,,,,,,,,,rdb,"CAPITALIZED,DISAMBIGUATED",ok
+39703430,antibody sequence database,0.0,,0.0,antibody sequence database,0.0,1,https://absd.pasteur.cloud,200,,,,,,,,,,,antibody sequence database,,ok
+38622098,agemeta,0.0,,0.0,agemeta,0.0,1,https://age-meta.com/,200,,,,,,,,,,,agemeta,,ok
+39588754,rediportal,0.0,,0.0,rediportal,0.0,1,http://srv00.recas.ba.infn.it/atlas/,200,,,,,,,,,,,rediportal,,ok
+39588778,coconut,0.0,coconut,0.0,collection of open natural products,0.0,1,https://coconut.naturalproducts.net,200,,,,,,,,,,,coconut,,ok
+38867910,tcm-suite,0.0,,0.0,tcm-suite,0.0,1,http://TCM-Suite.AImicrobiome.cn,200,,,,,,,,,,,tcm-suite,,ok
+39310281,MASSKG,0.0,masskg,0.0,,0.0,1,https://xomics.com.cn/masskg,200,,,,,,,,,,,masskg,CAPITALIZED,ok
+38556628,PRIDE,0.0,pride,0.0,,0.0,1,https://www.ebi.ac.uk/pride/chatbot/,200,,,,,,,,,,,pride,CAPITALIZED,ok
+40621063,BCMA,0.0,bcma,0.0,,0.0,1,http://lifeome.net/database/bcma/,200,,,,,,,,,,,bcma,CAPITALIZED,ok
+40145964,RBAD,0.0,rbad,0.0,,0.0,1,http://www.bioinform.cn/RBAD/,200,,,,,,,,,,,rbad,CAPITALIZED,ok
+35411045,patternlab,0.0,,0.0,patternlab,0.0,1,http://www.patternlabforproteomics.org,200,,,,,,,,,,,patternlab,,ok
+36426870,GSEAPY,0.0,gseapy,0.0,,0.0,1,https://pypi.org/project/gseapy/,200,,,,,,,,,,,gseapy,CAPITALIZED,ok
+37114999,orthovenn3,0.0,,0.0,orthovenn3 | orthovenn,0.0,1,https://orthovenn3.bioinfotoolkits.net,200,,,,,,,,,,,orthovenn3 | orthovenn,PIPE_CLEANED,ok
+38818975,cropmetabolome,0.0,,0.0,cropmetabolome,0.0,1,https://www.cropmetabolome.com/,200,,,,,,,,,,,cropmetabolome,,ok
+36803795,GENECI,0.0,geneci,0.0,,0.0,1,https://pypi.org/project/geneci/,200,,,,,,,,,,,geneci,CAPITALIZED,ok
+34591957,GEN (ngdc),0.0,gen,0.0,gene expression nebulas,0.0,1,https://ngdc.cncb.ac.cn/gen/,200,,,,,,,,,,,gen,"CAPITALIZED,DISAMBIGUATED",ok
+37000408,dbmisloc,0.0,,0.0,dbmisloc,0.0,1,https://dbml.pufengdu.org,200,,,,,,,,,,,dbmisloc,,ok
+35640594,allercatpro,0.0,,0.0,allercatpro,0.0,1,https://allercatpro.bii.a-star.edu.sg,200,,,,,,,,,,,allercatpro,,ok
+34755877,IID (ophid),0.0,iid,0.0,,0.0,1,http://ophid.utoronto.ca/iid,200,,,,,,,,,,,iid,"CAPITALIZED,DISAMBIGUATED",ok
+34755879,factorbook,0.0,,0.0,factorbook,0.0,1,http://www.factorbook.org,200,,,,,,,,,,,factorbook,,ok
+34755880,RHEA,0.0,rhea,0.0,,0.0,1,https://www.rhea-db.org,200,,,,,,,,,,,rhea,CAPITALIZED,ok
+36377945,sourcefinder,0.0,,0.0,sourcefinder,0.0,1,https://cge.food.dtu.dk/services/SourceFinder/,200,,,,,,,,,,,sourcefinder,,ok
+36164975,chembioport,0.0,,0.0,chembioport,0.0,1,https://chembioport.thesgc.org,200,,,,,,,,,,,chembioport,,ok
+36164976,DGPD,0.0,dgpd,0.0,,0.0,1,http://dgpd.tlds.cc/DGPD/index/,200,,,,,,,,,,,dgpd,CAPITALIZED,ok
+39294369,genomics 2 proteins portal,0.0,,0.0,genomics 2 proteins portal,0.0,1,https://g2p.broadinstitute.org/,200,,,,,,,,,,,genomics 2 proteins portal,,ok
+37279138,AADB,0.0,aadb,0.0,,0.0,1,http://www.acdb.plus/AADB,200,,,,,,,,,,,aadb,CAPITALIZED,ok
+36394420,trustdb,0.0,,0.0,trustdb,0.0,1,http://bioinfo.usu.edu/trustdb/,200,,,,,,,,,,,trustdb,,ok
+35411388,pass2.7,0.0,pass2.7 | scope | pass2,0.0,,0.0,1,http://caps.ncbs.res.in/pass2/,200,,,,,,,,,,,pass2.7 | scope | pass2,PIPE_CLEANED,ok
+35821017,pharmebinet,0.0,,0.0,pharmebinet,0.0,1,https://pharmebi.net,200,,,,,,,,,,,pharmebinet,,ok
+34788838,GMREPO,0.0,gmrepo,0.0,,0.0,1,https://gmrepo.humangut.info,200,,,,,,,,,,,gmrepo,CAPITALIZED,ok
+34723317,3dsnp,0.0,3dsnp,0.0,,0.0,1,https://omic.tech/3dsnpv2/,200,,,,,,,,,,,3dsnp,,ok
+34723326,GREENC,0.0,greenc,0.0,,0.0,1,http://greenc.sequentiabiotech.com/wiki2/Main_Page,200,,,,,,,,,,,greenc,CAPITALIZED,ok
+37639797,HMDB,0.0,hmdb,0.0,,0.0,1,http://www.orgene.net/HMDB/,200,,,,,,,,,,,hmdb,CAPITALIZED,ok
+38016694,POSSUM,0.0,possum,0.0,,0.0,1,https://possum.cbrc.pj.aist.go.jp/PoSSuM/,200,,,,,,,,,,,possum,CAPITALIZED,ok
+39982792,pubtator,0.0,,0.0,pubtator | comparative toxicogenomics database,0.0,1,https://ctdbase.org,200,,,,,,,,,,,pubtator | comparative toxicogenomics database,PIPE_CLEANED,ok
+38000385,cropgs-hub,0.0,,0.0,cropgs-hub,0.0,1,https://iagr.genomics.cn/CropGS/,200,,,,,,,,,,,cropgs-hub,,ok
+35641095,funage-pro,0.0,,0.0,funage-pro,0.0,1,http://funagepro.molgenrug.nl,200,,,,,,,,,,,funage-pro,,ok
+34985769,FPIA,0.0,fpia,0.0,,0.0,1,http://bioinfo-sysu.com/fpia,200,,,,,,,,,,,fpia,CAPITALIZED,ok
+38803273,cosfish,0.0,,0.0,cosfish,0.0,1,http://210.22.121.250:8888/CoSFISH/home/indexPage,200,,,,,,,,,,,cosfish,,ok
+35788654,LBD (bis),0.0,lbd,0.0,,0.0,1,http://bis.zju.edu.cn/LBD,200,,,,,,,,,,,lbd,"CAPITALIZED,DISAMBIGUATED",ok
+36263826,gwas atlas,0.0,,0.0,gwas atlas,0.0,1,https://ngdc.cncb.ac.cn/gwas/,200,,,,,,,,,,,gwas atlas,,ok
+38262680,echinobase,0.0,,0.0,echinobase,0.0,1,http://www.echinobase.org,200,,,,,,,,,,,echinobase,,ok
+39425944,sesamumgdb,0.0,,0.0,sesamumgdb,0.0,1,http://www.sgbdb.com/sgdb/,200,,,,,,,,,,,sesamumgdb,,ok
+38967205,organogenesisdb,0.0,,0.0,organogenesisdb,0.0,1,http://organogenesisdb.com/,200,,,,,,,,,,,organogenesisdb,,ok
+36280237,NACDDB,0.0,nacddb,0.0,nucleic acid circular dichroism database,0.0,1,https://genesilico.pl/nacddb/,200,,,,,,,,,,,nacddb,CAPITALIZED,ok
+37623730,mariclus,0.0,,0.0,mariclus,0.0,1,https://www.mariclus.com,200,,,,,,,,,,,mariclus,,ok
+38557635,lettucedb,0.0,,0.0,lettucedb,0.0,1,https://db.cngb.org/lettuce/,200,,,,,,,,,,,lettucedb,,ok
+36542404,CLRP,0.0,clrp,0.0,,0.0,1,https://physics.carleton.ca/clrp/egs_brachy/seed_database_v2,200,,,,,,,,,,,clrp,CAPITALIZED,ok
+41031637,COBVAR,0.0,cobvar,0.0,,0.0,1,https://datatools.sjri.res.in/VBG/,200,,,,,,,,,,,cobvar,CAPITALIZED,ok
+35461097,CCDB,0.0,ccdb,0.0,,0.0,1,http://www.ccdb.idsl.me,200,,,,,,,,,,,ccdb,CAPITALIZED,ok
+39540753,VISTA,0.0,vista,0.0,,0.0,1,https://ngdc.cncb.ac.cn/vista,200,,,,,,,,,,,vista,CAPITALIZED,ok
+36509753,togovar,0.0,,0.0,togovar,0.0,1,https://togovar.org,200,,,,,,,,,,,togovar,,ok
+36640825,OOCDB,0.0,oocdb,0.0,organs-on-a-chip database,0.0,1,http://www.organchip.cn,200,,,,,,,,,,,oocdb,CAPITALIZED,ok
+38803518,DBEBV,0.0,dbebv | ebv,0.0,,0.0,1,http://dbebv.omicsbio.info,200,,,,,,,,,,,dbebv | ebv,"PIPE_CLEANED,CAPITALIZED",ok
+35936325,sound-swapped video,0.0,,0.0,sound-swapped video,0.0,1,https://osf.io/3ysfh/,200,,,,,,,,,,,sound-swapped video,,ok
+40343630,scentindb,0.0,,0.0,scentindb,0.0,1,https://cb.imsc.res.in/scentindb/,200,,,,,,,,,,,scentindb,,ok
+37410916,varianthunter,0.0,,0.0,varianthunter,0.0,1,http://gmql.eu/variant_hunter/,200,,,,,,,,,,,varianthunter,,ok
+37410917,CROPGF,0.0,cropgf,0.0,,0.0,1,https://bis.zju.edu.cn/cropgf,200,,,,,,,,,,,cropgf,CAPITALIZED,ok
+39180399,ddinter (ddinter2),0.0,,0.0,ddinter,0.0,1,https://ddinter2.scbdd.com,200,,,,,,,,,,,ddinter,DISAMBIGUATED,ok
+38164624,APTADB,0.0,aptadb,0.0,,0.0,1,http://lmmd.ecust.edu.cn/aptadb/,200,,,,,,,,,,,aptadb,CAPITALIZED,ok
+34871441,IPROX,0.0,iprox,0.0,,0.0,1,https://www.iprox.cn,200,,,,,,,,,,,iprox,CAPITALIZED,ok
+40343712,GENDIS,0.0,gendis,0.0,gendis3,0.0,1,https://caps.ncbs.res.in/gendis3/,200,,,,,,,,,,,gendis,CAPITALIZED,ok
+38181047,sc2menetdrug,0.0,,0.0,sc2menetdrug,0.0,1,https://fuhaililab.github.io/sc2MeNetDrug/,200,,,,,,,,,,,sc2menetdrug,,review
+39737565,IPHYLO,0.0,iphylo,0.0,,0.0,1,https://www.iphylo.net/,200,,,,,,,,,,,iphylo,CAPITALIZED,ok
+37951713,plantintrondb,0.0,,0.0,plantintrondb,0.0,1,http://deepbiology.cn/PlantIntronDB/,200,,,,,,,,,,,plantintrondb,,ok
+34396391,t-cov,0.0,t-cov,0.0,,0.0,1,https://t-cov.hse.ru,200,,,,,,,,,,,t-cov,,ok
+37296383,3dvizsnp,0.0,,0.0,3dvizsnp,0.0,1,https://analysistools.cancer.gov/3dvizsnp,200,,,,,,,,,,,3dvizsnp,,ok
+38885636,ferroliganddb,0.0,,0.0,ferroliganddb,0.0,1,http://ferr.gulab.org.cn/,200,,,,,,,,,,,ferroliganddb,,ok
+38213899,CCTCM,0.0,cctcm,0.0,,0.0,1,http://www.cctcm.org.cn,200,,,,,,,,,,,cctcm,CAPITALIZED,ok
+36624664,NPASS,0.0,npass,0.0,,0.0,1,http://bidd.group/NPASS,200,,,,,,,,,,,npass,CAPITALIZED,ok
+37296454,profhex,0.0,,0.0,profhex,0.0,1,https://profhex.exscalate.eu/,200,,,,,,,,,,,profhex,,ok
+38623560,riscoper,0.0,,0.0,riscoper,0.0,1,http://www.rnainter.org/riscoper,200,,,,,,,,,,,riscoper,,ok
+36329825,b-amp,0.0,b-amp,0.0,,0.0,1,https://b-amp.karishmakaushiklab.com,200,,,,,,,,,,,b-amp,,ok
+38213995,TSCRE,0.0,tscre | scre,0.0,,0.0,1,http://tscre.zsqylab.com/,200,,,,,,,,,,,tscre | scre,"PIPE_CLEANED,CAPITALIZED",ok
+38246798,srnaminer,0.0,,0.0,srnaminer,0.0,1,https://gitee.com/CJchen/IGV-sRNA,200,,,,,,,,,,,srnaminer,,ok
+39033257,pmtpred,0.0,,0.0,pmtpred,0.0,1,http://www.bioinfoindia.org/PMTPred/home.html,200,,,,,,,,,,,pmtpred,,ok
+36641216,SAXS,0.0,saxs,0.0,,0.0,1,https://simplescattering.com,200,,,,,,,,,,,saxs,CAPITALIZED,ok
+40606149,algicidedb,0.0,,0.0,algicidedb,0.0,1,http://algicidedb.ocean-meta.com/#/,200,,,,,,,,,,,algicidedb,,ok
+37935582,leishmaniadb,0.0,,0.0,leishmaniadb,0.0,1,https://leishmaniadb.ttk.hu/,200,,,,,,,,,,,leishmaniadb,,ok
+37935586,maize feature store,0.0,,0.0,maize feature store,0.0,1,https://mfs.maizegdb.org/,200,,,,,,,,,,,maize feature store,,ok
+39377391,AMIR,0.0,amir,0.0,,0.0,1,https://yanglab.hzau.edu.cn/AMIR/,200,,,,,,,,,,,amir,CAPITALIZED,ok
+39377396,perturbase,0.0,,0.0,perturbase,0.0,1,http://www.perturbase.cn/,200,,,,,,,,,,,perturbase,,ok
+35133949,BIOPHI,0.0,biophi,0.0,,0.0,1,https://biophi.dichlab.org,200,,,,,,,,,,,biophi,CAPITALIZED,ok
+38066711,predictonco,0.0,,0.0,predictonco,0.0,1,https://loschmidt.chemi.muni.cz/predictonco,200,,,,,,,,,,,predictonco,,ok
+38459946,EQTL,0.0,eqtl | sc-,0.0,,0.0,1,http://www.sqraolab.com/scqtl,200,,,,,,,,,,,eqtl | sc-,"PIPE_CLEANED,CAPITALIZED",ok
+35871305,CMDB,0.0,cmdb,0.0,,0.0,1,https://db.cngb.org/cmdb/,200,,,,,,,,,,,cmdb,CAPITALIZED,ok
+39541343,sirnaefficacydb,0.0,,0.0,sirnaefficacydb,0.0,1,https://cellknowledge.com.cn/siRNAEfficacy,200,,,,,,,,,,,sirnaefficacydb,,ok
+34986599,HIT,0.0,hit,0.0,,0.0,1,http://hit2.badd-cao.net,200,,,,,,,,,,,hit,CAPITALIZED,ok
+34986600,onquadro,0.0,onquadro,0.0,,0.0,1,https://onquadro.cs.put.poznan.pl/,200,,,,,,,,,,,onquadro,,ok
+34773623,qprimerdb (biodb),0.0,,0.0,qprimerdb,0.0,1,http://biodb.swu.edu.cn/qprimerdb,200,,,,,,,,,,,qprimerdb,DISAMBIGUATED,ok
+36346548,secret6,0.0,,0.0,secret6,0.0,1,https://bioinfo-mml.sjtu.edu.cn/SecReT6/,200,,,,,,,,,,,secret6,,ok
+40164028,LSDV,0.0,lsdv,0.0,lsdvvac,0.0,1,http://45.248.163.59/bic/lsdb/,200,,,,,,,,,,,lsdv,CAPITALIZED,ok
+38738624,PROSCA,0.0,prosca,0.0,,0.0,1,https://idrblab.org/prosca/,200,,,,,,,,,,,prosca,CAPITALIZED,ok
+37919434,scdiffcom,0.0,,0.0,scdiffcom,0.0,1,https://scagecom.org,200,,,,,,,,,,,scdiffcom,,ok
+36477791,canmethdb,0.0,,0.0,canmethdb,0.0,1,http://meth.liclab.net/CanMethdb/,200,,,,,,,,,,,canmethdb,,ok
+37870433,HALL,0.0,hall,0.0,,0.0,1,https://ngdc.cncb.ac.cn/hall/index,200,,,,,,,,,,,hall,CAPITALIZED,ok
+37870437,m2or,0.0,m2or,0.0,,0.0,1,https://m2or.chemsensim.fr/,200,,,,,,,,,,,m2or,,ok
+39934826,fluobase,0.0,,0.0,fluobase,0.0,1,https://fluobase.siochemdb.com,200,,,,,,,,,,,fluobase,,ok
+37870452,hervd atlas,0.0,,0.0,hervd atlas,0.0,1,https://ngdc.cncb.ac.cn/hervd/,200,,,,,,,,,,,hervd atlas,,ok
+37870454,fusionneoantigen,0.0,,0.0,fusionneoantigen,0.0,1,https://compbio.uth.edu/FusionNeoAntigen,200,,,,,,,,,,,fusionneoantigen,,ok
+37870462,UNITMP,0.0,unitmp,0.0,unified,0.0,1,https://www.unitmp.org,200,,,,,,,,,,,unitmp,CAPITALIZED,ok
+37870473,fusionpdb,0.0,,0.0,fusionpdb,0.0,1,https://compbio.uth.edu/FusionPDB,200,,,,,,,,,,,fusionpdb,,ok
+37739405,SCAR,0.0,scar,0.0,single-cell and spatially-resolved cancer resources,0.0,1,http://8.142.154.29/SCAR2023,200,,,,,,,,,,,scar,CAPITALIZED,ok
+37870478,targetgene,0.0,,0.0,targetgene,0.0,1,https://ngdc.cncb.ac.cn/targetgene/,200,,,,,,,,,,,targetgene,,ok
+37870486,csm-potential2,0.0,,0.0,csm-potential2,0.0,1,https://biosig.lab.uq.edu.au/csm_potential,200,,,,,,,,,,,csm-potential2,,ok
+37149650,DEEPAR,0.0,deepar,0.0,,0.0,1,http://pmlabstack.pythonanywhere.com/DeepAR,200,,,,,,,,,,,deepar,CAPITALIZED,ok
+36969452,scardock,0.0,,0.0,scardock,0.0,1,http://www.liugroup.site/scardock/,200,,,,,,,,,,,scardock,,ok
+39558161,matrixdb,0.0,,0.0,matrixdb,0.0,1,https://matrixdb.univ-lyon1.fr,200,,,,,,,,,,,matrixdb,,ok
+39558175,sccancerexplorer,0.0,,0.0,sccancerexplorer,0.0,1,https://bianlab.cn/scCancerExplorer,200,,,,,,,,,,,sccancerexplorer,,ok
+39558176,causaldb2,0.0,,0.0,causaldb2 | causaldb,0.0,1,http://mulinlab.org/causaldb,200,,,,,,,,,,,causaldb2 | causaldb,PIPE_CLEANED,ok
+39558177,HERB,0.0,herb,0.0,,0.0,1,http://herb.ac.cn/v2,200,,,,,,,,,,,herb,CAPITALIZED,ok
+39754835,anninter,0.0,,0.0,anninter,0.0,1,https://www.nipgr.ac.in/ANNInter/,200,,,,,,,,,,,anninter,,ok
+39836872,protcrown,0.0,protcrown,0.0,,0.0,1,http://www.protcrown.cn,200,,,,,,,,,,,protcrown,,ok
+38018256,national genomics data center,0.0,,0.0,national genomics data center,0.0,1,https://ngdc.cncb.ac.cn,200,,,,,,,,,,,national genomics data center,,ok
+35577067,prometheusdb,0.0,,0.0,prometheusdb,0.0,1,https://bioserver.ieo.it/shiny/app/prometheusdb,200,,,,,,,,,,,prometheusdb,,ok
+39738650,MTFAP,0.0,mtfap,0.0,,0.0,1,http://www.xiejjlab.bio/MTFAP/,200,,,,,,,,,,,mtfap,CAPITALIZED,ok
+37657924,ticbase,0.0,,0.0,ticbase,0.0,1,https://transportal.compbio.ucsf.edu,200,,,,,,,,,,,ticbase,,ok
+39591252,scorpdb,0.0,,0.0,scorpdb,0.0,1,https://www.scorpdb.com/,200,,,,,,,,,,,scorpdb,,ok
+35609986,alignme,0.0,,0.0,alignme,0.0,1,https://www.bioinfo.mpg.de/AlignMe/,200,,,,,,,,,,,alignme,,ok
+35610035,orthoquantum,0.0,,0.0,orthoquantum,0.0,1,http://orthoq.bioinf.fbb.msu.ru,200,,,,,,,,,,,orthoquantum,,ok
+35610052,drugvirus.info,0.0,,0.0,drugvirus.info,0.0,1,https://drugvirus.info,200,,,,,,,,,,,drugvirus.info,,ok
+39656924,BGEE,0.0,bgee,0.0,,0.0,1,https://www.bgee.org/,200,,,,,,,,,,,bgee,CAPITALIZED,ok
+39329260,tcr3d,0.0,tcr3d,0.0,,0.0,1,https://tcr3d.ibbr.umd.edu,200,,,,,,,,,,,tcr3d,,ok
+38100461,AAAKB,0.0,aaakb,0.0,,0.0,1,http://www.lqlgroup.cn:3838/AAAKB/,200,,,,,,,,,,,aaakb,CAPITALIZED,ok
+39427574,HAIRDB,0.0,hairdb,0.0,,0.0,1,https://www.hairdb.ca/,200,,,,,,,,,,,hairdb,CAPITALIZED,ok
+39050785,scblood,0.0,,0.0,scblood,0.0,1,https://bio.liclab.net/scBlood/,200,,,,,,,,,,,scblood,,ok
+40214100,grameneoryza,0.0,,0.0,grameneoryza,0.0,1,https://oryza.gramene.org,200,,,,,,,,,,,grameneoryza,,ok
+36757087,ECCDNA (lcbb),0.0,eccdna,0.0,eccdna atlas,0.0,1,http://lcbb.swjtu.edu.cn/eccDNAatlas,200,,,,,,,,,,,eccdna,"CAPITALIZED,DISAMBIGUATED",ok
+36347537,e-tsn,0.0,e-tsn,0.0,,0.0,1,http://www.lilab-ecust.cn/etsn/,200,,,,,,,,,,,e-tsn,,ok
+35659449,vaccelerate,0.0,vaccelerate,0.0,vaccelerate volunteer registry,0.0,1,http://www.vaccelerate.eu/volunteer-registry,200,,,,,,,,,,,vaccelerate,,ok
+37871298,HGMMX,0.0,hgmmx,0.0,,0.0,1,https://www.way2drug.com/hgmmx,200,,,,,,,,,,,hgmmx,CAPITALIZED,ok
+40378051,deepmbenzy,0.0,,0.0,deepmbenzy,0.0,1,https://synbiodesign.com/DeepMBEnzy/,200,,,,,,,,,,,deepmbenzy,,ok
+35561186,EDGE,0.0,edge,0.0,,0.0,1,https://edge-covid19.edgebioinformatics.org,200,,,,,,,,,,,edge,CAPITALIZED,ok
+37625584,k-pro,0.0,k-pro,0.0,,0.0,1,https://folding.biofold.org/k-pro,200,,,,,,,,,,,k-pro,,ok
+34643704,ESC,0.0,esc,0.0,,0.0,1,http://clingen.igib.res.in/esc/,200,,,,,,,,,,,esc,CAPITALIZED,ok
+34643725,cancerscem,0.0,,0.0,cancerscem | cancersce,0.0,1,https://ngdc.cncb.ac.cn/cancerscem,200,,,,,,,,,,,cancerscem | cancersce,PIPE_CLEANED,ok
+39460620,PIPDB,0.0,pipdb,0.0,,0.0,1,https://nmdc.cn/pipdb,200,,,,,,,,,,,pipdb,CAPITALIZED,ok
+34643729,scapaatlas,0.0,,0.0,scapaatlas,0.0,1,http://www.bioailab.com:3838/scAPAatlas,200,,,,,,,,,,,scapaatlas,,ok
+39460625,RPS,0.0,rps,0.0,,0.0,1,https://rps.renlab.cn/,200,,,,,,,,,,,rps,CAPITALIZED,ok
+39231258,CUPCA,0.0,cupca,0.0,,0.0,1,http://cupca.cn/,200,,,,,,,,,,,cupca,CAPITALIZED,ok
+37953313,SPDB,0.0,spdb,0.0,,0.0,1,https://scproteomicsdb.com/,200,,,,,,,,,,,spdb,CAPITALIZED,ok
+35462956,ptncrnadb,0.0,,0.0,ptncrnadb,0.0,1,https://nipgr.ac.in/PtncRNAdb,200,,,,,,,,,,,ptncrnadb,,ok
+37953328,stomicsdb,0.0,,0.0,stomicsdb,0.0,1,https://db.cngb.org/stomics/,200,,,,,,,,,,,stomicsdb,,ok
+37953365,majiqlopedia,0.0,,0.0,majiqlopedia,0.0,1,https://majiq.biociphers.org/majiqlopedia/,200,,,,,,,,,,,majiqlopedia,,ok
+38018911,fireprot,0.0,,0.0,fireprot,0.0,1,http://loschmidt.chemi.muni.cz/fireprotweb,200,,,,,,,,,,,fireprot,,ok
+37953380,DGIDB,0.0,dgidb,0.0,interaction database | drug-gene interaction database,0.0,1,https://dgidb.org,200,,,,,,,,,,,dgidb,CAPITALIZED,ok
+37166951,rnaincoder,0.0,,0.0,rnaincoder,0.0,1,https://idrblab.org/rnaincoder/,200,,,,,,,,,,,rnaincoder,,ok
+37953384,pgs-depot,0.0,,0.0,pgs-depot,0.0,1,http://www.pgsdepot.net,200,,,,,,,,,,,pgs-depot,,ok
+39149420,BBSDB,0.0,bbsdb,0.0,,0.0,1,http://124.222.145.44/#!/,200,,,,,,,,,,,bbsdb,CAPITALIZED,ok
+39395187,STOPKB,0.0,stopkb,0.0,,0.0,1,https://lbgi.fr/stopkb/,200,,,,,,,,,,,stopkb,CAPITALIZED,ok
+39395188,abampdb,0.0,,0.0,abampdb,0.0,1,https://abampdb.mgbio.tech/,200,,,,,,,,,,,abampdb,,ok
+37986215,ATLAS,0.0,atlas,0.0,,0.0,1,https://www.dsimb.inserm.fr/ATLAS,200,,,,,,,,,,,atlas,CAPITALIZED,ok
+37986218,inclusive,0.0,,0.0,inclusive,0.0,1,https://non-canonical-aas.biologie.uni-freiburg.de/,200,,,,,,,,,,,inclusive,,ok
+37396399,membrain,0.0,,0.0,membrain,0.0,1,https://lichtman.rc.fas.harvard.edu/mEMbrain/,200,,,,,,,,,,,membrain,,ok
+37478350,atlasxplore,0.0,,0.0,atlasxplore,0.0,1,https://web.atlasxomics.com,200,,,,,,,,,,,atlasxplore,,ok
+35266524,plasticdb,0.0,,0.0,plasticdb,0.0,1,http://plasticdb.org,200,,,,,,,,,,,plasticdb,,ok
+39526372,SOIR,0.0,soir,0.0,solanaceae information resource,0.0,1,https://soir.bio2db.com,200,,,,,,,,,,,soir,CAPITALIZED,ok
+39526384,crisprofft,0.0,,0.0,crisprofft,0.0,1,https://ccsm.uth.edu/CRISPRoffT/,200,,,,,,,,,,,crisprofft,,ok
+34791415,ensembl,0.0,,0.0,ensembl,0.0,1,https://www.ensemblgenomes.org,200,,,,,,,,,,,ensembl,,ok
+34791419,lncrnafunc,0.0,,0.0,lncrnafunc | a knowledgebase of lncrna function in human cancer,0.0,1,https://ccsm.uth.edu/lncRNAfunc,200,,,,,,,,,,,lncrnafunc | a knowledgebase of lncrna function in human cancer,PIPE_CLEANED,ok
+34791421,proteomicsdb,0.0,,0.0,proteomicsdb,0.0,1,https://www.ProteomicsDB.org,200,,,,,,,,,,,proteomicsdb,,ok
+39526401,gutmetanet,0.0,,0.0,gutmetanet,0.0,1,https://gutmetanet.deepomics.org/,200,,,,,,,,,,,gutmetanet,,ok
+39526403,MFIB,0.0,mfib,0.0,,0.0,1,https://mfib.pbrg.hu,200,,,,,,,,,,,mfib,CAPITALIZED,ok
+39526405,RFAM,0.0,rfam,0.0,,0.0,1,https://rfam.org,200,,,,,,,,,,,rfam,CAPITALIZED,ok
+36003902,plaqview,0.0,,0.0,plaqview,0.0,1,http://www.plaqview.com,200,,,,,,,,,,,plaqview,,ok
+35381376,ARBRE,0.0,arbre,0.0,,0.0,1,http://lcsb-databases.epfl.ch/arbre/,200,,,,,,,,,,,arbre,CAPITALIZED,ok
+37871773,p450rdb,0.0,,0.0,p450rdb,0.0,1,http://www.cellknowledge.com.cn/p450rdb/,200,,,,,,,,,,,p450rdb,,ok
+37609633,dosurvive,0.0,,0.0,dosurvive,0.0,1,http://dosurvive.lab.nycu.edu.tw/,200,,,,,,,,,,,dosurvive,,ok
+39968950,tumoragdb1.0,0.0,,0.0,tumoragdb1.0,0.0,1,https://tumoragdb.com.cn,200,,,,,,,,,,,tumoragdb1.0,,ok
+36544722,OSCAR,0.0,oscar,0.0,,0.0,1,https://archive.materialscloud.org/record/2022.106,200,,,,,,,,,,,oscar,CAPITALIZED,ok
+40526044,haddock3,0.0,haddock3 | haddock,0.0,,0.0,1,http://www.bonvinlab.org/haddock3-user-manual,200,,,,,,,,,,,haddock3 | haddock,PIPE_CLEANED,ok
+37904617,antismash,0.0,,0.0,antismash,0.0,1,https://antismash-db.secondarymetabolites.org/,200,,,,,,,,,,,antismash,,ok
+35201291,cobramod,0.0,,0.0,cobramod | constraint,0.0,1,https://cobramod.readthedocs.io/,200,,,,,,,,,,,cobramod | constraint,PIPE_CLEANED,ok
+40116496,artsymbiocyc,0.0,,0.0,artsymbiocyc,0.0,1,https://artsymbiocyc.cycadsys.org,200,,,,,,,,,,,artsymbiocyc,,ok
+39985446,spectropiper,0.0,,0.0,spectropiper,0.0,1,https://stemicha.github.io/SpectroPipeR/,200,,,,,,,,,,,spectropiper,,review
+40411446,GBRAP,0.0,gbrap,0.0,,0.0,1,http://tacclab.org/gbrap/,200,,,,,,,,,,,gbrap,CAPITALIZED,ok
+39936323,augcontext db,0.0,,0.0,augcontext db | augcontext,0.0,1,http://108.161.138.77:8096/,200,,,,,,,,,,,augcontext db | augcontext,PIPE_CLEANED,ok
+38707542,TFTG,0.0,tftg,0.0,,0.0,1,http://tf.liclab.net/TFTG,200,,,,,,,,,,,tftg,CAPITALIZED,ok
+38969708,tracerdb,0.0,,0.0,tracerdb,0.0,1,https://www.tracerdb.org/,200,,,,,,,,,,,tracerdb,,ok
+36200814,covinter,0.0,,0.0,covinter,0.0,1,https://idrblab.org/covinter/,200,,,,,,,,,,,covinter,,ok
+36200824,tfsyntax,0.0,,0.0,tfsyntax,0.0,1,https://tfsyntax.zhaopage.com,200,,,,,,,,,,,tfsyntax,,ok
+36200827,chempert,0.0,,0.0,chempert,0.0,1,https://chempert.uni.lu/,200,,,,,,,,,,,chempert,,ok
+36200838,ageanno,0.0,,0.0,ageanno,0.0,1,https://relab.xidian.edu.cn/AgeAnno/#/,200,,,,,,,,,,,ageanno,,ok
+39084442,HSADAB,0.0,hsadab | hsa,0.0,human serum albumin,0.0,1,http://www.hsadab.cn,200,,,,,,,,,,,hsadab | hsa,"PIPE_CLEANED,CAPITALIZED",ok
+37855686,cellstar,0.0,,0.0,cellstar,0.0,1,https://idrblab.org/cellstar,200,,,,,,,,,,,cellstar,,ok
+39838181,CNEV,0.0,cnev,0.0,chinese nonverbal emotional vocalization,0.0,1,https://osf.io/6gy4v/,200,,,,,,,,,,,cnev,CAPITALIZED,ok
+39838182,ELI,0.0,eli,0.0,eyewitness lineup identity,0.0,1,https://osf.io/vrj3u,200,,,,,,,,,,,eli,CAPITALIZED,ok
+37462540,cellcounts,0.0,,0.0,cellcounts,0.0,1,http://bioconductor.org/packages/release/bioc/html/Rsubread.html,200,,,,,,,,,,,cellcounts,,ok
+35971612,GAIA,0.0,gaia,0.0,,0.0,1,https://gaia.cobius.usherbrooke.ca,200,,,,,,,,,,,gaia,CAPITALIZED,ok
+39117342,spatialctd,0.0,,0.0,spatialctd | a large-scale,0.0,1,https://omicsml.github.io/SpatialCTD/,200,,,,,,,,,,,spatialctd | a large-scale,PIPE_CLEANED,review
+36217386,mir2trait,0.0,,0.0,mir2trait,0.0,1,https://sas.sastra.edu/pymir18,200,,,,,,,,,,,mir2trait,,ok
+36069936,carrotomics,0.0,,0.0,carrotomics,0.0,1,https://www.bioinfo.wsu.edu/,200,,,,,,,,,,,carrotomics,,ok
+36495921,r-sim,0.0,r-sim,0.0,rna-small molecule interaction,0.0,1,https://web.iitm.ac.in/bioinfo2/R_SIM/index.html,200,,,,,,,,,,,r-sim,,ok
+35971647,brain protein atlas,0.0,,0.0,brain protein atlas,0.0,1,http://www.brainproteinatlas.org,200,,,,,,,,,,,brain protein atlas,,ok
+34546290,atpdock,0.0,,0.0,atpdock,0.0,1,https://jun-csbio.github.io/atpdock/,200,,,,,,,,,,,atpdock,,review
+35693187,panaxgdb,0.0,,0.0,panaxgdb,0.0,1,http://panaxGDB.ynau.edu.cn,200,,,,,,,,,,,panaxgdb,,ok
+38462130,leaf senescence database,0.0,,0.0,leaf senescence database,0.0,1,https://ngdc.cncb.ac.cn/lsd/,200,,,,,,,,,,,leaf senescence database,,ok
+40067792,varguideatlas,0.0,,0.0,varguideatlas,0.0,1,https://genomics-hub.pros.dsic.upv.es:3016/,200,,,,,,,,,,,varguideatlas,,ok
+34792145,diseasemeth,0.0,,0.0,diseasemeth,0.0,1,http://diseasemeth.edbc.org/,200,,,,,,,,,,,diseasemeth,,ok
+34792158,insectbase,0.0,,0.0,insectbase,0.0,1,http://v2.insect-genome.com/,200,,,,,,,,,,,insectbase,,ok
+34792163,r-loopbase,0.0,,0.0,r-loopbase,0.0,1,https://rloopbase.nju.edu.cn,200,,,,,,,,,,,r-loopbase,,ok
+34792170,genomicus,0.0,,0.0,genomicus,0.0,1,http://www.genomicus.bio.ens.psl.eu/genomicus,200,,,,,,,,,,,genomicus,,ok
+39838450,MAVEDB,0.0,mavedb,0.0,,0.0,1,https://www.mavedb.org/,200,,,,,,,,,,,mavedb,CAPITALIZED,ok
+35414795,REIA,0.0,reia,0.0,,0.0,1,http://bioinfo-sysu.com/reia,200,,,,,,,,,,,reia,CAPITALIZED,ok
+38658835,PPANG,0.0,ppang,0.0,,0.0,1,https://cgm.sjtu.edu.cn/PPanG,200,,,,,,,,,,,ppang,CAPITALIZED,ok
+37610325,cellann,0.0,,0.0,cellann,0.0,1,http://www.cellann.io,200,,,,,,,,,,,cellann,,ok
+40444783,DISC,0.0,disc,0.0,,0.0,1,https://cran.r-project.org/web/packages/SingleCellStat/index.html,200,,,,,,,,,,,disc,CAPITALIZED,ok
+39494517,COG,0.0,cog,0.0,,0.0,1,https://www.ncbi.nlm.nih.gov/research/COG,200,,,,,,,,,,,cog,CAPITALIZED,ok
+39494524,scimmomics,0.0,,0.0,scimmomics,0.0,1,https://bio.liclab.net/scImmOmics/home,200,,,,,,,,,,,scimmomics,,ok
+39494533,dnaprodb,0.0,,0.0,dnaprodb,0.0,1,https://dnaprodb.usc.edu/,200,,,,,,,,,,,dnaprodb,,ok
+39494542,pairpot,0.0,,0.0,pairpot,0.0,1,http://pairpot.bioxai.cn,200,,,,,,,,,,,pairpot,,ok
+37757861,cfomics,0.0,,0.0,cfomics,0.0,1,https://cfomics.ncRNAlab.org/,200,,,,,,,,,,,cfomics,,ok
+39822275,APPIC,0.0,appic,0.0,atlas of protein-protein interactions in cancer,0.0,1,https://appic.brown.edu,200,,,,,,,,,,,appic,CAPITALIZED,ok
+39576581,describeprot,0.0,,0.0,describeprot,0.0,1,http://biomine.cs.vcu.edu/servers/DESCRIBEPROT/,200,,,,,,,,,,,describeprot,,ok
+37889038,cds-db,0.0,cds-db,0.0,,0.0,1,http://cdsdb.ncpsb.org.cn/,200,,,,,,,,,,,cds-db,,ok
+37889041,caspedia,0.0,,0.0,caspedia,0.0,1,http://caspedia.org,200,,,,,,,,,,,caspedia,,ok
+40625169,PLOV,0.0,plov,0.0,,0.0,1,https://plovdb.ott.ru/,200,,,,,,,,,,,plov,CAPITALIZED,ok
+37889051,AGIDB,0.0,agidb,0.0,,0.0,1,https://agidb.pro,200,,,,,,,,,,,agidb,CAPITALIZED,ok
+35234849,phytochemdb,0.0,,0.0,phytochemdb,0.0,1,https://phytochemdb.com/,200,,,,,,,,,,,phytochemdb,,ok
+35234850,PSINDB,0.0,psindb,0.0,,0.0,1,https://psindb.itk.ppke.hu/,200,,,,,,,,,,,psindb,CAPITALIZED,ok
+37889074,DBAPIS,0.0,dbapis,0.0,,0.0,1,https://bcb.unl.edu/dbAPIS,200,,,,,,,,,,,dbapis,CAPITALIZED,ok
+35284049,SDC,0.0,sdc,0.0,sex differences in cancer,0.0,1,http://sdc.anticancer.xyz,200,,,,,,,,,,,sdc,CAPITALIZED,ok
+39740512,brevamir3,0.0,,0.0,brevamir3,0.0,1,https://brevamir3.web.app/index.html,200,,,,,,,,,,,brevamir3,,ok
+39871596,epigenplot,0.0,,0.0,epigenplot,0.0,1,https://epigenplot.com/,200,,,,,,,,,,,epigenplot,,ok
+38970503,IMMRNA,0.0,immrna,0.0,,0.0,1,http://www.immrna.cn/,200,,,,,,,,,,,immrna,CAPITALIZED,ok
+34530446,circmine,0.0,,0.0,circmine,0.0,1,http://www.biomedical-web.com/circmine/,200,,,,,,,,,,,circmine,,ok
+40133784,tmvisdb,0.0,,0.0,tmvisdb,0.0,1,https://tmvisdb.rostlab.org,200,,,,,,,,,,,tmvisdb,,ok
+40133787,alphafold protein structure database,0.0,,0.0,alphafold protein structure database | alphafold,0.0,1,https://www.ebi.ac.uk/pdbe/pdbe-kb/3dbeacons/,200,,,,,,,,,,,alphafold protein structure database | alphafold,PIPE_CLEANED,ok
+36840614,eaqtldb,0.0,,0.0,eaqtldb,0.0,1,http://www.bioailab.com:3838/eaQTLdb,200,,,,,,,,,,,eaqtldb,,ok
+38872231,smafira,0.0,smafira,0.0,,0.0,1,https://smafira.bf3r.de,200,,,,,,,,,,,smafira,,ok
+36922546,CAF,0.0,caf,0.0,cafrgdb,0.0,1,http://caf.zbiolab.cn,200,,,,,,,,,,,caf,CAPITALIZED,ok
+39478454,BASE (synbi2024),0.0,base,0.0,,0.0,1,https://synbi2024.kaist.ac.kr/base,200,,,,,,,,,,,base,"CAPITALIZED,DISAMBIGUATED",ok
+37184712,NORINE,0.0,norine,0.0,,0.0,1,https://norine.univ-lille.fr/norine,200,,,,,,,,,,,norine,CAPITALIZED,ok
+35382564,vegahub,0.0,vegahub | vega,0.0,,0.0,1,http://www.vegahub.eu,200,,,,,,,,,,,vegahub | vega,PIPE_CLEANED,ok
+39724337,hemacisdb,0.0,,0.0,hemacisdb,0.0,1,https://hemacisdb.chinablood.com.cn/,200,,,,,,,,,,,hemacisdb,,ok
+38331722,PGD,0.0,pgd,0.0,,0.0,1,http://passionfruit.com.cn,200,,,,,,,,,,,pgd,CAPITALIZED,ok
+37971293,hocomoco,0.0,hocomoco,0.0,,0.0,1,https://hocomoco12.autosome.org,200,,,,,,,,,,,hocomoco,,ok
+40035691,fusionesp,0.0,,0.0,fusionesp,0.0,1,https://rqkjkgpsyu.us-east-1.awsapprunner.com/,200,,,,,,,,,,,fusionesp,,ok
+37856620,GIFTDB,0.0,giftdb,0.0,,0.0,1,http://giftdb.agroda.cn,200,,,,,,,,,,,giftdb,CAPITALIZED,ok
+37971316,patent and literature antibody database,0.0,,0.0,patent and literature antibody database | plabdab,0.0,1,https://opig.stats.ox.ac.uk/webapps/plabdab/,200,,,,,,,,,,,patent and literature antibody database | plabdab,PIPE_CLEANED,ok
+37971328,metabolights,0.0,,0.0,metabolights,0.0,1,https://www.ebi.ac.uk/metabolights,200,,,,,,,,,,,metabolights,,ok
+39413165,SYNBIP,0.0,synbip,0.0,,0.0,1,https://idrblab.org/synbip/,200,,,,,,,,,,,synbip,CAPITALIZED,ok
+39298565,autophagy3d,0.0,,0.0,autophagy3d,0.0,1,https://autophagy3d.igib.res.in,200,,,,,,,,,,,autophagy3d,,ok
+36169223,gotenzymes,0.0,,0.0,gotenzymes,0.0,1,https://metabolicatlas.org/gotenzymes,200,,,,,,,,,,,gotenzymes,,ok
+36169225,PROPAN,0.0,propan,0.0,,0.0,1,https://ngdc.cncb.ac.cn/propan,200,,,,,,,,,,,propan,CAPITALIZED,ok
+39380491,gwashug,0.0,,0.0,gwashug,0.0,1,http://www.gwashug.com,200,,,,,,,,,,,gwashug,,ok
+36169237,CTD,0.0,ctd,0.0,comparative toxicogenomics database,0.0,1,http://ctdbase.org/,200,,,,,,,,,,,ctd,CAPITALIZED,ok
+39265822,ervcancer,0.0,,0.0,ervcancer,0.0,1,http://kyuanlab.com/ervcancer/,200,,,,,,,,,,,ervcancer,,ok
+40494646,thermoseek,0.0,,0.0,thermoseek,0.0,1,https://protein.org.cn/thermoseek,200,,,,,,,,,,,thermoseek,,ok
+36169329,BCSCDB,0.0,bcscdb,0.0,,0.0,1,http://dibresources.jcbose.ac.in/ssaha4/bcscdb,200,,,,,,,,,,,bcscdb,CAPITALIZED,ok
+36693629,proteomicsml,0.0,,0.0,proteomicsml,0.0,1,https://www.proteomicsml.org/,200,,,,,,,,,,,proteomicsml,,ok
+35464838,microbiosee,0.0,,0.0,microbiosee,0.0,1,https://microbiosee.gxu.edu.cn,200,,,,,,,,,,,microbiosee,,ok
+38282890,dynamos,0.0,,0.0,dynamos,0.0,1,https://dynamos.mgb.org,200,,,,,,,,,,,dynamos,,ok
+38889117,camanim,0.0,,0.0,camanim,0.0,1,https://omni-ml.github.io/pytorch-grad-cam-anim/,200,,,,,,,,,,,camanim,,review
+36382409,directrmdb,0.0,,0.0,directrmdb,0.0,1,http://www.rnamd.org/directRMDB/,200,,,,,,,,,,,directrmdb,,ok
+38233808,circnetvis,0.0,,0.0,circnetvis,0.0,1,https://www.meb.ki.se/shiny/truvu/CircNetVis/,200,,,,,,,,,,,circnetvis,,ok
+39577347,latup-net,0.0,,0.0,latup-net | attention u-net with parallel convolutions,0.0,1,https://qyber.black/ca/code-bca,200,,,,,,,,,,,latup-net | attention u-net with parallel convolutions,PIPE_CLEANED,ok
+38954836,miprime,0.0,,0.0,miprime,0.0,1,https://www.ai-bt.com,200,,,,,,,,,,,miprime,,ok
+36300630,rm2target,0.0,,0.0,rm2target,0.0,1,http://rm2target.canceromics.org/,200,,,,,,,,,,,rm2target,,ok
+39479298,pfusiondb,0.0,,0.0,pfusiondb,0.0,1,http://www.nipgr.ac.in/PFusionDB,200,,,,,,,,,,,pfusiondb,,ok
+38234122,y2md,0.0,y2md,0.0,,0.0,1,https://y2md.ucad.sn/,200,,,,,,,,,,,y2md,,ok
+37759106,TELL,0.0,tell,0.0,toolkit to examine lifelike language,0.0,1,https://demo.sci.tellapp.org/,200,,,,,,,,,,,tell,CAPITALIZED,ok
+37791883,CROST,0.0,crost,0.0,,0.0,1,https://ngdc.cncb.ac.cn/crost,200,,,,,,,,,,,crost,CAPITALIZED,ok
+40495324,lm-glycorepo,0.0,,0.0,lm-glycorepo,0.0,1,https://lm-glycorepo.glycosmos.org/lm_glycorepo/,200,,,,,,,,,,,lm-glycorepo,,ok
+35350773,targetgenereg,0.0,,0.0,targetgenereg,0.0,1,http://www.TargetGeneReg.org,200,,,,,,,,,,,targetgenereg,,ok
+36890882,immunolyser,0.0,,0.0,immunolyser,0.0,1,https://immunolyser.erc.monash.edu/,200,,,,,,,,,,,immunolyser,,ok
+40315246,stcdb4nd,0.0,stcdb4nd | stcdb,0.0,,0.0,1,https://bis.zju.edu.cn/STCDB,200,,,,,,,,,,,stcdb4nd | stcdb,PIPE_CLEANED,ok
+36399478,matrisomedb,0.0,,0.0,matrisomedb,0.0,1,https://matrisomedb.org,200,,,,,,,,,,,matrisomedb,,ok
+36399488,TIMEDB,0.0,timedb | time,0.0,,0.0,1,https://timedb.deepomics.org,200,,,,,,,,,,,timedb | time,"PIPE_CLEANED,CAPITALIZED",ok
+36399495,chipbase,0.0,,0.0,chipbase,0.0,1,https://rnasysu.com/chipbase3/,200,,,,,,,,,,,chipbase,,ok
+36399497,introverse,0.0,,0.0,introverse,0.0,1,https://rytenlab.com/browser/app/introverse,200,,,,,,,,,,,introverse,,ok
+36399502,IMG,0.0,img/vr,0.0,,0.0,1,https://img.jgi.doe.gov/vr,200,,,,,,,,,,,img/vr,"HTML_REMOVED,CAPITALIZED",ok
+37054878,vt3d,0.0,vt3d,0.0,,0.0,1,http://www.bgiocean.com/vt3d_example,200,,,,,,,,,,,vt3d,,ok
+40036767,PIGOME,0.0,pigome,0.0,,0.0,1,https://pigome.com,200,,,,,,,,,,,pigome,CAPITALIZED,ok
+37841327,cclhunter,0.0,,0.0,cclhunter,0.0,1,https://ngdc.cncb.ac.cn/cclhunter,200,,,,,,,,,,,cclhunter,,ok
+38742521,FERREG,0.0,ferreg,0.0,,0.0,1,https://idrblab.org/ferreg/,200,,,,,,,,,,,ferreg,CAPITALIZED,ok
+38840833,AMICA,0.0,amica,0.0,,0.0,1,https://amica.omics.si/,200,,,,,,,,,,,amica,CAPITALIZED,ok
+38054441,o-glcnacpred-dl,0.0,,0.0,o-glcnacpred-dl,0.0,1,http://oglcnac.org/pred_dl,200,,,,,,,,,,,o-glcnacpred-dl,,ok
+39545396,hmicrodb,0.0,,0.0,hmicrodb,0.0,1,https://herpdb.com/,200,,,,,,,,,,,hmicrodb,,ok
+35318332,SKEWDB,0.0,skewdb,0.0,,0.0,1,https://skewdb.org,200,,,,,,,,,,,skewdb,CAPITALIZED,ok
+35891795,fishexp,0.0,,0.0,fishexp,0.0,1,https://bioinfo.njau.edu.cn/fishExp,200,,,,,,,,,,,fishexp,,ok
+35039845,ADENET,0.0,adenet,0.0,,0.0,1,http://lmmd.ecust.edu.cn/netinfer,200,,,,,,,,,,,adenet,CAPITALIZED,ok
+35662455,tissuenet,0.0,,0.0,tissuenet,0.0,1,https://netbio.bgu.ac.il/tissuenet3,200,,,,,,,,,,,tissuenet,,ok
+35662458,GWYRE,0.0,gwyre,0.0,,0.0,1,http://www.gwyre.org,200,,,,,,,,,,,gwyre,CAPITALIZED,ok
+36350659,epifactors,0.0,,0.0,epifactors,0.0,1,http://epifactors.autosome.org,200,,,,,,,,,,,epifactors,,ok
+36694725,cafuncapa,0.0,,0.0,cafuncapa,0.0,1,https://relab.xidian.edu.cn/CAFuncAPA/,200,,,,,,,,,,,cafuncapa,,ok
+36350662,orthodb,0.0,,0.0,orthodb,0.0,1,https://www.orthodb.org,200,,,,,,,,,,,orthodb,,ok
+36350663,TEDD,0.0,tedd,0.0,,0.0,1,https://TEDD.obg.cuhk.edu.hk/,200,,,,,,,,,,,tedd,CAPITALIZED,ok
+36350677,pickles,0.0,pickles,0.0,,0.0,1,https://pickles.hart-lab.org,200,,,,,,,,,,,pickles,,ok
+37956310,RMBASE,0.0,rmbase,0.0,,0.0,1,http://bioinformaticsscience.cn/rmbase/,200,,,,,,,,,,,rmbase,CAPITALIZED,ok
+37956313,european nucleotide archive,0.0,,0.0,european nucleotide archive,0.0,1,https://www.ebi.ac.uk/ena,200,,,,,,,,,,,european nucleotide archive,,ok
+37956324,channelsdb (channelsdb2),0.0,,0.0,channelsdb | alphafold,0.0,1,https://channelsdb2.biodata.ceitec.cz,200,,,,,,,,,,,channelsdb | alphafold,"PIPE_CLEANED,DISAMBIGUATED",ok
+39693053,cryptobench,0.0,,0.0,cryptobench,0.0,1,https://osf.io/pz4a9/,200,,,,,,,,,,,cryptobench,,ok
+36416261,GPSADB,0.0,gpsadb,0.0,,0.0,1,https://www.gpsadb.com/,200,,,,,,,,,,,gpsadb,CAPITALIZED,ok
+36416273,clustercad,0.0,,0.0,clustercad,0.0,1,https://clustercad.jbei.org,200,,,,,,,,,,,clustercad,,ok
+37530436,lircentral,0.0,,0.0,lircentral,0.0,1,https://lircentral.eu,200,,,,,,,,,,,lircentral,,ok
+35695435,MOLHYB,0.0,molhyb,0.0,,0.0,1,http://molhyb.xundrug.cn/,200,,,,,,,,,,,molhyb,CAPITALIZED,ok
+33237866,SEDA,0.0,seda,0.0,,0.0,1,https://www.sing-group.org/seda/,200,,,,,,,,,,,seda,CAPITALIZED,ok
+39283594,collectnet,0.0,,0.0,collectnet,0.0,1,http://health.tsinghua.edu.cn/collectnet,200,,,,,,,,,,,collectnet,,ok
+34614159,cyanoomicsdb,0.0,,0.0,cyanoomicsdb,0.0,1,http://www.cyanoomics.cn/,200,,,,,,,,,,,cyanoomicsdb,,ok
+38808472,ncpbook,0.0,,0.0,ncpbook,0.0,1,https://ncp.wiki/ncpbook/,200,,,,,,,,,,,ncpbook,,ok
+38939556,getesepdb,0.0,,0.0,getesepdb,0.0,1,http://www.inbirg.com/GeTeSEPdb/,200,,,,,,,,,,,getesepdb,,ok
+38841284,triticeaessrdb,0.0,,0.0,triticeaessrdb,0.0,1,http://triticeaessrdb.com/,200,,,,,,,,,,,triticeaessrdb,,ok
+37202885,htnpedia,0.0,,0.0,htnpedia,0.0,1,http://www.mkarthikeyan.bioinfoau.org/HTNpedia,200,,,,,,,,,,,htnpedia,,ok
+36367311,MGTDB,0.0,mgtdb,0.0,,0.0,1,https://mgtdb.unsw.edu.au,200,,,,,,,,,,,mgtdb,CAPITALIZED,ok
+36367312,FDRDB,0.0,fdrdb,0.0,,0.0,1,http://www.medsysbio.org/FDRdb,200,,,,,,,,,,,fdrdb,CAPITALIZED,ok
+36367313,NEMAR,0.0,nemar,0.0,,0.0,1,https://nemar.org,200,,,,,,,,,,,nemar,CAPITALIZED,ok
+39316480,high dynamic range,0.0,,0.0,high dynamic range,0.0,1,https://live.ece.utexas.edu/research/LIVE_TMHDR/index.html,200,,,,,,,,,,,high dynamic range,,ok
+39037960,fairsoft,0.0,,0.0,fairsoft,0.0,1,https://gitlab.bsc.es/inb/elixir/software-observatory/FAIRsoft_ETL,200,,,,,,,,,,,fairsoft,,ok
+37448726,poptradeoff,0.0,,0.0,poptradeoff,0.0,1,http://www.gaemons.net/PopFMIntro,200,,,,,,,,,,,poptradeoff,,ok
+39119895,qprimerdb,0.0,,0.0,qprimerdb | qprimer,0.0,1,https://qprimerdb.biodb.org,200,,,,,,,,,,,qprimerdb | qprimer,PIPE_CLEANED,ok
+36318239,tmalphafold,0.0,,0.0,tmalphafold,0.0,1,https://tmalphafold.ttk.hu/,200,,,,,,,,,,,tmalphafold,,ok
+36318242,ascancer atlas,0.0,,0.0,ascancer atlas,0.0,1,https://ngdc.cncb.ac.cn/ascancer,200,,,,,,,,,,,ascancer atlas,,ok
+36318250,methbank,0.0,,0.0,methbank,0.0,1,https://ngdc.cncb.ac.cn/methbank/,200,,,,,,,,,,,methbank,,ok
+36318257,GOLD,0.0,gold,0.0,genomes online database,0.0,1,https://gold.jgi.doe.gov/,200,,,,,,,,,,,gold,CAPITALIZED,ok
+36318258,HUSCH,0.0,husch,0.0,,0.0,1,http://husch.comp-genomics.org,200,,,,,,,,,,,husch,CAPITALIZED,ok
+36318261,HGD,0.0,hgd,0.0,homologous gene database,0.0,1,https://ngdc.cncb.ac.cn/hgd,200,,,,,,,,,,,hgd,CAPITALIZED,ok
+40250417,AFED,0.0,afed,0.0,,0.0,1,https://a-flavus-expression-db-jyqnpeuvta-uc.a.run.app,200,,,,,,,,,,,afed,CAPITALIZED,ok
+37547083,IMOPAC,0.0,imopac,0.0,,0.0,1,http://www.hbpding.com/IMOPAC,200,,,,,,,,,,,imopac,CAPITALIZED,ok
+40234091,pci-db,0.0,pci-db,0.0,,0.0,1,https://pci-db.org/,200,,,,,,,,,,,pci-db,,ok
+35368077,csurvival,0.0,,0.0,csurvival,0.0,1,https://tau.cmmt.ubc.ca/cSurvival,200,,,,,,,,,,,csurvival,,ok
+37448872,amaranth genomic resource database,0.0,,0.0,amaranth genomic resource database,0.0,1,http://www.nbpgr.ernet.in:8080/AmaranthGRD/,200,,,,,,,,,,,amaranth genomic resource database,,ok
+36056235,polygenic risk score knowledge base,0.0,,0.0,polygenic risk score knowledge base,0.0,1,https://prs.byu.edu,200,,,,,,,,,,,polygenic risk score knowledge base,,ok
+37776561,BCEDB,0.0,bcedb,0.0,,0.0,1,http://www.oncoimmunobank.cn/bcedbindex,200,,,,,,,,,,,bcedb,CAPITALIZED,ok
+39546087,ACMG (clingen),0.0,acmg | brca,0.0,brcaindica,0.0,1,https://clingen.igib.res.in/brcaindica/,200,,,,,,,,,,,acmg | brca,"PIPE_CLEANED,CAPITALIZED,DISAMBIGUATED",ok
+40037615,forestforward,0.0,,0.0,forestforward,0.0,1,https://forestforward.udl.cat,200,,,,,,,,,,,forestforward,,ok
+39431411,lukprot,0.0,,0.0,lukprot,0.0,1,https://lukprot.hirszfeld.pl/,200,,,,,,,,,,,lukprot,,ok
+39693568,ECCDNA (lcbb),0.0,eccdna,0.0,sceccdnadb,0.0,1,https://lcbb.swjtu.edu.cn/scEccDNAdb/,200,,,,,,,,,,,eccdna,"CAPITALIZED,DISAMBIGUATED",ok
+37465397,zoopathweb,0.0,,0.0,zoopathweb,0.0,1,http://lab.malab.cn/~hrs/zoopathweb/,200,,,,,,,,,,,zoopathweb,,ok
+40545607,lgrpv2,0.0,lgrpv2,0.0,,0.0,1,https://fabaceae.cgrpoee.top,200,,,,,,,,,,,lgrpv2,,ok
+38022524,SYSCID,0.0,syscid,0.0,,0.0,1,https://syscid.elixir-luxembourg.org/,200,,,,,,,,,,,syscid,CAPITALIZED,ok
+35614082,musmorph,0.0,,0.0,musmorph,0.0,1,http://www.facebase.org,200,,,,,,,,,,,musmorph,,ok
+35368340,nanoforms,0.0,,0.0,nanoforms,0.0,1,http://nanoforms.tech,200,,,,,,,,,,,nanoforms,,ok
+40037809,phasedis,0.0,,0.0,phasedis,0.0,1,http://mlodis.phasep.pro,200,,,,,,,,,,,phasedis,,ok
+36400569,TOXRIC,0.0,toxric,0.0,,0.0,1,https://toxric.bioinforai.tech/,200,,,,,,,,,,,toxric,CAPITALIZED,ok
+36646374,psngpcrdb,0.0,,0.0,psngpcrdb | g protein,0.0,1,http://webpsn.hpc.unimo.it/psngpcr.php,200,,,,,,,,,,,psngpcrdb | g protein,PIPE_CLEANED,ok
+39546375,LMRAC,0.0,lmrac,0.0,,0.0,1,https://hub.docker.com,200,,,,,,,,,,,lmrac,CAPITALIZED,ok
+40414739,BGMP,0.0,bgmp,0.0,,0.0,1,http://bloodgmp.org,200,,,,,,,,,,,bgmp,CAPITALIZED,ok
+40381983,perturbseq.db,0.0,,0.0,perturbseq.db,0.0,1,http://bioailab.com/PerturbSeq.db/,200,,,,,,,,,,,perturbseq.db,,ok
+37580331,phylobone,0.0,,0.0,phylobone,0.0,1,https://phylobone.com,200,,,,,,,,,,,phylobone,,ok
+37170752,MCAN,0.0,mcan,0.0,,0.0,1,https://ngdc.cncb.ac.cn/biocode/tools/BT007301,200,,,,,,,,,,,mcan,CAPITALIZED,ok
+40103610,m6a2circ,0.0,,0.0,m6a2circ,0.0,1,http://m6a2circ.canceromics.org/,200,,,,,,,,,,,m6a2circ,,ok
+38596315,cat-e,0.0,cat-e,0.0,,0.0,1,https://cat-e.bioinfo-wuerz.eu/,200,,,,,,,,,,,cat-e,,ok
+39530217,ASPDB,0.0,aspdb,0.0,,0.0,1,https://biodataai.uth.edu/ASpdb/,200,,,,,,,,,,,aspdb,CAPITALIZED,ok
+39530242,molluscdb (mgbase),0.0,,0.0,molluscdb,0.0,1,http://mgbase.qnlm.ac,200,,,,,,,,,,,molluscdb,DISAMBIGUATED,ok
+39546630,RASP,0.0,rasp,0.0,,0.0,1,http://rasp2.zhanglab.net/,200,,,,,,,,,,,rasp,CAPITALIZED,ok
+40251157,mammonc-db,0.0,,0.0,mammonc-db,0.0,1,http://resource.path.uab.edu/MammOnc-Home.html,200,,,,,,,,,,,mammonc-db,,ok
+38580076,logomotif,0.0,,0.0,logomotif,0.0,1,https://logomotif.bioinformatics.nl,200,,,,,,,,,,,logomotif,,ok
+34500462,VIMIC,0.0,vimic,0.0,human disease-related virus mutations,0.0,1,http://bmtongji.cn/ViMIC/index.php,200,,,,,,,,,,,vimic,CAPITALIZED,ok
+37941143,silkmeta,0.0,,0.0,silkmeta,0.0,1,http://silkmeta.org.cn,200,,,,,,,,,,,silkmeta,,ok
+37941147,ZEBRA,0.0,zebra,0.0,,0.0,1,https://www.ccb.uni-saarland.de/zebra,200,,,,,,,,,,,zebra,CAPITALIZED,ok
+37941154,colocdb,0.0,,0.0,colocdb,0.0,1,https://ngdc.cncb.ac.cn/colocdb,200,,,,,,,,,,,colocdb,,ok
+36630461,MAGNET,0.0,magnet,0.0,,0.0,1,https://magnet-winterlab.herokuapp.com,200,,,,,,,,,,,magnet,CAPITALIZED,ok
+37531635,VEXD,0.0,vexd,0.0,,0.0,1,https://vexd.cchmc.org/,200,,,,,,,,,,,vexd,CAPITALIZED,ok
+38531069,mouse genome informatics (informatics),0.0,,0.0,mouse genome informatics,0.0,1,https://informatics.jax.org,200,,,,,,,,,,,mouse genome informatics,DISAMBIGUATED,ok
+39563275,NIRS,0.0,nirs,0.0,nirspredict,0.0,1,https://shiny.cefe.cnrs.fr/NirsPredict/,200,,,,,,,,,,,nirs,CAPITALIZED,ok
+40185904,PSYCGM,0.0,psycgm,0.0,,0.0,1,http://psycgmomics.info,200,,,,,,,,,,,psycgm,CAPITALIZED,ok
+38498357,RARPKB,0.0,rarpkb,0.0,,0.0,1,http://rarpkb.bioinf.org.cn,200,,,,,,,,,,,rarpkb,CAPITALIZED,ok
+36532379,diffbrainnet,0.0,,0.0,diffbrainnet,0.0,1,http://diffbrainnet.psych.mpg.de,200,,,,,,,,,,,diffbrainnet,,ok
+37843103,orthomam,0.0,,0.0,orthomam,0.0,1,https://orthomam.mbb.cnrs.fr/,200,,,,,,,,,,,orthomam,,ok
+37843123,minrbase,0.0,,0.0,minrbase,0.0,1,https://cm.jefferson.edu/MINRbase/,200,,,,,,,,,,,minrbase,,ok
+37843152,TCOD,0.0,tcod,0.0,,0.0,1,https://ngdc.cncb.ac.cn/tcod,200,,,,,,,,,,,tcod,CAPITALIZED,ok
+37925080,RPM,0.0,rpm,0.0,,0.0,1,https://ranczlab.github.io/RPM/,200,,,,,,,,,,,rpm,CAPITALIZED,review
+34664666,ASMDB,0.0,asmdb,0.0,,0.0,1,http://www.dna-asmdb.com,200,,,,,,,,,,,asmdb,CAPITALIZED,ok
+34320637,rpanglaodb,0.0,,0.0,rpanglaodb | panglaodb,0.0,1,https://CRAN.R-project.org/package=rPanglaoDB,200,,,,,,,,,,,rpanglaodb | panglaodb,PIPE_CLEANED,ok
+39514415,athisomirdb,0.0,,0.0,athisomirdb,0.0,1,https://www.nipgr.ac.in/athisomiRDB,200,,,,,,,,,,,athisomirdb,,ok
+39809358,rmethymd,0.0,,0.0,rmethymd,0.0,1,http://www.tmliang.cn/rnamethy,200,,,,,,,,,,,rmethymd,,ok
+38957398,KLSD,0.0,klsd,0.0,,0.0,1,http://ai.njucm.edu.cn:8080,200,,,,,,,,,,,klsd,CAPITALIZED,ok
+36548962,cyanomapdb,0.0,,0.0,cyanomapdb,0.0,1,http://www.cyanomapdb.msbio.pro/,200,,,,,,,,,,,cyanomapdb,,ok
+35533187,lmtracemap,0.0,,0.0,lmtracemap,0.0,1,http://lmtracemap.cgu.edu.tw/hua_map/test/upload.php,200,,,,,,,,,,,lmtracemap,,ok
+35189131,bioimage,0.0,,0.0,bioimage,0.0,1,https://www.ebi.ac.uk/bioimage-archive/,200,,,,,,,,,,,bioimage,,ok
+40268234,gpcrchimeradb,0.0,,0.0,gpcrchimeradb | g protein,0.0,1,https://www.bio2byte.be/gpcrchimeradb/,200,,,,,,,,,,,gpcrchimeradb | g protein,PIPE_CLEANED,ok
+38711760,KMERDB,0.0,kmerdb,0.0,,0.0,1,http://www.kmerdb.com,200,,,,,,,,,,,kmerdb,CAPITALIZED,ok
+39219717,exomirhub,0.0,,0.0,exomirhub,0.0,1,http://www.biomedical-web.com/exomirhub/,200,,,,,,,,,,,exomirhub,,ok
+36696595,caspsites,0.0,,0.0,caspsites,0.0,1,http://www.caspsites.org,200,,,,,,,,,,,caspsites,,ok
+40186419,mirtarclash,0.0,,0.0,mirtarclash,0.0,1,https://cosbi.ee.ncku.edu.tw/MirTarClash,200,,,,,,,,,,,mirtarclash,,ok
+37646936,TEMM,0.0,temm,0.0,,0.0,1,https://bioinformatics.um6p.ma/TEMM,200,,,,,,,,,,,temm,CAPITALIZED,ok
+39137906,NCSTEM,0.0,ncstem,0.0,,0.0,1,http://www.nidmarker-db.cn/ncStem/index.html,200,,,,,,,,,,,ncstem,CAPITALIZED,ok
+37450416,APDB,0.0,apdb,0.0,,0.0,1,http://apdb.di.univr.it,200,,,,,,,,,,,apdb,CAPITALIZED,ok
+37221043,rna-chrom,0.0,,0.0,rna-chrom,0.0,1,https://genome.ucsc.edu/,200,,,,,,,,,,,rna-chrom,,ok
+40170166,lonicomp,0.0,,0.0,lonicomp,0.0,1,http://www.gzybioinformatics.cn/LoniComp,200,,,,,,,,,,,lonicomp,,ok
+40317650,sccompass,0.0,,0.0,sccompass,0.0,1,http://www.bdbe.cn/kun,200,,,,,,,,,,,sccompass,,ok
+35844834,ROMA,0.0,roma,0.0,,0.0,1,https://roma.univ-lyon1.fr,200,,,,,,,,,,,roma,CAPITALIZED,ok
+39498488,expresso,0.0,expresso,0.0,,0.0,1,https://expresso.sustech.edu.cn,200,,,,,,,,,,,expresso,,ok
+39498494,streptomedb,0.0,,0.0,streptomedb,0.0,1,https://www.pharmbioinf.uni-freiburg.de/streptomedb,200,,,,,,,,,,,streptomedb,,ok
+38335248,carbdismut,0.0,,0.0,carbdismut,0.0,1,https://web.iitm.ac.in/bioinfo2/carbdismut,200,,,,,,,,,,,carbdismut,,ok
+36320030,vgsc-db,0.0,vgsc-db,0.0,,0.0,1,http://cadd.zju.edu.cn/vgsc/,200,,,,,,,,,,,vgsc-db,,ok
+36418335,altered states database,0.0,,0.0,altered states database,0.0,1,http://alteredstatesdb.org,200,,,,,,,,,,,altered states database,,ok
+38335311,sitemine,0.0,,0.0,sitemine,0.0,1,https://uhh.de/naomi,200,,,,,,,,,,,sitemine,,ok
+39416656,cannseek,0.0,,0.0,cannseek,0.0,1,https://icgrc.info/cannseek,200,,,,,,,,,,,cannseek,,ok
+35500907,MICID,0.0,micid,0.0,,0.0,1,https://www.ncbi.nlm.nih.gov/CBBresearch/Yu/downloads.html,200,,,,,,,,,,,micid,CAPITALIZED,ok
+38204360,african human microbiome portal,0.0,,0.0,african human microbiome portal,0.0,1,https://microbiome.h3abionet.org/,200,,,,,,,,,,,african human microbiome portal,,ok
+34534350,TISMO,0.0,tismo,0.0,,0.0,1,http://tismo.cistrome.org,200,,,,,,,,,,,tismo,CAPITALIZED,ok
+37221343,GAUDIE,0.0,gaudie,0.0,,0.0,1,https://osf.io/xyr6j/,200,,,,,,,,,,,gaudie,CAPITALIZED,ok
+37925911,metabolitecovid,0.0,,0.0,metabolitecovid,0.0,1,https://cellknowledge.com.cn/MetaboliteCOVID,200,,,,,,,,,,,metabolitecovid,,ok
+34747489,biosamples,0.0,,0.0,biosamples,0.0,1,http://www.ebi.ac.uk/biosamples,200,,,,,,,,,,,biosamples,,ok
+37205123,TLSEA,0.0,tlsea,0.0,,0.0,1,http://www.lirmed.com:5003/tlsea,200,,,,,,,,,,,tlsea,CAPITALIZED,ok
+34403477,postar3,0.0,postar3 | postar,0.0,,0.0,1,http://postar.ncrnalab.org,200,,,,,,,,,,,postar3 | postar,PIPE_CLEANED,ok
+38745271,primerevalpy,0.0,,0.0,primerevalpy,0.0,1,https://gitlab.citius.usc.es/lara.vazquez/PrimerEvalPy,200,,,,,,,,,,,primerevalpy,,ok
+38597890,NETME,0.0,netme,0.0,,0.0,1,https://netme.click/,200,,,,,,,,,,,netme,CAPITALIZED,ok
+35222846,supepmem,0.0,,0.0,supepmem,0.0,1,https://supepmem.com/,200,,,,,,,,,,,supepmem,,ok
+38958433,myxoportal,0.0,,0.0,myxoportal,0.0,1,http://dicsoft1.physics.iisc.ac.in/MyxoPortal/,200,,,,,,,,,,,myxoportal,,ok
+38483315,pmechdb,0.0,,0.0,pmechdb,0.0,1,https://deeprxn.ics.uci.edu/pmechdb,200,,,,,,,,,,,pmechdb,,ok
+38974887,CRCDB,0.0,crcdb,0.0,,0.0,1,http://crcdb-hust.com,200,,,,,,,,,,,crcdb,CAPITALIZED,ok
+36304304,chanfad,0.0,,0.0,chanfad,0.0,1,https://www.chanfad.org/,200,,,,,,,,,,,chanfad,,ok
+40400345,alphafold (ekhidna2),0.0,,0.0,alphafold,0.0,1,http://ekhidna2.biocenter.helsinki.fi/ISS_ProtSci/,200,,,,,,,,,,,alphafold,DISAMBIGUATED,ok
+38204924,canvaxkb,0.0,,0.0,canvaxkb,0.0,1,https://violinet.org/canvaxkb,200,,,,,,,,,,,canvaxkb,,ok
+39695922,aging2cancer,0.0,,0.0,aging2cancer,0.0,1,http://210.37.77.200:8080/Aging2Cancer/index.jsp,200,,,,,,,,,,,aging2cancer,,ok
+39351872,perturbatlas,0.0,,0.0,perturbatlas,0.0,1,https://perturbatlas.kratoss.site,200,,,,,,,,,,,perturbatlas,,ok
+39351883,xqtlatlas,0.0,,0.0,xqtlatlas,0.0,1,http://www.hitxqtl.org.cn/,200,,,,,,,,,,,xqtlatlas,,ok
+39237197,beetleatlas,0.0,,0.0,beetleatlas,0.0,1,https://www.beetleatlas.org,200,,,,,,,,,,,beetleatlas,,ok
+38581840,faissmollib,0.0,,0.0,faissmollib,0.0,1,http://liuhaihan.gnway.cc:80,200,,,,,,,,,,,faissmollib,,ok
+39351893,DMRDB,0.0,dmrdb,0.0,,0.0,1,http://www.inbirg.com/DMRdb/,200,,,,,,,,,,,dmrdb,CAPITALIZED,ok
+36484697,CHEBI,0.0,chebi,0.0,uniprotkb | uniprot,0.0,1,https://ftp.uniprot.org/pub/databases/uniprot/,200,,,,,,,,,,,chebi,CAPITALIZED,ok
+35141219,LNCPEP,0.0,lncpep,0.0,,0.0,1,http://www.shenglilabs.com/LncPep/,200,,,,,,,,,,,lncpep,CAPITALIZED,ok
+35452518,PCRMS,0.0,pcrms,0.0,predicted cis-regulatory modules,0.0,1,https://cci-bioinfo.uncc.edu,200,,,,,,,,,,,pcrms,CAPITALIZED,ok
+34551437,cscd2,0.0,cscd2 | cscd,0.0,,0.0,1,http://geneyun.net/CSCD2,200,,,,,,,,,,,cscd2 | cscd,PIPE_CLEANED,ok
+37811874,clinicalomicsdb,0.0,,0.0,clinicalomicsdb,0.0,1,http://trials.linkedomics.org/,200,,,,,,,,,,,clinicalomicsdb,,ok
+36271792,organoiddb,0.0,,0.0,organoiddb,0.0,1,http://www.inbirg.com/organoid_db/,200,,,,,,,,,,,organoiddb,,ok
+36271793,plantexp,0.0,,0.0,plantexp,0.0,1,https://biotec.njau.edu.cn/plantExp,200,,,,,,,,,,,plantexp,,ok
+36271794,cugendbv2,0.0,,0.0,cugendbv2,0.0,1,http://cucurbitgenomics.org/v2,200,,,,,,,,,,,cugendbv2,,ok
+36271795,UFCG,0.0,ufcg,0.0,universal fungal core genes,0.0,1,https://ufcg.steineggerlab.com,200,,,,,,,,,,,ufcg,CAPITALIZED,ok
+37811892,PFAM,0.0,pfam,0.0,nmpfamsdb,0.0,1,http://www.nmpfamsdb.org/,200,,,,,,,,,,,pfam,CAPITALIZED,ok
+36370105,STRING,0.0,string,0.0,,0.0,1,https://string-db.org/,200,,,,,,,,,,,string,CAPITALIZED,ok
+36189903,ematlas,0.0,,0.0,ematlas,0.0,1,http://bioinfor.imu.edu.cn/ematlas,200,,,,,,,,,,,ematlas,,ok
+36419334,dataman,0.0,dataman,0.0,,0.0,1,http://www.dataman.co.nz,200,,,,,,,,,,,dataman,,ok
+38860571,makesbml,0.0,,0.0,makesbml,0.0,1,https://sys-bio.github.io/makesbml/,200,,,,,,,,,,,makesbml,,review
+37779250,MMIKG,0.0,mmikg,0.0,,0.0,1,http://yangbiolab.cn:8501/,200,,,,,,,,,,,mmikg,CAPITALIZED,ok
+37730114,hpc-atlas,0.0,,0.0,hpc-atlas,0.0,1,http://www.yulpan.top/HPC-Atlas,200,,,,,,,,,,,hpc-atlas,,ok
+38860632,EXMOVE,0.0,exmove,0.0,an open,0.0,1,https://exmove.github.io/,200,,,,,,,,,,,exmove,CAPITALIZED,review
+39565202,interpro,0.0,,0.0,interpro,0.0,1,https://www.ebi.ac.uk/interpro,200,,,,,,,,,,,interpro,,ok
+39565203,PGXDB,0.0,pgxdb,0.0,pharmacogenomics,0.0,1,https://pgx-db.org/,200,,,,,,,,,,,pgxdb,CAPITALIZED,ok
+39565208,sc2gwas,0.0,,0.0,sc2gwas,0.0,1,https://bio.liclab.net/sc2GWAS/,200,,,,,,,,,,,sc2gwas,,ok
+39565209,harmonizome,0.0,,0.0,harmonizome,0.0,1,https://maayanlab.cloud/Harmonizome/,200,,,,,,,,,,,harmonizome,,ok
+37697439,flibase,0.0,,0.0,flibase,0.0,1,http://www.FLIBase.org,200,,,,,,,,,,,flibase,,ok
+38991851,PEPHUB,0.0,pephub,0.0,,0.0,1,https://pephub.databio.org,200,,,,,,,,,,,pephub,CAPITALIZED,ok
+36124670,quadratlas,0.0,,0.0,quadratlas,0.0,1,https://rg4db.cibio.unitn.it,200,,,,,,,,,,,quadratlas,,ok
+37468182,d-orb,0.0,d-orb,0.0,,0.0,1,https://d-orb.major.iric.ca/,200,,,,,,,,,,,d-orb,,ok
+40728624,MPAD,0.0,mpad,0.0,,0.0,1,https://web.iitm.ac.in/bioinfo2/mpad/,200,,,,,,,,,,,mpad,CAPITALIZED,ok
+39319601,RPFDB,0.0,rpfdb,0.0,,0.0,1,http://www.rpfdb.org,200,,,,,,,,,,,rpfdb,CAPITALIZED,ok
+38844475,SSREAD,0.0,ssread,0.0,,0.0,1,https://bmblx.bmi.osumc.edu/ssread/,200,,,,,,,,,,,ssread,CAPITALIZED,ok
+36124785,APPRIS,0.0,appris | mane,0.0,,0.0,1,https://appris.bioinfo.cnio.es,200,,,,,,,,,,,appris | mane,"PIPE_CLEANED,CAPITALIZED",ok
+38926513,MOI,0.0,moi,0.0,,0.0,1,http://www.fynn-guo.cn/,200,,,,,,,,,,,moi,CAPITALIZED,ok
+35354826,carbohydrate structure database,0.0,,0.0,carbohydrate structure database,0.0,1,http://csdb.glycoscience.ru/,200,,,,,,,,,,,carbohydrate structure database,,ok
+36747479,salivadb,0.0,,0.0,salivadb,0.0,1,https://webs.iiitd.edu.in/raghava/salivadb/,200,,,,,,,,,,,salivadb,,ok
+37435612,cbp60-db,0.0,cbp60-db,0.0,alphafold,0.0,1,https://cbp60db.wlu.ca/,200,,,,,,,,,,,cbp60-db,,ok
+39155985,hupoxnet,0.0,,0.0,hupoxnet,0.0,1,https://kaabil.net/hupoxnet/,200,,,,,,,,,,,hupoxnet,,ok
+37042467,nbthermo,0.0,,0.0,nbthermo,0.0,1,https://valdes-tresanco-ms.github.io/NbThermo,200,,,,,,,,,,,nbthermo,,review
+35567946,pmirtarbase,0.0,,0.0,pmirtarbase,0.0,1,http://www.lwb-lab.cn/PmiRtarbase,200,,,,,,,,,,,pmirtarbase,,ok
+41171289,LCDD,0.0,lcdd,0.0,liposomal cancer drug database,0.0,1,https://bioinformaticscollege.ir/lcdd/,200,,,,,,,,,,,lcdd,CAPITALIZED,ok
+39074139,FURNA,0.0,furna,0.0,,0.0,1,https://seq2fun.dcmb.med.umich.edu/furna/,200,,,,,,,,,,,furna,CAPITALIZED,ok
+36796796,deepbio,0.0,,0.0,deepbio,0.0,1,https://inner.wei-group.net/DeepBIO,200,,,,,,,,,,,deepbio,,ok
+36321662,tisch2,0.0,tisch2,0.0,,0.0,1,http://tisch.comp-genomics.org/,200,,,,,,,,,,,tisch2,,ok
+37829020,tcmbank,0.0,,0.0,tcmbank,0.0,1,https://TCMBank.CN/,200,,,,,,,,,,,tcmbank,,ok
+40073641,polycrit,0.0,,0.0,polycrit,0.0,1,https://lccc.ywangcomp.org,200,,,,,,,,,,,polycrit,,ok
+40106419,hematlas,0.0,,0.0,hematlas,0.0,1,https://ngdc.cncb.ac.cn/hematlas/,200,,,,,,,,,,,hematlas,,ok
+35436998,PMTR,0.0,pmtr,0.0,,0.0,1,https://pmtrig.lumc.nl/,200,,,,,,,,,,,pmtr,CAPITALIZED,ok
+38337024,paneffect,0.0,,0.0,paneffect,0.0,1,https://www.maizegdb.org/effect/maize/,200,,,,,,,,,,,paneffect,,ok
+38632050,GAUSS,0.0,gauss,0.0,,0.0,1,https://statsleelab.github.io/gauss/,200,,,,,,,,,,,gauss,CAPITALIZED,review
+35994309,phosprof,0.0,,0.0,phosprof,0.0,1,https://phosprof.medals.jp/,200,,,,,,,,,,,phosprof,,ok
+38157107,biotreasury,0.0,,0.0,biotreasury,0.0,1,http://biotreasury.rjmart.cn,200,,,,,,,,,,,biotreasury,,ok
+39746417,CSMPDB,0.0,csmpdb,0.0,,0.0,1,http://myshiny.cpolar.io/CsMPDB,200,,,,,,,,,,,csmpdb,CAPITALIZED,ok
+36879236,RGT,0.0,rgt,0.0,,0.0,1,https://reg-gen.readthedocs.io,200,,,,,,,,,,,rgt,CAPITALIZED,ok
+37387152,COMIC,0.0,comic,0.0,,0.0,1,https://www.cbioportal.org/study/clinicalData?id=brca\_metabric,200,,,,,,,,,,,comic,CAPITALIZED,ok
+36305818,SPEED,0.0,speed,0.0,,0.0,1,http://8.142.154.29,200,,,,,,,,,,,speed,CAPITALIZED,ok
+36305824,lineage landscape,0.0,,0.0,lineage landscape,0.0,1,http://data.iscr.ac.cn/lineage/#/home,200,,,,,,,,,,,lineage landscape,,ok
+36305828,UORFDB,0.0,uorfdb,0.0,,0.0,1,https://www.bioinformatics.uni-muenster.de/tools/uorfdb,200,,,,,,,,,,,uorfdb,CAPITALIZED,ok
+39189447,plantcircrna,0.0,,0.0,plantcircrna,0.0,1,https://plant.deepbiology.cn/PlantCircRNA/,200,,,,,,,,,,,plantcircrna,,ok
+35388368,aop-wiki (aopwiki),0.0,,0.0,aop-wiki,0.0,1,https://aopwiki.rdf.bigcat-bioinformatics.org,200,,,,,,,,,,,aop-wiki,DISAMBIGUATED,ok
+37649366,subtlex-cy,0.0,subtlex-cy,0.0,,0.0,1,https://osf.io/9gkqm/,200,,,,,,,,,,,subtlex-cy,,ok
+36797409,SODB,0.0,sodb,0.0,,0.0,1,https://pysodb.readthedocs.io/en/latest/,200,,,,,,,,,,,sodb,CAPITALIZED,ok
+39386138,an open,0.0,,0.0,an open,0.0,1,https://osf.io/zexc4/,200,,,,,,,,,,,an open,,ok
+34634795,ZOVER,0.0,zover,0.0,,0.0,1,http://www.mgc.ac.cn/ZOVER,200,,,,,,,,,,,zover,CAPITALIZED,ok
+34634797,ensembl (covid-19),0.0,,0.0,ensembl,0.0,1,https://covid-19.ensembl.org,200,,,,,,,,,,,ensembl,DISAMBIGUATED,ok
+34634807,vthunter,0.0,,0.0,vthunter,0.0,1,https://db.cngb.org/VThunter/,200,,,,,,,,,,,vthunter,,ok
+40221859,plateletbase,0.0,,0.0,plateletbase,0.0,1,http://plateletbase.clinlabomics.org.cn/,200,,,,,,,,,,,plateletbase,,ok
+39582892,ECGA,0.0,ecga,0.0,,0.0,1,https://www.zhounan.org/ecga/,200,,,,,,,,,,,ecga,CAPITALIZED,ok
+37207327,resfinderfg,0.0,,0.0,resfinderfg | resfinder,0.0,1,https://cge.food.dtu.dk/services/ResFinderFG/,200,,,,,,,,,,,resfinderfg | resfinder,PIPE_CLEANED,ok
+37207333,sh2db,0.0,sh2db,0.0,,0.0,1,http://sh2db.ttk.hu,200,,,,,,,,,,,sh2db,,ok
+37207338,pandrugs2,0.0,,0.0,pandrugs2 | pandrugs,0.0,1,https://www.pandrugs.org/,200,,,,,,,,,,,pandrugs2 | pandrugs,PIPE_CLEANED,ok
+38747440,dsfworld,0.0,,0.0,dsfworld,0.0,1,https://gestwickilab.shinyapps.io/dsfworld/,200,,,,,,,,,,,dsfworld,,ok
+37207350,cenhancer,0.0,,0.0,cenhancer,0.0,1,http://cenhancer.chenzxlab.cn/,200,,,,,,,,,,,cenhancer,,ok
+35536198,BIOKIT,0.0,biokit,0.0,,0.0,1,https://pypi.org/project/jlsteenwyk-biokit/,200,,,,,,,,,,,biokit,CAPITALIZED,ok
+35061087,nucposdb,0.0,,0.0,nucposdb,0.0,1,https://generegulation.org/nucposdb/,200,,,,,,,,,,,nucposdb,,ok
+36519267,iorbase,0.0,,0.0,iorbase,0.0,1,https://www.iorbase.com,200,,,,,,,,,,,iorbase,,ok
+40254830,TAXSEA,0.0,taxsea,0.0,,0.0,1,https://shiny.taxsea.app,200,,,,,,,,,,,taxsea,CAPITALIZED,ok
+35536252,biotransformer,0.0,,0.0,biotransformer,0.0,1,https://biotransformer.ca,200,,,,,,,,,,,biotransformer,,ok
+36355452,comutdb,0.0,,0.0,comutdb,0.0,1,http://www.innovebioinfo.com/Database/CoMutDB/Home.php,200,,,,,,,,,,,comutdb,,ok
+37158271,CAVE,0.0,cave,0.0,,0.0,1,https://cave.biodesign.ac.cn/,200,,,,,,,,,,,cave,CAPITALIZED,ok
+37158278,GPS,0.0,gps,0.0,,0.0,1,https://gps.biocuckoo.cn,200,,,,,,,,,,,gps,CAPITALIZED,ok
+39484850,CASRDB,0.0,casrdb,0.0,,0.0,1,http://casrdb.mgh.harvard.edu,200,,,,,,,,,,,casrdb,CAPITALIZED,ok
+36453831,PDB (yzhang),0.0,pdb,0.0,covbinderinpdb,0.0,1,https://yzhang.hpc.nyu.edu/CovBinderInPDB,200,,,,,,,,,,,pdb,"CAPITALIZED,DISAMBIGUATED",ok
+35749381,MICNET,0.0,micnet,0.0,,0.0,1,http://micnetapplb-1212130533.us-east-1.elb.amazonaws.com,200,,,,,,,,,,,micnet,CAPITALIZED,ok
+39353863,AVM,0.0,avm,0.0,,0.0,1,http://www.bio-bigdata.center/AVM,200,,,,,,,,,,,avm,CAPITALIZED,ok
+37125646,PANGEA,0.0,pangea,0.0,,0.0,1,https://www.flyrnai.org/tools/pangea/,200,,,,,,,,,,,pangea,CAPITALIZED,ok
+35094056,disenrich,0.0,,0.0,disenrich,0.0,1,http://prodata.swmed.edu/DisEnrichDB/,200,,,,,,,,,,,disenrich,,ok
+38239810,MODMS,0.0,modms,0.0,,0.0,1,https://modms.lzu.edu.cn/,200,,,,,,,,,,,modms,CAPITALIZED,ok
+38043216,listiwiki,0.0,,0.0,listiwiki,0.0,1,http://listiwiki.uni-goettingen.de/,200,,,,,,,,,,,listiwiki,,ok
+38862425,gametesomics,0.0,,0.0,gametesomics,0.0,1,http://gametesomics.cn/,200,,,,,,,,,,,gametesomics,,ok
+38944368,mitopaddb,0.0,,0.0,mitopaddb,0.0,1,http://bicresources.jcbose.ac.in/ssaha4/mitopaddb/index.html,200,,,,,,,,,,,mitopaddb,,ok
+38715008,GRAVEN,0.0,graven,0.0,,0.0,1,http://www.graven.cn,200,,,,,,,,,,,graven,CAPITALIZED,ok
+36454018,genefriends,0.0,,0.0,genefriends,0.0,1,http://www.genefriends.org/,200,,,,,,,,,,,genefriends,,ok
+40402563,antigen-antibody complex database,0.0,,0.0,antigen-antibody complex database,0.0,1,http://i.uestc.edu.cn/AACDB,200,,,,,,,,,,,antigen-antibody complex database,,ok
+36388568,macadamiaggd,0.0,,0.0,macadamiaggd,0.0,1,http://MacadamiaGGD.net,200,,,,,,,,,,,macadamiaggd,,ok
+36847334,proteinfer,0.0,,0.0,proteinfer,0.0,1,https://google-research.github.io/proteinfer/,200,,,,,,,,,,,proteinfer,,review
+39436017,RMVAR,0.0,rmvar,0.0,,0.0,1,http://rmvar.renlab.cn,200,,,,,,,,,,,rmvar,CAPITALIZED,ok
+39436020,dionysus,0.0,dionysus,0.0,,0.0,1,http://www.dsimb.inserm.fr/DIONYSUS/,200,,,,,,,,,,,dionysus,,ok
+39436035,METSDB,0.0,metsdb,0.0,,0.0,1,https://relab.xidian.edu.cn/metsDB/,200,,,,,,,,,,,metsdb,CAPITALIZED,ok
+38829853,fishtedb,0.0,,0.0,fishtedb,0.0,1,https://www.fishtedb.com/,200,,,,,,,,,,,fishtedb,,ok
+39731018,lcrannotationsdb,0.0,,0.0,lcrannotationsdb,0.0,1,https://lcrannotdb.lcr-lab.org/,200,,,,,,,,,,,lcrannotationsdb,,ok
+36519835,COMER,0.0,comer,0.0,,0.0,1,https://bioinformatics.lt/comer,200,,,,,,,,,,,comer,CAPITALIZED,ok
+38272936,avdos-vr,0.0,avdos-vr,0.0,,0.0,1,http://www.gnacek.com/affective-video-database-online-study,200,,,,,,,,,,,avdos-vr,,ok
+35274672,DPI,0.0,dpi,0.0,bridgedpi,0.0,1,http://dude.docking.org/,200,,,,,,,,,,,dpi,CAPITALIZED,ok
+39944117,GUTBUG (metabiosys),0.0,gutbug,0.0,gutbugdb,0.0,1,https://metabiosys.iiserb.ac.in/gutbugdb/,200,,,,,,,,,,,gutbug,"CAPITALIZED,DISAMBIGUATED",ok
+35536846,thermobase,0.0,,0.0,thermobase,0.0,1,http://togodb.org/db/thermobase,200,,,,,,,,,,,thermobase,,ok
+39436241,ERYDB,0.0,erydb,0.0,,0.0,1,https://ngdc.cncb.ac.cn/EryDB/home,200,,,,,,,,,,,erydb,CAPITALIZED,ok
+39436255,NEOTCR,0.0,neotcr,0.0,,0.0,1,http://neotcrdb.bioxai.cn/,200,,,,,,,,,,,neotcr,CAPITALIZED,ok
+34570216,spencer,0.0,spencer,0.0,,0.0,1,http://spencer.renlab.org,200,,,,,,,,,,,spencer,,ok
+34570217,vannoportal,0.0,,0.0,vannoportal,0.0,1,http://mulinlab.org/vportal,200,,,,,,,,,,,vannoportal,,ok
+34570219,g protein,0.0,,0.0,g protein | gproteindb,0.0,1,https://gproteindb.org,200,,,,,,,,,,,g protein | gproteindb,PIPE_CLEANED,ok
+34570230,ctr-db,0.0,ctr-db,0.0,,0.0,1,http://ctrdb.ncpsb.org.cn/,200,,,,,,,,,,,ctr-db,,ok
+35078134,UALCAN,0.0,ualcan,0.0,,0.0,1,http://ualcan.path.uab.edu,200,,,,,,,,,,,ualcan,CAPITALIZED,ok
+"34850943, 36350640, 37889039, 39558184",genbank,0.0,,0.0,genbank,0.0,4,https://www.ncbi.nlm.nih.gov/genbank/,200,,,,,,,,,,,genbank,,ok
+"34788843, 37941124, 38713862",reactome,0.0,,0.0,reactome,0.0,3,https://reactome.org,200,,,,,,,,,,,reactome,,ok
+36520016,tiresia,0.0,tiresia,0.0,explainable,0.0,1,http://tiresia.uniba.it,200,,,,,,,,,,,tiresia,,ok
+38912109,INS,0.0,ins,0.0,,0.0,1,https://www.ins.gov.co/Paginas/Inicio.aspx,200,,,,,,,,,,,ins,CAPITALIZED,ok
+35913976,micloud,0.0,,0.0,micloud,0.0,1,http://micloud.kr,200,,,,,,,,,,,micloud,,ok
+39535034,oncosexome,0.0,,0.0,oncosexome,0.0,1,https://idrblab.org/OncoSexome/,200,,,,,,,,,,,oncosexome,,ok
+37995323,IPOP,0.0,ipop,0.0,,0.0,1,http://omicstudio.cloud:4012/ipod/,200,,,,,,,,,,,ipop,CAPITALIZED,ok
+35849027,CHEM,0.0,chem,0.0,,0.0,1,https://www.ncbi.nlm.nih.gov/research/coronavirus/,200,,,,,,,,,,,chem,CAPITALIZED,ok
+38224813,pra-pred,0.0,,0.0,pra-pred,0.0,1,https://web.iitm.ac.in/bioinfo2/prapred/,200,,,,,,,,,,,pra-pred,,ok
+37897348,viralzone,0.0,,0.0,viralzone,0.0,1,http://viralzone.expasy.org,200,,,,,,,,,,,viralzone,,ok
+37897362,MACC,0.0,macc,0.0,,0.0,1,http://macc.badd-cao.net/,200,,,,,,,,,,,macc,CAPITALIZED,ok
+39192052,VCAT,0.0,vcat,0.0,,0.0,1,https://biomed.nscc-gz.cn/zhaolab/VCAT/,200,,,,,,,,,,,vcat,CAPITALIZED,ok
+40011321,subtlex-ar,0.0,subtlex-ar,0.0,,0.0,1,https://subtlexar.uaeu.ac.ae/,200,,,,,,,,,,,subtlex-ar,,ok
+37898309,rcov19,0.0,rcov19,0.0,,0.0,1,https://ngdc.cncb.ac.cn/ncov/,200,,,,,,,,,,,rcov19,,ok
+35227770,pubchem,0.0,,0.0,pubchem,0.0,1,https://pubchem.ncbi.nlm.nih.gov,200,,,,,,,,,,,pubchem,,ok
+37784172,GENARK,0.0,genark,0.0,,0.0,1,https://hgdownload.soe.ucsc.edu/hubs/,200,,,,,,,,,,,genark,CAPITALIZED,ok
+39373514,orgxenomics,0.0,,0.0,orgxenomics,0.0,1,https://idrblab.org/orgxenomics/,200,,,,,,,,,,,orgxenomics,,ok
+39013340,regulatory network,0.0,,0.0,regulatory network,0.0,1,https://pypi.org/project/geneci/,200,,,,,,,,,,,regulatory network,,ok
+38997477,HUT,0.0,hut | heptad,0.0,,0.0,1,https://freeshell.de/~badong/hut.htm,200,,,,,,,,,,,hut | heptad,"PIPE_CLEANED,CAPITALIZED",ok
+36458799,nlm-chem,0.0,,0.0,nlm-chem,0.0,1,https://ftp.ncbi.nlm.nih.gov/pub/lu/NLM-Chem-BC7-corpus/,200,,,,,,,,,,,nlm-chem,,ok
+40063348,vitaldb,0.0,,0.0,vitaldb,0.0,1,https://compbio.iitr.ac.in/vitaldb,200,,,,,,,,,,,vitaldb,,ok
+39555474,easy-moda,0.0,,0.0,easy-moda | enalos cloud platform,0.0,1,https://www.enaloscloud.novamechanics.com/insight/moda/,200,,,,,,,,,,,easy-moda | enalos cloud platform,PIPE_CLEANED,ok
+35639733,omicsnet,0.0,,0.0,omicsnet,0.0,1,http://www.omicsnet.ca,200,,,,,,,,,,,omicsnet,,ok
+37819028,singpro,0.0,,0.0,singpro,0.0,1,http://idrblab.org/singpro/,200,,,,,,,,,,,singpro,,ok
+35230423,genbank (submit),0.0,,0.0,genbank,0.0,1,https://submit.ncbi.nlm.nih.gov/sarscov2/genbank/,200,,,,,,,,,,,genbank,DISAMBIGUATED,ok
+37884796,nextpyp,0.0,,0.0,nextpyp,0.0,1,http://nextpyp.app,200,,,,,,,,,,,nextpyp,,ok
+37590326,BALDR,0.0,baldr,0.0,,0.0,1,https://baldr.cpr.ku.dk,200,,,,,,,,,,,baldr,CAPITALIZED,ok
+36755307,xenbase,0.0,,0.0,xenbase | xenopus model organism,0.0,1,https://www.xenbase.org/,200,,,,,,,,,,,xenbase | xenopus model organism,PIPE_CLEANED,ok
+35346379,regulatory circuits,0.0,,0.0,regulatory circuits,0.0,1,https://regulatorycircuits-lod.genouest.org,200,,,,,,,,,,,regulatory circuits,,ok
+36624399,GBCDB,0.0,gbcdb,0.0,,0.0,1,http://tmliang.cn/gbc/,200,,,,,,,,,,,gbcdb,CAPITALIZED,ok
+38213701,ratdegdb,0.0,,0.0,ratdegdb,0.0,1,https://www.sysbio.ru/RatDEGdb,200,,,,,,,,,,,ratdegdb,,ok
+39360619,PDCDB,0.0,pdcdb,0.0,,0.0,1,https://idrblab.org/PDCdb/,200,,,,,,,,,,,pdcdb,CAPITALIZED,ok
+35264663,gontosim,0.0,,0.0,gontosim,0.0,1,http://www.cbrlab.org/GOntoSim.html,200,,,,,,,,,,,gontosim,,ok
+37460312,thermusq,0.0,,0.0,thermusq,0.0,1,https://www.thermusq.net/,200,,,,,,,,,,,thermusq,,ok
+39935019,IAMPDB,0.0,iampdb,0.0,,0.0,1,https://bblserver.org.in/iampdb/,200,,,,,,,,,,,iampdb,CAPITALIZED,ok
+36478084,biological magnetic resonance data bank,0.0,,0.0,biological magnetic resonance data bank,0.0,1,https://bmrb.io,200,,,,,,,,,,,biological magnetic resonance data bank,,ok
+36330927,qtlbase2,0.0,,0.0,qtlbase2 | qtlbase,0.0,1,http://mulinlab.org/qtlbase,200,,,,,,,,,,,qtlbase2 | qtlbase,PIPE_CLEANED,ok
+39329269,circakb,0.0,,0.0,circakb,0.0,1,https://cdsic.njau.edu.cn/CircaKB,200,,,,,,,,,,,circakb,,ok
+40328737,HIBC,0.0,hibc,0.0,,0.0,1,https://www.hibc.rwth-aachen.de,200,,,,,,,,,,,hibc,CAPITALIZED,ok
+37953308,stemdriver,0.0,,0.0,stemdriver,0.0,1,http://biomedbdc.wchscu.cn/StemDriver/,200,,,,,,,,,,,stemdriver,,ok
+37986224,tarbase,0.0,,0.0,tarbase,0.0,1,https://dianalab.e-ce.uth.gr/tarbasev9,200,,,,,,,,,,,tarbase,,ok
+37986230,DRMREF,0.0,drmref,0.0,,0.0,1,https://ccsm.uth.edu/DRMref/,200,,,,,,,,,,,drmref,CAPITALIZED,ok
+34791357,FUZDB,0.0,fuzdb,0.0,,0.0,1,https://fuzdb.org,200,,,,,,,,,,,fuzdb,CAPITALIZED,ok
+35659771,inflamnat,0.0,,0.0,inflamnat,0.0,1,http://www.inflamnat.com/,200,,,,,,,,,,,inflamnat,,ok
+35037224,reactome (plantreactome),0.0,,0.0,reactome | pubchem,0.0,1,https://plantreactome.gramene.org,200,,,,,,,,,,,reactome | pubchem,"PIPE_CLEANED,DISAMBIGUATED",ok
+37822561,ascaris,0.0,ascaris,0.0,,0.0,1,https://huggingface.co/spaces/HUBioDataLab/ASCARIS,200,,,,,,,,,,,ascaris,,ok
+40100137,PDBE,0.0,pdbe | pdb,0.0,protein data bank,0.0,1,https://pdbe.org/chem/sti,200,,,,,,,,,,,pdbe | pdb,"PIPE_CLEANED,CAPITALIZED",ok
+40133793,protein data bank japan,0.0,,0.0,protein data bank japan,0.0,1,https://pdbj.org/,200,,,,,,,,,,,protein data bank japan,,ok
+37971299,DDBJ,0.0,ddbj,0.0,metabobank,0.0,1,https://www.ddbj.nig.ac.jp,200,,,,,,,,,,,ddbj,CAPITALIZED,ok
+39380489,DDBJ,0.0,ddbj,0.0,,0.0,1,https://www.ddbj.nig.ac.jp,200,,,,,,,,,,,ddbj,CAPITALIZED,ok
+37971715,agbiodata,0.0,,0.0,agbiodata,0.0,1,https://www.agbiodata.org/,200,,,,,,,,,,,agbiodata,,ok
+36300629,ianimal,0.0,,0.0,ianimal,0.0,1,https://ianimal.pro/,200,,,,,,,,,,,ianimal,,ok
+36399503,dbcan-seq,0.0,,0.0,dbcan-seq,0.0,1,https://bcb.unl.edu/dbCAN_seq,200,,,,,,,,,,,dbcan-seq,,ok
+40167918,somalogic,0.0,,0.0,somalogic,0.0,1,https://somalogic.com/somascan-platform,200,,,,,,,,,,,somalogic,,ok
+37530223,milletdb,0.0,,0.0,milletdb,0.0,1,http://milletdb.novogene.com,200,,,,,,,,,,,milletdb,,ok
+38529759,fungidb,0.0,,0.0,fungidb,0.0,1,https://fungidb.org,200,,,,,,,,,,,fungidb,,ok
+37874948,prosperousplus,0.0,,0.0,prosperousplus,0.0,1,http://prosperousplus.unimelb-biotools.cloud.edu.au/,200,,,,,,,,,,,prosperousplus,,ok
+39530225,DBSNP,0.0,dbsnp,0.0,,0.0,1,https://www.ncbi.nlm.nih.gov/snp,200,,,,,,,,,,,dbsnp,CAPITALIZED,ok
+39530237,polyasite,0.0,,0.0,polyasite,0.0,1,https://polyasite.unibas.ch/,200,,,,,,,,,,,polyasite,,ok
+37974076,PRANA,0.0,prana,0.0,,0.0,1,https://cran.r-project.org/web/packages/PRANA/index.html,200,,,,,,,,,,,prana,CAPITALIZED,ok
+34664659,NPCDR,0.0,npcdr,0.0,natural product-based drug combination and its disease-specific molecular regulation,0.0,1,https://idrblab.org/npcdr/,200,,,,,,,,,,,npcdr,CAPITALIZED,ok
+37843156,BIOKA,0.0,bioka,0.0,biomarker knowledgebase for animals,0.0,1,https://ngdc.cncb.ac.cn/bioka,200,,,,,,,,,,,bioka,CAPITALIZED,ok
+37221245,phaeoepiview,0.0,,0.0,phaeoepiview,0.0,1,https://PhaeoEpiView.univ-nantes.fr,200,,,,,,,,,,,phaeoepiview,,ok
+39253011,pungentdb,0.0,,0.0,pungentdb,0.0,1,http://www.pungentdb.org.cn/home,200,,,,,,,,,,,pungentdb,,ok
+40645675,MDDB,0.0,mddb,0.0,,0.0,1,https://mddb.nitrr.ac.in/,200,,,,,,,,,,,mddb,CAPITALIZED,ok
+38630617,rnascape,0.0,,0.0,rnascape,0.0,1,https://rnascape.usc.edu/,200,,,,,,,,,,,rnascape,,ok
+36484479,EMATI,0.0,emati,0.0,,0.0,1,https://emati.biotec.tu-dresden.de,200,,,,,,,,,,,emati,CAPITALIZED,ok
+36255213,pharmakovariome,0.0,,0.0,pharmakovariome,0.0,1,http://www.pharmakovariome.com/,200,,,,,,,,,,,pharmakovariome,,ok
+34551435,pncshub,0.0,,0.0,pncshub,0.0,1,https://pncshub.erc.monash.edu/,200,,,,,,,,,,,pncshub,,ok
+37811889,SOYMD,0.0,soymd,0.0,,0.0,1,https://yanglab.hzau.edu.cn/SoyMD/#/,200,,,,,,,,,,,soymd,CAPITALIZED,ok
+35190711,contrast,0.0,,0.0,contrast,0.0,1,https://ContrastDB.tau.ac.il,200,,,,,,,,,,,contrast,,ok
+37566638,CHRR,0.0,chrr,0.0,,0.0,1,https://jugit.fz-juelich.de/IBG-1/ModSim/fluxomics/chrrt,200,,,,,,,,,,,chrr,CAPITALIZED,ok
+40630734,pubplant,0.0,,0.0,pubplant,0.0,1,https://www.plabipd.de/pubplant_main.html,200,,,,,,,,,,,pubplant,,ok
+36289281,reactome (dar),0.0,,0.0,reactome,0.0,1,https://dar.biocomp.unibo.it,200,,,,,,,,,,,reactome,DISAMBIGUATED,ok
+36420889,DDBJ,0.0,ddbj,0.0,dna data bank of japan,0.0,1,https://www.ddbj.nig.ac.jp,200,,,,,,,,,,,ddbj,CAPITALIZED,ok
+35536253,BIOUML,0.0,biouml,0.0,,0.0,1,https://www.biouml.org,200,,,,,,,,,,,biouml,CAPITALIZED,ok
+34520557,GTDB,0.0,gtdb,0.0,,0.0,1,https://gtdb.ecogenomic.org,200,,,,,,,,,,,gtdb,CAPITALIZED,ok
+37125649,dbcan3,0.0,dbcan3 | dbcan,0.0,,0.0,1,https://bcb.unl.edu/dbCAN2,200,,,,,,,,,,,dbcan3 | dbcan,PIPE_CLEANED,ok
+38469247,colptmscape,0.0,,0.0,colptmscape,0.0,1,https://colptmscape.iitmandi.ac.in/,200,,,,,,,,,,,colptmscape,,ok
+39435987,flyrnai,0.0,,0.0,flyrnai,0.0,1,https://fgr.hms.harvard.edu/tools,200,,,,,,,,,,,flyrnai,,ok
+36409390,plant intron-splicing efficiency database,0.99434364,,0.99434364,plant intron-splicing efficiency database,0.99434364,1,https://plantintron.com/,200,,,,,,,,,,,plant intron-splicing efficiency database,,ok
+39722525,acidbasepred,0.9961173,,0.9961173,acidbasepred,0.9961173,1,https://enzymepred.biodesign.ac.cn,200,,,,,,,,,,,acidbasepred,,ok
+36710661,MHA,0.9932817,mha,0.9932817,,0.9932817,1,http://malehealthatlas.cn/,200,,,,,,,,,,,mha,CAPITALIZED,ok
+37440307,CRACT,0.8316586,cract,0.8316586,,0.8316586,1,https://clinicaltrials.gov/ct2/show/NCT04994093,200,,,,,,,,,,,cract,CAPITALIZED,review
+39198545,emotional palette,0.5109163,,0.5109163,emotional palette,0.5109163,1,https://barradeau.com/2021/emotions-map/,200,,,,,,,,,,,emotional palette,,ok
+37979962,umd-vhl,0.0,umd-vhl,0.0,,0.0,1,http://www.umd.be/VHL/,200,,,,,,,,,,,umd-vhl,,ok
+39520405,computed authors in 2024,0.0,,0.0,computed authors in 2024,0.0,1,https://www.ncbi.nlm.nih.gov/research/bionlp/APIs/authors/,200,,,,,,,,,,,computed authors in 2024,,ok
+39162009,database tool integrating genomic and pharmacologic data from adrenocortical carcinoma cell lines,0.0,,0.0,database tool integrating genomic and pharmacologic data from adrenocortical carcinoma cell lines,0.0,1,https://discover.nci.nih.gov/acc_cellminercdb,200,,,,,,,,,,,database tool integrating genomic and pharmacologic data from adrenocortical carcinoma cell lines,,ok
+39539268,complex inhibitory activity of pentacyclic triterpenoids against cutaneous melanoma in vitro and in vivo,0.0,,0.0,complex inhibitory activity of pentacyclic triterpenoids against cutaneous melanoma in vitro and in vivo,0.0,1,http://www.pipts-db.ru/,200,,,,,,,,,,,complex inhibitory activity of pentacyclic triterpenoids against cutaneous melanoma in vitro and in vivo,,ok
+38150626,druggen,0.0,,0.0,druggen,0.0,1,https://cmach.sjtu.edu.cn/drug/,200,,,,,,,,,,,druggen,,ok
+34762062,global covid-19 virus registry database,0.0,,0.0,global covid-19 virus registry database,0.0,1,https://clinicaltrials.gov/ct2/show/NCT04323787,200,,,,,,,,,,,global covid-19 virus registry database,,review
+39005953,newabstractconcepts,0.0,,0.0,newabstractconcepts,0.0,1,https://osf.io/svm2p/,200,,,,,,,,,,,newabstractconcepts,,ok
+36549590,native size-exclusion chromatography-based mass spectrometry reveals new components of the early heat shock protein 90 inhibition response among limited global changes,0.0,,0.0,native size-exclusion chromatography-based mass spectrometry reveals new components of the early heat shock protein 90 inhibition response among limited global changes,0.0,1,https://www.bioinformatics.babraham.ac.uk/shiny/HSP90/SEC-MS/,200,,,,,,,,,,,native size-exclusion chromatography-based mass spectrometry reveals new components of the early heat shock protein 90 inhibition response among limited global changes,,ok
+40140564,human brain map of mitochondrial respiratory capacity and diversity,0.0,,0.0,human brain map of mitochondrial respiratory capacity and diversity,0.0,1,http://humanmitobrainmap.bcblab.com,200,,,,,,,,,,,human brain map of mitochondrial respiratory capacity and diversity,,ok
+35792866,biological misinterpretation of transcriptional signatures in tumor samples can unknowingly undermine mechanistic understanding and faithful alignment with preclinical data,0.0,,0.0,biological misinterpretation of transcriptional signatures in tumor samples can unknowingly undermine mechanistic understanding and faithful alignment with preclinical data,0.0,1,https://confoundr.qub.ac.uk/,200,,,,,,,,,,,biological misinterpretation of transcriptional signatures in tumor samples can unknowingly undermine mechanistic understanding and faithful alignment with preclinical data,,ok
+37481260,rhodoexplorer platform for red algal genomics and whole-genome assemblies for several gracilaria species,0.0,,0.0,rhodoexplorer platform for red algal genomics and whole-genome assemblies for several gracilaria species,0.0,1,https://rhodoexplorer.sb-roscoff.fr,200,,,,,,,,,,,rhodoexplorer platform for red algal genomics and whole-genome assemblies for several gracilaria species,,ok
+38755321,pebblescout,0.99874187,,0.99874187,pebblescout,0.99874187,1,https://pebblescout.ncbi.nlm.nih.gov,200,,,,,,,,,,,pebblescout,,ok
+35659285,USP,0.99736756,usp,0.99736756,,0.99736756,1,https://statepolicies.com/,200,,,,,,,,,,,usp,CAPITALIZED,ok
+35390003,MID,0.99732137,mid,0.99732137,,0.99732137,1,http://mouse.biomedtzc.cn,200,,,,,,,,,,,mid,CAPITALIZED,ok
+38951917,wheatcnvb,0.9970181,,0.9970181,wheatcnvb,0.9970181,1,http://wheat.cau.edu.cn/WheatCNVb/,200,,,,,,,,,,,wheatcnvb,,ok
+35183229,3d-scere,0.9967697,,0.9967697,3d-scere,0.9967697,1,https://3d-scere.ijm.fr/,200,,,,,,,,,,,3d-scere,,ok
+38585015,PFGD,0.9966645,pfgd,0.9966645,,0.9966645,1,http://pfgd.bio2db.com/,200,,,,,,,,,,,pfgd,CAPITALIZED,ok
+38816550,CAWA,0.99497527,cawa,0.99497527,,0.99497527,1,http://mengwanglab.org/atlas,200,,,,,,,,,,,cawa,CAPITALIZED,ok
+39047941,PBMGC,0.9945351,pbmgc,0.9945351,,0.9945351,1,https://ciods.in/gcpdb/,200,,,,,,,,,,,pbmgc,CAPITALIZED,ok
+36964722,sprof-go,0.9932138,sprof-go,0.9932138,,0.9932138,1,http://bio-web1.nscc-gz.cn/app/sprof-go,200,,,,,,,,,,,sprof-go,,ok
+40366734,omolvar,0.9930827,,0.9930827,omolvar,0.9930827,1,https://rarevariants.org/HomolVar,200,,,,,,,,,,,omolvar,,ok
+39722871,miso2,0.9909606,miso2,0.9909606,,0.9909606,1,http://jie.click/badges,200,,,,,,,,,,,miso2,,ok
+35933489,qs-dmd,0.9889116,qs-dmd,0.9889116,,0.9889116,1,http://www.qsdmd.lbci.net/,200,,,,,,,,,,,qs-dmd,,ok
+39993325,complexity of gpcr modulation and signaling,0.98821664,,0.98821664,complexity of gpcr modulation and signaling,0.98821664,1,https://bio.tools/t?domain=gpcr,200,,,,,,,,,,,complexity of gpcr modulation and signaling,,ok
+36894999,pacnacs,0.98336816,pacnacs,0.98336816,,0.98336816,1,http://csvs.clinbioinfosspa.es/spacnacs/,200,,,,,,,,,,,pacnacs,,ok
+38834718,NPPRED,0.9777435,nppred,0.9777435,,0.9777435,1,https://neuropred.anvil.app,200,,,,,,,,,,,nppred,CAPITALIZED,ok
+39404887,BIJ,0.9767792,bij,0.9767792,,0.9767792,1,https://bij.cuh.ac.in/,200,,,,,,,,,,,bij,CAPITALIZED,ok
+37864836,icatmar,0.9742117,icatmar,0.9742117,,0.9742117,1,http://www.icatmar.cat,200,,,,,,,,,,,icatmar,,ok
+35789323,danio-code,0.9738676,danio-code,0.9738676,,0.9738676,1,https://danio-code.zfin.org,200,,,,,,,,,,,danio-code,,ok
+35758810,AKL,0.96740603,akl,0.96740603,,0.96740603,1,https://cran.r-project.org/web/packages/MAKL,200,,,,,,,,,,,akl,CAPITALIZED,ok
+39050757,resolute,0.96643907,resolute,0.96643907,,0.96643907,1,https://re-solute.eu,200,,,,,,,,,,,resolute,,ok
+37672022,JADBIO,0.9537655,jadbio,0.9537655,,0.9537655,1,https://ega-archive.org/,200,,,,,,,,,,,jadbio,CAPITALIZED,ok
+39658207,umatrix,0.9519903,,0.9519903,umatrix,0.9519903,1,https://cran.r-project.org/package=Umatrix,200,,,,,,,,,,,umatrix,,ok
+37528331,pace life investigation database,0.9489579,,0.9489579,pace life investigation database,0.9489579,1,http://bidd.group/spacelid/,200,,,,,,,,,,,pace life investigation database,,ok
+36084380,acvacdb,0.92913455,,0.92913455,acvacdb,0.92913455,1,https://webs.iiitd.edu.in/raghava/bacvacdb/,200,,,,,,,,,,,acvacdb,,ok
+35305080,oct mice eye,0.92741317,,0.92741317,oct mice eye,0.92741317,1,https://mip2019.github.io/spsvm,200,,,,,,,,,,,oct mice eye,,review
+39534537,genomes on a tree,0.91279393,,0.91279393,genomes on a tree,0.91279393,1,https://goat.genomehubs.org/,200,,,,,,,,,,,genomes on a tree,,ok
+40234567,gbm-coregmap,0.8977377,,0.8977377,gbm-coregmap,0.8977377,1,https://gbm.cregmap.com,200,,,,,,,,,,,gbm-coregmap,,ok
+39812795,reference materials search tool,0.886599,,0.886599,reference materials search tool,0.886599,1,https://odsrmst.od.nih.gov/,200,,,,,,,,,,,reference materials search tool,,ok
+38327356,mapppdr,0.86065584,,0.86065584,mapppdr,0.86065584,1,http://www.penguinmap.com,200,,,,,,,,,,,mapppdr,,ok
+35134833,genome sample resource,0.841924,,0.841924,genome sample resource,0.841924,1,https://www.ncbi.nlm.nih.gov/genome,200,,,,,,,,,,,genome sample resource,,ok
+35654892,QSCN,0.7953949,qscn,0.7953949,,0.7953949,1,http://www.qshgm.lbci.net/,200,,,,,,,,,,,qscn,CAPITALIZED,ok
+35508965,CORN,0.76480436,corn,0.76480436,,0.76480436,1,http://www.plant.osakafu-u.ac.jp/~kagiana/vcorn/sarscov2/,200,,,,,,,,,,,corn,CAPITALIZED,ok
+36920090,alphafold2,0.7022952,,0.7022952,alphafold2,0.7022952,1,http://zhanglab-bioinf.com/DeepIDDP/,200,,,,,,,,,,,alphafold2,,ok
+39937662,genome database,0.6804791,,0.6804791,genome database,0.6804791,1,http://www.citrusgenomedb.org,200,,,,,,,,,,,genome database,,ok
+39780059,NLP,0.68039405,nlp,0.68039405,,0.68039405,1,https://claramed.csic.es/medspaner,200,,,,,,,,,,,nlp,CAPITALIZED,ok
+40860433,cap medicine in breast,0.67877084,,0.67877084,cap medicine in breast,0.67877084,1,https://capbc.hiplot.com.cn,200,,,,,,,,,,,cap medicine in breast,,ok
+35810958,CIRRBP,0.67199403,cirrbp,0.67199403,,0.67199403,1,http://www.bioinformatics.team,200,,,,,,,,,,,cirrbp,CAPITALIZED,ok
+37554180,ATLAS,0.65153867,atlas,0.65153867,,0.65153867,1,http://www.mskca.tech,200,,,,,,,,,,,atlas,CAPITALIZED,ok
+38500042,via pseudo,0.6482444,,0.6482444,via pseudo,0.6482444,1,https://CRAN.R-project.org/package=SOHPIE,200,,,,,,,,,,,via pseudo,,ok
+35042860,eural network-based cell annotation,0.64290863,,0.64290863,eural network-based cell annotation,0.64290863,1,https://bioconductor.org/packages/NeuCA,200,,,,,,,,,,,eural network-based cell annotation,,ok
+39571792,human pgc database,0.61266357,,0.61266357,human pgc database,0.61266357,1,http://43.131.248.15:6882,200,,,,,,,,,,,human pgc database,,ok
+36454444,netpath,0.0,,0.0,netpath | wikipathways | https://www.wikipathways.org/index.php/,0.0,1,https://www.wikipathways.org/index.php/,200,,,,,,,,,,,netpath | wikipathways | https://www.wikipathways.org/index.php/,PIPE_CLEANED,ok
+35962986,SADA,0.0,sada | demo | aida,0.0,sada.<h4,0.0,1,http://zhanglab-bioinf.com/SADA,200,,,,,,,,,,,sada | demo | aida,"PIPE_CLEANED,CAPITALIZED",ok
+35881481,https://structural-server.kinametrix.com/.,0.0,,0.0,https://structural-server.kinametrix.com/.,0.0,1,https://structural-server.kinametrix.com/,200,,,,,,,,,,,https://structural-server.kinametrix.com/.,,ok
+39158353,CTCAE,0.0,ctcae,0.0,openclinica,0.0,1,https://clinicaltrials.gov/study/NCT01042379,200,,,,,,,,,,,ctcae,CAPITALIZED,review
+36340350,COST,0.0,cost | vitviz,0.0,gene-<i | transmetadb,0.0,1,https://tomsbiolab.com/vitviz,200,,,,,,,,,,,cost | vitviz,"PIPE_CLEANED,CAPITALIZED",ok
+39240871,aquaculture nutrient removal calculator tool https://connect.fisheries.noaa.gov/anrc/ based on this analysis,0.0,,0.0,aquaculture nutrient removal calculator tool https://connect.fisheries.noaa.gov/anrc/ based on this analysis,0.0,1,https://connect.fisheries.noaa.gov/ANRC/,200,,,,,,,,,,,aquaculture nutrient removal calculator tool https://connect.fisheries.noaa.gov/anrc/ based on this analysis,,ok
+34850161,CAZY,0.0,cazy,0.0,genbank,0.0,1,http://www.cazy.org,200,,,,,,,,,,,cazy,CAPITALIZED,ok
+35735230,mouse genome informatics (tools),0.0,,0.0,mouse genome informatics | https://tools.nf.synapse.org/.,0.0,1,https://tools.nf.synapse.org/,200,,,,,,,,,,,mouse genome informatics | https://tools.nf.synapse.org/.,"PIPE_CLEANED,DISAMBIGUATED",ok
+36571479,neuminer,0.0,,0.0,neuminer | brain image library,0.0,1,https://doi.brainimagelibrary.org/doi/10.35077/g.25,200,,,,,,,,,,,neuminer | brain image library,PIPE_CLEANED,ok
+35703370,SPN,0.0,spn,0.0,,0.0,1,https://osf.io/2sncj/,200,,,,,,,,,,,spn,CAPITALIZED,ok
+40996715,KASP,0.0,kasp,0.0,kastrackdb,0.0,1,https://kastrack.crea.gov.it/kastrackdb/?lang=en,200,,,,,,,,,,,kasp,CAPITALIZED,ok
+35508507,MLC,0.0,mlc,0.0,,0.0,1,http://semantichub.ijs.si/MLCdatasets,200,,,,,,,,,,,mlc,CAPITALIZED,ok
+39866666,metagenomicsdb,0.0,,0.0,metagenomicsdb | http://github.com/iob-muenster/metagenomicsdb,0.0,1,http://www.bioinformatics.uni-muenster.de/tools/metagenomicsDB,200,,,,,,,,,,,metagenomicsdb | http://github.com/iob-muenster/metagenomicsdb,PIPE_CLEANED,ok
+39932865,PLINK,0.0,plink,0.0,,0.0,1,https://www.cog-genomics.org/plink/2.0/,200,,,,,,,,,,,plink,CAPITALIZED,ok
+40523076,MZMINE,0.0,mzmine,0.0,antdas-profiler,0.0,1,http://www.pmdb.org.cn/antdasprofiler,200,,,,,,,,,,,mzmine,CAPITALIZED,ok
+37737859,the foundations of cancer care,0.0,,0.0,the foundations of cancer care | learning hub,0.0,1,https://learninghub.nhs.uk,200,,,,,,,,,,,the foundations of cancer care | learning hub,PIPE_CLEANED,ok
+39867820,world health organization,0.0,,0.0,world health organization,0.0,1,https://dash.drwater.net/antiboard/,200,,,,,,,,,,,world health organization,,ok
+37230405,glutknois,0.0,,0.0,glutknois,0.0,1,https://sing-group.org/glutknois/,200,,,,,,,,,,,glutknois,,ok
+40261741,KC,0.0,kc,0.0,cancer epidemiol biomarkers prev 2020;29:1887-903 | https://doi.org/10.1158/1055-9965.epi-19-1346 | kc-assay,0.0,1,https://kcad.cchem.berkeley.edu,200,,,,,,,,,,,kc,"SHORT_NAME_FLAGGED,CAPITALIZED",ok
+38886537,GMGD,0.0,gmgd | dbsnp,0.0,guizhou multi-ethnic genome database,0.0,1,https://db.cngb.org/pop/gmgd/,200,,,,,,,,,,,gmgd | dbsnp,"PIPE_CLEANED,CAPITALIZED",ok
+37084387,animal quantitative trait loci database,0.0,,0.0,animal quantitative trait loci database,0.0,1,https://www.animalgenome.org/PGNET/,200,,,,,,,,,,,animal quantitative trait loci database,,ok
+39968379,genbank (online-group-1-intron-database),0.0,,0.0,genbank | https://www.ebi.ac.uk/biostudies/studies/s-bsst1399,0.0,1,https://online-group-1-intron-database.onrender.com,200,,,,,,,,,,,genbank | https://www.ebi.ac.uk/biostudies/studies/s-bsst1399,"PIPE_CLEANED,DISAMBIGUATED",ok
+35561185,TCGA,0.0,tcga,0.0,the cancer genome atlas,0.0,1,https://portal.gdc.cancer.gov/,200,,,,,,,,,,,tcga,CAPITALIZED,ok
+37773106,SEER (loyal-brand-611803),0.0,seer | lcss,0.0,lscc)-specific,0.0,1,https://loyal-brand-611803.framer.app/,200,,,,,,,,,,,seer | lcss,"PIPE_CLEANED,CAPITALIZED,DISAMBIGUATED",ok
+37953362,MDDB (bioexcel-cv19),0.0,mddb,0.0,bioexcel,0.0,1,https://bioexcel-cv19.bsc.es/#/,200,,,,,,,,,,,mddb,"CAPITALIZED,DISAMBIGUATED",ok
+36347894,HGNC,0.0,hgnc,0.0,,0.0,1,http://www.hipc-dashboard.org,200,,,,,,,,,,,hgnc,CAPITALIZED,ok
+39362876,KINET,0.0,kinet,0.0,,0.0,1,https://kinet.kinametrix.com/,200,,,,,,,,,,,kinet,CAPITALIZED,ok
+39019041,cerebri,0.0,cerebri,0.0,ependymal-4,0.0,1,https://shiny.crc.pitt.edu/cerebri/,200,,,,,,,,,,,cerebri,,ok
+39592652,alphafold,0.0,,0.0,alphafold | herpesfolds,0.0,1,https://www.herpesfolds.org/herpesfolds,200,,,,,,,,,,,alphafold | herpesfolds,PIPE_CLEANED,ok
+38871809,NODAP,0.0,nodap,0.0,,0.0,1,https://mr.cscps.com.cn/wscoringtool/index.html,200,,,,,,,,,,,nodap,CAPITALIZED,ok
+37004080,PPML,0.0,ppml | mpku | c.728g | hpa,0.0,,0.0,1,http://www.bioinfogenetics.info/PPML/,200,,,,,,,,,,,ppml | mpku | c.728g | hpa,"PIPE_CLEANED,CAPITALIZED",ok
+36480100,netpath,0.0,,0.0,netpath | wikipathways,0.0,1,https://www.wikipathways.org/index.php/Pathway:WP5094,200,,,,,,,,,,,netpath | wikipathways,PIPE_CLEANED,ok
+40281430,dbnascent,0.0,,0.0,dbnascent,0.0,1,https://nascent.colorado.edu/,200,,,,,,,,,,,dbnascent,,ok
+36693896,INS,0.0,ins | llc,0.0,,0.0,1,http://energy.gov/downloads/doe-public-access-plan,200,,,,,,,,,,,ins | llc,"PIPE_CLEANED,CAPITALIZED",ok
+40626310,TCMAP,0.0,tcmap,0.0,,0.0,1,https://cellknowledge.com.cn/tcmap,200,,,,,,,,,,,tcmap,CAPITALIZED,ok
+40036585,SSSHIC,0.0,ssshic,0.0,psychencode | co.1912913.v1,0.0,1,https://www.synapse.org/#!,200,,,,,,,,,,,ssshic,CAPITALIZED,ok
+38775680,https://github.com/gizem-tas/haploblock-autoencoders,0.0,,0.0,https://github.com/gizem-tas/haploblock-autoencoders,0.0,1,https://www.projectmine.com/research/data-sharing/,200,,,,,,,,,,,https://github.com/gizem-tas/haploblock-autoencoders,,ok
+38267891,GOCE,0.0,goce,0.0,grand ouest cancer de l'enfant [western region childhood cancer,0.0,1,https://youtu.be/2Ga64iausJE,200,,,,,,,,,,,goce,CAPITALIZED,ok
+38448141,the genomics/proteomics module contains information on different strains responsible for mucormycosis,0.0,,0.0,the genomics/proteomics module contains information on different strains responsible for mucormycosis | mucormydb,0.0,1,https://webs.iiitd.edu.in/raghava/mucormydb/,200,,,,,,,,,,,the genomics/proteomics module contains information on different strains responsible for mucormycosis | mucormydb,PIPE_CLEANED,ok
+38809899,psycinfo,0.0,,0.0,psycinfo | global health database | review registration open science framework,0.0,1,https://osf.io/s385j,200,,,,,,,,,,,psycinfo | global health database | review registration open science framework,PIPE_CLEANED,ok
+37237065,ausgeochem,0.0,,0.0,ausgeochem | gplates,0.0,1,https://ausgeochem.auscope.org.au,200,,,,,,,,,,,ausgeochem | gplates,PIPE_CLEANED,ok
+35435220,HVD,0.0,hvd,0.0,human virus database,0.0,1,http://computationalbiology.cn/humanVirusBase/#/,200,,,,,,,,,,,hvd,CAPITALIZED,ok
+35337355,https://link.springer.com/bookseries/8901,0.0,,0.0,https://link.springer.com/bookseries/8901,0.0,1,https://www.biomedcentral.com/collections/annualupdate2022,200,,,,,,,,,,,https://link.springer.com/bookseries/8901,,ok
+39139072,siz1,0.0,siz1,0.0,teanekt,0.0,1,https://teanekt.sbs.ntu.edu.sg/,200,,,,,,,,,,,siz1,,ok
+34928524,www.blucab,0.0,,0.0,www.blucab,0.0,1,http://www.blucab-index.net,200,,,,,,,,,,,www.blucab,,ok
+40728615,GPSFUN,0.0,gpsfun,0.0,gpsitedb,0.0,1,https://bio-web1.nscc-gz.cn/app/GPSFun,200,,,,,,,,,,,gpsfun,CAPITALIZED,ok
+39073886,ATHEM,0.0,athem,0.0,,0.0,1,https://lipm-browsers.toulouse.inra.fr/pub/ATHEM/,200,,,,,,,,,,,athem,CAPITALIZED,ok
+35994130,cellosaurus,0.0,,0.0,cellosaurus,0.0,1,https://entomology.ca.uky.edu/aginsectcellsdatabase,200,,,,,,,,,,,cellosaurus,,ok
+36944655,SRP,0.0,srp,0.0,,0.0,1,http://srp.pnnl.gov,200,,,,,,,,,,,srp,CAPITALIZED,ok
+35962028,non-b,0.0,non-b,0.0,,0.0,1,http://imath.med.ucm.es/bepiblast,200,,,,,,,,,,,non-b,,ok
+36715855,wikipathways,0.0,,0.0,wikipathways,0.0,1,https://www.wikipathways.org/index.php/Pathway:WP5143,200,,,,,,,,,,,wikipathways,,ok
+37551911,BIORE,0.0,biore,0.0,drugprot,0.0,1,http://wonjin.info/biore-yoon-et-al-2022,200,,,,,,,,,,,biore,CAPITALIZED,ok
+38650009,GEO,0.0,geo | ferrdb | kegg | hamp,0.0,gene expression omnibus | kyoto encyclopedia of genes and genomes,0.0,1,http://www.zhounan.org/ferrdb/index.html,200,,,,,,,,,,,geo | ferrdb | kegg | hamp,"PIPE_CLEANED,CAPITALIZED",ok
+40536815,ccc-catalog,0.0,,0.0,ccc-catalog,0.0,1,https://sysbiobig.gitlab.io/ccc-catalog,200,,,,,,,,,,,ccc-catalog,,ok
+38769056,galaxy training network,0.0,,0.0,galaxy training network,0.0,1,https://galaxyproject.org,200,,,,,,,,,,,galaxy training network,,ok
+39557706,ncrna hub,0.0,,0.0,ncrna hub,0.0,1,https://bis.zju.edu.cn/nchub/,200,,,,,,,,,,,ncrna hub,,ok
+39050029,plantae,0.0,,0.0,plantae,0.0,1,https://treethinkers.nig.ac.jp/redlist/,200,,,,,,,,,,,plantae,,ok
+38776381,MGIS,0.0,mgis | gbif,0.0,musa germplasm information system,0.0,1,https://www.crop-diversity.org/mgis/musa-in-situ,200,,,,,,,,,,,mgis | gbif,"PIPE_CLEANED,CAPITALIZED",ok
+36550341,dud-e,0.0,dud-e,0.0,,0.0,1,http://dude.docking.org/,200,,,,,,,,,,,dud-e,,ok
+37386017,MARCNV,0.0,marcnv | isv | acmg,0.0,clinvar | interpretation of structural variants,0.0,1,https://predict.genovisio.com/,200,,,,,,,,,,,marcnv | isv | acmg,"PIPE_CLEANED,CAPITALIZED",ok
+37222701,CBE,0.0,cbe | stop,0.0,,0.0,1,http://www.leishbaseedit.net/,200,,,,,,,,,,,cbe | stop,"PIPE_CLEANED,CAPITALIZED",ok
+37648696,MPPCD,0.0,mppcd,0.0,minority people panmicrobial community database,0.0,1,http://mppmcdb.cloudna.cn/,200,,,,,,,,,,,mppcd,CAPITALIZED,ok
+35765648,DEPMAP,0.0,depmap,0.0,,0.0,1,http://www.rocplot.com/cells,200,,,,,,,,,,,depmap,CAPITALIZED,ok
+39753569,swemacrocycledb,0.0,,0.0,,0.0,1,https://swemacrocycledb.com/,200,,,,,,,,,,,,POPULATED_FROM_URL,ok
+38279110,StarAllele,0.0,,0.0,,0.0,1,http://www.coriell.org/StarAllele/Search,200,,,,,,,,,,,,POPULATED_FROM_URL,ok
+40000636,ADRCSC,0.0,,0.0,,0.0,1,https://www.ccb.uni-saarland.de/adrcsc,200,,,,,,,,,,,,"POPULATED_FROM_URL,CAPITALIZED",ok
+36151114,gutsyatlas,0.0,,0.0,,0.0,1,https://gutsyatlas.serve.scilifelab.se/,200,,,,,,,,,,,,POPULATED_FROM_URL,ok
+35778384,bordetella,0.0,,0.0,,0.0,1,https://bigsdb.pasteur.fr/bordetella/,200,,,,,,,,,,,,POPULATED_FROM_URL,ok

@@ -22,45 +22,61 @@ Updated: 2025-11-28 (added data quality sanitization)
 
 import argparse
 import json
-import os
 import re
 import sys
 import unicodedata
 from datetime import datetime
+from pathlib import Path
 from typing import Dict, List, NamedTuple, Optional, Tuple
 from urllib.parse import urlparse
 
 import pandas as pd
 
+# Add lib imports
+SCRIPT_DIR = Path(__file__).resolve().parent
+PROJECT_ROOT = SCRIPT_DIR.parent.parent
+sys.path.insert(0, str(PROJECT_ROOT))
+
+from lib.session_utils import get_session_path, validate_session_dir
+
 
 class Args(NamedTuple):
     """Command-line arguments"""
-    input_file: str
-    output_dir: str
+    session_dir: Path
+    profile: str
 
 
 def get_args() -> Args:
     """Parse command-line arguments"""
     parser = argparse.ArgumentParser(
-        description='Transform columns to target inventory format'
+        description='Transform columns to target inventory format',
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+Examples:
+  python 23_transform_columns.py --session-dir 2025-12-04-111420-z381s
+  python 23_transform_columns.py --session-dir 2025-12-04-111420-z381s --profile balanced
+        """
     )
 
     parser.add_argument(
-        '--input',
+        '--session-dir',
+        type=str,
         required=True,
-        help='Path to filtered_novel_resources.csv'
+        help='Session directory path'
     )
     parser.add_argument(
-        '-o', '--output-dir',
-        required=True,
-        help='Output directory (finalization folder)'
+        '--profile',
+        type=str,
+        default='aggressive',
+        choices=['conservative', 'balanced', 'aggressive'],
+        help='Deduplication profile to use (default: aggressive)'
     )
 
     args = parser.parse_args()
 
     return Args(
-        input_file=args.input,
-        output_dir=args.output_dir
+        session_dir=Path(args.session_dir).resolve(),
+        profile=args.profile
     )
 
 
@@ -580,15 +596,39 @@ def main() -> None:
     """Main function"""
     args = get_args()
 
+    # Validate session directory
+    SESSION_DIR = args.session_dir
+
+    if not SESSION_DIR.exists():
+        print(f"ERROR: Session directory not found: {SESSION_DIR}")
+        sys.exit(1)
+
+    try:
+        validate_session_dir(SESSION_DIR, required_phases=['07_deduplication'])
+    except ValueError as e:
+        print(f"ERROR: Invalid session directory: {e}")
+        sys.exit(1)
+
+    # Input/output paths
+    input_file = get_session_path(SESSION_DIR, f'07_deduplication/{args.profile}', 'set_c_final.csv')
+    output_dir = get_session_path(SESSION_DIR, '09_finalization')
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    if not input_file.exists():
+        print(f"ERROR: Input file not found: {input_file}")
+        sys.exit(1)
+
     print(f"Phase 9 - Script 23: Transform Columns")
-    print(f"=" * 50)
-    print(f"Input: {args.input_file}")
-    print(f"Output directory: {args.output_dir}")
+    print(f"=" * 80)
+    print(f"Session: {SESSION_DIR.name}")
+    print(f"Profile: {args.profile}")
+    print(f"Input: {input_file.relative_to(SESSION_DIR)}")
+    print(f"Output directory: {output_dir.relative_to(SESSION_DIR)}")
     print()
 
     # Load input
     print("Loading filtered resources...")
-    df = pd.read_csv(args.input_file)
+    df = pd.read_csv(input_file)
     print(f"  Loaded {len(df)} rows")
     print()
 
@@ -616,6 +656,8 @@ def main() -> None:
     stats = {
         'script': '23_transform_columns',
         'timestamp': datetime.now().isoformat(),
+        'session': SESSION_DIR.name,
+        'profile': args.profile,
         'input_rows': len(df),
         'output_rows': len(transformed_df),
         'columns_mapped': {
@@ -635,22 +677,22 @@ def main() -> None:
     }
 
     # Save outputs
-    output_file = os.path.join(args.output_dir, 'transformed_resources.csv')
+    output_file = output_dir / 'transformed_resources.csv'
     transformed_df.to_csv(output_file, index=False)
-    print(f"Saved transformed resources to: {output_file}")
+    print(f"Saved transformed resources to: {output_file.relative_to(SESSION_DIR)}")
 
-    stats_file = os.path.join(args.output_dir, 'script_23_stats.json')
+    stats_file = output_dir / 'script_23_stats.json'
     with open(stats_file, 'w') as f:
         json.dump(stats, f, indent=2)
-    print(f"Saved statistics to: {stats_file}")
+    print(f"Saved statistics to: {stats_file.relative_to(SESSION_DIR)}")
 
     # Save a separate file with only modified rows for review
     modified_df = transformed_df[transformed_df['name_modification_flags'] != ''].copy()
     if len(modified_df) > 0:
-        review_file = os.path.join(args.output_dir, 'names_for_review.csv')
+        review_file = output_dir / 'names_for_review.csv'
         review_cols = ['ID', 'best_name', 'best_name_original', 'name_modification_flags', 'extracted_url']
         modified_df[review_cols].to_csv(review_file, index=False)
-        print(f"Saved modified names for review to: {review_file}")
+        print(f"Saved modified names for review to: {review_file.relative_to(SESSION_DIR)}")
 
     print()
     print(f"Done! Transformed {len(df)} rows with {len(transformed_df.columns)} columns")

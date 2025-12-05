@@ -1,0 +1,32 @@
+Script,Input Files,Output Files,Key Inputs,Key Outputs,Purpose
+01_setfit_inference.py,papers from baseline/classification,setfit_scores.csv,"pmid, title, abstract","pmid, setfit_confidence, prediction",Score papers with SetFit
+02_create_paper_sets.py,"lingustic_scores, setfit_scores","set_a.csv, set_b.csv, set_c_union.csv",pmid from both systems,"pmid, source (ling/setfit/both/baseline)",Partition into 3 paper sets by source
+02b_update_set_c_with_entities.py,"set_c_union.csv, NER results",set_c_with_entities.csv,"pmid, NER entity mentions","pmid, entities (list column), entity_count",Add NER entities to Set C
+03_map_papers_to_entities.py,"set_a/b/c, NER results","entity_mappings/*.csv, entity_inventories/*.csv","pmid, entities from NER","entity_name, paper_count, pmids, source",Create entity inventories per set
+04_track_gcbrs.py,"baseline papers, entity inventory",gcbr_tracking.csv,"pmid, entities from inventory","pmid, is_gcbr, confidence",Track papers in GCBR
+05_compare_baseline.py,"baseline_by_pmid, baseline_by_entity, phase4_results",comparison.csv,comparison data,"metrics, recall, precision, F1",Compare with Phase 4 baseline
+06_compare_strategies.py,"set_a, set_b, set_c",strategy_comparison.csv,pmid from each strategy,"coverage, agreement, differences",Compare linguistic vs SetFit strategies
+07_generate_visualizations.py,all comparison results,PNG/JSON visualizations,metrics,visualization files,Create comparison plots
+08_generate_final_report.py,all results,final_report.md,all metrics,markdown report,Generate final analysis report
+09_create_primary_resource_csv.py,"set_a/b/c, NER results",primary_resources.csv,"pmid, entity list","primary_entity_long, primary_entity_short, score, status",Identify primary resource per paper
+10_create_filtered_datasets.py,"set_a/b/c papers, NER results","baseline_by_pmid.csv, baseline_by_entity_match.csv, linguistic_all_papers.csv, setfit_all_papers.csv","pmid, entities",Filtered paper lists with sources,Create filtered views for false positive analysis
+11_extract_urls.py,filtered paper CSVs,same files (modified in-place),abstract text,"all_urls, resource_url, has_resource_url, url_context",Extract & score URLs from abstracts - ADDS URL COLUMNS TO ENTITY DATA
+12_deduplicate_linguistic.py,set_a.csv,set_a_dedup.csv,"pmid, primary_entity","dedup_group, merged_pmids, score",Fuzzy-match entities within Set A
+13_url_similarity_analysis.py,deduplicated CSVs,url_similarity_groups.csv,resource_url,"url_group, similarity_score",Find similar URLs suggesting duplicates
+14_deduplicate_linguistic_improved.py,set_a.csv,set_a_dedup_improved.csv,"pmid, primary_entity, resource_url","dedup_group, merge_confidence",Improved fuzzy + URL-based deduplication
+15_analyze_unclear_cases.py,dedup results,unclear_cases.csv,"pmid, conflict entities","case_id, ambiguity_score, recommendation",Flag ambiguous dedup cases
+16_apply_manual_merges.py,"dedup CSVs, manual_merges.txt",set_a/b/c_final.csv,manual merge decisions,"merged_pmid, primary_entity",Apply manual dedup decisions
+17_deduplicate_all_sets.py,set_a/b/c_final,set_a/b/c_dedup.csv,All three sets with resource_url,"dedup flags, merged_pmids",Cross-set deduplication
+18_scan_urls_set_c.py,set_c_dedup.csv,set_c_with_url_scan.csv,resource_url,"url_status, url_response_code, url_checks",Scan Set C URLs
+19_backfill_url_data.py,"set_a/b dedup, set_c_scanned",set_a/b/c_final.csv,resource_url from Set C,url_* columns from scan added to A & B,Backfill URL scan data to all sets
+20_baseline_comparison.py,"final sets, baseline",baseline_comparison.csv,final data vs baseline,"agreement %, missed resources",Compare final with baseline
+21_generate_visualizations.py,all comparison data,PNG/JSON plots,metrics,visualization files,Final visualization suite
+analyze_false_positives.py,final_inventory,fp_analysis.csv,"resource_url, source","false_positive_score, fp_reason",Analyze likely false positives
+find_biological_false_positives.py,final_inventory,biological_fp.csv,"abstract, entity","is_biological_fp, explanation",Flag papers about biological concepts not resources
+find_methodology_false_positives.py,final_inventory,methodology_fp.csv,"abstract, entity","is_methodology_fp, explanation",Flag papers about methodology not resources
+extract_false_positive_examples.py,fp results,fp_examples.csv,top FPs,"pmid, entity, abstract excerpt, reason",Extract example false positives
+extract_clear_false_positives.py,fp analysis,clear_fp.csv,FPs with high confidence,"pmid, entity, confidence",Extract definite false positives
+investigate_broken_merges.py,dedup results,broken_merges.csv,dedup conflicts,"pmid_a, pmid_b, conflict_reason",Investigate deduplication failures
+investigate_missing_baseline.py,final data vs baseline,missing_baseline.csv,papers in baseline but not found,"pmid, baseline_entity, reason",Track papers lost from baseline
+quick_fp_lookup.py,final_inventory + entity,fp_lookup_results.csv,resource_url,"is_fp_candidate, reason",Quick false positive lookup
+compare_dedup_results.py,"dedup_v1, dedup_v2",dedup_comparison.csv,dedup results,"differences, improvement_metrics",Compare deduplication versions

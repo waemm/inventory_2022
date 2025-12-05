@@ -1,0 +1,40 @@
+================================================================================
+QUALITY INDICATORS STATISTICS
+================================================================================
+
+Total papers: 7,594
+
+Quality Indicators:
+  Entity from title:       4,335 ( 57.1%)
+  DB keyword found:        3,200 ( 42.1%)
+  Title matches primary:   2,507 ( 33.0%)
+  Very high confidence:    1,211 ( 15.9%)
+
+Status Breakdown:
+  OK (clear primary):      6,627 ( 87.3%)
+  Conflict (tie):            951
+  Low score:                   1
+  No entities:                15
+
+================================================================================
+BREAKDOWN BY SOURCE
+================================================================================
+
+Linguistic Papers:
+  Total:                   3,815
+  Very high confidence:      991 ( 26.0%)
+
+SetFit Papers:
+  Total:                   3,779
+  Very high confidence:      220 (  5.8%)
+
+================================================================================
+KEYWORD SCORE DISTRIBUTION
+================================================================================
+
+  Mean score:               1.90
+  Median score:                0
+  Max score:                  15
+  Papers with score > 0:   3,200
+  Papers with score >= 5:  2,223
+  Papers with score >= 10:    36

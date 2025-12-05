@@ -1,0 +1,2001 @@
+ID,best_name,best_name_original,name_modification_flags,extracted_url
+"36624665, 39535036",CANSAR,cansar,CAPITALIZED,https://cansar.ai
+"34791375, 39535037",DISCO,disco,CAPITALIZED,https://www.immunesinglecell.org/
+"36300620, 37881892, 39417505",KEGG,kegg,CAPITALIZED,https://www.kegg.jp
+39475723,BAKREP,bakrep,CAPITALIZED,https://bakrep.computational.bio
+40229253,GERDA,gerda,CAPITALIZED,https://www.german-elections.com/
+35637887,cold region data accessibility portal for quebec,cold region data accessibility portal for québec,CHARS_SANITIZED,
+39910485,SORFDB,sorfdb,CAPITALIZED,https://sorfdb.computational.bio
+35576088,MACE,mace,CAPITALIZED,
+36882443,WAVES,waves,CAPITALIZED,
+38022697,EDAVE,edave,CAPITALIZED,https://edave.pum.edu.pl/
+38709877,ISOVIS,isovis,CAPITALIZED,https://isomix.org/isovis/
+36512929,OSADHI,osadhi,CAPITALIZED,https://neist.res.in/osadhi/
+40484097,FUNIN,funin,CAPITALIZED,http://funindb.lbqc.org
+36698975,CUCUME,cucume,CAPITALIZED,http://cucume.cn/
+38662570,CORDAX,cordax,CAPITALIZED,https://cordax.switchlab.org/
+36170113,MANE,mane,CAPITALIZED,https://texmst.ibms.sinica.edu.tw/
+38472250,EUPRO,eupro,CAPITALIZED,
+37143876,LDRGDB,ldrgdb,CAPITALIZED,https://ldrgdb.in/
+35422973,KEMET,kemet,CAPITALIZED,
+38769057,REME,reme,CAPITALIZED,https://reme.biodesign.ac.cn/
+37516737,NZTD,nztd,CAPITALIZED,
+39526369,MOTUS,motus,CAPITALIZED,https://motus-db.org
+37891644,AON,aon,CAPITALIZED,
+37846051,SEMLA,semla,CAPITALIZED,https://ludvigla.github.io/semla/
+37808543,rio hortega university hospital glioblastoma dataset,río hortega university hospital glioblastoma dataset,CHARS_SANITIZED,
+"36416266, 39470701",MOBIDB,mobidb,CAPITALIZED,https://mobidb.org/
+34606616,HUARDB,huardb,CAPITALIZED,https://huarc.net/database
+35388171,ECCDNA,eccdna,CAPITALIZED,http://www.eccdnadb.org
+34634793,prokaryotes (lpsn),prokaryotes,DISAMBIGUATED,https://lpsn.dsmz.de
+36453996,MIRDIP,mirdip,CAPITALIZED,https://ophid.utoronto.ca/mirDIP
+34997301,REPAIR,repair,CAPITALIZED,
+38297002,BREAST,breast,CAPITALIZED,
+39657145,PMP,pmp,CAPITALIZED,https://apps.thesgc.org/pmp/
+38227799,IBDIRP,ibdirp,CAPITALIZED,http://www.ibdirp.com
+40133788,AIA,aia,CAPITALIZED,https://amiactive.ccen.ufpb.br/
+38471316,CMSSD,cmssd,CAPITALIZED,http://tcmssd.ratcm.cn
+36171524,OCTA,octa,CAPITALIZED,
+37270659,FORCIS,forcis,CAPITALIZED,
+37244568,DB,db,"SHORT_NAME_FLAGGED,CAPITALIZED",https://c4s.site
+37337236,AMHRED,amhred,CAPITALIZED,https://camhred.org/
+38082113,O,o,"SHORT_NAME_NO_URL,CAPITALIZED",
+39413200,NAIRDB,nairdb,CAPITALIZED,https://nairdb.genesilico.pl
+37154702,GTEX,gtex,CAPITALIZED,http://gtexvisualizer.herokuapp.com
+39365797,COGTEX,cogtex,CAPITALIZED,http://bioinformatics.mx/cogtex
+34844546,GREEN,green,CAPITALIZED,
+35175626,PAZY,pazy,CAPITALIZED,
+39695946,PIIKUN,piikun,CAPITALIZED,
+36215037,HICHIP,hichip,CAPITALIZED,http://health.tsinghua.edu.cn/hichipdb/
+35438150,LTDB,ltdb,CAPITALIZED,http://www.pltdb-hust.com
+37860104,ORALL,orall,CAPITALIZED,https://proteomics.se/forall/
+40209438,H,h,"SHORT_NAME_NO_URL,CAPITALIZED",
+40122935,ISSA,issa,CAPITALIZED,
+39891350,TIDK,tidk,CAPITALIZED,https://crates.io/crates/tidk
+40067703,ESIQA,esiqa,CAPITALIZED,
+35617526,PIP,pip,CAPITALIZED,
+40536267,REFINE,refine,CAPITALIZED,
+36700083,DLIP,dlip,CAPITALIZED,https://skb-insilico.com/dlip
+37689762,ontoavida,o,SHORT_NAME_REPLACED,http://www.obofoundry.org/ontology/ontoavida.html
+38783158,SLIMAN,sliman,CAPITALIZED,https://sliman2.cbs.cnrs.fr
+36765128,PDACR,pdacr,CAPITALIZED,http://pdacR.bmi.stonybrook.edu
+38057859,biomeddb,tri©db,"CHARS_SANITIZED,NAME_RECOVERED_FROM_URL",http://www.biomeddb.org
+35469349,REGTOX,regtox,CAPITALIZED,
+41158063,ENTRAF,entraf,CAPITALIZED,https://entraf.iimas.unam.mx
+40151429,LIPBD,lipbd,CAPITALIZED,https://www.researchdata.scot/accessing-data/
+39470721,GDP,gdp,CAPITALIZED,https://BioGDP.com
+37947313,FRBASE,frbase,CAPITALIZED,http://proteininformatics.org/mkumar/afrbase/
+36930985,TOPAS,topas,CAPITALIZED,
+39614138,ECGR,ecgr,CAPITALIZED,
+37828501,ANISO,aniso,CAPITALIZED,https://www.kobic.re.kr/caniso/
+40548747,RVDB,rvdb,CAPITALIZED,
+36713195,-lacfampred,β-lacfampred,CHARS_SANITIZED,http://proteininformatics.org/mkumar/blacfampred
+39656773,RIOT,riot,CAPITALIZED,
+38472220,OCTAVA,octava,CAPITALIZED,
+39396964,PROEND,proend,CAPITALIZED,
+39569321,ENACT,enact,CAPITALIZED,https://www.iscbglab.in/enactdb/
+39341494,EPREP,eprep,CAPITALIZED,http://www.geprep.org.cn/
+36179089,ITEDB,itedb,CAPITALIZED,https://citedb.cn/
+39658751,DERLEX,derlex,CAPITALIZED,
+39677536,FAIR (eppi),fair,"CAPITALIZED,DISAMBIGUATED",https://eppi.ioe.ac.uk/eppi-vis/Fair
+37527270,ROCEEH,roceeh,CAPITALIZED,
+37246709,SFKIT,sfkit,CAPITALIZED,https://sfkit.org
+39319582,g4,g4,SHORT_NAME_FLAGGED,http://www.g4ldb.com
+36790087,ZINC,zinc,CAPITALIZED,
+35998814,ANFISA,anfisa,CAPITALIZED,
+38862483,SOPA,sopa,CAPITALIZED,
+39944812,glucogenes(R),glucogenes®,CHARS_SANITIZED,https://glucogenes.sysbio.ru/genes/main
+35437394,RIZOMA,rizoma,CAPITALIZED,
+39550226,NMIX,nmix,CAPITALIZED,https://tubic.org/Nm
+39425047,MULEA,mulea,CAPITALIZED,https://cran.r-project.org/web/packages/mulea/
+38736683,NMPID,nmpid,CAPITALIZED,https://www.rnmpid.org
+37043424,EASIER,easier,CAPITALIZED,
+35674373,NASOLO,nasolo,CAPITALIZED,https://rnasolo.cs.put.poznan.pl
+37194023,EQWIZ,eqwiz,CAPITALIZED,
+35748710,ASYGDB,asygdb,CAPITALIZED,
+39043716,AADA,aada,CAPITALIZED,
+34933331,TMNP,tmnp,CAPITALIZED,http://www.bcxnfz.top/TMNP
+34927675,RPMKB,rpmkb,CAPITALIZED,http://www.sysbio.org.cn/CRPMKB/
+35274679,ICARN,icarn,CAPITALIZED,
+40179876,NSIDES,nsides,CAPITALIZED,
+36548389,TMINT,tmint,CAPITALIZED,https://ptmint.sjtu.edu.cn/
+36723167,MRTIST,mrtist,CAPITALIZED,https://nmrtist.org
+35172714,ROPSR,ropsr,CAPITALIZED,
+35639928,GATOM,gatom,CAPITALIZED,https://ctlab.itmo.ru/shiny/gatom
+36494623,AMICA (bioapps),amica,"CAPITALIZED,DISAMBIGUATED",https://bioapps.maxperutzlabs.ac.at/app/amica
+35697698,ACovPepDB,a,SHORT_NAME_REPLACED,http://i.uestc.edu.cn/ACovPepDB/
+37391755,PragMeta,h,SHORT_NAME_REPLACED,http://www.PragMeta.org
+37939200,MIGGRI,miggri,CAPITALIZED,
+39115390,ENEVIC,enevic,CAPITALIZED,https://genevicanath2024.streamlit.app
+36917599,AFTM,aftm,CAPITALIZED,http://conglab.swmed.edu/AFTM
+36869285,package,h,SHORT_NAME_REPLACED,https://CRAN.R-project.org/package=dbGaPCheckup
+36321651,RBP,rbp,CAPITALIZED,https://rnabiology.ircm.qc.ca/RBPImage/
+40500763,MINGLE,mingle,CAPITALIZED,
+39585730,EFSE,efse,CAPITALIZED,https://www.bioconductor.org/packages/release/bioc/html/lefser.html
+38355413,ECPG,ecpg,CAPITALIZED,
+39589438,LTAIR,ltair,CAPITALIZED,
+38129777,GMAT,gmat,CAPITALIZED,
+40200282,HTP,htp,CAPITALIZED,https://kobic.re.kr/htp/
+34297061,IRANNO,iranno,CAPITALIZED,https://ophid.utoronto.ca/miRAnno/
+40170100,BIP,bip,CAPITALIZED,https://www.bip-earth.com
+38212124,CCIA,ccia,CAPITALIZED,
+35920772,PRIL,pril,CAPITALIZED,https://www.pharmbioinf.uni-freiburg.de/cpril
+36928108,RYE,rye,CAPITALIZED,
+40514603,IFD,ifd,CAPITALIZED,
+35552372,DGI,dgi,CAPITALIZED,https://odgi.readthedocs.io
+34791067,ALIANT,aliant,CAPITALIZED,
+38869148,RTK,rtk,CAPITALIZED,
+37924118,ACT,act,CAPITALIZED,http://biocc.hrbmu.edu.cn/ACT/
+39399372,VCAB,vcab,CAPITALIZED,https://fraternalilab.cs.ucl.ac.uk/VCAb/
+36652461,MODERN,modern,CAPITALIZED,http://encodeproject.org
+36239113,NBLAST,nblast,CAPITALIZED,http://nbitglobal.com/nblast
+36036832,UNIFAN,unifan,CAPITALIZED,
+39402285,avr/i,avr/i/ssapdb,HTML_REMOVED,https://bblserver.org.in/avrissa/
+40584559,KSGP,ksgp,CAPITALIZED,ksgp.earlham.ac.uk
+37810343,AVIDAR,avidar,CAPITALIZED,
+35652722,LIPREG,lipreg,CAPITALIZED,
+35752639,ORMEF,ormef,CAPITALIZED,
+38430745,FVISA,fvisa,CAPITALIZED,http://www.cloud.biomicroclass.com/en/CFViSA/
+35622342,ARREST,arrest/interrogate,"HTML_REMOVED,CAPITALIZED",
+37387142,GEMINI,gemini,CAPITALIZED,
+37983749,ETGENE,etgene,CAPITALIZED,https://bdcw.org/MetGENE/index.php
+40371632,DDRF,ddrf,CAPITALIZED,http://sysbio.org.cn/NDDRF/
+39171462,MIRVIM,mirvim,CAPITALIZED,https://mirna.in/miRVim
+39522045,MIMT,mimt,CAPITALIZED,
+35289834,EVUP,evup,CAPITALIZED,http://www.revup-classifier.ca
+38928396,PCAS,pcas,CAPITALIZED,
+39288643,NCMD,ncmd,CAPITALIZED,
+34871369,GALAXY,galaxy,CAPITALIZED,
+39097091,RNET,rnet,CAPITALIZED,https://irnet.missouri.edu
+40248357,UTAGE,utage,CAPITALIZED,https://igcore.cloud/GerOmics/HuTAge/home
+39971880,JIWAR,jiwar,CAPITALIZED,
+39215721,annoduf,a,SHORT_NAME_REPLACED,http://bts.ibab.ac.in/annoduf.php
+35346022,ARWARE,arware,CAPITALIZED,
+37224727,ENDAE,endae,CAPITALIZED,
+37027007,ACDB,acdb,CAPITALIZED,https://ngdc.cncb.ac.cn/macdb
+39380204,SINGLE,single,CAPITALIZED,https://smart-db.cn
+39240653,CPEDIA,cpedia,CAPITALIZED,https://www.rcpediadb.org
+38532317,OSAP,osap,CAPITALIZED,https://cosap.bio
+36307977,WGDI,wgdi,CAPITALIZED,
+40537574,CNSW,cnsw,CAPITALIZED,
+38425493,EPMA,epma,CAPITALIZED,
+34791029,IOBOX,iobox,CAPITALIZED,
+35614210,MRA,mra,CAPITALIZED,https://www.mratoolbox.org
+39107888,LOCUAZ,locuaz,CAPITALIZED,https://locuaz.readthedocs.io/
+37815872,SOMIR,somir,CAPITALIZED,https://esomir.dqweilab-sjtu.com
+40268235,BEAGLE,beagle,CAPITALIZED,https://beagle2.bio.uniroma2.it
+40524050,REACH,reach,CAPITALIZED,
+38537199,FOPGDB,f,"SHORT_NAME_REPLACED,CAPITALIZED",http://www.fopgdb.site
+39341859,BUSI,busi,CAPITALIZED,
+36005855,IPIDMS,ipidms,CAPITALIZED,https://CRAN.R-project.org/package=LipidMS
+40323307,OLS,ols,CAPITALIZED,https://www.ebi.ac.uk/ols4
+39374546,YCADAS,ycadas,CAPITALIZED,
+36864624,AGC,agc,CAPITALIZED,https://anaconda.org/bioconda/agc
+35561179,OPHAP,ophap,CAPITALIZED,
+35927555,LANCE,lance,CAPITALIZED,https://nassgeodata.gmu.edu/VegScape/
+36467581,AGMD,agmd,CAPITALIZED,http://www.unimd.org/magmd
+38613887,HOSMAP,hosmap,CAPITALIZED,https://huggingface.co/spaces/Bio-Add/PhosMap
+36135348,RUSP,rusp,CAPITALIZED,
+40279264,ENCUBE,encube,CAPITALIZED,
+35362561,FORAGE,forage,CAPITALIZED,
+35460467,MGDB,mgdb,CAPITALIZED,http://8.140.162.85/
+"34875068, 35622340",imgt(R),imgt®,CHARS_SANITIZED,http://www.imgt.org/
+37285215,MCR,mcr,CAPITALIZED,
+39363510,CROSS,cross,CAPITALIZED,http://ciec.gene.ac/
+38204359,PIOXI,pioxi,CAPITALIZED,https://pioxidb.dcmb.med.umich.edu/
+37897352,TADB,tadb,CAPITALIZED,https://bioinfo-mml.sjtu.edu.cn/TADB3/
+36124800,IMBU,imbu,CAPITALIZED,
+37386732,EDH,edh,CAPITALIZED,http://www.redhdatabase.com/
+39781512,STANA,stana,CAPITALIZED,
+35758788,CMASH,cmash,CAPITALIZED,
+35025997,LPSDB,lpsdb,CAPITALIZED,http://bio-comp.org.cn/llpsdbv2
+39237205,assessment,c,SHORT_NAME_REPLACED,https://dockground.compbio.ku.edu/assessment/
+34415321,AMMA,amma,CAPITALIZED,https://bioconda.github.io/recipes/gamma/README.html
+38085058,BOARDS,boards,CAPITALIZED,
+39905665,3d (brainportal),3d,"SHORT_NAME_FLAGGED,DISAMBIGUATED",https://brainportal.humanbrain.in/publicview/index.html
+39380205,NPHOS,nphos,CAPITALIZED,http://www.bio-add.org/Nphos/
+39653819,PROHAP,prohap,CAPITALIZED,
+39460934,VPOD,vpod,CAPITALIZED,
+35610055,DALI,dali,CAPITALIZED,http://ekhidna2.biocenter.helsinki.fi/dali
+36592044,RALINE,raline,CAPITALIZED,http://praline.tartaglialab.com
+37399096,CIBP,cibp,CAPITALIZED,http://design.rxnfinder.org/cosing/
+39320317,HAGEGE,hagege,CAPITALIZED,https://jason-zhao.shinyapps.io/PhageGE_Update/
+36927193,BLV,blv,CAPITALIZED,
+36266726,ASA,asa,CAPITALIZED,http://www.splicedb.net/casa/
+35958127,mycowiki,i>myco</i>wiki,HTML_REMOVED,http://mycowiki.uni-goettingen.de
+39693482,A,a,"SHORT_NAME_NO_URL,CAPITALIZED",
+38066065,RIKEN,riken,CAPITALIZED,
+35040932,LZCODE,lzcode,CAPITALIZED,http://www.alzcode.xyz
+37953304,DO,do,"SHORT_NAME_FLAGGED,CAPITALIZED",https://disease-ontology.org/
+38754097,AE,ae,"SHORT_NAME_FLAGGED,CAPITALIZED",
+36637201,EEPSOM,eepsom,CAPITALIZED,
+39949805,PMGD,pmgd,CAPITALIZED,
+35532083,REET,reet,CAPITALIZED,
+37871106,NAR,nar,CAPITALIZED,https://nardbstatus.kalis-amts.de
+39192185,BEEID,beeid,CAPITALIZED,
+35753693,DIGEST,digest,CAPITALIZED,https://digest-validation.net
+40106489,IBEX,ibex,CAPITALIZED,
+37561107,EENE,eene,CAPITALIZED,
+38714913,RLEA,rlea,CAPITALIZED,
+40163697,ISSTA,issta,CAPITALIZED,https://kbds.re.kr/hissta/
+36744907,PATPAT,patpat,CAPITALIZED,
+35576425,ET,et,"SHORT_NAME_FLAGGED,CAPITALIZED",
+38829878,isotopia,isotòpia,CHARS_SANITIZED,
+39127052,HEMIME,hemime,CAPITALIZED,https://prod.tbilab.org/PheMIME/
+37537186,DIPS,dips,CAPITALIZED,
+37018146,CCDB,ccdb,CAPITALIZED,http://www.xiejjlab.bio/eccDB
+35708612,MYLO,mylo,CAPITALIZED,
+37637211,CARDIO,cardio,CAPITALIZED,http://www.licpathway.net/Cis-Cardio/index.html
+38091963,URSA,ursa,CAPITALIZED,
+40123802,BGMDB,bgmdb,CAPITALIZED,http://bgmdb.online/bgmdb
+39994572,ARSWEB,arsweb,CAPITALIZED,http://cblab.dongguk.edu/MARSweb
+38913844,HICTK,hictk,CAPITALIZED,
+39546377,MEDKIT,medkit,CAPITALIZED,
+38653491,COVEP,covep,CAPITALIZED,https://pgx.zju.edu.cn/covepiab/
+38270339,SEARCH,search,CAPITALIZED,
+38135744,PYSODB,pysodb,CAPITALIZED,https://protocols-pysodb.readthedocs.io/
+38040041,ENIA,enia,CAPITALIZED,
+34918453,TKO,t,"SHORT_NAME_REPLACED,CAPITALIZED",http://tko.hms.harvard.edu/
+35638426,PEMDB,pemdb,CAPITALIZED,
+39806295,SOLU,solu,CAPITALIZED,https://platform.solugenomics.com
+39424793,GIAB,giab,CAPITALIZED,
+34864908,RCSB,rcsb,CAPITALIZED,
+38632086,WGD,wgd,CAPITALIZED,
+38832828,SBGRID,sbgrid,CAPITALIZED,
+38990885,CANDY,candy,CAPITALIZED,
+39570626,NESC,nesc,CAPITALIZED,
+38601265,OER,oer,CAPITALIZED,https://www.inchi-trust.org/oer/
+38443821,RIGON,rigon,CAPITALIZED,https://cran.r-project.org/web/packages/tRigon
+35161692,CINC,cinc,CAPITALIZED,
+36525367,CPATH,cpath,CAPITALIZED,http://ncpath.pianlab.cn/
+39487529,GPT,gpt,CAPITALIZED,
+36993866,LMTSUP,lmt<sup,"HTML_REMOVED,CAPITALIZED",https://igkv.ac.in/xenom/index.aspx
+35436292,HAPAO,hapao,CAPITALIZED,
+35296941,COSMOS,cosmos,CAPITALIZED,
+38816689,FPINC,fpinc,CAPITALIZED,
+39392404,ARKG,arkg,CAPITALIZED,https://tarkg.ddtmlab.org
+35145087,OMICS,omics,CAPITALIZED,
+38398771,SOPHIA,sophia,CAPITALIZED,
+37106367,LAASDB,laasdb,CAPITALIZED,http://zzdlab.com/PlaASDB/ASDB/index.html
+38312338,MOBIOS,mobios,CAPITALIZED,
+38431179,MIFFI,miffi,CAPITALIZED,
+35703577,TALLO,tallo,CAPITALIZED,
+35804309,ETHOS,ethos,CAPITALIZED,https://methos.cebitec.uni-bielefeld.de/
+39924294,ATSUBP,atsubp,CAPITALIZED,https://kaabil.net/AtSubP2/
+38532297,YCOM,ycom,CAPITALIZED,https://pycom.brunel.ac.uk
+37620754,GMMAD,h,SHORT_NAME_REPLACED,http://guolab.whu.edu.cn/GMMAD
+38698340,TR,tr,"SHORT_NAME_FLAGGED,CAPITALIZED",
+35434225,CRWD,crwd,CAPITALIZED,
+38835776,ONET,onet,CAPITALIZED,https://monet.mdanderson.org/
+36053857,ROCK,rock,CAPITALIZED,
+38872097,DYPORT,dyport,CAPITALIZED,
+40472336,SPARK,spark,CAPITALIZED,
+37078622,YEAST,yeast,CAPITALIZED,
+35161327,INRAE,inrae,CAPITALIZED,
+38006335,YBKIT,ybkit,CAPITALIZED,
+39003916,FPPI,fppi,CAPITALIZED,
+36779038,malmo breast imaging,malmö breast imaging,CHARS_SANITIZED,
+40359222,DS,ds,"SHORT_NAME_FLAGGED,CAPITALIZED",
+38929869,swissgenvar,swissgenvar</i,HTML_REMOVED,
+38646468,ENALOS,enalos,CAPITALIZED,http://www.enaloscloud.novamechanics.com/sabydoma/safenanoscope/
+35064124,ROSIE,rosie,CAPITALIZED,
+37624923,APEX,apex,CAPITALIZED,https://archaea.i2bc.paris-saclay.fr/vapex/
+36864613,UTR,utr,CAPITALIZED,https://pypi.org/project/peaks2utr
+37246642,CAID,caid,CAPITALIZED,https://caid.idpcentral.org
+38914571,project2-dngisws9d7xkygjcvnue8u,a,SHORT_NAME_REPLACED,https://project2-dngisws9d7xkygjcvnue8u.streamlit.app/
+39470715,PANEL,panel,CAPITALIZED,https://www.evomicslab.org/db/ScRAPdb/
+39434095,genomics-hub,h,SHORT_NAME_REPLACED,https://genomics-hub.pros.dsic.upv.es:3090
+34586393,UWU,uwu,CAPITALIZED,
+37623798,DZOME,dzome,CAPITALIZED,
+38109500,desiccation,d,SHORT_NAME_REPLACED,http://desiccation.novogene.com
+35762265,METAPR,metapr,CAPITALIZED,https://shiny.metapr2.org
+35193494,UROPDX,uropdx,CAPITALIZED,https://dataportal.europdx.eu/
+37889037,BASE (slkb),base,"CAPITALIZED,DISAMBIGUATED",https://slkb.osubmi.org
+34888624,NGRAIN,ngrain,CAPITALIZED,
+38725076,RGNET,rgnet,CAPITALIZED,https://ARGNet.hku.hk
+36602030,AGATA,agata,CAPITALIZED,
+40494643,TRADIS,tradis,CAPITALIZED,https://diana.cpg.org.au/
+39198917,IPDB,ipdb,CAPITALIZED,https://genomeinterpretation.org/vipdb
+39388213,NBC,nbc,CAPITALIZED,
+36737439,CHAKSU,chákṣu,"CHARS_SANITIZED,CAPITALIZED",
+38442048,IT,it,"SHORT_NAME_FLAGGED,CAPITALIZED",
+39382066,ANVAR,anvar,CAPITALIZED,
+35561293,FIRM,firm,CAPITALIZED,
+36882183,HAGAA,hagaa,CAPITALIZED,http://phage.xialab.info/
+38738618,a4d,d,SHORT_NAME_REPLACED,https://biocomp.chem.uw.edu.pl/a4d/
+36927359,LBCONA,lbcona,CAPITALIZED,
+37770956,YNDIFF,yndiff,CAPITALIZED,
+36699350,DEBASE,debase,CAPITALIZED,https://odebase.org
+37216609,AGES,ages,CAPITALIZED,https://archeogenomics.eu/
+35042854,LANDDX,landdx,CAPITALIZED,
+38698803,GLOBAL,global,CAPITALIZED,
+36402991,SAT,sat,CAPITALIZED,
+39719064,GRETL,gretl,CAPITALIZED,
+36264141,AGSCOT,agscot,CAPITALIZED,https://hub.docker.com/repository/docker/ikmb/magscot
+38385879,ABAG,abag,CAPITALIZED,
+38709879,PGS,pgs,CAPITALIZED,https://imputationserver.sph.umich.edu
+36321973,FLP,flp,CAPITALIZED,
+34991450,LERNA,lerna,CAPITALIZED,
+38937428,EQ,eq,"SHORT_NAME_FLAGGED,CAPITALIZED",
+35372652,AHEAD,ahead,CAPITALIZED,
+37018393,CHIMA,chima,CAPITALIZED,
+34677586,MLB,mlb,CAPITALIZED,
+40990037,AENET,aenet,CAPITALIZED,
+38754474,KOGES,koges,CAPITALIZED,
+38886186,HCC,hcc,CAPITALIZED,http://lifeome.net/database/hccdb2
+37340457,EEM,eem,CAPITALIZED,
+39602824,SSSRDB,sssrdb,CAPITALIZED,https://as-fmmdb.shinyapps.io/asssrdb/
+36549193,NET,net,CAPITALIZED,
+39909853,EEPES,eepes,CAPITALIZED,
+38757367,GO,go,"SHORT_NAME_FLAGGED,CAPITALIZED",https://huggingface.co/spaces/HUBioDataLab/Domain2GO
+34718410,IPJGL,ipjgl,CAPITALIZED,
+35450779,NANO,nano,CAPITALIZED,
+37957256,G,g,"SHORT_NAME_NO_URL,CAPITALIZED",
+35179562,CIG,cig,CAPITALIZED,https://pcig.vhio.net
+36857575,KBASE (narrative),kbase,"CAPITALIZED,DISAMBIGUATED",https://narrative.kbase.us/narrative/129480
+38549946,ERITS,erits,CAPITALIZED,http://merits.unimelb-biotools.cloud.edu.au/
+37943830,SRPLOT,srplot,CAPITALIZED,http://www.bioinformatics.com.cn/SRplot
+37947503,OLMOD,olmod</i,"HTML_REMOVED,CAPITALIZED",
+35675394,KIDNEY,kidney,CAPITALIZED,
+38776380,TPCN,t,"SHORT_NAME_REPLACED,CAPITALIZED",http://www.tpcn.pro/
+36376589,KBASE,kbase,CAPITALIZED,http://www.kbase.us/
+36464767,MM,mm,"SHORT_NAME_FLAGGED,CAPITALIZED",https://cmm.minorlab.org
+39999010,PM,pm,"SHORT_NAME_FLAGGED,CAPITALIZED",https://bigomics.ch/omics-playground
+34951622,ENVIEW,enview,CAPITALIZED,
+37129543,EPGM,epgm,CAPITALIZED,
+39288310,AG,ag,"SHORT_NAME_FLAGGED,CAPITALIZED",https://spoke.rbvi.ucsf.edu/neighborhood.html
+35549894,ALBASE,albase,CAPITALIZED,http://animal.nwsuaf.edu.cn/ChickenVar
+34671807,SINGLE,single,CAPITALIZED,https://sc.deepomics.org
+35560102,E,e,"SHORT_NAME_NO_URL,CAPITALIZED",
+36243817,WGI,wgi,CAPITALIZED,
+37535671,OUNT,ount,CAPITALIZED,
+37161375,LUS,lus,CAPITALIZED,
+35687095,OCEAN,ocean,CAPITALIZED,https://tara-oceans.mio.osupytheas.fr/ocean-gene-atlas/
+36448715,INER,iner,CAPITALIZED,https://bailab.siais.shanghaitech.edu.cn/services/ppi-miner
+36804047,ATLAS,atlas,CAPITALIZED,https://www.vis-atlas.tech/
+40206833,MODEL,model,CAPITALIZED,
+37755132,CARDS,cards,CAPITALIZED,
+39794362,GAIT,gait,CAPITALIZED,
+38553675,CURARE,curare,CAPITALIZED,
+34647978,MCE,mce,CAPITALIZED,
+36394265,REAT,reat,CAPITALIZED,https://bioconductor.org/packages/rGREAT/
+39351134,EO,eo,"SHORT_NAME_FLAGGED,CAPITALIZED",
+37162382,RASH,rash,CAPITALIZED,
+36596370,PAPRED,papred,CAPITALIZED,https://procarb.org/gpapred/
+39088548,SFC,sfc,CAPITALIZED,
+39242194,BANMF,banmf,CAPITALIZED,
+35575379,LIDER,lider,CAPITALIZED,
+36416193,MOVING,moving,CAPITALIZED,
+37526283,JGI,jgi,CAPITALIZED,https://plantgeneatlas.jgi.doe.gov
+38498764,DELFOS,delfos,CAPITALIZED,
+39656790,LASTP,lastp,CAPITALIZED,
+40483547,EGKG,e,"SHORT_NAME_REPLACED,CAPITALIZED",http://gepa.org.cn/egkg/
+36824516,fiocruz,fiocruz/colfleb,HTML_REMOVED,
+38806937,CRDR,crdr,CAPITALIZED,
+35137167,BFG,bfg,CAPITALIZED,
+39970812,MARIM,marim,CAPITALIZED,
+35037201,LEGUME,legume,CAPITALIZED,https://legumeinfo.org
+37457340,INDEL,indel,CAPITALIZED,
+37566336,EX,ex,"SHORT_NAME_FLAGGED,CAPITALIZED",https://tinyurl.com/4este73c
+39959838,catalog (tianzelab),catalog,DISAMBIGUATED,https://tianzelab.github.io/pandaspgs/
+40102678,metavision3d,a,SHORT_NAME_REPLACED,https://metavision3d.rc.ufl.edu
+39383500,OBOCAP,obocap,CAPITALIZED,
+39208278,V,v,"SHORT_NAME_NO_URL,CAPITALIZED",
+38828478,GLIOMA,glioma,CAPITALIZED,
+38060257,ADA,ada,CAPITALIZED,
+38624007,3d,3d,SHORT_NAME_FLAGGED,
+36840124,ES,es,"SHORT_NAME_FLAGGED,CAPITALIZED",
+37876351,DEPT,dept,CAPITALIZED,
+37788089,KIDS,kids,CAPITALIZED,
+36352543,ANZUP,anzup,CAPITALIZED,
+37620118,ALLER,aller,CAPITALIZED,
+36309134,MPAD,m,"SHORT_NAME_REPLACED,CAPITALIZED",https://web.iitm.ac.in/bioinfo2/mpad
+36913423,EHJSO,ehjso,CAPITALIZED,
+37933855,NCBI,ncbi,CAPITALIZED,https://www.ncbi.nlm.nih.gov/geo/
+38538624,MATRIX,matrix,CAPITALIZED,
+38878851,AKR,akr,CAPITALIZED,
+36541440,AP,ap,"SHORT_NAME_FLAGGED,CAPITALIZED",
+35756250,ICS,ics,CAPITALIZED,
+37570979,RDA,rda,CAPITALIZED,
+35900347,DPHY,dphy,CAPITALIZED,
+38349059,ask(TM),ask™,CHARS_SANITIZED,
+38801081,toolbox (mtb),toolbox,DISAMBIGUATED,https://mtb.bioinf.med.uni-goettingen.de/SeqCAT/
+38914788,SEMA,sema,CAPITALIZED,http://www.SEMA3.com
+37236629,ASKER,asker,CAPITALIZED,http://47.93.0.75:8110/login
+37880351,SWAASA,swaasa,CAPITALIZED,
+36598107,CRUX,crux,CAPITALIZED,
+38395961,dompekeys,d,SHORT_NAME_REPLACED,https://dompekeys.exscalate.eu
+39708840,CRGCL,crgcl,CAPITALIZED,
+38392784,PINS,pins,CAPITALIZED,
+36495218,JL,jl,"SHORT_NAME_FLAGGED,CAPITALIZED",
+38683334,OLD,old,CAPITALIZED,
+38129112,SUMMIT,summit,CAPITALIZED,
+40269329,ASP,asp,CAPITALIZED,
+35275211,database (csdb),database,DISAMBIGUATED,http://csdb.glycoscience.ru/database/core/search_conf.html
+37140058,DEPICTER2,d,SHORT_NAME_REPLACED,http://biomine.cs.vcu.edu/servers/DEPICTER2/
+37459490,VHL,vhl,CAPITALIZED,
+40513293,RISC,risc,CAPITALIZED,
+36404909,CADX,cadx,CAPITALIZED,
+35806459,tritikbdb,i,SHORT_NAME_REPLACED,http://bioinfo.usu.edu/tritikbdb/
+35221333,TUMOR,tumor,CAPITALIZED,
+39874126,database (202),database,DISAMBIGUATED,http://202.203.179.115:3838/oarsnpdb
+35900159,PLCO (episphere),plco,"CAPITALIZED,DISAMBIGUATED",https://episphere.github.io/plco
+36243984,chromatin (3dgenomics),chromatin,DISAMBIGUATED,https://3dgenomics.hzau.edu.cn/chromloops
+40677986,CA,ca,"SHORT_NAME_FLAGGED,CAPITALIZED",http://www.cirrhosiscare.ca
+38271343,NCATS,ncats,CAPITALIZED,
+40447627,MICS,mics,CAPITALIZED,
+36535208,LESION,lesion,CAPITALIZED,
+37553584,IXUL,ixul,CAPITALIZED,
+34986603,TLAS,tlas,CAPITALIZED,https://www.xjtlu.edu.cn/biologicalsciences/m5c-atlas
+38711584,privateer,privateer</i,HTML_REMOVED,
+36806329,2,2,SHORT_NAME_NO_URL,
+39013972,OF,of,"SHORT_NAME_FLAGGED,CAPITALIZED",
+35445695,3d (biocomp),3d,"SHORT_NAME_FLAGGED,DISAMBIGUATED",http://biocomp.chem.uw.edu.pl/A3D2/hproteome
+37715446,SINGLE (biobigdata),single,"CAPITALIZED,DISAMBIGUATED",https://biobigdata.nju.edu.cn/scPLAD/
+37645315,OOLBOX,oolbox,CAPITALIZED,
+37130913,kuanrongchan-stages-stages-vpgh46,s,SHORT_NAME_REPLACED,https://kuanrongchan-stages-stages-vpgh46.streamlitapp.com/
+37488166,BASE,base,CAPITALIZED,
+39095383,SOUL,soul,CAPITALIZED,
+40351053,DICED,d,"SHORT_NAME_REPLACED,CAPITALIZED",https://diced.lerner.ccf.org/
+37203586,RCX,rcx,CAPITALIZED,
+36479579,GENOME (banana-genome-hub),genome,"CAPITALIZED,DISAMBIGUATED",https://banana-genome-hub.southgreen.fr
+34850820,SIB,sib,CAPITALIZED,
+35390717,DNA,dna,CAPITALIZED,
+36755109,MAIZE,maize,CAPITALIZED,
+40193392,PRE,pre,CAPITALIZED,
+38842342,ON,on,"SHORT_NAME_FLAGGED,CAPITALIZED",
+39412436,LASSO,lasso,CAPITALIZED,
+38285683,histify,y,SHORT_NAME_REPLACED,https://histify.streamlit.app/&
+37356905,PI,pi,"SHORT_NAME_FLAGGED,CAPITALIZED",http://missense3d.bc.ic.ac.uk
+38763400,C,c,"SHORT_NAME_NO_URL,CAPITALIZED",
+39758944,IMBE,imbe,CAPITALIZED,
+39946426,ESPCA,espca,CAPITALIZED,
+40545606,TDK,tdk,CAPITALIZED,
+38083163,AWAKE,awake,CAPITALIZED,
+40146303,MICE,mice,CAPITALIZED,
+40514586,OURCE,ource,CAPITALIZED,
+40382353,SNE,sne,CAPITALIZED,
+36896476,GENOME,genome,CAPITALIZED,http://yeyn.group:96/
+38819572,AND,and,CAPITALIZED,
+39443154,TISSUE,tissue,CAPITALIZED,
+39319243,WASPS,wasps,CAPITALIZED,
+37995293,OMMO,ommo,CAPITALIZED,https://commo.ncpsb.org.cn/
+38580907,YAK,yak,CAPITALIZED,http://yakgenomics.com/
+38926852,CACAO,cacao,CAPITALIZED,
+39497074,GPCR,gpcr,CAPITALIZED,https://gpcrbs.bigdata.jcmsc.cn
+40563233,MUMAP,μmap,"CHARS_SANITIZED,CAPITALIZED",
+39237105,KOMET,komet,CAPITALIZED,https://komet.readthedocs.io
+40687679,fred_explorer,i,SHORT_NAME_REPLACED,https://forrt-replications.shinyapps.io/fred_explorer
+37019916,L,l,"SHORT_NAME_NO_URL,CAPITALIZED",
+39421415,WORLD,world,CAPITALIZED,
+40516374,PEN,pen,CAPITALIZED,
+38152493,DATA,data,CAPITALIZED,
+36635305,PLCO,plco,CAPITALIZED,
+39159043,BINARY,binary,CAPITALIZED,
+36365786,REAL,real,CAPITALIZED,
+39250076,OF (venomzone),of,"SHORT_NAME_FLAGGED,CAPITALIZED,DISAMBIGUATED",https://venomzone.expasy.org/10897
+39686909,expression atlas (cannatlas),expression atlas,DISAMBIGUATED,https://cannatlas.venanciogroup.uenf.br/
+38310806,CSSL,c,SHORT_NAME_REPLACED,http://www.tmliang.cn/CSSL/
+36483087,HE,he,"SHORT_NAME_FLAGGED,CAPITALIZED",http://tvir.bio2db.com
+38062064,UCLA,ucla,CAPITALIZED,
+"35380657, 36930729, 37347557",MOET,moet,CAPITALIZED,https://rgd.mcw.edu/rgdweb/enrichment/start.html
+"35609987, 38842945",alphaknot,alphaknot | alphafold,PIPE_CLEANED,https://alphaknot.cent.uw.edu.pl/
+"34850155, 39540425",DBAMP,dbamp,CAPITALIZED,http://awi.cuhk.edu.cn/dbAMP
+"36395823, 39558158",GPCRDB,gpcrdb,CAPITALIZED,https://gpcrdb.org
+"34893873, 38015436",modomics (iimcb),modomics,DISAMBIGUATED,https://iimcb.genesilico.pl/modomics/
+"36287286, 39085735",CMIRC,cmirc,CAPITALIZED,http://slsdb.manipal.edu/cmirclust
+37666818,CRUSTY,crusty,CAPITALIZED,https://crusty.humanitas.it/
+35242021,BOSSDB,bossdb,CAPITALIZED,
+35881019,BHLHDB,bhlhdb,CAPITALIZED,http://www.bhlhdb.org
+40108108,TOPEC,topec,CAPITALIZED,
+36028515,RSDB,rsdb,CAPITALIZED,https://rsdb.cmdm.tw
+38781078,MIMIC,mimic,CAPITALIZED,
+37994699,atlas of biosynthetic gene clusters,atlas of biosynthetic gene clusters | abc-humi,PIPE_CLEANED,https://www.ccb.uni-saarland.de/abc_humi/
+37650649,HMDD,hmdd,CAPITALIZED,http://www.cuilab.cn/hmdd
+35504357,ODISEA,odisea,CAPITALIZED,https://netbio.bgu.ac.il/odisea
+37142846,MSP,msp,CAPITALIZED,https://classic.wikipathways.org/index.php/Pathway:WP5353
+37159240,TRSRD,trsrd,CAPITALIZED,http://trsrd.wpengxs.cn
+34554255,covid19db (hpcc),covid19db,DISAMBIGUATED,http://hpcc.siat.ac.cn/covid19db
+37208471,IOBPDB,iobpdb,CAPITALIZED,
+37831073,RAVAR,ravar,CAPITALIZED,http://www.ravar.bio
+37831097,PRMD,prmd,CAPITALIZED,http://bioinformatics.sc.cn/PRMD
+37831118,ADCDB,adcdb,CAPITALIZED,https://idrblab.org/adcdb/
+38748636,PMBC,pmbc,CAPITALIZED,http://www.pmbreastcancer.com/
+37863915,NCEI,ncei,CAPITALIZED,https://www.ncei.noaa.gov/products/microplastics
+39043627,PANGEN,pangen,CAPITALIZED,https://c-gc.shinyapps.io/PANGEN/
+37962376,JASPAR,jaspar,CAPITALIZED,https://jaspar.elixir.no/
+35193506,SEASEQ,seaseq,CAPITALIZED,https://platform.stjude.cloud/workflows/seaseq
+35701419,chip-hub (biobigdata),chip-hub,DISAMBIGUATED,https://biobigdata.nju.edu.cn/ChIPHub/
+35701420,PRIDE,pride,CAPITALIZED,
+37520074,pkad-2,pkad-2 | pkad,PIPE_CLEANED,
+40190740,FACDB,facdb,CAPITALIZED,
+35849014,GEMO,gemo,CAPITALIZED,https://gemo.southgreen.fr/
+35930941,SPECDB,specdb,CAPITALIZED,https://github.rpi.edu/RPIBioinformatics/SpecDB
+38011720,LNCPCD,lncpcd | pcd,"PIPE_CLEANED,CAPITALIZED",http://spare4.hospital.studio:9000/lncPCD/Home.jsp
+34751388,CEBS,cebs,CAPITALIZED,https://cebs.niehs.nih.gov/cebs/
+39961523,CAZY (pro),cazy,"CAPITALIZED,DISAMBIGUATED",https://pro.unl.edu/CAZyme3D/
+35881922,COMPAS,compas,CAPITALIZED,
+37929927,TRENDI,trendi,CAPITALIZED,
+34718689,arts-db,arts-db | arts,PIPE_CLEANED,https://arts-db.ziemertlab.com/
+34718696,-pi 2.0,-pi 2.0 | proteome-pi 2.0,PIPE_CLEANED,http://isoelectricpointdb2.org
+34718712,PCMDB,pcmdb,CAPITALIZED,http://www.tobaccodb.org/pcmdb/
+34718715,ONCODB,oncodb,CAPITALIZED,http://oncodb.org
+34718720,brainbase,brainbase | a curated knowledgebase for brain diseases,PIPE_CLEANED,https://ngdc.cncb.ac.cn/brainbase
+37651464,RIVET,rivet,CAPITALIZED,https://rivet.ucsd.edu/
+34718734,RPS,rps,CAPITALIZED,http://rps.renlab.org
+34718747,TCOF,tcof,CAPITALIZED,http://tcof.liclab.net/TcoFbase
+34718752,EWAS (ngdc),ewas,"CAPITALIZED,DISAMBIGUATED",https://ngdc.cncb.ac.cn/ewas
+37930022,COMO,como,CAPITALIZED,
+36029479,SLOAD,sload,CAPITALIZED,http://www.tmliang.cn/SLOAD
+38814806,BNGL,bngl,CAPITALIZED,https://bnglviz.github.io/
+40338521,cancerppd2,cancerppd2 | cancerppd,PIPE_CLEANED,http://webs.iiitd.edu.in/raghava/cancerppd2/
+38552697,funcphos-str,funcphos-str | alphafold,PIPE_CLEANED,http://funcptm.jysw.suda.edu.cn/str
+37897342,SPIRE,spire,CAPITALIZED,https://motu-tool.org/
+37897357,HHCDB,hhcdb,CAPITALIZED,http://hhcdb.edbc.org/
+39126203,SODCOD,sodcod,CAPITALIZED,https://fujisawagroup.github.io/SoDCoDweb/
+35013825,nowinbrain,"nowinbrain | a large, systematic",PIPE_CLEANED,http://www.nowinbrain.org
+36717789,GENTLE,gentle,CAPITALIZED,https://share.streamlit.io/dhiego22/gentle/main/gentle.py
+35947748,SUMMER,summer,CAPITALIZED,http://njmu-edu.cn:3838/SUMMER/
+36095221,ICB (bioinfo),icb,"CAPITALIZED,DISAMBIGUATED",http://bioinfo.life.hust.edu.cn/ICBatlas/
+35325185,DAVID,david,CAPITALIZED,
+39535874,SOYOD,soyod,CAPITALIZED,https://bis.zju.edu.cn/soyod
+38389029,LASTU,lastu,CAPITALIZED,https://osf.io/j8v6b/
+34850103,QTLDB,qtldb | corrdb,"PIPE_CLEANED,CAPITALIZED",https://www.animalgenome.org/QTLdb
+38847800,GROND,grond,CAPITALIZED,
+39404857,DEORI,deori,CAPITALIZED,http://tubic.tju.edu.cn/deori/
+34850116,PLSDB,plsdb,CAPITALIZED,https://www.ccb.uni-saarland.de/plsdb
+38028612,DASES,dases,CAPITALIZED,http://www.hxdsjzx.cn/DASES
+40027488,HTIRDB,htirdb,CAPITALIZED,https://yanglab.hzau.edu.cn/HTIRDB#/
+37356904,GUTBUG (metabiosys),gutbug,"CAPITALIZED,DISAMBIGUATED",https://metabiosys.iiserb.ac.in/gutbug
+39257527,RCDDB,rcddb,CAPITALIZED,
+35669450,HPMPDB,hpmpdb,CAPITALIZED,hpmp.esat.kuleuven.be
+38864430,AMLDB,amldb,CAPITALIZED,https://project.iith.ac.in/cgntlab/amldb
+40224325,CNSA,cnsa,CAPITALIZED,https://db.cngb.org/cnsa/
+38995535,PTMVIZ,ptmviz,CAPITALIZED,
+38995543,channelsdb (channelsdb2),channelsdb | moleonline,"PIPE_CLEANED,DISAMBIGUATED",https://channelsdb2.biodata.ceitec.cz/
+39470702,STSNV,stsnv,CAPITALIZED,http://bio-bigdata.hrbmu.edu.cn/stSNV/index.jsp
+39470706,HSCGD,hscgd,CAPITALIZED,http://www.hscgd.com
+39470718,ncplantdb,ncplantdb | plant ncrna database,PIPE_CLEANED,https://bis.zju.edu.cn/ncPlantDB
+39470732,VDGE,vdge,CAPITALIZED,https://ngdc.cncb.ac.cn/vdge
+37258913,TSNAD,tsnad | tsnadb,"PIPE_CLEANED,CAPITALIZED",https://pgx.zju.edu.cn/tsnadb
+37258914,EPIPOX,epipox,CAPITALIZED,http://bio.med.ucm.es/epipox/
+40601258,CNN,cnn,CAPITALIZED,
+40601261,plmsearch,plmsearch | plmalign,PIPE_CLEANED,https://dmiip.sjtu.edu.cn/PLMSearch
+40355512,SESAME,sesame,CAPITALIZED,
+36587232,TCMSID,tcmsid,CAPITALIZED,https://tcm.scbdd.com
+38995706,mother-db,mother-db | mother,PIPE_CLEANED,
+37340940,MEMOR,memor,CAPITALIZED,http://www.memor.be
+37930838,RVDB,rvdb,CAPITALIZED,http://rvdb.mgc.ac.cn
+37930842,SCAN,scan,CAPITALIZED,http://47.98.139.124:8799
+37930866,IMG (genome),img/pr,"HTML_REMOVED,CAPITALIZED,DISAMBIGUATED",https://genome.jgi.doe.gov/portal/IMG_PR
+38537198,BIOKC,biokc,CAPITALIZED,
+37881887,dichropipeline,dichropipeline | circular dichroism,PIPE_CLEANED,https://pcddb.cryst.bbk.ac.uk/
+38783035,CHEMFH,chemfh,CAPITALIZED,https://chemfh.scbdd.com/
+34850907,JASPAR,jaspar,CAPITALIZED,http://jaspar.genereg.net/
+38783079,IEDB,iedb,CAPITALIZED,https://nextgen-tools.iedb.org
+38406264,DBCRAF,dbcraf,CAPITALIZED,http://dbCRAF.xialab.info/
+40044690,VITAP,vitap,CAPITALIZED,
+37030102,EPEK,epek,CAPITALIZED,https://cb.imsc.res.in/epek
+40323323,BRAD,brad,CAPITALIZED,
+36653322,ENCD,encd,CAPITALIZED,http://www.bio-server.cn/ENCD/
+40225143,LOVD,lovd,CAPITALIZED,
+39586215,RIDIMS,ridims | dims,"PIPE_CLEANED,CAPITALIZED",
+38685101,QUANDB,quandb,CAPITALIZED,https://quandb.cmdrg.com/
+37587443,ARCA,arca,CAPITALIZED,
+36719094,ITCM,itcm,CAPITALIZED,http://itcm.biotcm.net
+36243962,RABC,rabc,CAPITALIZED,http://www.onethird-lab.com/RABC/
+36243963,PAT (bioinfo),pat,"CAPITALIZED,DISAMBIGUATED",http://bioinfo.qd.sdu.edu.cn/PAT/
+36243967,AQUILA,aquila,CAPITALIZED,https://aquila.cheunglab.org
+36243972,HGNC,hgnc,CAPITALIZED,http://www.genenames.org
+38701592,DTNPD,dtnpd,CAPITALIZED,http://dtnpd.lyhbio.com
+38717988,PESSA,pessa,CAPITALIZED,https://smuonco.shinyapps.io/PESSA/
+39504480,STAVER,staver,CAPITALIZED,
+37178003,mbrole3,mbrole3 | mbrole,PIPE_CLEANED,http://csbg.cnb.csic.es/mbrole3
+38963888,MIMOSA,mimosa,CAPITALIZED,
+39373502,ORITDB,oritdb,CAPITALIZED,https://bioinfo-mml.sjtu.edu.cn/oriTDB2/
+36604610,ASV,asv,CAPITALIZED,
+38800073,nanoehs,nanoehs | naknowbase,PIPE_CLEANED,
+39373530,MOLBIC,molbic,CAPITALIZED,https://idrblab.org/MolBiC/
+36703003,ORCA,orca,CAPITALIZED,
+35556129,srnabench,srnabench | srnatoolbox,PIPE_CLEANED,https://arn.ugr.es/srnatoolbox/
+37489459,DOXODB,doxodb,CAPITALIZED,
+35801909,DEMOS,demos,CAPITALIZED,http://heal.erc.monash.edu.au
+38587202,FEVER,fever,CAPITALIZED,https://fever.sk8.inrae.fr/
+37522378,BIOLIP,biolip,CAPITALIZED,https://zhanggroup.org/BioLiP
+40160219,QARLES,qarles,CAPITALIZED,https://qarles.org
+37112801,DRAVP,dravp,CAPITALIZED,http://dravp.cpu-bioinfor.org/
+38095856,ICB (bioinfo),icb,"CAPITALIZED,DISAMBIGUATED",http://bioinfo.life.hust.edu.cn/ICBcomb/
+37981176,FAD,fad,CAPITALIZED,
+37620744,e-babylab,e-babylab | an open,PIPE_CLEANED,
+36949095,MAFLD,mafld,CAPITALIZED,
+35654801,CDCDB,cdcdb,CAPITALIZED,https://icc.ise.bgu.ac.il/medical_ai/CDCDB/
+36474016,PQSAR,pqsar,CAPITALIZED,http://i.uestc.edu.cn/PQsarDB
+36162726,NCFO,ncfo,CAPITALIZED,http://www.jianglab.cn/ncFO/
+39898310,mosaec-db,mosaec-db | mosaec,PIPE_CLEANED,
+37850400,ARIC,aric,CAPITALIZED,https://precision.heart.org/duke-ninds
+39423319,BIOTRY,biotry,CAPITALIZED,http://www.synbiohealth.cn/biotry
+39423320,SMCVDB,smcvdb,CAPITALIZED,http://smcvdb.rcb.ac.in:4321/
+39030186,VOICE,voice,CAPITALIZED,
+34999761,SCNAME,scname,CAPITALIZED,
+36130266,HTCA,htca,CAPITALIZED,http://www.htcatlas.org
+35818996,OMIC,omic,CAPITALIZED,http://www.healthinformaticslab.org/supp/resources.php
+34606614,PRONAB,pronab,CAPITALIZED,https://web.iitm.ac.in/bioinfo2/pronab/
+34508353,GRAND,grand,CAPITALIZED,https://grand.networkmedicine.org
+40635974,TCMKD,tcmkd,CAPITALIZED,https://cbcb.cdutcm.edu.cn/TCMKD/
+35475145,PDXNET,pdxnet,CAPITALIZED,https://portal.pdxnetwork.org/
+37162753,CAVIDB,cavidb,CAPITALIZED,https://www.cavidb.org
+38522645,NNDB,nndb,CAPITALIZED,https://rna.urmc.rochester.edu/NNDB
+37310261,GERDH,gerdh,CAPITALIZED,https://dphdatabase.com
+37572442,ALPACA,alpaca,CAPITALIZED,https://www.ba.ic.cnr.it/softwareic/alpaca/
+40996707,MRDB,mrdb,CAPITALIZED,
+38489989,NCRS,ncrs,CAPITALIZED,http://www.ncrdb.cn
+39341994,DRCTDB,drctdb,CAPITALIZED,https://singlecellatlas.top/DRCTDB
+40538029,MORE,more,CAPITALIZED,
+35229639,VIRION,virion,CAPITALIZED,
+35524568,SCIMC,scimc,CAPITALIZED,https://server.wei-group.net/scIMC/
+39342076,ANAGDB,anagdb,CAPITALIZED,https://anagenome.cn/
+37244984,EGA,ega,CAPITALIZED,https://identifiers.org/ega
+39702608,SNED,sned,CAPITALIZED,
+38686803,swissdock,swissdock | autodock,PIPE_CLEANED,https://www.swissdock.ch/
+39014503,CREDB,credb,CAPITALIZED,
+35754095,DOPI,dopi,CAPITALIZED,https://www.dopi.org.uk/
+36933822,PREPPI,preppi,CAPITALIZED,https://honiglab.c2b2.columbia.edu/PrePPI
+35639514,AMBP,ambp,CAPITALIZED,http://mgb.qnlm.ac
+35213533,IQCELL,iqcell,CAPITALIZED,
+35639517,PADLOC,padloc,CAPITALIZED,https://padloc.otago.ac.nz
+34459872,FIVEX,fivex | eqtl,"PIPE_CLEANED,CAPITALIZED",https://fivex.sph.umich.edu
+38277370,STRING (biocomputo),string,"CAPITALIZED,DISAMBIGUATED",https://biocomputo.ibt.unam.mx/phylostring/
+39866619,UVREK,uvrek,CAPITALIZED,https://cb.imsc.res.in/uvrek/
+40276250,MTD,mtd,CAPITALIZED,https://mtd.biodesign.ac.cn/
+36704562,LDMD,ldmd,CAPITALIZED,
+38113679,GWASWA,gwaswa,CAPITALIZED,
+36147666,peakcnv,peakcnv | copy number variation,PIPE_CLEANED,https://rdrr.io/github/mahdieh1/PeakCNV
+39883249,DSCI,dsci,CAPITALIZED,https://dsci.renlab.cn/
+39817732,multitax,multitax | multitax-human,PIPE_CLEANED,
+39227914,RAICHU,raichu,CAPITALIZED,https://pypi.org/project/raichu
+35787295,PCYCDB,pcycdb,CAPITALIZED,
+38310531,TMD,tmd,CAPITALIZED,
+37819042,MAMI,mami,CAPITALIZED,https://bioinfo.biols.ac.cn/mami/
+37950115,VITAFA,vitafa,CAPITALIZED,https://osf.io/9jtzx/
+37311149,NEODB,neodb,CAPITALIZED,https://liuxslab.com/Neodb/
+36999902,GENEO,geneo,CAPITALIZED,https://neo.engr.uconn.edu/
+37016293,GELFAP,gelfap,CAPITALIZED,http://www.gzybioinformatics.cn/Gelv2
+36049666,TIGER,tiger,CAPITALIZED,http://tiger.canceromics.org/
+38277912,GEOFOR,geofor,CAPITALIZED,
+37933857,PPGR,ppgr,CAPITALIZED,https://ngdc.cncb.ac.cn/ppgr/
+35263335,RDB (covdb),rdb,"CAPITALIZED,DISAMBIGUATED",https://covdb.stanford.edu
+36934538,QSP,qsp,CAPITALIZED,
+40211375,inertdb,inertdb | pubchem,PIPE_CLEANED,
+35673010,POKR,pokr,CAPITALIZED,
+39310281,MASSKG,masskg,CAPITALIZED,https://xomics.com.cn/masskg
+38556628,PRIDE,pride,CAPITALIZED,https://www.ebi.ac.uk/pride/chatbot/
+40621063,BCMA,bcma,CAPITALIZED,http://lifeome.net/database/bcma/
+35181599,PSATDB,psatdb,CAPITALIZED,https://lms.snu.edu.in/pSATdb/
+40145964,RBAD,rbad,CAPITALIZED,http://www.bioinform.cn/RBAD/
+40113206,SERS,sers,CAPITALIZED,http://sers.test.bniu.net/
+40899639,CROPCS,cropcs,CAPITALIZED,https://www2.tezu.ernet.in/cropcs
+35181636,CANCOL,cancol,CAPITALIZED,
+34935911,MACA,maca,CAPITALIZED,
+36426870,GSEAPY,gseapy,CAPITALIZED,https://pypi.org/project/gseapy/
+37114999,orthovenn3,orthovenn3 | orthovenn,PIPE_CLEANED,https://orthovenn3.bioinfotoolkits.net
+40309917,EVOLVE,evolve,CAPITALIZED,https://evolve-iiserkol.com
+36803795,GENECI,geneci,CAPITALIZED,https://pypi.org/project/geneci/
+34591957,GEN (ngdc),gen,"CAPITALIZED,DISAMBIGUATED",https://ngdc.cncb.ac.cn/gen/
+34755877,IID (ophid),iid,"CAPITALIZED,DISAMBIGUATED",http://ophid.utoronto.ca/iid
+34755880,RHEA,rhea,CAPITALIZED,https://www.rhea-db.org
+36164976,DGPD,dgpd,CAPITALIZED,http://dgpd.tlds.cc/DGPD/index/
+35657113,GEMI,gemi,CAPITALIZED,http://gmql.eu/gemi/
+35149212,TAPASS,tapass,CAPITALIZED,https://bioinfo.crbm.cnrs.fr/index.php?route=tools&tool=32
+37279138,AADB,aadb,CAPITALIZED,http://www.acdb.plus/AADB
+35411388,pass2.7,pass2.7 | scope | pass2,PIPE_CLEANED,http://caps.ncbs.res.in/pass2/
+34788838,GMREPO,gmrepo,CAPITALIZED,https://gmrepo.humangut.info
+34788852,DBPTM,dbptm,CAPITALIZED,https://awi.cuhk.edu.cn/dbPTM/
+34723326,GREENC,greenc,CAPITALIZED,http://greenc.sequentiabiotech.com/wiki2/Main_Page
+36968016,ESCCDB,esccdb,CAPITALIZED,http://cailab.labshare.cn/ESCCdb
+37639797,HMDB,hmdb,CAPITALIZED,http://www.orgene.net/HMDB/
+38459036,MCSDB,mcsdb,CAPITALIZED,
+38016694,POSSUM,possum,CAPITALIZED,https://possum.cbrc.pj.aist.go.jp/PoSSuM/
+39982792,pubtator,pubtator | comparative toxicogenomics database,PIPE_CLEANED,https://ctdbase.org
+39048957,PPGV,ppgv,CAPITALIZED,http://peachtree.work/home
+39343895,FEATL,featl,CAPITALIZED,http://backlin.cabgrid.res.in/FEAtl/
+34985769,FPIA,fpia,CAPITALIZED,http://bioinfo-sysu.com/fpia
+36263784,BIC,bic,CAPITALIZED,http://bic.jhlab.tw/
+35788654,LBD (bis),lbd,"CAPITALIZED,DISAMBIGUATED",http://bis.zju.edu.cn/LBD
+39720854,CMS,cms,CAPITALIZED,https://atorang.shinyapps.io/NanoCMSer
+37738401,ml-plic,ml-plic | pli,PIPE_CLEANED,http://cadd.zju.edu.cn/plic/
+35805101,IPCD,ipcd | pcd,"PIPE_CLEANED,CAPITALIZED",
+36280237,NACDDB,nacddb,CAPITALIZED,https://genesilico.pl/nacddb/
+36542404,CLRP,clrp,CAPITALIZED,https://physics.carleton.ca/clrp/egs_brachy/seed_database_v2
+41031637,COBVAR,cobvar,CAPITALIZED,https://datatools.sjri.res.in/VBG/
+35461097,CCDB,ccdb,CAPITALIZED,http://www.ccdb.idsl.me
+39475181,gutmgene (bio-computing),gutmgene,DISAMBIGUATED,http://bio-computing.hrbmu.edu.cn/gutmgene
+39540753,VISTA,vista,CAPITALIZED,https://ngdc.cncb.ac.cn/vista
+36640825,OOCDB,oocdb,CAPITALIZED,http://www.organchip.cn
+38803518,DBEBV,dbebv | ebv,"PIPE_CLEANED,CAPITALIZED",http://dbebv.omicsbio.info
+35625024,BRHD,brhd,CAPITALIZED,
+39065696,DBAASP,dbaasp,CAPITALIZED,
+39360609,RDBSB,rdbsb,CAPITALIZED,https://www.biosino.org/rdbsb/
+37410917,CROPGF,cropgf,CAPITALIZED,https://bis.zju.edu.cn/cropgf
+39180399,ddinter (ddinter2),ddinter,DISAMBIGUATED,https://ddinter2.scbdd.com
+37001349,AODB,aodb,CAPITALIZED,https://aodb.idruglab.cn/
+37165197,perunpdb,perunpdb | peruvian natural products database,PIPE_CLEANED,https://perunpdb.com.pe/
+38656142,CGE,cge | etec,"PIPE_CLEANED,CAPITALIZED",
+38164624,APTADB,aptadb,CAPITALIZED,http://lmmd.ecust.edu.cn/aptadb/
+34871441,IPROX,iprox,CAPITALIZED,https://www.iprox.cn
+40343712,GENDIS,gendis,CAPITALIZED,https://caps.ncbs.res.in/gendis3/
+37214420,CTGA,ctga,CAPITALIZED,
+39737565,IPHYLO,iphylo,CAPITALIZED,https://www.iphylo.net/
+36509942,CRISSD,crissd,CAPITALIZED,osf.io/gkbrm
+38213899,CCTCM,cctcm,CAPITALIZED,http://www.cctcm.org.cn
+36624664,NPASS,npass,CAPITALIZED,http://bidd.group/NPASS
+37378342,MSDB,msdb,CAPITALIZED,
+36165955,QPTM,qptm,CAPITALIZED,http://qptm.omicsbio.info
+38148439,FEATS,feats,CAPITALIZED,
+35592546,EWAS,ewas,CAPITALIZED,http://www.ewascatalog.org/upload
+38213995,TSCRE,tscre | scre,"PIPE_CLEANED,CAPITALIZED",http://tscre.zsqylab.com/
+38525301,BIOVDB,biovdb,CAPITALIZED,
+36641216,SAXS,saxs,CAPITALIZED,https://simplescattering.com
+39737797,ALLIN,allin,CAPITALIZED,
+38443468,HEVOD,hevod,CAPITALIZED,
+39377391,AMIR,amir,CAPITALIZED,https://yanglab.hzau.edu.cn/AMIR/
+35133949,BIOPHI,biophi,CAPITALIZED,https://biophi.dichlab.org
+38017550,EMNPD,emnpd,CAPITALIZED,http://emnpd.idrblab.cn/
+38459946,EQTL,eqtl | sc-,"PIPE_CLEANED,CAPITALIZED",http://www.sqraolab.com/scqtl
+35871305,CMDB,cmdb,CAPITALIZED,https://db.cngb.org/cmdb/
+37427797,TARPID,tarpid,CAPITALIZED,https://tarpid.nitrkl.ac.in/tarpid_db/
+34986599,HIT,hit,CAPITALIZED,http://hit2.badd-cao.net
+34773623,qprimerdb (biodb),qprimerdb,DISAMBIGUATED,http://biodb.swu.edu.cn/qprimerdb
+40164028,LSDV,lsdv,CAPITALIZED,http://45.248.163.59/bic/lsdb/
+38738624,PROSCA,prosca,CAPITALIZED,https://idrblab.org/prosca/
+38345567,SEPDB,sepdb,CAPITALIZED,https://sysomics.com/SEPDB/
+37870433,HALL,hall,CAPITALIZED,https://ngdc.cncb.ac.cn/hall/index
+39574394,BFVD,bfvd,CAPITALIZED,
+37870462,UNITMP,unitmp,CAPITALIZED,https://www.unitmp.org
+37739405,SCAR,scar,CAPITALIZED,http://8.142.154.29/SCAR2023
+40197022,MSIGHT,msight | msi,"PIPE_CLEANED,CAPITALIZED",
+35445712,IMOMDB,imomdb,CAPITALIZED,
+37149650,DEEPAR,deepar,CAPITALIZED,http://pmlabstack.pythonanywhere.com/DeepAR
+36477976,PGWAS,pgwas,CAPITALIZED,https://spgwas.waslitbre.org/
+37428248,SEER (124),seer,"CAPITALIZED,DISAMBIGUATED",http://124.222.228.112:8501/
+39558176,causaldb2,causaldb2 | causaldb,PIPE_CLEANED,http://mulinlab.org/causaldb
+39558177,HERB,herb,CAPITALIZED,http://herb.ac.cn/v2
+38247521,PHIND,phind,CAPITALIZED,
+35298480,DBGSRV,dbgsrv,CAPITALIZED,http://www.ehbio.com/dbGSRV/front/
+38788333,MSGD,msgd,CAPITALIZED,http://bio-bigdata.hrbmu.edu.cn/MSGD
+39738650,MTFAP,mtfap,CAPITALIZED,http://www.xiejjlab.bio/MTFAP/
+39198030,APIR,apir,CAPITALIZED,
+35134858,COXI,coxi,CAPITALIZED,
+35134877,psl-lccl,psl-lccl | sk_hep1,PIPE_CLEANED,http://www.igenetics.org.cn/project/PSL-LCCL/
+39656924,BGEE,bgee,CAPITALIZED,https://www.bgee.org/
+38100461,AAAKB,aaakb,CAPITALIZED,http://www.lqlgroup.cn:3838/AAAKB/
+39427574,HAIRDB,hairdb,CAPITALIZED,https://www.hairdb.ca/
+35642895,MIO,mio,CAPITALIZED,https://mio.icbi.at
+35069469,CANT,cant | cant-hyd,"PIPE_CLEANED,CAPITALIZED",
+36757087,ECCDNA (lcbb),eccdna,"CAPITALIZED,DISAMBIGUATED",http://lcbb.swjtu.edu.cn/eccDNAatlas
+40476263,SPIRIT,spirit,CAPITALIZED,
+37805704,agingreg,agingreg | regulatory relationships,PIPE_CLEANED,https://bio.liclab.net/Aging-ReG/
+36871844,CIPDB,cipdb,CAPITALIZED,http://chemyang.ccnu.edu.cn/ccb/database/CIPDB
+37871298,HGMMX,hgmmx,CAPITALIZED,https://www.way2drug.com/hgmmx
+35643087,HTPDB,htpdb,CAPITALIZED,
+38870743,ABCD,abcd,CAPITALIZED,
+35561186,EDGE,edge,CAPITALIZED,https://edge-covid19.edgebioinformatics.org
+34643704,ESC,esc,CAPITALIZED,http://clingen.igib.res.in/esc/
+38182666,LILA,lila | atlas,"PIPE_CLEANED,CAPITALIZED",
+34643725,cancerscem,cancerscem | cancersce,PIPE_CLEANED,https://ngdc.cncb.ac.cn/cancerscem
+39460620,PIPDB,pipdb,CAPITALIZED,https://nmdc.cn/pipdb
+39460625,RPS,rps,CAPITALIZED,https://rps.renlab.cn/
+39231258,CUPCA,cupca,CAPITALIZED,http://cupca.cn/
+37953313,SPDB,spdb,CAPITALIZED,https://scproteomicsdb.com/
+35643189,EZQTL,ezqtl,CAPITALIZED,https://analysistools.cancer.gov/ezqtl
+37953380,DGIDB,dgidb,CAPITALIZED,https://dgidb.org
+39149420,BBSDB,bbsdb,CAPITALIZED,http://124.222.145.44/#!/
+39395187,STOPKB,stopkb,CAPITALIZED,https://lbgi.fr/stopkb/
+36773775,IASLC,iaslc,CAPITALIZED,
+37986215,ATLAS,atlas,CAPITALIZED,https://www.dsimb.inserm.fr/ATLAS
+37183449,SCANNO,scanno,CAPITALIZED,
+39526372,SOIR,soir,CAPITALIZED,https://soir.bio2db.com
+37167092,NAFLD,nafld,CAPITALIZED,https://www.biosino.org/nafldkb
+34791419,lncrnafunc,lncrnafunc | a knowledgebase of lncrna function in human cancer,PIPE_CLEANED,https://ccsm.uth.edu/lncRNAfunc
+39526403,MFIB,mfib,CAPITALIZED,https://mfib.pbrg.hu
+39526405,RFAM,rfam,CAPITALIZED,https://rfam.org
+35627130,PGMD,pgmd,CAPITALIZED,
+35020925,fishmirna,fishmirna | expression database,PIPE_CLEANED,http://www.fishmirna.org
+35381376,ARBRE,arbre,CAPITALIZED,http://lcsb-databases.epfl.ch/arbre/
+35676297,PESTK,pestk | estk,"PIPE_CLEANED,CAPITALIZED",
+35348639,hcoronavirusesdb,hcoronavirusesdb | human coronaviruses,PIPE_CLEANED,http://hcoronaviruses.net/
+38281377,BATFLY,batfly,CAPITALIZED,
+36282546,AHOJ,ahoj,CAPITALIZED,http://apoholo.cz
+36544722,OSCAR,oscar,CAPITALIZED,https://archive.materialscloud.org/record/2022.106
+39657689,SPUDDB,spuddb,CAPITALIZED,
+40526044,haddock3,haddock3 | haddock,PIPE_CLEANED,http://www.bonvinlab.org/haddock3-user-manual
+35201291,cobramod,cobramod | constraint,PIPE_CLEANED,https://cobramod.readthedocs.io/
+40411446,GBRAP,gbrap,CAPITALIZED,http://tacclab.org/gbrap/
+39936323,augcontext db,augcontext db | augcontext,PIPE_CLEANED,http://108.161.138.77:8096/
+37216588,SMDB,smdb,CAPITALIZED,https://www.biosino.org/smdb
+37888340,DALIB,dalib,CAPITALIZED,
+38707542,TFTG,tftg,CAPITALIZED,http://tf.liclab.net/TFTG
+36200836,TAIR,tair,CAPITALIZED,http://arabidopsis.org
+39084442,HSADAB,hsadab | hsa,"PIPE_CLEANED,CAPITALIZED",http://www.hsadab.cn
+38724027,TOTE,tote,CAPITALIZED,
+39657951,PHEWAS,phewas | phetk,"PIPE_CLEANED,CAPITALIZED",
+39838181,CNEV,cnev,CAPITALIZED,https://osf.io/6gy4v/
+39838182,ELI,eli,CAPITALIZED,https://osf.io/vrj3u
+35971612,GAIA,gaia,CAPITALIZED,https://gaia.cobius.usherbrooke.ca
+39117342,spatialctd,spatialctd | a large-scale,PIPE_CLEANED,https://omicsml.github.io/SpatialCTD/
+35430947,RPFAM,rpfam | pfam,"PIPE_CLEANED,CAPITALIZED",http://www.worldscinet.com/jbcb/
+40493647,mindlampvis,mindlampvis | mindlamp,PIPE_CLEANED,
+37528293,CBMAT,cbmat,CAPITALIZED,
+34792166,ECCDNA (circlebase),eccdna,"CAPITALIZED,DISAMBIGUATED",http://circlebase.maolab.org
+36070129,FLARE,flare,CAPITALIZED,
+39838450,MAVEDB,mavedb,CAPITALIZED,https://www.mavedb.org/
+35414795,REIA,reia,CAPITALIZED,http://bioinfo-sysu.com/reia
+38658835,PPANG,ppang,CAPITALIZED,https://cgm.sjtu.edu.cn/PPanG
+39658259,IMPACT,impact,CAPITALIZED,
+40444783,DISC,disc,CAPITALIZED,https://cran.r-project.org/web/packages/SingleCellStat/index.html
+39494517,COG,cog,CAPITALIZED,https://www.ncbi.nlm.nih.gov/research/COG
+39822275,APPIC,appic,CAPITALIZED,https://appic.brown.edu
+39576587,lmptmsite,lmptmsite | transformer,PIPE_CLEANED,http://kcdukkalab.org/pLMSNOSite/
+40625169,PLOV,plov,CAPITALIZED,https://plovdb.ott.ru/
+37889051,AGIDB,agidb,CAPITALIZED,https://agidb.pro
+37889053,SCGRN,scgrn,CAPITALIZED,https://bio.liclab.net/scGRN/
+35234850,PSINDB,psindb,CAPITALIZED,https://psindb.itk.ppke.hu/
+37889074,DBAPIS,dbapis,CAPITALIZED,https://bcb.unl.edu/dbAPIS
+35284049,SDC,sdc,CAPITALIZED,http://sdc.anticancer.xyz
+39773308,FSHR,fshr,CAPITALIZED,
+35857541,CHEMPU,chempu,CAPITALIZED,
+38970503,IMMRNA,immrna,CAPITALIZED,http://www.immrna.cn/
+40133787,alphafold protein structure database,alphafold protein structure database | alphafold,PIPE_CLEANED,https://www.ebi.ac.uk/pdbe/pdbe-kb/3dbeacons/
+36922546,CAF,caf,CAPITALIZED,http://caf.zbiolab.cn
+39478454,BASE (synbi2024),base,"CAPITALIZED,DISAMBIGUATED",https://synbi2024.kaist.ac.kr/base
+37184712,NORINE,norine,CAPITALIZED,https://norine.univ-lille.fr/norine
+34694372,DULOC,duloc,CAPITALIZED,
+40396031,TFEB,tfeb,CAPITALIZED,http://tfeb.tigem.it
+39789848,AUTOGP,autogp,CAPITALIZED,http://autogp.hzau.edu.cn
+39707929,MICK,mick,CAPITALIZED,https://microbialchemreskb.com/
+36283679,BRUMIR,brumir,CAPITALIZED,
+35382564,vegahub,vegahub | vega,PIPE_CLEANED,http://www.vegahub.eu
+36316489,parsecnv2,parsecnv2 | parsecnv,PIPE_CLEANED,
+38331722,PGD,pgd,CAPITALIZED,http://passionfruit.com.cn
+37856620,GIFTDB,giftdb,CAPITALIZED,http://giftdb.agroda.cn
+35186035,TRMIR,trmir,CAPITALIZED,http://bio.liclab.net/trmir/index.html
+37971316,patent and literature antibody database,patent and literature antibody database | plabdab,PIPE_CLEANED,https://opig.stats.ox.ac.uk/webapps/plabdab/
+39413165,SYNBIP,synbip,CAPITALIZED,https://idrblab.org/synbip/
+36169225,PROPAN,propan,CAPITALIZED,https://ngdc.cncb.ac.cn/propan
+36169237,CTD,ctd,CAPITALIZED,http://ctdbase.org/
+37463622,RECOM,recom,CAPITALIZED,
+36169329,BCSCDB,bcscdb,CAPITALIZED,http://dibresources.jcbose.ac.in/ssaha4/bcscdb
+36251279,ACMG,acmg,CAPITALIZED,
+36382402,CORUM,corum,CAPITALIZED,http://mips.helmholtz-muenchen.de/corum/
+37332681,MOF,mof,CAPITALIZED,
+37594855,AVPCD,avpcd,CAPITALIZED,
+37840639,DSEMR,dsemr,CAPITALIZED,
+39577347,latup-net,latup-net | attention u-net with parallel convolutions,PIPE_CLEANED,https://qyber.black/ca/code-bca
+37119813,CYSDB,cysdb,CAPITALIZED,https://backuslab.shinyapps.io/cysdb/
+36890446,PECAX,pecax,CAPITALIZED,
+39331730,CPMKG,cpmkg,CAPITALIZED,https://www.biosino.org/cpmkg/
+36988831,PLAN,plan,CAPITALIZED,
+40822707,ECCD,eccd,CAPITALIZED,
+36644825,SCREP,screp,CAPITALIZED,
+37316673,MDRDB,mdrdb,CAPITALIZED,
+37759106,TELL,tell,CAPITALIZED,https://demo.sci.tellapp.org/
+40233091,MINT,mint,CAPITALIZED,
+37791879,EQTL (bioinfo),eqtl,"CAPITALIZED,DISAMBIGUATED",http://bioinfo.szbl.ac.cn/scQTLbase
+37791883,CROST,crost,CAPITALIZED,https://ngdc.cncb.ac.cn/crost
+40315246,stcdb4nd,stcdb4nd | stcdb,PIPE_CLEANED,https://bis.zju.edu.cn/STCDB
+36399486,UTRDB,utrdb,CAPITALIZED,http://utrdb.cloud.ba.infn.it/utrdb/
+36399488,TIMEDB,timedb | time,"PIPE_CLEANED,CAPITALIZED",https://timedb.deepomics.org
+36399502,IMG,img/vr,"HTML_REMOVED,CAPITALIZED",https://img.jgi.doe.gov/vr
+40036767,PIGOME,pigome,CAPITALIZED,https://pigome.com
+38971820,BULL,bull,CAPITALIZED,
+40036846,TCEVDB,tcevdb,CAPITALIZED,https://guolab.wchscu.cn/TcEVdb
+38742521,FERREG,ferreg,CAPITALIZED,https://idrblab.org/ferreg/
+38840833,AMICA,amica,CAPITALIZED,https://amica.omics.si/
+36579886,KMCP,kmcp,CAPITALIZED,
+35318332,SKEWDB,skewdb,CAPITALIZED,https://skewdb.org
+35039845,ADENET,adenet,CAPITALIZED,http://lmmd.ecust.edu.cn/netinfer
+35662458,GWYRE,gwyre,CAPITALIZED,http://www.gwyre.org
+35662459,COMENT,coment,CAPITALIZED,https://sysbiol.cnb.csic.es/CoMent
+35662462,EVICOR,evicor,CAPITALIZED,https://www.evicor.org/
+36350625,schumannet,schumannet | humannet,PIPE_CLEANED,
+36350638,TATDB,tatdb,CAPITALIZED,https://grigoriev-lab.camden.rutgers.edu/tatdb
+36350646,HGTREE,hgtree,CAPITALIZED,http://hgtree2.snu.ac.kr
+36350663,TEDD,tedd,CAPITALIZED,https://TEDD.obg.cuhk.edu.hk/
+38759114,PQSDC,pqsdc,CAPITALIZED,
+37956310,RMBASE,rmbase,CAPITALIZED,http://bioinformaticsscience.cn/rmbase/
+37956324,channelsdb (channelsdb2),channelsdb | alphafold,"PIPE_CLEANED,DISAMBIGUATED",https://channelsdb2.biodata.ceitec.cz
+36416261,GPSADB,gpsadb,CAPITALIZED,https://www.gpsadb.com/
+35695435,MOLHYB,molhyb,CAPITALIZED,http://molhyb.xundrug.cn/
+33237866,SEDA,seda,CAPITALIZED,https://www.sing-group.org/seda/
+35482537,XEPHIR,xephir,CAPITALIZED,https://www.xephir.org
+36367311,MGTDB,mgtdb,CAPITALIZED,https://mgtdb.unsw.edu.au
+36367312,FDRDB,fdrdb,CAPITALIZED,http://www.medsysbio.org/FDRdb
+36367313,NEMAR,nemar,CAPITALIZED,https://nemar.org
+38726678,DOXS,doxs,CAPITALIZED,
+39119895,qprimerdb,qprimerdb | qprimer,PIPE_CLEANED,https://qprimerdb.biodb.org
+36318246,CRAMDB,cramdb,CAPITALIZED,http://www.ehbio.com/CRAMdb
+34941991,MEANGS,meangs,CAPITALIZED,
+36318248,REBASE,rebase,CAPITALIZED,
+37907498,GPU,gpu,CAPITALIZED,
+36318256,CRDB,crdb,CAPITALIZED,http://cr.liclab.net/crdb/
+36318257,GOLD,gold,CAPITALIZED,https://gold.jgi.doe.gov/
+36318258,HUSCH,husch,CAPITALIZED,http://husch.comp-genomics.org
+36318261,HGD,hgd,CAPITALIZED,https://ngdc.cncb.ac.cn/hgd
+40250417,AFED,afed,CAPITALIZED,https://a-flavus-expression-db-jyqnpeuvta-uc.a.run.app
+37547083,IMOPAC,imopac,CAPITALIZED,http://www.hbpding.com/IMOPAC
+36039757,RLBASE,rlbase,CAPITALIZED,https://gccri.bishop-lab.uthscsa.edu/shiny/rlbase/
+37776561,BCEDB,bcedb,CAPITALIZED,http://www.oncoimmunobank.cn/bcedbindex
+38218937,PDB,pdb,CAPITALIZED,http://www.aifordrugs.cn/index/
+39546087,ACMG (clingen),acmg | brca,"PIPE_CLEANED,CAPITALIZED,DISAMBIGUATED",https://clingen.igib.res.in/brcaindica/
+39693568,ECCDNA (lcbb),eccdna,"CAPITALIZED,DISAMBIGUATED",https://lcbb.swjtu.edu.cn/scEccDNAdb/
+34991484,hla-spread,hla-spread | spread,PIPE_CLEANED,http://hla-spread.igib.res.in/
+38022524,SYSCID,syscid,CAPITALIZED,https://syscid.elixir-luxembourg.org/
+36400569,TOXRIC,toxric,CAPITALIZED,https://toxric.bioinforai.tech/
+39382461,epicandin,epicandin | epidemiology of candida infections in india,PIPE_CLEANED,
+36515263,CARPE,carpe,CAPITALIZED,https://carpe.shinyapps.io/CarpeTool/
+36646374,psngpcrdb,psngpcrdb | g protein,PIPE_CLEANED,http://webpsn.hpc.unimo.it/psngpcr.php
+39546375,LMRAC,lmrac,CAPITALIZED,https://hub.docker.com
+40414739,BGMP,bgmp,CAPITALIZED,http://bloodgmp.org
+38268451,YACHT,yacht,CAPITALIZED,
+37170752,MCAN,mcan,CAPITALIZED,https://ngdc.cncb.ac.cn/biocode/tools/BT007301
+37678708,WEBSTR,webstr,CAPITALIZED,https://webstr.ucsd.edu
+37039735,NTLINK,ntlink,CAPITALIZED,
+39530217,ASPDB,aspdb,CAPITALIZED,https://biodataai.uth.edu/ASpdb/
+35401459,pangenome,pangenome | rsolanidb,PIPE_CLEANED,
+37449459,DRUMAP,drumap,CAPITALIZED,https://drumap.nibiohn.go.jp/
+39530242,molluscdb (mgbase),molluscdb,DISAMBIGUATED,http://mgbase.qnlm.ac
+39546630,RASP,rasp,CAPITALIZED,http://rasp2.zhanglab.net/
+38629186,DREAM,dream,CAPITALIZED,http://pallab.cds.iisc.ac.in/DREAM/
+34500462,VIMIC,vimic,CAPITALIZED,http://bmtongji.cn/ViMIC/index.php
+38449024,MSCSDB,mscsdb | msc,"PIPE_CLEANED,CAPITALIZED",http://mscsdb.jflab.ac.cn:18088/index/
+40677252,CNC,cnc,CAPITALIZED,
+37941147,ZEBRA,zebra,CAPITALIZED,https://www.ccb.uni-saarland.de/zebra
+36630461,MAGNET,magnet,CAPITALIZED,https://magnet-winterlab.herokuapp.com
+39333850,speciateit,speciateit | vspeciatedb,PIPE_CLEANED,
+37531635,VEXD,vexd,CAPITALIZED,https://vexd.cchmc.org/
+38531069,mouse genome informatics (informatics),mouse genome informatics,DISAMBIGUATED,https://informatics.jax.org
+39563275,NIRS,nirs,CAPITALIZED,https://shiny.cefe.cnrs.fr/NirsPredict/
+40185904,PSYCGM,psycgm,CAPITALIZED,http://psycgmomics.info
+38498357,RARPKB,rarpkb,CAPITALIZED,http://rarpkb.bioinf.org.cn
+36761658,FLORES,flores,CAPITALIZED,
+37974081,RUBIC,rubic,CAPITALIZED,
+38711369,DDID,ddid,CAPITALIZED,https://bddg.hznu.edu.cn/ddid/
+35876977,FEAMR,feamr,CAPITALIZED,https://feamrudbt-amrlab.mu.ac.in/
+37843152,TCOD,tcod,CAPITALIZED,https://ngdc.cncb.ac.cn/tcod
+37925080,RPM,rpm,CAPITALIZED,https://ranczlab.github.io/RPM/
+34664666,ASMDB,asmdb,CAPITALIZED,http://www.dna-asmdb.com
+34320637,rpanglaodb,rpanglaodb | panglaodb,PIPE_CLEANED,https://CRAN.R-project.org/package=rPanglaoDB
+37253405,IUCLID,iuclid,CAPITALIZED,https://iuclid6.echa.europa.eu/us-fda-toxicity-data
+38957398,KLSD,klsd,CAPITALIZED,http://ai.njucm.edu.cn:8080
+40268234,gpcrchimeradb,gpcrchimeradb | g protein,PIPE_CLEANED,https://www.bio2byte.be/gpcrchimeradb/
+38711760,KMERDB,kmerdb,CAPITALIZED,http://www.kmerdb.com
+37646936,TEMM,temm,CAPITALIZED,https://bioinformatics.um6p.ma/TEMM
+40546922,COUNTY,county,CAPITALIZED,
+39137906,NCSTEM,ncstem,CAPITALIZED,http://www.nidmarker-db.cn/ncStem/index.html
+35779245,DBBIP,dbbip | bip,"PIPE_CLEANED,CAPITALIZED",http://dbbip.xialab.info
+37450416,APDB,apdb,CAPITALIZED,http://apdb.di.univr.it
+37221042,CIGAF,cigaf,CAPITALIZED,
+37171899,AIONER,aioner,CAPITALIZED,
+36123328,HSV,hsv,CAPITALIZED,
+35254998,MDADP,mdadp | mda,"PIPE_CLEANED,CAPITALIZED",http://mdadp.leelab2997.cn
+35844834,ROMA,roma,CAPITALIZED,https://roma.univ-lyon1.fr
+35500907,MICID,micid,CAPITALIZED,https://www.ncbi.nlm.nih.gov/CBBresearch/Yu/downloads.html
+38843311,DRGKB,drgkb,CAPITALIZED,http://www.sysbio.org.cn/drgkb/
+40367044,BPCHAR,bpchar,CAPITALIZED,
+34534350,TISMO,tismo,CAPITALIZED,http://tismo.cistrome.org
+37221343,GAUDIE,gaudie,CAPITALIZED,https://osf.io/xyr6j/
+36582435,SEQCP,seqcp,CAPITALIZED,http://pcnas.life.nthu.edu.tw/SeqCP/
+37876810,NCRD,ncrd,CAPITALIZED,
+34747470,AMDB,amdb,CAPITALIZED,http://leb.snu.ac.kr/amdb
+37205123,TLSEA,tlsea,CAPITALIZED,http://www.lirmed.com:5003/tlsea
+34403477,postar3,postar3 | postar,PIPE_CLEANED,http://postar.ncrnalab.org
+36091046,MMKP,mmkp,CAPITALIZED,
+39482572,srnadeep,srnadeep | distilbert,PIPE_CLEANED,
+36222201,KINMOD,kinmod,CAPITALIZED,https://lmse.utoronto.ca/kinmod/KINMOD.sql.gz
+38597890,NETME,netme,CAPITALIZED,https://netme.click/
+38516019,MCSS,mcss,CAPITALIZED,
+38974887,CRCDB,crcdb,CAPITALIZED,http://crcdb-hust.com
+40400345,alphafold (ekhidna2),alphafold,DISAMBIGUATED,http://ekhidna2.biocenter.helsinki.fi/ISS_ProtSci/
+36255293,MADET,madet,CAPITALIZED,https://www.madet.info
+39351893,DMRDB,dmrdb,CAPITALIZED,http://www.inbirg.com/DMRdb/
+36484697,CHEBI,chebi,CAPITALIZED,https://ftp.uniprot.org/pub/databases/uniprot/
+35141219,LNCPEP,lncpep,CAPITALIZED,http://www.shenglilabs.com/LncPep/
+35452518,PCRMS,pcrms,CAPITALIZED,https://cci-bioinfo.uncc.edu
+35796594,COINS,coins,CAPITALIZED,
+34551437,cscd2,cscd2 | cscd,PIPE_CLEANED,http://geneyun.net/CSCD2
+36271795,UFCG,ufcg,CAPITALIZED,https://ufcg.steineggerlab.com
+36370097,campr4,campr4 | camp,PIPE_CLEANED,http://camp.bicnirrh.res.in/
+37811892,PFAM,pfam,CAPITALIZED,http://www.nmpfamsdb.org/
+36370105,STRING,string,CAPITALIZED,https://string-db.org/
+36206273,IDEST,idest,CAPITALIZED,
+35469024,HORDB,hordb,CAPITALIZED,
+37779250,MMIKG,mmikg,CAPITALIZED,http://yangbiolab.cn:8501/
+37975879,BELB,belb | bel,"PIPE_CLEANED,CAPITALIZED",
+38860632,EXMOVE,exmove,CAPITALIZED,https://exmove.github.io/
+36288371,PISPY,pispy,CAPITALIZED,
+39565203,PGXDB,pgxdb,CAPITALIZED,https://pgx-db.org/
+36353986,COMBAT,combat,CAPITALIZED,https://db.combat.ox.ac.uk
+39729127,CUREGN,curegn,CAPITALIZED,
+38991851,PEPHUB,pephub,CAPITALIZED,https://pephub.databio.org
+39630862,ELEMUR,elemur,CAPITALIZED,https://eeum-brain.com/#/lemurdatasets
+40728624,MPAD,mpad,CAPITALIZED,https://web.iitm.ac.in/bioinfo2/mpad/
+39319601,RPFDB,rpfdb,CAPITALIZED,http://www.rpfdb.org
+38844475,SSREAD,ssread,CAPITALIZED,https://bmblx.bmi.osumc.edu/ssread/
+36124785,APPRIS,appris | mane,"PIPE_CLEANED,CAPITALIZED",https://appris.bioinfo.cnio.es
+38926513,MOI,moi,CAPITALIZED,http://www.fynn-guo.cn/
+36436153,GENIDA,genida,CAPITALIZED,
+38795552,MHBASE,mhbase,CAPITALIZED,
+39205165,VOGDB,vogdb,CAPITALIZED,vogdb.org
+41171289,LCDD,lcdd,CAPITALIZED,https://bioinformaticscollege.ir/lcdd/
+39074139,FURNA,furna,CAPITALIZED,https://seq2fun.dcmb.med.umich.edu/furna/
+37222748,friendlyclearmap,friendlyclearmap | clearmap,PIPE_CLEANED,
+38975839,mediatorweb,mediatorweb | protein-protein interaction,PIPE_CLEANED,
+37599593,POLYQ,polyq,CAPITALIZED,https://polyq.pt/
+35617175,ADMETH,admeth,CAPITALIZED,http://www.biobdlab.cn/ADmeth
+35436998,PMTR,pmtr,CAPITALIZED,https://pmtrig.lumc.nl/
+38091269,JERS,jers,CAPITALIZED,
+38713861,DIRMC,dirmc,CAPITALIZED,http://www.dirmc.tech/
+36420165,RNAME,rname,CAPITALIZED,https://chenweilab.cn/rname/
+38632050,GAUSS,gauss,CAPITALIZED,https://statsleelab.github.io/gauss/
+36043401,EFGD,efgd,CAPITALIZED,https://efgenome.ynau.edu.cn
+39533201,CLOSHA,closha,CAPITALIZED,https://www.kobic.re.kr/closha2
+35961607,CHD,chd,CAPITALIZED,http://chddb.fwgenetics.org
+39746417,CSMPDB,csmpdb,CAPITALIZED,http://myshiny.cpolar.io/CsMPDB
+36879236,RGT,rgt,CAPITALIZED,https://reg-gen.readthedocs.io
+37387152,COMIC,comic,CAPITALIZED,https://www.cbioportal.org/study/clinicalData?id=brca\_metabric
+36305818,SPEED,speed,CAPITALIZED,http://8.142.154.29
+36305822,DORIC,doric,CAPITALIZED,https://tubic.org/doric/
+36305828,UORFDB,uorfdb,CAPITALIZED,https://www.bioinformatics.uni-muenster.de/tools/uorfdb
+39041983,TREADS,treads,CAPITALIZED,https://treads-aer.cdacb.in
+35388368,aop-wiki (aopwiki),aop-wiki,DISAMBIGUATED,https://aopwiki.rdf.bigcat-bioinformatics.org
+36797409,SODB,sodb,CAPITALIZED,https://pysodb.readthedocs.io/en/latest/
+34978816,EXCESP,excesp,CAPITALIZED,
+34634795,ZOVER,zover,CAPITALIZED,http://www.mgc.ac.cn/ZOVER
+34634797,ensembl (covid-19),ensembl,DISAMBIGUATED,https://covid-19.ensembl.org
+37977136,PDB,pdb,CAPITALIZED,
+38059067,EMG,emg,CAPITALIZED,
+34634820,SCOVID,scovid,CAPITALIZED,http://bio-annotation.cn/scovid
+36109405,KRISHI,krishi,CAPITALIZED,http://www.tezu.ernet.in/krishi
+39582892,ECGA,ecga,CAPITALIZED,https://www.zhounan.org/ecga/
+38862028,SOMA,soma,CAPITALIZED,
+39107817,PANTA,panta,CAPITALIZED,
+37207327,resfinderfg,resfinderfg | resfinder,PIPE_CLEANED,https://cge.food.dtu.dk/services/ResFinderFG/
+37207338,pandrugs2,pandrugs2 | pandrugs,PIPE_CLEANED,https://www.pandrugs.org/
+37207351,terokit,terokit | teroenz | teromap,PIPE_CLEANED,http://terokit.qmclab.com/browse_enz.html
+35536198,BIOKIT,biokit,CAPITALIZED,https://pypi.org/project/jlsteenwyk-biokit/
+39714149,SCOVID (bio-computing),scovid,"CAPITALIZED,DISAMBIGUATED",http://bio-computing.hrbmu.edu.cn/scovid/
+40254830,TAXSEA,taxsea,CAPITALIZED,https://shiny.taxsea.app
+39910777,GPT,gpt,CAPITALIZED,
+37158271,CAVE,cave,CAPITALIZED,https://cave.biodesign.ac.cn/
+37158278,GPS,gps,CAPITALIZED,https://gps.biocuckoo.cn
+40287646,METATP,metatp,CAPITALIZED,
+39484850,CASRDB,casrdb,CAPITALIZED,http://casrdb.mgh.harvard.edu
+36453831,PDB (yzhang),pdb,"CAPITALIZED,DISAMBIGUATED",https://yzhang.hpc.nyu.edu/CovBinderInPDB
+36978122,HICAT,hicat,CAPITALIZED,
+39697868,KTED,kted,CAPITALIZED,https://snubh.shinyapps.io/KTED
+35749381,MICNET,micnet,CAPITALIZED,http://micnetapplb-1212130533.us-east-1.elb.amazonaws.com
+39353863,AVM,avm,CAPITALIZED,http://www.bio-bigdata.center/AVM
+37125646,PANGEA,pangea,CAPITALIZED,https://www.flyrnai.org/tools/pangea/
+35208748,PREGO,prego,CAPITALIZED,
+34897464,saccharomyces genome database,saccharomyces genome database | alliance of genome resources | alliance of genome,PIPE_CLEANED,
+38239810,MODMS,modms,CAPITALIZED,https://modms.lzu.edu.cn/
+38862433,KONA,kona,CAPITALIZED,https://www.kobic.re.kr/kona/
+38715008,GRAVEN,graven,CAPITALIZED,http://www.graven.cn
+39436017,RMVAR,rmvar,CAPITALIZED,http://rmvar.renlab.cn
+37699323,ATODB,atodb | ato,"PIPE_CLEANED,CAPITALIZED",http://bio-bigdata.hrbmu.edu.cn/ATOdb/index.jsp
+39436035,METSDB,metsdb,CAPITALIZED,https://relab.xidian.edu.cn/metsDB/
+34864918,HDMC,hdmc,CAPITALIZED,
+35356545,INPUT,input,CAPITALIZED,http://cbcb.cdutcm.edu.cn/INPUT/
+38616961,GETDB,getdb,CAPITALIZED,http://zhanglab.hzau.edu.cn/GETdb/page/index.jsp
+36519835,COMER,comer,CAPITALIZED,https://bioinformatics.lt/comer
+35274672,DPI,dpi,CAPITALIZED,http://dude.docking.org/
+39944117,GUTBUG (metabiosys),gutbug,"CAPITALIZED,DISAMBIGUATED",https://metabiosys.iiserb.ac.in/gutbugdb/
+39436241,ERYDB,erydb,CAPITALIZED,https://ngdc.cncb.ac.cn/EryDB/home
+39436255,NEOTCR,neotcr,CAPITALIZED,http://neotcrdb.bioxai.cn/
+39190503,REFXAS,refxas,CAPITALIZED,
+34570219,g protein,g protein | gproteindb,PIPE_CLEANED,https://gproteindb.org
+35078134,UALCAN,ualcan,CAPITALIZED,http://ualcan.path.uab.edu
+40173613,IEXA,iexa,CAPITALIZED,
+38912109,INS,ins,CAPITALIZED,https://www.ins.gov.co/Paginas/Inicio.aspx
+37945559,NULISA,nulisa,CAPITALIZED,
+40485116,SMART,smart,CAPITALIZED,
+40567045,STEER,steer,CAPITALIZED,
+35864937,gwas-,gwas- | map,PIPE_CLEANED,
+36290955,ZNO,zno,CAPITALIZED,
+38732403,CAROB,carob,CAPITALIZED,
+40108717,EIPAAB,eipaab,CAPITALIZED,
+40005591,BMGC,γbmgc,"CHARS_SANITIZED,CAPITALIZED",
+40157915,IMU,imu,CAPITALIZED,
+35504919,MASCDB,mascdb,CAPITALIZED,
+35832621,KOMB,komb,CAPITALIZED,
+37995323,IPOP,ipop,CAPITALIZED,http://omicstudio.cloud:4012/ipod/
+35849027,CHEM,chem,CAPITALIZED,https://www.ncbi.nlm.nih.gov/research/coronavirus/
+38192003,FAVA,fava,CAPITALIZED,
+35980175,DOPA,dopa,CAPITALIZED,
+35669006,LAMIT,lamit,CAPITALIZED,
+37897362,MACC,macc,CAPITALIZED,http://macc.badd-cao.net/
+34997520,EDGAR,edgar,CAPITALIZED,
+34719002,COBRA,cobra,CAPITALIZED,
+40109352,MORFEE,morfee,CAPITALIZED,
+40027491,EGDB,egdb,CAPITALIZED,
+37356907,NASAP,nasap,CAPITALIZED,https://grobase.top/nasap/
+39372176,AFCA,afca,CAPITALIZED,
+35440038,PEGR,pegr,CAPITALIZED,
+39192052,VCAT,vcat,CAPITALIZED,https://biomed.nscc-gz.cn/zhaolab/VCAT/
+38733474,GENDDN,genddn,CAPITALIZED,
+39732964,ESG,esg,CAPITALIZED,
+36030265,INSAR,insar,CAPITALIZED,
+37439331,ISMOD,ismod,CAPITALIZED,
+38504331,DANCE,dance,CAPITALIZED,
+36128669,SAM,sam,CAPITALIZED,
+37095326,THINGS,things,CAPITALIZED,
+35080120,MCYCDB,mcycdb,CAPITALIZED,
+36456604,SOMAS,somas,CAPITALIZED,
+39913636,IIOT,iiot,CAPITALIZED,
+38275308,elegans-based,elegans</i>-based,HTML_REMOVED,
+40372478,GDBIG,gdbig,CAPITALIZED,http://gdbig.bigcs.com.cn/
+37128447,HGVS,hgvs,CAPITALIZED,
+36407584,DOF,dof,CAPITALIZED,
+38701383,GELMA,gelma,CAPITALIZED,
+39160186,SIEGA,siega,CAPITALIZED,
+39979443,DCGAN,dcgan,CAPITALIZED,
+36997558,gazebasevr,gazebasevr | a large-scale,PIPE_CLEANED,
+37013995,HICLIP,hiclip,CAPITALIZED,
+40552981,cellbindb,cellbindb | a large-scale,PIPE_CLEANED,
+35408437,IDBAC,idbac,CAPITALIZED,
+37784172,GENARK,genark,CAPITALIZED,https://hgdownload.soe.ucsc.edu/hubs/
+35507258,IMEX,imex,CAPITALIZED,
+38112483,nmrshiftdb2,nmrshiftdb2 | nmrshiftdb,PIPE_CLEANED,
+38898990,GUTUDB,gutudb,CAPITALIZED,
+38538633,CVRMAP,cvrmap | bids,"PIPE_CLEANED,CAPITALIZED",
+39390620,DNASEQ,dnaseq | lush,"PIPE_CLEANED,CAPITALIZED",
+38997477,HUT,hut | heptad,"PIPE_CLEANED,CAPITALIZED",https://freeshell.de/~badong/hut.htm
+35999235,TINYML,tinyml,CAPITALIZED,
+40422930,SAND,sand,CAPITALIZED,
+36572713,HACCP,haccp,CAPITALIZED,
+39439992,TAIAO,taiao,CAPITALIZED,
+40341255,MADNET,madnet | yolo,"PIPE_CLEANED,CAPITALIZED",
+39079742,RBDOME,rbdome,CAPITALIZED,
+40013940,UNIMAP,unimap,CAPITALIZED,
+38572168,livit-net,livit-net | transformer,PIPE_CLEANED,https://hz-t3.matpool.com:28765?token=aQjYR4hqMI
+40341774,UYSD,uysd,CAPITALIZED,
+37589308,BGEE,bgee,CAPITALIZED,
+39555474,easy-moda,easy-moda | enalos cloud platform,PIPE_CLEANED,https://www.enaloscloud.novamechanics.com/insight/moda/
+38769143,MZMINE,mzmine,CAPITALIZED,
+38261340,GMFGRN,gmfgrn,CAPITALIZED,
+37753522,toxrefdb,toxrefdb | toxicity reference database,PIPE_CLEANED,
+39621301,NPTAGM,nptagm,CAPITALIZED,
+37180100,VIGET,viget,CAPITALIZED,
+35230423,genbank (submit),genbank,DISAMBIGUATED,https://submit.ncbi.nlm.nih.gov/sarscov2/genbank/
+35673005,GDPR,gdpr,CAPITALIZED,
+36819898,SIMBAD,simbad,CAPITALIZED,
+36443329,REDDB,reddb,CAPITALIZED,
+36967676,MMHCDB,mmhcdb,CAPITALIZED,
+37590326,BALDR,baldr,CAPITALIZED,https://baldr.cpr.ku.dk
+35313008,camoevo,camoevo | an open,PIPE_CLEANED,
+39048679,WWE,wwe,CAPITALIZED,
+38868516,PHGD,phgd,CAPITALIZED,
+37934748,CBR,cbr,CAPITALIZED,
+35886794,REDFLY,redfly,CAPITALIZED,
+37771003,MMIP,mmip,CAPITALIZED,
+36755307,xenbase,xenbase | xenopus model organism,PIPE_CLEANED,https://www.xenbase.org/
+36624399,GBCDB,gbcdb,CAPITALIZED,http://tmliang.cn/gbc/
+36771869,UHMWPE,uhmwpe,CAPITALIZED,
+35739750,DARHD,darhd,CAPITALIZED,
+39360619,PDCDB,pdcdb,CAPITALIZED,https://idrblab.org/PDCdb/
+35576001,SKIOME,skiome,CAPITALIZED,
+36575445,NETACT,netact,CAPITALIZED,
+39213277,IDENET,idenet,CAPITALIZED,
+40327458,MSNGO,msngo,CAPITALIZED,
+38623547,TRIPI,tripi,CAPITALIZED,
+40442291,r-ckgat,r-ckgat | ckgat,PIPE_CLEANED,
+34904611,KRAS,kras</i,"HTML_REMOVED,CAPITALIZED",
+39230075,MRGM,mrgm,CAPITALIZED,
+35232478,TADA,tada,CAPITALIZED,
+39574409,PANKB,pankb,CAPITALIZED,
+35281829,ARZIMM,arzimm,CAPITALIZED,
+39935019,IAMPDB,iampdb,CAPITALIZED,https://bblserver.org.in/iampdb/
+39869488,PPCPS,ppcps,CAPITALIZED,
+39820437,SCGO,scgo,CAPITALIZED,
+35495163,GURFAP,gurfap,CAPITALIZED,http://www.gzybioinfoormatics.cn/GURFAP
+35609980,GEO (geoexplorer),geo,"CAPITALIZED,DISAMBIGUATED",https://geoexplorer.rosalind.kcl.ac.uk
+39607707,PDB,pdb,CAPITALIZED,RCSB.org
+36330927,qtlbase2,qtlbase2 | qtlbase,PIPE_CLEANED,http://mulinlab.org/qtlbase
+39607778,BWT,bwt,CAPITALIZED,
+40328737,HIBC,hibc,CAPITALIZED,https://www.hibc.rwth-aachen.de
+38330004,SDN,sdn | ddosdn,"PIPE_CLEANED,CAPITALIZED",
+35069703,GMQN,gmqn,CAPITALIZED,
+34791203,FRANTK,frantk,CAPITALIZED,
+37986230,DRMREF,drmref,CAPITALIZED,https://ccsm.uth.edu/DRMref/
+34791357,FUZDB,fuzdb,CAPITALIZED,https://fuzdb.org
+40050634,CUGUV,cuguv,CAPITALIZED,
+40230947,SBRM,sbrm,CAPITALIZED,
+35037224,reactome (plantreactome),reactome | pubchem,"PIPE_CLEANED,DISAMBIGUATED",https://plantreactome.gramene.org
+35037225,AGROLD,agrold,CAPITALIZED,
+39985319,MANUDB,manudb,CAPITALIZED,
+35266814,CIAMIB,ciamib,CAPITALIZED,
+40100137,PDBE,pdbe | pdb,"PIPE_CLEANED,CAPITALIZED",https://pdbe.org/chem/sti
+39117154,circadipy,circadipy | an open,PIPE_CLEANED,
+39510367,HEAL,heal | impowr,"PIPE_CLEANED,CAPITALIZED",
+39379421,FANET,fanet,CAPITALIZED,
+38625925,NOMA,noma | oma,"PIPE_CLEANED,CAPITALIZED",
+37053159,simplemind,simplemind | an open,PIPE_CLEANED,
+37069653,GBC,gbc,CAPITALIZED,
+35169226,ACMG,acmg,CAPITALIZED,
+35169263,ALMA,alma,CAPITALIZED,
+35071207,BAS,bas,CAPITALIZED,
+38167832,MAPS,maps,CAPITALIZED,
+37971299,DDBJ,ddbj,CAPITALIZED,https://www.ddbj.nig.ac.jp
+37938570,EPOS,epos,CAPITALIZED,
+35759515,urptmdb,urptmdb | teaprot,PIPE_CLEANED,https://tea.coffeeprot.com/
+39380489,DDBJ,ddbj,CAPITALIZED,https://www.ddbj.nig.ac.jp
+36382391,alphafold protein structure database,alphafold protein structure database | alphafold,PIPE_CLEANED,
+39741145,ITH,ith,CAPITALIZED,
+38102790,IHDR,ihdr,CAPITALIZED,
+37758930,neuromabseq,neuromabseq | neuromab,PIPE_CLEANED,
+37709805,PAGES,pages,CAPITALIZED,
+39102448,COPS,cops,CAPITALIZED,
+38250527,MPDB,mpdb,CAPITALIZED,
+40445983,cyclegan,cyclegan | yolov8s,PIPE_CLEANED,
+40528035,DRIFTS,drifts | hsi,"PIPE_CLEANED,CAPITALIZED",
+39528678,ONIX,onix,CAPITALIZED,
+39889147,SERS,sers,CAPITALIZED,
+39430404,PPHIC,pphic,CAPITALIZED,
+39151939,maize genetics and genomics database,maize genetics and genomics database | maizegdb | the maize genetics and genomics database,PIPE_CLEANED,
+40479047,RBPSEG,rbpseg,CAPITALIZED,
+40315414,AVRC,avrc,CAPITALIZED,
+40315417,LSTM,lstm,CAPITALIZED,
+36350503,MSINGB,msingb | msi,"PIPE_CLEANED,CAPITALIZED",
+36825752,FAPD,fapd,CAPITALIZED,
+39512782,CGD,cgd,CAPITALIZED,
+40233745,SGS,sgs,CAPITALIZED,
+36449162,ATLAS,atlas | bs-,"PIPE_CLEANED,CAPITALIZED",
+35974056,NFT,nft,CAPITALIZED,
+39578580,HDBIND,hdbind,CAPITALIZED,
+35106057,MHA,mha,CAPITALIZED,
+40136077,PROBML,probml,CAPITALIZED,
+37105065,MOF,mof,CAPITALIZED,
+37187003,NORM,norm,CAPITALIZED,
+37563883,DEBBIE,debbie,CAPITALIZED,
+39611991,glycopost,glycopost | unicarb,PIPE_CLEANED,
+36892262,asgard+,asgard+ | asgard,PIPE_CLEANED,
+37220074,ECOCYC,ecocyc,CAPITALIZED,EcoCyc.org
+39530225,DBSNP,dbsnp,CAPITALIZED,https://www.ncbi.nlm.nih.gov/snp
+38481855,INBIO,inbio,CAPITALIZED,
+36351936,RGB,rgb,CAPITALIZED,
+36351966,NEMO,nemo,CAPITALIZED,
+40202271,nanomaterials-integrated crispr/cas systems,nanomaterials-integrated crispr/cas systems | toolbox for optical detection,PIPE_CLEANED,
+37974076,PRANA,prana,CAPITALIZED,https://cran.r-project.org/web/packages/PRANA/index.html
+37498959,an open,an open | canadian open neuroscience platform,PIPE_CLEANED,
+39579797,ATFDB,atfdb,CAPITALIZED,
+34664659,NPCDR,npcdr,CAPITALIZED,https://idrblab.org/npcdr/
+37843156,BIOKA,bioka,CAPITALIZED,https://ngdc.cncb.ac.cn/bioka
+38351149,PYHIM,pyhim,CAPITALIZED,
+39154076,EDARA,edara,CAPITALIZED,
+36385198,PEPSEQ,pepseq,CAPITALIZED,
+36008415,NIMH,nimh,CAPITALIZED,
+37614126,BOLD,bold,CAPITALIZED,
+38335132,IPTG,iptg,CAPITALIZED,
+37139115,PORT,port,CAPITALIZED,
+38941446,CCCRYO,cccryo,CAPITALIZED,
+36696912,mucurex,μcurex,CHARS_SANITIZED,
+37647277,VQA,vqa,CAPITALIZED,
+40645675,MDDB,mddb,CAPITALIZED,https://mddb.nitrr.ac.in/
+40301633,REMOTE,remote,CAPITALIZED,
+36107335,FPBASE,fpbase,CAPITALIZED,
+37680201,PSF,psf,CAPITALIZED,
+38450403,AGTC,agtc,CAPITALIZED,
+38040823,EBSD,ebsd,CAPITALIZED,
+35927290,FIVES,fives,CAPITALIZED,
+36271389,CIDO,cido,CAPITALIZED,
+38155575,HEMU,hemu,CAPITALIZED,
+36795731,GAN,gan,CAPITALIZED,
+36484479,EMATI,emati,CAPITALIZED,https://emati.biotec.tu-dresden.de
+36926884,allendigger,allendigger | allen brain atlas,PIPE_CLEANED,
+36631981,MARVEL,marvel,CAPITALIZED,
+37189043,YNCX,yncx,CAPITALIZED,
+38909399,BRCA,brca,CAPITALIZED,
+40400348,ACRDB,acrdb,CAPITALIZED,https://pro.unl.edu/AcrDB
+37697022,brain tumor,brain tumor | convolutional neural network,PIPE_CLEANED,
+39433728,DOGA,doga,CAPITALIZED,
+39450189,EBOLA,ebola,CAPITALIZED,
+37811889,SOYMD,soymd,CAPITALIZED,https://yanglab.hzau.edu.cn/SoyMD/#/
+36533982,GDB,gdb,CAPITALIZED,
+36534166,ILEE,ilee,CAPITALIZED,
+33798067,JRDB,jrdb,CAPITALIZED,
+36435908,SURE,sure,CAPITALIZED,
+37058511,DAGSIM,dagsim,CAPITALIZED,
+40728616,POSSUM,possum,CAPITALIZED,
+36026437,HYPDB,hypdb,CAPITALIZED,https://www.HypDB.site
+37566638,CHRR,chrr,CAPITALIZED,https://jugit.fz-juelich.de/IBG-1/ModSim/fluxomics/chrrt
+40548541,IECATA,iecata,CAPITALIZED,http://mathtc.nscc-tj.cn/cataai/
+40089864,GDC,gdc,CAPITALIZED,
+38730184,MISATO,misato,CAPITALIZED,
+40057378,STAI,stai,CAPITALIZED,
+38206015,KSHV,kshv,CAPITALIZED,
+36502211,IEEE,ieee,CAPITALIZED,
+36289281,reactome (dar),reactome,DISAMBIGUATED,https://dar.biocomp.unibo.it
+40270708,CORN (qinlab),corn,"CAPITALIZED,DISAMBIGUATED",https://qinlab.sysu.edu.cn/corn/home
+35208198,metamdb,metamdb | metabolic atom mapping database,PIPE_CLEANED,
+35503204,mrparse,mrparse | alphafold,PIPE_CLEANED,
+36125864,genome taxonomy database,genome taxonomy database | the genome taxonomy database,PIPE_CLEANED,
+35126443,GRAND,grand,CAPITALIZED,
+36420889,DDBJ,ddbj,CAPITALIZED,https://www.ddbj.nig.ac.jp
+40779104,CEDAR,cedar,CAPITALIZED,
+40828275,BRAKER,braker | tsebra,"PIPE_CLEANED,CAPITALIZED",
+35536253,BIOUML,biouml,CAPITALIZED,https://www.biouml.org
+40582613,cppsite3,cppsite3 | cppsite,PIPE_CLEANED,
+34520557,GTDB,gtdb,CAPITALIZED,https://gtdb.ecogenomic.org
+37780991,IRIS,iris | sight,"PIPE_CLEANED,CAPITALIZED",
+37125649,dbcan3,dbcan3 | dbcan,PIPE_CLEANED,https://bcb.unl.edu/dbCAN2
+38190692,transformer,transformer | a large-scale,PIPE_CLEANED,
+40435368,RETINA,retina,CAPITALIZED,
+38567644,LCDB,lcdb,CAPITALIZED,
+39157583,GEGA,gega | refseq,"PIPE_CLEANED,CAPITALIZED",
+35536809,litmc-bert,litmc-bert | transformer,PIPE_CLEANED,
+39830982,PROAD,proad,CAPITALIZED,
+37476211,EUDIS,eudis,CAPITALIZED,
+35020905,DEST,dest,CAPITALIZED,
+37578228,VWDB,vwdb,CAPITALIZED,
+36710661,MHA,mha,CAPITALIZED,http://malehealthatlas.cn/
+35353316,ODDS,odds,CAPITALIZED,
+35891138,IOMT,iomt,CAPITALIZED,
+36467575,MLSP,mlsp,CAPITALIZED,https://sujiezhulab.shinyapps.io/BRCA/
+37440307,CRACT,cract,CAPITALIZED,https://clinicaltrials.gov/ct2/show/NCT04994093
+38667169,FAIR,fair,CAPITALIZED,
+39695186,FLAIR,flair,CAPITALIZED,
+36658229,HCLIM,hclim,CAPITALIZED,
+36640942,CESIUM,cesium,CAPITALIZED,
+38155573,B,b,"SHORT_NAME_NO_URL,CAPITALIZED",
+38502608,FGCD,fgcd,CAPITALIZED,https://www.hebaubioinformatics.cn/FungalGeneCluster/
+37093804,DDA,dda,CAPITALIZED,
+36307625,crowd-5e,crowd-5e | a croatian psycholinguistic database of affective norms for five discrete emotions,PIPE_CLEANED,
+38191934,REPORT,report,CAPITALIZED,
+37849251,plantcfg,plantcfg | a comprehensive database with web tools for analyzing candidate flowering genes in multiple plants,PIPE_CLEANED,
+36572678,IDSEM,idsem,CAPITALIZED,
+36279873,PRISM,prism,CAPITALIZED,
+39737003,simul-db,simul-db | a database of single and multi-target cas9 guides for hazelnut editing,PIPE_CLEANED,
+38066222,CMR,cmr,CAPITALIZED,
+40261733,CPDMS,cpdms,CAPITALIZED,https://crops.phyzen.com/
+36247691,review of gnss,review of gnss/gps | hydrologic loading applications and their implications for water resource research,"PIPE_CLEANED,HTML_REMOVED",
+39213302,SCDB,scdb,CAPITALIZED,
+40327796,PGCP,pgcp,CAPITALIZED,
+36609142,PUGTDB,pugtdb,CAPITALIZED,
+40557783,simplistic software for analyzing mass spectra,simplistic software for analyzing mass spectra | experimental-theoretical database for identifying poisonous and explosive substances,PIPE_CLEANED,
+40214971,dinosource,dinosource | a comprehensive database of dinoflagellate genomic resources,PIPE_CLEANED,
+39414258,RETTDB,rettdb,CAPITALIZED,https://biomedinfo.di.unipi.it/rett-database/
+38679729,METADB,metadb,CAPITALIZED,
+38106962,FAMFAC,famfac,CAPITALIZED,
+36518520,TEAGVD,teagvd,CAPITALIZED,
+38419327,bamboobase,bamboobase | a comprehensive database of bamboo omics and systematics,PIPE_CLEANED,
+35159786,cocon-database,cocon-database | tool to assess nanomaterial hazard,PIPE_CLEANED,
+40173611,ICCDRS,iccdrs,CAPITALIZED,
+38863005,QUANDB,quandb,CAPITALIZED,
+36470968,FAIRER,fairer,CAPITALIZED,
+38027538,conjugated polymer process ontology,conjugated polymer process ontology | experimental data repository for organic field-effect transistors,PIPE_CLEANED,
+39895511,HTD,htd | hppd,"PIPE_CLEANED,CAPITALIZED",
+37553326,spindrop,spindrop | a droplet microfluidic platform to maximise single-cell sequencing information content,PIPE_CLEANED,
+36537834,first genome sequence resource of,first genome sequence resource of | causal agent of foxtail millet stinking smut disease,PIPE_CLEANED,
+36587236,genome sequence resource of,genome sequence resource of | causative agent of apple replant disease,PIPE_CLEANED,
+35965308,IMSE,imse,CAPITALIZED,
+38865446,PPFAB,ppfab,CAPITALIZED,
+36703942,ELSI,elsi,CAPITALIZED,
+37457653,catalog,﻿catalog,CHARS_SANITIZED,
+39669549,DARG,darg,CAPITALIZED,
+39113237,organoidportal,organoidportal | web server and single-cell transcriptome database featuring reference atlases of organoids,PIPE_CLEANED,
+35820117,HU,hu</sup | publicly available database,"PIPE_CLEANED,HTML_REMOVED,SHORT_NAME_FLAGGED,CAPITALIZED",
+36311883,NCCIH,nccih,CAPITALIZED,
+35607649,high-precision classification method of mammary cancer based on improved,high-precision classification method of mammary cancer based on improved | densenet,PIPE_CLEANED,
+37098652,bnaomics,bnaomics | a comprehensive platform combining pan-genome and multi-omics data from brassica napus,PIPE_CLEANED,
+37934729,CGG,cgg,CAPITALIZED,
+37787899,topdownapp,topdownapp | an open,PIPE_CLEANED,
+39574222,MACE,mace,CAPITALIZED,
+37526240,bsfbase,bsfbase | the comprehensive genomic resource for a natural recycler,PIPE_CLEANED,
+35118058,SPSED,spsed,CAPITALIZED,
+39444035,TECRR,tecrr,CAPITALIZED,
+34954899,MPOD,mpod,CAPITALIZED,
+37789481,LSD,lsd,CAPITALIZED,
+36167495,circgpa,circgpa | circrna functional annotation based on probability-generating functions,PIPE_CLEANED,
+36004795,CPBD,cpbd,CAPITALIZED,
+38217287,PSCIDB,pscidb,CAPITALIZED,
+35890791,field of optical immunosensors focusing on a label-free,field of optical immunosensors focusing on a label-free | white light reflectance spectroscopy-based immunosensing platform,PIPE_CLEANED,
+38676307,BJUIR,bjuir,CAPITALIZED,
+39888724,expression of concern,expression of concern | disgenet | interaction database,PIPE_CLEANED,
+40036254,MAF,maf,CAPITALIZED,
+39823405,PPISEQ,ppiseq,CAPITALIZED,
+39102880,SEER,seer,CAPITALIZED,
+38988407,IPD,ipd,CAPITALIZED,
+36875148,propedia,propedia | interaction database,PIPE_CLEANED,
+38906878,lifespan disparity dataset,lifespan disparity dataset | an open,PIPE_CLEANED,
+38431773,CLAIR,clair,CAPITALIZED,
+35417484,HAPPY,happy,CAPITALIZED,
+36761115,annotated catalogue of orthoptera,﻿annotated catalogue of orthoptera,CHARS_SANITIZED,
+37777465,ILABDB,ilabdb,CAPITALIZED,
+39415970,HORTDB,hortdb,CAPITALIZED,
+35909855,pagerank,pagerank | finder based algorithm for multimedia resources in preschool education,PIPE_CLEANED,
+38384129,RLKDB,rlkdb,CAPITALIZED,
+38744868,REMIND,remind,CAPITALIZED,
+40383374,ADGAP,adgap,CAPITALIZED,
+40285727,inkjet-printed graphene multielectrode arrays,inkjet-printed graphene multielectrode arrays | lt;i&gt;in,PIPE_CLEANED,
+39664372,TSPDB,tspdb,CAPITALIZED,
+34978699,preclinical research strategy development for rnai-based therapies in oncology using patient-centered information from public databases of,preclinical research strategy development for rnai-based therapies in oncology using patient-centered information from public databases of | human protein atlas,PIPE_CLEANED,
+36535428,regulatory network,regulatory network | structure-function analysis,PIPE_CLEANED,
+37567758,PRIDE,pride,CAPITALIZED,
+38714759,microbioraman,microbioraman | an open-access web repository for microbiological raman spectroscopy data,PIPE_CLEANED,
+37950851,KSIA,ksia,CAPITALIZED,
+36787439,DIPEX,dipex,CAPITALIZED,
+35659285,USP,usp,CAPITALIZED,https://statepolicies.com/
+35390003,MID,mid,CAPITALIZED,http://mouse.biomedtzc.cn
+38585015,PFGD,pfgd,CAPITALIZED,http://pfgd.bio2db.com/
+40399309,SMYLR,smylr,CAPITALIZED,
+40233746,RIRA,rira,CAPITALIZED,
+39977381,ABLVR,ablvr,CAPITALIZED,
+38816550,CAWA,cawa,CAPITALIZED,http://mengwanglab.org/atlas
+39047941,PBMGC,pbmgc,CAPITALIZED,https://ciods.in/gcpdb/
+36280721,ISPI,ispi,CAPITALIZED,
+36675905,BEB,beb,CAPITALIZED,
+37567397,CGTDB,cgtdb,CAPITALIZED,
+35446579,COSS,coss,CAPITALIZED,
+38812536,MRCA,mrca,CAPITALIZED,
+36861131,NGC,ngc,CAPITALIZED,
+36100598,musudaqua[db,µsudaqua[db,CHARS_SANITIZED,
+37831357,MSKKP,mskkp,CAPITALIZED,
+36240175,CAAXR,caaxr,CAPITALIZED,
+37193038,RINETX,rinetx,CAPITALIZED,
+37123247,RAPTOR,raptor,CAPITALIZED,
+36658147,ARCLIM,arclim,CAPITALIZED,
+40044760,CLDNET,cldnet,CAPITALIZED,
+39432666,AKIR,akir,CAPITALIZED,
+37697055,MIA,mia,CAPITALIZED,
+37099501,HAGE,hage,CAPITALIZED,
+36124798,ASTRO,astro,CAPITALIZED,
+39198675,HECA,heca,CAPITALIZED,
+40000654,IPED,iped,CAPITALIZED,
+38067184,EBISC,ebisc,CAPITALIZED,
+34888618,GINCCO,gincco,CAPITALIZED,
+38547405,CHORUS,chorus,CAPITALIZED,
+38834718,NPPRED,nppred,CAPITALIZED,https://neuropred.anvil.app
+39404887,BIJ,bij,CAPITALIZED,https://bij.cuh.ac.in/
+36938926,INDRA,indra,CAPITALIZED,
+35758810,AKL,akl,CAPITALIZED,https://cran.r-project.org/web/packages/MAKL
+39202407,DARTAG,dartag,CAPITALIZED,
+35663034,OVD,ovd,CAPITALIZED,
+39091896,TESS,tess,CAPITALIZED,
+36450810,ESRC,esrc,CAPITALIZED,
+37537202,IPDM,ipdm,CAPITALIZED,
+35904158,LCM,lcm,CAPITALIZED,
+35680885,LIANA,liana,CAPITALIZED,
+36083008,CAMLU,camlu,CAPITALIZED,
+37672022,JADBIO,jadbio,CAPITALIZED,https://ega-archive.org/
+37567984,CTRF,ctrf,CAPITALIZED,
+37468574,ECGDL,ecgdl,CAPITALIZED,
+37644066,RVD,rvd,CAPITALIZED,
+39066514,XMEN,xmen,CAPITALIZED,
+38561149,RBA,rba,CAPITALIZED,
+39180095,TRGNN,trgnn,CAPITALIZED,
+38863081,CEPEST,cepest,CAPITALIZED,
+38479385,trim-tpd,δtrim-tpd,CHARS_SANITIZED,
+38686696,DWTP,dwtp,CAPITALIZED,
+37414823,PUM,pum,CAPITALIZED,
+40301713,COSER,coser,CAPITALIZED,
+35680932,ISYB,isyb,CAPITALIZED,
+37142360,BFI,bfi,CAPITALIZED,
+37033061,XGB,xgb,CAPITALIZED,https://xinglinyi.shinyapps.io/20221004-app/
+39820061,DEFI,defi,CAPITALIZED,
+38273575,TRY,try,CAPITALIZED,
+40279043,NCTC,nctc,CAPITALIZED,
+37291214,HLCA,hlca,CAPITALIZED,
+35853958,NCH,nch,CAPITALIZED,
+39589995,RCCS,rccs,CAPITALIZED,
+35895741,SVI,svi,CAPITALIZED,
+37658226,TWAS,twas,CAPITALIZED,
+40121504,OBDM,obdm,CAPITALIZED,
+35042894,ADACNN,adacnn,CAPITALIZED,
+35370187,JMDC,jmdc,CAPITALIZED,
+40163043,RESET,reset,CAPITALIZED,
+35654892,QSCN,qscn,CAPITALIZED,http://www.qshgm.lbci.net/
+39880958,GEN,gen,CAPITALIZED,
+39448623,WISE,wise,CAPITALIZED,
+36314583,DMM,dmm,CAPITALIZED,
+37723201,ITIC,itic,CAPITALIZED,
+35508965,CORN,corn,CAPITALIZED,http://www.plant.osakafu-u.ac.jp/~kagiana/vcorn/sarscov2/
+40173841,MZUSP,mzusp,CAPITALIZED,
+37815256,CIA,cia,CAPITALIZED,
+40511584,osteoevidence,i>osteoevidence</i,HTML_REMOVED,
+37372123,IPPRAS,ippras,CAPITALIZED,
+36522353,GRNWRZ,grnwrz,CAPITALIZED,
+38640488,NCA,nca,CAPITALIZED,
+39085892,RSGP,rsgp,CAPITALIZED,
+38653014,PLACID,placid,CAPITALIZED,
+36707040,KOSMOS,kosmos,CAPITALIZED,http://bioengineering.skku.ac.kr/kosmos/
+40177811,PQR,pqr,CAPITALIZED,
+39468204,SSFCD,ssfcd,CAPITALIZED,
+38556728,BK,bk,"SHORT_NAME_FLAGGED,CAPITALIZED",https://cbk.bjmu.edu.cn/
+37117327,HGKR,hgkr,CAPITALIZED,
+36556360,IFOS,ifos,CAPITALIZED,
+36973698,STUVW,stuvw,CAPITALIZED,
+37800393,ECN,ecn,CAPITALIZED,
+38997128,IGMS,igms,CAPITALIZED,
+39780059,NLP,nlp,CAPITALIZED,https://claramed.csic.es/medspaner
+40348905,MOMFA,momfa,CAPITALIZED,
+35810958,CIRRBP,cirrbp,CAPITALIZED,http://www.bioinformatics.team
+36516131,GCNMLP,gcnmlp,CAPITALIZED,
+39592634,HCSIF,hcsif,CAPITALIZED,
+38921549,CIBAN,ciban,CAPITALIZED,
+37554180,ATLAS,atlas,CAPITALIZED,http://www.mskca.tech
+35325039,MANTIS,mantis,CAPITALIZED,
+36895025,OMA,oma,CAPITALIZED,
+39622400,NER,ner,CAPITALIZED,
+38427620,HNB,hnb,CAPITALIZED,
+39730485,IGWO,igwo,CAPITALIZED,
+39661617,CEICG,ceicg,CAPITALIZED,
+39773281,SJI,sji,CAPITALIZED,
+38349131,TRN,trn,CAPITALIZED,
+40408641,PAS,pas,CAPITALIZED,
+38565568,ASPEFM,aspefm,CAPITALIZED,
+36401161,PHN,phn,CAPITALIZED,
+38066007,BIONER,bioner,CAPITALIZED,
+38996838,RATIO,ratio,CAPITALIZED,
+37681418,SCREEN,screen,CAPITALIZED,
+38710786,CWF,cwf,CAPITALIZED,
+36070863,GRN,grn,CAPITALIZED,
+39254597,RNR,rnr,CAPITALIZED,
+36454444,netpath,netpath | wikipathways | https://www.wikipathways.org/index.php/,PIPE_CLEANED,https://www.wikipathways.org/index.php/
+35962986,SADA,sada | demo | aida,"PIPE_CLEANED,CAPITALIZED",http://zhanglab-bioinf.com/SADA
+39158353,CTCAE,ctcae,CAPITALIZED,https://clinicaltrials.gov/study/NCT01042379
+36340350,COST,cost | vitviz,"PIPE_CLEANED,CAPITALIZED",https://tomsbiolab.com/vitviz
+40157887,STCAT,stcat,CAPITALIZED,https://guolab.wchscu.cn/TCellAtlas
+38470439,PIMINE,pimine,CAPITALIZED,
+37438390,TICCOM,ticcom,CAPITALIZED,
+38388681,CANAL,canal,CAPITALIZED,
+37733731,YORO,yoro | yolo,"PIPE_CLEANED,CAPITALIZED",
+34850161,CAZY,cazy,CAPITALIZED,http://www.cazy.org
+39814560,HGST,hgst,CAPITALIZED,
+38504112,REFSEQ,refseq | gencode | faang | noncode,"PIPE_CLEANED,CAPITALIZED",gega.sigenae.org
+35735230,mouse genome informatics (tools),mouse genome informatics | https://tools.nf.synapse.org/.,"PIPE_CLEANED,DISAMBIGUATED",https://tools.nf.synapse.org/
+39536385,ctapred,ctapred | compound-target activity prediction,PIPE_CLEANED,
+36849471,IBH,ibh,CAPITALIZED,
+40175586,ESPS,esps | snds,"PIPE_CLEANED,CAPITALIZED",
+39880865,CBAM,cbam,CAPITALIZED,
+38488251,ERAS,eras,CAPITALIZED,
+36571479,neuminer,neuminer | brain image library,PIPE_CLEANED,https://doi.brainimagelibrary.org/doi/10.35077/g.25
+35703370,SPN,spn,CAPITALIZED,https://osf.io/2sncj/
+39340826,HCRU,hcru,CAPITALIZED,
+39242603,FMC,fmc,CAPITALIZED,
+37440581,BRATS,brats,CAPITALIZED,
+38882374,gwas-snp,gwas-snp | sv-snp,PIPE_CLEANED,
+37768281,CORE,core,CAPITALIZED,
+37769048,CINAHL,cinahl | rct,"PIPE_CLEANED,CAPITALIZED",
+40259416,FTIR,ftir | st650,"PIPE_CLEANED,CAPITALIZED",
+40996715,KASP,kasp,CAPITALIZED,https://kastrack.crea.gov.it/kastrackdb/?lang=en
+37556115,VAW,vaw,CAPITALIZED,
+36114445,TRRUST,trrust,CAPITALIZED,
+35508507,MLC,mlc,CAPITALIZED,http://semantichub.ijs.si/MLCdatasets
+39866666,metagenomicsdb,metagenomicsdb | http://github.com/iob-muenster/metagenomicsdb,PIPE_CLEANED,http://www.bioinformatics.uni-muenster.de/tools/metagenomicsDB
+40210874,SPLICE,splice,CAPITALIZED,
+37261838,its2,its2 | gag,PIPE_CLEANED,
+36311644,SA,sa,"SHORT_NAME_FLAGGED,CAPITALIZED",
+36688702,DCGS,dcgs,CAPITALIZED,
+39080795,ESTRO,estro | sln | direct,"PIPE_CLEANED,CAPITALIZED",
+39932865,PLINK,plink,CAPITALIZED,https://www.cog-genomics.org/plink/2.0/
+37524436,SCALE,scale,CAPITALIZED,
+39965934,GIANT,giant,CAPITALIZED,
+40523076,MZMINE,mzmine,CAPITALIZED,http://www.pmdb.org.cn/antdasprofiler
+37737859,the foundations of cancer care,the foundations of cancer care | learning hub,PIPE_CLEANED,https://learninghub.nhs.uk
+38524309,a large-scale,a large-scale | northern california kaiser permanente hospitals,PIPE_CLEANED,
+38688285,UNITCR,unitcr,CAPITALIZED,
+38360815,EXMDB,exmdb,CAPITALIZED,
+38000386,OPENAI,openai,CAPITALIZED,monarchinitiative.org
+36099978,STEMI,stemi | ncdr,"PIPE_CLEANED,CAPITALIZED",
+38492232,STRING,string,CAPITALIZED,
+40261741,KC,kc,"SHORT_NAME_FLAGGED,CAPITALIZED",https://kcad.cchem.berkeley.edu
+37443790,KEGG,kegg,CAPITALIZED,
+38312334,SOSA,sosa | gbif,"PIPE_CLEANED,CAPITALIZED",
+39426464,RGAG,rgag,CAPITALIZED,
+35183129,STRING,string | auprc,"PIPE_CLEANED,CAPITALIZED",
+34904638,COSMIC,cosmic | gnomad | pride,"PIPE_CLEANED,CAPITALIZED",https://nf-co.re/pgdb
+34986604,modomics,modomics | jaspar | fuzdb | elm | hmdb | cazy | lpsn | gtdb | bps,PIPE_CLEANED,http://www.oxfordjournals.org/nar/database/c/
+37673902,pubchem,pubchem | uniprot | glytoucan | glycosmos,PIPE_CLEANED,
+36789226,palliative care consult team,palliative care consult team | median palliative performance scale,PIPE_CLEANED,
+37149676,IBT,ibt,CAPITALIZED,
+39476302,SEER (zzubioinfo),seer | tcga | geo,"PIPE_CLEANED,CAPITALIZED,DISAMBIGUATED",https://zzubioinfo.shinyapps.io/mlGBM/
+38886537,GMGD,gmgd | dbsnp,"PIPE_CLEANED,CAPITALIZED",https://db.cngb.org/pop/gmgd/
+40000672,POM,pom,CAPITALIZED,
+32070994,PPINS,ppins | ppin,"PIPE_CLEANED,CAPITALIZED",http://csse.szu.edu.cn/staff/cuilz/eng/index.html
+40181211,RCT,rct,CAPITALIZED,https://sweetproject.eu/HIdatabase
+37527005,https://github.com/novartis,https://github.com/novartis/aegis,HTML_REMOVED,
+35610235,SOC,soc,CAPITALIZED,
+39968379,genbank (online-group-1-intron-database),genbank | https://www.ebi.ac.uk/biostudies/studies/s-bsst1399,"PIPE_CLEANED,DISAMBIGUATED",https://online-group-1-intron-database.onrender.com
+39657158,GALA,gala | pdb,"PIPE_CLEANED,CAPITALIZED",
+35561185,TCGA,tcga,CAPITALIZED,https://portal.gdc.cancer.gov/
+37773106,SEER (loyal-brand-611803),seer | lcss,"PIPE_CLEANED,CAPITALIZED,DISAMBIGUATED",https://loyal-brand-611803.framer.app/
+37953362,MDDB (bioexcel-cv19),mddb,"CAPITALIZED,DISAMBIGUATED",https://bioexcel-cv19.bsc.es/#/
+36347894,HGNC,hgnc,CAPITALIZED,http://www.hipc-dashboard.org
+36610216,LDA,lda,CAPITALIZED,
+35365069,GISAID,gisaid,CAPITALIZED,https://bioinfo.lau.edu.lb/gkhazen/covid19
+39362876,KINET,kinet,CAPITALIZED,https://kinet.kinametrix.com/
+35725848,BARI,bari,CAPITALIZED,
+37872185,EMOC,emoc,CAPITALIZED,
+40329811,GBIF,gbif,CAPITALIZED,
+39592652,alphafold,alphafold | herpesfolds,PIPE_CLEANED,https://www.herpesfolds.org/herpesfolds
+39412443,LSFO,lsfo,CAPITALIZED,https://bioportal.bioontology.org/ontologies/LSFO
+38871809,NODAP,nodap,CAPITALIZED,https://mr.cscps.com.cn/wscoringtool/index.html
+35365676,PAT,pat | spot,"PIPE_CLEANED,CAPITALIZED",
+37004080,PPML,ppml | mpku | c.728g | hpa,"PIPE_CLEANED,CAPITALIZED",http://www.bioinfogenetics.info/PPML/
+38724521,EGGNOG,eggnog,CAPITALIZED,
+35595235,TCGA,tcga,CAPITALIZED,
+36480100,netpath,netpath | wikipathways,PIPE_CLEANED,https://www.wikipathways.org/index.php/Pathway:WP5094
+39003315,COG,cog,CAPITALIZED,
+38905214,THIS,this | uses,"PIPE_CLEANED,CAPITALIZED",
+37267208,GCN,gcn,CAPITALIZED,
+37644119,PSM,psm,CAPITALIZED,https://ms.iis.sinica.edu.tw/comics/Software_FPF.html
+36693896,INS,ins | llc,"PIPE_CLEANED,CAPITALIZED",http://energy.gov/downloads/doe-public-access-plan
+40626310,TCMAP,tcmap,CAPITALIZED,https://cellknowledge.com.cn/tcmap
+38660300,SEER (jiangyujuan),seer | ajcc,"PIPE_CLEANED,CAPITALIZED,DISAMBIGUATED",https://jiangyujuan.shinyapps.io/OS-nomogram/
+40036585,SSSHIC,ssshic,CAPITALIZED,https://www.synapse.org/#!
+40315130,fastneo,fastneo | immune epitope database and tumor-specific neoantigen database,PIPE_CLEANED,
+38267891,GOCE,goce,CAPITALIZED,https://youtu.be/2Ga64iausJE
+38448141,the genomics/proteomics module contains information on different strains responsible for mucormycosis,the genomics/proteomics module contains information on different strains responsible for mucormycosis | mucormydb,PIPE_CLEANED,https://webs.iiitd.edu.in/raghava/mucormydb/
+39414803,COST,cost,CAPITALIZED,
+39971983,CPB,cpb,CAPITALIZED,
+37956888,td-abc,td-abc | u)hf,PIPE_CLEANED,
+36564505,TOPMED,topmed,CAPITALIZED,
+39202371,IRD,ird | polgenom,"PIPE_CLEANED,CAPITALIZED",
+38284937,genbank,genbank | https://zenodo.org/records/8375181,PIPE_CLEANED,
+37498561,schicedrn,schicedrn | deephic | hicplus,PIPE_CLEANED,
+38514693,MINCAN,mincan,CAPITALIZED,
+38875181,https://github.com/linfengyu77,https://github.com/linfengyu77/irldct,HTML_REMOVED,
+36040790,MGB,mgb,CAPITALIZED,
+38367445,cellgiq,cellgiq | lightgbm,PIPE_CLEANED,
+38809899,psycinfo,psycinfo | global health database | review registration open science framework,PIPE_CLEANED,https://osf.io/s385j
+37237065,ausgeochem,ausgeochem | gplates,PIPE_CLEANED,https://ausgeochem.auscope.org.au
+37269845,42,4·2,"CHARS_SANITIZED,SHORT_NAME_FLAGGED",
+35352997,MIRROR,mirror,CAPITALIZED,http://mirror.egnome.co.kr/
+35713500,EQA,eqa | bioasq,"PIPE_CLEANED,CAPITALIZED",
+39105062,MPEAS,mpeas | mpea,"PIPE_CLEANED,CAPITALIZED",
+35435220,HVD,hvd,CAPITALIZED,http://computationalbiology.cn/humanVirusBase/#/
+39252774,e=i,e</sup>=<i,HTML_REMOVED,
+36270998,SMR,smr,CAPITALIZED,
+38253529,inorganic crystal structure database,inorganic crystal structure database | mongodb,PIPE_CLEANED,
+40301568,MICF,micf | crlf1,"PIPE_CLEANED,CAPITALIZED",
+40055894,SGMD,sgmd,CAPITALIZED,
+38040713,PHYAFB,phyafb,CAPITALIZED,
+36713829,DBPOM,dbpom,CAPITALIZED,http://www.dbpom.net/
+38205245,IDHMUT,idhmut | gtabdb,"PIPE_CLEANED,CAPITALIZED",
+38254411,card agglutination test for,card agglutination test for | catt/<i,PIPE_CLEANED,
+38123557,GNPS,gnps,CAPITALIZED,
+40728615,GPSFUN,gpsfun,CAPITALIZED,https://bio-web1.nscc-gz.cn/app/GPSFun
+39073886,ATHEM,athem,CAPITALIZED,https://lipm-browsers.toulouse.inra.fr/pub/ATHEM/
+37845361,hmg-coa,hmg-coa | deepcoy,PIPE_CLEANED,
+38762876,HETIL,hetil,CAPITALIZED,
+38042076,ARCGIS,arcgis,CAPITALIZED,
+34585247,DAVAE,davae,CAPITALIZED,
+39074503,IPEC,ipec,CAPITALIZED,
+35650262,KAAMER,kaamer,CAPITALIZED,
+36944655,SRP,srp,CAPITALIZED,http://srp.pnnl.gov
+36059922,SUDEP,sudep | msdr | r01,"PIPE_CLEANED,CAPITALIZED",
+38206277,CDK,cdk,CAPITALIZED,http://www.asco.org/resource-stratified-guidelines
+38271818,HCB,hcb | pfos,"PIPE_CLEANED,CAPITALIZED",
+37387170,PAC,pac,CAPITALIZED,
+37010521,EFO,efo,CAPITALIZED,
+36846778,IAA,iaa | kegg,"PIPE_CLEANED,CAPITALIZED",
+40467750,SHAP (zluxin),shap | 0.805,"PIPE_CLEANED,CAPITALIZED,DISAMBIGUATED",https://zluxin.shinyapps.io/make_web/
+39435638,h+,h+,SHORT_NAME_FLAGGED,
+38911529,MCGILL,mcgill,CAPITALIZED,
+34864898,combinatorial and semantic analysis of functional elements,combinatorial and semantic analysis of functional elements | combsafe,PIPE_CLEANED,
+37551911,BIORE,biore,CAPITALIZED,http://wonjin.info/biore-yoon-et-al-2022
+37978180,TDRNAP,tdrnap,CAPITALIZED,
+37142618,SOCF,socf,CAPITALIZED,
+36012140,PDBE,pdbe,CAPITALIZED,
+35668110,GNPS,gnps | iqamdb,"PIPE_CLEANED,CAPITALIZED",
+38650009,GEO,geo | ferrdb | kegg | hamp,"PIPE_CLEANED,CAPITALIZED",http://www.zhounan.org/ferrdb/index.html
+37667031,SLSA,slsa | gml | dnn,"PIPE_CLEANED,CAPITALIZED",
+36651308,abolish,abolish | ligase,PIPE_CLEANED,
+39567690,GROWDB,growdb,CAPITALIZED,
+39371081,BOLD,bold,CAPITALIZED,
+38437255,DLHM,dlhm,CAPITALIZED,
+37880211,CDK,cdk,CAPITALIZED,
+39715240,BIGG,bigg,CAPITALIZED,
+40288852,GHS,ghs,CAPITALIZED,
+39371417,EGA,ega,CAPITALIZED,
+39387871,MASD,masd | cots,"PIPE_CLEANED,CAPITALIZED",
+39633811,yolov4,yolov4 | yolo,PIPE_CLEANED,
+37946302,ELSG,elsg,CAPITALIZED,
+37356495,rheumatic and autoimmune diseases,rheumatic and autoimmune diseases | pubpular,PIPE_CLEANED,
+37684262,ANME,anme,CAPITALIZED,
+40240383,ARCGIS,arcgis,CAPITALIZED,
+37340506,RDB,rdb,CAPITALIZED,
+38421866,CENGEN,cengen,CAPITALIZED,
+37455222,CFDNA,cfdna,CAPITALIZED,
+37422490,FSRF,fsrf | eemsr,"PIPE_CLEANED,CAPITALIZED",
+35538374,KEY,key,CAPITALIZED,
+38438345,GPU (harvard),gpu,"CAPITALIZED,DISAMBIGUATED",http://harvard.heavy.ai:6273/
+38749656,HGDP,hgdp | gnomad,"PIPE_CLEANED,CAPITALIZED",
+34424339,PFAM,pfam | lbd,"PIPE_CLEANED,CAPITALIZED",
+36095527,EPO,epo,CAPITALIZED,
+37258857,SILVA,silva | rdp | gtdb,"PIPE_CLEANED,CAPITALIZED",
+36996758,MIMIC,mimic | cms,"PIPE_CLEANED,CAPITALIZED",
+37160609,GMC,gmc | impc,"PIPE_CLEANED,CAPITALIZED",
+39339901,INSDC,insdc,CAPITALIZED,
+38160287,PDB,pdb,CAPITALIZED,
+37537703,TACN,tacn,CAPITALIZED,
+38733902,KEGG,kegg | omim,"PIPE_CLEANED,CAPITALIZED",
+35047564,SLAM,slam,CAPITALIZED,
+38635816,NPRC,nprc,CAPITALIZED,
+39602490,PADEL,padel,CAPITALIZED,
+38177162,BMRB,bmrb | pdb,"PIPE_CLEANED,CAPITALIZED",
+38357419,GBIF,gbif | obis,"PIPE_CLEANED,CAPITALIZED",
+36555185,MVP,mvp,CAPITALIZED,
+38488504,nci's cloud resources,nci's cloud resources | seven bridges cancer genomics cloud,PIPE_CLEANED,
+37898683,mrcmpsp,mrcmpsp | hqpso,PIPE_CLEANED,
+35916224,FEDEX,fedex,CAPITALIZED,
+35768777,MPANN,mpann,CAPITALIZED,
+35916307,GUV,guv,CAPITALIZED,
+39143966,TCGA,tcga | ualcan,"PIPE_CLEANED,CAPITALIZED",
+35277433,KPSC,kpsc,CAPITALIZED,
+36326108,CLEO,cleo | geo | egeo,"PIPE_CLEANED,CAPITALIZED",
+38980436,REFSEQ,refseq,CAPITALIZED,
+37751696,GLURP,glurp,CAPITALIZED,
+39455647,KGDNET,kgdnet | mimic,"PIPE_CLEANED,CAPITALIZED",
+39275439,LORA,lora,CAPITALIZED,
+37440484,geoglam,geoglam | mlhub | cgiar | iiasa | esa,PIPE_CLEANED,
+39226356,STANMF,stanmf,CAPITALIZED,
+38636673,BPS,bps,CAPITALIZED,
+35835118,EDHFR,edhfr,CAPITALIZED,
+38063437,ATPASE,atpase,CAPITALIZED,
+38538648,ECCDNA,eccdna,CAPITALIZED,
+39046587,KEY,key,CAPITALIZED,
+34999771,SDINET,sdinet | 0.7196,"PIPE_CLEANED,CAPITALIZED",
+39702046,CLANS,clans,CAPITALIZED,
+40226443,IGSN,igsn | eurovolc,"PIPE_CLEANED,CAPITALIZED",
+36441742,VQA,vqa | csa,"PIPE_CLEANED,CAPITALIZED",
+35589837,GAT,gat | pdb,"PIPE_CLEANED,CAPITALIZED",
+35524337,BAGS,bags,CAPITALIZED,
+36884279,ONTOCR,ontocr,CAPITALIZED,
+37900105,GBIF,gbif | bien,"PIPE_CLEANED,CAPITALIZED",
+36622170,SRA,sra,CAPITALIZED,
+40996710,bidirectional encoder representations from transformers,bidirectional encoder representations from transformers | biobert | clinical phenotype knowledgebase | cliphekb,PIPE_CLEANED,https://cliphekb.shinyapps.io/phenotype-main/
+39440482,CDD,cdd,CAPITALIZED,
+36638829,HIAPP,hiapp,CAPITALIZED,
+35606797,PICO,pico | t2dm,"PIPE_CLEANED,CAPITALIZED",
+39227745,TCGA,tcga,CAPITALIZED,
+39653747,RHO,rho,CAPITALIZED,
+39080339,GAT,gat,CAPITALIZED,
+38834597,HRA,hra | hralit,"PIPE_CLEANED,CAPITALIZED",
+38736337,DSS,dss,CAPITALIZED,
+39211484,YAUCA,yauca,CAPITALIZED,
+38326757,SCADDX,scaddx,CAPITALIZED,
+39670335,CURE,cure,CAPITALIZED,
+37540443,TCGA,tcga | cosmic | hpa | depmap,"PIPE_CLEANED,CAPITALIZED",
+39817820,GMP,gmp,CAPITALIZED,
+37753479,while bacterial artificial chromosomes,while bacterial artificial chromosomes | bac restriction map database,PIPE_CLEANED,
+38408974,CPER,cper,CAPITALIZED,
+37278513,CSAP,csap,CAPITALIZED,
+35525549,kinview,kinview | prokino,PIPE_CLEANED,
+37376953,IMFP,imfp,CAPITALIZED,
+39310279,PRRSV,prrsv,CAPITALIZED,
+39998433,LORE,lore,CAPITALIZED,
+36475880,AHL,ahl | cari,"PIPE_CLEANED,CAPITALIZED",
+35361782,BIDS,bids,CAPITALIZED,
+35181703,ABASY,abasy,CAPITALIZED,https://abasy.ccg.unam.mx/
+37967146,NUE,nue,CAPITALIZED,
+37541406,LBD,lbd | sdne,"PIPE_CLEANED,CAPITALIZED",
+39638559,ENCODE,encode,CAPITALIZED,
+38393600,MOC,moc,CAPITALIZED,
+38000387,SSSAVI,sssavi,CAPITALIZED,
+36526018,ELP,elp,CAPITALIZED,
+38770718,PRS,prs,CAPITALIZED,
+40114255,LBD,lbd,CAPITALIZED,
+39934125,LDB,ldb | gnps | canb,"PIPE_CLEANED,CAPITALIZED",
+38213883,CRBS,crbs | gan | bagan-gp,"PIPE_CLEANED,CAPITALIZED",
+37542147,LLC,llc,CAPITALIZED,
+40065540,BEVS,bevs,CAPITALIZED,
+40393240,QSRR,qsrr,CAPITALIZED,
+37919263,GBIF,gbif | bmpo,"PIPE_CLEANED,CAPITALIZED",
+38820435,lightgbm,lightgbm | catboost,PIPE_CLEANED,
+38443673,GBIF,gbif,CAPITALIZED,
+38968027,DDA,dda,CAPITALIZED,
+38509422,OC,oc,"SHORT_NAME_FLAGGED,CAPITALIZED",
+36723605,TRRUST,trrust,CAPITALIZED,
+39361557,SGD,sgd | dnn | cnn | c-lstm,"PIPE_CLEANED,CAPITALIZED",
+39443503,IDC,idc,CAPITALIZED,
+39394400,RMSE,rmse,CAPITALIZED,
+37117054,PNATDB,pnatdb | pronab,"PIPE_CLEANED,CAPITALIZED",
+40197252,HFDB,hfdb,CAPITALIZED,
+38771886,GIX,gix,CAPITALIZED,
+39230709,STRING,string,CAPITALIZED,
+35724625,CATH,cath,CAPITALIZED,
+39787917,snomed-ct,snomed-ct | hpo | lkb,PIPE_CLEANED,
+38084013,thermomutdb,thermomutdb | fireprotdb | prothermdb,PIPE_CLEANED,
+37772729,SRL,srl,CAPITALIZED,
+35544520,ARM,arm | dsp | pid | spi,"PIPE_CLEANED,CAPITALIZED",
+39640530,SADB,sadb,CAPITALIZED,http://sadb.biownmcli.info/
+37805667,RRBS,rrbs,CAPITALIZED,
+40312452,MRIO,mrio,CAPITALIZED,
+39870154,global strategy for plant conservation,global strategy for plant conservation | national cryogenebank facility at icar-nbpgr,PIPE_CLEANED,
+38477530,PFAS,pfas,CAPITALIZED,
+38985448,LIG,lig | μm,"PIPE_CLEANED,CAPITALIZED",
+34889452,$,$,SHORT_NAME_NO_URL,
+38018981,importancei,importance</h4><i,HTML_REMOVED,
+38084728,gromacs,gromacs | sapn,PIPE_CLEANED,
+35676295,GEMEX,gemex,CAPITALIZED,
+37626053,gstride,gstride | imu,PIPE_CLEANED,
+37937382,ALD,ald,CAPITALIZED,
+38297840,PSBD,psbd,CAPITALIZED,
+38396192,OMV,omv | key,"PIPE_CLEANED,CAPITALIZED",
+37904728,DAA,daa | pylrs,"PIPE_CLEANED,CAPITALIZED",
+35021190,$,$ | g$,"PIPE_CLEANED,SHORT_NAME_NO_URL",
+35152280,TABNET,tabnet,CAPITALIZED,
+39166362,MINION,minion | psi1,"PIPE_CLEANED,CAPITALIZED",
+34890150,KEGG,kegg | pid,"PIPE_CLEANED,CAPITALIZED",
+39346622,GBIF,gbif | ena,"PIPE_CLEANED,CAPITALIZED",
+37183971,DDPCR,ddpcr,CAPITALIZED,
+38920699,HGA,hga,CAPITALIZED,
+35758619,HOXAB,hoxabβ,"CHARS_SANITIZED,CAPITALIZED",
+39658089,cadd-sv,cadd-sv | dbcnv | acmg,PIPE_CLEANED,
+35758780,GOA,goa,CAPITALIZED,
+38413078,MDT,mdt,CAPITALIZED,
+36299577,DQN,dqn,CAPITALIZED,
+40280939,ENSO,enso,CAPITALIZED,
+40248245,CORE,core,CAPITALIZED,
+35169219,nbd1,nbd1 | fret,PIPE_CLEANED,
+39216206,HUF,huf | r-cd,"PIPE_CLEANED,CAPITALIZED",
+39609443,SSC,ssc,CAPITALIZED,
+38855791,ESA,esa,CAPITALIZED,
+36267181,TCGA,tcga,CAPITALIZED,
+39134412,SCHGR,schgr,CAPITALIZED,
+39576796,MORU,moru | easa-,"PIPE_CLEANED,CAPITALIZED",
+35136947,PMG,pmg,CAPITALIZED,
+35612145,MII,mii,CAPITALIZED,
+39118353,PFGDH,pfgdh,CAPITALIZED,
+38708794,IITA,iita,CAPITALIZED,
+38413941,genbank,genbank | cytochrome c oxidase subunit i,PIPE_CLEANED,
+36529941,PRIDE,pride | jpost | iprox,"PIPE_CLEANED,CAPITALIZED",
+40658718,RGC,rgc | mea,"PIPE_CLEANED,CAPITALIZED",
+35972994,MPIH,mpih,CAPITALIZED,
+35661743,PHYTMO,phytmo,CAPITALIZED,
+38479843,SCT,sct,CAPITALIZED,
+37922939,CDSA,cdsa,CAPITALIZED,
+36759776,COSMIC,cosmic | sgan,"PIPE_CLEANED,CAPITALIZED",
+36628764,RCA,rca | tmb,"PIPE_CLEANED,CAPITALIZED",
+37529914,GCLMTP,gclmtp,CAPITALIZED,
+40364349,CMR,cmr,CAPITALIZED,
+37529920,CODE,code,CAPITALIZED,
+39840069,VLPS,vlps,CAPITALIZED,
+39053644,TCGA,tcga,CAPITALIZED,
+37841229,SIA,sia,CAPITALIZED,
+40118721,ANGPT,angpt,CAPITALIZED,
+37251529,world health organization reports that immunization protects three million individuals annually,world health organization reports that immunization protects three million individuals annually,CHARS_SANITIZED,
+37202393,GEOMAP,geomap,CAPITALIZED,
+35858915,SNATAC,snatac,CAPITALIZED,
+35596782,MUP,mup,CAPITALIZED,
+40380921,dlst-mda,dlst-mda | cnn | mda,PIPE_CLEANED,
+39741946,aim:,aim:</b,HTML_REMOVED,
+38922750,HGCAB,hgcab,CAPITALIZED,
+36596235,EFTRA,eftra | cdnm,"PIPE_CLEANED,CAPITALIZED",
+38758924,BIGG,bigg,CAPITALIZED,
+39201310,REFSEQ,refseq,CAPITALIZED,
+39250469,NOMA,noma,CAPITALIZED,
+38365793,tibetan plateau microbial catalog by sequencing 498 metagenomes from six water ecosystems,tibetan plateau microbial catalog by sequencing 498 metagenomes from six water ecosystems | tibetan plateau microbial catalog,PIPE_CLEANED,
+39004851,TDMS,tdms | dobe | dda,"PIPE_CLEANED,CAPITALIZED",
+39922392,scifinder,scifinder | china knowledge resource integrated,PIPE_CLEANED,
+36088548,STRING,string,CAPITALIZED,
+38365928,DNN,dnn,CAPITALIZED,
+36940568,TMB,tmb | rca | oxtmb,"PIPE_CLEANED,CAPITALIZED",
+39496680,XLNET,xlnet | afnd | cnn | arabicfaketweets,"PIPE_CLEANED,CAPITALIZED",
+38104077,1-kb,1-kb | pdi,PIPE_CLEANED,
+38071387,DSIGDB,dsigdb,CAPITALIZED,https://liqs.shinyapps.io/sepsis/
+40348768,MEA,mea | lfp,"PIPE_CLEANED,CAPITALIZED",
+38907008,VMGC,vmgc,CAPITALIZED,
+35368074,CURRMG,currmg,CAPITALIZED,
+39972011,SCR,scr,CAPITALIZED,
+40119500,GPA,gpa | mdr | shap,"PIPE_CLEANED,CAPITALIZED",https://H.pylori/MDR/App/
+39922957,TRID,trid,CAPITALIZED,
+39349569,IID,iid,CAPITALIZED,
+39497067,MGNIFY,mgnify,CAPITALIZED,
+36564412,EELS,eels | cnn,"PIPE_CLEANED,CAPITALIZED",
+36367858,MCC,mcc,CAPITALIZED,
+38972916,YRB,yrb,CAPITALIZED,
+36335143,HFGT,hfgt | mbse,"PIPE_CLEANED,CAPITALIZED",
+38776381,MGIS,mgis | gbif,"PIPE_CLEANED,CAPITALIZED",https://www.crop-diversity.org/mgis/musa-in-situ
+36466237,CWR,cwr,CAPITALIZED,
+39775838,KGT,kgt,CAPITALIZED,
+38776430,CPPS,cpps,CAPITALIZED,
+37531298,PEDOT,pedot,CAPITALIZED,
+37432995,tmbb-db,tmbb-db | ompdb | tmbbs | lglgyrf,PIPE_CLEANED,
+39989012,SCRCA,scrca,CAPITALIZED,
+40185683,DLISC,dlisc | dlisc-sers,"PIPE_CLEANED,CAPITALIZED",
+36155273,KOMBAT,kombat,CAPITALIZED,http://kombat.igib.res.in/
+39890826,ZENODO,zenodo,CAPITALIZED,
+40382363,MAXAR,maxar,CAPITALIZED,
+35401651,canadian covid-19 genomics network,canadian covid-19 genomics network | cancogen | cancogen ethics and governance expert working group thus has investigated several privacy issues cited by,PIPE_CLEANED,
+36761561,i+,i+ | gbif,"PIPE_CLEANED,SHORT_NAME_FLAGGED",
+38072328,SHPRH,shprh,CAPITALIZED,
+40153158,AVPDB,avpdb | dbaasp,"PIPE_CLEANED,CAPITALIZED",
+36761695,RIBD,ribd | 0.124,"PIPE_CLEANED,CAPITALIZED",
+36991084,DSRT,dsrt,CAPITALIZED,
+37482620,metabolomicswb,metabolomicswb | metabolomicswb.<h4 | github.io,PIPE_CLEANED,
+38760710,RROFGD,rrofgd,CAPITALIZED,
+35385607,HMF,hmf,CAPITALIZED,
+39186704,DMD,dmd,CAPITALIZED,
+39956811,MSDD,msdd | tscm | map,"PIPE_CLEANED,CAPITALIZED",
+37450164,INTACT,intact,CAPITALIZED,
+39858647,DSI,dsi,CAPITALIZED,
+38679191,KSGPPI,ksgppi | cnn | string,"PIPE_CLEANED,CAPITALIZED",
+39203562,HEAT,heat,CAPITALIZED,
+37024499,openstreetmap,openstreetmap | hydrosheds,PIPE_CLEANED,
+37024526,swaveform,swaveform | human genome diversity project,PIPE_CLEANED,
+36746023,NAT,nat | inaat,"PIPE_CLEANED,CAPITALIZED",
+36402024,SSG,ssg,CAPITALIZED,
+36762475,HUBMAP,hubmap,CAPITALIZED,
+39695240,XYM,xym,CAPITALIZED,
+40580034,MUTS,muts,CAPITALIZED,
+36467714,rstudio,rstudio | vosviewer,PIPE_CLEANED,
+37041187,CRB,crb,CAPITALIZED,
+38565025,UDG,udg | rs7412,"PIPE_CLEANED,CAPITALIZED",
+40023203,CPA,cpa,CAPITALIZED,
+39646391,RDB,rdb,CAPITALIZED,
+35894475,MUTHTP,muthtp | tmsnp,"PIPE_CLEANED,CAPITALIZED",
+36156625,KEGG,kegg | gnps,"PIPE_CLEANED,CAPITALIZED",
+39548206,OCNTMS,ocntms,CAPITALIZED,
+35173740,BCG,bcg,CAPITALIZED,
+37500408,MCF,mcf,CAPITALIZED,
+40138270,IOTS,iots,CAPITALIZED,
+39433777,GUANG,guang | szg,"PIPE_CLEANED,CAPITALIZED",
+38516293,FEGS,fegs,CAPITALIZED,
+36124251,DNN,dnn | cnn,"PIPE_CLEANED,CAPITALIZED",
+35239700,NHLTM,nhltm,CAPITALIZED,
+38287124,LENET,lenet,CAPITALIZED,
+37779230,DJMTA,djmta,CAPITALIZED,
+37386017,MARCNV,marcnv | isv | acmg,"PIPE_CLEANED,CAPITALIZED",https://predict.genovisio.com/
+38434636,ARGAAM,argaam | finbox,"PIPE_CLEANED,CAPITALIZED",
+40597534,FASMID,fasmid,CAPITALIZED,
+40319046,BAPPET,bappet,CAPITALIZED,
+37566590,PABFD,pabfd,CAPITALIZED,
+37828771,HABCDE,habcde,CAPITALIZED,
+40335531,IGD,igd,CAPITALIZED,
+39762115,SHAP,shap,CAPITALIZED,
+40417484,ACMG,acmg,CAPITALIZED,
+40155413,POS,pos,CAPITALIZED,
+37222701,CBE,cbe | stop,"PIPE_CLEANED,CAPITALIZED",http://www.leishbaseedit.net/
+40155442,HAPS,haps | dnn | mgsa,"PIPE_CLEANED,CAPITALIZED",
+37648696,MPPCD,mppcd,CAPITALIZED,http://mppmcdb.cloudna.cn/
+39565895,uniprotkb,uniprotkb | reactome,PIPE_CLEANED,
+37730936,HSWAP,hswap,CAPITALIZED,
+39631489,MPNET,mpnet | xlnet,"PIPE_CLEANED,CAPITALIZED",
+40352392,ENPKG,enpkg,CAPITALIZED,
+36715173,PBPK,pbpk,CAPITALIZED,
+38582952,CSFSRS,csfsrs,CAPITALIZED,
+35879601,st.,st. | gmpes,PIPE_CLEANED,
+36272818,PNATDB,pnatdb,CAPITALIZED,
+39172803,wifi/3,wifi/3 | rmse,PIPE_CLEANED,
+36862752,FAANG,faang | encode,"PIPE_CLEANED,CAPITALIZED",
+40221496,QUAPOS,quapos,CAPITALIZED,
+36240205,CERCIS,cercis | kegg,"PIPE_CLEANED,CAPITALIZED",
+35306322,GAG,gag,CAPITALIZED,
+39041911,nigms sandbox for cloud-based learning,nigms sandbox for cloud-based learning | bourne again shell,PIPE_CLEANED,
+39041912,IRI,iri,CAPITALIZED,
+37600121,CAD,cad,CAPITALIZED,
+36224012,science citation index expanded,science citation index expanded | citespace,PIPE_CLEANED,
+37960750,citespace,citespace | vosviewer,PIPE_CLEANED,
+39795895,CUAAC,cuaac | spaac,"PIPE_CLEANED,CAPITALIZED",
+37322090,NETCDF,netcdf,CAPITALIZED,
+35765648,DEPMAP,depmap,CAPITALIZED,http://www.rocplot.com/cells
+39730632,DDOS,ddos | ssode | sso,"PIPE_CLEANED,CAPITALIZED",
+38075858,COST,cost,CAPITALIZED,
+38813150,COD,cod,CAPITALIZED,
+35569121,CFPS,cfps | ncaa,"PIPE_CLEANED,CAPITALIZED",
+39550455,MGM,mgm | cnn,"PIPE_CLEANED,CAPITALIZED",
+40402455,TIME,time,CAPITALIZED,
+36109852,BPE,bpe,CAPITALIZED,
+38469223,GBIF,gbif,CAPITALIZED,
+37731974,GENSAS,gensas,CAPITALIZED,
+39812750,linkedomicskb,linkedomicskb | human protein atlas,PIPE_CLEANED,
+37289767,FEWREL,fewrel,CAPITALIZED,
+38600587,IMG (sherlab),img,"CAPITALIZED,DISAMBIGUATED",https://sherlab.shinyapps.io/IPSC-derived-Microglia/
+39979307,shinyMNP,,POPULATED_FROM_URL,https://hovestadtlab.shinyapps.io/shinyMNP/
+39753569,swemacrocycledb,,POPULATED_FROM_URL,https://swemacrocycledb.com/
+38279110,StarAllele,,POPULATED_FROM_URL,http://www.coriell.org/StarAllele/Search
+40000636,ADRCSC,,"POPULATED_FROM_URL,CAPITALIZED",https://www.ccb.uni-saarland.de/adrcsc
+36151114,gutsyatlas,,POPULATED_FROM_URL,https://gutsyatlas.serve.scilifelab.se/
+35778384,bordetella,,POPULATED_FROM_URL,https://bigsdb.pasteur.fr/bordetella/
+38500146,[No Name Extracted],,POPULATED_FROM_URL,

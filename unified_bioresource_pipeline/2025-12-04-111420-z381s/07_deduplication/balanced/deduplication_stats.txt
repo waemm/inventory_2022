@@ -1,0 +1,49 @@
+================================================================================
+UNIFIED DEDUPLICATION STATISTICS - BALANCED
+Generated: 2025-12-04 17:16:37
+================================================================================
+
+PROFILE CONFIGURATION:
+  Description: Recommended - good precision/recall balance
+  Keywords: 14 terms
+  Linguistic bypass threshold: >= 5
+  SetFit threshold: >= 0.58
+  Require URL: True
+
+INPUT DATA:
+  Set A (Linguistic):   3815 papers
+  Set B (SetFit):       3779 papers
+
+DEDUPLICATED OUTPUTS:
+  Set A:   1558 unique resources
+  Set B:    154 unique resources
+  Set C:   1708 unique resources (union)
+
+OVERLAP ANALYSIS:
+  Papers only in A:     1575
+  Papers only in B:      159
+  Papers in both:          0
+  Overlap rate:         0.0%
+
+TOP RESOURCES BY ARTICLE COUNT:
+
+  Set A (Linguistic):
+    rat genome database                                : 3 papers
+    a3d                                                : 2 papers
+    mobidb                                             : 2 papers
+    dockground                                         : 2 papers
+    eukaryotic linear motif                            : 2 papers
+
+  Set B (SetFit):
+    genbank                                            : 4 papers
+    reactome                                           : 3 papers
+    anti-obesity compound database                     : 1 papers
+    hybriddbrpred                                      : 1 papers
+    prosmorf-pred                                      : 1 papers
+
+  Set C (Union):
+    bacdive                                            : 2 papers
+    cansar                                             : 2 papers
+    kegg                                               : 2 papers
+    uniprot                                            : 2 papers
+    microrna childhood cancer catalog                  : 1 papers

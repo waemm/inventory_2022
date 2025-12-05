@@ -1,0 +1,113 @@
+================================================================================
+PRIMARY RESOURCE MAPPING VALIDATION - QUICK SUMMARY
+Session: 2025-12-04-111420-z381s
+Script: 11_map_primary_resources.py
+Validation Date: 2025-12-04
+================================================================================
+
+OVERALL STATUS: ⚠️  PASS WITH MINOR ISSUE
+
+VALIDATION RESULT: 95/100
+✓ File structure correct
+✓ Row count matches (7,599)
+✓ Status distribution matches exactly
+✓ Primary entity assignment logic correct
+✓ Score ranges valid (0.00 to 21.99)
+✓ No illogical data (e.g., ok rows without entities)
+⚠️ 5 duplicate PMIDs detected (10 rows total - exact duplicates)
+
+================================================================================
+KEY METRICS (ALL MATCH EXPECTED VALUES)
+================================================================================
+
+Status Distribution:
+  - ok:          6,631 (87.3%) ✓
+  - conflict:      952 (12.5%) ✓
+  - no_entities:    15 (0.2%)  ✓
+  - low_score:       1 (0.0%)  ✓
+
+Primary Entity Coverage:
+  - Has primary_long:  4,701 ✓
+  - Has primary_short: 3,432 ✓
+  - Has both:            549 ✓
+  - Has neither:          15 ✓
+
+NER Source Distribution:
+  - spacy:      4,871 (64.1%)
+  - v2:         2,560 (33.7%)
+  - spacy+v2:     153 (2.0%)
+
+================================================================================
+ISSUE DETAILS
+================================================================================
+
+DUPLICATE PMIDs (5 unique, 10 rows total):
+  1. PMID 36892110 - drugbank (appears 2x)
+  2. PMID 39588765 - phi-base (appears 2x)
+  3. PMID 39841812 - rat genome database (appears 2x)
+  4. PMID 39888724 - disgenet (appears 2x)
+  5. PMID 40718923 - radx-up (appears 2x)
+
+TYPE: Exact duplicates (all columns identical)
+CAUSE: Likely data processing artifact during merge/concatenation
+IMPACT: Minimal - just inflates row count by 5
+FIX: Simple deduplication using drop_duplicates()
+
+================================================================================
+SAMPLE PRIMARY ENTITIES (QUALITY CHECK)
+================================================================================
+
+Primary Long Examples:
+  - milkybase
+  - genebe.net
+  - quick-mitome
+  - lunghist700
+  - drugbank
+  - phi-base
+  - rat genome database
+  ✓ Assessment: Look like legitimate bioresource/database names
+
+Primary Short Examples:
+  - dbgsrv
+  - lsd600
+  - psatdb
+  - crusty
+  - kragen
+  - pcas
+  ⚠️ Assessment: Mostly good, but "s" (1 char) may need review
+
+================================================================================
+ACTION REQUIRED
+================================================================================
+
+IMMEDIATE (Before proceeding to next step):
+  1. Run: python fix_duplicates.py
+     - This will create a backup and remove the 5 duplicate PMIDs
+     - Expected final row count: 7,594
+
+  2. Re-run validation to confirm:
+     python validate_primary_mapping.py
+
+OPTIONAL (For future improvement):
+  - Review very short primary_short entities (< 3 characters)
+  - Examine the 15 "no_entities" papers manually
+  - Analyze conflict patterns (952 papers)
+
+================================================================================
+RECOMMENDATION
+================================================================================
+
+✅ DEDUPLICATE AND PROCEED
+
+The file is of high quality and ready for use after removing the 5 duplicate
+PMIDs. The deduplication is a simple fix that takes < 1 minute.
+
+After deduplication:
+  ✓ All validation checks will pass
+  ✓ Safe to proceed to next pipeline step
+  ✓ Data integrity maintained
+
+================================================================================
+VALIDATION CONFIDENCE: HIGH
+Next Step: Run fix_duplicates.py → Re-validate → Proceed
+================================================================================

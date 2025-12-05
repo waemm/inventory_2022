@@ -11,13 +11,30 @@ Profiles:
   - balanced: Recommended default, good precision/recall
   - aggressive: Maximum recall, accepts more false positives
 
+Usage:
+  python 17_deduplicate_all_sets.py --session-dir 2025-12-04-111420-z381s
+  python 17_deduplicate_all_sets.py --session-dir 2025-12-04-111420-z381s --profiles balanced
+  python 17_deduplicate_all_sets.py --session-dir 2025-12-04-111420-z381s --profiles conservative,balanced
+
+Inputs (from session):
+  - 05_mapping/union_papers_with_urls.csv (Output of Script 13 - contains all papers with URLs)
+
+Outputs (to session):
+  - 07_deduplication/{profile}/set_a_linguistic.csv
+  - 07_deduplication/{profile}/set_b_setfit.csv
+  - 07_deduplication/{profile}/set_c_final.csv
+  - 07_deduplication/{profile}/deduplication_stats.txt
+  - 07_deduplication/profile_comparison_summary.md
+
 Created: 2025-11-20
 Updated: 2025-11-21 (Added session support)
 Updated: 2025-11-25 (Added multi-profile filtering support)
+Updated: 2025-12-04 (Refactored to require session-dir, removed legacy paths)
 Purpose: Complete three-strategy comparison with configurable filtering profiles
 """
 
 import argparse
+import sys
 import pandas as pd
 import re
 import yaml
@@ -29,20 +46,40 @@ from datetime import datetime
 
 # Parse command-line arguments
 parser = argparse.ArgumentParser(description='Deduplicate Sets A, B, and C with multi-profile support')
-parser.add_argument('--session-dir', type=str, required=False,
-                    help='Session directory for outputs')
+parser.add_argument('--session-dir', type=str, required=True,
+                    help='Session directory for outputs (required)')
 parser.add_argument('--profiles', type=str, default='all',
                     help='Filtering profiles to run: conservative, balanced, aggressive, or all (default: all)')
 parser.add_argument('--config', type=str, required=False,
                     help='Path to config file (default: unified_bioresource_pipeline/config/pipeline_config.yaml)')
 args = parser.parse_args()
 
-# Paths
-BASE_DIR = Path('/Users/warren/development/GBC/inventory_2022')
-FILTERED_DIR = BASE_DIR / 'pipeline_synthesis_2025-11-18/data/filtered'
+# Determine project root
+SCRIPT_DIR = Path(__file__).resolve().parent
+PROJECT_ROOT = SCRIPT_DIR.parent.parent
+BASE_DIR = PROJECT_ROOT.parent if PROJECT_ROOT.name == 'unified_bioresource_pipeline' else PROJECT_ROOT
+
+# Add project root to path for lib imports
+sys.path.insert(0, str(PROJECT_ROOT))
+from lib.session_utils import validate_session_dir, get_session_path
+
+# Validate and configure session directory
+SESSION_DIR = Path(args.session_dir).resolve()
+
+# Validate session directory exists
+if not SESSION_DIR.exists():
+    print(f"ERROR: Session directory not found: {SESSION_DIR}")
+    sys.exit(1)
+
+try:
+    # Validate session structure - dedup scripts need prior phases' outputs
+    validate_session_dir(SESSION_DIR, required_phases=['05_mapping'])
+except ValueError as e:
+    print(f"ERROR: Invalid session directory: {e}")
+    sys.exit(1)
 
 # Load filtering profiles from config
-CONFIG_PATH = Path(args.config) if args.config else BASE_DIR / 'unified_bioresource_pipeline/config/pipeline_config.yaml'
+CONFIG_PATH = Path(args.config) if args.config else PROJECT_ROOT / 'config' / 'pipeline_config.yaml'
 
 if CONFIG_PATH.exists():
     with open(CONFIG_PATH, 'r') as f:
@@ -68,27 +105,81 @@ if args.profiles == 'all':
 else:
     PROFILES_TO_RUN = [p.strip() for p in args.profiles.split(',')]
 
-# Input files (always from filtered directory)
-INPUT_SET_A = FILTERED_DIR / 'linguistic_all_papers.csv'
-INPUT_SET_B = FILTERED_DIR / 'setfit_all_papers.csv'
+# Input file from session directory - output of Script 13 (extract URLs)
+INPUT_FILE = get_session_path(SESSION_DIR, '05_mapping', 'union_papers_with_urls.csv')
 
-# Output paths - use session directory if provided, otherwise legacy path
-if args.session_dir:
-    SESSION_DIR = Path(args.session_dir)
-    BASE_RESULTS_DIR = SESSION_DIR / 'deduplicated'
-else:
-    # Legacy path (backward compatible)
-    BASE_RESULTS_DIR = BASE_DIR / 'pipeline_synthesis_2025-11-18/results/deduplicated'
+# Validate input file exists
+if not INPUT_FILE.exists():
+    print(f"ERROR: Input file not found: {INPUT_FILE}")
+    print(f"Required: Run Script 13 (extract URLs) first to create this file")
+    sys.exit(1)
+
+# Output base directory
+BASE_RESULTS_DIR = get_session_path(SESSION_DIR, '07_deduplication')
 
 print("="*80)
 print("UNIFIED DEDUPLICATION FOR SETS A, B, AND C")
 print("="*80)
 print(f"Started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-if args.session_dir:
-    print(f"Session: {Path(args.session_dir).name}")
+print(f"Session: {SESSION_DIR.name}")
 print(f"Profiles to run: {', '.join(PROFILES_TO_RUN)}")
 print(f"Config file: {CONFIG_PATH}")
 print()
+print("INPUT FILE:")
+print(f"  Union papers with URLs: {INPUT_FILE.name}")
+print()
+
+# ============================================================================
+# GENERIC DOMAIN LISTS (from code review 2025-11-27)
+# ============================================================================
+
+# Institutional domains that host MANY unrelated databases
+# URLs from these domains should NOT be clustered together just by domain
+GENERIC_INSTITUTIONAL_DOMAINS = [
+    'ac.uk',    # UK universities (100+ institutions)
+    'edu.cn',   # Chinese universities (2000+ institutions)
+    'ac.cn',    # Chinese academic
+    'edu.tw',   # Taiwan universities
+    'ac.jp',    # Japanese universities
+    'ac.kr',    # Korean universities
+    'ac.in',    # Indian universities
+    'res.in',   # Indian research institutes
+    'nih.gov',  # US NIH (multiple institutes: NCI, NCBI, NIAID, etc.)
+    'edu.au',   # Australian universities
+    'ac.at',    # Austrian academic
+    'edu',      # Generic .edu (US universities)
+]
+
+# Multi-database platforms where subdomain matters for identity
+MULTI_DB_PLATFORMS = [
+    'github.io',       # GitHub Pages (many users)
+    'shinyapps.io',    # Shiny apps (many users)
+    'gbif.org',        # GBIF (many datasets)
+    'gxbsidra.org',    # Multiple databases (breastcancer, sepsis, etc.)
+    'herokuapp.com',   # Heroku apps
+    'netlify.app',     # Netlify apps
+]
+
+
+def is_generic_domain(base_domain):
+    """Check if domain is a generic institutional domain."""
+    if not base_domain:
+        return False
+    for generic in GENERIC_INSTITUTIONAL_DOMAINS:
+        if base_domain.endswith(generic):
+            return True
+    return False
+
+
+def is_multi_db_platform(hostname):
+    """Check if hostname is a multi-database platform where subdomain matters."""
+    if not hostname:
+        return False
+    for platform in MULTI_DB_PLATFORMS:
+        if hostname.endswith(platform):
+            return True
+    return False
+
 
 # ============================================================================
 # URL SIMILARITY FUNCTIONS
@@ -167,8 +258,61 @@ def normalize_url_aggressive(url):
 
     return normalized
 
+
+def normalize_url_strict(url):
+    """
+    Strictly normalize URL for exact matching (added 2025-11-27).
+    Handles: trailing slash, www prefix, http/https protocol.
+
+    Examples:
+    - http://www.db.com/ -> db.com
+    - https://db.com -> db.com
+    - http://db.com/path/ -> db.com/path
+    """
+    if pd.isna(url) or url == '':
+        return ''
+
+    url = str(url).strip().lower()
+
+    # Remove protocol
+    url = re.sub(r'^https?://', '', url)
+    url = re.sub(r'^ftp://', '', url)
+
+    # Remove www. prefix
+    if url.startswith('www.'):
+        url = url[4:]
+
+    # Remove trailing slash
+    url = url.rstrip('/')
+
+    # Remove common index files
+    url = re.sub(r'/index\.(html?|php|asp)$', '', url)
+
+    # Remove port 80 (default http)
+    url = re.sub(r':80($|/)', r'\1', url)
+
+    return url
+
+
+def urls_match_exactly(url1, url2):
+    """
+    Check if two URLs are identical after strict normalization.
+    Returns True if URLs point to the same resource.
+    """
+    n1 = normalize_url_strict(url1)
+    n2 = normalize_url_strict(url2)
+
+    if not n1 or not n2:
+        return False
+
+    return n1 == n2
+
 def compute_url_similarity(url1, url2):
     """Compute similarity score between two URLs (0.0 to 1.0)."""
+    # First check strict exact match (handles www, trailing slash, protocol)
+    if urls_match_exactly(url1, url2):
+        return 1.0
+
     c1 = parse_url_components(url1)
     c2 = parse_url_components(url2)
 
@@ -296,20 +440,43 @@ def cluster_similar_urls(urls, threshold=0.85):
             else:
                 parent[px] = py
 
-    # === DOMAIN BLOCKING OPTIMIZATION ===
-    # Group URLs by full domain (netloc) - only URLs with same domain can be similar
-    # Using full_domain (e.g., "sub.example.com") rather than main domain ("example")
-    # to preserve semantic correctness while still getting massive speedup
+    # === IMPROVED DOMAIN BLOCKING (2025-11-27) ===
+    # Key insight from code review: different databases from same institutional
+    # domain (ac.uk, edu.cn) should NOT be clustered together.
+    # Solution: Use blocking key that preserves subdomain for:
+    #   1. Generic institutional domains (ac.uk, nih.gov, etc.)
+    #   2. Multi-database platforms (github.io, shinyapps.io, etc.)
+    #
+    # This prevents false merges like:
+    #   - phasingserver.ox.ac.uk ≠ memprotmd.ox.ac.uk (different .ac.uk DBs)
+    #   - breastcancer.gxbsidra.org ≠ sepsis.gxbsidra.org (same platform, different DBs)
     UNKNOWN_DOMAIN = '__unknown__'
     domain_groups = defaultdict(list)
+    generic_domain_count = 0
+
     for i, url in enumerate(urls_list):
         components = parse_url_components(url)
         if components:
-            # Use full domain (netloc) as blocking key for correct semantics
-            blocking_key = components['full_domain']  # e.g., "github.com", "www.example.com"
+            full_domain = components['full_domain']  # e.g., "sub.example.com"
+            base_domain = f"{components['domain']}{components['tld']}"  # e.g., "example.com"
+
+            # Determine blocking key based on domain type
+            if is_multi_db_platform(full_domain):
+                # Multi-DB platform: use full domain (keeps subdomain)
+                blocking_key = full_domain
+            elif is_generic_domain(base_domain):
+                # Generic institutional domain: use full domain (keeps institution)
+                blocking_key = full_domain
+                generic_domain_count += 1
+            else:
+                # Specific domain: can use base domain for efficiency
+                blocking_key = full_domain  # Still use full for safety
         else:
             blocking_key = UNKNOWN_DOMAIN
         domain_groups[blocking_key].append(i)
+
+    if generic_domain_count > 0:
+        print(f"   Note: {generic_domain_count} URLs from generic institutional domains (blocking by full domain)")
 
     # Find similar pairs within each domain group only
     total_comparisons = 0
@@ -575,17 +742,9 @@ def deduplicate_dataset(df, dataset_name, profile=None, filter_criteria=True):
                 print(f"   Returning empty DataFrame")
                 return pd.DataFrame()
         else:
-            # Legacy filtering (backward compatible)
-            print("\n2. Filtering for high-confidence resources (legacy mode)...")
-            print("   Criteria:")
-            print("   - db_keyword_found == True")
-            print("   - has_resource_url == True")
-
-            filtered = df[
-                (df['db_keyword_found'] == True) &
-                (df['has_resource_url'] == True)
-            ].copy()
-
+            # No profile provided but filtering requested - use URL-only filter
+            print("\n2. Filtering for papers with URLs (no profile specified)...")
+            filtered = df[df['has_resource_url'] == True].copy()
             print(f"   Filtered: {len(filtered)} papers")
     else:
         filtered = df.copy()
@@ -650,11 +809,6 @@ def deduplicate_dataset(df, dataset_name, profile=None, filter_criteria=True):
             'all_short': lambda x: ' | '.join(set(' | '.join(str(v) for v in x if pd.notna(v)).split(' | ')) - {'', 'nan'}),
             'ner_source': 'first',
             'ner_confidence': 'max',
-            'entity_from_title': 'first',
-            'db_keyword_found': 'first',
-            'very_high_conf': 'first',
-            'title_entity_in_ner': 'first',
-            'baseline_entity_match': 'first',
             'all_urls': 'first',
             'resource_url': 'first',  # Keep first (canonical)
             'has_resource_url': 'first',
@@ -696,10 +850,17 @@ def deduplicate_dataset(df, dataset_name, profile=None, filter_criteria=True):
 # MAIN EXECUTION
 # ============================================================================
 
-# Load data
+# Load data - single unified input file from Script 13
 print("\nLoading datasets...")
-df_a = pd.read_csv(INPUT_SET_A)
-df_b = pd.read_csv(INPUT_SET_B)
+df_all = pd.read_csv(INPUT_FILE)
+print(f"  Total papers loaded: {len(df_all)}")
+
+# Split into Set A (linguistic) and Set B (SetFit) based on source columns
+# in_linguistic=True means paper came from linguistic strategy (Set A)
+# in_setfit=True means paper came from SetFit strategy (Set B)
+# Papers can be in both sets (overlap)
+df_a = df_all[df_all['in_linguistic'] == True].copy()
+df_b = df_all[df_all['in_setfit'] == True].copy()
 print(f"  Set A (Linguistic): {len(df_a)} papers")
 print(f"  Set B (SetFit): {len(df_b)} papers")
 

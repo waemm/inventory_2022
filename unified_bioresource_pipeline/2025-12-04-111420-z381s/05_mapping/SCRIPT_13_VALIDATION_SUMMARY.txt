@@ -1,0 +1,50 @@
+========================================
+SCRIPT 13 VALIDATION QUICK REFERENCE
+========================================
+Session: 2025-12-04-111420-z381s
+Date: 2025-12-04
+
+OVERALL STATUS: ✅ PASS (with minor notes)
+
+KEY METRICS:
+- Total papers: 7,594 ✅
+- Papers with URLs: 3,649 (48.1%) ✅
+- Papers with resource URLs: 2,733 (36.0%) ✅
+- URL validity rate: 99.23% ⚠️ (21 missing http:// prefix)
+- No duplicate PMIDs ✅
+- Input file preserved ✅
+
+VALIDATION RESULTS:
+✅ PASS - Row count (7,594)
+✅ PASS - No duplicates
+✅ PASS - All required columns present
+✅ PASS - Data types valid
+✅ PASS - Statistics accurate
+⚠️ PASS - URL validity (21 URLs missing protocol)
+✅ PASS - Sample data correct
+✅ PASS - Input file integrity
+✅ PASS - Statistics file created
+⚠️ PASS - Column structure (5 columns removed)
+
+NEW COLUMNS ADDED:
+- all_urls (column 17)
+- resource_url (column 18)
+- has_resource_url (column 19)
+- url_context (column 20)
+
+COLUMNS REMOVED:
+- entity_from_title
+- db_keyword_found
+- db_keyword_score
+- title_entity_in_ner
+- very_high_conf
+
+MINOR ISSUES:
+1. 21 URLs (0.77%) missing http:// or https:// prefix
+   Examples: timetree.org, ksgp.earlham.ac.uk
+   
+2. 83 papers have resource_url but no url_context (3%)
+
+OUTPUT FILE: Ready for downstream processing ✅
+
+Full report: SCRIPT_13_VALIDATION_REPORT.md

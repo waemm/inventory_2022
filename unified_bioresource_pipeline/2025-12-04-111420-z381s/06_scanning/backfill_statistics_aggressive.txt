@@ -1,0 +1,41 @@
+================================================================================
+URL SCAN DATA BACKFILL STATISTICS
+Generated: 2025-12-05 12:12:57
+Session: 2025-12-04-111420-z381s
+Profile: aggressive
+================================================================================
+
+INPUT DATASETS:
+  Set A (Linguistic): 3100 resources
+  Set B (SetFit):     2051 resources
+  Set C (Union):      5096 resources
+  URL Scans:          2085 URLs
+
+URL SCAN DATA COVERAGE:
+  Set A: 1895/3100 (61.1%)
+  Set B: 234/2051 (11.4%)
+  Set C: 2125/5096 (41.7%)
+
+URL SCAN COLUMNS ADDED:
+  - url_is_live
+  - url_status_code
+  - url_total_score
+  - url_base_score
+  - url_title_bonus
+  - url_likelihood
+  - url_indicators_found
+  - url_response_time_ms
+  - url_error_message
+  - url_meta_redirects
+  - url_final_url
+  - url_wayback_used
+  - url_wayback_url
+  - url_wayback_snapshot_date
+
+COLUMN CONSISTENCY:
+  All three sets have identical 40 columns
+
+OUTPUT FILES:
+  set_a_linguistic_final_aggressive.csv
+  set_b_setfit_final_aggressive.csv
+  set_c_union_final_aggressive.csv

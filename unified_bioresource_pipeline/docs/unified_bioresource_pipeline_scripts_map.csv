@@ -1,0 +1,37 @@
+Phase,Script,Input Files,Output Files,Key Inputs,Key Outputs,Purpose
+1,01_run_v2_classification.py,"validation_sample_with_abstracts.csv, article_classifier.pt model",v2_classification_results.csv,"title, abstract",predicted_label (bio-resource/not),Classify papers using V2 BERT
+1,02_run_pycaret_classification.py,"validation_sample_with_abstracts.csv, validation_metadata_epmc.csv, pycaret models",pycaret_test_mode_true/false_results.csv,"PMID, metadata features (92/112 features)","prediction_label, prediction_score",Classify using PyCaret with engineered features
+2,04_run_v2_ner.py,"classification_results.csv, named_entity_recognition.pt",v2_ner_results.csv,"title, abstract from positives","ID, mention, label, prob (per entity row)",Extract named entities using V2 BERT
+2,05_run_spacy_ner.py,"classification_results.csv, spacy hybrid model",spacy_ner_results.csv,"title, abstract from positives","ID, mention, label, canonical_id, source",Extract entities with spaCy + pattern matching
+2,06_extract_pmid_union.py,"spacy_ner_results.csv, v2_ner_results.csv","ner_union_pmids.txt, ner_union.csv",ID from NER files,"PMID list per paper, combined entities",Create union of papers across both NER systems
+3,07_linguistic_scoring.py,"ner_union_pmids.txt, paper abstracts",linguistic_scored_papers.csv,"pmid, abstract","pmid, ling_score (0-1), confidence",Score papers by linguistic distance of entities
+4,08_setfit_inference.py,papers from phase 3,setfit_scored_papers.csv,"pmid, title, abstract","pmid, setfit_confidence, pred_label",Score papers using SetFit model
+5,09_create_paper_sets.py,"ling_scored, setfit_scored","set_a.csv, set_b.csv, set_c_union.csv",All three scoring results,"pmid, source (ling/setfit/both)",Partition papers into 3 sets (A=ling B=setfit C=union)
+5,10_map_to_entities.py,"set_a/b/c.csv, NER results","entity_mappings/, entity_inventories/","pmid, entity mentions from NER","One row per paper with entity list, entity inventory CSVs",Map papers to extracted entities
+5,11_create_primary_resources.py,"set_c_union.csv, v5.1_cleaned.csv, NER results",union_papers_with_primary_resources.csv,"pmid, title, abstract, entities","primary_entity_long, primary_entity_short, score, status",Score & identify primary resource per paper
+5,12_add_quality_indicators.py,primary_resources.csv,primary_resources_with_quality.csv,primary_entity_long/short,"quality_score, data_type, confidence",Add quality indicators to resources
+5,13_extract_urls.py,set_a/b/c CSVs,same files (modified),abstract text,"all_urls, resource_url, has_resource_url, url_context",Extract URLs from abstracts & filter for bioresources
+6,14_prepare_urls.py,set_a/b/c with urls,prepared_urls.csv,resource_url,"url_id, domain, path",Prepare URLs for scanning
+6,15_scan_urls.py,prepared_urls.csv,url_scan_results.csv,"url_id, domain","url_status, response_code, content_type",Scan URLs for validity & metadata
+6,16_merge_scan_scores.py,"set_a/b/c, url_scan_results",set_a/b_with_scan.csv,"pmid, resource_url, url status","added url_status, url_response_code",Merge URL scan data back to resource sets
+6,18_scan_urls_set_c.py,set_c_union.csv,set_c_with_url_scan.csv,"pmid, resource_url","url_status, url_content_type, url_checks",Scan Set C URLs specifically
+6,19_backfill_url_data.py,"set_a/b dedup, set_c_with_scan",set_a/b/c_final.csv,resource_url from Set C,All URL scan columns backfilled to A & B,Ensure all 3 sets have identical columns
+7,17_deduplicate_all_sets.py,set_a/b/c_final.csv,set_a/b/c_dedup.csv,"pmid, primary_entity, resource_url","dedup flags, merged_with_pmid",Fuzzy-match & deduplicate across sets
+7,17_deduplicate_linguistic.py,set_a.csv,set_a_linguistic_dedup.csv,"pmid, primary_entity","same data, dedup_group, merged_pmids",Deduplicate within Set A
+7,18_analyze_unclear_cases.py,dedup results,unclear_cases.csv,"pmid, entities (similar scores)","case_id, ambiguity_score, recommendation",Flag ambiguous deduplication cases
+7,19_apply_manual_merges.py,"dedup CSVs, manual_merges.txt",set_a/b/c_final_merged.csv,manual merge decisions,"merged pmid, primary resource",Apply manual deduplication decisions
+8,20_baseline_comparison.py,"final_inventory, legacy_inventory",comparison_report.csv,"pmid, entity, found in both","metrics, recall, precision",Compare with legacy baseline
+8,21_generate_visualizations.py,comparison_report,PNG/JSON plots,metrics,visualization files,Create visual comparisons
+8,28_identify_missing_urls.py,final_inventory,missing_urls.csv,pmid with empty resource_url,pmid where url missing,Find papers missing URLs
+8,28b_merge_and_identify_missing.py,"deduplicated_resources.csv, all_extracted_urls.csv","resources_merged_with_urls.csv, missing_urls_for_recovery.csv","resource_name, pmids, url","resource_name, urls (merged), has_url",**BROKEN** - merges ALL urls from papers by PMID
+8,29_fetch_abstracts.py,missing_urls.csv + EPMC API,abstracts_fetched.csv,pmid,abstract text,Fetch abstracts for URL extraction
+8,30_search_abstracts_urls.py,abstracts_fetched.csv,urls_from_abstracts.csv,abstract text,"resource_url_found, context",Extract URLs from fetched abstracts
+8,31_fetch_fulltext.py,urls_from_abstracts.csv + EPMC API,fulltext_fetched.csv,pmid,fulltext,Fetch full text for URL extraction
+8,32_search_fulltext_urls.py,fulltext_fetched.csv,urls_from_fulltext.csv,fulltext,resource_url_found_fulltext,Extract URLs from full text
+8,33_consolidate_recovery.py,"urls_from_abstracts/fulltext, final_inventory",final_inventory_with_recovered.csv,resource_url (original or recovered),"added url_recovered_from, recovery_source",Add recovered URLs to inventory
+9,22_filter_novel_resources.py,final_inventory,novel_resources.csv,resource_url,"pmid, entity, is_novel",Identify novel discoveries
+9,23_transform_columns.py,final_inventory,final_inventory_transformed.csv,internal columns,standardized column names,Standardize output columns
+9,24_check_urls_with_geo.py,final_inventory,final_with_geo.csv,resource_url,"country, region, confidence",Attempt geolocation of resources
+9,25_fetch_epmc_metadata.py,"final_inventory, EPMC API",final_with_metadata.csv,pmid,additional metadata from EPMC,Fetch full EPMC metadata
+9,26_process_countries.py,final_with_metadata,final_with_countries.csv,country data from metadata,"standardized country, region",Standardize country information
+9,27_generate_final_inventory.py,all processing results,final_inventory.csv,All accumulated data,1 row per resource with all metadata,Generate final deliverable

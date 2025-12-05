@@ -1,0 +1,58 @@
+{
+  "total_resources": 1510,
+  "excluded_resources": 3586,
+  "coverage": {
+    "has_best_name": 1510,
+    "has_best_common": 633,
+    "has_best_full": 957,
+    "has_url": 1510,
+    "has_wayback": 0,
+    "has_publication_date": 1510,
+    "has_affiliation": 1498,
+    "has_authors": 1506,
+    "has_grants": 1110,
+    "has_citations": 1303,
+    "has_affiliation_countries": 1459,
+    "has_url_country": 0
+  },
+  "url_status": {
+    "200": 1510
+  },
+  "top_countries": {
+    "Andorra": 664,
+    "China": 521,
+    "United States": 263,
+    "Germany": 84,
+    "India": 75,
+    "United Kingdom": 67,
+    "France": 45,
+    "Canada": 44,
+    "Spain": 41,
+    "Japan": 36
+  },
+  "citation_stats": {
+    "total": 62209,
+    "mean": 47.7,
+    "median": 8.0,
+    "max": 5071
+  },
+  "name_modifications": {
+    "TITLE_CAPITALIZED": 1054,
+    "CAPITALIZED": 499,
+    "SMART_CAPITALIZED": 133,
+    "DISAMBIGUATED": 47,
+    "SHORT_NAME_FLAGGED": 15,
+    "SHORT_NAME_REPLACED": 21,
+    "CHARS_SANITIZED": 1,
+    "HTML_REMOVED": 4,
+    "PIPE_CLEANED": 78,
+    "POPULATED_FROM_URL": 5
+  },
+  "url_validation": {
+    "ok": 1472,
+    "review": 38
+  },
+  "script": "27_generate_final_inventory",
+  "timestamp": "2025-12-05T13:45:17.587029",
+  "session": "2025-12-04-111420-z381s"
+}

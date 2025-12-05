@@ -1,0 +1,9 @@
+{
+  "timestamp": "2025-12-04T17:15:18.934885",
+  "input_file": "2025-12-04-111420-z381s/05_mapping/union_papers_with_quality_indicators.csv",
+  "output_file": "2025-12-04-111420-z381s/05_mapping/union_papers_with_urls.csv",
+  "total_papers": 7594,
+  "papers_with_urls": 3649,
+  "papers_with_resource_urls": 2733,
+  "resource_url_percentage": 35.99
+}

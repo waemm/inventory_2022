@@ -9,23 +9,23 @@ Purpose: Produce final output matching data/final_inventory_2022.csv format
 
 Authors: AI Assistant
 Date: 2025-11-27
+Updated: 2025-12-05 (Session-based refactor)
 """
 
 import argparse
 import json
-import os
 import sys
 from datetime import datetime
-from typing import NamedTuple
+from pathlib import Path
 
 import pandas as pd
 
+# Add lib imports
+SCRIPT_DIR = Path(__file__).resolve().parent
+PROJECT_ROOT = SCRIPT_DIR.parent.parent
+sys.path.insert(0, str(PROJECT_ROOT))
 
-class Args(NamedTuple):
-    """Command-line arguments"""
-    input_file: str
-    output_dir: str
-    reference_file: str
+from lib.session_utils import get_session_path, validate_session_dir
 
 
 # Target column order from final_inventory_2022.csv (base 20 columns)
@@ -53,45 +53,47 @@ BASE_COLUMNS = [
 ]
 
 # Additional columns for data quality tracking
+# name_modification_flags moved to FIRST position for easier QC
 EXTRA_COLUMNS = [
     'best_name_original',
-    'name_modification_flags',
-    'url_validation'
+    'url_validation',
+    'paper_titles'  # NEW: for QC - can be deleted after review
 ]
 
-# Full target columns (base + extra)
-TARGET_COLUMNS = BASE_COLUMNS + EXTRA_COLUMNS
+# QC columns that go at the START of the file (for easy filtering)
+QC_FIRST_COLUMNS = [
+    'name_modification_flags'
+]
+
+# Full target columns: QC first, then base, then extra
+TARGET_COLUMNS = QC_FIRST_COLUMNS + BASE_COLUMNS + EXTRA_COLUMNS
 
 
-def get_args() -> Args:
+def get_args() -> argparse.Namespace:
     """Parse command-line arguments"""
     parser = argparse.ArgumentParser(
-        description='Generate final inventory CSV'
+        description='Generate final inventory CSV',
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+Examples:
+  python 27_generate_final_inventory.py --session-dir results/2025-12-04-143052-a3f9b
+        """
     )
 
     parser.add_argument(
-        '--input',
+        '--session-dir',
+        type=str,
         required=True,
-        help='Path to countries_processed_resources.csv'
-    )
-    parser.add_argument(
-        '-o', '--output-dir',
-        required=True,
-        help='Output directory (finalization folder)'
+        help='Session directory path'
     )
     parser.add_argument(
         '--reference',
+        type=str,
         default='data/final_inventory_2022.csv',
-        help='Reference file for column order validation'
+        help='Reference file for column order validation (default: data/final_inventory_2022.csv)'
     )
 
-    args = parser.parse_args()
-
-    return Args(
-        input_file=args.input,
-        output_dir=args.output_dir,
-        reference_file=args.reference
-    )
+    return parser.parse_args()
 
 
 def validate_columns(df: pd.DataFrame) -> tuple:
@@ -105,8 +107,8 @@ def validate_columns(df: pd.DataFrame) -> tuple:
     required_cols = set(BASE_COLUMNS)
 
     missing = required_cols - current_cols
-    # Extra = columns not in either BASE or EXTRA
-    known_cols = set(BASE_COLUMNS + EXTRA_COLUMNS)
+    # Extra = columns not in QC_FIRST, BASE, or EXTRA
+    known_cols = set(QC_FIRST_COLUMNS + BASE_COLUMNS + EXTRA_COLUMNS)
     extra = current_cols - known_cols
 
     return (len(missing) == 0, list(missing), list(extra))
@@ -117,7 +119,7 @@ def format_final_output(df: pd.DataFrame) -> pd.DataFrame:
     Format dataframe to match final inventory format.
 
     - Ensure all required columns exist
-    - Order columns correctly
+    - Order columns correctly (QC columns first for easy filtering)
     - Clean up data types
     - Include extra columns if present
     """
@@ -126,8 +128,18 @@ def format_final_output(df: pd.DataFrame) -> pd.DataFrame:
         if col not in df.columns:
             df[col] = ''
 
-    # Build output column list: base + any extra columns that exist
-    output_columns = BASE_COLUMNS.copy()
+    # Build output column list: QC first + base + any extra columns that exist
+    output_columns = []
+
+    # QC columns first (for easy filtering in spreadsheet)
+    for col in QC_FIRST_COLUMNS:
+        if col in df.columns:
+            output_columns.append(col)
+
+    # Then base columns
+    output_columns.extend(BASE_COLUMNS)
+
+    # Then extra columns
     for col in EXTRA_COLUMNS:
         if col in df.columns:
             output_columns.append(col)
@@ -227,21 +239,43 @@ def main() -> None:
     """Main function"""
     args = get_args()
 
+    # Validate session directory
+    SESSION_DIR = Path(args.session_dir).resolve()
+
+    if not SESSION_DIR.exists():
+        print(f"ERROR: Session directory not found: {SESSION_DIR}")
+        sys.exit(1)
+
+    try:
+        validate_session_dir(SESSION_DIR, required_phases=['09_finalization'])
+    except ValueError as e:
+        print(f"ERROR: Invalid session directory: {e}")
+        sys.exit(1)
+
+    # Input/output paths
+    input_file = get_session_path(SESSION_DIR, '09_finalization', 'countries_processed_resources.csv')
+    output_dir = get_session_path(SESSION_DIR, '09_finalization')
+
+    if not input_file.exists():
+        print(f"ERROR: Input file not found: {input_file}")
+        sys.exit(1)
+
     print(f"Phase 9 - Script 27: Generate Final Inventory")
-    print(f"=" * 50)
-    print(f"Input: {args.input_file}")
-    print(f"Output directory: {args.output_dir}")
+    print(f"=" * 80)
+    print(f"Session: {SESSION_DIR.name}")
+    print(f"Input: {input_file.relative_to(SESSION_DIR)}")
+    print(f"Output directory: {output_dir.relative_to(SESSION_DIR)}")
     print()
 
     # Load input
     print("Loading processed resources...")
-    df = pd.read_csv(args.input_file)
+    df = pd.read_csv(input_file)
     print(f"  Loaded {len(df)} rows")
 
     # Check for excluded file to get count
-    excluded_file = os.path.join(args.output_dir, 'excluded_no_url.csv')
+    excluded_file = output_dir / 'excluded_no_url.csv'
     excluded_count = 0
-    if os.path.exists(excluded_file):
+    if excluded_file.exists():
         excluded_df = pd.read_csv(excluded_file)
         excluded_count = len(excluded_df)
         print(f"  Found {excluded_count} excluded resources")
@@ -271,6 +305,7 @@ def main() -> None:
     stats = generate_statistics(final_df, excluded_count)
     stats['script'] = '27_generate_final_inventory'
     stats['timestamp'] = datetime.now().isoformat()
+    stats['session'] = SESSION_DIR.name
 
     print(f"  Coverage summary:")
     for key, value in stats['coverage'].items():
@@ -279,9 +314,10 @@ def main() -> None:
     print()
 
     # Compare with reference if exists
-    if os.path.exists(args.reference_file):
-        print(f"Comparing with reference file: {args.reference_file}")
-        ref_df = pd.read_csv(args.reference_file, nrows=1)
+    reference_file = PROJECT_ROOT / args.reference
+    if reference_file.exists():
+        print(f"Comparing with reference file: {args.reference}")
+        ref_df = pd.read_csv(reference_file, nrows=1)
         ref_cols = list(ref_df.columns)
         if ref_cols == TARGET_COLUMNS:
             print("  Column order matches reference file")
@@ -292,36 +328,37 @@ def main() -> None:
         print()
 
     # Save outputs
-    output_file = os.path.join(args.output_dir, 'final_inventory.csv')
+    output_file = output_dir / 'final_inventory.csv'
     final_df.to_csv(output_file, index=False)
-    print(f"Saved final inventory to: {output_file}")
+    print(f"Saved final inventory to: {output_file.relative_to(SESSION_DIR)}")
 
     # Save full statistics
-    stats_file = os.path.join(args.output_dir, 'statistics.json')
+    stats_file = output_dir / 'statistics.json'
     with open(stats_file, 'w') as f:
         json.dump(stats, f, indent=2)
-    print(f"Saved statistics to: {stats_file}")
+    print(f"Saved statistics to: {stats_file.relative_to(SESSION_DIR)}")
 
     # Create summary log
-    log_file = os.path.join(args.output_dir, 'finalization.log')
+    log_file = output_dir / 'finalization.log'
     with open(log_file, 'w') as f:
         f.write(f"Phase 9 Finalization Summary\n")
-        f.write(f"=" * 50 + "\n\n")
+        f.write(f"=" * 80 + "\n\n")
+        f.write(f"Session: {SESSION_DIR.name}\n")
         f.write(f"Timestamp: {datetime.now().isoformat()}\n")
         f.write(f"Final inventory: {len(final_df)} resources\n")
         f.write(f"Excluded (no URL): {excluded_count} resources\n")
         f.write(f"Total processed: {len(final_df) + excluded_count} resources\n\n")
-        f.write(f"Output file: {output_file}\n")
-        f.write(f"Statistics: {stats_file}\n")
-    print(f"Saved log to: {log_file}")
+        f.write(f"Output file: {output_file.relative_to(SESSION_DIR)}\n")
+        f.write(f"Statistics: {stats_file.relative_to(SESSION_DIR)}\n")
+    print(f"Saved log to: {log_file.relative_to(SESSION_DIR)}")
 
     print()
-    print("=" * 50)
+    print("=" * 80)
     print(f"FINAL INVENTORY COMPLETE")
     print(f"  Resources: {len(final_df)}")
     print(f"  Excluded: {excluded_count}")
-    print(f"  Output: {output_file}")
-    print("=" * 50)
+    print(f"  Output: {output_file.relative_to(SESSION_DIR)}")
+    print("=" * 80)
 
 
 if __name__ == '__main__':

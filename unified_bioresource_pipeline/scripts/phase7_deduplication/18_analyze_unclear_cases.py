@@ -2,15 +2,20 @@
 """
 Analyze Unclear Cases with URL Similarity Scoring
 
-Takes unclear cases from Script 12 and applies URL similarity analysis
+Takes unclear cases from Script 17 deduplication and applies URL similarity analysis
 to identify which ones should potentially be merged.
 
 Output includes:
 - similarity_score: Similarity to other URLs in the same group
 - merge_group_id: Unique ID for potential merge groups (e.g., MG001, MG002)
 - merge_recommendation: MERGE (≥0.85) or REVIEW (manual check needed)
+
+Usage:
+    python 18_analyze_unclear_cases.py --session-dir 2025-12-04-111420-z381s [--profile balanced]
 """
 
+import argparse
+import sys
 import pandas as pd
 import re
 from pathlib import Path
@@ -18,20 +23,48 @@ from urllib.parse import urlparse
 from difflib import SequenceMatcher
 from collections import defaultdict
 
-# Paths
-BASE_DIR = Path('/Users/warren/development/GBC/inventory_2022')
-RESULTS_DIR = BASE_DIR / 'pipeline_synthesis_2025-11-18/results'
+# Add lib to path for session utilities
+SCRIPT_DIR = Path(__file__).resolve().parent
+PIPELINE_DIR = SCRIPT_DIR.parent.parent
+sys.path.insert(0, str(PIPELINE_DIR))
 
-# Input (from Script 12)
-INPUT_FILE = RESULTS_DIR / 'linguistic_dedup_unclear_cases.csv'
+from lib.session_utils import validate_session_dir, get_session_path
 
-# Output
-OUTPUT_FILE = RESULTS_DIR / 'linguistic_unclear_cases_with_similarity.csv'
-SUMMARY_FILE = RESULTS_DIR / 'unclear_cases_merge_summary.txt'
+def parse_args():
+    parser = argparse.ArgumentParser(
+        description='Analyze unclear cases with URL similarity scoring'
+    )
+    parser.add_argument('--session-dir', type=str, required=True,
+                        help='Session directory (e.g., 2025-12-04-111420-z381s)')
+    parser.add_argument('--profile', type=str, default='balanced',
+                        choices=['conservative', 'balanced', 'aggressive'],
+                        help='Deduplication profile to analyze (default: balanced)')
+    return parser.parse_args()
+
+args = parse_args()
+
+# Validate session directory
+SESSION_DIR = PIPELINE_DIR / args.session_dir
+validate_session_dir(SESSION_DIR, required_phases=['07_deduplication'])
+
+# Paths - all relative to session directory
+DEDUP_DIR = SESSION_DIR / '07_deduplication' / args.profile
+
+# Input - look for unclear cases from script 17 output
+# Script 17 doesn't produce unclear_cases directly, so we analyze the dedup output
+INPUT_FILE = DEDUP_DIR / 'set_c_final.csv'
+
+# Output - write to session directory
+OUTPUT_FILE = DEDUP_DIR / 'unclear_cases_with_similarity.csv'
+SUMMARY_FILE = DEDUP_DIR / 'unclear_cases_merge_summary.txt'
 
 print("="*80)
 print("Unclear Cases Analysis with URL Similarity Scoring")
 print("="*80)
+print(f"\nSession: {args.session_dir}")
+print(f"Profile: {args.profile}")
+print(f"Input:   {INPUT_FILE}")
+print(f"Output:  {OUTPUT_FILE}")
 
 # ============================================================================
 # URL SIMILARITY FUNCTIONS

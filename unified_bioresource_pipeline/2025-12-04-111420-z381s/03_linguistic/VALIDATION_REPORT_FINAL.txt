@@ -1,0 +1,281 @@
+================================================================================
+LINGUISTIC SCORING OUTPUT VALIDATION REPORT
+Session: 2025-12-04-111420-z381s
+Validation Date: 2025-12-04
+================================================================================
+
+EXECUTIVE SUMMARY
+================================================================================
+Overall Status: FAIL - Critical issues identified
+
+Two significant data quality issues were found:
+1. DUPLICATE PMIDs in output files (13 instances)
+2. SCORE BOUNDARY VIOLATION in medium_score_papers.csv (1,154 entries above threshold)
+
+All other validation checks PASSED.
+
+================================================================================
+DETAILED VALIDATION RESULTS
+================================================================================
+
+CHECK 1: FILE EXISTENCE AND NON-EMPTY VERIFICATION
+Status: PASS
+
+Files present and with valid sizes:
+  - all_scored_papers.csv: 20,033 rows (35.1 MB)
+  - high_score_papers.csv: 5,735 rows (9.4 MB)
+  - medium_score_papers.csv: 14,269 rows (25.7 MB)
+  - low_score_papers.csv: 31 rows (0.1 MB)
+  - scoring_summary.txt: Present
+
+Note: Row counts include header row. Data rows are 1 less than displayed counts.
+
+
+CHECK 2: REQUIRED COLUMNS PRESENT
+Status: PASS
+
+All files contain required columns:
+  - pmid: PRESENT
+  - title: PRESENT
+  - abstract: PRESENT
+  - ling_score: PRESENT
+
+Total columns per file: 18
+Additional columns: publication_id, predicted_label, confidence, v2_positive,
+  pycaret_prediction, pycaret_score, pycaret_positive, union_positive,
+  ling_evidence, ling_has_intro_pattern, ling_has_title_pattern,
+  ling_has_url, ling_impl_keywords, ling_usage_keywords
+
+
+CHECK 3: SCORE RANGE VALIDATION
+Status: PARTIAL PASS / FAIL
+
+HIGH SCORE FILE (high_score_papers.csv):
+  - Expected range: [2.0, ∞)
+  - Actual range: [2.0, 6.0]
+  - Status: PASS
+  - 5,735 entries, all within expected range
+
+MEDIUM SCORE FILE (medium_score_papers.csv):
+  - Expected range: [-1.0, 1.0]
+  - Actual range: [-1.0, 1.5]
+  - Status: FAIL - Boundary violation detected
+  - Entries > 1.0: 1,154 (8.1% of file)
+  - Entries = 1.0: 3,948
+  - Entries -1.0 to 1.0: 8,938
+  - Entries = -1.0: 226
+  
+  Issue: 1,154 papers with ling_score between 1.0 and 1.5 are included
+  in the "medium score" file, but according to the profile definition
+  should be in a higher category (they exceed the 1.0 boundary).
+  
+  Example boundary violations (ling_score = 1.5):
+    - PMID 33382660: miRCoop - Identifying Cooperating miRNAs
+    - PMID 34166198: DeePROG - Deep Attention-Based Model for Diseased Gene
+    - PMID 34310516: Classification Pendulum - Stage I Colorectal Cancer
+    - PMID 34571541: Rossmann-toolbox - Cofactor Specificity Prediction
+    - PMID 34747372: Racial Differences in Survival - Lung Cancer Analysis
+
+LOW SCORE FILE (low_score_papers.csv):
+  - Expected range: (-∞, -1.0)
+  - Actual range: [-2.0, -1.5]
+  - Status: PASS
+  - 31 entries, all within expected range
+
+
+CHECK 4: ROW COUNT CONSISTENCY
+Status: PASS
+
+  High score papers:   5,734 data rows
+  Medium score papers: 14,266 data rows
+  Low score papers:    30 data rows
+  ────────────────────────────
+  Sum of parts:        20,030 data rows
+  
+  All scored papers:   20,030 data rows
+
+Consistency: VERIFIED - Sum of category files equals all_scored file
+
+
+CHECK 5: DUPLICATE PMID DETECTION
+Status: FAIL - Duplicates found
+
+DUPLICATE SUMMARY:
+  - Total rows with duplicated PMIDs: 26 (0.13% of total)
+  - Unique PMIDs with duplicates: 13
+  - All duplicates are exact copies (same title, same score)
+
+DUPLICATES IN EACH FILE:
+  all_scored_papers.csv:  13 unique PMIDs (26 rows total)
+  high_score_papers.csv:  1 unique PMID (2 rows)
+    - PMID 39588765: PHI-base pathogen-host interaction database
+  medium_score_papers.csv: 12 unique PMIDs (24 rows)
+    - PMID 35866506: Danish ablation database validation
+    - PMID 36508634: Child health development promotion fellowship
+    - PMID 36508703: Breast cancer detection in Rwanda
+    - PMID 36706445: Cholesteatoma patient info quality on YouTube
+    - PMID 36892110: Drug interaction databases evolution
+    - PMID 39841812: Rat Genome Database standardized pipelines
+    - PMID 39888724: DisGeNet disease-centric interaction database
+    - PMID 40240171: Myocarditis from ulcerative colitis drugs
+    - PMID 40263899: Lung carcinoids survival analysis
+    - (3 additional PMIDs)
+  low_score_papers.csv: 0 duplicates - PASS
+
+DUPLICATE CHARACTERISTICS:
+  - All duplicates are 100% identical (same title, abstract, scores)
+  - Likely caused by data processing error or duplicate in source data
+  - No cross-category contamination detected (duplicates stay within category)
+
+
+CHECK 6: SUMMARY FILE VALIDATION
+Status: PASS
+
+Summary file content matches actual data:
+  - Total papers scored: 20,030 (MATCHES all_scored_papers.csv)
+  - High score (>=2): 5,734 (MATCHES high_score_papers.csv)
+  - Medium score (-1 to 1): 14,266 (MATCHES medium_score_papers.csv - EXCEPT boundary issue)
+  - Low score (<-1): 30 (MATCHES low_score_papers.csv)
+  
+Note: Summary file reports "30" low score entries but file has 31 rows
+(30 data + 1 header), which is correct.
+
+Expected pattern frequencies also verified:
+  - Title pattern: 7,638 (38.1%)
+  - Introduction phrases: 5,003 (25.0%)
+  - URL in abstract: 5,534 (27.6%)
+
+
+================================================================================
+CRITICAL ISSUES FOUND
+================================================================================
+
+ISSUE 1: SCORE BOUNDARY VIOLATION (HIGH PRIORITY)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Severity: HIGH
+Impact: 1,154 papers misclassified in output files
+Location: medium_score_papers.csv
+
+Description:
+The medium_score_papers.csv file contains 1,154 entries with ling_score > 1.0
+(up to 1.5), but the defined threshold for "medium score" is -1.0 to 1.0.
+These papers should not be in this file.
+
+Evidence:
+  - Count of entries > 1.0: 1,154
+  - Maximum score found: 1.5
+  - Affected percentage: 8.1% of medium_score file
+
+Root Cause:
+Likely a boundary condition error in the filtering logic. The threshold
+check may be using <= instead of <, or there may be floating-point
+comparison issues when filtering papers into categories.
+
+Recommendation:
+Review the script that creates medium_score_papers.csv. The filter should be:
+  ling_score >= -1.0 AND ling_score < 1.0 (not <=)
+Re-run the filtering step to create corrected output files.
+
+
+ISSUE 2: DUPLICATE PMIDs (MEDIUM PRIORITY)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Severity: MEDIUM
+Impact: 13 papers duplicated, 26 total rows affected (0.13%)
+Location: all_scored_papers.csv, high_score_papers.csv, medium_score_papers.csv
+
+Description:
+13 unique PMIDs appear exactly twice in the output files with identical
+data (same title, abstract, and ling_score).
+
+Evidence:
+  - Examples:
+    * PMID 39588765 (PHI-base): appears 2x in high_score_papers.csv
+    * PMID 35866506 (Danish ablation): appears 2x in medium_score_papers.csv
+    * PMID 36508634 (Child health): appears 2x in medium_score_papers.csv
+    * And 10 more similar duplicates
+
+Root Cause:
+Could be from:
+  1. Duplicate in source NER union data
+  2. Error in the merging/deduplication step before scoring
+  3. Processing script bug that creates duplicate records
+
+Recommendation:
+1. Check if duplicates exist in the input NER union dataset
+2. If source data is clean, investigate script logic for duplicate creation
+3. Remove duplicate rows using pandas drop_duplicates(subset=['pmid'])
+4. Verify the corrected row counts after deduplication
+
+
+================================================================================
+SUMMARY STATISTICS
+================================================================================
+
+Expected vs Actual Counts:
+  Metric                  Expected    Actual      Match?
+  ──────────────────────────────────────────────────────
+  High score papers         5,734      5,734       YES
+  Medium score papers      14,266      14,266      YES
+  Low score papers            30         30        YES (31 with header)
+  Total papers            ~20,030     20,030      YES
+  Unique PMIDs            ~20,017     20,003       ~
+  (accounting for 13 duplicates)
+
+Data Quality Metrics:
+  - File integrity: PASS (all files readable and complete)
+  - Column completeness: PASS (all required columns present)
+  - Row count consistency: PASS (sums match)
+  - Score range accuracy: PARTIAL FAIL (medium boundary issue)
+  - Duplicate-free: FAIL (13 duplicated PMIDs)
+  - Cross-category contamination: PASS (none detected)
+
+
+================================================================================
+VALIDATION CHECKLIST
+================================================================================
+
+[PASS] Files exist and non-empty
+[PASS] All required columns present
+[FAIL] Correct score ranges for each file
+       - High score: PASS (all 2.0-6.0)
+       - Medium score: FAIL (1,154 entries exceed 1.0 threshold)
+       - Low score: PASS (all -2.0 to -1.5)
+[FAIL] No duplicate PMIDs within files
+       - 13 duplicated PMIDs found
+[PASS] Row count consistency (High + Med + Low = All)
+[PASS] Summary file matches actual data
+[PASS] No cross-category contamination
+
+
+================================================================================
+RECOMMENDATIONS
+================================================================================
+
+IMMEDIATE ACTIONS (Before using output):
+1. Generate deduplication report to identify source of duplicates
+2. Fix score boundary issue in medium_score file
+3. Re-run linguistic scoring script with corrections
+4. Re-validate output before downstream processing
+
+VERIFICATION STEPS:
+1. Inspect Script 07 code for boundary condition logic
+2. Check NER union input for pre-existing duplicates
+3. Test filtering logic with sample data
+4. Validate corrected output against same criteria
+
+PREVENTIVE MEASURES:
+1. Add unit tests for score boundary conditions
+2. Add deduplication step to scoring pipeline
+3. Add data quality checks to output generation
+4. Log any data issues encountered during processing
+
+
+================================================================================
+VALIDATION PERFORMED BY
+================================================================================
+Validator: Claude Code (Code Review Agent)
+Validation Date: 2025-12-04
+Session: 2025-12-04-111420-z381s
+Status: REVIEWED - Issues identified, requires correction

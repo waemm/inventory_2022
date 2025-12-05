@@ -1,20 +1,31 @@
 #!/usr/bin/env python3
 """
-scan_gbc_full.py - PRODUCTION: Scan all 4,560 URLs from GBC publication analysis
-V4 - With Wayback Machine fallback support
+Bioresource URL Scanner - Phase 6
 
-IMPORTANT: This will take approximately 75-90 minutes
-- 4,560 URLs
-- ~20 seconds per URL (with rate limiting)
-- Multi-threaded (10 workers)
+Scans URLs for bioresource indicators with scoring and classification.
+Supports both session-based and legacy file paths.
+
+V4 Features:
+- Multi-threaded scanning (configurable workers)
+- Domain-based rate limiting
+- Meta refresh redirect following
 - Wayback Machine fallback for failed URLs
+- Detailed scoring with likelihood classification
 
-Expected output:
-- Comprehensive bioresource detection results
-- Likelihood classification for each URL
-- Detailed scoring with indicators
-- Wayback rescue statistics
+Created: 2025-11-19
+Updated: 2025-12-04 (Added argparse and session support)
 """
+
+import argparse
+import sys
+from pathlib import Path
+
+# Add project root to Python path
+SCRIPT_DIR = Path(__file__).resolve().parent
+PROJECT_ROOT = SCRIPT_DIR.parent.parent
+sys.path.insert(0, str(PROJECT_ROOT))
+
+from lib.session_utils import get_session_path, validate_session_dir
 
 import pandas as pd
 import requests
@@ -31,22 +42,93 @@ from datetime import datetime
 # Suppress XML parsing warnings (some sites return XML, but HTML parser works fine)
 warnings.filterwarnings("ignore", category=XMLParsedAsHTMLWarning)
 
-# Load full dataset
-df = pd.read_csv("data/gbc_urls.csv")
-print(f"{'=' * 80}")
-print(f"BIORESOURCE URL SCANNER V4 - GBC Publication Analysis Dataset")
-print(f"{'=' * 80}")
-print(f"\n📊 Dataset: {len(df)} URLs")
-print(f"🌐 Unique domains: {df['domain'].nunique()}")
-print(f"\n⏱️  Estimated runtime: 75-90 minutes")
-print(f"🔄 Multi-threaded: 10 concurrent workers")
-print(f"🚦 Rate limiting: 1 req/sec per domain")
-print(f"⏰ Timeout: 20 seconds per URL")
-print(f"🔀 Meta refresh: Following up to 3 redirects")
-print(f"🕰️  Wayback fallback: Enabled for failed URLs")
-print(f"\n{'=' * 80}\n")
+# ============================================================================
+# COMMAND-LINE INTERFACE
+# ============================================================================
 
-# CONFIGURATION
+def parse_args():
+    """Parse command-line arguments"""
+    parser = argparse.ArgumentParser(
+        description='Scan URLs for bioresource indicators',
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+Examples:
+  # Session mode (preferred):
+  python 15_scan_urls.py --session-dir results/2025-12-04-143052-a3f9b
+
+  # Legacy mode with auto-detection:
+  python 15_scan_urls.py --auto --input data/gbc_urls.csv --output data/scan_results.csv
+
+  # Custom parameters:
+  python 15_scan_urls.py --session-dir results/session1 --workers 20 --timeout 30
+        """
+    )
+
+    # Session mode (primary)
+    parser.add_argument(
+        '--session-dir',
+        type=str,
+        help='Session directory path (PRIMARY MODE, e.g., results/2025-12-04-143052-a3f9b)'
+    )
+
+    # Legacy mode
+    parser.add_argument(
+        '--auto',
+        action='store_true',
+        help='Auto-detect legacy input/output files'
+    )
+    parser.add_argument(
+        '--input',
+        type=str,
+        help='Input CSV file with URLs (legacy mode)'
+    )
+    parser.add_argument(
+        '--output',
+        type=str,
+        help='Output CSV file for scan results (legacy mode)'
+    )
+
+    # Scanner configuration
+    parser.add_argument(
+        '--workers',
+        type=int,
+        default=10,
+        help='Number of concurrent workers (default: 10)'
+    )
+    parser.add_argument(
+        '--domain-delay',
+        type=float,
+        default=1.0,
+        help='Delay between requests to same domain in seconds (default: 1.0)'
+    )
+    parser.add_argument(
+        '--timeout',
+        type=int,
+        default=20,
+        help='Request timeout in seconds (default: 20)'
+    )
+    parser.add_argument(
+        '--wayback-timeout',
+        type=int,
+        default=15,
+        help='Wayback Machine request timeout in seconds (default: 15)'
+    )
+    parser.add_argument(
+        '--max-redirects',
+        type=int,
+        default=3,
+        help='Maximum meta refresh redirects to follow (default: 3)'
+    )
+
+    args = parser.parse_args()
+
+    # Validate argument combinations
+    if not args.session_dir and not args.auto and not (args.input and args.output):
+        parser.error("Must specify either --session-dir OR --auto OR both --input and --output")
+
+    return args
+
+# CONFIGURATION (will be overridden by argparse)
 MAX_WORKERS = 10
 DOMAIN_DELAY = 1.0
 TIMEOUT = 20
@@ -319,76 +401,191 @@ class BioresourceScanner:
                 results.append(future.result())
         return results
 
-# Execute scan
-print(f"🚀 Starting scan at {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+# ============================================================================
+# MAIN EXECUTION
+# ============================================================================
 
-urls_data = df.to_dict('records')
-scanner = BioresourceScanner(max_workers=MAX_WORKERS, domain_delay=DOMAIN_DELAY)
+def main():
+    """Main execution function"""
+    # Parse arguments
+    args = parse_args()
 
-start_time = time.time()
-results = scanner.scan_batch(urls_data)
-total_time = time.time() - start_time
+    # Update global configuration from args
+    global MAX_WORKERS, DOMAIN_DELAY, TIMEOUT, MAX_META_REDIRECTS, WAYBACK_TIMEOUT
+    MAX_WORKERS = args.workers
+    DOMAIN_DELAY = args.domain_delay
+    TIMEOUT = args.timeout
+    MAX_META_REDIRECTS = args.max_redirects
+    WAYBACK_TIMEOUT = args.wayback_timeout
 
-# Convert to DataFrame
-results_df = pd.DataFrame(results)
-results_df['indicators_found'] = results_df['indicators_found'].apply(
-    lambda x: '; '.join(x) if isinstance(x, list) else ''
-)
+    # Determine input/output paths
+    if args.session_dir:
+        # Session mode
+        session_dir = Path(args.session_dir).resolve()
 
-# Save results with timestamp
-timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-output_path = f"data/gbc_scan_results_{timestamp}.csv"
-results_df.to_csv(output_path, index=False)
+        # Validate session directory
+        if not session_dir.exists():
+            print(f"ERROR: Session directory does not exist: {session_dir}")
+            sys.exit(1)
 
-# Print summary
-print(f"\n{'=' * 80}")
-print(f"✅ SCAN COMPLETE - {len(results)} URLs")
-print(f"{'=' * 80}")
+        try:
+            # Validate that Phase 5 (mapping) has been completed
+            validate_session_dir(session_dir, required_phases=['05_mapping'])
+        except ValueError as e:
+            print(f"ERROR: {e}")
+            sys.exit(1)
 
-print(f"\n⏱️  Performance:")
-print(f"   Total time: {total_time / 60:.1f} minutes")
-print(f"   Average: {total_time / len(results):.2f}s per URL")
-print(f"   Throughput: {len(results) / total_time:.2f} URLs/sec")
+        # Session-based paths
+        input_path = get_session_path(session_dir, '06_scanning', 'prepared_urls.csv')
+        output_path = get_session_path(session_dir, '06_scanning', 'url_scan_results.csv')
+        stats_path = get_session_path(session_dir, '06_scanning', 'scan_statistics.txt')
 
-print(f"\n📊 Connectivity:")
-live_count = results_df['is_live'].sum()
-failed_count = (~results_df['is_live']).sum()
-print(f"   Live URLs: {live_count} ({live_count / len(results_df) * 100:.1f}%)")
-print(f"   Failed: {failed_count} ({failed_count / len(results_df) * 100:.1f}%)")
+        if not input_path.exists():
+            print(f"ERROR: Prepared URLs file not found: {input_path}")
+            print(f"       Run script 14_prepare_urls.py first to prepare URLs for scanning.")
+            sys.exit(1)
 
-# Wayback stats
-wayback_count = results_df['wayback_used'].sum()
-if wayback_count > 0:
-    print(f"\n🕰️  Wayback Machine:")
-    print(f"   Rescued via Wayback: {wayback_count} ({wayback_count / len(results_df) * 100:.1f}%)")
-    wayback_live = results_df[results_df['wayback_used'] == True]
-    print(f"   Mean score (Wayback): {wayback_live['total_score'].mean():.1f}")
+        mode_str = f"Session: {session_dir.name}"
 
-print(f"\n📈 Likelihood Distribution:")
-for likelihood in ['CRITICAL', 'HIGH', 'MEDIUM', 'LOW', 'VERY LOW']:
-    count = (results_df['likelihood'] == likelihood).sum()
-    pct = count / len(results_df) * 100
-    print(f"   {likelihood:12s}: {count:4d} ({pct:5.1f}%)")
+    else:
+        # Legacy mode
+        if args.auto:
+            # Auto-detect legacy paths
+            input_path = Path("data/gbc_urls.csv")
+            timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+            output_path = Path(f"data/gbc_scan_results_{timestamp}.csv")
+            stats_path = None
+        else:
+            input_path = Path(args.input)
+            output_path = Path(args.output)
+            stats_path = None
 
-high_quality = ((results_df['likelihood'] == 'CRITICAL') | (results_df['likelihood'] == 'HIGH')).sum()
-print(f"\n🎯 HIGH QUALITY DETECTION (CRITICAL + HIGH):")
-print(f"   Count: {high_quality}/{len(results_df)} ({high_quality/len(results_df)*100:.1f}%)")
+        if not input_path.exists():
+            print(f"ERROR: Input file not found: {input_path}")
+            sys.exit(1)
 
-live_df = results_df[results_df['is_live'] == True]
-if len(live_df) > 0:
-    print(f"\n💯 Score Statistics (Live URLs only, n={len(live_df)}):")
-    print(f"   Mean: {live_df['total_score'].mean():.1f}")
-    print(f"   Median: {live_df['total_score'].median():.1f}")
-    print(f"   Std Dev: {live_df['total_score'].std():.1f}")
+        mode_str = "Legacy mode"
 
-meta_redirected = results_df[results_df['meta_redirects'] > 0]
-if len(meta_redirected) > 0:
-    print(f"\n🔀 Meta refresh redirects detected: {len(meta_redirected)} sites")
+    # Load URLs
+    try:
+        df = pd.read_csv(input_path)
+    except Exception as e:
+        print(f"ERROR: Failed to load input file: {e}")
+        sys.exit(1)
 
-print(f"\n📁 Results saved to:")
-print(f"   {output_path}")
+    # Print banner
+    print("=" * 80)
+    print("BIORESOURCE URL SCANNER V4")
+    print("=" * 80)
+    print(f"Started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    print(f"Mode: {mode_str}")
+    print(f"\n📊 Dataset: {len(df)} URLs")
+    if 'domain' in df.columns:
+        print(f"🌐 Unique domains: {df['domain'].nunique()}")
+    print(f"\n⏱️  Estimated runtime: {len(df) * DOMAIN_DELAY / MAX_WORKERS / 60:.1f} minutes")
+    print(f"🔄 Multi-threaded: {MAX_WORKERS} concurrent workers")
+    print(f"🚦 Rate limiting: {DOMAIN_DELAY} req/sec per domain")
+    print(f"⏰ Timeout: {TIMEOUT} seconds per URL")
+    print(f"🔀 Meta refresh: Following up to {MAX_META_REDIRECTS} redirects")
+    print(f"🕰️  Wayback fallback: Enabled (timeout: {WAYBACK_TIMEOUT}s)")
+    print("=" * 80)
+    print()
 
-print(f"\n{'=' * 80}")
-print(f"✅ ANALYSIS SCRIPT AVAILABLE")
-print(f"   Run: python scripts/analyze_gbc_results.py")
-print(f"{'=' * 80}")
+    # Execute scan
+    print(f"🚀 Starting scan at {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+
+    urls_data = df.to_dict('records')
+    scanner = BioresourceScanner(max_workers=MAX_WORKERS, domain_delay=DOMAIN_DELAY)
+
+    start_time = time.time()
+    results = scanner.scan_batch(urls_data)
+    total_time = time.time() - start_time
+
+    # Convert to DataFrame
+    results_df = pd.DataFrame(results)
+    results_df['indicators_found'] = results_df['indicators_found'].apply(
+        lambda x: '; '.join(x) if isinstance(x, list) else ''
+    )
+
+    # Save results
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    results_df.to_csv(output_path, index=False)
+
+    # Generate statistics report
+    stats_lines = []
+    stats_lines.append("=" * 80)
+    stats_lines.append("SCAN COMPLETE - URL SCANNING STATISTICS")
+    stats_lines.append("=" * 80)
+    stats_lines.append(f"Completed: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    stats_lines.append(f"Total URLs scanned: {len(results)}")
+    stats_lines.append("")
+
+    stats_lines.append("⏱️  Performance:")
+    stats_lines.append(f"   Total time: {total_time / 60:.1f} minutes")
+    stats_lines.append(f"   Average: {total_time / len(results):.2f}s per URL")
+    stats_lines.append(f"   Throughput: {len(results) / total_time:.2f} URLs/sec")
+    stats_lines.append("")
+
+    stats_lines.append("📊 Connectivity:")
+    live_count = results_df['is_live'].sum()
+    failed_count = (~results_df['is_live']).sum()
+    stats_lines.append(f"   Live URLs: {live_count} ({live_count / len(results_df) * 100:.1f}%)")
+    stats_lines.append(f"   Failed: {failed_count} ({failed_count / len(results_df) * 100:.1f}%)")
+    stats_lines.append("")
+
+    # Wayback stats
+    wayback_count = results_df['wayback_used'].sum()
+    if wayback_count > 0:
+        stats_lines.append("🕰️  Wayback Machine:")
+        stats_lines.append(f"   Rescued via Wayback: {wayback_count} ({wayback_count / len(results_df) * 100:.1f}%)")
+        wayback_live = results_df[results_df['wayback_used'] == True]
+        stats_lines.append(f"   Mean score (Wayback): {wayback_live['total_score'].mean():.1f}")
+        stats_lines.append("")
+
+    stats_lines.append("📈 Likelihood Distribution:")
+    for likelihood in ['CRITICAL', 'HIGH', 'MEDIUM', 'LOW', 'VERY LOW']:
+        count = (results_df['likelihood'] == likelihood).sum()
+        pct = count / len(results_df) * 100
+        stats_lines.append(f"   {likelihood:12s}: {count:4d} ({pct:5.1f}%)")
+    stats_lines.append("")
+
+    high_quality = ((results_df['likelihood'] == 'CRITICAL') | (results_df['likelihood'] == 'HIGH')).sum()
+    stats_lines.append("🎯 HIGH QUALITY DETECTION (CRITICAL + HIGH):")
+    stats_lines.append(f"   Count: {high_quality}/{len(results_df)} ({high_quality/len(results_df)*100:.1f}%)")
+    stats_lines.append("")
+
+    live_df = results_df[results_df['is_live'] == True]
+    if len(live_df) > 0:
+        stats_lines.append(f"💯 Score Statistics (Live URLs only, n={len(live_df)}):")
+        stats_lines.append(f"   Mean: {live_df['total_score'].mean():.1f}")
+        stats_lines.append(f"   Median: {live_df['total_score'].median():.1f}")
+        stats_lines.append(f"   Std Dev: {live_df['total_score'].std():.1f}")
+        stats_lines.append("")
+
+    meta_redirected = results_df[results_df['meta_redirects'] > 0]
+    if len(meta_redirected) > 0:
+        stats_lines.append(f"🔀 Meta refresh redirects detected: {len(meta_redirected)} sites")
+        stats_lines.append("")
+
+    stats_lines.append("📁 Results saved to:")
+    stats_lines.append(f"   {output_path}")
+    stats_lines.append("")
+    stats_lines.append("=" * 80)
+
+    # Print to console
+    stats_text = '\n'.join(stats_lines)
+    print(f"\n{stats_text}")
+
+    # Save statistics file if in session mode
+    if stats_path:
+        with open(stats_path, 'w') as f:
+            f.write(stats_text)
+        print(f"\nStatistics saved to: {stats_path}")
+
+    print("\n" + "=" * 80)
+    print("COMPLETE!")
+    print("=" * 80)
+
+
+if __name__ == "__main__":
+    main()

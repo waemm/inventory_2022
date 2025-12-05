@@ -1,0 +1,166 @@
+original_record_num,database_name,long_database_name,found_urls,url_source,match_quality,notes
+1255,moving,,NOT_FOUND,not_available,,Generic term - not a specific database name
+1257,delfos,,NOT_FOUND,not_available,,Code repository only (github.com/MoreiraLAB/delfos)
+1258,,real world,NOT_FOUND,not_available,,Generic term - not a specific database name
+1262,,proteolysis targeting chimera,NOT_FOUND,not_available,,Descriptive term not a database
+1264,,gastric cancer multiplex immunohistochemistry,NOT_FOUND,not_available,,Descriptive methodology not a database
+1274,marim,,NOT_FOUND,not_available,,MAR databases found but no MARIM - possible name variant
+1277,indel,,NOT_FOUND,not_available,,Generic bioinformatics term not a database
+1282,,and computation toolbox for,NOT_FOUND,not_available,,Incomplete extraction - not a database name
+1284,obocap,,NOT_FOUND,not_available,,No database found - possible misspelling
+1286,,embrane mixer,NOT_FOUND,not_available,,Incomplete extraction - not a database name
+1289,,pgtailor,NOT_FOUND,not_available,,No dedicated web interface found
+1290,,genome browser,NOT_FOUND,not_available,,Generic term not specific database
+1292,3d,,NOT_FOUND,not_available,,Generic term - not a specific database name
+1295,,resource allocation for integrated space,NOT_FOUND,not_available,,Descriptive term not a database
+1301,kids,,NOT_FOUND,not_available,,Generic term - not a specific database name
+1303,,genecarna,https://www.genecards.org/genecarna,web_search,HIGH,GeneCaRNA - comprehensive gene-centric database of human non-coding RNAs
+1304,anzup,,https://anzup.org.au,web_search,MEDIUM,ANZUP Cancer Trials Group organization website
+1315,,videos of physical exercise and sedentary behaviours,NOT_FOUND,not_available,,Descriptive term not a database
+1326,akr,,NOT_FOUND,not_available,,Generic term - insufficient context
+1333,dphy,,NOT_FOUND,not_available,,Generic term - insufficient context
+1351,crux,,NOT_FOUND,not_available,,Multiple tools found but no single database
+1362,old,,NOT_FOUND,not_available,,Generic term - not a specific database name
+1363,,dataset fine,NOT_FOUND,not_available,,Generic term - not a specific database name
+1367,summit,,NOT_FOUND,not_available,,Conference series not a database
+1371,,microorganism,NOT_FOUND,not_available,,Generic term - not a specific database name
+1375,,kinetics using,NOT_FOUND,not_available,,Incomplete extraction - not a database name
+1376,asp,,NOT_FOUND,not_available,,Generic term - insufficient context
+1384,,optimal growth temperature,NOT_FOUND,not_available,,Descriptive term not a database
+1385,vhl,,http://www.cancer-genetics.org/VHL.htm,web_search,HIGH,VHL Cancer Genetics Web resource
+1387,risc,,NOT_FOUND,not_available,,Generic term - insufficient context
+1391,,cyclone,NOT_FOUND,not_available,,Generic term - not a specific database name
+1396,,data repository,NOT_FOUND,not_available,,Generic term - not a specific database name
+1403,lesion,,NOT_FOUND,not_available,,Generic term - not a specific database name
+1408,,child knowledgebase,NOT_FOUND,not_available,,Generic term - no specific database found
+1409,,seer-medicare,NOT_FOUND,not_available,,Linked datasets not a single database interface
+1413,,repository,NOT_FOUND,not_available,,Generic term - not a specific database name
+1417,,biological databases,NOT_FOUND,not_available,,Generic term - not a specific database name
+1419,all-i,,NOT_FOUND,not_available,,Insufficient context
+1420,,intracranial aneurysm,NOT_FOUND,not_available,,Medical condition not a database
+1423,,bioportal,https://bioportal.bioontology.org,web_search,HIGH,NCBO BioPortal - repository of biomedical ontologies
+1427,,flashlab@pitz,NOT_FOUND,not_available,,Appears to be facility name not a database
+1428,,membrane,NOT_FOUND,not_available,,Generic term - not a specific database name
+1429,,carbon emission factor database,NOT_FOUND,not_available,,No specific web interface found
+1436,,get with the guidelines,NOT_FOUND,not_available,,Clinical quality improvement program not a database
+1451,rcx,,NOT_FOUND,not_available,,Insufficient context
+1454,,spectral database,NOT_FOUND,not_available,,Generic term - not a specific database name
+1457,,interactions,NOT_FOUND,not_available,,Generic term - not a specific database name
+1458,dna,,NOT_FOUND,not_available,,Generic term - not a specific database name
+1459,maize,,NOT_FOUND,not_available,,Generic term - not a specific database name
+1462,on,,NOT_FOUND,not_available,,Generic term - not a specific database name
+1464,i2b2,,https://www.i2b2.org,web_search,HIGH,Informatics for Integrating Biology and the Bedside platform
+1470,c,,NOT_FOUND,not_available,,Generic term - not a specific database name
+1472,,face database,NOT_FOUND,not_available,,Generic term - not a specific database name
+1474,,patrimony,NOT_FOUND,not_available,,Generic term - not a specific database name
+1479,,annotation,NOT_FOUND,not_available,,Generic term - not a specific database name
+1485,tdk,,NOT_FOUND,not_available,,Insufficient context
+1486,,dendritic cell,NOT_FOUND,not_available,,Cell type not a database
+1487,,molecule,NOT_FOUND,not_available,,Generic term - not a specific database name
+1491,,dental database,NOT_FOUND,not_available,,Generic term - not a specific database name
+1492,awake,,NOT_FOUND,not_available,,Generic term - insufficient context
+1494,ource,,NOT_FOUND,not_available,,Incomplete extraction - not a database name
+1502,and,,NOT_FOUND,not_available,,Generic term - not a specific database name
+1514,,naturalistic scenes,NOT_FOUND,not_available,,Generic term - not a specific database name
+1516,,interaction,NOT_FOUND,not_available,,Generic term - not a specific database name
+1517,μmap,,NOT_FOUND,not_available,,Possible tool name - no database found
+1525,pen,,NOT_FOUND,not_available,,Generic term - not a specific database name
+1531,binary,,NOT_FOUND,not_available,,Generic term - not a specific database name
+1532,real,,NOT_FOUND,not_available,,Generic term - not a specific database name
+1534,,metabolic,NOT_FOUND,not_available,,Generic term - not a specific database name
+1585,,hiv pharmacology data repository,NOT_FOUND,not_available,,Generic repository description - no specific interface
+1599,,coastal carbon library and atlas,NOT_FOUND,not_available,,No specific web interface found
+1613,pkad-2 | pkad,,NOT_FOUND,not_available,,No specific web interface found
+1630,compas,,NOT_FOUND,not_available,,Generic term - multiple unrelated systems
+1631,trendi,c-trendi,NOT_FOUND,not_available,,No specific web interface found
+1678,david,,https://davidbioinformatics.nih.gov,web_search,HIGH,Database for Annotation Visualization and Integrated Discovery
+1713,,prestocell,NOT_FOUND,not_available,,Tool not database (github.com/euyuw2/PrestoCell)
+1730,mother-db | mother,,NOT_FOUND,not_available,,No specific web interface found
+1747,,scliverdb,http://bioinfo.life.hust.edu.cn/liverdb,web_search,HIGH,Single-cell liver transcriptome database
+1752,voc-ado,,NOT_FOUND,not_available,,No specific web interface found
+1797,,neofrugivory,NOT_FOUND,not_available,,No specific web interface found
+1798,,covprot,NOT_FOUND,not_available,,No specific web interface found
+1835,bitacora,,NOT_FOUND,not_available,,No specific biodiversity database found with this name
+1836,,superdecode,NOT_FOUND,not_available,,No specific database found - HIV databases exist but not SuperDecode
+1852,mosaec-db | mosaec,,NOT_FOUND,not_available,,No specific web interface found
+1871,,non-16/18,NOT_FOUND,not_available,,Descriptive term not a database
+1889,,curated cancer cell atlas,NOT_FOUND,not_available,,No specific web interface found
+1946,,tbibank,NOT_FOUND,not_available,,No specific web interface found
+1952,,laboratory automation protocol,NOT_FOUND,not_available,,Methodology not a database
+1956,,multitax | multitax-human,NOT_FOUND,not_available,,GitHub repository (github.com/zwbao/MultiTax-database) not dedicated web interface
+1966,tmd,,NOT_FOUND,not_available,,Generic term - insufficient context
+1979,geofor,,NOT_FOUND,not_available,,No specific web interface found
+1980,,gastric cancer registry,NOT_FOUND,not_available,,Generic registry term - no specific database
+1998,,gtdrift,NOT_FOUND,not_available,,No specific web interface found
+1999,,vivovec,NOT_FOUND,not_available,,No specific web interface found
+2008,cancol,,NOT_FOUND,not_available,,No specific web interface found
+2059,,national sleep research resource,https://sleepdata.org,web_search,HIGH,National Sleep Research Resource (NSRR) database
+2100,cge | etec,virulencefinder,NOT_FOUND,not_available,,Tool name but need to verify dedicated interface
+2121,,ukbiobank,https://www.ukbiobank.ac.uk,web_search,HIGH,UK Biobank - world's largest health database
+2124,feats,,NOT_FOUND,not_available,,Generic term - insufficient context
+2136,allin,,NOT_FOUND,not_available,,Generic term - insufficient context
+2147,,pharmacogenomics,NOT_FOUND,not_available,,Generic field term not a database
+2167,,peekbank,https://peekbank.stanford.edu,web_search,HIGH,Peekbank - developmental eye-tracking data repository
+2182,msight | msi,,NOT_FOUND,not_available,,Insufficient context
+2187,,chicago face database,https://www.chicagofaces.org,web_search,HIGH,Chicago Face Database - standardized face stimuli for research
+2203,,croppol,NOT_FOUND,not_available,,GitHub repository (github.com/ibartomeus/OBservData) not web interface
+2205,,serumcovid,NOT_FOUND,not_available,,Research dataset not a database with web interface
+2208,,mprabase,http://www.mprabase.com,web_search,HIGH,MPRAbase - Massively Parallel Reporter Assay database
+2220,proceed,phenotypic rates of change evolutionary and ecological database,https://proceeddatabase.weebly.com,web_search,HIGH,PROCEED database - phenotypic rates of change
+2233,,adrenaline,NOT_FOUND,not_available,,Generic term - insufficient context
+2234,intuition,,NOT_FOUND,not_available,,Generic term - insufficient context
+2238,spirit,,NOT_FOUND,not_available,,Generic term - insufficient context
+2257,,ribogrove,NOT_FOUND,not_available,,Published database but no dedicated web interface found
+2277,iaslc,,NOT_FOUND,not_available,,Organization not a database
+2297,,gramene,https://www.gramene.org,web_search,HIGH,Gramene - plant comparative genomics database
+2310,batfly,,NOT_FOUND,not_available,,No specific web interface found
+2322,,musargene,NOT_FOUND,not_available,,No specific database found - related muscle databases exist
+2326,,cardiotocographic,NOT_FOUND,not_available,,Medical term not a database
+2343,tote,,NOT_FOUND,not_available,,Generic term - insufficient context
+2350,,healthcarelca,NOT_FOUND,not_available,,No specific web interface found
+2385,,invitrospi,NOT_FOUND,not_available,,Tool on GitHub (github.com/QuantSysBio/invitroSPI) not web interface
+2418,chempu,,NOT_FOUND,not_available,,No specific web interface found
+2429,,transition database for rare diseases,NOT_FOUND,not_available,,No specific web interface found
+2438,,croatian psycholinguistic database,NOT_FOUND,not_available,,No specific web interface found
+2453,snomed ct,,https://www.snomed.org,web_search,HIGH,SNOMED CT - clinical terminology system
+2465,recom,,NOT_FOUND,not_available,,Generic term - insufficient context
+2471,acmg,multiple endocrine neoplasia type 2,NOT_FOUND,not_available,,Organization and disease name not a database
+2496,eccd,,NOT_FOUND,not_available,,Insufficient context
+2534,,reactions,NOT_FOUND,not_available,,Generic term - not a specific database name
+2595,doxs,foodoxs,NOT_FOUND,not_available,,Published research data but no dedicated web interface
+2601,rebase,,https://rebase.neb.com/rebase/rebase.html,web_search,HIGH,REBASE - restriction enzyme database
+2633,,freshomics,NOT_FOUND,not_available,,No specific web interface found
+2642,fat-ptm,,NOT_FOUND,not_available,,No specific web interface found
+2644,h4h,,NOT_FOUND,not_available,,Generic term - insufficient context
+2661,v2v,recipient epidemiology and donor evaluation study-iv-pediatric,NOT_FOUND,not_available,,Clinical study not a database
+2670,,pytheasdb,NOT_FOUND,not_available,,No specific proteomics database found with this name
+2675,,intenzydb,https://intenzydb.accre.vanderbilt.edu,web_search,HIGH,IntEnzyDB - integrated structure-kinetics enzymology database
+2678,cnc,,NOT_FOUND,not_available,,Generic term - insufficient context
+2728,,aging fly cell atlas,NOT_FOUND,not_available,,No specific web interface found
+2734,,plant dna c-values database,NOT_FOUND,not_available,,No specific web interface found
+2736,county,class vi database,NOT_FOUND,not_available,,No specific context
+2747,hsv,,NOT_FOUND,not_available,,Generic term - insufficient context (virus abbreviation)
+2761,,searchrxiv,NOT_FOUND,not_available,,No specific service found - preprint servers exist but not searchRxiv
+2767,bpchar,,NOT_FOUND,not_available,,No specific web interface found
+2791,,xenopus,NOT_FOUND,not_available,,Organism name not a database
+2796,,plantpan,http://PlantPAN.itps.ncku.edu.tw,web_search,HIGH,PlantPAN - plant promoter analysis navigator
+2838,,csviewer,NOT_FOUND,not_available,,Generic viewer term - no specific database
+2856,,fishget,http://bioinfo.ihb.ac.cn/fishget,web_search,HIGH,FishGET - fish gene expression and transcriptome database
+2884,mhbase,microhaplotype,NOT_FOUND,not_available,,No specific web interface found
+2891,,mediatorweb | protein-protein interaction,NOT_FOUND,not_available,,No specific web interface found
+2921,,motifquest,NOT_FOUND,not_available,,No specific web interface found
+2932,mirella,,NOT_FOUND,not_available,,Generic name - no specific database found
+2937,excesp,,NOT_FOUND,not_available,,No specific web interface found
+2950,,synonim,NOT_FOUND,not_available,,No specific web interface found
+2951,,icu cockpit,NOT_FOUND,not_available,,Clinical system not a database
+2987,lattice,,NOT_FOUND,not_available,,Generic term - insufficient context
+2993,,multilingual picture,NOT_FOUND,not_available,,Generic term - no specific database
+3040,iexa,,NOT_FOUND,not_available,,No specific web interface found
+3042,,mini-bioreactor,NOT_FOUND,not_available,,Equipment not a database
+3044,,awcluster,NOT_FOUND,not_available,,No specific web interface found
+3047,smart,,NOT_FOUND,not_available,,Generic term - insufficient context
+3048,steer,,NOT_FOUND,not_available,,Generic term - insufficient context
+3057,carob,,NOT_FOUND,not_available,,Plant name not a database
+3064,,iprobiotics,NOT_FOUND,not_available,,No specific web interface found
+3073,,htinet2,NOT_FOUND,not_available,,No specific web interface found
+3077,,type 2 diabetes knowledge portal,NOT_FOUND,not_available,,No specific web interface found in search

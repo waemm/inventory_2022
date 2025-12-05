@@ -1,0 +1,26 @@
+================================================================================
+PHASE 3: LINGUISTIC SCORING SUMMARY
+================================================================================
+Generated: 2025-12-04 11:18:07.305861
+Input: 20,017 NER union PMIDs
+Profile: Aggressive (High>=2, Low<-1)
+
+RESULTS
+--------------------------------------------------------------------------------
+Total papers scored: 20,030
+High score (>=2): 5,734 (28.6%)
+Medium score (-1 to 1): 14,266 (71.2%)
+Low score (<-1): 30 (0.1%)
+
+PATTERN FREQUENCIES
+--------------------------------------------------------------------------------
+Title pattern: 7,638 (38.1%)
+Introduction phrases: 5,003 (25.0%)
+URL in abstract: 5,534 (27.6%)
+
+OUTPUT FILES
+--------------------------------------------------------------------------------
+high_score_papers.csv: 5,734 papers
+medium_score_papers.csv: 14,266 papers
+low_score_papers.csv: 30 papers
+all_scored_papers.csv: 20,030 papers

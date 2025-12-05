@@ -7,9 +7,9 @@
 # INPUT CONFIGURATION
 # =============================================================================
 input:
-  epmc_query_file: "data/final_query_v5.1_2011_2021/v5.1_cleaned.csv"
-  total_papers: 149943
-  date_range: "2011-2021"
+  epmc_query_file: "../data/final_query_v5.1_2022_mid2025/query_results.csv"
+  total_papers: 98571
+  date_range: "2022-mid2025"
   query_version: "v5.1"
 
 # =============================================================================
@@ -261,8 +261,8 @@ filtering_profiles:
     linguistic_low_threshold: -1
     require_url: false
 
-# Default profile for backward compatibility
-default_profile: "balanced"
+# Default profile - set to aggressive for maximum recall (2022-mid2025 fresh run)
+default_profile: "aggressive"
 
 # =============================================================================
 # PHASE 8: BASELINE COMPARISON & VISUALIZATION (NEW 2025-11-26)

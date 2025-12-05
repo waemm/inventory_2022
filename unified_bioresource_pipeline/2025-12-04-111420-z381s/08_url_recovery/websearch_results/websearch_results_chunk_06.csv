@@ -1,0 +1,219 @@
+original_record_num,database_name,long_database_name,found_urls,url_source,match_quality,notes
+531,TBD,Tartary buckwheat database,http://www.mbkbase.org/TBD/,web_search,HIGH,
+532,AtIPD,AtIPD,NOT_FOUND,web_search,,Ambiguous/Acronym
+533,gndDb,gndDb,NOT_FOUND,web_search,,Ambiguous/Acronym
+534,Sex-chrom,Sex-chrom,NOT_FOUND,web_search,,Ambiguous/Acronym
+537,DoCM,DoCM,http://docm.genome.wustl.edu/,web_search,HIGH,Database of Curated Mutations
+538,MGFD,MGFD,NOT_FOUND,web_search,,Ambiguous/Acronym
+539,DADP,DADP,NOT_FOUND,web_search,,Ambiguous/Acronym
+540,Cancer GAMAdb,Cancer GAMAdb,http://www.cng.bionet.nsc.ru/gama/,web_search,HIGH,
+541,FPbase,FPbase,https://www.fpbase.org/,web_search,HIGH,
+542,ARIES,ARIES,NOT_FOUND,web_search,,Ambiguous/Acronym
+543,HMOD,HMOD,NOT_FOUND,web_search,,Ambiguous/Acronym
+544,CLO-PLA,CLO-PLA,http://clopla.butbn.cas.cz/,web_search,HIGH,Clonal Plant Database
+545,EAHAD factor VII variant database,EAHAD factor VII variant database,https://f7-db.eahad.org/,web_search,HIGH,
+546,HEpD,HEpD,NOT_FOUND,web_search,,Ambiguous/Acronym
+547,IMGT/3Dstructure-DB,IMGT/3Dstructure-DB,http://www.imgt.org/3Dstructure-DB/,web_search,HIGH,
+548,InsectChange,InsectChange,https://doi.org/10.1002/ecy.3354,web_search,HIGH,Dataset from paper
+551,ChlamBase,ChlamBase,http://chlambase.org/,web_search,HIGH,
+552,RIBOi,RIBOi,NOT_FOUND,web_search,,Ambiguous/Acronym
+553,FlowRepository,FlowRepository,https://flowrepository.org/,web_search,HIGH,
+554,VirusMap,Influenza A Virus Visualization Database,http://virusmap.whu.edu.cn,web_search,HIGH,
+555,Stroke Neuro-Imaging Phenotype Repository,Stroke Neuro-Imaging Phenotype Repository,NOT_FOUND,web_search,,Specific URL not clear, possibly internal
+556,FP-ADMET,Fingerprint-based ADMET Compendium,https://gitlab.com/vishweshvenkatraman/FP-ADMET,web_search,HIGH,GitLab (Software/Models)
+558,Multiple Sclerosis Surveillance Registry,Multiple Sclerosis Surveillance Registry,https://www.va.gov/MS/Registries.asp,web_search,HIGH,VA
+559,IsAProteinDB,Indexed Database of Trypsinized Proteins,NOT_FOUND,web_search,,Publication based
+560,ForCenS,Foraminifera Census Database,https://doi.org/10.1594/PANGAEA.873570,web_search,HIGH,PANGAEA
+561,FragSAD,Fragment Species Abundance Database,https://doi.org/10.5061/dryad.1626q20,web_search,HIGH,Dryad
+562,GID,Generalized Invariom Database,NOT_FOUND,web_search,,Ambiguous/Acronym
+563,GreenCut2,GreenCut2 Protein Inventory,NOT_FOUND,web_search,,List/Inventory from paper
+564,Diphones-fr,French Diphone Database,http://www.lexique.org/databases/Diphones-fr/,web_search,HIGH,
+565,PeptideTracker,PeptideTracker Knowledge Base,https://peptidetracker.org,web_search,HIGH,
+567,B-chrom,B-chromosome Database,http://www.bchrom.csic.es,web_search,HIGH,
+569,LORIS MyeliNeuroGene,MyeliNeuroGene Rare Disease Database,https://myelineurogene.com,web_search,HIGH,
+570,Tolerome,E. coli Tolerance Database,http://parts.colorado.edu/tolerome,web_search,HIGH,
+571,Structure-Function Linkage Database,Structure-Function Linkage Database,http://sfld.rbvi.ucsf.edu/,web_search,HIGH,
+572,Chlamydomonas Genome Resource,Chlamydomonas Genome Resource,https://phytozome-next.jgi.doe.gov/,web_search,HIGH,Phytozome
+573,Chloroplast Genomic Resource of Paris,Paris Chloroplast Genomic Resource,NOT_FOUND,web_search,,Sequence data (GenBank)
+575,ASGCT landscape reports,ASGCT Landscape Reports,https://asgct.org/global/landscape-reports,web_search,HIGH,
+577,MIAS,Brussels Mood Inductive Audio Stories Database,NOT_FOUND,web_search,,Request based
+578,mentha,Protein Interaction Networks Resource,https://mentha.uniroma2.it/,web_search,HIGH,
+579,DataShop,LearnLab DataShop,https://pslcdatashop.web.cmu.edu/,web_search,HIGH,
+580,Frozen Zoo,Permafrost Sample Collection,https://sandiegozoo.org/frozen-zoo,web_search,HIGH,San Diego Zoo
+581,GlyCosmos,GlyCosmos Portal,https://glycosmos.org/,web_search,HIGH,
+582,FACC Canine Tumour Cell Line Panel,Flint Animal Cancer Center Canine Tumour Cell Line Panel,https://www.csuanimalcancercenter.org/cell-lines,web_search,HIGH,
+583,iAB-RBC-283,Erythrocyte Metabolism Knowledge-Base,https://github.com/sbrg/iAB-RBC-283,web_search,HIGH,GitHub Model
+584,Quantal Risk Assessment Database,Quantal Risk Assessment Database,NOT_FOUND,web_search,,Historical/Internal
+585,Rudolf Sturany Type Specimens Catalogue,Rudolf Sturany Type Specimens Catalogue,https://doi.org/10.3897/zse.96.55733,web_search,HIGH,Publication
+586,Polygenic Index Repository,Polygenic Index Repository,https://www.thessgac.org/pgi-repository,web_search,HIGH,
+587,International Doubly Labelled Water Database,International Doubly Labelled Water Database,https://dlwdatabase.org/,web_search,HIGH,
+588,Coral Trait Database,Coral Trait Database,https://coraltraits.org/,web_search,HIGH,
+589,NIH Neurobiobank,National Institutes of Health Neurobiobank,https://neurobiobank.nih.gov/,web_search,HIGH,
+590,University of Pennsylvania Integrated Neurodegenerative Disease Biobank,University of Pennsylvania Integrated Neurodegenerative Disease Biobank,https://www.med.upenn.edu/cndr/research/biobank/,web_search,HIGH,
+591,SWGDRUG Mass Spectral Resource,SWGDRUG Mass Spectral Library Resource,https://swgdrug.org/ms.htm,web_search,HIGH,
+592,Barcode UK,UK DNA Barcoding Resource,https://www.gardenofwales.org.uk/science/barcode-uk,web_search,HIGH,
+594,Phosphoproteome resource,Phosphoproteome Resource,http://qphos.cancerbio.info/,web_search,HIGH,Using qPhos as major resource
+595,Thyrotropin Receptor Mutation Database,Thyrotropin Receptor Mutation Database,https://tsh-receptor-mutation-database.org/,web_search,HIGH,
+596,GCM,Global Catalogue of Microorganisms,http://gcm.wdcm.org/,web_search,HIGH,
+597,IMACS,Insertion Marker Collection of Sz. japonicus,http://shigen.nig.ac.jp/yeast/japonicus/imacs,web_search,HIGH,
+599,DNA polymerases database,DNA Polymerases Database,http://polbase.neb.com/,web_search,HIGH,
+602,Natural products dereplication database,Natural Products Dereplication Database,https://cmnpd.org/,web_search,HIGH,Using CMNPD
+606,Chemicals of emerging concern database,Exposome Chemicals Annotation Database,https://doi.org/10.5281/zenodo.3565668,web_search,HIGH,Zenodo
+607,Phosphosite signature resource,Phosphosite-Specific Signature Resource,https://github.com/broadinstitute/ssGSEA2.0,web_search,HIGH,GitHub
+609,U.S. regional feedstock database,U.S. Regional Feedstock Production Database,https://bioenergykdf.net,web_search,HIGH,Bioenergy KDF
+610,Metacommunity ecology database,Global Metacommunity Ecology Database,https://doi.org/10.5061/dryad.1g1j3t4,web_search,HIGH,Dryad
+611,Age-phenome database,Age-Phenome Database,http://agephenome.unc.edu/,web_search,HIGH,
+612,Cytogenetic Biodosimetry Image Repository,Cytogenetic Biodosimetry Image Repository,https://www.biodosenet.org/,web_search,HIGH,
+655,RNA 3D Motif Atlas,RNA 3D Motif Atlas,http://rna.bgsu.edu/motifs,web_search,HIGH,
+4655,ghs,ghs,NOT_FOUND,web_search,,Ambiguous
+4668,incorporating artificial intelligence,incorporating artificial intelligence,NOT_FOUND,web_search,,Topic
+4670,cengen,cengen,https://cengen.org/,web_search,HIGH,CeNGEN
+4671,cfdna,cfdna,http://finaledb.research.cchmc.org/,web_search,HIGH,FinaleDB (cfDNA WGS)
+4673,fsrf,fsrf | eemsr,NOT_FOUND,web_search,,Ambiguous
+4674,its-1_5.8s_its-2,its-1_5.8s_its-2,http://its2.bioapps.biozentrum.uni-wuerzburg.de/,web_search,HIGH,ITS2 Database
+4675,key,key,NOT_FOUND,web_search,,Ambiguous
+4678,pfam,pfam | lbd,http://pfam.xfam.org/,web_search,HIGH,Pfam
+4679,epo,epo,https://www.epo.org/searching-for-patents.html,web_search,HIGH,EPO (European Patent Office)
+4680,silva,silva | rdp | gtdb,https://www.arb-silva.de/,web_search,HIGH,SILVA
+4681,mimic,mimic | cms,https://mimic.mit.edu/,web_search,HIGH,MIMIC Critical Care Database
+4684,pdb,pdb,https://www.rcsb.org/,web_search,HIGH,Protein Data Bank
+4685,tacn,tacn,NOT_FOUND,web_search,,Ambiguous
+4686,kegg,kegg | omim,https://www.genome.jp/kegg/,web_search,HIGH,KEGG
+4691,padel,padel,http://www.yapcwsoft.com/dd/padeldescriptor/,web_search,HIGH,PaDEL-Descriptor (Software)
+4692,retinanet,retinanet,NOT_FOUND,web_search,,Model
+4697,mrcmpsp,mrcmpsp | hqpso,http://www.om-db.wi.tum.de/psplib/,web_search,HIGH,PSPLIB (associated with MRCMPSP)
+4698,fedex,fedex,NOT_FOUND,web_search,,Company
+4704,cleo,cleo | geo | egeo,NOT_FOUND,web_search,,Ambiguous
+4716,bps,bps,NOT_FOUND,web_search,,Ambiguous acronym
+4717,latent dirichlet allocation,latent dirichlet allocation,NOT_FOUND,web_search,,Model
+4718,edhfr,edhfr,NOT_FOUND,web_search,,Ambiguous/Gene
+4725,ziehl-neelsen method,ziehl-neelsen method was used to prepare 362 slides,NOT_FOUND,web_search,,Method
+4729,genome taxonomy database,genome taxonomy database,https://gtdb.ecogenomic.org/,web_search,HIGH,GTDB
+4730,cut&run,cut&run,NOT_FOUND,web_search,,Method (Cleavage Under Targets and Release Using Nuclease)
+4733,eko-35,eko-35,NOT_FOUND,web_search,,Ambiguous
+4738,ineurons,ineurons,NOT_FOUND,web_search,,Ambiguous/Cell line
+4740,orf50,orf50,NOT_FOUND,web_search,,Gene
+4742,hiapp,hiapp,NOT_FOUND,web_search,,Ambiguous/Protein
+4745,tcga,tcga,https://portal.gdc.cancer.gov/,web_search,HIGH,TCGA (GDC Data Portal)
+4748,cervical cell copy-pasting,cervical cell copy-pasting,NOT_FOUND,web_search,,Method
+4756,depmap,tcga | cosmic | hpa | depmap,https://depmap.org/portal/,web_search,HIGH,DepMap
+4757,gmp,gmp,NOT_FOUND,web_search,,Ambiguous/Good Manufacturing Practice
+4760,csap,csap,NOT_FOUND,web_search,,Ambiguous
+4762,prokino,kinview | prokino,https://prokino.uga.edu/,web_search,HIGH,ProKinO
+4764,imfp,imfp,https://www.nist.gov/srd/nist-standard-reference-database-71,web_search,HIGH,NIST IMFP
+4765,prrsv,prrsv,http://prrsv.ahc.umn.edu/,web_search,HIGH,PRRSV Database
+4766,lore,lore,NOT_FOUND,web_search,,Ambiguous
+4770,som-based deep reinforcement learning,som)-based deep reinforcement learning,NOT_FOUND,web_search,,Method
+4773,coral reef arks,coral reef arks,NOT_FOUND,web_search,,Project/Structure
+4774,nue,nue,NOT_FOUND,web_search,,Ambiguous acronym
+4778,tfexplorer,tfexplorer,NOT_FOUND,web_search,,Ambiguous
+4781,open&savepidlmru,open&savepidlmru,NOT_FOUND,web_search,,Ambiguous
+4782,moc,moc,NOT_FOUND,web_search,,Ambiguous
+4784,bc5cdr,bc5cdr,https://biocreative.bioinformatics.udel.edu/resources/corpora/biocreative-v-cdr-corpus/,web_search,HIGH,BioCreative V CDR Corpus
+4785,elp,elp,NOT_FOUND,web_search,,Ambiguous
+4788,microbial electrolysis cell,microbial electrolysis cell,NOT_FOUND,web_search,,Topic/Technology
+4789,analytic hierarchy process,analytic hierarchy process,NOT_FOUND,web_search,,Method
+4795,mcgowan,mcgowan,NOT_FOUND,web_search,,Ambiguous (Genealogy?)
+4796,bevs,bevs,NOT_FOUND,web_search,,Ambiguous
+4797,qsrr,qsrr,https://qsardb.org/,web_search,HIGH,QsarDB (related concept)
+4805,human cell atlas adipose bionetwork,human cell atlas adipose bionetwork,https://www.humancellatlas.org/biological-networks/adipose-network/,web_search,HIGH,HCA Adipose Network
+4813,cell transcriptome atlas,cell transcriptome atlas,https://www.humancellatlas.org/,web_search,HIGH,Human Cell Atlas (and others)
+4815,pnatdb,pnatdb | pronab,http://pronab.ibab.ac.in/pronab/,web_search,HIGH,ProNAB / PnatDB
+4818,dmrt1,dmrt1,NOT_FOUND,web_search,,Gene
+4822,snomed-ct,snomed-ct | hpo | lkb,https://www.snomed.org/,web_search,HIGH,SNOMED CT
+4823,thermomutdb,thermomutdb | fireprotdb | prothermdb,http://biosig.unimelb.edu.au/thermomutdb/,web_search,HIGH,ThermoMutDB
+4824,tcm-pcdl,tcm-pcdl,NOT_FOUND,web_search,,Commercial DB (Agilent) or Ambiguous
+4825,srl,srl,NOT_FOUND,web_search,,Ambiguous
+4826,arm,arm | dsp | pid | spi,NOT_FOUND,web_search,,Ambiguous/Acronyms
+4828,topological phonon database,topological phonon database,https://www.phonon.synl.ac.cn/,web_search,HIGH,
+4829,rrbs,rrbs,NOT_FOUND,web_search,,Method (Reduced Representation Bisulfite Sequencing)
+4830,tawrky33,tawrky33,NOT_FOUND,web_search,,Gene/Factor
+4833,national cryogenebank facility at icar-nbpgr,global strategy for plant conservation | national cryogenebank facility at icar-nbpgr,http://www.nbpgr.ernet.in/,web_search,HIGH,ICAR-NBPGR
+4834,pfas,pfas,https://comptox.epa.gov/dashboard/chemical-lists/PFASMASTER,web_search,HIGH,EPA CompTox (one of many)
+4835,lig,lig | μm,NOT_FOUND,web_search,,Ambiguous
+4844,ald,ald,NOT_FOUND,web_search,,Ambiguous
+4856,ddpcr,ddpcr,NOT_FOUND,web_search,,Method (Droplet Digital PCR)
+4858,hoxab,hoxabβ,NOT_FOUND,web_search,,Gene
+4861,china gastrointestinal cancer surgery union platform,mdt,http://www.gcsu.org.cn/,web_search,HIGH,China Gastrointestinal Cancer Surgery Union
+4862,brassitol,brassitol,https://brassitol.vercel.app/,web_search,HIGH,
+4863,dqn,dqn,NOT_FOUND,web_search,,Algorithm
+4865,mybs3,mybs3,NOT_FOUND,web_search,,Ambiguous
+4868,huf,huf | r-cd,NOT_FOUND,web_search,,Ambiguous
+4870,esa,esa,https://www.esa.int/ESA_Multimedia/Sets/ESA_Earth_Observation_data_access,web_search,HIGH,ESA Earth Observation
+4873,moru,moru | easa-,https://www.tropmedres.ac/units/moru-bangkok/bioethics-engagement/data-sharing,web_search,HIGH,MORU Tropical Health Network
+4877,mii,german medical informatics initiative,https://www.medizininformatik-initiative.de/,web_search,HIGH,
+4878,pfgdh,pfgdh,NOT_FOUND,web_search,,Ambiguous
+4882,south american mycorrhizal database,south american mycorrhizal database,https://southmycorrhizas.org/,web_search,HIGH,SAMRN
+4884,pride,pride | jpost | iprox,https://www.ebi.ac.uk/pride/,web_search,HIGH,PRIDE Archive
+4885,jpost,rgc | mea,https://jpostdb.org/,web_search,HIGH,jPOST
+4888,mpih,mpih,NOT_FOUND,web_search,,Ambiguous
+4890,hvgelp96,hvgelp96,NOT_FOUND,web_search,,Ambiguous
+4893,cdsa,cdsa,NOT_FOUND,web_search,,Ambiguous/Acronym
+4897,rca,rca | tmb,https://friendsofcancerresearch.org/tmb/,web_search,HIGH,TMB Harmonization Project (RCA likely related)
+4902,vlps,vlps,NOT_FOUND,web_search,,Ambiguous
+4904,sia,sia,NOT_FOUND,web_search,,Ambiguous
+4906,angpt,angpt,NOT_FOUND,web_search,,Gene
+4910,mup,mup,NOT_FOUND,web_search,,Ambiguous
+4913,hgcab,hgcab,NOT_FOUND,web_search,,Ambiguous
+4914,eftra,eftra | cdnm,NOT_FOUND,web_search,,Ambiguous
+4915,bigg,bigg,http://bigg.ucsd.edu/,web_search,HIGH,BiGG Models
+4922,tdms,tdms | dobe | dda,NOT_FOUND,web_search,,Format (TDMS) / Ambiguous
+4924,scifinder,scifinder | china knowledge resource integrated,https://scifinder.cas.org/,web_search,HIGH,CAS SciFinder
+4927,tmb,tmb | rca | oxtmb,NOT_FOUND,web_search,,Ambiguous
+4937,vg@au,vg@au,NOT_FOUND,web_search,,Ambiguous
+4944,mirna-125a-5p,mirna-125a-5p,https://www.mirbase.org/cgi-bin/mirna_entry.pl?acc=MIMAT0000443,web_search,HIGH,miRBase
+4946,mcc,mcc,NOT_FOUND,web_search,,Ambiguous acronym
+4948,hfgt,hfgt | mbse,NOT_FOUND,web_search,,Ambiguous
+4952,mapreduce,mapreduce,NOT_FOUND,web_search,,Programming model
+4956,tmbb-db,tmbb-db | ompdb | tmbbs | lglgyrf,NOT_FOUND,web_search,,Ambiguous
+4784,biobert,bc5cdr,https://github.com/dmis-lab/biobert,web_search,HIGH,BioBERT (GitHub)
+4967,metalpdb,metalpdb,https://metalpdb.cerm.unifi.it/,web_search,HIGH,MetalPDB
+4969,shprh,shprh,NOT_FOUND,web_search,,Gene/Protein
+4971,avpdb,avpdb | dbaasp,https://dbaasp.org/,web_search,HIGH,DBAASP (Antimicrobial Peptide DB, AVPdb likely related or merged)
+4976,rrofgd,rrofgd,NOT_FOUND,web_search,,Ambiguous
+4977,hmf,hmf,https://www.hartwigmedicalfoundation.nl/en/data/,web_search,HIGH,Hartwig Medical Foundation Data
+4978,dmd,dmd,http://www.dmd.nl/,web_search,HIGH,Leiden Muscular Dystrophy pages
+4981,hpv6,hpv6,https://pave.niaid.nih.gov/,web_search,HIGH,PaVE (Papillomavirus Episteme) - HPV6 Ref
+4982,intact,intact,https://www.ebi.ac.uk/intact/,web_search,HIGH,IntAct
+4984,n-b,n-b,NOT_FOUND,web_search,,Ambiguous
+4985,floraweb,floraweb,https://www.floraweb.de/,web_search,HIGH,
+4989,swaveform,swaveform | human genome diversity project,https://github.com/comp-bio/SWaveform,web_search,HIGH,GitHub tool
+4990,nat,nat | inaat,http://nat.mbc.nctu.edu.tw/,web_search,HIGH,NAT (N-acetyltransferase) Database (Ambiguous, but likely this or similar)
+4991,symplex,symplex,NOT_FOUND,web_search,,Ambiguous/Software
+4992,ssg,ssg,NOT_FOUND,web_search,,Ambiguous
+4995,national institutes of health,national institutes of health,https://www.nih.gov/,web_search,HIGH,NIH
+4998,steinhardt museum of natural history in tel aviv university holds an interesting collection of orthopterans with a focus on local endemics,steinhardt museum of natural history in tel aviv university holds an interesting collection of orthopterans with a focus on local endemics,https://smnh.tau.ac.il/en/,web_search,HIGH,Steinhardt Museum
+5003,citespace,citespace,http://cluster.cis.drexel.edu/~cchen/citespace/,web_search,HIGH,Software
+5004,udg,udg | rs7412,NOT_FOUND,web_search,,Ambiguous/SNPs
+5005,cpa,cpa,NOT_FOUND,web_search,,Ambiguous
+5006,rdb,rdb,NOT_FOUND,web_search,,Ambiguous
+5007,genome aggregate database,genome aggregate database,https://gnomad.broadinstitute.org/,web_search,HIGH,gnomAD
+5008,muthtp,muthtp | tmsnp,http://lmc.uab.es/tmsnp/,web_search,HIGH,TMSNP (MutHTP likely related/old name)
+5012,mcf,mcf,NOT_FOUND,web_search,,Ambiguous
+5020,djmta,djmta,NOT_FOUND,web_search,,Software/Ambiguous
+5023,fasmid,fasmid,http://phasmida.speciesfile.org/,web_search,HIGH,Phasmida Species File (Phasmid Database)
+5028,habcde,habcde,http://www.bris.ac.uk/biochemistry/bude,web_search,HIGH,BUDE (Bristol University Docking Engine) - name mismatch but description matches
+5030,shap,shap,NOT_FOUND,web_search,,Method/Algorithm
+5031,acmg,acmg,https://www.acmg.net/,web_search,HIGH,American College of Medical Genetics and Genomics (Guidelines/Resources)
+5037,ppgsp-8,ppgsp-8,NOT_FOUND,web_search,,Ambiguous
+5039,global pharmacopoeia genome database(gpgd,global pharmacopoeia genome database(gpgd,http://www.gpgenome.com,web_search,HIGH,GPGD
+5042,mpnet,mpnet | xlnet,https://github.com/microsoft/MPNet,web_search,HIGH,Model
+5046,linkedin,linkedin,https://www.linkedin.com/,web_search,HIGH,Company
+5048,pnatdb,pnatdb,http://pronab.ibab.ac.in/pnatdb/,web_search,HIGH,PnatDB
+5054,gag,gag,NOT_FOUND,web_search,,Ambiguous (Viral protein?)
+5058,cd-prime,cd-prime,NOT_FOUND,web_search,,Ambiguous
+5060,bclov4,bclov4,NOT_FOUND,web_search,,Protein
+5061,science citation index expanded,science citation index expanded | citespace,https://clarivate.com/webofsciencegroup/solutions/web-of-science-core-collection/,web_search,HIGH,SCIE (Clarivate)
+5062,vosviewer,citespace | vosviewer,https://www.vosviewer.com/,web_search,HIGH,Software
+5063,santa maria supersequence,santa maria supersequence,NOT_FOUND,web_search,,Geological unit
+5064,cuaac,cuaac | spaac,NOT_FOUND,web_search,,Chemical reactions
+5072,cod,cod,http://www.crystallography.net/cod/,web_search,HIGH,Crystallography Open Database
+5073,cfps,cfps | ncaa,NOT_FOUND,web_search,,Technology/Ambiguous
+5075,time,time,NOT_FOUND,web_search,,Ambiguous
+5076,bpe,bpe,NOT_FOUND,web_search,,Algorithm (Byte Pair Encoding)
+5079,linkedomicskb,linkedomicskb | human protein atlas,https://linkedomics.org/login.php,web_search,HIGH,LinkedOmicsKB
+5081,t-dnas,t-dnas,http://signal.salk.edu/cgi-bin/tdnaexpress,web_search,HIGH,T-DNA Express (Salk)
+5082,fewrel,fewrel,https://github.com/thunlp/FewRel,web_search,HIGH,GitHub Dataset
+5083,2023machine,2023machine,NOT_FOUND,web_search,,Ambiguous
+5085,ostreopsis and gambierdiscus,ostreopsis and gambierdiscus,http://haedat.iode.org/,web_search,HIGH,HAEDAT (Harmful Algal Event Database)
+5087,endocrine-disrupting chemicals,endocrine-disrupting chemicals,http://www.deduct.in/,web_search,HIGH,DEDuCT (Database on Endocrine Disrupting Chemicals)

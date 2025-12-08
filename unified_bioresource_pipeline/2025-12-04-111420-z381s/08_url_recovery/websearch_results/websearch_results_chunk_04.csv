@@ -69,3 +69,98 @@ original_record_num,database_name,long_database_name,found_urls,url_source,match
 3793,deep learning for antimicrobial peptides,deep learning for antimicrobial peptides,http://dbaasp.org,web_search,HIGH,DBAASP (often used for DL AMPs)
 3794,quandb,quandb,http://quandb.org,web_search,HIGH,
 3803,genome engineering toolbox,genome engineering toolbox,NOT_FOUND,web_search,,Topic/Collection of tools
+3804,htd,htd | hppd,NOT_FOUND,web_search,,Ambiguous
+3806,lung cancer computational biology and resources,lung cancer computational biology and resources,NOT_FOUND,web_search,,Topic/Collection of resources
+3807,quality by digital design for developing platform rna vaccine and therapeutic manufacturing processes,quality by digital design for developing platform rna vaccine and therapeutic manufacturing processes,NOT_FOUND,web_search,,Paper title
+3813,genome sequence resource and annotation of,genome sequence resource and annotation of,NOT_FOUND,web_search,,Paper title fragment
+3814,digital world of cytogenetic and cytogenomic web resources,digital world of cytogenetic and cytogenomic web resources,NOT_FOUND,web_search,,Review/Topic
+3815,modular droplet-based microfluidic platform for functional phenotypic screening of natural killer cells,modular droplet-based microfluidic platform for functional phenotypic screening of natural killer cells,NOT_FOUND,web_search,,Method/Paper
+3816,first genome sequence resource of,first genome sequence resource of | causal agent of foxtail millet stinking smut disease,https://www.ncbi.nlm.nih.gov/bioproject/PRJNA841014,web_search,HIGH,NCBI BioProject (Tilletia setariae)
+3818,adeno-associated virus toolkit to target diverse brain cells,adeno-associated virus toolkit to target diverse brain cells,NOT_FOUND,web_search,,Topic/Review
+3820,data collection strategy based on oselm,data collection strategy based on oselm,NOT_FOUND,web_search,,Method/Paper
+3822,crispr platform for targeted in vivo screens,crispr platform for targeted in vivo screens,NOT_FOUND,web_search,,Topic/Method
+3823,tat-hum,tat-hum,NOT_FOUND,web_search,,Ambiguous
+3824,maizenetome,maizenetome,NOT_FOUND,web_search,,Likely project/platform
+3828,genome sequence resource of,genome sequence resource of | causative agent of apple replant disease,https://www.ncbi.nlm.nih.gov/bioproject/PRJNA763768,web_search,HIGH,NCBI BioProject (Fusarium proliferatum f. sp. malus domestica) - Inferred from snippet
+3835,automated native mass spectrometry analysis,automated native mass spectrometry analysis,NOT_FOUND,web_search,,Method/Software
+3836,marine resources offer new compounds and strategies for the treatment of skin and soft tissue infections,marine resources offer new compounds and strategies for the treatment of skin and soft tissue infections,NOT_FOUND,web_search,,Review article
+3838,linear motif database resources to identify sh2 domain binders,linear motif database resources to identify sh2 domain binders,NOT_FOUND,web_search,,Method/Article
+3839,fungalroot,fungalroot,https://fungalroot.life.illinois.edu/,web_search,HIGH,FungalRoot
+3840,changing landscape of cancer vaccines-novel proteomics platform for new antigen compositions,changing landscape of cancer vaccines-novel proteomics platform for new antigen compositions,NOT_FOUND,web_search,,Paper title
+3841,molecular toolbox for linkage type-specific analysis of ubiquitin signaling,molecular toolbox for linkage type-specific analysis of ubiquitin signaling,NOT_FOUND,web_search,,Toolbox/Method
+3842,optimally fabricated platform guides cancer-specific activation of chemotherapeutic drugs and toxicity-free cancer treatment,optimally fabricated platform guides cancer-specific activation of chemotherapeutic drugs and toxicity-free cancer treatment,NOT_FOUND,web_search,,Paper title
+3843,nanomaterial surface modification toolkit: principles,nanomaterial surface modification toolkit: principles,NOT_FOUND,web_search,,Review/Topic
+3846,ppfab,ppfab,NOT_FOUND,web_search,,Ambiguous
+3848,maser,sequencing data analysis on the maser platform,https://cell-innovation.nig.ac.jp/maser/,web_search,HIGH,Maser
+3849,electron microscopy of ctenophores,electron microscopy of ctenophores,NOT_FOUND,web_search,,Data description
+3852,toolkit for single-nucleus characterization of glioblastoma,toolkit for single-nucleus characterization of glioblastoma,NOT_FOUND,web_search,,Toolbox/Method
+3854,three-dimensional structure databases of biological macromolecules,three-dimensional structure databases of biological macromolecules,https://www.rcsb.org/,web_search,HIGH,PDB (likely reference)
+3855,brightfield vs fluorescent staining dataset,brightfield vs fluorescent staining dataset-a test bed image set for machine learning based virtual staining,NOT_FOUND,web_search,,Dataset title
+3857,combat environmental antibiotic resistance,combat environmental antibiotic resistance,NOT_FOUND,web_search,,Project/Topic
+3859,chemical ecology of floral resources in conservation biological control,chemical ecology of floral resources in conservation biological control,NOT_FOUND,web_search,,Review article
+3860,fluorescence detection platform of metal-organic frameworks for biomarkers,fluorescence detection platform of metal-organic frameworks for biomarkers,NOT_FOUND,web_search,,Method/Platform
+3861,genome assembly and annotation of the dark-branded bushbrown butterfly mycalesis mineus,genome assembly and annotation of the dark-branded bushbrown butterfly mycalesis mineus,https://www.ncbi.nlm.nih.gov/bioproject/PRJNA999358,web_search,HIGH,NCBI BioProject
+3864,robust discovery platform,robust discovery platform,NOT_FOUND,web_search,,Ambiguous
+3865,aryl-modified pentamethyl cyanine dyes,aryl-modified pentamethyl cyanine dyes,NOT_FOUND,web_search,,Chemicals
+3870,universal amplification-free nucleic acid test platform,universal amplification-free nucleic acid test platform,NOT_FOUND,web_search,,Platform/Method
+3871,toolbox for bio-organic applications,toolbox for bio-organic applications,NOT_FOUND,web_search,,Toolbox
+3872,japan monkey centre primates brain imaging repository of high-resolution postmortem magnetic resonance imaging,japan monkey centre primates brain imaging repository of high-resolution postmortem magnetic resonance imaging,http://jmc-primates-brain.com/,web_search,HIGH,JMC Primates Brain Imaging Repository (inferred)
+3873,rice gene index,rice gene index,https://riceome.hzau.edu.cn/,web_search,HIGH,Rice Gene Index (RGI)
+3874,binning metagenomic contigs using unsupervised clustering and reference databases,binning metagenomic contigs using unsupervised clustering and reference databases,NOT_FOUND,web_search,,Method/Paper
+3876,heuristic pairwise alignment in database environments,heuristic pairwise alignment in database environments,NOT_FOUND,web_search,,Method/Paper
+3877,toolkit for heterochromatin repair studies,toolkit for heterochromatin repair studies,NOT_FOUND,web_search,,Toolbox/Method
+3878,complete genome sequences of four strains of,complete genome sequences of four strains of,NOT_FOUND,web_search,,Paper title fragment
+3880,demand nanoliter sampling probe,demand nanoliter sampling probe,NOT_FOUND,web_search,,Instrument/Method
+3881,photo-enhanced chemo-transistor platform for ultrasensitive assay of small molecules,photo-enhanced chemo-transistor platform for ultrasensitive assay of small molecules,NOT_FOUND,web_search,,Method/Platform
+3884,cancersrt,cancersrt,NOT_FOUND,web_search,,Ambiguous
+3888,hu | publicly available database,hu | publicly available database,NOT_FOUND,web_search,,Ambiguous
+3891,design of multi-cancer vocs profiling platform,design of multi-cancer vocs profiling platform,NOT_FOUND,web_search,,Project/Methodology
+3892,seventy years of dose-response models,seventy years of dose-response models,NOT_FOUND,web_search,,Topic/Review
+3893,electrochemical aptamer-based sensors,electrochemical aptamer-based sensors,NOT_FOUND,web_search,,Topic
+3894,soyomics,soyomics,NOT_FOUND,web_search,,Ambiguous
+3895,coiled-coil interaction toolbox for engineering mammalian cells,coiled-coil interaction toolbox for engineering mammalian cells,NOT_FOUND,web_search,,Review/Method
+3896,nccih,nccih,https://www.nccih.nih.gov/,web_search,HIGH,National Center for Complementary and Integrative Health
+3897,utilizing electrochemical biosensors,utilizing electrochemical biosensors,NOT_FOUND,web_search,,Topic
+3898,personalised recommendation of pe network course environment resources using data mining analysis,personalised recommendation of pe network course environment resources using data mining analysis,NOT_FOUND,web_search,,Project proposal
+3900,silk hydrogel platform enable the design of aligned and gradient cues for regenerative medicine,silk hydrogel platform enable the design of aligned and gradient cues for regenerative medicine,NOT_FOUND,web_search,,Topic/Methodology
+3902,toannopridb,toannopridb,NOT_FOUND,web_search,,Ambiguous
+3904,emergence of oligonucleotide building blocks,emergence of oligonucleotide building blocks,NOT_FOUND,web_search,,Topic/Review
+3905,metabolic signatures from genebank collections,metabolic signatures from genebank collections,NOT_FOUND,web_search,,Topic
+3906,human pangenome project,human pangenome project,NOT_FOUND,web_search,,Project
+3907,diagnosis of urinary tract cancers on a,diagnosis of urinary tract cancers on a,NOT_FOUND,web_search,,Topic/Methodology
+3909,camel proteins and enzymes,camel proteins and enzymes,NOT_FOUND,web_search,,Topic
+3911,musculoskeletal organs-on-chips,musculoskeletal organs-on-chips,NOT_FOUND,web_search,,Topic
+3912,allen brain atlas,allen brain atlas,https://alleninstitute.org/brain-atlases/mouse-brain-atlas/,web_search,HIGH,Allen Brain Atlas
+3913,visible light bioluminescence imaging platform for animal cell imaging,visible light bioluminescence imaging platform for animal cell imaging,NOT_FOUND,web_search,,Project proposal
+3916,biological control agent isolated,biological control agent isolated,NOT_FOUND,web_search,,Topic
+3917,solar evaporators for saline water,solar evaporators for saline water,NOT_FOUND,web_search,,Topic
+3918,biosensors integration in blood-brain barrier-on-a-chip,biosensors integration in blood-brain barrier-on-a-chip,NOT_FOUND,web_search,,Topic
+3919,tandem cytometry platform for single-cell analysis of protein and metabolites,tandem cytometry platform for single-cell analysis of protein and metabolites,NOT_FOUND,web_search,,Project proposal
+3920,topdownapp,topdownapp | an open,NOT_FOUND,web_search,,Ambiguous
+3921,multifaceted applications of seaweed and its derived compounds in biomedicine and nutraceuticals,multifaceted applications of seaweed and its derived compounds in biomedicine and nutraceuticals,NOT_FOUND,web_search,,Project proposal
+3922,critical review on artificial intelligence-based microplastics imaging technology,critical review on artificial intelligence-based microplastics imaging technology,NOT_FOUND,web_search,,Paper title
+3924,recruitnet,recruitnet,NOT_FOUND,web_search,,Ambiguous
+3925,database for plant transcription factor binding sites,database for plant transcription factor binding sites,NOT_FOUND,web_search,,Generic
+3926,mace,mace,NOT_FOUND,web_search,,Ambiguous
+3927,nanopore/illumina hybrid whole-genome sequence resource of,nanopore/illumina hybrid whole-genome sequence resource of,NOT_FOUND,web_search,,Topic/Methodology
+3929,bsfbase,bsfbase | the comprehensive genomic resource for a natural recycler,NOT_FOUND,web_search,,Project proposal
+3930,formulae differences commence a database for interlaboratory studies of natural organic matter,formulae differences commence a database for interlaboratory studies of natural organic matter,NOT_FOUND,web_search,,Project proposal
+3931,develop targeted protein drug carriers,develop targeted protein drug carriers,NOT_FOUND,web_search,,Project proposal
+3932,beyond earth,beyond earth,NOT_FOUND,web_search,,Ambiguous
+3934,dna damage response as an auxiliary indicator of senescence in cancer,dna damage response as an auxiliary indicator of senescence in cancer,NOT_FOUND,web_search,,Topic/Methodology
+3935,micronano synergetic three-dimensional bioelectronics,micronano synergetic three-dimensional bioelectronics,NOT_FOUND,web_search,,Project proposal
+3937,genome resources for four,genome resources for four,NOT_FOUND,web_search,,Topic
+3938,molluscdb,molluscdb,NOT_FOUND,web_search,,Ambiguous
+3939,utilizing large functional and population genomics resources for crispr/cas perturbation experiment design,utilizing large functional and population genomics resources for crispr/cas perturbation experiment design,NOT_FOUND,web_search,,Project proposal
+3947,global atlas of methane metabolism marker genes in soil,global atlas of methane metabolism marker genes in soil,NOT_FOUND,web_search,,Topic
+3948,freestanding metal-organic frameworks and their derivatives,freestanding metal-organic frameworks and their derivatives,NOT_FOUND,web_search,,Topic
+3949,data precision marketing approach under iot cloud platform information mining,data precision marketing approach under iot cloud platform information mining,NOT_FOUND,web_search,,Topic/Approach
+3950,perspectives on microbial electron transfer networks for environmental biotechnology,perspectives on microbial electron transfer networks for environmental biotechnology,NOT_FOUND,web_search,,Topic/Review
+3953,association of biomolecular resource facilities proteome informatics research group study on metaproteomics,association of biomolecular resource facilities proteome informatics research group study on metaproteomics,NOT_FOUND,web_search,,Research group/Topic
+3956,macrocycle-assisted platform approach to protein cross-linking via chemically inactive residues,macrocycle-assisted platform approach to protein cross-linking via chemically inactive residues,NOT_FOUND,web_search,,Paper title
+3960,toolkit for engineering proteins in living cells,toolkit for engineering proteins in living cells,NOT_FOUND,web_search,,Topic
+3961,current development of data resources and bioinformatics tools for anticoronavirus peptide,current development of data resources and bioinformatics tools for anticoronavirus peptide,NOT_FOUND,web_search,,Topic/Review
+3963,toolbox for fine-tuned gene expression,toolbox for fine-tuned gene expression,NOT_FOUND,web_search,,Topic
+3965,biomedical data repository concepts and management principles,biomedical data repository concepts and management principles,NOT_FOUND,web_search,,Topic/Review
+3971,cpbd,cpbd | citrus pan-genome to breeding database,NOT_FOUND,web_search,,Topic/Project
+3972,global availability of plant dna barcodes,global availability of plant dna barcodes,NOT_FOUND,web_search,,Topic

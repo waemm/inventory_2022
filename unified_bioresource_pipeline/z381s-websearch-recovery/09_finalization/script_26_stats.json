@@ -1,0 +1,17 @@
+{
+  "script": "26_process_countries",
+  "timestamp": "2025-12-08T10:56:12.514296",
+  "session": "z381s-websearch-recovery",
+  "input_rows": 152,
+  "country_format": "full",
+  "affiliation_countries": {
+    "rows_with_countries": 0,
+    "unique_countries": 0,
+    "country_list": []
+  },
+  "url_countries": {
+    "rows_with_countries": 0,
+    "unique_countries": 0,
+    "country_list": []
+  }
+}

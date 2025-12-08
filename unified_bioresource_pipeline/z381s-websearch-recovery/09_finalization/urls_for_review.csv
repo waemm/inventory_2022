@@ -1,0 +1,9 @@
+ID,best_name,extracted_url,url_validation,extracted_url_status
+38769143,MZMINE,http://mzmine.github.io/,review,200
+36575445,NETACT,https://github.com/lusystemsbio/NetAct,review,200
+40828275,BRAKER,https://github.com/Gaius-Augustus/BRAKER,review,200
+38063370,squeezemeta,https://github.com/jtamames/SqueezeMeta,review,200
+38134877,cellhint,https://github.com/Teichlab/CellHint,review,200
+37024526,swaveform,https://github.com/comp-bio/SWaveform,review,200
+39631489,MPNET,https://github.com/microsoft/MPNet,review,200
+37289767,FEWREL,https://github.com/thunlp/FewRel,review,200

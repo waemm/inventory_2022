@@ -1,0 +1,124 @@
+ID,best_name,best_name_prob,best_common,best_common_prob,best_full,best_full_prob,article_count,extracted_url,extracted_url_status,extracted_url_country,extracted_url_coordinates,wayback_url,publication_date,affiliation,authors,grant_ids,grant_agencies,num_citations,affiliation_countries,best_name_original,name_modification_flags,url_validation
+39379619,o-glcnac database,0.9332913,,0.9332913,o-glcnac database,0.9332913,1,https://www.oglcnac.mcw.edu/,"HTTPSConnectionPool(host='www.oglcnac.mcw.edu', port=443): Max retries exceeded with url: / (Caused ",,,,,,,,,,,o-glcnac database,,ok
+35175626,PAZY,0.99679667,pazy,0.99679667,,0.99679667,1,https://www.pazy.eu/,"HTTPSConnectionPool(host='www.pazy.eu', port=443): Max retries exceeded with url: / (Caused by SSLEr",,,,,,,,,,,pazy,CAPITALIZED,ok
+35931779,i-tasser-mtd,0.99470854,i-tasser-mtd,0.99470854,,0.99470854,1,https://seq2fun.dcmb.med.umich.edu/I-TASSER-MTD/,"HTTPSConnectionPool(host='seq2fun.dcmb.med.umich.edu', port=443): Max retries exceeded with url: /I-",,,,,,,,,,,i-tasser-mtd,,ok
+38927512,genecarna,0.6879092,,0.6879092,genecarna,0.6879092,1,https://www.genecards.org/genecarna,403,,,,,,,,,,,genecarna,,ok
+36352543,ANZUP,0.6877836,anzup,0.6877836,,0.6877836,1,https://anzup.org.au,403,,,,,,,,,,,anzup,CAPITALIZED,ok
+40380393,bioportal,0.6194457,,0.6194457,bioportal,0.6194457,1,https://bioportal.bioontology.org,403,,,,,,,,,,,bioportal,,ok
+37259264,scliverdb,0.0,,0.0,scliverdb,0.0,1,http://bioinfo.life.hust.edu.cn/liverdb,"HTTPConnectionPool(host='bioinfo.life.hust.edu.cn', port=80): Max retries exceeded with url: /liverd",,,,,,,,,,,scliverdb,,ok
+39704901,ukbiobank,0.0,,0.0,ukbiobank,0.0,1,https://www.ukbiobank.ac.uk,403,,,,,,,,,,,ukbiobank,,ok
+35396615,chicago face database,0.0,,0.0,chicago face database,0.0,1,https://www.chicagofaces.org,406,,,,,,,,,,,chicago face database,,ok
+40262894,mprabase,0.0,,0.0,mprabase,0.0,1,http://www.mprabase.com,"HTTPConnectionPool(host='www.mprabase.com', port=80): Max retries exceeded with url: / (Caused by Na",,,,,,,,,,,mprabase,,ok
+36286319,intenzydb,0.0,,0.0,intenzydb,0.0,1,https://intenzydb.accre.vanderbilt.edu,502,,,,,,,,,,,intenzydb,,ok
+37864541,world asellidae database,0.0,,0.0,world asellidae database,0.0,1,http://douro.univ-lyon1.fr/asellidae/,"HTTPConnectionPool(host='douro.univ-lyon1.fr', port=80): Max retries exceeded with url: /asellidae/ ",,,,,,,,,,,world asellidae database,,ok
+35883475,pdbbind,0.0,,0.0,pdbbind,0.0,1,http://www.pdbbind.org.cn/,"HTTPConnectionPool(host='www.pdbbind.org.cn', port=80): Max retries exceeded with url: / (Caused by ",,,,,,,,,,,pdbbind,,ok
+38275308,elegans-based,0.0,,0.0,elegans</i>-based,0.0,1,http://www.wormbase.org/,403,,,,,,,,,,,elegans</i>-based,HTML_REMOVED,ok
+38112483,nmrshiftdb2,0.0,,0.0,nmrshiftdb2 | nmrshiftdb,0.0,1,https://nmrshiftdb.nmr.uni-koeln.de/,"HTTPSConnectionPool(host='nmrshiftdb.nmr.uni-koeln.de', port=443): Max retries exceeded with url: / ",,,,,,,,,,,nmrshiftdb2 | nmrshiftdb,PIPE_CLEANED,ok
+39325614,pscadapt,0.0,,0.0,pscadapt,0.0,1,https://github.com/open-data-lab/psc-adapt,404,,,,,,,,,,,pscadapt,,review
+35377469,teromol,0.0,,0.0,teromol,0.0,1,http://teromol.qmclab.com/,"HTTPConnectionPool(host='teromol.qmclab.com', port=80): Max retries exceeded with url: / (Caused by ",,,,,,,,,,,teromol,,ok
+39621301,NPTAGM,0.0,nptagm,0.0,,0.0,1,https://github.com/wang-lin-lab/NPtagM,404,,,,,,,,,,,nptagm,CAPITALIZED,review
+38015708,zjut-eifd,0.0,zjut-eifd,0.0,,0.0,1,https://github.com/yeyupiaoling/ZJUT-EIFD,404,,,,,,,,,,,zjut-eifd,,review
+40522748,malaysian natural product,0.0,,0.0,malaysian natural product,0.0,1,http://mynp.lectin.my/,"HTTPConnectionPool(host='mynp.lectin.my', port=80): Max retries exceeded with url: / (Caused by Name",,,,,,,,,,,malaysian natural product,,ok
+38900906,multispecies ovary tissue histology electronic repository,0.0,,0.0,multispecies ovary tissue histology electronic repository,0.0,1,http://mother-db.org,403,,,,,,,,,,,multispecies ovary tissue histology electronic repository,,ok
+34133301,lscidmr,0.0,lscidmr,0.0,,0.0,1,https://github.com/zheng-xin-zhang/LSCIDMR,404,,,,,,,,,,,lscidmr,,review
+35313008,camoevo,0.0,,0.0,camoevo | an open,0.0,1,https://github.com/CamoEvo,404,,,,,,,,,,,camoevo | an open,PIPE_CLEANED,review
+37738189,metnetcomp,0.0,,0.0,metnetcomp,0.0,1,http://metnetcomp.github.io/,404,,,,,,,,,,,metnetcomp,,review
+37771003,MMIP,0.0,mmip,0.0,microbiome metabolome integration platform,0.0,1,http://www.mmip.top/,"HTTPConnectionPool(host='www.mmip.top', port=80): Max retries exceeded with url: / (Caused by NameRe",,,,,,,,,,,mmip,CAPITALIZED,ok
+39117154,circadipy,0.0,,0.0,circadipy | an open,0.0,1,https://github.com/circadipy/circadipy,404,,,,,,,,,,,circadipy | an open,PIPE_CLEANED,review
+37692080,metapep,0.0,,0.0,metapep,0.0,1,http://metapep.thebiglab.org/,"HTTPConnectionPool(host='metapep.thebiglab.org', port=80): Max retries exceeded with url: / (Caused ",,,,,,,,,,,metapep,,ok
+35169263,ALMA,0.0,alma,0.0,,0.0,1,http://alma.inaf.cl/en/home/,"HTTPConnectionPool(host='alma.inaf.cl', port=80): Max retries exceeded with url: /en/home/ (Caused b",,,,,,,,,,,alma,CAPITALIZED,ok
+38217648,annogesic,0.0,,0.0,annogesic,0.0,1,https://github.com/Fabian-St/ANNOgesic,404,,,,,,,,,,,annogesic,,review
+39102448,COPS,0.0,cops,0.0,,0.0,1,http://cops.biol.univ.wroc.pl/,"HTTPConnectionPool(host='cops.biol.univ.wroc.pl', port=80): Max retries exceeded with url: / (Caused",,,,,,,,,,,cops,CAPITALIZED,ok
+39151939,maize genetics and genomics database,0.0,,0.0,maize genetics and genomics database | maizegdb | the maize genetics and genomics database,0.0,1,https://www.maizegdb.org/,500,,,,,,,,,,,maize genetics and genomics database | maizegdb | the maize genetics and genomics database,PIPE_CLEANED,ok
+36792822,sednterp,0.0,sednterp,0.0,,0.0,1,http://www.jphilo.mailou.net/sednterp/,"HTTPConnectionPool(host='www.jphilo.mailou.net', port=80): Max retries exceeded with url: /sednterp/",,,,,,,,,,,sednterp,,ok
+37612031,human skin cell atlas,0.0,,0.0,human skin cell atlas,0.0,1,https://skins.cellatlas.io/,"HTTPSConnectionPool(host='skins.cellatlas.io', port=443): Max retries exceeded with url: / (Caused b",,,,,,,,,,,human skin cell atlas,,ok
+37497729,atacannor,0.0,,0.0,atacannor,0.0,1,https://github.com/SILin7/AtacAnnoR,404,,,,,,,,,,,atacannor,,review
+37105065,MOF,0.0,mof,0.0,,0.0,1,https://mof.tech.northwestern.edu/,500,,,,,,,,,,,mof,CAPITALIZED,ok
+37563883,DEBBIE,0.0,debbie,0.0,,0.0,1,https://debbie.global/,"HTTPSConnectionPool(host='debbie.global', port=443): Max retries exceeded with url: / (Caused by Nam",,,,,,,,,,,debbie,CAPITALIZED,ok
+36892262,asgard+,0.0,asgard+ | asgard,0.0,,0.0,1,https://asgard.rc.ufl.edu/,"HTTPSConnectionPool(host='asgard.rc.ufl.edu', port=443): Max retries exceeded with url: / (Caused by",,,,,,,,,,,asgard+ | asgard,PIPE_CLEANED,ok
+39579797,ATFDB,0.0,atfdb,0.0,,0.0,1,http://atfdb.insect-genome.com/,"HTTPConnectionPool(host='atfdb.insect-genome.com', port=80): Max retries exceeded with url: / (Cause",,,,,,,,,,,atfdb,CAPITALIZED,ok
+37646940,peatmoss,0.0,,0.0,peatmoss,0.0,1,https://zenodo.org/record/7765173,404,,,,,,,,,,,peatmoss,,ok
+35680954,silkworm,0.0,,0.0,silkworm,0.0,1,http://silkworm.genomics.org.cn/,403,,,,,,,,,,,silkworm,,ok
+38581422,hyganno,0.0,,0.0,hyganno,0.0,1,https://github.com/kullrich/hyganno,404,,,,,,,,,,,hyganno,,review
+35124463,disintegrindb,0.0,,0.0,disintegrindb,0.0,1,http://disintegrins.biol.univ.wroc.pl/,"HTTPConnectionPool(host='disintegrins.biol.univ.wroc.pl', port=80): Max retries exceeded with url: /",,,,,,,,,,,disintegrindb,,ok
+33798067,JRDB,0.0,jrdb,0.0,,0.0,1,https://jrdb.cvcv.hanyang.edu.kr/,"HTTPSConnectionPool(host='jrdb.cvcv.hanyang.edu.kr', port=443): Max retries exceeded with url: / (Ca",,,,,,,,,,,jrdb,CAPITALIZED,ok
+35796973,mosquito small rna genomics,0.0,,0.0,mosquito small rna genomics,0.0,1,https://laulab.bu.edu/msrg/,"HTTPSConnectionPool(host='laulab.bu.edu', port=443): Max retries exceeded with url: /msrg/ (Caused b",,,,,,,,,,,mosquito small rna genomics,,ok
+40582613,cppsite3,0.0,,0.0,cppsite3 | cppsite,0.0,1,https://cppsite.org/,"HTTPSConnectionPool(host='cppsite.org', port=443): Max retries exceeded with url: / (Caused by NameR",,,,,,,,,,,cppsite3 | cppsite,PIPE_CLEANED,ok
+38567644,LCDB,0.0,lcdb,0.0,,0.0,1,http://lcdb.biocuckoo.org/,"HTTPConnectionPool(host='lcdb.biocuckoo.org', port=80): Max retries exceeded with url: / (Caused by ",,,,,,,,,,,lcdb,CAPITALIZED,ok
+39460195,i-phaos,0.99814624,,0.99814624,i-phaos,0.99814624,1,https://pharos.nih.gov/,403,,,,,,,,,,,i-phaos,,ok
+39780493,oatomics,0.99636304,,0.99636304,oatomics,0.99636304,1,http://oatomics.com/,"HTTPConnectionPool(host='oatomics.com', port=80): Max retries exceeded with url: / (Caused by NameRe",,,,,,,,,,,oatomics,,ok
+37932399,metlin-ccs,0.9932375,metlin-ccs,0.9932375,,0.9932375,1,https://metlin.scripps.edu/landing_page.php?pgcontent=mainPage,404,,,,,,,,,,,metlin-ccs,,ok
+35108094,ocean genome legacy,0.97541,,0.97541,ocean genome legacy,0.97541,1,https://www.northeastern.edu/ogl/,403,,,,,,,,,,,ocean genome legacy,,ok
+37646939,bifloraexplorer,0.94226116,,0.94226116,bifloraexplorer,0.94226116,1,https://github.com/R-0-0/BIFloraExplorer,404,,,,,,,,,,,bifloraexplorer,,review
+38450904,saliva omics database,0.9066916,,0.9066916,saliva omics database,0.9066916,1,http://www.salivaomics.org/,"HTTPConnectionPool(host='www.salivaomics.org', port=80): Max retries exceeded with url: / (Caused by",,,,,,,,,,,saliva omics database,,ok
+36063461,wildsoydb datahub,0.705826,,0.705826,wildsoydb datahub,0.705826,1,https://wildsoydb.org/,"HTTPSConnectionPool(host='wildsoydb.org', port=443): Max retries exceeded with url: / (Caused by New",,,,,,,,,,,wildsoydb datahub,,ok
+37383745,yoga dataset,0.44219694,,0.44219694,yoga dataset,0.44219694,1,https://www.kaggle.com/datasets/niharika41298/yoga-poses-dataset,404,,,,,,,,,,,yoga dataset,,ok
+39240227,university of north carolina cancer survivorship cohort,0.0,,0.0,university of north carolina cancer survivorship cohort,0.0,1,https://unclineberger.org/unccsc/,403,,,,,,,,,,,university of north carolina cancer survivorship cohort,,ok
+37503835,covid19db,0.0,,0.0,covid19db,0.0,1,http://www.covid19db.org/,"HTTPConnectionPool(host='www.covid19db.org', port=80): Max retries exceeded with url: / (Caused by C",,,,,,,,,,,covid19db,,ok
+39126359,block copolymer phase behavior database,0.0,,0.0,block copolymer phase behavior database,0.0,1,https://mdf.ncsa.illinois.edu/,"HTTPSConnectionPool(host='mdf.ncsa.illinois.edu', port=443): Max retries exceeded with url: / (Cause",,,,,,,,,,,block copolymer phase behavior database,,ok
+37769837,scepitools,0.0,,0.0,scepitools,0.0,1,http://health.tsinghua.edu.cn/scepitools,"HTTPSConnectionPool(host='health.tsinghua.edu.cn', port=443): Max retries exceeded with url: /scepit",,,,,,,,,,,scepitools,,ok
+36609142,PUGTDB,0.0,pugtdb,0.0,,0.0,1,http://www.pugtdb.org/,"HTTPConnectionPool(host='www.pugtdb.org', port=80): Max retries exceeded with url: / (Caused by Name",,,,,,,,,,,pugtdb,CAPITALIZED,ok
+40214971,dinosource,0.0,,0.0,dinosource | a comprehensive database of dinoflagellate genomic resources,0.0,1,http://dinosource.org/,"HTTPConnectionPool(host='dinosource.org', port=80): Max retries exceeded with url: / (Caused by Name",,,,,,,,,,,dinosource | a comprehensive database of dinoflagellate genomic resources,PIPE_CLEANED,ok
+40154847,standard for artificial intelligence benchmarking,0.0,,0.0,standard for artificial intelligence benchmarking,0.0,1,https://mlcommons.org/en/,403,,,,,,,,,,,standard for artificial intelligence benchmarking,,ok
+38419327,bamboobase,0.0,,0.0,bamboobase | a comprehensive database of bamboo omics and systematics,0.0,1,http://bamboo.bamboogdb.org/,"HTTPConnectionPool(host='bamboo.bamboogdb.org', port=80): Max retries exceeded with url: / (Caused b",,,,,,,,,,,bamboobase | a comprehensive database of bamboo omics and systematics,PIPE_CLEANED,ok
+39600198,host-pathogen interaction databases,0.0,,0.0,host-pathogen interaction databases,0.0,1,https://hpidb.igbb.msstate.edu/,"HTTPSConnectionPool(host='hpidb.igbb.msstate.edu', port=443): Max retries exceeded with url: / (Caus",,,,,,,,,,,host-pathogen interaction databases,,ok
+39927895,deep learning for antimicrobial peptides,0.0,,0.0,deep learning for antimicrobial peptides,0.0,1,http://dbaasp.org,403,,,,,,,,,,,deep learning for antimicrobial peptides,,ok
+38863005,QUANDB,0.0,quandb,0.0,,0.0,1,http://quandb.org,"HTTPConnectionPool(host='quandb.org', port=80): Max retries exceeded with url: / (Caused by NameReso",,,,,,,,,,,quandb,CAPITALIZED,ok
+35915959,fungalroot,0.0,,0.0,fungalroot,0.0,1,https://fungalroot.life.illinois.edu/,"HTTPSConnectionPool(host='fungalroot.life.illinois.edu', port=443): Max retries exceeded with url: /",,,,,,,,,,,fungalroot,,ok
+35867230,sequencing data analysis on the maser platform,0.0,,0.0,sequencing data analysis on the maser platform,0.0,1,https://cell-innovation.nig.ac.jp/maser/,"HTTPSConnectionPool(host='cell-innovation.nig.ac.jp', port=443): Max retries exceeded with url: /mas",,,,,,,,,,,sequencing data analysis on the maser platform,,ok
+37031828,japan monkey centre primates brain imaging repository of high-resolution postmortem magnetic resonance imaging,0.0,,0.0,japan monkey centre primates brain imaging repository of high-resolution postmortem magnetic resonance imaging,0.0,1,http://jmc-primates-brain.com/,"HTTPConnectionPool(host='jmc-primates-brain.com', port=80): Max retries exceeded with url: / (Caused",,,,,,,,,,,japan monkey centre primates brain imaging repository of high-resolution postmortem magnetic resonance imaging,,ok
+36966359,rice gene index,0.0,,0.0,rice gene index,0.0,1,https://riceome.hzau.edu.cn/,403,,,,,,,,,,,rice gene index,,ok
+37394145,allen brain atlas,0.0,,0.0,allen brain atlas,0.0,1,https://alleninstitute.org/brain-atlases/mouse-brain-atlas/,403,,,,,,,,,,,allen brain atlas,,ok
+36971993,fishsct,0.0,,0.0,fishsct,0.0,1,http://fishsct.ihb.ac.cn/,"HTTPConnectionPool(host='fishsct.ihb.ac.cn', port=80): Max retries exceeded with url: / (Caused by N",,,,,,,,,,,fishsct,,ok
+35612174,covid-19 data exchange platform of the german university medicine,0.0,,0.0,covid-19 data exchange platform of the german university medicine,0.0,1,https://codex.netzwerk-universitaetsmedizin.de/,"HTTPSConnectionPool(host='codex.netzwerk-universitaetsmedizin.de', port=443): Max retries exceeded w",,,,,,,,,,,covid-19 data exchange platform of the german university medicine,,ok
+36809643,multimodal 3d mouse brain atlas,0.0,,0.0,multimodal 3d mouse brain atlas,0.0,1,https://ebrains.eu/service/mouse-brain-atlas,404,,,,,,,,,,,multimodal 3d mouse brain atlas,,ok
+40070311,regulatory network,0.0,,0.0,regulatory network,0.0,1,http://regnetworkweb.org/,503,,,,,,,,,,,regulatory network,,ok
+37777465,ILABDB,0.0,ilabdb,0.0,,0.0,1,http://www.ilabdb.com/,"HTTPConnectionPool(host='www.ilabdb.com', port=80): Max retries exceeded with url: / (Caused by Name",,,,,,,,,,,ilabdb,CAPITALIZED,ok
+38384129,RLKDB,0.0,rlkdb,0.0,,0.0,1,http://rlkdb.public.pombase.org,"HTTPConnectionPool(host='rlkdb.public.pombase.org', port=80): Max retries exceeded with url: / (Caus",,,,,,,,,,,rlkdb,CAPITALIZED,ok
+37417838,atlas of tumor metabolism uncovers gene-metabolite interactions,0.0,,0.0,atlas of tumor metabolism uncovers gene-metabolite interactions,0.0,1,https://camp.thekrumsieklab.com/,"HTTPSConnectionPool(host='camp.thekrumsieklab.com', port=443): Max retries exceeded with url: / (Cau",,,,,,,,,,,atlas of tumor metabolism uncovers gene-metabolite interactions,,ok
+39368085,nbatlas,0.0,,0.0,nbatlas,0.0,1,https://nbatlas.org/,"HTTPSConnectionPool(host='nbatlas.org', port=443): Max retries exceeded with url: / (Caused by NameR",,,,,,,,,,,nbatlas,,ok
+40728618,benchmarking platform for assessing protein language models on function-related prediction tasks,0.0,,0.0,benchmarking platform for assessing protein language models on function-related prediction tasks,0.0,1,https://github.com/faezrah/PROBE,404,,,,,,,,,,,benchmarking platform for assessing protein language models on function-related prediction tasks,,review
+39352375,melting point database for organometallic compounds,0.0,,0.0,melting point database for organometallic compounds,0.0,1,https://pubs.acs.org/doi/10.1021/acs.jcim.0c01053,403,,,,,,,,,,,melting point database for organometallic compounds,,ok
+35633312,ivenomdb,0.0,,0.0,ivenomdb,0.0,1,http://www.ivenomdb.org/,"HTTPConnectionPool(host='www.ivenomdb.org', port=80): Max retries exceeded with url: / (Caused by Na",,,,,,,,,,,ivenomdb,,ok
+36535428,regulatory network,0.0,,0.0,regulatory network | structure-function analysis,0.0,1,http://regnetworkweb.org/,503,,,,,,,,,,,regulatory network | structure-function analysis,PIPE_CLEANED,ok
+39042485,dielectric ceramics database automatically constructed by data mining in the literature,0.0,,0.0,dielectric ceramics database automatically constructed by data mining in the literature,0.0,1,https://doi.org/10.1021/acs.jcim.0c01053,404,,,,,,,,,,,dielectric ceramics database automatically constructed by data mining in the literature,,ok
+36787439,DIPEX,0.99766004,dipex,0.99766004,,0.99766004,1,https://www.healthtalk.org/,403,,,,,,,,,,,dipex,CAPITALIZED,ok
+36280721,ISPI,0.9941899,ispi,0.9941899,,0.9941899,1,http://wiki.pestinfo.org/wiki/Main_Page,"HTTPConnectionPool(host='wiki.pestinfo.org', port=80): Max retries exceeded with url: /wiki/Main_Pag",,,,,,,,,,,ispi,CAPITALIZED,ok
+35129172,glyco@expasy,0.9895914,,0.9895914,glyco@expasy,0.9895914,1,https://www.expasy.org/resources/search/keywords:glyco,404,,,,,,,,,,,glyco@expasy,,ok
+35816925,goed clinical study database,0.9714111,,0.9714111,goed clinical study database,0.9714111,1,https://goedomega3.com/clinical-study-database,404,,,,,,,,,,,goed clinical study database,,ok
+38937480,mopredascentury,0.9357025,,0.9357025,mopredascentury,0.9357025,1,https://doi.org/10.1038/s41597-020-00726-7,404,,,,,,,,,,,mopredascentury,,ok
+38907890,hla-hd-f,0.89412373,,0.89412373,hla-hd-f,0.89412373,1,https://github.com/ShuheiHori/HLA-HD,404,,,,,,,,,,,hla-hd-f,,review
+36137552,but pdb,0.87049556,but pdb,0.87049556,,0.87049556,1,http://www.rcsb.org/,"HTTPSConnectionPool(host='www.rcsb.org', port=8443): Max retries exceeded with url: / (Caused by Con",,,,,,,,,,,but pdb,,ok
+38273575,TRY,0.8688756,try,0.8688756,,0.8688756,1,https://www.try-db.org/TryWeb/Home.php,"HTTPSConnectionPool(host='www.try-db.org', port=443): Max retries exceeded with url: /TryWeb/Home.ph",,,,,,,,,,,try,CAPITALIZED,ok
+35370187,JMDC,0.805243,jmdc,0.805243,,0.805243,1,https://www.jmdc.co.jp/en/index,404,,,,,,,,,,,jmdc,CAPITALIZED,ok
+37524802,lakepulse,0.7600655,,0.7600655,lakepulse,0.7600655,1,https://lakepulse.ca/,502,,,,,,,,,,,lakepulse,,ok
+39837330,smart-seq+5,0.6475649,,0.6475649,smart-seq+5,0.6475649,1,https://embryo.helmholtz-munich.de/shiny_embryo/,"HTTPSConnectionPool(host='embryo.helmholtz-munich.de', port=443): Max retries exceeded with url: /sh",,,,,,,,,,,smart-seq+5,,ok
+39279509,plantgenie,0.6444645,,0.6444645,plantgenie,0.6444645,1,http://plantgenie.org/,"HTTPConnectionPool(host='plantgenie.org', port=80): Max retries exceeded with url: / (Caused by Conn",,,,,,,,,,,plantgenie,,ok
+40329811,GBIF,0.0,gbif,0.0,,0.0,1,https://www.gbif.org/,403,,,,,,,,,,,gbif,CAPITALIZED,ok
+34679174,cystic fibrosis foundation patient registry,0.0,,0.0,cystic fibrosis foundation patient registry,0.0,1,https://www.cff.org/research-clinical-trials/patient-registry,403,,,,,,,,,,,cystic fibrosis foundation patient registry,,ok
+39332377,australian food composition database,0.0,,0.0,australian food composition database,0.0,1,https://www.foodstandards.gov.au/science-data/monitoring-nutrients/afcd,404,,,,,,,,,,,australian food composition database,,ok
+38923903,european food safety authority,0.0,,0.0,european food safety authority,0.0,1,https://www.efsa.europa.eu/en/data-knowledge/data-reports,404,,,,,,,,,,,european food safety authority,,ok
+40055894,SGMD,0.0,sgmd,0.0,sorghum genomics and mutation database,0.0,1,http://sorghum.genomics.cn/,"HTTPConnectionPool(host='sorghum.genomics.cn', port=80): Max retries exceeded with url: / (Caused by",,,,,,,,,,,sgmd,CAPITALIZED,ok
+35622342,ARREST,0.9738119,,0.9738119,arrest/interrogate,0.9738119,1,http://www.imgt.org/3Dstructure-DB/,"HTTPConnectionPool(host='www.imgt.org', port=80): Max retries exceeded with url: /3Dstructure-DB/ (C",,,,,,,,,,,arrest/interrogate,"HTML_REMOVED,CAPITALIZED",ok
+36085868,hierarchical time-indexed database,0.9711152,,0.9711152,hierarchical time-indexed database,0.9711152,1,https://doi.org/10.5061/dryad.1626q20,404,,,,,,,,,,,hierarchical time-indexed database,,ok
+39288643,NCMD,0.9704553,ncmd,0.9704553,,0.9704553,1,https://peptidetracker.org,"HTTPSConnectionPool(host='peptidetracker.org', port=443): Max retries exceeded with url: / (Caused b",,,,,,,,,,,ncmd,CAPITALIZED,ok
+38361019,tapioca,0.96758604,,0.96758604,tapioca,0.96758604,1,https://sandiegozoo.org/frozen-zoo,404,,,,,,,,,,,tapioca,,ok
+35761793,international spinal cord injury biobank,0.9662458,,0.9662458,international spinal cord injury biobank,0.9662458,1,https://www.gardenofwales.org.uk/science/barcode-uk,404,,,,,,,,,,,international spinal cord injury biobank,,ok
+39602490,PADEL,0.0,padel,0.0,,0.0,1,http://www.yapcwsoft.com/dd/padeldescriptor/,"HTTPConnectionPool(host='www.yapcwsoft.com', port=80): Max retries exceeded with url: /dd/padeldescr",,,,,,,,,,,padel,CAPITALIZED,ok
+35525549,kinview,0.0,,0.0,kinview | prokino,0.0,1,https://prokino.uga.edu/,"HTTPSConnectionPool(host='prokino.uga.edu', port=443): Max retries exceeded with url: / (Caused by C",,,,,,,,,,,kinview | prokino,PIPE_CLEANED,ok
+39310279,PRRSV,0.0,prrsv,0.0,,0.0,1,http://prrsv.ahc.umn.edu/,"HTTPConnectionPool(host='prrsv.ahc.umn.edu', port=80): Max retries exceeded with url: / (Caused by N",,,,,,,,,,,prrsv,CAPITALIZED,ok
+36755230,bc5cdr,0.0,bc5cdr,0.0,biobert,0.0,1,https://biocreative.bioinformatics.udel.edu/resources/corpora/biocreative-v-cdr-corpus/,403,,,,,,,,,,,bc5cdr,,ok
+37117054,PNATDB (pronab),0.0,pnatdb | pronab,0.0,,0.0,1,http://pronab.ibab.ac.in/pronab/,"HTTPConnectionPool(host='pronab.ibab.ac.in', port=80): Max retries exceeded with url: /pronab/ (Caus",,,,,,,,,,,pnatdb | pronab,"PIPE_CLEANED,CAPITALIZED,DISAMBIGUATED",ok
+38723072,topological phonon database,0.0,,0.0,topological phonon database,0.0,1,https://www.phonon.synl.ac.cn/,"HTTPSConnectionPool(host='www.phonon.synl.ac.cn', port=443): Max retries exceeded with url: / (Cause",,,,,,,,,,,topological phonon database,,ok
+38413078,MDT,0.0,mdt,0.0,china gastrointestinal cancer surgery union | china gastrointestinal cancer surgery union platform,0.0,1,http://www.gcsu.org.cn/,"HTTPConnectionPool(host='www.gcsu.org.cn', port=80): Max retries exceeded with url: / (Caused by Nam",,,,,,,,,,,mdt,CAPITALIZED,ok
+38855791,ESA,0.0,esa,0.0,,0.0,1,https://www.esa.int/ESA_Multimedia/Sets/ESA_Earth_Observation_data_access,404,,,,,,,,,,,esa,CAPITALIZED,ok
+39576796,MORU,0.0,moru | easa-,0.0,,0.0,1,https://www.tropmedres.ac/units/moru-bangkok/bioethics-engagement/data-sharing,400,,,,,,,,,,,moru | easa-,"PIPE_CLEANED,CAPITALIZED",ok
+38758924,BIGG,0.0,bigg,0.0,structrecon | metanetx | pubchem,0.0,1,http://bigg.ucsd.edu/,405,,,,,,,,,,,bigg,CAPITALIZED,ok
+39922392,scifinder,0.0,,0.0,scifinder | china knowledge resource integrated,0.0,1,https://scifinder.cas.org/,403,,,,,,,,,,,scifinder | china knowledge resource integrated,PIPE_CLEANED,ok
+40153158,AVPDB,0.0,avpdb | dbaasp,0.0,,0.0,1,https://dbaasp.org/,403,,,,,,,,,,,avpdb | dbaasp,"PIPE_CLEANED,CAPITALIZED",ok
+36746023,NAT,0.0,nat | inaat,0.0,,0.0,1,http://nat.mbc.nctu.edu.tw/,"HTTPConnectionPool(host='nat.mbc.nctu.edu.tw', port=80): Max retries exceeded with url: / (Caused by",,,,,,,,,,,nat | inaat,"PIPE_CLEANED,CAPITALIZED",ok
+37828771,HABCDE,0.0,habcde,0.0,bristol university docking engine,0.0,1,http://www.bris.ac.uk/biochemistry/bude,404,,,,,,,,,,,habcde,CAPITALIZED,ok
+40417484,ACMG,0.0,acmg,0.0,mastermind,0.0,1,https://www.acmg.net/,404,,,,,,,,,,,acmg,CAPITALIZED,ok
+36272818,PNATDB (pronab),0.0,pnatdb,0.0,protein-nucleic acid thermodynamics database,0.0,1,http://pronab.ibab.ac.in/pnatdb/,"HTTPConnectionPool(host='pronab.ibab.ac.in', port=80): Max retries exceeded with url: /pnatdb/ (Caus",,,,,,,,,,,pnatdb,"CAPITALIZED,DISAMBIGUATED",ok
+38813150,COD,0.0,cod,0.0,,0.0,1,http://www.crystallography.net/cod/,"HTTPConnectionPool(host='www.crystallography.net', port=80): Max retries exceeded with url: /cod/ (C",,,,,,,,,,,cod,CAPITALIZED,ok
+37748672,endocrine-disrupting chemicals,0.0,,0.0,endocrine-disrupting chemicals,0.0,1,http://www.deduct.in/,406,,,,,,,,,,,endocrine-disrupting chemicals,,ok

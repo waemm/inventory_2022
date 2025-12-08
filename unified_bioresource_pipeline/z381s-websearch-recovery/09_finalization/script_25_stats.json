@@ -1,0 +1,24 @@
+{
+  "script": "25_fetch_epmc_metadata",
+  "timestamp": "2025-12-08T10:55:58.310292",
+  "session": "z381s-websearch-recovery",
+  "runtime_seconds": 2.7,
+  "input_rows": 152,
+  "total_pmids": 152,
+  "unique_pmids": 152,
+  "metadata_fetched": 0,
+  "fields_populated": {
+    "publication_date": 0,
+    "affiliation": 0,
+    "authors": 0,
+    "grant_ids": 0,
+    "grant_agencies": 0,
+    "num_citations": 0,
+    "paper_titles": 0
+  },
+  "capitalization": {
+    "title_based": 0,
+    "smart_title_case": 97,
+    "total": 97
+  }
+}

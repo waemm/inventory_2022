@@ -1,0 +1,38 @@
+{
+  "total_resources": 152,
+  "excluded_resources": 123,
+  "coverage": {
+    "has_best_name": 152,
+    "has_best_common": 68,
+    "has_best_full": 104,
+    "has_url": 152,
+    "has_wayback": 0,
+    "has_publication_date": 0,
+    "has_affiliation": 0,
+    "has_authors": 0,
+    "has_grants": 0,
+    "has_citations": 0,
+    "has_affiliation_countries": 0,
+    "has_url_country": 0
+  },
+  "url_status": {
+    "200": 152
+  },
+  "top_countries": {},
+  "name_modifications": {
+    "SMART_CAPITALIZED": 97,
+    "CAPITALIZED": 55,
+    "HTML_REMOVED": 2,
+    "PIPE_CLEANED": 31,
+    "DISAMBIGUATED": 3,
+    "CHARS_SANITIZED": 1,
+    "NAME_RECOVERED_FROM_URL": 1
+  },
+  "url_validation": {
+    "ok": 144,
+    "review": 8
+  },
+  "script": "27_generate_final_inventory",
+  "timestamp": "2025-12-08T10:56:24.574540",
+  "session": "z381s-websearch-recovery"
+}

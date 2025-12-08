@@ -1,0 +1,270 @@
+url,status,country,coordinates,wayback_url,is_live,url_validation
+https://www.refine.bio/,200,,,,True,ok
+https://www.gutcellatlas.org,200,,,,True,ok
+http://metnetcomp.github.io/,404,,,,False,review
+https://www.mongodb.com/atlas/database,200,,,,True,ok
+http://its2.bioapps.biozentrum.uni-wuerzburg.de/,200,,,,True,ok
+https://www.cff.org/research-clinical-trials/patient-registry,403,,,,False,ok
+https://www.foodstandards.gov.au/science-data/monitoring-nutrients/afcd,404,,,,False,ok
+https://smnh.tau.ac.il/en/,200,,,,True,ok
+https://lakepulse.ca/,502,,,,False,ok
+https://www.fpbase.org/,200,,,,True,ok
+https://www.bfi.org.uk/films-tv-people/,200,,,,True,ok
+https://github.com/circadipy/circadipy,404,,,,False,review
+https://www.humancellatlas.org/,200,,,,True,ok
+https://mimic.mit.edu/,200,,,,True,ok
+https://www.northeastern.edu/ogl/,403,,,,False,ok
+http://signal.salk.edu/cgi-bin/tdnaexpress,200,,,,True,ok
+http://sexchrom.csic.es/,200,,,,True,ok
+http://cluster.cis.drexel.edu/~cchen/citespace/,200,,,,True,ok
+https://www.disgenet.org/,200,,,,True,ok
+http://entex.encodeproject.org/,200,,,,True,ok
+http://opig.stats.ox.ac.uk/webapps/ots/,200,,,,True,ok
+http://crdd.osdd.net/raghava/npact/,200,,,,True,ok
+https://www.arcgis.com/home/item.html?id=...,200,,,,True,ok
+https://cvquality.acc.org/NCDR-Home/registries/hospital-registries/chest-pain-mi-registry,200,,,,True,ok
+https://www.ncbi.nlm.nih.gov/geo/,200,,,,True,ok
+https://alleninstitute.org/brain-atlases/mouse-brain-atlas/,403,,,,False,ok
+https://www.osteoevidence.com/,200,,,,True,ok
+http://flybase.org/,200,,,,True,ok
+http://jmc-primates-brain.com/,"HTTPConnectionPool(host='jmc-primates-brain.com', port=80): Max retries exceeded with url: / (Caused",,,,False,ok
+http://www.mprabase.com,"HTTPConnectionPool(host='www.mprabase.com', port=80): Max retries exceeded with url: / (Caused by Na",,,,False,ok
+https://scifinder.cas.org/,403,,,,False,ok
+https://portal.brain-map.org/,200,,,,True,ok
+https://www.snomed.org,200,,,,True,ok
+https://proceeddatabase.weebly.com,200,,,,True,ok
+http://www.wormbase.org/,403,,,,False,ok
+https://sleepdata.org,200,,,,True,ok
+http://www.salivaomics.org/,"HTTPConnectionPool(host='www.salivaomics.org', port=80): Max retries exceeded with url: / (Caused by",,,,False,ok
+https://www.ccdc.cam.ac.uk/,200,,,,True,ok
+https://www.maizegdb.org/,500,,,,False,ok
+https://cesium.com/platform/cesium-ion/,200,,,,True,ok
+https://www.pazy.eu/,"HTTPSConnectionPool(host='www.pazy.eu', port=443): Max retries exceeded with url: / (Caused by SSLEr",,,,False,ok
+https://depmap.org/portal/,200,,,,True,ok
+https://www.expasy.org/resources/search/keywords:glyco,404,,,,False,ok
+http://mynp.lectin.my/,"HTTPConnectionPool(host='mynp.lectin.my', port=80): Max retries exceeded with url: / (Caused by Name",,,,False,ok
+http://silkworm.genomics.org.cn/,403,,,,False,ok
+https://openneuro.org/datasets/ds004796/versions/1.0.2,200,,,,True,ok
+http://prrsv.ahc.umn.edu/,"HTTPConnectionPool(host='prrsv.ahc.umn.edu', port=80): Max retries exceeded with url: / (Caused by N",,,,False,ok
+https://www.genecards.org/genecarna,403,,,,False,ok
+https://cds.climate.copernicus.eu/,200,,,,True,ok
+http://www.gpgenome.com,200,,,,True,ok
+https://www.medizininformatik-initiative.de/,200,,,,True,ok
+https://metlin.scripps.edu/landing_page.php?pgcontent=mainPage,404,,,,False,ok
+http://www.gcsu.org.cn/,"HTTPConnectionPool(host='www.gcsu.org.cn', port=80): Max retries exceeded with url: / (Caused by Nam",,,,False,ok
+http://pronab.ibab.ac.in/pronab/,"HTTPConnectionPool(host='pronab.ibab.ac.in', port=80): Max retries exceeded with url: /pronab/ (Caus",,,,False,ok
+https://flyatlas.gla.ac.uk/FlyAtlas2/index.html,200,,,,True,ok
+https://codex.netzwerk-universitaetsmedizin.de/,"HTTPSConnectionPool(host='codex.netzwerk-universitaetsmedizin.de', port=443): Max retries exceeded w",,,,False,ok
+https://linkedomics.org/login.php,200,,,,True,ok
+http://www.chileanpcd.com/,200,,,,True,ok
+http://regnetworkweb.org/,503,,,,False,ok
+http://PlantPAN.itps.ncku.edu.tw,200,,,,True,ok
+https://peekbank.stanford.edu,200,,,,True,ok
+https://www.chicagofaces.org,406,,,,False,ok
+https://www.humancellatlas.org/biological-networks/adipose-network/,200,,,,True,ok
+https://nbatlas.org/,"HTTPSConnectionPool(host='nbatlas.org', port=443): Max retries exceeded with url: / (Caused by NameR",,,,False,ok
+https://goedomega3.com/clinical-study-database,404,,,,False,ok
+https://www.ncbi.nlm.nih.gov/bioproject/PRJNA841014,200,,,,True,ok
+https://cedar.iedb.org/,200,,,,True,ok
+https://github.com/lusystemsbio/NetAct,200,,,,True,review
+http://www.candidagenome.org/,200,,,,True,ok
+https://acinetobase.vib.be/,200,,,,True,ok
+https://asgard.rc.ufl.edu/,"HTTPSConnectionPool(host='asgard.rc.ufl.edu', port=443): Max retries exceeded with url: / (Caused by",,,,False,ok
+https://www.flyrnai.org/tools/tf2tg/web/,200,,,,True,ok
+https://portal.gdc.cancer.gov/,200,,,,True,ok
+http://oatomics.com/,"HTTPConnectionPool(host='oatomics.com', port=80): Max retries exceeded with url: / (Caused by NameRe",,,,False,ok
+http://www.insectp450.net/,200,,,,True,ok
+http://mother-db.org,403,,,,False,ok
+https://genelab.nasa.gov/,200,,,,True,ok
+https://brassitol.vercel.app/,200,,,,True,ok
+https://www.imexconsortium.org/,200,,,,True,ok
+https://www.nih.gov/,200,,,,True,ok
+https://www.genome.jp/kegg/,200,,,,True,ok
+https://www.ebi.ac.uk/pride/,200,,,,True,ok
+https://figshare.com/,200,,,,True,ok
+https://www.jmdc.co.jp/en/index,404,,,,False,ok
+https://www.try-db.org/TryWeb/Home.php,"HTTPSConnectionPool(host='www.try-db.org', port=443): Max retries exceeded with url: /TryWeb/Home.ph",,,,False,ok
+https://southmycorrhizas.org/,200,,,,True,ok
+http://biosig.unimelb.edu.au/thermomutdb/,200,,,,True,ok
+https://github.com/Gaius-Augustus/BRAKER,200,,,,True,review
+http://quandb.org,"HTTPConnectionPool(host='quandb.org', port=80): Max retries exceeded with url: / (Caused by NameReso",,,,False,ok
+https://jpostdb.org/,200,,,,True,ok
+https://qsardb.org/,200,,,,True,ok
+https://clarivate.com/webofsciencegroup/solutions/web-of-science-core-collection/,200,,,,True,ok
+http://www.dmd.nl/,200,,,,True,ok
+https://www.mirbase.org/cgi-bin/mirna_entry.pl?acc=MIMAT0000443,200,,,,True,ok
+http://ccdb.tau.ac.il/,200,,,,True,ok
+https://www.gramene.org,200,,,,True,ok
+https://rebase.neb.com/rebase/rebase.html,200,,,,True,ok
+http://teromol.qmclab.com/,"HTTPConnectionPool(host='teromol.qmclab.com', port=80): Max retries exceeded with url: / (Caused by ",,,,False,ok
+http://pronab.ibab.ac.in/pnatdb/,"HTTPConnectionPool(host='pronab.ibab.ac.in', port=80): Max retries exceeded with url: /pnatdb/ (Caus",,,,False,ok
+http://carotenoiddb.jp/,200,,,,True,ok
+http://www.nbpgr.ernet.in/,200,,,,True,ok
+https://heal.nih.gov/data,200,,,,True,ok
+https://doi.org/10.5281/zenodo.5801806,200,,,,True,ok
+https://unclineberger.org/unccsc/,403,,,,False,ok
+https://gnomad.broadinstitute.org/,200,,,,True,ok
+http://cancer.sanger.ac.uk/cosmic,200,,,,True,ok
+https://github.com/yeyupiaoling/ZJUT-EIFD,404,,,,False,review
+https://bioportal.bioontology.org,403,,,,False,ok
+https://www.nist.gov/srd/nist-standard-reference-database-71,200,,,,True,ok
+https://www.tropmedres.ac/units/moru-bangkok/bioethics-engagement/data-sharing,400,,,,False,ok
+https://www.efsa.europa.eu/en/data-knowledge/data-reports,404,,,,False,ok
+http://mzmine.github.io/,200,,,,True,review
+http://rlkdb.public.pombase.org,"HTTPConnectionPool(host='rlkdb.public.pombase.org', port=80): Max retries exceeded with url: / (Caus",,,,False,ok
+https://www.acmg.net/,404,,,,False,ok
+https://ngdc.cncb.ac.cn/targetgene/,200,,,,True,ok
+http://nat.mbc.nctu.edu.tw/,"HTTPConnectionPool(host='nat.mbc.nctu.edu.tw', port=80): Max retries exceeded with url: / (Caused by",,,,False,ok
+http://disintegrins.biol.univ.wroc.pl/,"HTTPConnectionPool(host='disintegrins.biol.univ.wroc.pl', port=80): Max retries exceeded with url: /",,,,False,ok
+https://www.pbs.gov.au/pbs/home,200,,,,True,ok
+http://www.agrold.org/,200,,,,True,ok
+https://debbie.global/,"HTTPSConnectionPool(host='debbie.global', port=443): Max retries exceeded with url: / (Caused by Nam",,,,False,ok
+https://github.com/wang-lin-lab/NPtagM,404,,,,False,review
+https://github.com/SILin7/AtacAnnoR,404,,,,False,review
+https://mlcommons.org/en/,403,,,,False,ok
+http://bigg.ucsd.edu/,405,,,,False,ok
+http://haedat.iode.org/,200,,,,True,ok
+https://github.com/microsoft/MPNet,200,,,,True,review
+https://www.gardenofwales.org.uk/science/barcode-uk,404,,,,False,ok
+https://comptox.epa.gov/dashboard/chemical-lists/PFASMASTER,200,,,,True,ok
+https://skins.cellatlas.io/,"HTTPSConnectionPool(host='skins.cellatlas.io', port=443): Max retries exceeded with url: / (Caused b",,,,False,ok
+https://www.ecn.ac.uk/data,200,,,,True,ok
+https://pave.niaid.nih.gov/,200,,,,True,ok
+https://ndkp.hugeamp.org/,200,,,,True,ok
+https://davidbioinformatics.nih.gov,200,,,,True,ok
+https://www.addgene.org/,200,,,,True,ok
+http://www.moonlightingproteins.org,200,,,,True,ok
+https://gold.jgi.doe.gov/,200,,,,True,ok
+https://github.com/faezrah/PROBE,404,,,,False,review
+https://github.com/zheng-xin-zhang/LSCIDMR,404,,,,False,review
+https://osf.io/35tbw/,200,,,,True,ok
+http://tumor.informatics.jax.org/,200,,,,True,ok
+https://jrdb.cvcv.hanyang.edu.kr/,"HTTPSConnectionPool(host='jrdb.cvcv.hanyang.edu.kr', port=443): Max retries exceeded with url: / (Ca",,,,False,ok
+https://intenzydb.accre.vanderbilt.edu,502,,,,False,ok
+https://rvdb.dbi.udel.edu/,200,,,,True,ok
+http://bioinfo.life.hust.edu.cn/liverdb,"HTTPConnectionPool(host='bioinfo.life.hust.edu.cn', port=80): Max retries exceeded with url: /liverd",,,,False,ok
+https://www.arb-silva.de/,200,,,,True,ok
+https://qdr.syr.edu/,200,,,,True,ok
+https://www.floraweb.de/,200,,,,True,ok
+https://brcaexchange.org/,200,,,,True,ok
+https://www.mirbase.org/,200,,,,True,ok
+https://github.com/Fabian-St/ANNOgesic,404,,,,False,review
+https://github.com/kullrich/hyganno,404,,,,False,review
+https://zenodo.org/record/7765173,404,,,,False,ok
+https://pubs.acs.org/doi/10.1021/acs.jcim.0c01053,403,,,,False,ok
+https://www.ncbi.nlm.nih.gov/bioproject/PRJNA763768,200,,,,True,ok
+http://www.deduct.in/,406,,,,False,ok
+https://bugsigdb.org/,200,,,,True,ok
+https://www.ukbiobank.ac.uk,403,,,,False,ok
+http://www.pdbbind.org.cn/,"HTTPConnectionPool(host='www.pdbbind.org.cn', port=80): Max retries exceeded with url: / (Caused by ",,,,False,ok
+https://www.i2b2.org,200,,,,True,ok
+https://obgp.org/,200,,,,True,ok
+https://pharos.nih.gov/,403,,,,False,ok
+http://lmc.uab.es/tmsnp/,200,,,,True,ok
+http://dbaasp.org,403,,,,False,ok
+https://cmnpd.org/,200,,,,True,ok
+http://www.yapcwsoft.com/dd/padeldescriptor/,"HTTPConnectionPool(host='www.yapcwsoft.com', port=80): Max retries exceeded with url: /dd/padeldescr",,,,False,ok
+http://alma.inaf.cl/en/home/,"HTTPConnectionPool(host='alma.inaf.cl', port=80): Max retries exceeded with url: /en/home/ (Caused b",,,,False,ok
+https://www.ebi.ac.uk/intact/,200,,,,True,ok
+https://www.ecotoxxplorer.ca/,200,,,,True,ok
+https://ourworldindata.org/covid-vaccinations,200,,,,True,ok
+https://github.com/CamoEvo,404,,,,False,review
+https://friendsofcancerresearch.org/tmb/,200,,,,True,ok
+http://bamboo.bamboogdb.org/,"HTTPConnectionPool(host='bamboo.bamboogdb.org', port=80): Max retries exceeded with url: / (Caused b",,,,False,ok
+https://www.ebsco.com/products/research-databases/cinahl-database,200,,,,True,ok
+https://seer.cancer.gov/data/,200,,,,True,ok
+https://www.boldsystems.org/,200,,,,True,ok
+https://www.maizegdb.org/snpversity,200,,,,True,ok
+https://cppsite.org/,"HTTPSConnectionPool(host='cppsite.org', port=443): Max retries exceeded with url: / (Caused by NameR",,,,False,ok
+https://www.linkedin.com/,200,,,,True,ok
+https://github.com/open-data-lab/psc-adapt,404,,,,False,review
+https://github.com/thunlp/FewRel,200,,,,True,review
+https://embryo.helmholtz-munich.de/shiny_embryo/,"HTTPSConnectionPool(host='embryo.helmholtz-munich.de', port=443): Max retries exceeded with url: /sh",,,,False,ok
+https://github.com/jtamames/SqueezeMeta,200,,,,True,review
+https://www.healthtalk.org/,403,,,,False,ok
+https://www.plantrdnadatabase.com/,200,,,,True,ok
+https://adiposetissue.org/,200,,,,True,ok
+https://www.hartwigmedicalfoundation.nl/en/data/,200,,,,True,ok
+http://lcdb.biocuckoo.org/,"HTTPConnectionPool(host='lcdb.biocuckoo.org', port=80): Max retries exceeded with url: / (Caused by ",,,,False,ok
+https://www.ebi.ac.uk/biostudies/MicrobioRaman,200,,,,True,ok
+https://www.oglcnac.mcw.edu/,"HTTPSConnectionPool(host='www.oglcnac.mcw.edu', port=443): Max retries exceeded with url: / (Caused ",,,,False,ok
+http://www.cancer-genetics.org/VHL.htm,200,,,,True,ok
+http://www.om-db.wi.tum.de/psplib/,200,,,,True,ok
+https://github.com/ShuheiHori/HLA-HD,404,,,,False,review
+https://ebrains.eu/service/mouse-brain-atlas,404,,,,False,ok
+http://www.mz.usp.br/,200,,,,True,ok
+https://doi.org/10.1038/s41597-020-00726-7,404,,,,False,ok
+https://www.epo.org/searching-for-patents.html,200,,,,True,ok
+https://riceome.hzau.edu.cn/,403,,,,False,ok
+https://anzup.org.au,403,,,,False,ok
+https://nmrshiftdb.nmr.uni-koeln.de/,"HTTPSConnectionPool(host='nmrshiftdb.nmr.uni-koeln.de', port=443): Max retries exceeded with url: / ",,,,False,ok
+https://topmed.nhlbi.nih.gov/,200,,,,True,ok
+http://pathoyeastract.org,200,,,,True,ok
+https://laulab.bu.edu/msrg/,"HTTPSConnectionPool(host='laulab.bu.edu', port=443): Max retries exceeded with url: /msrg/ (Caused b",,,,False,ok
+https://outbreak.info/,200,,,,True,ok
+http://www.ivenomdb.org/,"HTTPConnectionPool(host='www.ivenomdb.org', port=80): Max retries exceeded with url: / (Caused by Na",,,,False,ok
+http://bioinfo.ihb.ac.cn/fishget,200,,,,True,ok
+https://mof.tech.northwestern.edu/,500,,,,False,ok
+https://data.mendeley.com/datasets/8f5t6t72p3/1,200,,,,True,ok
+https://cengen.org/,200,,,,True,ok
+https://github.com/comp-bio/SWaveform,200,,,,True,review
+http://qphos.cancerbio.info/,200,,,,True,ok
+https://dbaasp.org/,403,,,,False,ok
+https://biodare2.ed.ac.uk/,200,,,,True,ok
+http://www.mmip.top/,"HTTPConnectionPool(host='www.mmip.top', port=80): Max retries exceeded with url: / (Caused by NameRe",,,,False,ok
+https://github.com/R-0-0/BIFloraExplorer,404,,,,False,review
+https://www.nccih.nih.gov/,200,,,,True,ok
+https://sandiegozoo.org/frozen-zoo,404,,,,False,ok
+https://hpidb.igbb.msstate.edu/,"HTTPSConnectionPool(host='hpidb.igbb.msstate.edu', port=443): Max retries exceeded with url: / (Caus",,,,False,ok
+https://coremarketplace.org/,200,,,,True,ok
+https://www.snomed.org/,200,,,,True,ok
+https://biocreative.bioinformatics.udel.edu/resources/corpora/biocreative-v-cdr-corpus/,403,,,,False,ok
+https://unicarb-db.expasy.org/,200,,,,True,ok
+https://doi.org/10.6084/m9.figshare.24156378,200,,,,True,ok
+http://pfam.xfam.org/,200,,,,True,ok
+https://www.gbif.org/,403,,,,False,ok
+https://www.vosviewer.com/,200,,,,True,ok
+https://cell-innovation.nig.ac.jp/maser/,"HTTPSConnectionPool(host='cell-innovation.nig.ac.jp', port=443): Max retries exceeded with url: /mas",,,,False,ok
+https://camp.thekrumsieklab.com/,"HTTPSConnectionPool(host='camp.thekrumsieklab.com', port=443): Max retries exceeded with url: / (Cau",,,,False,ok
+http://www.ilabdb.com/,"HTTPConnectionPool(host='www.ilabdb.com', port=80): Max retries exceeded with url: / (Caused by Name",,,,False,ok
+https://metalpdb.cerm.unifi.it/,200,,,,True,ok
+http://cops.biol.univ.wroc.pl/,"HTTPConnectionPool(host='cops.biol.univ.wroc.pl', port=80): Max retries exceeded with url: / (Caused",,,,False,ok
+https://doi.org/10.5061/dryad.1626q20,404,,,,False,ok
+http://www.bris.ac.uk/biochemistry/bude,404,,,,False,ok
+https://www.ncbi.nlm.nih.gov/books/,200,,,,True,ok
+https://github.com/Teichlab/CellHint,200,,,,True,review
+https://www.kaggle.com/datasets/niharika41298/yoga-poses-dataset,404,,,,False,ok
+http://phasmida.speciesfile.org/,200,,,,True,ok
+https://www.rcsb.org/,200,,,,True,ok
+https://fungalroot.life.illinois.edu/,"HTTPSConnectionPool(host='fungalroot.life.illinois.edu', port=443): Max retries exceeded with url: /",,,,False,ok
+http://finaledb.research.cchmc.org/,200,,,,True,ok
+https://wildsoydb.org/,"HTTPSConnectionPool(host='wildsoydb.org', port=443): Max retries exceeded with url: / (Caused by New",,,,False,ok
+http://sorghum.genomics.cn/,"HTTPConnectionPool(host='sorghum.genomics.cn', port=80): Max retries exceeded with url: / (Caused by",,,,False,ok
+https://pdc.cancer.gov/,200,,,,True,ok
+http://www.jphilo.mailou.net/sednterp/,"HTTPConnectionPool(host='www.jphilo.mailou.net', port=80): Max retries exceeded with url: /sednterp/",,,,False,ok
+https://bionanoinfo.com/bad/,200,,,,True,ok
+https://db.cngb.org/stomics/flysta3d-v2/,200,,,,True,ok
+https://mitelmandatabase.isb-cgc.org/,200,,,,True,ok
+http://fishsct.ihb.ac.cn/,"HTTPConnectionPool(host='fishsct.ihb.ac.cn', port=80): Max retries exceeded with url: / (Caused by N",,,,False,ok
+https://mdl.shsmu.edu.cn/ASD/,200,,,,True,ok
+http://www.pugtdb.org/,"HTTPConnectionPool(host='www.pugtdb.org', port=80): Max retries exceeded with url: / (Caused by Name",,,,False,ok
+https://www.esa.int/ESA_Multimedia/Sets/ESA_Earth_Observation_data_access,404,,,,False,ok
+https://doi.org/10.1021/acs.jcim.0c01053,404,,,,False,ok
+http://metapep.thebiglab.org/,"HTTPConnectionPool(host='metapep.thebiglab.org', port=80): Max retries exceeded with url: / (Caused ",,,,False,ok
+https://gtdb.ecogenomic.org/,200,,,,True,ok
+http://dinosource.org/,"HTTPConnectionPool(host='dinosource.org', port=80): Max retries exceeded with url: / (Caused by Name",,,,False,ok
+http://atfdb.insect-genome.com/,"HTTPConnectionPool(host='atfdb.insect-genome.com', port=80): Max retries exceeded with url: / (Cause",,,,False,ok
+http://wiki.pestinfo.org/wiki/Main_Page,"HTTPConnectionPool(host='wiki.pestinfo.org', port=80): Max retries exceeded with url: /wiki/Main_Pag",,,,False,ok
+https://www.ncbi.nlm.nih.gov/bioproject/PRJNA999358,200,,,,True,ok
+https://prokino.uga.edu/,"HTTPSConnectionPool(host='prokino.uga.edu', port=443): Max retries exceeded with url: / (Caused by C",,,,False,ok
+https://peptidetracker.org,"HTTPSConnectionPool(host='peptidetracker.org', port=443): Max retries exceeded with url: / (Caused b",,,,False,ok
+http://douro.univ-lyon1.fr/asellidae/,"HTTPConnectionPool(host='douro.univ-lyon1.fr', port=80): Max retries exceeded with url: /asellidae/ ",,,,False,ok
+http://www.covid19db.org/,"HTTPConnectionPool(host='www.covid19db.org', port=80): Max retries exceeded with url: / (Caused by C",,,,False,ok
+https://www.phonon.synl.ac.cn/,"HTTPSConnectionPool(host='www.phonon.synl.ac.cn', port=443): Max retries exceeded with url: / (Cause",,,,False,ok
+https://seq2fun.dcmb.med.umich.edu/I-TASSER-MTD/,"HTTPSConnectionPool(host='seq2fun.dcmb.med.umich.edu', port=443): Max retries exceeded with url: /I-",,,,False,ok
+http://www.imgt.org/3Dstructure-DB/,"HTTPConnectionPool(host='www.imgt.org', port=80): Max retries exceeded with url: /3Dstructure-DB/ (C",,,,False,ok
+http://health.tsinghua.edu.cn/scepitools,"HTTPSConnectionPool(host='health.tsinghua.edu.cn', port=443): Max retries exceeded with url: /scepit",,,,False,ok
+http://plantgenie.org/,"HTTPConnectionPool(host='plantgenie.org', port=80): Max retries exceeded with url: / (Caused by Conn",,,,False,ok
+https://mdf.ncsa.illinois.edu/,"HTTPSConnectionPool(host='mdf.ncsa.illinois.edu', port=443): Max retries exceeded with url: / (Cause",,,,False,ok
+http://www.crystallography.net/cod/,"HTTPConnectionPool(host='www.crystallography.net', port=80): Max retries exceeded with url: /cod/ (C",,,,False,ok
+http://www.rcsb.org/,"HTTPSConnectionPool(host='www.rcsb.org', port=8443): Max retries exceeded with url: / (Caused by Con",,,,False,ok

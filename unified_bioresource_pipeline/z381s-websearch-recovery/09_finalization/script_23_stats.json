@@ -1,0 +1,42 @@
+{
+  "script": "23_transform_columns",
+  "timestamp": "2025-12-08T10:54:25.772146",
+  "session": "z381s-websearch-recovery",
+  "profile": "aggressive",
+  "input_rows": 275,
+  "output_rows": 275,
+  "columns_mapped": {
+    "ID": 275,
+    "best_name": 275,
+    "best_common": 111,
+    "best_full": 192,
+    "extracted_url": 275,
+    "article_count": 275
+  },
+  "sanitization": {
+    "total_rows": 275,
+    "rows_modified": 122,
+    "flag_counts": {
+      "CAPITALIZED": 91,
+      "HTML_REMOVED": 4,
+      "PIPE_CLEANED": 46,
+      "DISAMBIGUATED": 5,
+      "CHARS_SANITIZED": 1,
+      "NAME_RECOVERED_FROM_URL": 1
+    },
+    "disambiguated_count": 5
+  },
+  "placeholder_columns": [
+    "extracted_url_status",
+    "extracted_url_country",
+    "extracted_url_coordinates",
+    "wayback_url",
+    "publication_date",
+    "affiliation",
+    "authors",
+    "grant_ids",
+    "grant_agencies",
+    "num_citations",
+    "affiliation_countries"
+  ]
+}

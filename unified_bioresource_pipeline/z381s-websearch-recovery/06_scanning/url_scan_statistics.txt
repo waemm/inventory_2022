@@ -1,0 +1,27 @@
+================================================================================
+SET C URL SCANNING STATISTICS
+Generated: 2025-12-08 10:53:50
+================================================================================
+
+Total resources in Set C: 275
+Resources with URLs: 275
+URLs scanned: 275
+
+URL Scan Status:
+  200.0: 181
+  404.0: 29
+  403.0: 9
+  503.0: 4
+  502.0: 2
+  500.0: 2
+
+URLs with scores: 289
+Average score: 22.13
+
+Score Distribution:
+  Very High (≥0.8): 214
+  High (0.6-0.8): 0
+  Medium (0.4-0.6): 0
+  Low (<0.4): 75
+
+Wayback Machine used: 35

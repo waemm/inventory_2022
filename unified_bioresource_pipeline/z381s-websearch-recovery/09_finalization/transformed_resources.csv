@@ -1,0 +1,276 @@
+ID,best_name,best_name_prob,best_common,best_common_prob,best_full,best_full_prob,article_count,extracted_url,extracted_url_status,extracted_url_country,extracted_url_coordinates,wayback_url,publication_date,affiliation,authors,grant_ids,grant_agencies,num_citations,affiliation_countries,best_name_original,name_modification_flags
+39379619,o-glcnac database,0.9332913,,0.9332913,o-glcnac database,0.9332913,1,https://www.oglcnac.mcw.edu/,,,,,,,,,,,,o-glcnac database,
+37646950,plant rdna database,0.0,,0.0,plant rdna database,0.0,1,https://www.plantrdnadatabase.com/,,,,,,,,,,,,plant rdna database,
+37001506,en-tex,0.99911237,en-tex,0.99911237,,0.99911237,1,http://entex.encodeproject.org/,,,,,,,,,,,,en-tex,
+40314147,tf2tg,0.99699277,tf2tg,0.99699277,,0.99699277,1,https://www.flyrnai.org/tools/tf2tg/web/,,,,,,,,,,,,tf2tg,
+35175626,PAZY,0.99679667,pazy,0.99679667,,0.99679667,1,https://www.pazy.eu/,,,,,,,,,,,,pazy,CAPITALIZED
+40536267,REFINE,0.9955148,refine,0.9955148,,0.9955148,1,https://www.refine.bio/,,,,,,,,,,,,refine,CAPITALIZED
+35931779,i-tasser-mtd,0.99470854,i-tasser-mtd,0.99470854,,0.99470854,1,https://seq2fun.dcmb.med.umich.edu/I-TASSER-MTD/,,,,,,,,,,,,i-tasser-mtd,
+40548747,RVDB,0.99429363,rvdb,0.99429363,,0.99429363,1,https://rvdb.dbi.udel.edu/,,,,,,,,,,,,rvdb,CAPITALIZED
+34718735,flyatlas 2,0.9857147,,0.9857147,flyatlas 2,0.9857147,1,https://flyatlas.gla.ac.uk/FlyAtlas2/index.html,,,,,,,,,,,,flyatlas 2,
+36823331,outbreak.info,0.9818318,,0.9818318,outbreak.info,0.9818318,1,https://outbreak.info/,,,,,,,,,,,,outbreak.info,
+35131258,allosteric database,0.9777709,,0.9777709,allosteric database,0.9777709,1,https://mdl.shsmu.edu.cn/ASD/,,,,,,,,,,,,allosteric database,
+38995537,unicarb-db,0.9734289,,0.9734289,unicarb-db,0.9734289,1,https://unicarb-db.expasy.org/,,,,,,,,,,,,unicarb-db,
+34864908,RCSB,0.89457923,rcsb,0.89457923,,0.89457923,1,https://www.rcsb.org/,,,,,,,,,,,,rcsb,CAPITALIZED
+38927512,genecarna,0.6879092,,0.6879092,genecarna,0.6879092,1,https://www.genecards.org/genecarna,,,,,,,,,,,,genecarna,
+36352543,ANZUP,0.6877836,anzup,0.6877836,,0.6877836,1,https://anzup.org.au,,,,,,,,,,,,anzup,CAPITALIZED
+37459490,VHL,0.64228594,vhl,0.64228594,,0.64228594,1,http://www.cancer-genetics.org/VHL.htm,,,,,,,,,,,,vhl,CAPITALIZED
+40380393,bioportal,0.6194457,,0.6194457,bioportal,0.6194457,1,https://bioportal.bioontology.org,,,,,,,,,,,,bioportal,
+35612078,i2b2,0.5841747,i2b2,0.5841747,,0.5841747,1,https://www.i2b2.org,,,,,,,,,,,,i2b2,
+35325185,DAVID,0.0,david,0.0,,0.0,1,https://davidbioinformatics.nih.gov,,,,,,,,,,,,david,CAPITALIZED
+37259264,scliverdb,0.0,,0.0,scliverdb,0.0,1,http://bioinfo.life.hust.edu.cn/liverdb,,,,,,,,,,,,scliverdb,
+38688470,national sleep research resource,0.0,,0.0,national sleep research resource,0.0,1,https://sleepdata.org,,,,,,,,,,,,national sleep research resource,
+39704901,ukbiobank,0.0,,0.0,ukbiobank,0.0,1,https://www.ukbiobank.ac.uk,,,,,,,,,,,,ukbiobank,
+36002623,peekbank,0.0,,0.0,peekbank,0.0,1,https://peekbank.stanford.edu,,,,,,,,,,,,peekbank,
+35396615,chicago face database,0.0,,0.0,chicago face database,0.0,1,https://www.chicagofaces.org,,,,,,,,,,,,chicago face database,
+40262894,mprabase,0.0,,0.0,mprabase,0.0,1,http://www.mprabase.com,,,,,,,,,,,,mprabase,
+40033715,proceed,0.0,proceed,0.0,phenotypic rates of change evolutionary and ecological database,0.0,1,https://proceeddatabase.weebly.com,,,,,,,,,,,,proceed,
+35037202,gramene,0.0,,0.0,gramene,0.0,1,https://www.gramene.org,,,,,,,,,,,,gramene,
+35612084,snomed ct,0.0,snomed ct,0.0,,0.0,1,https://www.snomed.org,,,,,,,,,,,,snomed ct,
+36318248,REBASE,0.0,rebase,0.0,,0.0,1,https://rebase.neb.com/rebase/rebase.html,,,,,,,,,,,,rebase,CAPITALIZED
+36286319,intenzydb,0.0,,0.0,intenzydb,0.0,1,https://intenzydb.accre.vanderbilt.edu,,,,,,,,,,,,intenzydb,
+40219973,plantpan,0.0,,0.0,plantpan,0.0,1,http://PlantPAN.itps.ncku.edu.tw,,,,,,,,,,,,plantpan,
+37091248,fishget,0.0,,0.0,fishget,0.0,1,http://bioinfo.ihb.ac.cn/fishget,,,,,,,,,,,,fishget,
+37864541,world asellidae database,0.0,,0.0,world asellidae database,0.0,1,http://douro.univ-lyon1.fr/asellidae/,,,,,,,,,,,,world asellidae database,
+37258747,human gut cell atlas,0.0,,0.0,human gut cell atlas,0.0,1,https://www.gutcellatlas.org,,,,,,,,,,,,human gut cell atlas,
+38521211,dw-allen,0.0,dw-allen,0.0,dw-allen atlas,0.0,1,https://portal.brain-map.org/,,,,,,,,,,,,dw-allen,
+35883475,pdbbind,0.0,,0.0,pdbbind,0.0,1,http://www.pdbbind.org.cn/,,,,,,,,,,,,pdbbind,
+39996130,neurodegenerative disease knowledge portal,0.0,,0.0,neurodegenerative disease knowledge portal,0.0,1,https://ndkp.hugeamp.org/,,,,,,,,,,,,neurodegenerative disease knowledge portal,
+38275308,elegans-based,0.0,,0.0,elegans</i>-based,0.0,1,http://www.wormbase.org/,,,,,,,,,,,,elegans</i>-based,HTML_REMOVED
+35900309,fluorophore labeling of proteins,0.0,,0.0,fluorophore labeling of proteins,0.0,1,https://www.fpbase.org/,,,,,,,,,,,,fluorophore labeling of proteins,
+35507258,IMEX,0.0,imex,0.0,,0.0,1,https://www.imexconsortium.org/,,,,,,,,,,,,imex,CAPITALIZED
+38702300,era5,0.0,era5,0.0,,0.0,1,https://cds.climate.copernicus.eu/,,,,,,,,,,,,era5,
+38112483,nmrshiftdb2,0.0,,0.0,nmrshiftdb2 | nmrshiftdb,0.0,1,https://nmrshiftdb.nmr.uni-koeln.de/,,,,,,,,,,,,nmrshiftdb2 | nmrshiftdb,PIPE_CLEANED
+35524130,pathoyeastract,0.0,,0.0,pathoyeastract,0.0,1,http://pathoyeastract.org,,,,,,,,,,,,pathoyeastract,
+39325614,pscadapt,0.0,,0.0,pscadapt,0.0,1,https://github.com/open-data-lab/psc-adapt,,,,,,,,,,,,pscadapt,
+35377469,teromol,0.0,,0.0,teromol,0.0,1,http://teromol.qmclab.com/,,,,,,,,,,,,teromol,
+38769143,MZMINE,0.0,mzmine,0.0,,0.0,1,http://mzmine.github.io/,,,,,,,,,,,,mzmine,CAPITALIZED
+39621301,NPTAGM,0.0,nptagm,0.0,,0.0,1,https://github.com/wang-lin-lab/NPtagM,,,,,,,,,,,,nptagm,CAPITALIZED
+38015708,zjut-eifd,0.0,zjut-eifd,0.0,,0.0,1,https://github.com/yeyupiaoling/ZJUT-EIFD,,,,,,,,,,,,zjut-eifd,
+40522748,malaysian natural product,0.0,,0.0,malaysian natural product,0.0,1,http://mynp.lectin.my/,,,,,,,,,,,,malaysian natural product,
+35394655,crystal structure database,0.0,,0.0,crystal structure database,0.0,1,https://www.ccdc.cam.ac.uk/,,,,,,,,,,,,crystal structure database,
+38900906,multispecies ovary tissue histology electronic repository,0.0,,0.0,multispecies ovary tissue histology electronic repository,0.0,1,http://mother-db.org,,,,,,,,,,,,multispecies ovary tissue histology electronic repository,
+36967676,MMHCDB,0.0,mmhcdb,0.0,mouse models of human cancer database,0.0,1,http://tumor.informatics.jax.org/,,,,,,,,,,,,mmhcdb,CAPITALIZED
+34133301,lscidmr,0.0,lscidmr,0.0,,0.0,1,https://github.com/zheng-xin-zhang/LSCIDMR,,,,,,,,,,,,lscidmr,
+35313008,camoevo,0.0,,0.0,camoevo | an open,0.0,1,https://github.com/CamoEvo,,,,,,,,,,,,camoevo | an open,PIPE_CLEANED
+34674164,biodare2,0.0,,0.0,biodare2,0.0,1,https://biodare2.ed.ac.uk/,,,,,,,,,,,,biodare2,
+37738189,metnetcomp,0.0,,0.0,metnetcomp,0.0,1,http://metnetcomp.github.io/,,,,,,,,,,,,metnetcomp,
+37771003,MMIP,0.0,mmip,0.0,microbiome metabolome integration platform,0.0,1,http://www.mmip.top/,,,,,,,,,,,,mmip,CAPITALIZED
+39442633,carotenoids,0.0,,0.0,carotenoids,0.0,1,http://carotenoiddb.jp/,,,,,,,,,,,,carotenoids,
+36575445,NETACT,0.0,netact,0.0,,0.0,1,https://github.com/lusystemsbio/NetAct,,,,,,,,,,,,netact,CAPITALIZED
+38787331,protein adsorption on solid surfaces,0.0,,0.0,protein adsorption on solid surfaces,0.0,1,https://bionanoinfo.com/bad/,,,,,,,,,,,,protein adsorption on solid surfaces,
+34904611,KRAS,0.0,,0.0,kras</i,0.0,1,http://cancer.sanger.ac.uk/cosmic,,,,,,,,,,,,kras</i,"HTML_REMOVED,CAPITALIZED"
+37493333,breast cancer proteome portal,0.0,,0.0,breast cancer proteome portal,0.0,1,https://pdc.cancer.gov/,,,,,,,,,,,,breast cancer proteome portal,
+35037225,AGROLD,0.0,agrold,0.0,,0.0,1,http://www.agrold.org/,,,,,,,,,,,,agrold,CAPITALIZED
+39117154,circadipy,0.0,,0.0,circadipy | an open,0.0,1,https://github.com/circadipy/circadipy,,,,,,,,,,,,circadipy | an open,PIPE_CLEANED
+39510367,HEAL,0.0,heal | impowr,0.0,,0.0,1,https://heal.nih.gov/data,,,,,,,,,,,,heal | impowr,"PIPE_CLEANED,CAPITALIZED"
+37692080,metapep,0.0,,0.0,metapep,0.0,1,http://metapep.thebiglab.org/,,,,,,,,,,,,metapep,
+35169263,ALMA,0.0,alma,0.0,,0.0,1,http://alma.inaf.cl/en/home/,,,,,,,,,,,,alma,CAPITALIZED
+38217648,annogesic,0.0,,0.0,annogesic,0.0,1,https://github.com/Fabian-St/ANNOgesic,,,,,,,,,,,,annogesic,
+39102448,COPS,0.0,cops,0.0,,0.0,1,http://cops.biol.univ.wroc.pl/,,,,,,,,,,,,cops,CAPITALIZED
+39151939,maize genetics and genomics database,0.0,,0.0,maize genetics and genomics database | maizegdb | the maize genetics and genomics database,0.0,1,https://www.maizegdb.org/,,,,,,,,,,,,maize genetics and genomics database | maizegdb | the maize genetics and genomics database,PIPE_CLEANED
+36792822,sednterp,0.0,sednterp,0.0,,0.0,1,http://www.jphilo.mailou.net/sednterp/,,,,,,,,,,,,sednterp,
+37612031,human skin cell atlas,0.0,,0.0,human skin cell atlas,0.0,1,https://skins.cellatlas.io/,,,,,,,,,,,,human skin cell atlas,
+37104266,bookshelf,0.0,,0.0,bookshelf,0.0,1,https://www.ncbi.nlm.nih.gov/books/,,,,,,,,,,,,bookshelf,
+37497729,atacannor,0.0,,0.0,atacannor,0.0,1,https://github.com/SILin7/AtacAnnoR,,,,,,,,,,,,atacannor,
+36449162,ATLAS,0.0,atlas | bs-,0.0,,0.0,1,https://www.mongodb.com/atlas/database,,,,,,,,,,,,atlas | bs-,"PIPE_CLEANED,CAPITALIZED"
+37105065,MOF,0.0,mof,0.0,,0.0,1,https://mof.tech.northwestern.edu/,,,,,,,,,,,,mof,CAPITALIZED
+37563883,DEBBIE,0.0,debbie,0.0,,0.0,1,https://debbie.global/,,,,,,,,,,,,debbie,CAPITALIZED
+36892262,asgard+,0.0,asgard+ | asgard,0.0,,0.0,1,https://asgard.rc.ufl.edu/,,,,,,,,,,,,asgard+ | asgard,PIPE_CLEANED
+39579797,ATFDB,0.0,atfdb,0.0,,0.0,1,http://atfdb.insect-genome.com/,,,,,,,,,,,,atfdb,CAPITALIZED
+36794865,genomes online database,0.0,,0.0,genomes online database,0.0,1,https://gold.jgi.doe.gov/,,,,,,,,,,,,genomes online database,
+37614126,BOLD,0.0,bold,0.0,,0.0,1,https://www.boldsystems.org/,,,,,,,,,,,,bold,CAPITALIZED
+37646940,peatmoss,0.0,,0.0,peatmoss,0.0,1,https://zenodo.org/record/7765173,,,,,,,,,,,,peatmoss,
+37646946,chilean plants cytogenetic database,0.0,,0.0,chilean plants cytogenetic database,0.0,1,http://www.chileanpcd.com/,,,,,,,,,,,,chilean plants cytogenetic database,
+38335132,IPTG,0.0,iptg,0.0,lactospanks,0.0,1,https://www.addgene.org/,,,,,,,,,,,,iptg,CAPITALIZED
+35680954,silkworm,0.0,,0.0,silkworm,0.0,1,http://silkworm.genomics.org.cn/,,,,,,,,,,,,silkworm,
+36008656,candida genome database,0.0,,0.0,candida genome database,0.0,1,http://www.candidagenome.org/,,,,,,,,,,,,candida genome database,
+36107335,FPBASE,0.0,fpbase,0.0,,0.0,1,https://www.fpbase.org/,,,,,,,,,,,,fpbase,CAPITALIZED
+38581422,hyganno,0.0,,0.0,hyganno,0.0,1,https://github.com/kullrich/hyganno,,,,,,,,,,,,hyganno,
+35124463,disintegrindb,0.0,,0.0,disintegrindb,0.0,1,http://disintegrins.biol.univ.wroc.pl/,,,,,,,,,,,,disintegrindb,
+38909399,BRCA,0.0,brca,0.0,,0.0,1,https://brcaexchange.org/,,,,,,,,,,,,brca,CAPITALIZED
+33798067,JRDB,0.0,jrdb,0.0,,0.0,1,https://jrdb.cvcv.hanyang.edu.kr/,,,,,,,,,,,,jrdb,CAPITALIZED
+35796973,mosquito small rna genomics,0.0,,0.0,mosquito small rna genomics,0.0,1,https://laulab.bu.edu/msrg/,,,,,,,,,,,,mosquito small rna genomics,
+37435391,association of biomolecular resource facilities,0.0,,0.0,association of biomolecular resource facilities,0.0,1,https://coremarketplace.org/,,,,,,,,,,,,association of biomolecular resource facilities,
+40728623,moonprot,0.0,,0.0,moonprot,0.0,1,http://www.moonlightingproteins.org,,,,,,,,,,,,moonprot,
+36125864,genome taxonomy database (gtdb),0.0,,0.0,genome taxonomy database | the genome taxonomy database,0.0,1,https://gtdb.ecogenomic.org/,,,,,,,,,,,,genome taxonomy database | the genome taxonomy database,"PIPE_CLEANED,DISAMBIGUATED"
+40779104,CEDAR,0.0,cedar,0.0,cancer epitope database and analysis resource,0.0,1,https://cedar.iedb.org/,,,,,,,,,,,,cedar,CAPITALIZED
+40828275,BRAKER,0.0,braker | tsebra,0.0,,0.0,1,https://github.com/Gaius-Augustus/BRAKER,,,,,,,,,,,,braker | tsebra,"PIPE_CLEANED,CAPITALIZED"
+40582613,cppsite3,0.0,,0.0,cppsite3 | cppsite,0.0,1,https://cppsite.org/,,,,,,,,,,,,cppsite3 | cppsite,PIPE_CLEANED
+38567644,LCDB,0.0,lcdb,0.0,,0.0,1,http://lcdb.biocuckoo.org/,,,,,,,,,,,,lcdb,CAPITALIZED
+37697153,bugsigdb,0.98630494,,0.98630494,bugsigdb,0.98630494,1,https://bugsigdb.org/,,,,,,,,,,,,bugsigdb,
+40129074,insect-ep450db,0.9985097,,0.9985097,insect-ep450db,0.9985097,1,http://www.insectp450.net/,,,,,,,,,,,,insect-ep450db,
+36567525,acinetobase,0.99827045,,0.99827045,acinetobase,0.99827045,1,https://acinetobase.vib.be/,,,,,,,,,,,,acinetobase,
+39460195,i-phaos,0.99814624,,0.99814624,i-phaos,0.99814624,1,https://pharos.nih.gov/,,,,,,,,,,,,i-phaos,
+38050974,argetgene,0.9971866,,0.9971866,argetgene,0.9971866,1,https://ngdc.cncb.ac.cn/targetgene/,,,,,,,,,,,,argetgene,
+37337836,plant ploidy database,0.9971088,,0.9971088,plant ploidy database,0.9971088,1,http://ccdb.tau.ac.il/,,,,,,,,,,,,plant ploidy database,
+39780493,oatomics,0.99636304,,0.99636304,oatomics,0.99636304,1,http://oatomics.com/,,,,,,,,,,,,oatomics,
+37932399,metlin-ccs,0.9932375,metlin-ccs,0.9932375,,0.9932375,1,https://metlin.scripps.edu/landing_page.php?pgcontent=mainPage,,,,,,,,,,,,metlin-ccs,
+36725728,sex-chrom,0.9891997,,0.9891997,sex-chrom,0.9891997,1,http://sexchrom.csic.es/,,,,,,,,,,,,sex-chrom,
+35108094,ocean genome legacy,0.97541,,0.97541,ocean genome legacy,0.97541,1,https://www.northeastern.edu/ogl/,,,,,,,,,,,,ocean genome legacy,
+37646939,bifloraexplorer,0.94226116,,0.94226116,bifloraexplorer,0.94226116,1,https://github.com/R-0-0/BIFloraExplorer,,,,,,,,,,,,bifloraexplorer,
+37480566,drosophila resource,0.9261247,,0.9261247,drosophila resource,0.9261247,1,http://flybase.org/,,,,,,,,,,,,drosophila resource,
+38450904,saliva omics database,0.9066916,,0.9066916,saliva omics database,0.9066916,1,http://www.salivaomics.org/,,,,,,,,,,,,saliva omics database,
+39216000,observed t cell receptor space,0.82833964,,0.82833964,observed t cell receptor space,0.82833964,1,http://opig.stats.ox.ac.uk/webapps/ots/,,,,,,,,,,,,observed t cell receptor space,
+36063461,wildsoydb datahub,0.705826,,0.705826,wildsoydb datahub,0.705826,1,https://wildsoydb.org/,,,,,,,,,,,,wildsoydb datahub,
+36640942,CESIUM,0.57386976,cesium,0.57386976,,0.57386976,1,https://cesium.com/platform/cesium-ion/,,,,,,,,,,,,cesium,CAPITALIZED
+37383745,yoga dataset,0.44219694,,0.44219694,yoga dataset,0.44219694,1,https://www.kaggle.com/datasets/niharika41298/yoga-poses-dataset,,,,,,,,,,,,yoga dataset,
+39240227,university of north carolina cancer survivorship cohort,0.0,,0.0,university of north carolina cancer survivorship cohort,0.0,1,https://unclineberger.org/unccsc/,,,,,,,,,,,,university of north carolina cancer survivorship cohort,
+36307625,crowd-5e,0.0,,0.0,crowd-5e | a croatian psycholinguistic database of affective norms for five discrete emotions,0.0,1,https://osf.io/35tbw/,,,,,,,,,,,,crowd-5e | a croatian psycholinguistic database of affective norms for five discrete emotions,PIPE_CLEANED
+38453963,pearl-neuro,0.0,,0.0,pearl-neuro,0.0,1,https://openneuro.org/datasets/ds004796/versions/1.0.2,,,,,,,,,,,,pearl-neuro,
+37503835,covid19db,0.0,,0.0,covid19db,0.0,1,http://www.covid19db.org/,,,,,,,,,,,,covid19db,
+39126359,block copolymer phase behavior database,0.0,,0.0,block copolymer phase behavior database,0.0,1,https://mdf.ncsa.illinois.edu/,,,,,,,,,,,,block copolymer phase behavior database,
+35359334,gene expression database,0.0,,0.0,gene expression database,0.0,1,https://www.ncbi.nlm.nih.gov/geo/,,,,,,,,,,,,gene expression database,
+37769837,scepitools,0.0,,0.0,scepitools,0.0,1,http://health.tsinghua.edu.cn/scepitools,,,,,,,,,,,,scepitools,
+39983713,adiposetissue.org,0.0,,0.0,adiposetissue.org,0.0,1,https://adiposetissue.org/,,,,,,,,,,,,adiposetissue.org,
+36609142,PUGTDB,0.0,pugtdb,0.0,,0.0,1,http://www.pugtdb.org/,,,,,,,,,,,,pugtdb,CAPITALIZED
+35315058,madagascar terrestrial camera survey database,0.0,,0.0,madagascar terrestrial camera survey database,0.0,1,https://doi.org/10.5281/zenodo.5801806,,,,,,,,,,,,madagascar terrestrial camera survey database,
+40214971,dinosource,0.0,,0.0,dinosource | a comprehensive database of dinoflagellate genomic resources,0.0,1,http://dinosource.org/,,,,,,,,,,,,dinosource | a comprehensive database of dinoflagellate genomic resources,PIPE_CLEANED
+38825257,lessons learned establishing the palliative care research cooperative's qualitative data repository,0.0,,0.0,lessons learned establishing the palliative care research cooperative's qualitative data repository,0.0,1,https://qdr.syr.edu/,,,,,,,,,,,,lessons learned establishing the palliative care research cooperative's qualitative data repository,
+37367491,global impact of covid-19 vaccines,0.0,,0.0,global impact of covid-19 vaccines,0.0,1,https://ourworldindata.org/covid-vaccinations,,,,,,,,,,,,global impact of covid-19 vaccines,
+40154847,standard for artificial intelligence benchmarking,0.0,,0.0,standard for artificial intelligence benchmarking,0.0,1,https://mlcommons.org/en/,,,,,,,,,,,,standard for artificial intelligence benchmarking,
+38419327,bamboobase,0.0,,0.0,bamboobase | a comprehensive database of bamboo omics and systematics,0.0,1,http://bamboo.bamboogdb.org/,,,,,,,,,,,,bamboobase | a comprehensive database of bamboo omics and systematics,PIPE_CLEANED
+39075025,naturally occurring plant-based anticancerous candidates as potential erk2 inhibitors,0.0,,0.0,naturally occurring plant-based anticancerous candidates as potential erk2 inhibitors,0.0,1,http://crdd.osdd.net/raghava/npact/,,,,,,,,,,,,naturally occurring plant-based anticancerous candidates as potential erk2 inhibitors,
+39600198,host-pathogen interaction databases,0.0,,0.0,host-pathogen interaction databases,0.0,1,https://hpidb.igbb.msstate.edu/,,,,,,,,,,,,host-pathogen interaction databases,
+39927895,deep learning for antimicrobial peptides,0.0,,0.0,deep learning for antimicrobial peptides,0.0,1,http://dbaasp.org,,,,,,,,,,,,deep learning for antimicrobial peptides,
+38863005,QUANDB,0.0,quandb,0.0,,0.0,1,http://quandb.org,,,,,,,,,,,,quandb,CAPITALIZED
+36537834,first genome sequence resource of,0.0,,0.0,first genome sequence resource of | causal agent of foxtail millet stinking smut disease,0.0,1,https://www.ncbi.nlm.nih.gov/bioproject/PRJNA841014,,,,,,,,,,,,first genome sequence resource of | causal agent of foxtail millet stinking smut disease,PIPE_CLEANED
+36587236,genome sequence resource of,0.0,,0.0,genome sequence resource of | causative agent of apple replant disease,0.0,1,https://www.ncbi.nlm.nih.gov/bioproject/PRJNA763768,,,,,,,,,,,,genome sequence resource of | causative agent of apple replant disease,PIPE_CLEANED
+35915959,fungalroot,0.0,,0.0,fungalroot,0.0,1,https://fungalroot.life.illinois.edu/,,,,,,,,,,,,fungalroot,
+35867230,sequencing data analysis on the maser platform,0.0,,0.0,sequencing data analysis on the maser platform,0.0,1,https://cell-innovation.nig.ac.jp/maser/,,,,,,,,,,,,sequencing data analysis on the maser platform,
+35507259,three-dimensional structure databases of biological macromolecules,0.0,,0.0,three-dimensional structure databases of biological macromolecules,0.0,1,https://www.rcsb.org/,,,,,,,,,,,,three-dimensional structure databases of biological macromolecules,
+38505885,genome assembly and annotation of the dark-branded bushbrown butterfly mycalesis mineus,0.0,,0.0,genome assembly and annotation of the dark-branded bushbrown butterfly mycalesis mineus,0.0,1,https://www.ncbi.nlm.nih.gov/bioproject/PRJNA999358,,,,,,,,,,,,genome assembly and annotation of the dark-branded bushbrown butterfly mycalesis mineus,
+37031828,japan monkey centre primates brain imaging repository of high-resolution postmortem magnetic resonance imaging,0.0,,0.0,japan monkey centre primates brain imaging repository of high-resolution postmortem magnetic resonance imaging,0.0,1,http://jmc-primates-brain.com/,,,,,,,,,,,,japan monkey centre primates brain imaging repository of high-resolution postmortem magnetic resonance imaging,
+36966359,rice gene index,0.0,,0.0,rice gene index,0.0,1,https://riceome.hzau.edu.cn/,,,,,,,,,,,,rice gene index,
+36311883,NCCIH,0.0,nccih,0.0,,0.0,1,https://www.nccih.nih.gov/,,,,,,,,,,,,nccih,CAPITALIZED
+37394145,allen brain atlas,0.0,,0.0,allen brain atlas,0.0,1,https://alleninstitute.org/brain-atlases/mouse-brain-atlas/,,,,,,,,,,,,allen brain atlas,
+36971993,fishsct,0.0,,0.0,fishsct,0.0,1,http://fishsct.ihb.ac.cn/,,,,,,,,,,,,fishsct,
+35612174,covid-19 data exchange platform of the german university medicine,0.0,,0.0,covid-19 data exchange platform of the german university medicine,0.0,1,https://codex.netzwerk-universitaetsmedizin.de/,,,,,,,,,,,,covid-19 data exchange platform of the german university medicine,
+39888724,expression of concern,0.0,,0.0,expression of concern | disgenet | interaction database,0.0,1,https://www.disgenet.org/,,,,,,,,,,,,expression of concern | disgenet | interaction database,PIPE_CLEANED
+39102880,SEER,0.0,seer,0.0,,0.0,1,https://seer.cancer.gov/data/,,,,,,,,,,,,seer,CAPITALIZED
+36809643,multimodal 3d mouse brain atlas,0.0,,0.0,multimodal 3d mouse brain atlas,0.0,1,https://ebrains.eu/service/mouse-brain-atlas,,,,,,,,,,,,multimodal 3d mouse brain atlas,
+37284942,guinea pig preimplantation embryos,0.0,,0.0,guinea pig preimplantation embryos,0.0,1,https://data.mendeley.com/datasets/8f5t6t72p3/1,,,,,,,,,,,,guinea pig preimplantation embryos,
+40070311,regulatory network,0.0,,0.0,regulatory network,0.0,1,http://regnetworkweb.org/,,,,,,,,,,,,regulatory network,
+34762316,ecotoxxplorer,0.0,,0.0,ecotoxxplorer,0.0,1,https://www.ecotoxxplorer.ca/,,,,,,,,,,,,ecotoxxplorer,
+37777465,ILABDB,0.0,ilabdb,0.0,,0.0,1,http://www.ilabdb.com/,,,,,,,,,,,,ilabdb,CAPITALIZED
+38384129,RLKDB,0.0,rlkdb,0.0,,0.0,1,http://rlkdb.public.pombase.org,,,,,,,,,,,,rlkdb,CAPITALIZED
+37417838,atlas of tumor metabolism uncovers gene-metabolite interactions,0.0,,0.0,atlas of tumor metabolism uncovers gene-metabolite interactions,0.0,1,https://camp.thekrumsieklab.com/,,,,,,,,,,,,atlas of tumor metabolism uncovers gene-metabolite interactions,
+39368085,nbatlas,0.0,,0.0,nbatlas,0.0,1,https://nbatlas.org/,,,,,,,,,,,,nbatlas,
+40285727,inkjet-printed graphene multielectrode arrays,0.0,,0.0,inkjet-printed graphene multielectrode arrays | lt;i&gt;in,0.0,1,https://doi.org/10.6084/m9.figshare.24156378,,,,,,,,,,,,inkjet-printed graphene multielectrode arrays | lt;i&gt;in,PIPE_CLEANED
+40728618,benchmarking platform for assessing protein language models on function-related prediction tasks,0.0,,0.0,benchmarking platform for assessing protein language models on function-related prediction tasks,0.0,1,https://github.com/faezrah/PROBE,,,,,,,,,,,,benchmarking platform for assessing protein language models on function-related prediction tasks,
+39352375,melting point database for organometallic compounds,0.0,,0.0,melting point database for organometallic compounds,0.0,1,https://pubs.acs.org/doi/10.1021/acs.jcim.0c01053,,,,,,,,,,,,melting point database for organometallic compounds,
+35633312,ivenomdb,0.0,,0.0,ivenomdb,0.0,1,http://www.ivenomdb.org/,,,,,,,,,,,,ivenomdb,
+36535428,regulatory network,0.0,,0.0,regulatory network | structure-function analysis,0.0,1,http://regnetworkweb.org/,,,,,,,,,,,,regulatory network | structure-function analysis,PIPE_CLEANED
+38714759,microbioraman,0.0,,0.0,microbioraman | an open-access web repository for microbiological raman spectroscopy data,0.0,1,https://www.ebi.ac.uk/biostudies/MicrobioRaman,,,,,,,,,,,,microbioraman | an open-access web repository for microbiological raman spectroscopy data,PIPE_CLEANED
+39042485,dielectric ceramics database automatically constructed by data mining in the literature,0.0,,0.0,dielectric ceramics database automatically constructed by data mining in the literature,0.0,1,https://doi.org/10.1021/acs.jcim.0c01053,,,,,,,,,,,,dielectric ceramics database automatically constructed by data mining in the literature,
+36787439,DIPEX,0.99766004,dipex,0.99766004,,0.99766004,1,https://www.healthtalk.org/,,,,,,,,,,,,dipex,CAPITALIZED
+36280721,ISPI,0.9941899,ispi,0.9941899,,0.9941899,1,http://wiki.pestinfo.org/wiki/Main_Page,,,,,,,,,,,,ispi,CAPITALIZED
+36695636,mitelman db,0.99341226,,0.99341226,mitelman db,0.99341226,1,https://mitelmandatabase.isb-cgc.org/,,,,,,,,,,,,mitelman db,
+35129172,glyco@expasy,0.9895914,,0.9895914,glyco@expasy,0.9895914,1,https://www.expasy.org/resources/search/keywords:glyco,,,,,,,,,,,,glyco@expasy,
+35816925,goed clinical study database,0.9714111,,0.9714111,goed clinical study database,0.9714111,1,https://goedomega3.com/clinical-study-database,,,,,,,,,,,,goed clinical study database,
+38937480,mopredascentury,0.9357025,,0.9357025,mopredascentury,0.9357025,1,https://doi.org/10.1038/s41597-020-00726-7,,,,,,,,,,,,mopredascentury,
+36433993,figshare,0.895198,,0.895198,figshare,0.895198,1,https://figshare.com/,,,,,,,,,,,,figshare,
+38907890,hla-hd-f,0.89412373,,0.89412373,hla-hd-f,0.89412373,1,https://github.com/ShuheiHori/HLA-HD,,,,,,,,,,,,hla-hd-f,
+37142360,BFI,0.8906218,bfi,0.8906218,,0.8906218,1,https://www.bfi.org.uk/films-tv-people/,,,,,,,,,,,,bfi,CAPITALIZED
+36137552,but pdb,0.87049556,but pdb,0.87049556,,0.87049556,1,http://www.rcsb.org/,,,,,,,,,,,,but pdb,
+38273575,TRY,0.8688756,try,0.8688756,,0.8688756,1,https://www.try-db.org/TryWeb/Home.php,,,,,,,,,,,,try,CAPITALIZED
+39611775,snpversity,0.8238702,,0.8238702,snpversity,0.8238702,1,https://www.maizegdb.org/snpversity,,,,,,,,,,,,snpversity,
+35370187,JMDC,0.805243,jmdc,0.805243,,0.805243,1,https://www.jmdc.co.jp/en/index,,,,,,,,,,,,jmdc,CAPITALIZED
+37524802,lakepulse,0.7600655,,0.7600655,lakepulse,0.7600655,1,https://lakepulse.ca/,,,,,,,,,,,,lakepulse,
+40173841,MZUSP,0.757348,mzusp,0.757348,,0.757348,1,http://www.mz.usp.br/,,,,,,,,,,,,mzusp,CAPITALIZED
+40511584,osteoevidence,0.74638486,,0.74638486,i>osteoevidence</i,0.74638486,1,https://www.osteoevidence.com/,,,,,,,,,,,,i>osteoevidence</i,HTML_REMOVED
+37800393,ECN,0.688996,ecn,0.688996,,0.688996,1,https://www.ecn.ac.uk/data,,,,,,,,,,,,ecn,CAPITALIZED
+39837330,smart-seq+5,0.6475649,,0.6475649,smart-seq+5,0.6475649,1,https://embryo.helmholtz-munich.de/shiny_embryo/,,,,,,,,,,,,smart-seq+5,
+39279509,plantgenie,0.6444645,,0.6444645,plantgenie,0.6444645,1,http://plantgenie.org/,,,,,,,,,,,,plantgenie,
+37602732,oregon biodiversity genome project,0.0,,0.0,oregon biodiversity genome project,0.0,1,https://obgp.org/,,,,,,,,,,,,oregon biodiversity genome project,
+38063370,squeezemeta,0.0,,0.0,squeezemeta,0.0,1,https://github.com/jtamames/SqueezeMeta,,,,,,,,,,,,squeezemeta,
+37769048,CINAHL,0.0,cinahl | rct,0.0,ptsd-repository | psycinfo,0.0,1,https://www.ebsco.com/products/research-databases/cinahl-database,,,,,,,,,,,,cinahl | rct,"PIPE_CLEANED,CAPITALIZED"
+37261838,its2,0.0,its2 | gag,0.0,,0.0,1,http://its2.bioapps.biozentrum.uni-wuerzburg.de/,,,,,,,,,,,,its2 | gag,PIPE_CLEANED
+36099978,STEMI,0.0,stemi | ncdr,0.0,,0.0,1,https://cvquality.acc.org/NCDR-Home/registries/hospital-registries/chest-pain-mi-registry,,,,,,,,,,,,stemi | ncdr,"PIPE_CLEANED,CAPITALIZED"
+39558178,genelab,0.0,,0.0,genelab,0.0,1,https://genelab.nasa.gov/,,,,,,,,,,,,genelab,
+40329811,GBIF,0.0,gbif,0.0,,0.0,1,https://www.gbif.org/,,,,,,,,,,,,gbif,CAPITALIZED
+38134877,cellhint,0.0,,0.0,cellhint,0.0,1,https://github.com/Teichlab/CellHint,,,,,,,,,,,,cellhint,
+34679174,cystic fibrosis foundation patient registry,0.0,,0.0,cystic fibrosis foundation patient registry,0.0,1,https://www.cff.org/research-clinical-trials/patient-registry,,,,,,,,,,,,cystic fibrosis foundation patient registry,
+39332377,australian food composition database,0.0,,0.0,australian food composition database,0.0,1,https://www.foodstandards.gov.au/science-data/monitoring-nutrients/afcd,,,,,,,,,,,,australian food composition database,
+40578340,flysta3d-v2,0.0,,0.0,flysta3d-v2,0.0,1,https://db.cngb.org/stomics/flysta3d-v2/,,,,,,,,,,,,flysta3d-v2,
+36564505,TOPMED,0.0,topmed,0.0,metastaar | trans omics for precision medicine,0.0,1,https://topmed.nhlbi.nih.gov/,,,,,,,,,,,,topmed,CAPITALIZED
+38923903,european food safety authority,0.0,,0.0,european food safety authority,0.0,1,https://www.efsa.europa.eu/en/data-knowledge/data-reports,,,,,,,,,,,,european food safety authority,
+37269845,PBS,0.0,4·2,0.0,pharmaceutical benefits scheme,0.0,1,https://www.pbs.gov.au/pbs/home,,,,,,,,,,,,4·2,"CHARS_SANITIZED,NAME_RECOVERED_FROM_URL,CAPITALIZED"
+35124290,mirbase,0.0,,0.0,mirbase,0.0,1,https://www.mirbase.org/,,,,,,,,,,,,mirbase,
+40055894,SGMD,0.0,sgmd,0.0,sorghum genomics and mutation database,0.0,1,http://sorghum.genomics.cn/,,,,,,,,,,,,sgmd,CAPITALIZED
+38042076,ARCGIS,0.0,arcgis,0.0,nature conservancy's northeast aquatic connectivity study which considered factors relating to river connectivity and watershed quality,0.0,1,https://www.arcgis.com/home/item.html?id=...,,,,,,,,,,,,arcgis,CAPITALIZED
+35622342,ARREST,0.9738119,,0.9738119,arrest/interrogate,0.9738119,1,http://www.imgt.org/3Dstructure-DB/,,,,,,,,,,,,arrest/interrogate,"HTML_REMOVED,CAPITALIZED"
+36085868,hierarchical time-indexed database,0.9711152,,0.9711152,hierarchical time-indexed database,0.9711152,1,https://doi.org/10.5061/dryad.1626q20,,,,,,,,,,,,hierarchical time-indexed database,
+39288643,NCMD,0.9704553,ncmd,0.9704553,,0.9704553,1,https://peptidetracker.org,,,,,,,,,,,,ncmd,CAPITALIZED
+38361019,tapioca,0.96758604,,0.96758604,tapioca,0.96758604,1,https://sandiegozoo.org/frozen-zoo,,,,,,,,,,,,tapioca,
+35761793,international spinal cord injury biobank,0.9662458,,0.9662458,international spinal cord injury biobank,0.9662458,1,https://www.gardenofwales.org.uk/science/barcode-uk,,,,,,,,,,,,international spinal cord injury biobank,
+40239308,titan-x,0.9658909,titan-x,0.9658909,,0.9658909,1,http://qphos.cancerbio.info/,,,,,,,,,,,,titan-x,
+39208229,food disaggregation database,0.96453553,,0.96453553,food disaggregation database,0.96453553,1,https://cmnpd.org/,,,,,,,,,,,,food disaggregation database,
+38421866,CENGEN,0.0,cengen,0.0,neuronal gene expression map and network,0.0,1,https://cengen.org/,,,,,,,,,,,,cengen,CAPITALIZED
+37455222,CFDNA,0.0,cfdna,0.0,,0.0,1,http://finaledb.research.cchmc.org/,,,,,,,,,,,,cfdna,CAPITALIZED
+38733216,its-1_5.8s_its-2,0.0,its-1_5.8s_its-2,0.0,its-2-rrna | primertc,0.0,1,http://its2.bioapps.biozentrum.uni-wuerzburg.de/,,,,,,,,,,,,its-1_5.8s_its-2,
+34424339,PFAM,0.0,pfam | lbd,0.0,,0.0,1,http://pfam.xfam.org/,,,,,,,,,,,,pfam | lbd,"PIPE_CLEANED,CAPITALIZED"
+36095527,EPO,0.0,epo,0.0,,0.0,1,https://www.epo.org/searching-for-patents.html,,,,,,,,,,,,epo,CAPITALIZED
+37258857,SILVA,0.0,silva | rdp | gtdb,0.0,ribosomal database project | and genome taxonomy database,0.0,1,https://www.arb-silva.de/,,,,,,,,,,,,silva | rdp | gtdb,"PIPE_CLEANED,CAPITALIZED"
+36996758,MIMIC,0.0,mimic | cms,0.0,,0.0,1,https://mimic.mit.edu/,,,,,,,,,,,,mimic | cms,"PIPE_CLEANED,CAPITALIZED"
+38160287,PDB,0.0,pdb,0.0,alphafold | autodock,0.0,1,https://www.rcsb.org/,,,,,,,,,,,,pdb,CAPITALIZED
+38733902,KEGG,0.0,kegg | omim,0.0,,0.0,1,https://www.genome.jp/kegg/,,,,,,,,,,,,kegg | omim,"PIPE_CLEANED,CAPITALIZED"
+39602490,PADEL,0.0,padel,0.0,,0.0,1,http://www.yapcwsoft.com/dd/padeldescriptor/,,,,,,,,,,,,padel,CAPITALIZED
+37898683,mrcmpsp,0.0,mrcmpsp | hqpso,0.0,,0.0,1,http://www.om-db.wi.tum.de/psplib/,,,,,,,,,,,,mrcmpsp | hqpso,PIPE_CLEANED
+35049120,genome taxonomy database (gtdb),0.0,,0.0,genome taxonomy database,0.0,1,https://gtdb.ecogenomic.org/,,,,,,,,,,,,genome taxonomy database,DISAMBIGUATED
+39227745,TCGA,0.0,tcga,0.0,the cancer genome atlas,0.0,1,https://portal.gdc.cancer.gov/,,,,,,,,,,,,tcga,CAPITALIZED
+37540443,TCGA,0.0,tcga | cosmic | hpa | depmap,0.0,international cancer genome consortium | the cancer genome atlas | cbioportal | human protein atlas | gene expression profiling interactive analysis 2,0.0,1,https://depmap.org/portal/,,,,,,,,,,,,tcga | cosmic | hpa | depmap,"PIPE_CLEANED,CAPITALIZED"
+35525549,kinview,0.0,,0.0,kinview | prokino,0.0,1,https://prokino.uga.edu/,,,,,,,,,,,,kinview | prokino,PIPE_CLEANED
+37376953,IMFP,0.0,imfp,0.0,,0.0,1,https://www.nist.gov/srd/nist-standard-reference-database-71,,,,,,,,,,,,imfp,CAPITALIZED
+39310279,PRRSV,0.0,prrsv,0.0,,0.0,1,http://prrsv.ahc.umn.edu/,,,,,,,,,,,,prrsv,CAPITALIZED
+36755230,bc5cdr,0.0,bc5cdr,0.0,biobert,0.0,1,https://biocreative.bioinformatics.udel.edu/resources/corpora/biocreative-v-cdr-corpus/,,,,,,,,,,,,bc5cdr,
+40393240,QSRR,0.0,qsrr,0.0,,0.0,1,https://qsardb.org/,,,,,,,,,,,,qsrr,CAPITALIZED
+40360756,human cell atlas adipose bionetwork,0.0,,0.0,human cell atlas adipose bionetwork,0.0,1,https://www.humancellatlas.org/biological-networks/adipose-network/,,,,,,,,,,,,human cell atlas adipose bionetwork,
+36002881,cell transcriptome atlas,0.0,,0.0,cell transcriptome atlas,0.0,1,https://www.humancellatlas.org/,,,,,,,,,,,,cell transcriptome atlas,
+37117054,PNATDB (pronab),0.0,pnatdb | pronab,0.0,,0.0,1,http://pronab.ibab.ac.in/pronab/,,,,,,,,,,,,pnatdb | pronab,"PIPE_CLEANED,CAPITALIZED,DISAMBIGUATED"
+39787917,snomed-ct,0.0,snomed-ct | hpo | lkb,0.0,electronic health records | linked knowledge base,0.0,1,https://www.snomed.org/,,,,,,,,,,,,snomed-ct | hpo | lkb,PIPE_CLEANED
+38084013,thermomutdb,0.0,,0.0,thermomutdb | fireprotdb | prothermdb,0.0,1,http://biosig.unimelb.edu.au/thermomutdb/,,,,,,,,,,,,thermomutdb | fireprotdb | prothermdb,PIPE_CLEANED
+38723072,topological phonon database,0.0,,0.0,topological phonon database,0.0,1,https://www.phonon.synl.ac.cn/,,,,,,,,,,,,topological phonon database,
+39870154,global strategy for plant conservation,0.0,,0.0,global strategy for plant conservation | national cryogenebank facility at icar-nbpgr,0.0,1,http://www.nbpgr.ernet.in/,,,,,,,,,,,,global strategy for plant conservation | national cryogenebank facility at icar-nbpgr,PIPE_CLEANED
+38477530,PFAS,0.0,pfas,0.0,,0.0,1,https://comptox.epa.gov/dashboard/chemical-lists/PFASMASTER,,,,,,,,,,,,pfas,CAPITALIZED
+38413078,MDT,0.0,mdt,0.0,china gastrointestinal cancer surgery union | china gastrointestinal cancer surgery union platform,0.0,1,http://www.gcsu.org.cn/,,,,,,,,,,,,mdt,CAPITALIZED
+37659415,brassitol,0.0,,0.0,brassitol,0.0,1,https://brassitol.vercel.app/,,,,,,,,,,,,brassitol,
+38855791,ESA,0.0,esa,0.0,,0.0,1,https://www.esa.int/ESA_Multimedia/Sets/ESA_Earth_Observation_data_access,,,,,,,,,,,,esa,CAPITALIZED
+39576796,MORU,0.0,moru | easa-,0.0,,0.0,1,https://www.tropmedres.ac/units/moru-bangkok/bioethics-engagement/data-sharing,,,,,,,,,,,,moru | easa-,"PIPE_CLEANED,CAPITALIZED"
+35612145,MII,0.0,mii,0.0,german medical informatics initiative,0.0,1,https://www.medizininformatik-initiative.de/,,,,,,,,,,,,mii,CAPITALIZED
+38594221,south american mycorrhizal database,0.0,,0.0,south american mycorrhizal database,0.0,1,https://southmycorrhizas.org/,,,,,,,,,,,,south american mycorrhizal database,
+36529941,PRIDE,0.0,pride | jpost | iprox,0.0,proteomexchange | peptideatlas | panorama,0.0,1,https://www.ebi.ac.uk/pride/,,,,,,,,,,,,pride | jpost | iprox,"PIPE_CLEANED,CAPITALIZED"
+40658718,RGC,0.0,rgc | mea,0.0,,0.0,1,https://jpostdb.org/,,,,,,,,,,,,rgc | mea,"PIPE_CLEANED,CAPITALIZED"
+36628764,RCA,0.0,rca | tmb,0.0,,0.0,1,https://friendsofcancerresearch.org/tmb/,,,,,,,,,,,,rca | tmb,"PIPE_CLEANED,CAPITALIZED"
+38758924,BIGG,0.0,bigg,0.0,structrecon | metanetx | pubchem,0.0,1,http://bigg.ucsd.edu/,,,,,,,,,,,,bigg,CAPITALIZED
+39922392,scifinder,0.0,,0.0,scifinder | china knowledge resource integrated,0.0,1,https://scifinder.cas.org/,,,,,,,,,,,,scifinder | china knowledge resource integrated,PIPE_CLEANED
+39316855,mirna-125a-5p,0.0,,0.0,mirna-125a-5p,0.0,1,https://www.mirbase.org/cgi-bin/mirna_entry.pl?acc=MIMAT0000443,,,,,,,,,,,,mirna-125a-5p,
+36270040,metalpdb,0.0,,0.0,metalpdb,0.0,1,https://metalpdb.cerm.unifi.it/,,,,,,,,,,,,metalpdb,
+40153158,AVPDB,0.0,avpdb | dbaasp,0.0,,0.0,1,https://dbaasp.org/,,,,,,,,,,,,avpdb | dbaasp,"PIPE_CLEANED,CAPITALIZED"
+35385607,HMF,0.0,hmf,0.0,,0.0,1,https://www.hartwigmedicalfoundation.nl/en/data/,,,,,,,,,,,,hmf,CAPITALIZED
+39186704,DMD,0.0,dmd,0.0,,0.0,1,http://www.dmd.nl/,,,,,,,,,,,,dmd,CAPITALIZED
+37499306,hpv6,0.0,hpv6,0.0,,0.0,1,https://pave.niaid.nih.gov/,,,,,,,,,,,,hpv6,
+37450164,INTACT,0.0,intact,0.0,,0.0,1,https://www.ebi.ac.uk/intact/,,,,,,,,,,,,intact,CAPITALIZED
+37646947,floraweb,0.0,,0.0,floraweb,0.0,1,https://www.floraweb.de/,,,,,,,,,,,,floraweb,
+37024526,swaveform,0.0,,0.0,swaveform | human genome diversity project,0.0,1,https://github.com/comp-bio/SWaveform,,,,,,,,,,,,swaveform | human genome diversity project,PIPE_CLEANED
+36746023,NAT,0.0,nat | inaat,0.0,,0.0,1,http://nat.mbc.nctu.edu.tw/,,,,,,,,,,,,nat | inaat,"PIPE_CLEANED,CAPITALIZED"
+39547804,national institutes of health,0.0,,0.0,national institutes of health,0.0,1,https://www.nih.gov/,,,,,,,,,,,,national institutes of health,
+39646166,steinhardt museum of natural history in tel aviv university holds an interesting collection of orthopterans with a focus on local endemics,0.0,,0.0,steinhardt museum of natural history in tel aviv university holds an interesting collection of orthopterans with a focus on local endemics,0.0,1,https://smnh.tau.ac.il/en/,,,,,,,,,,,,steinhardt museum of natural history in tel aviv university holds an interesting collection of orthopterans with a focus on local endemics,
+36910227,citespace (cluster),0.0,,0.0,citespace,0.0,1,http://cluster.cis.drexel.edu/~cchen/citespace/,,,,,,,,,,,,citespace,DISAMBIGUATED
+40121539,genome aggregate database,0.0,,0.0,genome aggregate database,0.0,1,https://gnomad.broadinstitute.org/,,,,,,,,,,,,genome aggregate database,
+35894475,MUTHTP,0.0,muthtp | tmsnp,0.0,,0.0,1,http://lmc.uab.es/tmsnp/,,,,,,,,,,,,muthtp | tmsnp,"PIPE_CLEANED,CAPITALIZED"
+40597534,FASMID,0.0,fasmid,0.0,ccsbase,0.0,1,http://phasmida.speciesfile.org/,,,,,,,,,,,,fasmid,CAPITALIZED
+37828771,HABCDE,0.0,habcde,0.0,bristol university docking engine,0.0,1,http://www.bris.ac.uk/biochemistry/bude,,,,,,,,,,,,habcde,CAPITALIZED
+40417484,ACMG,0.0,acmg,0.0,mastermind,0.0,1,https://www.acmg.net/,,,,,,,,,,,,acmg,CAPITALIZED
+38812215,global pharmacopoeia genome database(gpgd,0.0,,0.0,global pharmacopoeia genome database(gpgd,0.0,1,http://www.gpgenome.com,,,,,,,,,,,,global pharmacopoeia genome database(gpgd,
+39631489,MPNET,0.0,mpnet | xlnet,0.0,electronic health records | biobert,0.0,1,https://github.com/microsoft/MPNet,,,,,,,,,,,,mpnet | xlnet,"PIPE_CLEANED,CAPITALIZED"
+36879020,linkedin,0.0,,0.0,linkedin,0.0,1,https://www.linkedin.com/,,,,,,,,,,,,linkedin,
+36272818,PNATDB (pronab),0.0,pnatdb,0.0,protein-nucleic acid thermodynamics database,0.0,1,http://pronab.ibab.ac.in/pnatdb/,,,,,,,,,,,,pnatdb,"CAPITALIZED,DISAMBIGUATED"
+36224012,science citation index expanded,0.0,,0.0,science citation index expanded | citespace,0.0,1,https://clarivate.com/webofsciencegroup/solutions/web-of-science-core-collection/,,,,,,,,,,,,science citation index expanded | citespace,PIPE_CLEANED
+37960750,citespace,0.0,,0.0,citespace | vosviewer,0.0,1,https://www.vosviewer.com/,,,,,,,,,,,,citespace | vosviewer,PIPE_CLEANED
+38813150,COD,0.0,cod,0.0,,0.0,1,http://www.crystallography.net/cod/,,,,,,,,,,,,cod,CAPITALIZED
+39812750,linkedomicskb,0.0,,0.0,linkedomicskb | human protein atlas,0.0,1,https://linkedomics.org/login.php,,,,,,,,,,,,linkedomicskb | human protein atlas,PIPE_CLEANED
+36896468,t-dnas,0.0,t-dnas,0.0,,0.0,1,http://signal.salk.edu/cgi-bin/tdnaexpress,,,,,,,,,,,,t-dnas,
+37289767,FEWREL,0.0,fewrel,0.0,,0.0,1,https://github.com/thunlp/FewRel,,,,,,,,,,,,fewrel,CAPITALIZED
+37748671,ostreopsis and gambierdiscus,0.0,,0.0,ostreopsis and gambierdiscus,0.0,1,http://haedat.iode.org/,,,,,,,,,,,,ostreopsis and gambierdiscus,
+37748672,endocrine-disrupting chemicals,0.0,,0.0,endocrine-disrupting chemicals,0.0,1,http://www.deduct.in/,,,,,,,,,,,,endocrine-disrupting chemicals,

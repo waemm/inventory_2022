@@ -1,0 +1,38 @@
+pmid,current_best_name,issue_category,evidence_from_title,evidence_from_url,best_common,best_full,suggested_name,confidence,notes
+33590862,org,SHORT_LOWERCASE,'org' found in title,Domain: timkahlke,org,,org,LOW,No better alternative found
+27899667,SEEK (snp-seek),HAS_BRACKETS,Potential: 'Rice SNP-seek database update',Domain: snp-seek,seek,,Rice SNP,MEDIUM,Extracted from title
+29122012,TO,VERY_SHORT,'TO' found in title,Domain: bioportal,to,,Drug,MEDIUM,Extracted from title
+25392408,Genomics (genome-cancer),HAS_BRACKETS,Potential: 'The UCSC Cancer Genomics Browser',Domain: genome-cancer,,genomics,The UCSC Cancer Genomics Browser,MEDIUM,Extracted from title
+"27899567, 30395331",GO,VERY_SHORT,'GO' found in title,Domain: geneontology,go,,Expansion,MEDIUM,Extracted from title
+25428369,GO,VERY_SHORT,'GO' found in title,Domain: geneontology,go,,Gene Ontology Consortium,MEDIUM,Extracted from title
+33008298,Database (pgl),HAS_BRACKETS,Potential: 'Database',Domain: pgl,,database,Database,MEDIUM,Extracted from title
+25990738,3dgb,SHORT_LOWERCASE,,Domain: 3dgb,3,,3dgb,LOW,No better alternative found
+23721660,IM,VERY_SHORT,'IM' found in title,Domain: bioinformatics,im,,IM,LOW,No better alternative found
+23748957,CSC (sysbio),HAS_BRACKETS,Potential: 'The UCSC Interaction Browser',Domain: sysbio,csc,,The UCSC Interaction Browser,MEDIUM,Extracted from title
+31100356,ase,SHORT_LOWERCASE,'ase' found in title,Domain: gear-base,ase,,Integrating Culture,MEDIUM,Extracted from title
+27863463,EQ,VERY_SHORT,'EQ' found in title,Domain: ccg,eq,,The ChIP,MEDIUM,Extracted from title
+34788390,RNA (plantcircrna),HAS_BRACKETS,,Domain: plantcircrna,rna,,RNA (plantcircrna),LOW,No better alternative found
+29363422,Transcriptome (matsui-lab),HAS_BRACKETS,,Domain: matsui-lab,,transcriptome,Construction,MEDIUM,Extracted from title
+24767513,t4.0,SHORT_LOWERCASE,'t4.0' found in title,Domain: jcvi,t4.0,,Medicago,MEDIUM,Extracted from title
+31776723,AX,VERY_SHORT,'AX' found in title,Domain: syntenybrowser,ax,,The JAX Synteny Browser,MEDIUM,Extracted from title
+29982559,Database (nksingh),HAS_BRACKETS,,Domain: nksingh,,database,Oryza,MEDIUM,Extracted from title
+28185543,tlas,SHORT_LOWERCASE,'tlas' found in title,Domain: www-labgtp,tlas,,An Atlas,MEDIUM,Extracted from title
+24271392,PORTAL (networks),HAS_BRACKETS,Potential: 'Network portal',Domain: networks,portal,,Network,MEDIUM,Extracted from title
+29040688,Proteome (iomics),HAS_BRACKETS,Potential: 'The online Tabloid Proteome',Domain: iomics,,proteome,Tabloid Proteome,MEDIUM,Extracted from title
+24265219,Target Database (bidd),HAS_BRACKETS,Potential: 'Therapeutic target database update 2014',Domain: bidd,,target database,Therapeutic,MEDIUM,Extracted from title
+29527288,GXB (breastcancer),HAS_BRACKETS,,Domain: breastcancer,gxb,,GXB (breastcancer),LOW,No better alternative found
+31290545,GXB (ige),HAS_BRACKETS,,Domain: ige,gxb,,GXB (ige),LOW,No better alternative found
+28413616,GXB (ivf),HAS_BRACKETS,,Domain: ivf,gxb,,GXB (ivf),LOW,No better alternative found
+"27158451, 27158452",GXB (monocyte),HAS_BRACKETS,,Domain: monocyte,gxb,,GXB (monocyte),LOW,No better alternative found
+31559014,GXB (pid),HAS_BRACKETS,,Domain: pid,gxb,,GXB (pid),LOW,No better alternative found
+31711193,COSMIC (cr10),HAS_BRACKETS,,Domain: cr10,cosmic,,CR10,MEDIUM,Extracted from title
+28180281,Mirbase (wwwdev),HAS_BRACKETS,,Domain: wwwdev,,mirbase,Large,MEDIUM,Extracted from title
+23874379,Saccharomyces Genome Database (cobi),HAS_BRACKETS,,Domain: cobi,,saccharomyces genome database,Saccharomyces Genome Database (cobi),LOW,No better alternative found
+31942161,SIBBR (ipt),HAS_BRACKETS,,Domain: ipt,sibbr,,Harvestmen,MEDIUM,Extracted from title
+28859252,ZENODO (bluebox),HAS_BRACKETS,,Domain: bluebox,zenodo,,Open,MEDIUM,Extracted from title
+33555347,BR,VERY_SHORT,Potential: 'DNA G-quadruplexes for native mass spectrometry in potassium',Domain: ericlarg4,br,,DNA G,MEDIUM,Extracted from title
+30846902,ZENODO (trivellone),HAS_BRACKETS,,Domain: trivellone,zenodo,,Hemiptera,MEDIUM,Extracted from title
+32941026,PX,VERY_SHORT,Potential: 'Non-Covalent Interactions Atlas Benchmark Data Sets 2',Domain: nciatlas,px,,Covalent Interactions Atlas Benchmark Data Sets,MEDIUM,Extracted from title
+27134731,GEO (hiv),HAS_BRACKETS,,Domain: hiv,geo | gxb,gene expression omnibus,gene expression omnibus,HIGH,From best_full
+33068406,COSMIC (score),HAS_BRACKETS,Potential: 'Project Score database',Domain: score,cosmic,uniprot,Project Score,MEDIUM,Extracted from title
+25630311,A Large-scale (ball),HAS_BRACKETS,,Domain: ball,,a large-scale,Chinese,MEDIUM,Extracted from title

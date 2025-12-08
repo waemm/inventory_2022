@@ -1,0 +1,163 @@
+================================================================================
+BEST NAME QUALITY CONTROL - ROWS 1001-1500 SUMMARY
+================================================================================
+
+ANALYSIS OVERVIEW
+-----------------
+Total Rows Analyzed:  500
+Rows Flagged:         37 (7.4%)
+Clean Rows:           463 (92.6%)
+
+ISSUE CATEGORIES
+----------------
+1. HAS_BRACKETS       24 cases (64.9%)  - Parenthetical disambiguation
+2. VERY_SHORT          8 cases (21.6%)  - 1-2 character acronyms
+3. SHORT_LOWERCASE     5 cases (13.5%)  - Generic short names
+
+================================================================================
+TOP ISSUES REQUIRING IMMEDIATE ATTENTION
+================================================================================
+
+PRIORITY 1: Version Number as Name
+-----------------------------------
+PMID: 24767513
+Current:  t4.0
+Problem:  This is a version number, not a resource name!
+Title:    "Medicago..." (truncated in data)
+Action:   REPLACE with actual resource name
+
+PRIORITY 2: Generic Domain Suffix
+----------------------------------
+PMID: 33590862
+Current:  org
+Problem:  Too generic - this is a domain suffix
+Title:    "long-read-tools.org: an interactive catalogue..."
+Action:   Use "long-read-tools" or full name from title
+
+PRIORITY 3: High-Confidence Alternative Available
+--------------------------------------------------
+PMID: 27134731
+Current:  GEO (hiv)
+Fix:      gene expression omnibus
+Evidence: Both best_common AND best_full agree
+Action:   APPLY THIS FIX IMMEDIATELY
+
+================================================================================
+ACRONYM EXPANSION NEEDED
+================================================================================
+
+Gene Ontology (appears 3 times)
+--------------------------------
+PMIDs: 27899567, 30395331, 25428369
+Current: GO
+Status:  Acceptable if widely recognized, but consider expansion
+Action:  Keep as "GO" OR expand to "Gene Ontology"
+
+Other 2-Letter Acronyms
+-----------------------
+TO (29122012)  - Drug Target Ontology → Expand to "Drug Target Ontology"
+IM (23721660)  - Unclear → Extract from title
+EQ (27863463)  - Unclear → Extract from title  
+AX (31776723)  - JAX Synteny Browser → Use "JAX Synteny Browser"
+BR (33555347)  - Unclear → Extract from title
+PX (32941026)  - Unclear → Extract from title
+
+================================================================================
+PARENTHETICAL DISAMBIGUATION PATTERNS
+================================================================================
+
+Pattern 1: GXB Resource Family (KEEP BRACKETS)
+----------------------------------------------
+These represent different specialized versions:
+- GXB (breastcancer)
+- GXB (ige)
+- GXB (ivf)
+- GXB (monocyte)
+- GXB (pid)
+
+Status: Brackets provide essential disambiguation - KEEP AS IS
+
+Pattern 2: COSMIC Database Variants
+------------------------------------
+- COSMIC (cr10)
+- COSMIC (score)
+
+Status: Review whether release info belongs in name
+
+Pattern 3: Repository-Specific Datasets
+----------------------------------------
+- ZENODO (bluebox)
+- ZENODO (trivellone)
+- SIBBR (ipt)
+
+Status: Brackets indicate specific dataset/depositor - KEEP
+
+Pattern 4: Context-Specific Versions
+------------------------------------
+- SEEK (snp-seek)       → Consider "SNP-SEEK" or full name
+- Genomics (genome-cancer) → Consider "UCSC Cancer Genomics Browser"
+- Database (pgl)        → Too generic, needs better name
+
+================================================================================
+QUALITY OBSERVATIONS
+================================================================================
+
+STRENGTHS
+---------
+✓ 92.6% of names are clean and well-formatted
+✓ Consistent capitalization across most entries
+✓ Meaningful use of disambiguation in most cases
+✓ Proper handling of complex/compound names
+
+WEAKNESSES
+----------
+✗ Some overly generic names (org, database)
+✗ Version numbers used as names (t4.0)
+✗ Ultra-short acronyms without context (2-letter codes)
+✗ Inconsistent treatment of similar resources
+
+================================================================================
+ACTIONABLE RECOMMENDATIONS
+================================================================================
+
+IMMEDIATE (Do Now)
+------------------
+1. Fix PMID 24767513: t4.0 → proper resource name
+2. Fix PMID 33590862: org → long-read-tools or similar
+3. Fix PMID 27134731: GEO (hiv) → gene expression omnibus
+
+SHORT TERM (This Week)
+----------------------
+4. Expand all 2-letter acronyms to full names
+5. Standardize Gene Ontology references (GO vs full name)
+6. Review COSMIC and SEEK variants for naming consistency
+
+MEDIUM TERM (This Month)
+-------------------------
+7. Develop naming guidelines for parenthetical disambiguation
+8. Create policy for acronym usage (when acceptable vs when to expand)
+9. Review all "Database (...)" patterns for better naming
+
+LONG TERM (Future)
+------------------
+10. Implement automated QC checks for future entries
+11. Create resource family documentation (GXB, COSMIC, etc.)
+12. Establish version/variant naming conventions
+
+================================================================================
+OUTPUT FILES
+================================================================================
+
+1. QC Results CSV:
+   unified_bioresource_pipeline/post_processing/results/best_name_qc_rows_1001_1500.csv
+   → Contains all 37 flagged entries with evidence and suggestions
+
+2. Detailed Report:
+   unified_bioresource_pipeline/post_processing/results/best_name_qc_analysis_report_1001_1500.md
+   → Full analysis with examples and recommendations
+
+3. Analysis Script:
+   unified_bioresource_pipeline/post_processing/analyze_best_name_qc_1001_1500.py
+   → Reusable Python script for other row ranges
+
+================================================================================

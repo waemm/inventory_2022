@@ -1,0 +1,110 @@
+╔═══════════════════════════════════════════════════════════════════════════╗
+║                  BEST NAME QC ANALYSIS - ROWS 1001-1500                   ║
+║                          Quick Reference Summary                          ║
+╚═══════════════════════════════════════════════════════════════════════════╝
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│                            OVERALL RESULTS                                │
+└───────────────────────────────────────────────────────────────────────────┘
+
+    Total Analyzed: 500 rows
+    ✓ Clean:        463 rows (92.6%)  ████████████████████░░
+    ⚠ Flagged:       37 rows (7.4%)   ██░░░░░░░░░░░░░░░░░░░░
+
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│                          ISSUE BREAKDOWN                                  │
+└───────────────────────────────────────────────────────────────────────────┘
+
+    HAS_BRACKETS:      24 issues (64.9%)  ████████████████░░░░░░░░
+    VERY_SHORT:         8 issues (21.6%)  █████░░░░░░░░░░░░░░░░░░░
+    SHORT_LOWERCASE:    5 issues (13.5%)  ███░░░░░░░░░░░░░░░░░░░░░
+
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│                      🔥 TOP 3 CRITICAL ISSUES                             │
+└───────────────────────────────────────────────────────────────────────────┘
+
+  1. PMID 24767513: "t4.0"
+     → VERSION NUMBER used as resource name! 
+     → ACTION: Extract actual name from title
+
+  2. PMID 33590862: "org"  
+     → Too generic (domain suffix)
+     → ACTION: Use "long-read-tools" or full title name
+
+  3. PMID 27134731: "GEO (hiv)"
+     → HIGH confidence fix available
+     → ACTION: Change to "gene expression omnibus"
+
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│                      📊 PATTERN ANALYSIS                                  │
+└───────────────────────────────────────────────────────────────────────────┘
+
+  Gene Ontology (GO)    - Appears 3 times
+  ├─ Status: Widely recognized acronym
+  └─ Action: Decide on standard (GO vs. Gene Ontology)
+
+  GXB Resource Family   - 5 specialized versions
+  ├─ GXB (breastcancer), GXB (ige), GXB (ivf), etc.
+  └─ Status: ✓ Brackets needed for disambiguation
+
+  COSMIC Variants       - 2 different releases
+  ├─ COSMIC (cr10), COSMIC (score)
+  └─ Status: ⚠ Review naming convention
+
+  2-Letter Acronyms     - 6 cases need expansion
+  └─ TO, IM, EQ, AX, BR, PX
+
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│                      📁 OUTPUT FILES                                      │
+└───────────────────────────────────────────────────────────────────────────┘
+
+  Main Results (CSV):
+    └─ best_name_qc_rows_1001_1500.csv
+       All 37 flagged entries with evidence & suggestions
+
+  Detailed Report (Markdown):
+    └─ best_name_qc_analysis_report_1001_1500.md
+       In-depth analysis with examples
+
+  Analysis Script (Python):
+    └─ analyze_best_name_qc_1001_1500.py
+       Reusable for other row ranges
+
+  Quick Summary (Text):
+    └─ best_name_qc_summary.txt
+       Action items and priorities
+
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│                      ✅ IMMEDIATE ACTION ITEMS                            │
+└───────────────────────────────────────────────────────────────────────────┘
+
+  [ ] Fix version number: t4.0 → extract resource name
+  [ ] Fix generic name: org → proper name from title  
+  [ ] Apply high-confidence fix: GEO (hiv) → gene expression omnibus
+  [ ] Decide Gene Ontology standard (GO vs full name)
+  [ ] Expand 6 two-letter acronyms
+  [ ] Review 24 bracketed names for consistency
+
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│                      🎯 QUALITY SCORE                                     │
+└───────────────────────────────────────────────────────────────────────────┘
+
+                          92.6% CLEAN RATE
+                    
+                    ███████████████████░
+                    Excellent Quality!
+
+    Most names are well-formatted and meaningful.
+    Only 7.4% require attention.
+
+
+╔═══════════════════════════════════════════════════════════════════════════╗
+║  All files located in:                                                    ║
+║  unified_bioresource_pipeline/post_processing/results/                    ║
+╚═══════════════════════════════════════════════════════════════════════════╝

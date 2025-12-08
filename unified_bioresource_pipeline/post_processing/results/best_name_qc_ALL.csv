@@ -1,0 +1,112 @@
+pmid,current_best_name,issue_category,evidence_from_title,evidence_from_url,best_common,best_full,suggested_name,confidence,notes
+"22075998, 23193274, 23448259",ENCODE (genome),HAS_BRACKETS,ENCODE; UCSC; ENCODE,genome; genome,encode,,ENCODE,HIGH,Name contains parentheses - needs cleanup; Title evidence: ENCODE; UCSC; ENCODE; URL evidence: genome; genome
+"21948793, 26578601, 29140520",Therapeutic Target Database (bidd),HAS_BRACKETS,,bidd; bidd; group,,therapeutic target database,Therapeutic Target Database,HIGH,Name contains parentheses - needs cleanup; URL evidence: bidd; bidd; group
+"25685613, 27899642",CSC (genome),HAS_BRACKETS,UCSC; UCSC,genome; genome; ebolaportal,csc,,UCSC,HIGH,Name contains parentheses - needs cleanup; Title evidence: UCSC; UCSC; URL evidence: genome; genome; ebolaportal
+"24574175, 25159016, 26227301, 25407602, 26351202",Proteomexchange (proteomecentral),HAS_BRACKETS,LC-MS; PCC6803,proteomecentral; proteomecentral; dataset,,proteomexchange,LC-MS,HIGH,Name contains parentheses - needs cleanup; Title evidence: LC-MS; PCC6803; URL evidence: proteomecentral; proteomecentral; dataset
+32477412,EQTL (asan),HAS_BRACKETS,,asan; asan,eqtl,,EQTL,HIGH,Name contains parentheses - needs cleanup; URL evidence: asan; asan
+22718978,ice,SHORT_LOWERCASE,JBEI-ICE,,ice,,JBEI-ICE,HIGH,Short lowercase word - likely generic term; Title evidence: JBEI-ICE
+27794551,HIPPIE (cbdm),HAS_BRACKETS,HIPPIE,cbdm; cbdm; hippie,hippie,,HIPPIE,HIGH,Name contains parentheses - needs cleanup; Title evidence: HIPPIE; URL evidence: cbdm; cbdm; hippie
+26228432,OCDB (alpha),HAS_BRACKETS,OCDB,alpha; alpha; ocdb,ocdb,,OCDB,HIGH,Name contains parentheses - needs cleanup; Title evidence: OCDB; URL evidence: alpha; alpha; ocdb
+30553813,Cellminercdb (discover),HAS_BRACKETS,,discover; discover; cellminercdb,,cellminercdb,Cellminercdb,HIGH,Name contains parentheses - needs cleanup; URL evidence: discover; discover; cellminercdb
+33988716,EDGAR (edgar3),HAS_BRACKETS,EDGAR3.0,edgar3; edgar3,edgar,,EDGAR3.0,HIGH,Name contains parentheses - needs cleanup; Title evidence: EDGAR3.0; URL evidence: edgar3; edgar3
+22776072,DMD (edystrophin),HAS_BRACKETS,DMD,edystrophin; edystrophin,dmd,,DMD,HIGH,Name contains parentheses - needs cleanup; Title evidence: DMD; URL evidence: edystrophin; edystrophin
+26602693,TCGA (bioinformatics),HAS_BRACKETS,,bioinformatics; bioinformatics; tcgaspliceseq,tcga,,TCGA,HIGH,Name contains parentheses - needs cleanup; URL evidence: bioinformatics; bioinformatics; tcgaspliceseq
+22348130,HIPPIE (cbdm),HAS_BRACKETS,HIPPIE,cbdm; cbdm; tools,hippie,,HIPPIE,HIGH,Name contains parentheses - needs cleanup; Title evidence: HIPPIE; URL evidence: cbdm; cbdm; tools
+24517501,Snpchimp (bioinformatics),HAS_BRACKETS,,bioinformatics; bioinformatics; snpchimp,,snpchimp,Snpchimp,HIGH,Name contains parentheses - needs cleanup; URL evidence: bioinformatics; bioinformatics; snpchimp
+23866767,acutrials(R),HAS_BRACKETS,,acutrials; acutrials,,acutrials®,Acutrials®,HIGH,Name contains parentheses - needs cleanup; URL evidence: acutrials; acutrials
+25881165,Snpchimp (bioinformatics),HAS_BRACKETS,SNPchiMp v.3,bioinformatics.tecnoparco.org / SNPchimp,,snpchimp,Snpchimp (bioinformatics),HIGH,Bracket analysis: KEEP_BRACKETS
+33408850,DB,VERY_SHORT,<i>Vf</i>ODB; ODB; EST,vfodb.easyomics.org / ,db,,<i>Vf</i>ODB,MEDIUM,
+24243849,P(3)db,HAS_BRACKETS,P³DB 3.0,p3db.org / ,p(3)db,,P,HIGH,Bracket analysis: REMOVE_BRACKETS
+25516408,Mitimpact (bioinformatics),HAS_BRACKETS,MitImpact,bioinformatics.css-mendel.it / ,,mitimpact,Mitimpact (bioinformatics),HIGH,Bracket analysis: KEEP_BRACKETS
+33172432,ophthatome(TM),HAS_BRACKETS,Ophthatome™,demo.ophthatome.com / ,,ophthatome™,ophthatome,HIGH,Bracket analysis: REMOVE_BRACKETS
+26087378,Schizconnect (central),HAS_BRACKETS,Northwestern University schizophrenia data sharing for SchizConnect,central.xnat.org / ,,schizconnect,Schizconnect (central),HIGH,Bracket analysis: KEEP_BRACKETS
+29561219,4s,VERY_SHORT,The network of Shanghai Stroke Service System (4S),clinicaltrials.gov / ,4s,,The network of Shanghai Stroke Service System (4S),MEDIUM,
+33590862,org,SHORT_LOWERCASE,'org' found in title,Domain: timkahlke,org,,org,LOW,No better alternative found
+27899667,SEEK (snp-seek),HAS_BRACKETS,Potential: 'Rice SNP-seek database update',Domain: snp-seek,seek,,Rice SNP,MEDIUM,Extracted from title
+29122012,TO,VERY_SHORT,'TO' found in title,Domain: bioportal,to,,Drug,MEDIUM,Extracted from title
+25392408,Genomics (genome-cancer),HAS_BRACKETS,Potential: 'The UCSC Cancer Genomics Browser',Domain: genome-cancer,,genomics,The UCSC Cancer Genomics Browser,MEDIUM,Extracted from title
+"27899567, 30395331",GO,VERY_SHORT,'GO' found in title,Domain: geneontology,go,,Expansion,MEDIUM,Extracted from title
+25428369,GO,VERY_SHORT,'GO' found in title,Domain: geneontology,go,,Gene Ontology Consortium,MEDIUM,Extracted from title
+33008298,Database (pgl),HAS_BRACKETS,Potential: 'Database',Domain: pgl,,database,Database,MEDIUM,Extracted from title
+25990738,3dgb,SHORT_LOWERCASE,,Domain: 3dgb,3,,3dgb,LOW,No better alternative found
+23721660,IM,VERY_SHORT,'IM' found in title,Domain: bioinformatics,im,,IM,LOW,No better alternative found
+23748957,CSC (sysbio),HAS_BRACKETS,Potential: 'The UCSC Interaction Browser',Domain: sysbio,csc,,The UCSC Interaction Browser,MEDIUM,Extracted from title
+31100356,ase,SHORT_LOWERCASE,'ase' found in title,Domain: gear-base,ase,,Integrating Culture,MEDIUM,Extracted from title
+27863463,EQ,VERY_SHORT,'EQ' found in title,Domain: ccg,eq,,The ChIP,MEDIUM,Extracted from title
+34788390,RNA (plantcircrna),HAS_BRACKETS,,Domain: plantcircrna,rna,,RNA (plantcircrna),LOW,No better alternative found
+29363422,Transcriptome (matsui-lab),HAS_BRACKETS,,Domain: matsui-lab,,transcriptome,Construction,MEDIUM,Extracted from title
+24767513,t4.0,SHORT_LOWERCASE,'t4.0' found in title,Domain: jcvi,t4.0,,Medicago,MEDIUM,Extracted from title
+31776723,AX,VERY_SHORT,'AX' found in title,Domain: syntenybrowser,ax,,The JAX Synteny Browser,MEDIUM,Extracted from title
+29982559,Database (nksingh),HAS_BRACKETS,,Domain: nksingh,,database,Oryza,MEDIUM,Extracted from title
+28185543,tlas,SHORT_LOWERCASE,'tlas' found in title,Domain: www-labgtp,tlas,,An Atlas,MEDIUM,Extracted from title
+24271392,PORTAL (networks),HAS_BRACKETS,Potential: 'Network portal',Domain: networks,portal,,Network,MEDIUM,Extracted from title
+29040688,Proteome (iomics),HAS_BRACKETS,Potential: 'The online Tabloid Proteome',Domain: iomics,,proteome,Tabloid Proteome,MEDIUM,Extracted from title
+24265219,Target Database (bidd),HAS_BRACKETS,Potential: 'Therapeutic target database update 2014',Domain: bidd,,target database,Therapeutic,MEDIUM,Extracted from title
+29527288,GXB (breastcancer),HAS_BRACKETS,,Domain: breastcancer,gxb,,GXB (breastcancer),LOW,No better alternative found
+31290545,GXB (ige),HAS_BRACKETS,,Domain: ige,gxb,,GXB (ige),LOW,No better alternative found
+28413616,GXB (ivf),HAS_BRACKETS,,Domain: ivf,gxb,,GXB (ivf),LOW,No better alternative found
+"27158451, 27158452",GXB (monocyte),HAS_BRACKETS,,Domain: monocyte,gxb,,GXB (monocyte),LOW,No better alternative found
+31559014,GXB (pid),HAS_BRACKETS,,Domain: pid,gxb,,GXB (pid),LOW,No better alternative found
+31711193,COSMIC (cr10),HAS_BRACKETS,,Domain: cr10,cosmic,,CR10,MEDIUM,Extracted from title
+28180281,Mirbase (wwwdev),HAS_BRACKETS,,Domain: wwwdev,,mirbase,Large,MEDIUM,Extracted from title
+23874379,Saccharomyces Genome Database (cobi),HAS_BRACKETS,,Domain: cobi,,saccharomyces genome database,Saccharomyces Genome Database (cobi),LOW,No better alternative found
+31942161,SIBBR (ipt),HAS_BRACKETS,,Domain: ipt,sibbr,,Harvestmen,MEDIUM,Extracted from title
+28859252,ZENODO (bluebox),HAS_BRACKETS,,Domain: bluebox,zenodo,,Open,MEDIUM,Extracted from title
+33555347,BR,VERY_SHORT,Potential: 'DNA G-quadruplexes for native mass spectrometry in potassium',Domain: ericlarg4,br,,DNA G,MEDIUM,Extracted from title
+30846902,ZENODO (trivellone),HAS_BRACKETS,,Domain: trivellone,zenodo,,Hemiptera,MEDIUM,Extracted from title
+32941026,PX,VERY_SHORT,Potential: 'Non-Covalent Interactions Atlas Benchmark Data Sets 2',Domain: nciatlas,px,,Covalent Interactions Atlas Benchmark Data Sets,MEDIUM,Extracted from title
+27134731,GEO (hiv),HAS_BRACKETS,,Domain: hiv,geo | gxb,gene expression omnibus,gene expression omnibus,HIGH,From best_full
+33068406,COSMIC (score),HAS_BRACKETS,Potential: 'Project Score database',Domain: score,cosmic,uniprot,Project Score,MEDIUM,Extracted from title
+25630311,A Large-scale (ball),HAS_BRACKETS,,Domain: ball,,a large-scale,Chinese,MEDIUM,Extracted from title
+27303626,GEO (placentalendocrinology),HAS_BRACKETS,A curated transcriptome dataset collection to investigate the development and differentiation of the,domain:placentalendocrinology.gxbsidra | path:dm3/landing.gsp,geo,gene expression omnibus,geo,HIGH,Using best_common as alternative
+33858332,TCGA (manticore),HAS_BRACKETS,Predicting tumor response to drugs based on gene-expression biomarkers of sensitivity learned from c,domain:manticore.niehs.nih | path:cancerRxTissue,tcga,the cancer genome atlas,tcga,HIGH,Using best_common as alternative
+30783007,PDB (ifr48),HAS_BRACKETS,"An Integrative Database of β-Lactamase Enzymes: Sequences, Structures, Functions, and Phylogenetic T",domain:ifr48.timone.univ-mrs | path:beta-lactamase/public,pdb,,pdb,HIGH,Using best_common as alternative
+28195585,GBIF (science),HAS_BRACKETS,The French Muséum national d'histoire naturelle vascular plant herbarium collection dataset.,domain:science.mnhn | path:institution/mnhn/collection,gbif,,gbif,HIGH,Using best_common as alternative
+34323935,Prokaryotes (toolkit),HAS_BRACKETS,An astonishing wealth of new proteasome homologs.,domain:toolkit.tuebingen.mpg,,prokaryotes,prokaryotes,MEDIUM,Using best_full as alternative
+26040196,Prokaryotes (mlsa),HAS_BRACKETS,A database for the taxonomic and phylogenetic identification of the genus Bradyrhizobium using multi,domain:mlsa.cnpso.embrapa.br,,prokaryotes,prokaryotes,MEDIUM,Using best_full as alternative
+23192551,Genbank (hiv),HAS_BRACKETS,Viral genome analysis and knowledge management.,domain:hiv.lanl,,genbank,genbank,MEDIUM,Using best_full as alternative
+22080509,Genbank (webapps2),HAS_BRACKETS,Database for bacterial group II introns.,domain:webapps2.ucalgary.ca | path:~groupii/index.html,,genbank,genbank,MEDIUM,Using best_full as alternative
+28934507,GEO (134),HAS_BRACKETS,"A comprehensive, cell specific microRNA catalogue of human peripheral blood.",domain:134.245.63.235 | path:ikmb-tools/bloodmiRs,geo,,geo,HIGH,Using best_common as alternative
+33166149,Proteomexchange (massive),"HAS_BRACKETS,WRONG_EXTRACTION",uppercase:HUPO,domain:massive.ucsd,,proteomexchange,proteomexchange,MEDIUM,Using best_full as alternative
+32284610,Prokaryotes (meltomeatlas),HAS_BRACKETS,Meltome atlas-thermal proteome stability across the tree of life.,domain:meltomeatlas.proteomics.wzw.tum.de:5003,,prokaryotes,prokaryotes,MEDIUM,Using best_full as alternative
+29605928,CHEBI,WRONG_EXTRACTION,uppercase:EMBL-EBI,domain:ebi.ac | path:complexportal,chebi,uniprotkb | rnacentral,chebi,HIGH,Using best_common as alternative
+24234439,CHEMBL,WRONG_EXTRACTION,"uppercase:IUPHAR,BPS,PHARMACOLOGY",domain:guidetopharmacology,chembl,drugbank | ensembl | pubchem | uniprot,chembl,HIGH,Using best_common as alternative
+24792157,STRING,WRONG_EXTRACTION,uppercase:SIB,domain:isb-sib.ch,string,uniprotkb,string,HIGH,Using best_common as alternative
+25977788,Uniprotkb,WRONG_EXTRACTION,uppercase:SWATH-MS,domain:openswath,,uniprotkb | proteomexchange,uniprotkb | proteomexchange,MEDIUM,Using best_full as alternative
+"22970177, 28776320, 32003691, 34969046",NCT00931216,WRONG_EXTRACTION,"uppercase:HIV,NMS,HIV",domain:clinicaltrials | path:ct2/show/NCT00931216,,,HIV,MEDIUM,Extracted from title (uppercase)
+"26132000, 28578176, 33905618",Phenxtoolkit,WRONG_EXTRACTION,uppercase:COVID-19,domain:phenxtoolkit,,,COVID-19,MEDIUM,Extracted from title (uppercase)
+26968569,IR_spectra,WRONG_EXTRACTION,uppercase:ATR-FT-IR,domain:tera.chem.ut.ee | path:IR_spectra,,,ATR-FT-IR,MEDIUM,Extracted from title (uppercase)
+32572450,DRAFC,WRONG_EXTRACTION,uppercase:AFC,domain:biosino | path:drafc,,,AFC,MEDIUM,Extracted from title (uppercase)
+30999846,Melanoma (khaos),"HAS_BRACKETS,WRONG_EXTRACTION",uppercase:VIGLA-M,domain:khaos.uma.es | path:melanoma,,,VIGLA-M,MEDIUM,KNOWN_ISSUE: Melanoma (khaos) - title says VIGLA-M; Extracted from title (uppercase)
+34048576,Covid19dataportal,WRONG_EXTRACTION,"uppercase:COVID-19,SARS-,COVID-19",domain:covid19dataportal,,,COVID-19,MEDIUM,Extracted from title (uppercase)
+21990165,LOVD (brca),"HAS_BRACKETS,WRONG_EXTRACTION",uppercase:BRCA,domain:brca.iarc | path:LOVD,,,BRCA,MEDIUM,Extracted from title (uppercase)
+31329239,Caliberresearch,WRONG_EXTRACTION,uppercase:CALIBER,domain:caliberresearch | path:portal,,,CALIBER,MEDIUM,Extracted from title (uppercase)
+32838343,Covid19 (amp),"HAS_BRACKETS,WRONG_EXTRACTION",uppercase:COVID-19,domain:amp.pharm.mssm | path:covid19,,,COVID-19,MEDIUM,Extracted from title (uppercase)
+21929785,PRO (pir),"HAS_BRACKETS,WRONG_EXTRACTION",uppercase:PRO,domain:pir.georgetown | path:pro,,,PRO,MEDIUM,Extracted from title (uppercase)
+26616131,Hubzero,WRONG_EXTRACTION,uppercase:HIV,domain:hubzero,,,HIV,MEDIUM,Extracted from title (uppercase)
+33858848,Hla-ligand-atlas,WRONG_EXTRACTION,"uppercase:HLA,HLA-",domain:hla-ligand-atlas,,,HLA,MEDIUM,Extracted from title (uppercase)
+33564397,Covid-19-diagnostics,WRONG_EXTRACTION,uppercase:COVID-19,domain:covid-19-diagnostics.jrc.ec.europa.eu,,,COVID-19,MEDIUM,Extracted from title (uppercase)
+21669962,Daikon,WRONG_EXTRACTION,uppercase:EST-SSR,domain:marker.kazusa.or.jp | path:Daikon,,,EST-SSR,MEDIUM,Extracted from title (uppercase)
+34613368,Covid19kg,WRONG_EXTRACTION,uppercase:COVID-19,domain:research.bioinformatics.udel | path:covid19kg,,,COVID-19,MEDIUM,Extracted from title (uppercase)
+33630831,Mrcppu-covid,WRONG_EXTRACTION,"uppercase:DNA-,SARS-,COVID-19",domain:mrcppu-covid.bio,,,DNA-,MEDIUM,Extracted from title (uppercase)
+31959765,Ccafs-climate,WRONG_EXTRACTION,uppercase:CMIP5,domain:ccafs-climate,,,CMIP5,MEDIUM,Extracted from title (uppercase)
+31341169,Crctcell,WRONG_EXTRACTION,uppercase:RNA,domain:crctcell.cancer-pku.cn,,,RNA,MEDIUM,Extracted from title (uppercase)
+34292965,265,NUMERIC_ONLY,Developing a core outcome set for periodontal trials.,domain:comet-initiative | path:studies/details,,,MANUAL_REVIEW_NEEDED,LOW,KNOWN_ISSUE: 265 - numeric only from URL; No clear alternative found
+21841810,2d,VERY_SHORT,Proteome reference map and regulation network of neonatal rat cardiomyocyte.,domain:2d.bjmu.edu.cn,,,MANUAL_REVIEW_NEEDED,LOW,KNOWN_ISSUE: 2d - very short from URL domain; No clear alternative found
+24136511,Databases,WRONG_EXTRACTION,"uppercase:MAPA,MASS,WESTERN",domain:univie.ac.at | path:mosys/databases.html,,,MAPA,MEDIUM,Extracted from title (uppercase)
+29152729,Guideline-for-fluoropyrimidines-and-dpyd,WRONG_EXTRACTION,uppercase:CPIC,domain:cpicpgx | path:guidelines/guideline-for-fluoropyrimidines-and-dpyd,,,CPIC,MEDIUM,Extracted from title (uppercase)
+28039431,Database (hpcwebapps),"HAS_BRACKETS,WRONG_EXTRACTION",quoted: rule and minimum Bayes,domain:hpcwebapps.cit.nih | path:ESBL/Database/DUBs,,,MANUAL_REVIEW_NEEDED,LOW,No clear alternative found
+28432803,Brachypodium-t-dna-collection,WRONG_EXTRACTION,"uppercase:JGI,T-DNA",domain:jgi.doe | path:our-science/science-programs/plant-genomics,,,JGI,MEDIUM,Extracted from title (uppercase)
+29680449,Repository,WRONG_EXTRACTION,uppercase:DEB,domain:repository.ddmore.eu,,,DEB,MEDIUM,Extracted from title (uppercase)
+21292723,Alcoholandpregnancy,WRONG_EXTRACTION,uppercase:RE-AIM,domain:ichr.uwa.edu.au | path:alcoholandpregnancy,,,RE-AIM,MEDIUM,Extracted from title (uppercase)
+22114206,Database (helixweb),HAS_BRACKETS,Gene expression databases for kidney epithelial cells.,domain:helixweb.nih | path:ESBL/Database,,,MANUAL_REVIEW_NEEDED,LOW,No clear alternative found
+33455583,BRC,WRONG_EXTRACTION,uppercase:RIKEN,domain:brc.riken.jp,,,RIKEN,MEDIUM,Extracted from title (uppercase)
+34078215,EMBASE,WRONG_EXTRACTION,"uppercase:COVID-19,SARS-,BCG",domain:embase,,,COVID-19,MEDIUM,Extracted from title (uppercase)
+32308920,Vcfclin,WRONG_EXTRACTION,uppercase:VMC,domain:vcfclin,,,VMC,MEDIUM,Extracted from title (uppercase)
+22161327,Yeastgfp,WRONG_EXTRACTION,uppercase:GFP,domain:yeastgfp.yeastgenome,,,GFP,MEDIUM,Extracted from title (uppercase)
+32189629,Rare-book-collection,WRONG_EXTRACTION,uppercase:NYU,domain:dental.nyu | path:aboutus/rare-book-collection.html,,,NYU,MEDIUM,Extracted from title (uppercase)
+26234511,TargetPred,WRONG_EXTRACTION,uppercase:AIMS,domain:bio-aims.udc.es | path:TargetPred.php,,,AIMS,MEDIUM,Extracted from title (uppercase)
+32266012,Repeatbrowser,WRONG_EXTRACTION,uppercase:UCSC,domain:repeatbrowser.ucsc,,,UCSC,MEDIUM,Extracted from title (uppercase)
+34724898,JBrowse-1.16.5,WRONG_EXTRACTION,uppercase:BAC,domain:eightstarsbio | path:gresource/JBrowse-1.16.5/index.html,,,BAC,MEDIUM,Extracted from title (uppercase)
+29092956,Personalizedcancertherapy,WRONG_EXTRACTION,quoted:Personalized Cancer Therapy,domain:personalizedcancertherapy,,,MANUAL_REVIEW_NEEDED,LOW,No clear alternative found
+33683565,Healthy-worm-database,WRONG_EXTRACTION,quoted:healthy worm database,domain:healthy-worm-database.eu,,,MANUAL_REVIEW_NEEDED,LOW,No clear alternative found

@@ -1,0 +1,16 @@
+pmid,current_best_name,issue_category,evidence_from_title,evidence_from_url,best_common,best_full,suggested_name,confidence,notes
+"22075998, 23193274, 23448259",ENCODE (genome),HAS_BRACKETS,ENCODE; UCSC; ENCODE,genome; genome,encode,,ENCODE,HIGH,Name contains parentheses - needs cleanup; Title evidence: ENCODE; UCSC; ENCODE; URL evidence: genome; genome
+"21948793, 26578601, 29140520",Therapeutic Target Database (bidd),HAS_BRACKETS,,bidd; bidd; group,,therapeutic target database,Therapeutic Target Database,HIGH,Name contains parentheses - needs cleanup; URL evidence: bidd; bidd; group
+"25685613, 27899642",CSC (genome),HAS_BRACKETS,UCSC; UCSC,genome; genome; ebolaportal,csc,,UCSC,HIGH,Name contains parentheses - needs cleanup; Title evidence: UCSC; UCSC; URL evidence: genome; genome; ebolaportal
+"24574175, 25159016, 26227301, 25407602, 26351202",Proteomexchange (proteomecentral),HAS_BRACKETS,LC-MS; PCC6803,proteomecentral; proteomecentral; dataset,,proteomexchange,LC-MS,HIGH,Name contains parentheses - needs cleanup; Title evidence: LC-MS; PCC6803; URL evidence: proteomecentral; proteomecentral; dataset
+32477412,EQTL (asan),HAS_BRACKETS,,asan; asan,eqtl,,EQTL,HIGH,Name contains parentheses - needs cleanup; URL evidence: asan; asan
+22718978,ice,SHORT_LOWERCASE,JBEI-ICE,,ice,,JBEI-ICE,HIGH,Short lowercase word - likely generic term; Title evidence: JBEI-ICE
+27794551,HIPPIE (cbdm),HAS_BRACKETS,HIPPIE,cbdm; cbdm; hippie,hippie,,HIPPIE,HIGH,Name contains parentheses - needs cleanup; Title evidence: HIPPIE; URL evidence: cbdm; cbdm; hippie
+26228432,OCDB (alpha),HAS_BRACKETS,OCDB,alpha; alpha; ocdb,ocdb,,OCDB,HIGH,Name contains parentheses - needs cleanup; Title evidence: OCDB; URL evidence: alpha; alpha; ocdb
+30553813,Cellminercdb (discover),HAS_BRACKETS,,discover; discover; cellminercdb,,cellminercdb,Cellminercdb,HIGH,Name contains parentheses - needs cleanup; URL evidence: discover; discover; cellminercdb
+33988716,EDGAR (edgar3),HAS_BRACKETS,EDGAR3.0,edgar3; edgar3,edgar,,EDGAR3.0,HIGH,Name contains parentheses - needs cleanup; Title evidence: EDGAR3.0; URL evidence: edgar3; edgar3
+22776072,DMD (edystrophin),HAS_BRACKETS,DMD,edystrophin; edystrophin,dmd,,DMD,HIGH,Name contains parentheses - needs cleanup; Title evidence: DMD; URL evidence: edystrophin; edystrophin
+26602693,TCGA (bioinformatics),HAS_BRACKETS,,bioinformatics; bioinformatics; tcgaspliceseq,tcga,,TCGA,HIGH,Name contains parentheses - needs cleanup; URL evidence: bioinformatics; bioinformatics; tcgaspliceseq
+22348130,HIPPIE (cbdm),HAS_BRACKETS,HIPPIE,cbdm; cbdm; tools,hippie,,HIPPIE,HIGH,Name contains parentheses - needs cleanup; Title evidence: HIPPIE; URL evidence: cbdm; cbdm; tools
+24517501,Snpchimp (bioinformatics),HAS_BRACKETS,,bioinformatics; bioinformatics; snpchimp,,snpchimp,Snpchimp,HIGH,Name contains parentheses - needs cleanup; URL evidence: bioinformatics; bioinformatics; snpchimp
+23866767,acutrials(R),HAS_BRACKETS,,acutrials; acutrials,,acutrials®,Acutrials®,HIGH,Name contains parentheses - needs cleanup; URL evidence: acutrials; acutrials

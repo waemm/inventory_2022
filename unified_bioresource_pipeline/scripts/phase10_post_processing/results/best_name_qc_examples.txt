@@ -1,0 +1,59 @@
+BEST NAME QUALITY CONTROL - QUICK EXAMPLES
+===========================================
+
+KNOWN PROBLEM CASES (All 3 Found)
+----------------------------------
+✓ PMID 30999846: "Melanoma (khaos)" → VIGLA-M (title has VIGLA-M)
+✓ PMID 34292965: "265" → needs manual review (numeric only)
+✓ PMID 21841810: "2d" → needs manual review (too short)
+
+HIGH CONFIDENCE FIXES (Ready to Apply)
+---------------------------------------
+PMID 27303626: "GEO (placentalendocrinology)" → "geo"
+PMID 33858332: "TCGA (manticore)" → "tcga"
+PMID 30783007: "PDB (ifr48)" → "pdb"
+PMID 28195585: "GBIF (science)" → "gbif"
+PMID 29605928: "CHEBI" → "chebi" (context: EMBL-EBI)
+PMID 24234439: "CHEMBL" → "chembl" (context: IUPHAR/BPS)
+PMID 24792157: "STRING" → "string" (context: SIB)
+PMID 28934507: "GEO (134)" → "geo"
+
+WRONG EXTRACTION - DOMAIN USED INSTEAD OF REAL NAME
+----------------------------------------------------
+PMID 32838343: "Covid19 (amp)" → "COVID-19"
+PMID 34048576: "Covid19dataportal" → "COVID-19"
+PMID 31329239: "Caliberresearch" → "CALIBER"
+PMID 33858848: "Hla-ligand-atlas" → "HLA"
+PMID 33564397: "Covid-19-diagnostics" → "COVID-19"
+PMID 34613368: "Covid19kg" → "COVID-19"
+PMID 21990165: "LOVD (brca)" → "BRCA"
+PMID 26616131: "Hubzero" → "HIV"
+PMID 32572450: "DRAFC" → "AFC"
+PMID 26968569: "IR_spectra" → "ATR-FT-IR"
+
+MANUAL REVIEW NEEDED (6 cases)
+-------------------------------
+PMID 34292965: "265" - periodontal trials, no clear db name
+PMID 21841810: "2d" - proteomics map, domain is 2d.bjmu.edu.cn
+PMID 28039431: "Database (hpcwebapps)" - too generic
+PMID 22114206: "Database (helixweb)" - too generic
+PMID 29092956: "Personalizedcancertherapy" - might be correct
+PMID 33683565: "Healthy-worm-database" - might be correct
+
+PATTERN SUMMARY
+---------------
+1. Bracket contamination (17 cases): Domain suffixes in parentheses
+2. Wrong extraction (39 cases): Domain name used instead of resource name
+3. Generic terms (2 cases): "Database" used as name
+4. Numeric/Short (2 cases): Numbers or 1-2 characters
+
+STATISTICS
+----------
+Total analyzed: 189 rows (rows 1501-1688)
+Flagged: 52 rows (27.5%)
+Clean: 137 rows (72.5%)
+
+Fix confidence:
+  HIGH: 8 (15.4%) - can auto-apply
+  MEDIUM: 38 (73.1%) - need quick review
+  LOW: 6 (11.5%) - need expert review

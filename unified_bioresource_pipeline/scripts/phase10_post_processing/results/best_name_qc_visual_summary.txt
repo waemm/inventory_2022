@@ -1,0 +1,102 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                    BEST NAME QC ANALYSIS - ROWS 1501-1688                    ║
+║                         Final Inventory Analysis                              ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+┌─ OVERALL RESULTS ────────────────────────────────────────────────────────────┐
+│                                                                               │
+│   Total Rows Analyzed:  189                                                  │
+│   Rows Flagged:          52  (27.5%)  ████████████████░░░░░░░░░░░░░░░░░░░░  │
+│   Clean Rows:           137  (72.5%)  ████████████████████████████████████░  │
+│                                                                               │
+└───────────────────────────────────────────────────────────────────────────────┘
+
+┌─ ISSUE TYPES ────────────────────────────────────────────────────────────────┐
+│                                                                               │
+│   WRONG_EXTRACTION    39  (75.0%)  ██████████████████████████████████████░   │
+│   HAS_BRACKETS        17  (32.7%)  ████████████████░░░░░░░░░░░░░░░░░░░░░░   │
+│   NUMERIC_ONLY         1   (1.9%)  █░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░   │
+│   VERY_SHORT           1   (1.9%)  █░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░   │
+│                                                                               │
+│   Note: Some rows have multiple issues                                       │
+│                                                                               │
+└───────────────────────────────────────────────────────────────────────────────┘
+
+┌─ FIX CONFIDENCE ─────────────────────────────────────────────────────────────┐
+│                                                                               │
+│   HIGH    (Auto-Apply Ready)      8  (15.4%)  ████████░░░░░░░░░░░░░░░░░░░░  │
+│   MEDIUM  (Quick Review Needed)  38  (73.1%)  ████████████████████████████░  │
+│   LOW     (Expert Review)         6  (11.5%)  ██████░░░░░░░░░░░░░░░░░░░░░░  │
+│                                                                               │
+└───────────────────────────────────────────────────────────────────────────────┘
+
+┌─ KNOWN PROBLEMS DETECTION ───────────────────────────────────────────────────┐
+│                                                                               │
+│   ✓ PMID 30999846  "Melanoma (khaos)" → VIGLA-M                              │
+│   ✓ PMID 34292965  "265" → Manual Review (numeric only)                      │
+│   ✓ PMID 21841810  "2d" → Manual Review (too short)                          │
+│                                                                               │
+│   Detection Rate: 100% (3/3 found)                                           │
+│                                                                               │
+└───────────────────────────────────────────────────────────────────────────────┘
+
+┌─ TOP PATTERNS IDENTIFIED ────────────────────────────────────────────────────┐
+│                                                                               │
+│   1. BRACKET CONTAMINATION (17 cases)                                        │
+│      └─ Domain suffixes in parentheses need removal                          │
+│         Example: "GEO (placentalendocrinology)" → "geo"                      │
+│                                                                               │
+│   2. DOMAIN-AS-NAME PROBLEM (25+ cases)                                      │
+│      └─ URL domain used instead of actual resource name                      │
+│         Example: "Covid19dataportal" → "COVID-19"                            │
+│                                                                               │
+│   3. GENERIC TERMS (2 cases)                                                 │
+│      └─ "Database" used as name                                              │
+│         Example: "Database (helixweb)" → needs specific name                 │
+│                                                                               │
+│   4. NUMERIC/SHORT NAMES (2 cases)                                           │
+│      └─ Numbers or 1-2 character strings                                     │
+│         Example: "265", "2d" → need real resource names                      │
+│                                                                               │
+└───────────────────────────────────────────────────────────────────────────────┘
+
+┌─ ACTIONABLE RECOMMENDATIONS ─────────────────────────────────────────────────┐
+│                                                                               │
+│   IMMEDIATE (8 HIGH confidence cases):                                       │
+│   └─ Apply automated fixes using best_common values                          │
+│                                                                               │
+│   SHORT-TERM (38 MEDIUM confidence cases):                                   │
+│   └─ Quick human review + batch apply title-extracted names                  │
+│                                                                               │
+│   MANUAL REVIEW (6 LOW confidence cases):                                    │
+│   └─ Expert review required - no clear alternatives found                    │
+│                                                                               │
+│   SYSTEM IMPROVEMENTS:                                                       │
+│   ├─ Add post-processing rule to strip domain suffixes in parentheses        │
+│   ├─ Prioritize title-extracted acronyms over URL domains                    │
+│   └─ Flag numeric-only and very short names during extraction                │
+│                                                                               │
+└───────────────────────────────────────────────────────────────────────────────┘
+
+┌─ OUTPUT FILES ───────────────────────────────────────────────────────────────┐
+│                                                                               │
+│   📄 best_name_qc_rows_1501_1688.csv (8.8K)                                  │
+│      └─ Detailed CSV with all 52 flagged cases, evidence, and suggestions    │
+│                                                                               │
+│   📄 best_name_qc_summary_report.md (6.0K)                                   │
+│      └─ Comprehensive markdown report with analysis and examples             │
+│                                                                               │
+│   📄 best_name_qc_examples.txt (2.2K)                                        │
+│      └─ Quick reference examples by category                                 │
+│                                                                               │
+│   📄 best_name_qc_visual_summary.txt                                         │
+│      └─ This visual summary (you are here)                                   │
+│                                                                               │
+│   Location: unified_bioresource_pipeline/post_processing/results/            │
+│                                                                               │
+└───────────────────────────────────────────────────────────────────────────────┘
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║  QUALITY SCORE: 88.5% fixable (46/52 have suggested corrections)            ║
+║  All 3 known problem cases successfully detected                             ║
+╚══════════════════════════════════════════════════════════════════════════════╝

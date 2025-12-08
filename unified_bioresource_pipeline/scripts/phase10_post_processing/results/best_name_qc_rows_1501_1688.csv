@@ -1,0 +1,53 @@
+pmid,current_best_name,issue_category,evidence_from_title,evidence_from_url,best_common,best_full,suggested_name,confidence,notes
+27303626,GEO (placentalendocrinology),HAS_BRACKETS,A curated transcriptome dataset collection to investigate the development and differentiation of the,domain:placentalendocrinology.gxbsidra | path:dm3/landing.gsp,geo,gene expression omnibus,geo,HIGH,Using best_common as alternative
+33858332,TCGA (manticore),HAS_BRACKETS,Predicting tumor response to drugs based on gene-expression biomarkers of sensitivity learned from c,domain:manticore.niehs.nih | path:cancerRxTissue,tcga,the cancer genome atlas,tcga,HIGH,Using best_common as alternative
+30783007,PDB (ifr48),HAS_BRACKETS,"An Integrative Database of β-Lactamase Enzymes: Sequences, Structures, Functions, and Phylogenetic T",domain:ifr48.timone.univ-mrs | path:beta-lactamase/public,pdb,,pdb,HIGH,Using best_common as alternative
+28195585,GBIF (science),HAS_BRACKETS,The French Muséum national d'histoire naturelle vascular plant herbarium collection dataset.,domain:science.mnhn | path:institution/mnhn/collection,gbif,,gbif,HIGH,Using best_common as alternative
+34323935,Prokaryotes (toolkit),HAS_BRACKETS,An astonishing wealth of new proteasome homologs.,domain:toolkit.tuebingen.mpg,,prokaryotes,prokaryotes,MEDIUM,Using best_full as alternative
+26040196,Prokaryotes (mlsa),HAS_BRACKETS,A database for the taxonomic and phylogenetic identification of the genus Bradyrhizobium using multi,domain:mlsa.cnpso.embrapa.br,,prokaryotes,prokaryotes,MEDIUM,Using best_full as alternative
+23192551,Genbank (hiv),HAS_BRACKETS,Viral genome analysis and knowledge management.,domain:hiv.lanl,,genbank,genbank,MEDIUM,Using best_full as alternative
+22080509,Genbank (webapps2),HAS_BRACKETS,Database for bacterial group II introns.,domain:webapps2.ucalgary.ca | path:~groupii/index.html,,genbank,genbank,MEDIUM,Using best_full as alternative
+28934507,GEO (134),HAS_BRACKETS,"A comprehensive, cell specific microRNA catalogue of human peripheral blood.",domain:134.245.63.235 | path:ikmb-tools/bloodmiRs,geo,,geo,HIGH,Using best_common as alternative
+33166149,Proteomexchange (massive),"HAS_BRACKETS,WRONG_EXTRACTION",uppercase:HUPO,domain:massive.ucsd,,proteomexchange,proteomexchange,MEDIUM,Using best_full as alternative
+32284610,Prokaryotes (meltomeatlas),HAS_BRACKETS,Meltome atlas-thermal proteome stability across the tree of life.,domain:meltomeatlas.proteomics.wzw.tum.de:5003,,prokaryotes,prokaryotes,MEDIUM,Using best_full as alternative
+29605928,CHEBI,WRONG_EXTRACTION,uppercase:EMBL-EBI,domain:ebi.ac | path:complexportal,chebi,uniprotkb | rnacentral,chebi,HIGH,Using best_common as alternative
+24234439,CHEMBL,WRONG_EXTRACTION,"uppercase:IUPHAR,BPS,PHARMACOLOGY",domain:guidetopharmacology,chembl,drugbank | ensembl | pubchem | uniprot,chembl,HIGH,Using best_common as alternative
+24792157,STRING,WRONG_EXTRACTION,uppercase:SIB,domain:isb-sib.ch,string,uniprotkb,string,HIGH,Using best_common as alternative
+25977788,Uniprotkb,WRONG_EXTRACTION,uppercase:SWATH-MS,domain:openswath,,uniprotkb | proteomexchange,uniprotkb | proteomexchange,MEDIUM,Using best_full as alternative
+"22970177, 28776320, 32003691, 34969046",NCT00931216,WRONG_EXTRACTION,"uppercase:HIV,NMS,HIV",domain:clinicaltrials | path:ct2/show/NCT00931216,,,HIV,MEDIUM,Extracted from title (uppercase)
+"26132000, 28578176, 33905618",Phenxtoolkit,WRONG_EXTRACTION,uppercase:COVID-19,domain:phenxtoolkit,,,COVID-19,MEDIUM,Extracted from title (uppercase)
+26968569,IR_spectra,WRONG_EXTRACTION,uppercase:ATR-FT-IR,domain:tera.chem.ut.ee | path:IR_spectra,,,ATR-FT-IR,MEDIUM,Extracted from title (uppercase)
+32572450,DRAFC,WRONG_EXTRACTION,uppercase:AFC,domain:biosino | path:drafc,,,AFC,MEDIUM,Extracted from title (uppercase)
+30999846,Melanoma (khaos),"HAS_BRACKETS,WRONG_EXTRACTION",uppercase:VIGLA-M,domain:khaos.uma.es | path:melanoma,,,VIGLA-M,MEDIUM,KNOWN_ISSUE: Melanoma (khaos) - title says VIGLA-M; Extracted from title (uppercase)
+34048576,Covid19dataportal,WRONG_EXTRACTION,"uppercase:COVID-19,SARS-,COVID-19",domain:covid19dataportal,,,COVID-19,MEDIUM,Extracted from title (uppercase)
+21990165,LOVD (brca),"HAS_BRACKETS,WRONG_EXTRACTION",uppercase:BRCA,domain:brca.iarc | path:LOVD,,,BRCA,MEDIUM,Extracted from title (uppercase)
+31329239,Caliberresearch,WRONG_EXTRACTION,uppercase:CALIBER,domain:caliberresearch | path:portal,,,CALIBER,MEDIUM,Extracted from title (uppercase)
+32838343,Covid19 (amp),"HAS_BRACKETS,WRONG_EXTRACTION",uppercase:COVID-19,domain:amp.pharm.mssm | path:covid19,,,COVID-19,MEDIUM,Extracted from title (uppercase)
+21929785,PRO (pir),"HAS_BRACKETS,WRONG_EXTRACTION",uppercase:PRO,domain:pir.georgetown | path:pro,,,PRO,MEDIUM,Extracted from title (uppercase)
+26616131,Hubzero,WRONG_EXTRACTION,uppercase:HIV,domain:hubzero,,,HIV,MEDIUM,Extracted from title (uppercase)
+33858848,Hla-ligand-atlas,WRONG_EXTRACTION,"uppercase:HLA,HLA-",domain:hla-ligand-atlas,,,HLA,MEDIUM,Extracted from title (uppercase)
+33564397,Covid-19-diagnostics,WRONG_EXTRACTION,uppercase:COVID-19,domain:covid-19-diagnostics.jrc.ec.europa.eu,,,COVID-19,MEDIUM,Extracted from title (uppercase)
+21669962,Daikon,WRONG_EXTRACTION,uppercase:EST-SSR,domain:marker.kazusa.or.jp | path:Daikon,,,EST-SSR,MEDIUM,Extracted from title (uppercase)
+34613368,Covid19kg,WRONG_EXTRACTION,uppercase:COVID-19,domain:research.bioinformatics.udel | path:covid19kg,,,COVID-19,MEDIUM,Extracted from title (uppercase)
+33630831,Mrcppu-covid,WRONG_EXTRACTION,"uppercase:DNA-,SARS-,COVID-19",domain:mrcppu-covid.bio,,,DNA-,MEDIUM,Extracted from title (uppercase)
+31959765,Ccafs-climate,WRONG_EXTRACTION,uppercase:CMIP5,domain:ccafs-climate,,,CMIP5,MEDIUM,Extracted from title (uppercase)
+31341169,Crctcell,WRONG_EXTRACTION,uppercase:RNA,domain:crctcell.cancer-pku.cn,,,RNA,MEDIUM,Extracted from title (uppercase)
+34292965,265,NUMERIC_ONLY,Developing a core outcome set for periodontal trials.,domain:comet-initiative | path:studies/details,,,MANUAL_REVIEW_NEEDED,LOW,KNOWN_ISSUE: 265 - numeric only from URL; No clear alternative found
+21841810,2d,VERY_SHORT,Proteome reference map and regulation network of neonatal rat cardiomyocyte.,domain:2d.bjmu.edu.cn,,,MANUAL_REVIEW_NEEDED,LOW,KNOWN_ISSUE: 2d - very short from URL domain; No clear alternative found
+24136511,Databases,WRONG_EXTRACTION,"uppercase:MAPA,MASS,WESTERN",domain:univie.ac.at | path:mosys/databases.html,,,MAPA,MEDIUM,Extracted from title (uppercase)
+29152729,Guideline-for-fluoropyrimidines-and-dpyd,WRONG_EXTRACTION,uppercase:CPIC,domain:cpicpgx | path:guidelines/guideline-for-fluoropyrimidines-and-dpyd,,,CPIC,MEDIUM,Extracted from title (uppercase)
+28039431,Database (hpcwebapps),"HAS_BRACKETS,WRONG_EXTRACTION",quoted: rule and minimum Bayes,domain:hpcwebapps.cit.nih | path:ESBL/Database/DUBs,,,MANUAL_REVIEW_NEEDED,LOW,No clear alternative found
+28432803,Brachypodium-t-dna-collection,WRONG_EXTRACTION,"uppercase:JGI,T-DNA",domain:jgi.doe | path:our-science/science-programs/plant-genomics,,,JGI,MEDIUM,Extracted from title (uppercase)
+29680449,Repository,WRONG_EXTRACTION,uppercase:DEB,domain:repository.ddmore.eu,,,DEB,MEDIUM,Extracted from title (uppercase)
+21292723,Alcoholandpregnancy,WRONG_EXTRACTION,uppercase:RE-AIM,domain:ichr.uwa.edu.au | path:alcoholandpregnancy,,,RE-AIM,MEDIUM,Extracted from title (uppercase)
+22114206,Database (helixweb),HAS_BRACKETS,Gene expression databases for kidney epithelial cells.,domain:helixweb.nih | path:ESBL/Database,,,MANUAL_REVIEW_NEEDED,LOW,No clear alternative found
+33455583,BRC,WRONG_EXTRACTION,uppercase:RIKEN,domain:brc.riken.jp,,,RIKEN,MEDIUM,Extracted from title (uppercase)
+34078215,EMBASE,WRONG_EXTRACTION,"uppercase:COVID-19,SARS-,BCG",domain:embase,,,COVID-19,MEDIUM,Extracted from title (uppercase)
+32308920,Vcfclin,WRONG_EXTRACTION,uppercase:VMC,domain:vcfclin,,,VMC,MEDIUM,Extracted from title (uppercase)
+22161327,Yeastgfp,WRONG_EXTRACTION,uppercase:GFP,domain:yeastgfp.yeastgenome,,,GFP,MEDIUM,Extracted from title (uppercase)
+32189629,Rare-book-collection,WRONG_EXTRACTION,uppercase:NYU,domain:dental.nyu | path:aboutus/rare-book-collection.html,,,NYU,MEDIUM,Extracted from title (uppercase)
+26234511,TargetPred,WRONG_EXTRACTION,uppercase:AIMS,domain:bio-aims.udc.es | path:TargetPred.php,,,AIMS,MEDIUM,Extracted from title (uppercase)
+32266012,Repeatbrowser,WRONG_EXTRACTION,uppercase:UCSC,domain:repeatbrowser.ucsc,,,UCSC,MEDIUM,Extracted from title (uppercase)
+34724898,JBrowse-1.16.5,WRONG_EXTRACTION,uppercase:BAC,domain:eightstarsbio | path:gresource/JBrowse-1.16.5/index.html,,,BAC,MEDIUM,Extracted from title (uppercase)
+29092956,Personalizedcancertherapy,WRONG_EXTRACTION,quoted:Personalized Cancer Therapy,domain:personalizedcancertherapy,,,MANUAL_REVIEW_NEEDED,LOW,No clear alternative found
+33683565,Healthy-worm-database,WRONG_EXTRACTION,quoted:healthy worm database,domain:healthy-worm-database.eu,,,MANUAL_REVIEW_NEEDED,LOW,No clear alternative found

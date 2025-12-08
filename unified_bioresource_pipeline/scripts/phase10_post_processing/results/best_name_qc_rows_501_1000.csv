@@ -1,0 +1,8 @@
+pmid,current_best_name,issue_category,evidence_from_title,evidence_from_url,best_common,best_full,suggested_name,confidence,notes
+25881165,Snpchimp (bioinformatics),HAS_BRACKETS,SNPchiMp v.3,bioinformatics.tecnoparco.org / SNPchimp,,snpchimp,Snpchimp (bioinformatics),HIGH,Bracket analysis: KEEP_BRACKETS
+33408850,DB,VERY_SHORT,<i>Vf</i>ODB; ODB; EST,vfodb.easyomics.org / ,db,,<i>Vf</i>ODB,MEDIUM,
+24243849,P(3)db,HAS_BRACKETS,P³DB 3.0,p3db.org / ,p(3)db,,P,HIGH,Bracket analysis: REMOVE_BRACKETS
+25516408,Mitimpact (bioinformatics),HAS_BRACKETS,MitImpact,bioinformatics.css-mendel.it / ,,mitimpact,Mitimpact (bioinformatics),HIGH,Bracket analysis: KEEP_BRACKETS
+33172432,ophthatome(TM),HAS_BRACKETS,Ophthatome™,demo.ophthatome.com / ,,ophthatome™,ophthatome,HIGH,Bracket analysis: REMOVE_BRACKETS
+26087378,Schizconnect (central),HAS_BRACKETS,Northwestern University schizophrenia data sharing for SchizConnect,central.xnat.org / ,,schizconnect,Schizconnect (central),HIGH,Bracket analysis: KEEP_BRACKETS
+29561219,4s,VERY_SHORT,The network of Shanghai Stroke Service System (4S),clinicaltrials.gov / ,4s,,The network of Shanghai Stroke Service System (4S),MEDIUM,

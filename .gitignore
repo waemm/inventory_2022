@@ -15,3 +15,9 @@ config/ia_secret_key.txt
 # Google Drive sync logs (keep directories, ignore log files)
 upload_logs/*.csv
 download_logs/*.csv
+
+# Large files excluded from git
+bioresource_url_scanner/venv/
+validation_spacy_v_BERT/results/phase2/ner/spacy_ner_statistical_only_results*.csv
+validation_spacy_v_BERT/results/phase2/ner/spacy_ner_full_hybrid_results*.csv
+validation_spacy_v_BERT/results/phase2/ner/spacy_ner_entityruler_only_results*.csv

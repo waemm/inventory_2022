@@ -153,8 +153,42 @@ python scripts/phase9_finalization/27_generate_final_inventory.py \
 
 ---
 
-## Next Steps (Optional)
+## Next Steps
 
-1. **QC Review:** Check `names_for_review.csv` and `urls_for_review.csv` for edge cases
+### Phase 10: Post-Processing QC (Recommended)
+
+Run best_name quality control analysis on the final inventory:
+
+```bash
+# Output directory: {session_id}/post_processing/
+# See: post_processing/docs/AGENT_PROMPT_best_name_qc.md
+```
+
+**What it does:**
+- Analyzes `best_name` column for quality issues
+- Detects: empty, numeric, short, bracketed, suspicious names
+- Auto-fixes with confidence levels (HIGH/MEDIUM/LOW)
+- Flags low-confidence fixes for manual review
+
+**Output:**
+- `best_name_qc_ALL.csv` - All detected issues
+- `final_inventory_QC_FIXED.csv` - Inventory with fixes applied
+- `fixes_applied.csv` - Log of all corrections
+
+### Session z381s Phase 10 Results
+
+Phase 10 QC completed on 2025-12-05:
+- **Issues found:** 61 (4.0% of inventory)
+- **Categories:** 47 HAS_BRACKETS, 12 VERY_SHORT, 1 NUMERIC_ONLY, 1 SUSPICIOUS_CHARS
+- **Auto-fixed:** 61 (100%)
+- **Manual review flagged:** 2 (LOW confidence)
+
+Results saved to: `2025-12-04-111420-z381s/post_processing/`
+
+---
+
+## Other Optional Steps
+
+1. **Manual Review:** Check `qc_manual_review=YES` items in fixed inventory
 2. **Web Search:** Complete remaining web search chunks for additional URL recovery
 3. **Baseline Comparison:** Compare with previous inventory versions if needed

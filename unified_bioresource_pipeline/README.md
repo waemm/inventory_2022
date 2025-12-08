@@ -100,6 +100,15 @@ The **Unified Bioresource Pipeline** is a complete, reproducible end-to-end syst
 │ Time: 5-10 minutes                                        │
 └───────────────────────────────────────────────────────────┘
     ↓
+┌───────────────────────────────────────────────────────────┐
+│ PHASE 10: POST-PROCESSING QC (NEW)                       │
+│ • Analyze best_name column for quality issues            │
+│ • Detect: empty, numeric, short, bracketed names         │
+│ • Agent-based analysis in ~500 row chunks                │
+│ • Auto-fix with confidence levels + manual review flags  │
+│ Time: ~10 minutes (3 parallel agents)                    │
+└───────────────────────────────────────────────────────────┘
+    ↓
 ~1,945 Unique Validated Bioresources ✅
 ```
 
@@ -179,7 +188,7 @@ unified_bioresource_pipeline/
 │   │   ├── 17_deduplicate_linguistic.py
 │   │   ├── 18_analyze_unclear_cases.py
 │   │   └── 19_apply_manual_merges.py
-│   ├── phase8_url_recovery/          # NEW - URL recovery for missing URLs
+│   ├── phase8_url_recovery/          # URL recovery for missing URLs
 │   │   ├── url_patterns.py           # Shared patterns & exclusions
 │   │   ├── 28_identify_missing_urls.py
 │   │   ├── 29_fetch_abstracts.py
@@ -189,9 +198,13 @@ unified_bioresource_pipeline/
 │   │   ├── 33_consolidate_recovery.py
 │   │   ├── 34_merge_websearch_results.py
 │   │   └── run_phase8.py             # Phase orchestrator
-│   └── phase9_finalization/
-│       ├── 22_filter_novel_resources.py
-│       └── ...
+│   ├── phase9_finalization/
+│   │   ├── 22_filter_novel_resources.py
+│   │   └── ...
+│   └── post_processing/              # NEW - Phase 10 QC
+│       ├── README.md
+│       ├── docs/AGENT_PROMPT_best_name_qc.md
+│       └── merge_and_fix_inventory.py
 │
 ├── notebooks/
 │   ├── phase1_classification/
@@ -284,8 +297,9 @@ The pipeline can resume from any phase:
 | **Phase 5** | SetFit introductions (16k) | `--from phase5` |
 | **Phase 6** | Papers with entities | `--from phase6` |
 | **Phase 7** | Papers with URL scores | `--from phase7` |
-| **Phase 8** | Deduplicated resources | `--from phase8` ⭐ NEW |
+| **Phase 8** | Deduplicated resources | `--from phase8` |
 | **Phase 9** | URL-recovered resources | `--from phase9` |
+| **Phase 10** | Final inventory | `--from phase10` ⭐ NEW |
 
 **Most Common:** Resume from **Phase 3** (PMID extraction) if you already have NER results.
 
@@ -306,6 +320,7 @@ The pipeline can resume from any phase:
 | Phase 7 | 5 min + manual | ✗ No |
 | Phase 8 | ~5 min + agents | ✗ No |
 | Phase 9 | 5-10 min | ✗ No |
+| Phase 10 | ~10 min | ✗ No |
 | **TOTAL** | **8-16 hours** | GPU phases: 7-15 hrs |
 
 ### Hardware Requirements
@@ -459,6 +474,16 @@ cat logs/pipeline/phase*_*_*.log
 
 ## Version History
 
+**v1.3.0** (2025-12-05)
+- Added Phase 10: Post-Processing QC
+  - Agent-based best_name quality control analysis
+  - Detects: empty, numeric, short, bracketed, suspicious character names
+  - Auto-fix with confidence levels (HIGH/MEDIUM/LOW)
+  - Manual review flags for low-confidence fixes
+  - Preserves original names in `best_name_original` column
+- New files: `post_processing/` directory with agent prompts and merge script
+- Session z381s: 61 issues found (4.0%), all auto-fixed, 2 flagged for manual review
+
 **v1.2.0** (2025-11-29)
 - Phase 10 Data Quality Improvements:
   - Script 23: Name disambiguation using URL subdomains (e.g., GXB → GXB (breastcancer))
@@ -519,6 +544,6 @@ For questions or issues:
 ---
 
 **Status:** ✅ Production Ready
-**Last Updated:** 2025-11-29
-**Tested On:** 149,943 papers (EPMC 2011-2021)
-**Output:** 1,945 validated unique bioresources (with data quality improvements)
+**Last Updated:** 2025-12-05
+**Tested On:** 149,943 papers (EPMC 2011-2021) + 98,571 papers (2022-mid2025)
+**Output:** 1,510+ validated unique bioresources (with Phase 10 QC)

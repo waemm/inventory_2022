@@ -394,6 +394,86 @@ python scripts/phase8_url_recovery/34_merge_websearch_results.py \
 
 ---
 
+## Phase 10: Post-Processing QC
+
+**Goal**: Quality control analysis of `best_name` column to detect and fix problematic resource names.
+
+### Overview
+
+Phase 10 uses agent-based analysis to identify issues in the final inventory:
+- **EMPTY**: Missing resource names
+- **NUMERIC_ONLY**: Names that are just numbers (e.g., "265")
+- **VERY_SHORT**: 1-2 character names (e.g., "DB", "GO")
+- **SHORT_LOWERCASE**: Generic short words (e.g., "data", "gene")
+- **HAS_BRACKETS**: Disambiguation suffixes (e.g., "ENCODE (genome)")
+- **SUSPICIOUS_CHARS**: HTML fragments, pipes, punctuation
+
+### Workflow
+
+#### Step 1: Launch QC Analysis Agents
+
+Analysis runs in parallel chunks of ~500 rows:
+
+```bash
+# Launch 3 agents in parallel using Claude Code
+# Each agent analyzes a chunk of the final_inventory.csv
+
+# Agent prompts use: post_processing/docs/AGENT_PROMPT_best_name_qc.md
+# Output: best_name_qc_rows_1_500.csv, best_name_qc_rows_501_1000.csv, etc.
+```
+
+**Detection Patterns**:
+- Check `paper_titles` for correct resource name
+- Check `extracted_url` for name derivation
+- Check `best_common` and `best_full` as alternatives
+
+#### Step 2: Merge Results and Apply Fixes
+
+```bash
+cd unified_bioresource_pipeline/{session_id}/post_processing
+python merge_and_fix_inventory.py
+```
+
+**Output Files**:
+- `best_name_qc_ALL.csv` - Merged QC findings from all chunks
+- `final_inventory_QC_FIXED.csv` - Inventory with corrections applied
+- `fixes_applied.csv` - Log of all changes
+
+#### Step 3: Review Manual Flagged Items
+
+The fixed inventory includes new columns:
+- `best_name_original` - Preserves original name before fix
+- `qc_manual_review` - YES/NO flag for items needing human review
+- `qc_fix_applied` - YES if a fix was applied
+- `qc_confidence` - HIGH/MEDIUM/LOW confidence level
+- `qc_issue_category` - Type of issue detected
+
+**Confidence Levels**:
+- **HIGH**: Clear evidence from title/URL - auto-fixed
+- **MEDIUM**: Reasonable inference - auto-fixed
+- **LOW**: Best guess - auto-fixed but flagged for manual review
+
+### Expected Results
+
+Typical QC findings:
+- ~4-7% of inventory flagged
+- ~90% auto-fixable with HIGH/MEDIUM confidence
+- ~2-10 items flagged for manual review
+
+### Example Session (z381s)
+
+| Metric | Value |
+|--------|-------|
+| Total inventory | 1,510 |
+| Issues found | 61 (4.0%) |
+| HAS_BRACKETS | 47 |
+| VERY_SHORT | 12 |
+| NUMERIC_ONLY | 1 |
+| SUSPICIOUS_CHARS | 1 |
+| Manual review needed | 2 |
+
+---
+
 ## Key Learnings & Troubleshooting
 
 ### Issue 1: V2 Models Use Wrong Base Model
@@ -630,14 +710,19 @@ This decision prioritizes **recall over precision**. Future runs should evaluate
 
 ---
 
-**Document Version**: 1.3
-**Last Updated**: 2025-12-03
+**Document Version**: 1.4
+**Last Updated**: 2025-12-05
 **Author**: Pipeline Automation
 **Contact**: Check repository issues for support
 
 ---
 
 ## Changelog
+
+### v1.4 (2025-12-05)
+- Added Phase 10: Post-Processing QC documentation
+- Documented agent-based best_name quality control workflow
+- Added example results from session z381s
 
 ### v1.3 (2025-12-03)
 - Added Phase 8 URL Recovery documentation

@@ -1,0 +1,248 @@
+#!/usr/bin/env python3
+"""
+Script 04: Generate Final Report
+
+Generates comprehensive statistics and final report for the merged
+bioresource inventory.
+
+Input:
+- data/final/final_inventory.csv
+
+Output:
+- docs/FINAL_REPORT.md
+- data/final/new_resources_only.csv (subset of new discoveries)
+
+Usage:
+    python scripts/04_generate_report.py
+"""
+
+import pandas as pd
+from pathlib import Path
+from datetime import datetime
+
+# Paths
+SCRIPT_DIR = Path(__file__).parent
+BASE_DIR = SCRIPT_DIR.parent
+DATA_DIR = BASE_DIR / "data"
+DOCS_DIR = BASE_DIR / "docs"
+
+# Input files
+FINAL_INVENTORY = DATA_DIR / "final/final_inventory.csv"
+
+# Output files
+FINAL_REPORT = DOCS_DIR / "FINAL_REPORT.md"
+NEW_RESOURCES = DATA_DIR / "final/new_resources_only.csv"
+
+
+def generate_report(df: pd.DataFrame) -> str:
+    """Generate comprehensive final report."""
+
+    # Basic counts
+    total = len(df)
+
+    # Source batch breakdown
+    batch_counts = df['source_batch'].value_counts().to_dict()
+    batch_2010_2022 = batch_counts.get('2010-2022', 0)
+    batch_2022_2025 = batch_counts.get('2022-2025', 0)
+
+    # Baseline status
+    in_baseline = df['in_baseline'].sum() if 'in_baseline' in df.columns else 0
+    new_resources = total - in_baseline
+
+    # GCBR count
+    gcbr_count = df['is_gcbr'].sum() if 'is_gcbr' in df.columns else 0
+
+    # Merge statistics
+    merge_count = (df['merge_count'] > 1).sum() if 'merge_count' in df.columns else 0
+    total_merged_from = df['merge_count'].sum() - total if 'merge_count' in df.columns else 0
+
+    # URL analysis
+    url_domain_counts = {}
+    if 'extracted_url' in df.columns:
+        for url in df['extracted_url'].dropna():
+            try:
+                from urllib.parse import urlparse
+                domain = urlparse(str(url)).netloc.lower()
+                # Get base domain
+                parts = domain.split('.')
+                if len(parts) >= 2:
+                    base = '.'.join(parts[-2:])
+                else:
+                    base = domain
+                url_domain_counts[base] = url_domain_counts.get(base, 0) + 1
+            except:
+                pass
+
+    top_domains = sorted(url_domain_counts.items(), key=lambda x: -x[1])[:15]
+
+    # Baseline match types
+    match_type_counts = {}
+    if 'baseline_match_type' in df.columns:
+        match_type_counts = df['baseline_match_type'].value_counts().to_dict()
+
+    report = f"""# Final Bioresource Inventory Report
+
+**Generated:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
+
+---
+
+## Executive Summary
+
+| Metric | Value |
+|--------|-------|
+| **Total Resources** | **{total:,}** |
+| In GBC Baseline | {in_baseline:,} ({in_baseline/total*100:.1f}%) |
+| **New Discoveries** | **{new_resources:,}** ({new_resources/total*100:.1f}%) |
+| Global Core Biodata Resources | {gcbr_count:,} |
+
+---
+
+## Source Batch Breakdown
+
+| Batch | Records | Percentage |
+|-------|---------|------------|
+| 2010-2022 | {batch_2010_2022:,} | {batch_2010_2022/total*100:.1f}% |
+| 2022-2025 | {batch_2022_2025:,} | {batch_2022_2025/total*100:.1f}% |
+| **Total** | **{total:,}** | 100% |
+
+---
+
+## Deduplication Statistics
+
+| Metric | Value |
+|--------|-------|
+| Records that are merges | {merge_count:,} |
+| Total records merged away | {total_merged_from:,} |
+
+---
+
+## Baseline Matching
+
+| Match Type | Count |
+|------------|-------|
+"""
+
+    for match_type, count in match_type_counts.items():
+        if match_type and match_type != 'NO_MATCH':
+            report += f"| {match_type} | {count:,} |\n"
+
+    report += f"""
+---
+
+## Top 15 URL Domains
+
+| Domain | Count |
+|--------|-------|
+"""
+
+    for domain, count in top_domains:
+        report += f"| {domain} | {count:,} |\n"
+
+    report += f"""
+---
+
+## Output Files
+
+### Main Inventory
+- `data/final/final_inventory.csv` - Complete inventory with all metadata
+
+### New Resources Only
+- `data/final/new_resources_only.csv` - Subset of {new_resources:,} new discoveries
+
+---
+
+## Column Descriptions
+
+| Column | Description |
+|--------|-------------|
+| `best_name` | Resource name |
+| `extracted_url` | Live URL for the resource |
+| `source_batch` | Original batch (2010-2022 or 2022-2025) |
+| `in_baseline` | True if resource is in GBC baseline |
+| `is_gcbr` | True if Global Core Biodata Resource |
+| `baseline_resource_id` | GBC resource ID if matched |
+| `merge_count` | Number of duplicate records merged |
+| `merged_pmids` | PMIDs of merged duplicate papers |
+
+---
+
+## Processing Pipeline Summary
+
+1. **Step 1: URL Filtering** - Filtered to live URLs only (status 200)
+2. **Step 2: Deduplication** - Identified and merged duplicates
+3. **Step 3: Baseline Comparison** - Flagged resources in GBC baseline
+4. **Step 4: Report Generation** - This report
+
+---
+
+## Notes
+
+- All resources in this inventory have **verified live URLs** (HTTP 200)
+- Duplicate resources were merged, preserving metadata from all sources
+- New resources ({new_resources:,}) are candidates for addition to the GBC
+
+---
+
+*Report generated by the Final Merged Batch Pipeline*
+"""
+
+    return report
+
+
+def main():
+    print("=" * 60)
+    print("Step 4: Generate Final Report")
+    print("=" * 60)
+
+    # Check input exists
+    if not FINAL_INVENTORY.exists():
+        print(f"\nERROR: Final inventory not found: {FINAL_INVENTORY}")
+        print("Run all previous steps first")
+        return
+
+    # Load data
+    print(f"\nLoading final inventory: {FINAL_INVENTORY}")
+    df = pd.read_csv(FINAL_INVENTORY)
+    print(f"  Loaded {len(df):,} records")
+
+    # Generate report
+    print("\nGenerating final report...")
+    report = generate_report(df)
+
+    DOCS_DIR.mkdir(parents=True, exist_ok=True)
+    FINAL_REPORT.write_text(report)
+    print(f"  Saved: {FINAL_REPORT}")
+
+    # Export new resources only
+    print("\nExporting new resources subset...")
+    if 'in_baseline' in df.columns:
+        new_df = df[df['in_baseline'] == False].copy()
+    else:
+        new_df = df.copy()
+
+    new_df.to_csv(NEW_RESOURCES, index=False)
+    print(f"  Saved: {NEW_RESOURCES} ({len(new_df):,} records)")
+
+    # Print summary
+    print("\n" + "=" * 60)
+    print("FINAL REPORT COMPLETE")
+    print("=" * 60)
+
+    total = len(df)
+    in_baseline = df['in_baseline'].sum() if 'in_baseline' in df.columns else 0
+    new_resources = total - in_baseline
+
+    print(f"\n  Total resources: {total:,}")
+    print(f"  In baseline: {in_baseline:,} ({in_baseline/total*100:.1f}%)")
+    print(f"  New discoveries: {new_resources:,} ({new_resources/total*100:.1f}%)")
+
+    print(f"\n  Final report: {FINAL_REPORT}")
+    print(f"  New resources CSV: {NEW_RESOURCES}")
+
+    print("\n" + "=" * 60)
+    print("PIPELINE COMPLETE!")
+    print("=" * 60)
+
+
+if __name__ == "__main__":
+    main()
